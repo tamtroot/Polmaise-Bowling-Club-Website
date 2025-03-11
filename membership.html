@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Polmaise Bowling Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow: auto;
+            text-align: center;
+        }
+        
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 50px;
+        }
+        
+        .lightbox-caption {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .history-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Small gap between images for visual separation */
+            justify-content: center;
+        }
+        
+        .history-images img {
+            cursor: pointer;
+            transition: opacity 0.3s;
+            max-width: calc(50% - 5px); /* 2 images per row with gap consideration */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure image isn't stretched */
+            margin: 0; /* Remove default margins */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        }
+        
+        /* Adjust container to better handle landscape images */
+        .history-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        /* Add more specific handling for landscape images */
+        @media (min-width: 769px) {
+            .history-images {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .history-images img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        
+        .history-images img:hover {
+            opacity: 0.8;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .lightbox-content {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+            
+            .history-images img {
+                max-width: 100%; /* Full width on mobile */
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership.html" class="active">Membership</a></li>
+                    <li><a href="fixtures.html">Fixtures</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="honours.html">Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h2>Membership</h2>
+            <p>Join our community and enjoy the benefits of being a member</p>
+        </div>
+    </section>
+
+    <section class="membership-benefits">
+        <div class="container">
+            <h2>Benefits of Membership</h2>
+            <p class="section-intro">Joining Polmaise Bowling Club offers numerous advantages for bowlers of all ages and skill levels.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bowling-ball"></i>
+                    </div>
+                    <h3>Access to Facilities</h3>
+                    <p>Full use of our championship-standard bowling green and clubhouse facilities throughout the season.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Competition Entry</h3>
+                    <p>Eligibility to participate in all club competitions, leagues, and the opportunity to represent the club in external tournaments.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Coaching & Development</h3>
+                    <p>Access to expert coaching sessions and development programs suitable for all skill levels.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Social Events</h3>
+                    <p>Invitation to all club social events, including dinners, presentations, and special gatherings.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-vote-yea"></i>
+                    </div>
+                    <h3>Club Governance</h3>
+                    <p>Voting rights at our Annual General Meeting and the opportunity to shape the club's future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-to-join">
+        <div class="container">
+            <h2>How to Join</h2>
+            <p class="section-intro">Becoming a member of Polmaise Bowling Club is simple and straightforward.</p>
+            
+            <div class="join-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Contact Us</h3>
+                        <p>Reach out through our contact form, by phone, or visit the club during opening hours to express your interest in joining.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Try a Session</h3>
+                        <p>We invite prospective members to attend a free introductory session to experience our facilities and meet current members.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Complete Application</h3>
+                        <p>Fill out our membership application form, which can be obtained from the clubhouse or downloaded below.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Pay Membership Fee</h3>
+                        <p>Submit your annual membership fee according to your membership category.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Receive Confirmation</h3>
+                        <p>Once your application is processed, you'll receive your membership card and welcome pack.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="download-application">
+                <p>Download our membership application form and return it to the club secretary:</p>
+                <a href="downloads/membership-form.pdf" class="btn primary-btn"><i class="fas fa-download"></i> Download Application Form</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="membership-fees">
+        <div class="container">
+            <h2>Membership Fees</h2>
+            <p class="section-intro">Our membership fees are structured to be inclusive and provide excellent value for all members.</p>
+            
+            <div class="fees-table-container">
+                <table class="fees-table">
+                    <thead>
+                        <tr>
+                            <th>Membership Category</th>
+                            <th>Annual Fee</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Full Members (Male & Female)</td>
+                            <td>£80</td>
+                            <td>Complete access to all club facilities and events for members aged 18 and over</td>
+                        </tr>
+                        <tr>
+                            <td>Seniors (Male & Female)</td>
+                            <td>£60</td>
+                            <td>Discounted rate for seniors with full membership benefits</td>
+                        </tr>
+                        <tr>
+                            <td>New Member (First Year)</td>
+                            <td>£40</td>
+                            <td>Special introductory rate for first year members, normal fees apply thereafter</td>
+                        </tr>
+                        <tr>
+                            <td>Ladies (First Year)</td>
+                            <td>Free</td>
+                            <td>Special promotion for new female members in their first year</td>
+                        </tr>
+                        <tr>
+                            <td>Juniors (Under 18)</td>
+                            <td>£30</td>
+                            <td>Special rate for young bowlers with access to coaching and junior competitions</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="payment-methods">
+                <h3>Payment Methods</h3>
+                <p>We offer several convenient ways to pay your membership fees:</p>
+                <ul>
+                    <li><i class="fas fa-credit-card"></i> <strong>Card Payment</strong> - Available at the clubhouse</li>
+                    <li><i class="fas fa-money-bill-wave"></i> <strong>Cash</strong> - Accepted at the clubhouse during opening hours</li>
+                    <li><i class="fas fa-university"></i> <strong>Bank Transfer</strong> - Details provided upon application</li>
+                    <li><i class="fas fa-calendar-alt"></i> <strong>Monthly Direct Debit</strong> - Spread the cost throughout the year</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="membership-faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">Do I need to have played bowls before to join?</div>
+                    <div class="accordion-content">
+                        <p>No, we welcome complete beginners! Our club has experienced coaches who will help you learn the basics and develop your skills. We provide all necessary equipment for beginners.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">Is there a dress code for playing?</div>
+                    <div class="accordion-content">
+                        <p>For casual play and practice, comfortable clothing and flat-soled shoes are sufficient. For matches and competitions, white or club-approved clothing is required. Full details are provided in our welcome pack.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">Can I try before I join?</div>
+                    <div class="accordion-content">
+                        <p>Absolutely! We offer free taster sessions for prospective members. Contact us to arrange a convenient time to visit the club and try bowling under the guidance of our friendly members.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">Are there opportunities for competitive play?</div>
+                    <div class="accordion-content">
+                        <p>Yes, we offer various levels of competitive play, from friendly internal competitions to league matches and national tournaments. Members can participate at a level that suits their ability and ambition.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">Do I need to own my own bowls?</div>
+                    <div class="accordion-content">
+                        <p>While many members eventually purchase their own bowls, we have club sets available for beginners and those trying the sport. Our members can also advise you on purchasing suitable equipment when you're ready.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polmaise Bowling Club</h3>
+                    <p>Address: Main Street,</p>
+                    <p>Fallin, Stirling, FK7 7HT</p>
+                    <p>Phone: 01786 811333</p>
+                    <p>Email: polmaisebc@gmail.com </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="fixtures.html">Fixtures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Polmaise-Bowling-Club-100008363985804/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

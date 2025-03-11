@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Polmaise Bowling Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow: auto;
+            text-align: center;
+        }
+        
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 50px;
+        }
+        
+        .lightbox-caption {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .history-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Small gap between images for visual separation */
+            justify-content: center;
+        }
+        
+        .history-images img {
+            cursor: pointer;
+            transition: opacity 0.3s;
+            max-width: calc(50% - 5px); /* 2 images per row with gap consideration */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure image isn't stretched */
+            margin: 0; /* Remove default margins */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        }
+        
+        /* Adjust container to better handle landscape images */
+        .history-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        /* Add more specific handling for landscape images */
+        @media (min-width: 769px) {
+            .history-images {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .history-images img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        
+        .history-images img:hover {
+            opacity: 0.8;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .lightbox-content {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+            
+            .history-images img {
+                max-width: 100%; /* Full width on mobile */
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="fixtures.html">Fixtures</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="honours.html">Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h2>Gallery</h2>
+            <p>Explore our collection of photos and videos capturing the club's activities and events</p>
+        </div>
+    </section>
+
+    <section class="gallery-categories">
+        <div class="container">
+            <div class="tab-navigation">
+                <button class="tab-button active" data-tab="all">All</button>
+                <button class="tab-button" data-tab="competitions">Competitions</button>
+                <button class="tab-button" data-tab="social">Social Events</button>
+                <button class="tab-button" data-tab="facilities">Facilities</button>
+                <button class="tab-button" data-tab="history">Club History</button>
+                <button class="tab-button" data-tab="videos">Videos</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="photo-albums" id="photoGallery">
+        <div class="container">
+            <div class="gallery-intro">
+                <h2>Photo Albums</h2>
+                <p class="section-intro">Browse through our collection of photos capturing memorable moments at Polmaise Bowling Club.</p>
+            </div>
+            
+            <div class="album-grid tab-content active" id="all">
+                <div class="album-card" data-category="competitions">
+                    <div class="album-thumbnail">
+                        <img src="images/album-1.jpg" alt="Club Championship 2022">
+                        <span class="photo-count">24 Photos</span>
+                    </div>
+                    <div class="album-info">
+                        <h3>Club Championship 2022</h3>
+                        <p>Photos from last year's club championship finals day celebrating our club champions.</p>
+                        <a href="#" class="btn small-btn">View Album</a>
+                    </div>
+                </div>
+                
+                <div class="album-card" data-category="social">
+                    <div class="album-thumbnail">
+                        <img src="images/album-2.jpg" alt="Opening Day 2023">
+                        <span class="photo-count">32 Photos</span>
+                    </div>
+                    <div class="album-info">
+                        <h3>Opening Day 2023</h3>
+                        <p>Images from our season opening day celebration in April 2023.</p>
+                        <a href="#" class="btn small-btn">View Album</a>
+                    </div>
+                </div>
+                
+                <div class="album-card" data-category="competitions">
+                    <div class="album-thumbnail">
+                        <img src="images/album-3.jpg" alt="County Championship 2022">
+                        <span class="photo-count">18 Photos</span>
+                    </div>
+                    <div class="album-info">
+                        <h3>County Championship 2022</h3>
+                        <p>Our team competing in last year's county championship tournament.</p>
+                        <a href="#" class="btn small-btn">View Album</a>
+                    </div>
+                </div>
+                
+                <div class="album-card" data-category="social">
+                    <div class="album-thumbnail">
+                        <img src="images/album-4.jpg" alt="Annual Club Dinner 2023">
+                        <span class="photo-count">45 Photos</span>
+                    </div>
+                    <div class="album-info">
+                        <h3>Annual Club Dinner 2023</h3>
+                        <p>Photos from our annual presentation dinner held in January.</p>
+                        <a href="#" class="btn small-btn">View Album</a>
+                    </div>
+                </div>
+                
+                <div class="album-card" data-category="facilities">
+                    <div class="album-thumbnail">
+                        <img src="images/album-5.jpg" alt="Clubhouse Renovation">
+                        <span class="photo-count">16 Photos</span>
+                    </div>
+                    <div class="album-info">
+                        <h3>Clubhouse Renovation</h3>
+                        <p>Before and after photos of our clubhouse renovation project.</p>
+                        <a href="#" class="btn small-btn">View Album</a>
+                    </div>
+                </div>
+                
+                <div class="album-card" data-category="competitions">
+                    <div class="album-thumbnail">
+                        <img src="images/album-6.jpg" alt="Ladies Championship 2022">
+                        <span class="photo-count">21 Photos</span>
+                    </div>
+                    <div class="album-info">
+                        <h3>Ladies Championship 2022</h3>
+                        <p>Photos from the ladies championship finals and presentation.</p>
+                        <a href="#" class="btn small-btn">View Album</a>
+                    </div>
+                </div>
+                
+                <div class="album-card" data-category="history">
+                    <div class="album-thumbnail">
+                        <img src="images/album-7.jpg" alt="Club History Photos">
+                        <span class="photo-count">38 Photos</span>
+                    </div>
+                    <div class="album-info">
+                        <h3>Club History Archive</h3>
+                        <p>Historical photographs dating back to the club's foundation.</p>
+                        <a href="#" class="btn small-btn">View Album</a>
+                    </div>
+                </div>
+                
+                <div class="album-card" data-category="social">
+                    <div class="album-thumbnail">
+                        <img src="images/album-8.jpg" alt="Summer BBQ 2022">
+                        <span class="photo-count">27 Photos</span>
+                    </div>
+                    <div class="album-info">
+                        <h3>Summer BBQ 2022</h3>
+                        <p>Photos from last year's summer BBQ and fun day.</p>
+                        <a href="#" class="btn small-btn">View Album</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="competitions">
+                <!-- Competition albums will be shown here via JavaScript filtering -->
+            </div>
+            
+            <div class="tab-content" id="social">
+                <!-- Social events albums will be shown here via JavaScript filtering -->
+            </div>
+            
+            <div class="tab-content" id="facilities">
+                <!-- Facilities albums will be shown here via JavaScript filtering -->
+            </div>
+            
+            <div class="tab-content" id="history">
+                <!-- History albums will be shown here via JavaScript filtering -->
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-photos">
+        <div class="container">
+            <h2>Featured Photos</h2>
+            <p class="section-intro">A selection of our favorite photos from recent events.</p>
+            
+            <div class="featured-gallery">
+                <a href="images/featured-1.jpg" data-lightbox="featured" data-title="County Championship Trophy Presentation">
+                    <img src="images/abc.jpg" alt="County Championship Trophy Presentation">
+                </a>
+                <a href="images/featured-2.jpg" data-lightbox="featured" data-title="Perfect Bowl During Club Championship Final">
+                    <img src="images/abc.jpg" alt="Perfect Bowl During Club Championship Final">
+                </a>
+                <a href="images/featured-5.jpg" data-lightbox="featured" data-title="Junior Bowling Session">
+                    <img src="images/abc.jpg" alt="Junior Bowling Session">
+                </a>
+                <a href="images/featured-6.jpg" data-lightbox="featured" data-title="Summer BBQ Entertainment">
+                    <img src="images/abc.jpg" alt="Summer BBQ Entertainment">
+                </a>
+                <a href="images/featured-7.jpg" data-lightbox="featured" data-title="Green at Sunset">
+                    <img src="images/20240728_145114.jpg" alt="Green at Sunset">
+                </a>
+                <a href="images/featured-8.jpg" data-lightbox="featured" data-title="Clubhouse After Renovation">
+                    <img src="images/20240728_145333.jpg" alt="Clubhouse After Renovation">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-gallery tab-content" id="videos">
+        <div class="container">
+            <h2>Video Highlights</h2>
+            <p class="section-intro">Watch videos from our matches, events, and club activities.</p>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/video-1.jpg" alt="Club Championship Final Highlights">
+                        <div class="play-button"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Club Championship Final 2022</h3>
+                        <p>Highlights from the exciting final match of last year's club championship.</p>
+                        <span class="video-duration">5:32</span>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/video-2.jpg" alt="Opening Day Ceremony">
+                        <div class="play-button"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Opening Day Ceremony 2023</h3>
+                        <p>The full ceremony from this year's season opening day.</p>
+                        <span class="video-duration">8:47</span>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/video-3.jpg" alt="Coaching Session">
+                        <div class="play-button"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Bowling Tips from Our Coach</h3>
+                        <p>Our club coach demonstrates techniques for improving your bowling delivery.</p>
+                        <span class="video-duration">12:15</span>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/video-4.jpg" alt="County Championship Match">
+                        <div class="play-button"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <h3>County Championship Match Highlights</h3>
+                        <p>Key moments from our quarter-final match in the county championship.</p>
+                        <span class="video-duration">7:23</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="submit-photos">
+        <div class="container">
+            <div class="submit-box">
+                <div class="submit-content">
+                    <h3>Share Your Photos</h3>
+                    <p>Have photos or videos from club events? We'd love to add them to our gallery! Send your high-quality images to photos@polmaisebowlingclub.com or use the form below.</p>
+                    <a href="#" class="btn primary-btn">Submit Photos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polmaise Bowling Club</h3>
+                    <p>Address: Main Street,</p>
+                    <p>Fallin, Stirling, FK7 7HT</p>
+                    <p>Phone: 01786 811333</p>
+                    <p>Email: polmaisebc@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="fixtures.html">Fixtures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Gallery page specific script
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab navigation for gallery categories
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            // Set up lightbox options
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'albumLabel': "Photo %1 of %2"
+            });
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons and content
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding content
+                    this.classList.add('active');
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                    
+                    // Special handling for category filtering
+                    if (tabId !== 'all' && tabId !== 'videos') {
+                        // Clone relevant album cards to the category tab
+                        const categoryTab = document.getElementById(tabId);
+                        categoryTab.innerHTML = '';
+                        
+                        const allAlbums = document.querySelectorAll('#all .album-card[data-category="' + tabId + '"]');
+                        allAlbums.forEach(album => {
+                            categoryTab.appendChild(album.cloneNode(true));
+                        });
+                    }
+                });
+            });
+            
+            // Video thumbnail click handler
+            const videoThumbnails = document.querySelectorAll('.video-thumbnail');
+            
+            videoThumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                    // In a real implementation, this would open a video player or YouTube embed
+                    alert('Video player would open here with the selected video');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,1417 @@
+/* Color Variables */
+:root {
+    /* Primary Colors */
+    --club-blue: #1E3A8A;     /* Main blue color (replacing forest green) */
+    --white: #FFFFFF;         /* Keeping white as is */
+    
+    /* Secondary Colors */
+    --light-blue: #4B71BF;    /* Lighter blue for accents (replacing gold) */
+    --dark-blue: #0F2557;     /* Darker blue for depth */
+    --dark-gray: #333333;     /* Keeping dark gray for text */
+    
+    /* Accent Colors */
+    --navy: #091534;          /* Very dark blue (replacing burgundy) */
+    --light-gray: #E5E7EB;    /* Lighter gray for backgrounds */
+    
+    /* Utility Colors */
+    --error-red: #ff3860;     /* Keeping error red the same */
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark-gray);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1rem;
+    color: var(--club-blue);
+}
+
+a {
+    text-decoration: none;
+    color: var(--club-blue);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--light-blue);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.section-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background-color: var(--club-blue);
+    color: var(--white);
+    border: 2px solid var(--club-blue);
+}
+
+.secondary-btn {
+    background-color: var(--white);
+    color: var(--club-blue);
+    border: 2px solid var(--club-blue);
+}
+
+.small-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+
+.primary-btn:hover {
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+    color: var(--white);
+}
+
+.secondary-btn:hover {
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo h1 {
+    color: var(--club-blue);
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--dark-gray);
+    font-weight: 600;
+    padding: 5px 0;
+    position: relative;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: var(--club-blue);
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--light-blue);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a.active:after,
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: var(--club-blue);
+    z-index: 101;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--club-blue);
+    background-color: white;
+    align-items: center;
+    gap: 8px;
+}
+
+.mobile-menu:hover {
+    background-color: var(--light-blue);
+    color: white;
+}
+
+.mobile-menu i {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.menu-text {
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Body class when menu is open */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Welcome Section */
+.welcome {
+    background-color: var(--white);
+}
+
+.welcome h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.welcome-text p {
+    margin-bottom: 20px;
+}
+
+.welcome-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Quick Links Section */
+.quick-links {
+    background-color: var(--light-gray);
+}
+
+.quick-links .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.link-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.link-card:hover {
+    transform: translateY(-10px);
+}
+
+.link-card i {
+    font-size: 2.5rem;
+    color: var(--light-blue);
+    margin-bottom: 15px;
+}
+
+.link-card h3 {
+    margin-bottom: 15px;
+}
+
+.link-card p {
+    margin-bottom: 20px;
+}
+
+/* Page Banner */
+.page-banner {
+    background: linear-gradient(rgba(15, 37, 87, 0.8), rgba(15, 37, 87, 0.8)), url('images/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.banner-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+}
+
+/* About Page Styles */
+.club-history {
+    background-color: var(--white);
+}
+
+.history-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.history-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.history-text p {
+    margin-bottom: 20px;
+}
+
+.history-images {
+    flex: 1;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.history-images img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.history-images img:hover {
+    transform: scale(1.03);
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--light-gray);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 1;
+}
+
+.timeline li {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.timeline li:nth-child(odd) {
+    left: 0;
+}
+
+.timeline li:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-date {
+    position: absolute;
+    width: 120px;
+    background-color: var(--light-blue);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.timeline li:nth-child(odd) .timeline-date {
+    right: -60px;
+}
+
+.timeline li:nth-child(even) .timeline-date {
+    left: -60px;
+}
+
+.mission-vision {
+    background-color: var(--light-gray);
+}
+
+.mission-vision-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.mission-box, .vision-box {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mission-box h2, .vision-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.committee-members {
+    background-color: var(--white);
+}
+
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.committee-member {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.committee-member:hover {
+    transform: translateY(-10px);
+}
+
+.member-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.committee-member:hover .member-image img {
+    transform: scale(1.05);
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-info h3 {
+    margin-bottom: 5px;
+}
+
+.member-info h4 {
+    color: var(--light-blue);
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+/* Membership Page Styles */
+.membership-benefits {
+    background-color: var(--white);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.benefit-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    color: var(--light-blue);
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    margin-bottom: 15px;
+}
+
+.how-to-join {
+    background-color: var(--light-gray);
+}
+
+.join-steps {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background-color: var(--club-blue);
+    border-radius: 50%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.step-content {
+    padding-bottom: 30px;
+}
+
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--light-gray);
+    top: 50px;
+    bottom: 0;
+    left: 25px;
+}
+
+.download-application {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.download-application p {
+    margin-bottom: 20px;
+}
+
+.membership-fees {
+    background-color: var(--white);
+}
+
+.fees-table-container {
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.fees-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.fees-table th, .fees-table td {
+    padding: 15px;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.fees-table th {
+    background-color: var(--club-blue);
+    color: var(--white);
+}
+
+.fees-table tr:nth-child(even) {
+    background-color: rgba(75, 113, 191, 0.1);
+}
+
+.fees-table tr:hover {
+    background-color: rgba(75, 113, 191, 0.2);
+}
+
+.payment-methods {
+    background-color: var(--light-gray);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.payment-methods h3 {
+    margin-bottom: 15px;
+}
+
+.payment-methods ul {
+    list-style-type: none;
+}
+
+.payment-methods ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.payment-methods ul li i {
+    color: var(--club-blue);
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.membership-faq {
+    background-color: var(--light-gray);
+}
+
+/* Contact Page Styles */
+.contact-info {
+    background-color: var(--white);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.contact-details {
+    padding: 30px;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+}
+
+.contact-details h2 {
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: var(--club-blue);
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+
+.contact-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.social-connect {
+    margin-top: 40px;
+}
+
+.social-connect h3 {
+    margin-bottom: 10px;
+}
+
+.social-connect .social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--club-blue);
+    color: var(--white);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-gray);
+    transform: translateY(-3px);
+}
+
+.contact-form-container {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--club-blue);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.checkbox-group label {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.location-map {
+    background-color: var(--light-gray);
+    padding: 60px 0;
+}
+
+.map-container {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 450px; /* Fixed height for the container */
+    position: relative;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* For full-screen map view */
+.map-fullscreen {
+    padding: 0;
+    margin: 0;
+}
+
+.map-fullscreen .map-container {
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    height: 80vh; /* 80% of viewport height */
+}
+
+.directions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.direction-item {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.direction-item i {
+    font-size: 2rem;
+    color: var(--club-blue);
+    margin-bottom: 15px;
+}
+
+.direction-item h4 {
+    margin-bottom: 10px;
+}
+
+/* Accordion Styles for FAQs */
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    background-color: var(--white);
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: rgba(75, 113, 191, 0.1);
+}
+
+.accordion-header::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-header::after {
+    content: '-';
+}
+
+.accordion-content {
+    background-color: var(--white);
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+    padding: 20px;
+    max-height: 500px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--club-blue);
+    color: var(--white);
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    color: var(--light-blue);
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: var(--white);
+}
+
+.footer-section ul li a:hover {
+    color: var(--light-blue);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.social-links a:hover {
+    color: var(--light-blue);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    header .container {
+        position: relative;
+    }
+    
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 70px 20px 20px;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease-in-out;
+        z-index: 100;
+        overflow-y: auto; /* Make menu scrollable */
+    }
+    
+    nav ul.show {
+        display: flex;
+        left: 0;
+    }
+    
+    nav ul li {
+        margin: 8px 0; /* Reduced margin */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+        display: block;
+        padding: 6px 0; /* Reduced padding */
+        transition: color 0.3s ease;
+    }
+
+    .mobile-menu {
+        display: flex; /* Only display on mobile */
+    }
+
+    .welcome-content {
+        flex-direction: column;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline li {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline li:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline li:nth-child(odd) .timeline-date,
+    .timeline li:nth-child(even) .timeline-date {
+        left: -30px;
+        width: 90px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+    
+    .page-banner {
+        padding: 60px 0;
+    }
+    
+    .banner-content h2 {
+        font-size: 2rem;
+    }
+    
+    .history-content, 
+    .mission-vision-content {
+        flex-direction: column;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .page-banner {
+        padding: 40px 0;
+    }
+    
+    .banner-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .step-number {
+        margin-bottom: 10px;
+    }
+    
+    .step:not(:last-child)::after {
+        display: none;
+    }
+}
+
+/* Form Error Styles */
+.error-message {
+    color: var(--error-red);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+input.error, textarea.error {
+    border-color: var(--error-red);
+}
+
+/* Ensure accordion functionality works correctly */
+.accordion-item.active .accordion-header {
+    background-color: rgba(75, 113, 191, 0.2);
+}
+
+.accordion-item.active .accordion-content {
+    padding: 20px;
+    max-height: 500px;
+}
+
+/* Signup Page Styles */
+.signup-section {
+    background-color: var(--white);
+}
+
+.signup-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.signup-info, .signup-form-container {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.signup-info {
+    background-color: var(--light-gray);
+}
+
+.signup-form-container {
+    background-color: var(--white);
+}
+
+.benefits-list {
+    margin-top: 20px;
+}
+
+.benefits-list li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.benefits-list li i {
+    color: var(--club-blue);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.benefits-list li h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="tel"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.signup-form input.error {
+    border-color: var(--error-red);
+}
+
+.password-hint {
+    font-size: 0.85rem;
+    color: var(--dark-gray);
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.checkbox-group label {
+    font-weight: 400;
+}
+
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-link a {
+    color: var(--club-blue);
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.account-help {
+    background-color: var(--light-gray);
+}
+
+.help-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.help-option {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.help-option i {
+    font-size: 2.5rem;
+    color: var(--club-blue);
+    margin-bottom: 15px;
+}
+
+.help-option h3 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .signup-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .signup-info, .signup-form-container {
+        max-width: 100%;
+    }
+}
+
+/* Fixtures Page Styles */
+.calendar-table .has-event {
+    background-color: rgba(75, 113, 191, 0.2);
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.calendar-table .has-event:hover {
+    background-color: rgba(75, 113, 191, 0.4);
+}
+
+.result-outcome.win {
+    background-color: var(--club-blue);
+    color: var(--white);
+}
+
+.highlight-row {
+    background-color: rgba(75, 113, 191, 0.1);
+    font-weight: bold;
+}
+
+/* News & Events Page Styles */
+.news-meta .news-category {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.event-date {
+    background-color: var(--club-blue);
+    color: var(--white);
+}
+
+/* Gallery Page Styles */
+.photo-count {
+    background-color: var(--club-blue);
+    color: var(--white);
+}
+
+.play-button {
+    background-color: rgba(30, 58, 138, 0.7);
+    color: var(--white);
+}
+
+/* Sponsors Page Styles */
+.package-header {
+    background-color: var(--club-blue);
+    color: var(--white);
+}
+
+/* Honours Page Styles */
+.champion-info {
+    background-color: var(--club-blue);
+    color: var(--white);
+}
+
+.year-tab.active {
+    background-color: var(--club-blue);
+    color: var(--white);
+}
+
+.fame-years {
+    color: var(--light-blue);
+}
+
+/* Testimonials Section (if used) */
+.testimonial-author {
+    color: var(--light-blue);
+}
+
+/* Download/Submit Boxes */
+.download-box, .submit-box, .booking-box {
+    background-color: var(--club-blue);
+    color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Sponsors Page Business Card Styles */
+.business-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.business-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+.business-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.card-header {
+    background: #3a4f7a;
+    color: white;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: white;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.company-description {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.contact-info {
+    color: #444;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.contact-info i {
+    width: 20px;
+    margin-right: 10px;
+    color: #3a4f7a;
+} 

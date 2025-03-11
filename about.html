@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Polmaise Bowling Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow: auto;
+            text-align: center;
+        }
+        
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 50px;
+        }
+        
+        .lightbox-caption {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .history-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Small gap between images for visual separation */
+            justify-content: center;
+        }
+        
+        .history-images img {
+            cursor: pointer;
+            transition: opacity 0.3s;
+            max-width: calc(50% - 5px); /* 2 images per row with gap consideration */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure image isn't stretched */
+            margin: 0; /* Remove default margins */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        }
+        
+        /* Adjust container to better handle landscape images */
+        .history-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        /* Add more specific handling for landscape images */
+        @media (min-width: 769px) {
+            .history-images {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .history-images img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        
+        .history-images img:hover {
+            opacity: 0.8;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .lightbox-content {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+            
+            .history-images img {
+                max-width: 100%; /* Full width on mobile */
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="fixtures.html">Fixtures</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="honours.html">Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h2>About Us</h2>
+            <p>Learn about our history, mission, and the people who make our club special</p>
+        </div>
+    </section>
+
+    <section class="club-history">
+        <div class="container">
+            <h2>Club History</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <p>Polmaise Bowling Club was founded in 1911, deeply rooted in the rich mining heritage of Fallin. As the village grew alongside the coal industry, the club was established with a £286 donation from the Gothenburg Public House, a community hub that played a vital role in funding local initiatives. Early members—many of them miners—chose to build a bowling club over a swimming pond, a decision that shaped generations of bowlers.</p>
+                   
+                    <p>Since its inception, Polmaise has been a cornerstone of the community, offering a place for camaraderie, competition, and sporting excellence. The club played its first official match on July 12, 1911, against Spittalmyre, and has since seen countless games, tournaments, and memorable moments on its green.</p>
+                    
+                    <p>Over the years, Polmaise has produced champions at local, national, and even British levels, with players earning county, Scottish, and international recognition. The club has also been home to legendary figures whose achievements and personalities have left an enduring legacy. The club's history is rich with talent and tradition.</p>
+                    
+                    <p>The social spirit of Polmaise is as strong as its sporting one. From bus trips filled with song to friendly rivalries, the club has always been a place of shared stories and laughter. Even during the challenges of COVID-19, Polmaise adapted, using the time to renovate its clubhouse and ensure its future for the next generation.</p>
+                    
+                    <p>In recent years, the club has continued to thrive, winning multiple district and national titles, including victories in the Stirling County Top Five and Top Ten competitions.</p>
+                    
+                    <p>Today, Polmaise Bowling Club remains committed to its heritage while embracing modern approaches to the sport and club management. Whether through competitive success, community engagement, or the friendships forged over decades, Polmaise continues to be a beacon of sporting excellence and camaraderie in Fallin.</p>
+                </div>
+                <div class="history-images">
+                    <img src="images/history-1.jpg" alt="Historic photo of Polmaise Bowling Club" class="lightbox-image">
+                    <img src="images/history-2.jpg" alt="Early members of Polmaise Bowling Club" class="lightbox-image">
+                    <img src="images/history-3.jpg" alt="Polmaise Bowling Club through the decades" class="lightbox-image">
+                    <img src="images/history-4.jpg" alt="Historical tournament at Polmaise Bowling Club" class="lightbox-image">
+                </div>
+            </div>
+            <div class="milestones">
+                <h3>Key Milestones</h3>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-date">1911</div>
+                        <div class="timeline-content">
+                            <h4>Club Founded</h4>
+                            <p>Polmaise Bowling Club was established with a £286 donation from the Gothenburg Public House, providing a recreational outlet for local miners.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">1911</div>
+                        <div class="timeline-content">
+                            <h4>First Competitive Match</h4>
+                            <p>The club played its first recorded match on July 12, 1911, against Spittalmyre.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">1920s-1930s</div>
+                        <div class="timeline-content">
+                            <h4>Early Champions</h4>
+                            <p>John Gwynne Snr. emerged as a dominant force, winning nine club championships, with his first title in 1913.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">1942</div>
+                        <div class="timeline-content">
+                            <h4>Father vs. Son Championship Final</h4>
+                            <p>John Gwynne Snr. faced his son in the club championship final, winning his last title.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">1988</div>
+                        <div class="timeline-content">
+                            <h4>National Top Ten Champions</h4>
+                            <p>Polmaise won the National Inter-County Top Ten competition, marking one of the club's greatest achievements.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">2003</div>
+                        <div class="timeline-content">
+                            <h4>British Isles Triples Champions</h4>
+                            <p>Club members John Johnstone, Derek Logie, and Jason Williams won the prestigious British Isles Triples title.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">2010</div>
+                        <div class="timeline-content">
+                            <h4>Major Clubhouse Renovation</h4>
+                            <p>The clubhouse underwent significant renovations, enhancing facilities for members and visitors.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">2011</div>
+                        <div class="timeline-content">
+                            <h4>Centenary Celebrations</h4>
+                            <p>The club celebrated 100 years of bowling excellence.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">2018</div>
+                        <div class="timeline-content">
+                            <h4>First Stirling County Top Five Champions</h4>
+                            <p>Polmaise became the first-ever winners of the Stirling County Top Five competition.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">2019</div>
+                        <div class="timeline-content">
+                            <h4>Scottish Top Five Participation</h4>
+                            <p>The club entered the Matt Purdie Trophy, representing District Nine in the national competition.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">2020</div>
+                        <div class="timeline-content">
+                            <h4>COVID-19 Challenges and Clubhouse Refurbishment</h4>
+                            <p>The club adapted to restrictions, implemented safety measures, and invested £25,000 into modernizing the clubhouse.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <h4>Historic 12-Trophy Season</h4>
+                            <p>Polmaise won an impressive 12 major titles, including the County Triples, Fours, and Senior Fours, during a standout season.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content">
+                            <h4>Honoring a Legacy</h4>
+                            <p>The club paid tribute to past president Peter Smith, who was known for his unwavering support and passion for the club.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h4>First Ever Sponsors' Day</h4>
+                            <p>The club introduced a Sponsors' Day, inviting business supporters for a day of appreciation and celebration.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mission-vision-content">
+                <div class="mission-box">
+                    <h2>Our Mission</h2>
+                    <p>At Polmaise Bowling Club, we are dedicated to preserving the legacy of our founding members while fostering a welcoming and inclusive environment for all. Established in 1911 by the miners of Fallin, our club has always been more than just a place to play bowls—it is a community built on camaraderie, sportsmanship, and tradition.</p>
+                    <p>We strive to uphold the values of integrity, respect, and excellence, ensuring that every member, from aspiring juniors to seasoned champions, feels a sense of belonging. Through competition, friendship, and continuous development, we honor our past while shaping the future of the sport.</p>
+                </div>
+                <div class="vision-box">
+                    <h2>Our Vision</h2>
+                    <p>Polmaise Bowling Club envisions a thriving, forward-thinking community where the love of bowling continues to unite generations. We aim to sustain and grow our club by embracing modern approaches while respecting the traditions that have shaped us for over a century.</p>
+                    <p>Our vision is to remain a pillar of excellence in Scottish bowls, producing champions at all levels and fostering an environment where talent flourishes. As we look ahead, we are committed to enhancing our facilities, engaging with our community, and ensuring that Polmaise Bowling Club stands strong for another hundred years and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="committee-members">
+        <div class="container">
+            <h2>Meet Our Committee</h2>
+            <p class="section-intro">Our dedicated committee members work tirelessly to ensure the smooth running and continued success of Polmaise Bowling Club.</p>
+            
+            <div class="committee-grid">
+                <div class="committee-member">
+                    <div class="member-image">
+                        <img src="images/alex brown.png" alt="President">
+                    </div>
+                    <div class="member-info">
+                        <h3>Alex Brown</h3>
+                        <h4>President</h4>
+                        <p>Brief description about the president, their bowling experience, and their vision for the club.</p>
+                    </div>
+                </div>
+                
+                <div class="committee-member">
+                    <div class="member-image">
+                        <img src="images/David Stewart.png" alt="Vice President">
+                    </div>
+                    <div class="member-info">
+                        <h3>David Stewart</h3>
+                        <h4>Vice President</h4>
+                        <p>Brief description about the vice president and their role in the club.</p>
+                    </div>
+                </div>
+                
+                <div class="committee-member">
+                    <div class="member-image">
+                        <img src="images/Peter Black.png" alt="Secretary">
+                    </div>
+                    <div class="member-info">
+                        <h3>Peter Black</h3>
+                        <h4>Secretary</h4>
+                        <p>Brief description about the secretary and their contributions to the club.</p>
+                    </div>
+                </div>
+                
+                <div class="committee-member">
+                    <div class="member-image">
+                        <img src="images/Robert Donaldson.png" alt="Treasurer">
+                    </div>
+                    <div class="member-info">
+                        <h3>Robert Donaldson</h3>
+                        <h4>Treasurer</h4>
+                        <p>Brief description about the treasurer and their role in managing club finances.</p>
+                    </div>
+                </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polmaise Bowling Club</h3>
+                    <p>Address: Main Street,</p>
+                    <p>Fallin, Stirling, FK7 7HT</p>
+                    <p>Phone: 01786 811333</p>
+                    <p>Email: polmaisebc@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="fixtures.html">Fixtures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Polmaise-Bowling-Club-100008363985804/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="imageLightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Lightbox functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const lightbox = document.getElementById('imageLightbox');
+            const lightboxImg = document.getElementById('lightboxImage');
+            const lightboxCaption = document.getElementById('lightboxCaption');
+            const lightboxClose = document.querySelector('.lightbox-close');
+            const images = document.querySelectorAll('.lightbox-image');
+            
+            // Open lightbox when an image is clicked
+            images.forEach(image => {
+                image.addEventListener('click', function() {
+                    lightbox.style.display = 'block';
+                    lightboxImg.src = this.src;
+                    lightboxCaption.innerHTML = this.alt;
+                });
+            });
+            
+            // Close lightbox when X is clicked
+            lightboxClose.addEventListener('click', function() {
+                lightbox.style.display = 'none';
+            });
+            
+            // Close lightbox when clicking outside the image
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                }
+            });
+            
+            // Close lightbox with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                    lightbox.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

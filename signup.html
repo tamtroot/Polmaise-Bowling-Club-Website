@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - Polmaise Bowling Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow: auto;
+            text-align: center;
+        }
+        
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 50px;
+        }
+        
+        .lightbox-caption {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .history-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Small gap between images for visual separation */
+            justify-content: center;
+        }
+        
+        .history-images img {
+            cursor: pointer;
+            transition: opacity 0.3s;
+            max-width: calc(50% - 5px); /* 2 images per row with gap consideration */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure image isn't stretched */
+            margin: 0; /* Remove default margins */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        }
+        
+        /* Adjust container to better handle landscape images */
+        .history-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        /* Add more specific handling for landscape images */
+        @media (min-width: 769px) {
+            .history-images {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .history-images img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        
+        .history-images img:hover {
+            opacity: 0.8;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .lightbox-content {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+            
+            .history-images img {
+                max-width: 100%; /* Full width on mobile */
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="fixtures.html">Fixtures</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="honours.html">Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h2>Create an Account</h2>
+            <p>Join our online community to manage your membership and stay updated</p>
+        </div>
+    </section>
+
+    <section class="signup-section">
+        <div class="container">
+            <div class="signup-container">
+                <div class="signup-info">
+                    <h2>Benefits of Creating an Account</h2>
+                    <ul class="benefits-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Convenient Membership Management</h3>
+                                <p>Renew your membership, update your details, and make payments online.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Event Registration</h3>
+                                <p>Sign up for competitions and events with just a few clicks.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Member Communications</h3>
+                                <p>Receive personalized notifications and club announcements.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Access to Member Resources</h3>
+                                <p>Download club documents, competition rules, and committee minutes.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="signup-form-container">
+                    <h2>Create Your Account</h2>
+                    <form id="signupForm" class="signup-form">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password *</label>
+                            <input type="password" id="password" name="password" required>
+                            <p class="password-hint">Password must be at least 8 characters long and include a number, uppercase letter, and special character.</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password *</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="membershipStatus" name="membershipStatus">
+                            <label for="membershipStatus">I am already a member of Polmaise Bowling Club</label>
+                        </div>
+                        
+                        <div id="memberNumberField" class="form-group" style="display: none;">
+                            <label for="memberNumber">Membership Number</label>
+                            <input type="text" id="memberNumber" name="memberNumber">
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="termsConditions" name="termsConditions" required>
+                            <label for="termsConditions">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">I would like to receive newsletters and updates from Polmaise Bowling Club</label>
+                        </div>
+                        
+                        <button type="submit" class="btn primary-btn">Create Account</button>
+                    </form>
+                    <div class="login-link">
+                        <p>Already have an account? <a href="login.html">Log In</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="account-help">
+        <div class="container">
+            <h2>Need Help?</h2>
+            <p class="section-intro">If you're having trouble creating an account or have questions about the process, we're here to assist you.</p>
+            
+            <div class="help-options">
+                <div class="help-option">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our membership secretary at [Phone Number].</p>
+                </div>
+                
+                <div class="help-option">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Support</h3>
+                    <p>Send an email to membership@polmaisebowlingclub.com for assistance.</p>
+                </div>
+                
+                <div class="help-option">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>FAQ</h3>
+                    <p>Check our <a href="#">Frequently Asked Questions</a> for common account issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polmaise Bowling Club</h3>
+                    <p>Address: Main Street,</p>
+                    <p>Fallin, Stirling, FK7 7HT</p>
+                    <p>Phone: 01786 811333</p>
+                    <p>Email: polmaisebc@gmail.com </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="fixtures.html">Fixtures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Specific script for signup page
+        document.addEventListener('DOMContentLoaded', function() {
+            const membershipStatusCheckbox = document.getElementById('membershipStatus');
+            const memberNumberField = document.getElementById('memberNumberField');
+            
+            if (membershipStatusCheckbox && memberNumberField) {
+                membershipStatusCheckbox.addEventListener('change', function() {
+                    memberNumberField.style.display = this.checked ? 'block' : 'none';
+                });
+            }
+            
+            const signupForm = document.getElementById('signupForm');
+            
+            if (signupForm) {
+                signupForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    let valid = true;
+                    const firstName = document.getElementById('firstName');
+                    const lastName = document.getElementById('lastName');
+                    const email = document.getElementById('email');
+                    const password = document.getElementById('password');
+                    const confirmPassword = document.getElementById('confirmPassword');
+                    const termsConditions = document.getElementById('termsConditions');
+                    
+                    // Simple validation
+                    if (!firstName.value.trim()) {
+                        highlightInvalid(firstName, 'First name is required');
+                        valid = false;
+                    } else {
+                        removeHighlight(firstName);
+                    }
+                    
+                    if (!lastName.value.trim()) {
+                        highlightInvalid(lastName, 'Last name is required');
+                        valid = false;
+                    } else {
+                        removeHighlight(lastName);
+                    }
+                    
+                    if (!email.value.trim() || !isValidEmail(email.value)) {
+                        highlightInvalid(email, 'Please enter a valid email address');
+                        valid = false;
+                    } else {
+                        removeHighlight(email);
+                    }
+                    
+                    if (!password.value) {
+                        highlightInvalid(password, 'Password is required');
+                        valid = false;
+                    } else if (!isValidPassword(password.value)) {
+                        highlightInvalid(password, 'Password must be at least 8 characters with a number, uppercase letter, and special character');
+                        valid = false;
+                    } else {
+                        removeHighlight(password);
+                    }
+                    
+                    if (!confirmPassword.value) {
+                        highlightInvalid(confirmPassword, 'Please confirm your password');
+                        valid = false;
+                    } else if (password.value !== confirmPassword.value) {
+                        highlightInvalid(confirmPassword, 'Passwords do not match');
+                        valid = false;
+                    } else {
+                        removeHighlight(confirmPassword);
+                    }
+                    
+                    if (!termsConditions.checked) {
+                        highlightInvalid(termsConditions, 'You must agree to the terms and conditions');
+                        valid = false;
+                    } else {
+                        removeHighlight(termsConditions);
+                    }
+                    
+                    if (valid) {
+                        // In a real implementation, you would send the form data to a server
+                        alert('Account created successfully! You can now log in.');
+                        signupForm.reset();
+                        window.location.href = 'login.html';
+                    }
+                });
+            }
+            
+            function highlightInvalid(element, message) {
+                element.classList.add('error');
+                
+                // Create error message if it doesn't exist
+                let errorMessage = element.parentNode.querySelector('.error-message');
+                if (!errorMessage) {
+                    errorMessage = document.createElement('p');
+                    errorMessage.className = 'error-message';
+                    element.parentNode.appendChild(errorMessage);
+                }
+                
+                errorMessage.textContent = message;
+            }
+            
+            function removeHighlight(element) {
+                element.classList.remove('error');
+                
+                const errorMessage = element.parentNode.querySelector('.error-message');
+                if (errorMessage) {
+                    errorMessage.remove();
+                }
+            }
+            
+            function isValidEmail(email) {
+                const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+            
+            function isValidPassword(password) {
+                // At least 8 characters, 1 uppercase, 1 number, 1 special character
+                const re = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
+                return re.test(password);
+            }
+        });
+    </script>
+</body>
+</html> 

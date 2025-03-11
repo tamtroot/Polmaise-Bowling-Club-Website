@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixtures - Polmaise Bowling Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow: auto;
+            text-align: center;
+        }
+        
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 50px;
+        }
+        
+        .lightbox-caption {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .history-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Small gap between images for visual separation */
+            justify-content: center;
+        }
+        
+        .history-images img {
+            cursor: pointer;
+            transition: opacity 0.3s;
+            max-width: calc(50% - 5px); /* 2 images per row with gap consideration */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure image isn't stretched */
+            margin: 0; /* Remove default margins */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        }
+        
+        /* Adjust container to better handle landscape images */
+        .history-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        /* Add more specific handling for landscape images */
+        @media (min-width: 769px) {
+            .history-images {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .history-images img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        
+        .history-images img:hover {
+            opacity: 0.8;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .lightbox-content {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+            
+            .history-images img {
+                max-width: 100%; /* Full width on mobile */
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="fixtures.html" class="active">Fixtures</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="honours.html">Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h2>Fixtures</h2>
+            <p>Stay up to date with our match schedule</p>
+        </div>
+    </section>
+
+    <section class="fixtures-section">
+        <div class="container">
+            <h2>2025 Fixtures</h2>
+            <p class="section-intro">Below is our schedule of fixtures for the 2025 season. Please note that some dates may be subject to change.</p>
+            
+            <div class="table-responsive">
+                <table class="fixtures-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Club/Competition</th>
+                            <th>Day</th>
+                            <th>Venue</th>
+                            <th>Status</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>05-Apr</td>
+                            <td>Opening of Green</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12-Apr</td>
+                            <td>Menstrie</td>
+                            <td>Saturday</td>
+                            <td>Menstrie</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>19-Apr</td>
+                            <td>Bridge of Allan</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>26-Apr</td>
+                            <td>Borestone</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>03-May</td>
+                            <td>Bridgeness B.C.</td>
+                            <td>Saturday</td>
+                            <td>Bridgeness B.C.</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>05-May</td>
+                            <td>Central Prelims Start</td>
+                            <td>Monday</td>
+                            <td>Various</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10-May</td>
+                            <td>Causewayhead</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16-May</td>
+                            <td>District Nine League Starts</td>
+                            <td>Friday</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>17-May</td>
+                            <td>Free</td>
+                            <td>Saturday</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>18-May</td>
+                            <td>Masonic</td>
+                            <td>Sunday</td>
+                            <td>Polmaise</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>24-May</td>
+                            <td>Patons</td>
+                            <td>Saturday</td>
+                            <td>Patons</td>
+                            <td>Confirmed</td>
+                            <td>H to Ayr</td>
+                        </tr>
+                        <tr>
+                            <td>25-May</td>
+                            <td>Central Finals</td>
+                            <td>Monday</td>
+                            <td>T.B.C.</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>31-May</td>
+                            <td>Free</td>
+                            <td>Saturday</td>
+                            <td></td>
+                            <td></td>
+                            <td>A to C.K.</td>
+                        </tr>
+                        <tr>
+                            <td>07-Jun</td>
+                            <td>Greg Ryan Pairs</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14-Jun</td>
+                            <td>Alva B.C.</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td>Confirmed</td>
+                            <td>No Game</td>
+                        </tr>
+                        <tr>
+                            <td>21-Jun</td>
+                            <td>Murray Cup</td>
+                            <td>Saturday</td>
+                            <td>Cambusbarron</td>
+                            <td>Confirmed</td>
+                            <td>H. Dum</td>
+                        </tr>
+                        <tr>
+                            <td>23-Jun</td>
+                            <td>Mat Purdie Sen. Team Trial</td>
+                            <td>Monday</td>
+                            <td>Burnhead B.C.</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>28-Jun</td>
+                            <td>Pullar Trophy</td>
+                            <td>Saturday</td>
+                            <td>Various</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>03-Jul</td>
+                            <td>Doune Castle Top 15</td>
+                            <td>Thursday</td>
+                            <td>Doune</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>05-Jul</td>
+                            <td>Bridgeness B.C.</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td>Confirmed</td>
+                            <td>A. Lan</td>
+                        </tr>
+                        <tr>
+                            <td>08-Jul</td>
+                            <td>Central St. Dunstan Trophy</td>
+                            <td>Tuesday</td>
+                            <td>Various</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13-Jul</td>
+                            <td>Free/County Finals</td>
+                            <td>Sunday</td>
+                            <td>Bridge of Allan</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15-Jul</td>
+                            <td>County Duncan Trophy</td>
+                            <td>Tuesday</td>
+                            <td>Various</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>19-Jul</td>
+                            <td>Free/Pro-Am W/E</td>
+                            <td>Saturday</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>22-Jul</td>
+                            <td>Central Reid Trophy</td>
+                            <td>Tuesday</td>
+                            <td>Various</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>26-Jul-02-Aug</td>
+                            <td>Scottish Finals</td>
+                            <td></td>
+                            <td>Ayr</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>02-Aug</td>
+                            <td>Riverside</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>04-Aug</td>
+                            <td>Matt Purdie County v East Lothian (5 rinks 12:00noon start)</td>
+                            <td>Monday</td>
+                            <td>Polmaise</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>09-Aug</td>
+                            <td>Two Peter's Triples</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10-Aug</td>
+                            <td>City of Stirling Top Fifteen Final</td>
+                            <td>Sunday</td>
+                            <td>Spittalmyre</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12-Aug</td>
+                            <td>MacKintosh Trophy?</td>
+                            <td>Tuesday</td>
+                            <td>Various</td>
+                            <td>TBC</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12-Aug</td>
+                            <td>Central Duncan Ogilvie</td>
+                            <td>Tuesday</td>
+                            <td>Various</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16-Aug</td>
+                            <td>Charlie McNeil Memorial</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td>TBC</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>18-Aug</td>
+                            <td>Kinnard</td>
+                            <td>Monday</td>
+                            <td>T.B.C.</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>23-Aug</td>
+                            <td>Menstrie</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>30-Aug</td>
+                            <td>Championship Finals</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>06-Sep</td>
+                            <td>John "Chucks" Johnstone</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13-Sep</td>
+                            <td>Sponsors Day</td>
+                            <td>Saturday</td>
+                            <td>Polmaise</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14-Sep</td>
+                            <td>Steins Cup</td>
+                            <td>Sunday</td>
+                            <td>Polmaise</td>
+                            <td>Confirmed</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="hamilton-title">AHT Hamilton Trophy Games Dates - 2025</h3>
+            <div class="table-responsive">
+                <table class="fixtures-table hamilton-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Fixture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>24-May</td>
+                            <td>Home to Ayrshire North</td>
+                        </tr>
+                        <tr>
+                            <td>31-May</td>
+                            <td>Away to Clacks & Kinross</td>
+                        </tr>
+                        <tr>
+                            <td>14-Jun</td>
+                            <td>No game</td>
+                        </tr>
+                        <tr>
+                            <td>21-Jun</td>
+                            <td>Home to Dumbarton</td>
+                        </tr>
+                        <tr>
+                            <td>05-Jul</td>
+                            <td>Away to Lanarkshire West</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-fixture-list">
+        <div class="container">
+            <div class="download-box">
+                <div class="download-content">
+                    <h3>Download Full Fixture List</h3>
+                    <p>Get a printable PDF of all fixtures for the 2025 season to keep track of our matches.</p>
+                    <a href="downloads/fixtures-2025.pdf" class="btn primary-btn"><i class="fas fa-download"></i> Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Fixtures Table Styles */
+        .fixtures-section {
+            padding: 2rem 0;
+        }
+        
+        .table-responsive {
+            overflow-x: auto;
+            margin-bottom: 2rem;
+        }
+        
+        .fixtures-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .fixtures-table th {
+            background-color: var(--club-blue);
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+        }
+        
+        .fixtures-table td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .fixtures-table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .fixtures-table tbody tr:hover {
+            background-color: #e8f4ff;
+        }
+        
+        .hamilton-title {
+            margin-top: 2.5rem;
+            color: var(--club-blue);
+            border-left: 4px solid var(--club-blue);
+            padding-left: 1rem;
+        }
+        
+        .hamilton-table th, 
+        .hamilton-table td {
+            text-align: left;
+        }
+        
+        /* Download section styles */
+        .download-fixture-list {
+            padding: 2rem 0 3rem;
+            background-color: #f8f9fa;
+        }
+        
+        .download-box {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .download-content h3 {
+            color: var(--club-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .download-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .fixtures-table th, 
+            .fixtures-table td {
+                padding: 8px 10px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Polmaise Bowling Club</h3>
+                        <p>Address: Main Street,</p>
+                        <p>Fallin, Stirling, FK7 7HT</p>
+                        <p>Phone: 01786 811333</p>
+                        <p>Email: polmaisebc@gmail.com </p>
+                    </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="fixtures.html">Fixtures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Polmaise-Bowling-Club-100008363985804/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

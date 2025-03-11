@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Polmaise Bowling Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow: auto;
+            text-align: center;
+        }
+        
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 50px;
+        }
+        
+        .lightbox-caption {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .history-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Small gap between images for visual separation */
+            justify-content: center;
+        }
+        
+        .history-images img {
+            cursor: pointer;
+            transition: opacity 0.3s;
+            max-width: calc(50% - 5px); /* 2 images per row with gap consideration */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure image isn't stretched */
+            margin: 0; /* Remove default margins */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        }
+        
+        /* Adjust container to better handle landscape images */
+        .history-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        /* Add more specific handling for landscape images */
+        @media (min-width: 769px) {
+            .history-images {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .history-images img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        
+        .history-images img:hover {
+            opacity: 0.8;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .lightbox-content {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+            
+            .history-images img {
+                max-width: 100%; /* Full width on mobile */
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="fixtures.html">Fixtures</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="honours.html">Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us - we'd love to hear from you</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <h2>Get In Touch</h2>
+                    <p>We welcome inquiries from current members, prospective members, and visitors. Use the contact information below or fill out the form to send us a message.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Address</h3>
+                            <p>Main Street<br>Fallin<br>Stirling<br>FK7 7HT</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>Clubhouse: 01786 811333<br>Secretary: [Phone Number]</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>General Inquiries: polmaisebc@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Opening Hours</h3>
+                            <p>Bowling Green: Daily 10:00 AM - Dusk (Weather Permitting)<br>Clubhouse: Monday to Sunday 10:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-connect">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/p/Polmaise-Bowling-Club-100008363985804/"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I consent to having this website store my submitted information so they can respond to my inquiry.</label>
+                        </div>
+                        
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-map map-fullscreen">
+        <div class="container">
+            <h2>Find Us</h2>
+            <p class="section-intro">We're conveniently located in Fallin. Use the map below to find directions to our club.</p>
+            
+            <div class="map-container">
+                <!-- Updated Google Maps embed for Polmaise Bowling Club -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2225.193398518217!2d-3.868174123266615!3d56.10187296505084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48887d1c2eeef82d%3A0xf6fe2c520f188d7c!2sPolmaise%20Bowling%20Club!5e0!3m2!1sen!2suk!4v1741688691592!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="directions">
+                <h3>Getting Here</h3>
+                <div class="directions-grid">
+                    <div class="direction-item">
+                        <i class="fas fa-car"></i>
+                        <h4>By Car</h4>
+                        <p>Polmaise Bowling Club is located at Main Street, Fallin, Stirling, FK7 7HT.</p>
+                        <div class="directions-detail">
+                        </br>
+                            <h5>From Stirling City Centre:</h5>
+                            <ul>
+                                <li>Take the A905 (Shore Road) east towards Fallin (approx. 3 miles).</li>
+                                <li>Continue along Main Street; the club is on your left, next to The Goth.</li>
+                            </ul>
+                            </br>
+                            <h5>From M9 Motorway:</h5>
+                            <ul>
+                                <li>Exit at Junction 9 towards Stirling Services.</li>
+                                <li>Follow signs for A91 > A905 (Shore Road) towards Fallin.</li>
+                                <li>Stay on Main Street, and the club will be on your left.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="direction-item">
+                        <i class="fas fa-bus"></i>
+                        <h4>Public Transport</h4>
+                        <div class="directions-detail">
+                            <h5>From Stirling City Centre:</h5>
+                            <ul>
+                                <li><strong>Bus:</strong> Take the C69 or C68 bus service (First Scotland East) from Stirling Bus Station towards Fallin</li>
+                                <li><strong>Frequency:</strong> Approximately every 20 minutes during peak times</li>
+                                <li><strong>Journey Time:</strong> 10-15 minutes</li>
+                                <li><strong>Stop:</strong> Alight at Fallin, Main Street stop</li>
+                                <li><strong>Walking:</strong> Walk east along Main Street for approximately 150 meters; the club is next to The Goth public house</li>
+                            </ul>
+                            
+                            <h5>From Stirling Railway Station:</h5>
+                            <ul>
+                                <li>Exit the train station and walk to Stirling Bus Station (5-minute walk)</li>
+                                <li>Then follow the bus directions above to reach Fallin</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="direction-item">
+                        <i class="fas fa-parking"></i>
+                        <h4>Parking</h4>
+                        <div class="directions-detail">
+                            <p>Limited spaces are available near the club. Additional parking may be available at:</p>
+                            <ul>
+                                <li>The Goth</li>
+                                <li>Fallin Miners Welfare</li>
+                                <li>Nearby streets</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">What are the best times to visit the club?</div>
+                    <div class="accordion-content">
+                        <p>The club is most active during weekday evenings and weekend afternoons. If you're interested in visiting, we recommend calling ahead to ensure someone is available to welcome you and show you around.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">Can I hire the clubhouse for private events?</div>
+                    <div class="accordion-content">
+                        <p>No, the clubhouse is too small to hold events. The pub next door "The Goth" has an events hall and is available for hire. Please contact the Goth for more information on availability and pricing.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">How can I arrange a taster session?</div>
+                    <div class="accordion-content">
+                        <p>Taster sessions can be arranged by contacting our membership secretary via email or phone. We typically run these sessions on Saturday mornings during the bowling season, but can accommodate other times by arrangement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polmaise Bowling Club</h3>
+                    <p>Address: Main Street,</p>
+                    <p>Fallin, Stirling, FK7 7HT</p>
+                    <p>Phone: 01786 811333</p>
+                    <p>Email: polmaisebc@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="fixtures.html">Fixtures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
