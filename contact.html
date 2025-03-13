@@ -105,9 +105,87 @@
                 margin-bottom: 10px;
             }
         }
+        
+        /* Cookie Banner Styles */
+        .cookie-banner {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--club-blue);
+            color: var(--white);
+            padding: 1rem;
+            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cookie-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .cookie-text {
+            flex: 1;
+            font-size: 0.9rem;
+        }
+
+        .cookie-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .cookie-btn {
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .accept-cookies {
+            background-color: var(--white);
+            color: var(--club-blue);
+            border: none;
+        }
+
+        .decline-cookies {
+            background-color: transparent;
+            color: var(--white);
+            border: 1px solid var(--white);
+        }
+
+        @media (max-width: 768px) {
+            .cookie-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .cookie-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. This site uses Google Maps which requires cookies to function properly.
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept-cookies" onclick="acceptCookies()">Accept</button>
+                <button class="cookie-btn decline-cookies" onclick="declineCookies()">Decline</button>
+            </div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <div class="logo">
@@ -379,5 +457,58 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Cookie consent handling
+        function showCookieBanner() {
+            if (!localStorage.getItem('cookieConsent')) {
+                document.getElementById('cookieBanner').style.display = 'block';
+            }
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieBanner').style.display = 'none';
+            enableGoogleMaps();
+        }
+
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieBanner').style.display = 'none';
+            disableGoogleMaps();
+        }
+
+        function enableGoogleMaps() {
+            const mapContainer = document.querySelector('.map-container iframe');
+            if (mapContainer) {
+                mapContainer.style.display = 'block';
+            }
+        }
+
+        function disableGoogleMaps() {
+            const mapContainer = document.querySelector('.map-container iframe');
+            if (mapContainer) {
+                mapContainer.style.display = 'none';
+                const mapParent = mapContainer.parentElement;
+                if (!document.getElementById('map-disabled-message')) {
+                    const message = document.createElement('div');
+                    message.id = 'map-disabled-message';
+                    message.style.padding = '20px';
+                    message.style.textAlign = 'center';
+                    message.innerHTML = 'Google Maps has been disabled due to cookie preferences. <button onclick="acceptCookies()" class="btn primary-btn">Enable Maps</button>';
+                    mapParent.appendChild(message);
+                }
+            }
+        }
+
+        // Check cookie consent on page load
+        window.addEventListener('load', function() {
+            const consent = localStorage.getItem('cookieConsent');
+            if (!consent) {
+                showCookieBanner();
+            } else if (consent === 'declined') {
+                disableGoogleMaps();
+            }
+        });
+    </script>
 </body>
 </html> 
