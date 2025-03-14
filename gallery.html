@@ -669,5 +669,22 @@
             });
         });
     </script>
+    
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        $(document).ready(function() {
+            // Mobile menu toggle
+            $('.mobile-menu').click(function() {
+                $('nav ul').toggleClass('show');
+            });
+            
+            // Close mobile menu when a link is clicked
+            $('nav ul li a').click(function() {
+                if ($('nav ul').hasClass('show')) {
+                    $('nav ul').removeClass('show');
+                }
+            });
+        });
+    </script>
 </body>
 </html> 
