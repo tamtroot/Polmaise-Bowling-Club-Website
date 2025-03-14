@@ -105,6 +105,124 @@
                 margin-bottom: 10px;
             }
         }
+
+        .main-sponsor-grid {
+            display: grid;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .main-sponsor-card {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .main-sponsor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .sponsor-logo {
+            background: #f8f9fa;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .sponsor-logo img {
+            max-height: 100px;
+            width: auto;
+        }
+
+        .sponsor-info {
+            padding: 2rem;
+        }
+
+        .sponsor-info h3 {
+            color: var(--club-blue);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .sponsor-tagline {
+            color: var(--light-blue);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .sponsor-description {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .sponsor-contact {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .sponsor-contact p {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .sponsor-contact i {
+            color: var(--club-blue);
+            width: 20px;
+        }
+
+        .sponsor-contact a {
+            color: var(--club-blue);
+            text-decoration: none;
+        }
+
+        .sponsor-contact a:hover {
+            text-decoration: underline;
+        }
+
+        .sponsor-banner {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .sponsor-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .sponsor-info {
+                padding: 1.5rem;
+            }
+
+            .sponsor-banner {
+                height: 150px;
+            }
+        }
+
+        .sponsor-card-logo {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .sponsor-card-logo img {
+            max-height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 <body>
@@ -112,7 +230,7 @@
         <div class="container">
             <div class="logo">
                 <div class="logo-image">
-                    <img src="./Images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                    <img src="./images/club-logo.png" alt="Polmaise Bowling Club Logo">
                 </div>
                 <div class="logo-text">
                     <h1>Polmaise Bowling Club</h1>
@@ -158,6 +276,21 @@
             <div class="main-sponsor-grid">
                 <div class="main-sponsor-card">
                     <div class="sponsor-info">
+                        <h3>Will Sweep</h3>
+                        <p class="sponsor-tagline">Excellence in Road & Street Cleansing Since 1999</p>
+                        <p class="sponsor-description">Established in 1999 and led by Steven & Neil Williams, Will Sweep specializes in road and street cleansing, serving housing, construction, parks, severe weather emergencies, and road services sectors across Scotland. With an extensive fleet and highly trained operatives, services include snow clearing, street cleansing, roadside cleaning, drainage clearing, and area maintenance.</p>
+                        <p class="sponsor-description">The company works closely with Edinburgh, Midlothian, East & West Lothian councils, offering contract and hourly-rate services. Will Sweep also operates a repair centre for commercial vehicles, fleet vans, HGVs, and construction machinery, ensuring high-quality maintenance and minimal downtime.</p>
+                        <div class="sponsor-contact">
+                            <p><i class="fas fa-globe"></i> <a href="http://www.willsweep.com/" target="_blank">www.willsweep.com</a></p>
+                        </div>
+                    </div>
+                    <div class="sponsor-banner">
+                        <img src="./Images/willsweep-banner.jpg" alt="Will Sweep Fleet and Services">
+                    </div>
+                </div>
+
+                <div class="main-sponsor-card">
+                    <div class="sponsor-info">
                         <h3>Fallin Public House Society ("The Goth")</h3>
                         <p class="sponsor-tagline">Supporting the Community Since 1911</p>
                         <p class="sponsor-description">Established in 1911, "The Goth" has been a longstanding supporter of Polmaise Bowling Club. It features a bar, lounge with TV for sports, darts and domino teams, and a function room for events.</p>
@@ -178,17 +311,20 @@
             <div class="business-card-grid">
                 <div class="business-card">
                     <div class="card-header">
-                        <h3>Craig Project Management UK Ltd</h3>
+                        <h3>Forward Sector Security</h3>
                     </div>
                     <div class="card-body">
-                        <p class="company-description">Specializes in project management services within the UK.</p>
+                        <p class="company-description">Provides security services across various sectors.</p>
                         <div class="contact-info">
-                            <p><i class="fas fa-user"></i> Contact: Andrew Craig</p>
-                            <p><i class="fas fa-phone"></i> 07710 791 177</p>
-                            <p><i class="fas fa-envelope"></i> andycivils@hotmail.co.uk</p>
+                            <p><i class="fas fa-phone"></i> 02039 000 716</p>
+                            <p><i class="fas fa-envelope"></i> info@forwardsector.com</p>
                         </div>
+                        <div class="sponsor-card-logo">
+                            <img src="./Images/forwardsector.png" alt="Forward Sector Security Logo">
+                        </div>                       
                     </div>
                 </div>
+
 
                 <div class="business-card">
                     <div class="card-header">
@@ -200,22 +336,12 @@
                             <p><i class="fas fa-phone"></i> 01786-811 711 / 07505 283 695</p>
                             <p><i class="fas fa-envelope"></i> rbjoineryandbuildingservices1@sky.com</p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="business-card">
-                    <div class="card-header">
-                        <h3>James Mailey Surfacing Ltd</h3>
-                    </div>
-                    <div class="card-body">
-                        <p class="company-description">Plant & Labour Hire</p>
-                        <div class="contact-info">
-                            <p><i class="fas fa-phone"></i> 0703 077 720</p>
-                            <p><i class="fas fa-envelope"></i> mailleyjames06@gmail.com</p>
+                        <div class="sponsor-card-logo">
+                            <img src="./Images/rbjoinery.png" alt="R.B. Joinery & Building Services Logo">
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="business-card">
                     <div class="card-header">
                         <h3>Advance Construction</h3>
@@ -223,8 +349,11 @@
                     <div class="card-body">
                         <p class="company-description">Engages in various construction projects across Scotland.</p>
                         <div class="contact-info">
-                            <p><i class="fas fa-map-marker-alt"></i> 2 Ball Gleneagles Golf Club</p>
+                            <p><i class="fas fa-phone"></i>01698 824442</p>
                             <p><i class="fas fa-envelope"></i> info@acscotland.com</p>
+                        </div>
+                        <div class="sponsor-card-logo">
+                            <img src="./Images/advance_construction.webp" alt="Advance Construction Logo">
                         </div>
                     </div>
                 </div>
@@ -236,9 +365,11 @@
                     <div class="card-body">
                         <p class="company-description">Provides comprehensive construction services.</p>
                         <div class="contact-info">
-                            <p><i class="fas fa-user"></i> Contact: Paul Winters</p>
                             <p><i class="fas fa-phone"></i> 01416 214 900</p>
                             <p><i class="fas fa-envelope"></i> moira@akelaconstruction.co.uk</p>
+                        </div>
+                        <div class="sponsor-card-logo">
+                            <img src="./Images/akela.png" alt="Akela Construction Logo">
                         </div>
                     </div>
                 </div>
@@ -250,20 +381,11 @@
                     <div class="card-body">
                         <p class="company-description">A wholesale company based in the UK.</p>
                         <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> 01592 770864</p>
                             <p><i class="fas fa-envelope"></i> enquires@allson.co.uk</p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="business-card">
-                    <div class="card-header">
-                        <h3>Forward Sector Security</h3>
-                    </div>
-                    <div class="card-body">
-                        <p class="company-description">Provides security services across various sectors.</p>
-                        <div class="contact-info">
-                            <p><i class="fas fa-phone"></i> 02039 000 716</p>
-                            <p><i class="fas fa-envelope"></i> info@forwardsector.com</p>
+                        <div class="sponsor-card-logo">
+                            <img src="./Images/allson.png" alt="Allson Wholesale Co. UK Logo">
                         </div>
                     </div>
                 </div>
@@ -278,6 +400,9 @@
                             <p><i class="fas fa-phone"></i> 01316 652 173</p>
                             <p><i class="fas fa-envelope"></i> david@hamiltonwaste.com</p>
                         </div>
+                        <div class="sponsor-card-logo">
+                            <img src="./Images/hamilton.svg" alt="Hamilton Waste Logo">
+                        </div>  
                     </div>
                 </div>
 
@@ -288,7 +413,11 @@
                     <div class="card-body">
                         <p class="company-description">Offers a range of engineering services.</p>
                         <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> 01223 969999</p>
                             <p><i class="fas fa-envelope"></i> info@eddiesengineering.com</p>
+                        </div>
+                        <div class="sponsor-card-logo">
+                            <img src="./Images/eddies.png" alt="Eddie Engineering Logo">
                         </div>
                     </div>
                 </div>
@@ -303,15 +432,25 @@
                             <p><i class="fas fa-phone"></i> 07795 168 918</p>
                             <p><i class="fas fa-envelope"></i> philipcrowton@yahoo.co.uk</p>
                         </div>
+                        <div class="sponsor-card-logo">
+                            <img src="./Images/philc.webp" alt="Phil Crowton Joinery Logo">
+                        </div>
                     </div>
                 </div>
 
                 <div class="business-card">
                     <div class="card-header">
-                        <h3>Lyon Safety</h3>
+                        <h3>Lion Safety</h3>
                     </div>
                     <div class="card-body">
                         <p class="company-description">Specializes in safety training and equipment.</p>
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> 01324 474744</p>
+                            <p><i class="fas fa-envelope"></i> sales@lionsafety.co.uk</p>
+                        </div>
+                        <div class="sponsor-card-logo">
+                            <img src="./Images/lion.jpg" alt="Lion Safety Logo">
+                        </div>
                     </div>
                 </div>
 
@@ -325,8 +464,37 @@
                             <p><i class="fas fa-phone"></i> 01786 812909</p>
                             <p><i class="fas fa-envelope"></i> info@rabstaxis.co.uk</p>
                         </div>
+                        <div class="sponsor-card-logo">
+                            <img src="./Images/rabs.webp" alt="Rabs Taxis Logo">
+                        </div>
                     </div>
                 </div>
+                <div class="business-card">
+                    <div class="card-header">
+                        <h3>Craig Project Management UK Ltd</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="company-description">Specializes in project management services within the UK.</p>
+                        <div class="contact-info">
+                            <p><i class="fas fa-user"></i> Contact: Andrew Craig</p>
+                            <p><i class="fas fa-phone"></i> 07710 791 177</p>
+                            <p><i class="fas fa-envelope"></i> andycivils@hotmail.co.uk</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="business-card">
+                    <div class="card-header">
+                        <h3>James Mailey Surfacing Ltd</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="company-description">Plant & Labour Hire</p>
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> 0703 077 720</p>
+                            <p><i class="fas fa-envelope"></i> mailleyjames06@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -407,15 +575,10 @@
             
             <div class="sponsor-contact">
                 <h3>Interested in Becoming a Sponsor?</h3>
-                <p>Please contact our Sponsorship Coordinator to discuss opportunities:</p>
+                <p>Please contact our Sponsorship Coordinators to discuss opportunities:</p>
                 <div class="contact-details">
-                    <p><strong>Name:</strong> David Stewart</p>
-                    <p><strong>Phone:</strong> [Phone Number]</p>
+                    <p><strong>Name:</strong> David Stewart / Robert Donaldson</p>
                     <p><strong>Email:</strong> polmaisebc@gmail.com</p>
-                </div>
-                <div class="cta-buttons">
-                    <a href="downloads/sponsorship-brochure.pdf" class="btn secondary-btn"><i class="fas fa-download"></i> Download Sponsorship Brochure</a>
-                    <a href="contact.html" class="btn primary-btn">Contact Us About Sponsorship</a>
                 </div>
             </div>
         </div>
