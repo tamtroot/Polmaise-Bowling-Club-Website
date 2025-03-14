@@ -50,42 +50,36 @@
         }
         
         .history-images {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px; /* Small gap between images for visual separation */
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+            width: 100%;
         }
         
         .history-images img {
+            width: 100%;
+            height: 300px; /* Fixed height for consistency */
+            object-fit: cover; /* Maintain aspect ratio while filling container */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
-            transition: opacity 0.3s;
-            max-width: calc(50% - 5px); /* 2 images per row with gap consideration */
-            height: auto; /* Maintain aspect ratio */
-            object-fit: contain; /* Ensure image isn't stretched */
-            margin: 0; /* Remove default margins */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
         }
         
-        /* Adjust container to better handle landscape images */
-        .history-content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+        .history-images img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
         
-        /* Add more specific handling for landscape images */
-        @media (min-width: 769px) {
+        @media only screen and (max-width: 768px) {
             .history-images {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
+                grid-template-columns: 1fr;
+                gap: 15px;
             }
             
             .history-images img {
-                width: 100%;
-                max-width: 100%;
-                height: auto;
-                object-fit: cover;
+                height: 250px; /* Slightly smaller height on mobile */
             }
         }
         
@@ -303,7 +297,7 @@
                     <div class="member-info">
                         <h3>Alex Brown</h3>
                         <h4>President</h4>
-                        <p>Alex Brown is a dedicated and passionate leader of Polmaise Bowling Club. Having taken on the role of President after serving as Vice President, he is committed to fostering a welcoming and thriving club. Under his leadership, membership has grown, including an expanding ladies’ section. He takes pride in the club’s competitive successes and values the hard work of volunteers and sponsors. Alex’s vision is to continue growing the club, strengthening its community, and ensuring it remains a fantastic place for all members.</p>
+                        <p>Alex Brown is a dedicated and passionate leader of Polmaise Bowling Club. Having taken on the role of President after serving as Vice President, he is committed to fostering a welcoming and thriving club. Under his leadership, membership has grown, including an expanding ladies' section. He takes pride in the club's competitive successes and values the hard work of volunteers and sponsors. Alex's vision is to continue growing the club, strengthening its community, and ensuring it remains a fantastic place for all members.</p>
                     </div>
                 </div>
                 
