@@ -80,18 +80,51 @@
         }
 
         .album-title {
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
+            padding: 0.8rem;
             border-bottom: 2px solid var(--club-blue);
+            cursor: pointer;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
         }
-
+        
+        .album-title:hover {
+            background-color: #eaeaea;
+        }
+        
+        .album-title:after {
+            content: '\f107'; /* Font Awesome down arrow */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: 1.2em;
+            transition: transform 0.3s;
+        }
+        
+        .album-title.active:after {
+            transform: rotate(180deg);
+        }
+        
         .gallery-grid {
-            display: grid;
+            display: none; /* Hide by default */
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
             padding: 1rem 0;
+            animation: fadeIn 0.5s ease-in-out;
         }
-
+        
+        .gallery-grid.active {
+            display: grid; /* Show when active */
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
         .gallery-item {
             position: relative;
             overflow: hidden;
@@ -143,6 +176,11 @@
         @media (max-width: 768px) {
             .gallery-grid {
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .album-title {
+                padding: 0.6rem;
+                font-size: 1.1rem;
             }
         }
 
@@ -674,6 +712,19 @@
                 'disableScrolling': false,
                 'showImageNumberLabel': true,
                 'alwaysShowNavOnTouchDevices': true
+            });
+            
+            // Album toggle functionality
+            $('.album-title').click(function() {
+                $(this).toggleClass('active');
+                $(this).next('.gallery-grid').toggleClass('active');
+                
+                // Close other albums when opening a new one
+                // Comment the next 3 lines if you want multiple albums to be open at once
+                if($(this).hasClass('active')) {
+                    $('.album-title').not(this).removeClass('active');
+                    $('.gallery-grid').not($(this).next('.gallery-grid')).removeClass('active');
+                }
             });
         });
     </script>
