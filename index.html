@@ -128,6 +128,30 @@
             position: relative; /* To display content above the overlay */
             z-index: 2;
         }
+        
+        .welcome-logo {
+            float: left;
+            margin: 0 20px 10px 0;
+            width: 150px;
+            height: auto;
+        }
+        
+        .welcome-logo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .welcome-text {
+            overflow: hidden; /* Ensures text flows around the floated logo */
+        }
+        
+        @media (max-width: 768px) {
+            .welcome-logo {
+                width: 100px;
+                margin: 0 15px 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -177,6 +201,9 @@
             <h2>Welcome to Our Club</h2>
             <div class="welcome-content">
                 <div class="welcome-text">
+                    <div class="welcome-logo">
+                        <img src="./Images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                    </div>
                     <p>Established in 1911, Polmaise Bowling Club has been a cornerstone of the Fallin community for generations. With deep roots in the local mining heritage, our club offers a welcoming environment for bowlers of all skill levels.</p>
                     <p>Whether you're an experienced player or new to the sport, we invite you to join our friendly community and discover the joy of bowls in our beautiful facilities.</p>
                     <a href="about.html" class="btn primary-btn">Learn More About Us</a>
