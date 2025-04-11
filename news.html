@@ -51,6 +51,24 @@
             cursor: pointer;
         }
         
+        /* Zoomable image styles */
+        .zoomable-image {
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+        }
+        
+        .zoomable-image:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Make sure news images are consistent */
+        .news-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        
         .history-images {
             display: flex;
             flex-wrap: wrap;
@@ -159,9 +177,25 @@
                     <h2>Latest News</h2>
                     <hr class="article-divider"></br>
                     <article class="news-item featured">
+                        <h3>Fallin's Heartbeat: The Gothenburg and Polmaise Bowling Club Celebrated in The Herald</h3>
+                        <div class="news-image">
+                            <img src="./Images/news goth.jpg" alt="The Herald feature on Gothenburg Pub and Polmaise Bowling Club" class="zoomable-image" onclick="openLightbox(this)">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> April 3, 2025</span>
+                                <span class="news-category"><i class="fas fa-tag"></i> Media Coverage</span>
+                            </div>
+                            <p>The village of Fallin received a welcome spotlight this week as The Herald newspaper ran a feature celebrating one of its most cherished institutions: The Gothenburg Pub. The article, penned by columnist Kevin McKenna, praised the pub's community-driven ethos and the timeless appeal of its welcoming atmosphere, affordable prices, and traditional pastimes like darts and bowls.</p></br>
+                            
+                            <p>Also featured was Polmaise Bowling Club. The article included photos of Polmaise members Billy Johnson working hard behind the bar and Vice President Davy Stewart proudly standing outside the club.</p>
+                        </div>
+                    </article>
+                    <hr class="article-divider"></br>
+                    <article class="news-item featured">
                         <h3>Polmaise Bowling Club Claims Top 9 Title with Dominant Victory</h3>
                         <div class="news-image">
-                            <img src="./Images/Top9.jpg" alt="Polmaise Bowling Club Top 9 Victory">
+                            <img src="./Images/Top9.jpg" alt="Polmaise Bowling Club Top 9 Victory" class="zoomable-image" onclick="openLightbox(this)">
                         </div>
                         <div class="news-content">
                             <div class="news-meta">
@@ -184,7 +218,7 @@
                     <article class="news-item featured">
                         <h3>Polmaise Bowling Club – Opening of the Green 2025</h3>
                         <div class="news-image">
-                            <img src="./Images/Green Opening.jpg" alt="Opening of the Green 2025">
+                            <img src="./Images/Green Opening.jpg" alt="Opening of the Green 2025" class="zoomable-image" onclick="openLightbox(this)">
                         </div>
                         <div class="news-content">
                             <div class="news-meta">
@@ -210,7 +244,7 @@
                     <article class="news-item featured">
                         <h3>Polmaise Bowling Club Undergoes Major Cleanup and Renovation Efforts</h3>
                         <div class="news-image">
-                            <img src="./Images/Green Maintenance.jpg" alt="Club Renovation Progress">
+                            <img src="./Images/Green Maintenance.jpg" alt="Club Renovation Progress" class="zoomable-image" onclick="openLightbox(this)">
                         </div>
                         <div class="news-content">
                             <div class="news-meta">
@@ -248,6 +282,13 @@
         </div>
     </section>
 
+    <!-- Lightbox container -->
+    <div id="imageLightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -284,5 +325,37 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <script>
+        // Lightbox functionality
+        function openLightbox(img) {
+            const lightbox = document.getElementById("imageLightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+            const lightboxCaption = document.getElementById("lightbox-caption");
+            
+            lightbox.style.display = "block";
+            lightboxImg.src = img.src;
+            lightboxCaption.innerHTML = img.alt;
+            
+            // Add pinch-zoom functionality for mobile
+            lightboxImg.style.touchAction = "pinch-zoom";
+        }
+        
+        function closeLightbox() {
+            document.getElementById("imageLightbox").style.display = "none";
+        }
+        
+        // Close lightbox when clicking outside the image
+        document.getElementById("imageLightbox").addEventListener("click", function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+        
+        // Mobile menu toggle (if not already in script.js)
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
 </body>
 </html> 
