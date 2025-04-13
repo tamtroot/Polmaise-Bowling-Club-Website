@@ -76,49 +76,83 @@
             padding: 2rem 0;
         }
 
-        .album-section {
-            margin-bottom: 3rem;
+        /* Album Cards Grid */
+        .album-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 1rem 0;
         }
 
-        .album-title {
-            margin-bottom: 0.5rem;
-            padding: 0.8rem;
-            border-bottom: 2px solid var(--club-blue);
+        .album-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
-            background-color: #f8f8f8;
-            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .album-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .album-thumbnail {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .album-card:hover .album-thumbnail {
+            transform: scale(1.05);
+        }
+
+        .album-info {
+            padding: 15px;
+            text-align: center;
+            border-top: 2px solid var(--club-blue);
+        }
+
+        .album-info h3 {
+            margin: 0;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        /* Album Content Section (hidden by default) */
+        .album-content {
+            display: none;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .album-content.active {
+            display: block;
+        }
+
+        .album-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: background-color 0.3s;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--club-blue);
         }
-        
-        .album-title:hover {
-            background-color: #eaeaea;
+
+        .album-header h2 {
+            margin: 0;
         }
-        
-        .album-title:after {
-            content: '\f107'; /* Font Awesome down arrow */
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            font-size: 1.2em;
-            transition: transform 0.3s;
-        }
-        
-        .album-title.active:after {
-            transform: rotate(180deg);
-        }
-        
+
         .gallery-grid {
-            display: none; /* Hide by default */
+            display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
             padding: 1rem 0;
-            animation: fadeIn 0.5s ease-in-out;
-        }
-        
-        .gallery-grid.active {
-            display: grid; /* Show when active */
         }
         
         @keyframes fadeIn {
@@ -174,14 +208,30 @@
             transform: translateY(0);
         }
 
+        .close-album {
+            display: block;
+            margin: 1.5rem auto;
+            padding: 10px 25px;
+            background-color: var(--club-blue);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .close-album:hover {
+            background-color: #005a8d;
+        }
+
         @media (max-width: 768px) {
-            .gallery-grid {
+            .album-cards {
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             }
             
-            .album-title {
-                padding: 0.6rem;
-                font-size: 1.1rem;
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             }
         }
 
@@ -257,12 +307,74 @@
 
     <section class="gallery-container">
         <div class="container">
+            <!-- Album Cards -->
+            <div class="album-cards">
+                <!-- Card 1: 2025 Season -->
+                <div class="album-card" data-album="album1">
+                    <img src="./Images/2025/Menstrie100.jpg" alt="2025 Season" class="album-thumbnail">
+                    <div class="album-info">
+                        <h3>2025 Season</h3>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Ayr National Championships -->
+                <div class="album-card" data-album="album2">
+                    <img src="./Images/gallery53.jpg" alt="Ayr National Championships" class="album-thumbnail">
+                    <div class="album-info">
+                        <h3>Ayr National Championships 2024</h3>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Recent Club Photos -->
+                <div class="album-card" data-album="album3">
+                    <img src="./Images/gallery47.webp" alt="Recent Club Photos" class="album-thumbnail">
+                    <div class="album-info">
+                        <h3>Recent Club Photos</h3>
+                    </div>
+                </div>
+                
+                <!-- Card 4: Club Memorabilia -->
+                <div class="album-card" data-album="album4">
+                    <img src="./Images/gallery1.jpg" alt="Club Memorabilia" class="album-thumbnail">
+                    <div class="album-info">
+                        <h3>Club Memorabilia and Special Moments</h3>
+                    </div>
+                </div>
+                
+                <!-- Card 5: Club Events -->
+                <div class="album-card" data-album="album5">
+                    <img src="./Images/gallery5.jpg" alt="Club Events" class="album-thumbnail">
+                    <div class="album-info">
+                        <h3>Club Events and Achievements</h3>
+                    </div>
+                </div>
+                
+                <!-- Card 6: Championships -->
+                <div class="album-card" data-album="album6">
+                    <img src="./Images/gallery41.jpg" alt="Championships" class="album-thumbnail">
+                    <div class="album-info">
+                        <h3>Championships and Awards</h3>
+                    </div>
+                </div>
+                
+                <!-- Card 7: Archive -->
+                <div class="album-card" data-album="album7">
+                    <img src="./Images/Archive/Photo 2.jpg" alt="Archive" class="album-thumbnail">
+                    <div class="album-info">
+                        <h3>Archive</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Album Contents (initially hidden) -->
             <!-- Album 1: 2025 Season -->
-            <div class="album-section">
-                <h2 class="album-title">2025 Season</h2>
+            <div class="album-content" id="album1">
+                <div class="album-header">
+                    <h2>2025 Season</h2>
+                </div>
                 <div class="gallery-grid">
-                        <div class="gallery-item">
-                            <a href="./Images/2025/Menstrie100.jpg" data-lightbox="season2025" data-title="Polmaise President Alex Brown hands over a pendant to the Menstrie president on their 100th anniversary.">
+                    <div class="gallery-item">
+                        <a href="./Images/2025/Menstrie100.jpg" data-lightbox="season2025" data-title="Polmaise President Alex Brown hands over a pendant to the Menstrie president on their 100th anniversary.">
                             <img src="./Images/2025/Menstrie100.jpg" alt="Polmaise President Alex Brown hands over a pendant to the Menstrie president on their 100th anniversary.">
                         </a>
                         <div class="gallery-caption">Polmaise President Alex Brown hands over a pendant to the Menstrie president on their 100th anniversary.</div>
@@ -286,11 +398,14 @@
                         <div class="gallery-caption">Opening of Green 2025</div>
                     </div>
                 </div>
+                <button class="close-album">Back to Albums</button>
             </div>
 
             <!-- Album 2: Ayr National Championships -->
-            <div class="album-section">
-                <h2 class="album-title">Ayr National Championships 2024</h2>
+            <div class="album-content" id="album2">
+                <div class="album-header">
+                    <h2>Ayr National Championships 2024</h2>
+                </div>
                 <div class="gallery-grid">
                     <div class="gallery-item">
                         <a href="./Images/gallery53.jpg" data-lightbox="album1">
@@ -383,11 +498,14 @@
                         </a>
                     </div>
                 </div>
+                <button class="close-album">Back to Albums</button>
             </div>
 
             <!-- Album 3: Recent Club Photos -->
-            <div class="album-section">
-                <h2 class="album-title">Recent Club Photos</h2>
+            <div class="album-content" id="album3">
+                <div class="album-header">
+                    <h2>Recent Club Photos</h2>
+                </div>
                 <div class="gallery-grid">
                     <div class="gallery-item">
                         <a href="./Images/gallery47.webp" data-lightbox="album2" data-title="Polmaise Bowling Club Members 2022">
@@ -422,11 +540,14 @@
                         </a>
                     </div>
                 </div>
+                <button class="close-album">Back to Albums</button>
             </div>
 
             <!-- Album 4 -->
-            <div class="album-section">
-                <h2 class="album-title">Club Memorabilia and Special Moments</h2>
+            <div class="album-content" id="album4">
+                <div class="album-header">
+                    <h2>Club Memorabilia and Special Moments</h2>
+                </div>
                 <div class="gallery-grid">
                     <div class="gallery-item">
                         <a href="./Images/gallery1.jpg" data-lightbox="album3" data-title="Badges donated by Robert Walker Grandson of Thomas Bunyan past president and champion of champions.">
@@ -447,11 +568,14 @@
                         <div class="gallery-caption">President Robert Donaldson and members watch on as his wife Sonia throws the first jack of 2021</div>
                     </div>
                 </div>
+                <button class="close-album">Back to Albums</button>
             </div>
 
             <!-- Album 5 -->
-            <div class="album-section">
-                <h2 class="album-title">Club Events and Achievements</h2>
+            <div class="album-content" id="album5">
+                <div class="album-header">
+                    <h2>Club Events and Achievements</h2>
+                </div>
                 <div class="gallery-grid">
                     <div class="gallery-item">
                         <a href="./Images/gallery4.jpg" data-lightbox="album4">
@@ -594,11 +718,14 @@
                         <div class="gallery-caption">Polmaise Sponsor 2011 one time Junior Clare Deans now Manager of Menzies Mini</div>
                     </div>
                 </div>
+                <button class="close-album">Back to Albums</button>
             </div>
 
             <!-- Album 6 -->
-            <div class="album-section">
-                <h2 class="album-title">Championships and Awards</h2>
+            <div class="album-content" id="album6">
+                <div class="album-header">
+                    <h2>Championships and Awards</h2>
+                </div>
                 <div class="gallery-grid">
                     <div class="gallery-item">
                         <a href="./Images/gallery33.jpg" data-lightbox="album5">
@@ -679,14 +806,18 @@
                         </a>
                     </div>
                 </div>
+                <button class="close-album">Back to Albums</button>
             </div>
 
             <!-- Album 7: Archive Photos -->
-            <div class="album-section">
-                <h2 class="album-title">Archive</h2>
+            <div class="album-content" id="album7">
+                <div class="album-header">
+                    <h2>Archive</h2>
+                </div>
                 <div class="gallery-grid">
                     <!-- Archive photos will be generated by JavaScript -->
                 </div>
+                <button class="close-album">Back to Albums</button>
             </div>
         </div>
     </section>
@@ -746,17 +877,27 @@
                 'alwaysShowNavOnTouchDevices': true
             });
             
-            // Album toggle functionality
-            $('.album-title').click(function() {
-                $(this).toggleClass('active');
-                $(this).next('.gallery-grid').toggleClass('active');
+            // Album card click functionality
+            $('.album-card').click(function() {
+                const albumId = $(this).data('album');
+                $('.album-cards').hide();
+                $('#' + albumId).addClass('active');
                 
-                // Close other albums when opening a new one
-                // Comment the next 3 lines if you want multiple albums to be open at once
-                if($(this).hasClass('active')) {
-                    $('.album-title').not(this).removeClass('active');
-                    $('.gallery-grid').not($(this).next('.gallery-grid')).removeClass('active');
-                }
+                // Scroll to the top of the album content
+                $('html, body').animate({
+                    scrollTop: $('#' + albumId).offset().top - 100
+                }, 500);
+            });
+            
+            // Close album button functionality
+            $('.close-album').click(function() {
+                $('.album-content').removeClass('active');
+                $('.album-cards').show();
+                
+                // Scroll back to the albums section
+                $('html, body').animate({
+                    scrollTop: $('.gallery-container').offset().top - 100
+                }, 500);
             });
         });
     </script>
@@ -781,7 +922,7 @@
     <!-- Script to generate archive photos -->
     <script>
         $(document).ready(function() {
-            const archiveGallery = $('.album-section:last-child .gallery-grid');
+            const archiveGallery = $('#album7 .gallery-grid');
             
             // Clear any placeholder items
             archiveGallery.empty();
