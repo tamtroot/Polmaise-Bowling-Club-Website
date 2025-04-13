@@ -335,11 +335,6 @@
                         </div>
                     </div>
                     
-                    <!-- Back button (shown when an article is expanded) -->
-                    <div class="news-close-btn" id="newsCloseBtn">
-                        <button onclick="closeAllArticles()">Back to News</button>
-                    </div>
-                    
                     <!-- Full Articles (initially hidden) -->
                     <article id="article1" class="news-item featured">
                         <h3>Fallin's Heartbeat: The Gothenburg and Polmaise Bowling Club Celebrated in The Herald</h3>
@@ -354,6 +349,9 @@
                             <p>The village of Fallin received a welcome spotlight this week as The Herald newspaper ran a feature celebrating one of its most cherished institutions: The Gothenburg Pub. The article, penned by columnist Kevin McKenna, praised the pub's community-driven ethos and the timeless appeal of its welcoming atmosphere, affordable prices, and traditional pastimes like darts and bowls.</p></br>
                             
                             <p>Also featured was Polmaise Bowling Club. The article included photos of Polmaise members Billy Johnson working hard behind the bar and Vice President Davy Stewart proudly standing outside the club.</p>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllArticles()">Back to News</button>
                         </div>
                     </article>
                     
@@ -377,6 +375,9 @@
                             
                             <h4>Looking Ahead</h4>
                             <p>With the indoor season now concluded, the club is looking forward to carrying this momentum into the outdoor season. Polmaise Bowling Club remains committed to building on this success and continuing to represent the club and community with pride and dedication.</p>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllArticles()">Back to News</button>
                         </div>
                     </article>
                     
@@ -403,6 +404,9 @@
                             <p>We look forward to seeing you all there!</p>
                             
                             <p><em>Polmaise Bowling Club Committee</em></p>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllArticles()">Back to News</button>
                         </div>
                     </article>
                     
@@ -439,6 +443,9 @@
                                 <li>Installing doors for the greenkeepers' shed</li>
                                 <li>Rendering work by Martin Hearns</li>
                             </ul>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllArticles()">Back to News</button>
                         </div>
                     </article>
                 </div>
@@ -531,8 +538,11 @@
             // Hide the grid
             document.querySelector('.news-grid').style.display = 'none';
             
-            // Show the close button
-            document.getElementById('newsCloseBtn').style.display = 'block';
+            // Show the close buttons in each article
+            const closeButtons = document.querySelectorAll('.news-close-btn');
+            closeButtons.forEach(button => {
+                button.style.display = 'block';
+            });
             
             // Scroll to the top of the article
             selectedArticle.scrollIntoView({ behavior: 'smooth' });
@@ -548,8 +558,11 @@
             // Show the grid
             document.querySelector('.news-grid').style.display = 'grid';
             
-            // Hide the close button
-            document.getElementById('newsCloseBtn').style.display = 'none';
+            // Hide the close buttons
+            const closeButtons = document.querySelectorAll('.news-close-btn');
+            closeButtons.forEach(button => {
+                button.style.display = 'none';
+            });
             
             // Scroll to the top of the news section
             document.querySelector('.news-section').scrollIntoView({ behavior: 'smooth' });
