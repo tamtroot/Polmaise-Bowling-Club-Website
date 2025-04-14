@@ -598,6 +598,16 @@
             background-color: #e8f4ff;
         }
         
+        /* Style for past fixtures */
+        .fixtures-table tbody tr.past-fixture {
+            color: #aaa;
+            background-color: #f5f5f5;
+        }
+        
+        .fixtures-table tbody tr.past-fixture:hover {
+            background-color: #eaeaea;
+        }
+        
         .hamilton-title {
             margin-top: 2.5rem;
             color: var(--club-blue);
@@ -678,5 +688,51 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <script>
+        // Function to grey out past fixtures
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentDate = new Date();
+            const fixtureRows = document.querySelectorAll('.fixtures-table tbody tr');
+            
+            fixtureRows.forEach(row => {
+                const dateCell = row.querySelector('td:first-child');
+                if (dateCell) {
+                    // Extract date information
+                    let dateText = dateCell.textContent.trim();
+                    
+                    // Handle date ranges (e.g., "26-Jul-02-Aug")
+                    if (dateText.includes('-')) {
+                        const dateParts = dateText.split('-');
+                        if (dateParts.length === 4) {
+                            // This is a date range like "26-Jul-02-Aug"
+                            dateText = dateParts[0] + '-' + dateParts[1]; // Just use the start date
+                        }
+                    }
+                    
+                    // Parse date (format: DD-MMM)
+                    const dateParts = dateText.split('-');
+                    if (dateParts.length >= 2) {
+                        const day = parseInt(dateParts[0]);
+                        const monthMap = {
+                            'Jan': 0, 'Feb': 1, 'Mar': 2, 'Apr': 3, 'May': 4, 'Jun': 5,
+                            'Jul': 6, 'Aug': 7, 'Sep': 8, 'Oct': 9, 'Nov': 10, 'Dec': 11
+                        };
+                        const month = monthMap[dateParts[1]];
+                        
+                        if (!isNaN(day) && month !== undefined) {
+                            // We're assuming the year is 2025 as per the page content
+                            const fixtureDate = new Date(2025, month, day);
+                            
+                            // If the fixture date is before today, add the past-fixture class
+                            if (fixtureDate < currentDate) {
+                                row.classList.add('past-fixture');
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html> 
