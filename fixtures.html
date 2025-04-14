@@ -608,6 +608,21 @@
             background-color: #eaeaea;
         }
         
+        /* Style for next upcoming fixture */
+        .fixtures-table tbody tr.next-fixture {
+            background-color: rgba(255, 248, 220, 0.7);
+            border-left: 4px solid var(--club-blue);
+            font-weight: 500;
+        }
+        
+        .fixtures-table tbody tr.next-fixture:hover {
+            background-color: rgba(255, 248, 220, 0.9);
+        }
+        
+        .fixtures-table tbody tr.next-fixture td {
+            border-bottom: 1px solid var(--club-blue);
+        }
+        
         .hamilton-title {
             margin-top: 2.5rem;
             color: var(--club-blue);
@@ -690,11 +705,16 @@
     <script src="script.js"></script>
     
     <script>
-        // Function to grey out past fixtures
+        // Function to grey out past fixtures and highlight next fixture
         document.addEventListener('DOMContentLoaded', function() {
             const currentDate = new Date();
             const fixtureRows = document.querySelectorAll('.fixtures-table tbody tr');
             
+            let nextFixtureFound = false;
+            let closestFutureDate = null;
+            let closestFutureRow = null;
+            
+            // First pass: Mark past fixtures and find the closest future fixture
             fixtureRows.forEach(row => {
                 const dateCell = row.querySelector('td:first-child');
                 if (dateCell) {
@@ -727,11 +747,23 @@
                             // If the fixture date is before today, add the past-fixture class
                             if (fixtureDate < currentDate) {
                                 row.classList.add('past-fixture');
+                            } else {
+                                // This is a future fixture
+                                // Check if it's the closest one
+                                if (closestFutureDate === null || fixtureDate < closestFutureDate) {
+                                    closestFutureDate = fixtureDate;
+                                    closestFutureRow = row;
+                                }
                             }
                         }
                     }
                 }
             });
+            
+            // Second pass: Highlight the next fixture if found
+            if (closestFutureRow) {
+                closestFutureRow.classList.add('next-fixture');
+            }
         });
     </script>
 </body>
