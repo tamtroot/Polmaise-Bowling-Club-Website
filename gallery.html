@@ -1054,6 +1054,17 @@
             // Clear any placeholder items
             archiveGallery.empty();
             
+            // Add the 1914 image
+            const image1914 = `
+                <div class="gallery-item">
+                    <a href="./Images/Archive/1914 - 1.jpg" data-lightbox="archive" data-title="Polmaise Bowling Team - 1914">
+                        <img src="./Images/Archive/1914 - 1.jpg" alt="Polmaise Bowling Team - 1914">
+                    </a>
+                    <div class="gallery-caption">Polmaise Bowling Team - 1914</div>
+                </div>
+            `;
+            archiveGallery.append(image1914);
+            
             // Add our featured image first
             const featuredItem = `
                 <div class="gallery-item">
