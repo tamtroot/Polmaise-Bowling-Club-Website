@@ -243,6 +243,71 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
+        /* Styling for historical article box */
+        .historical-article-container {
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px; /* Space between articles */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative; /* Needed for absolute positioning of the date */
+        }
+        
+        .historical-article-date {
+            background-color: #1e3a8a; /* Royal blue color */
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            border-radius: 4px;
+            font-family: 'Open Sans', sans-serif;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .historical-article h3 {
+            margin-top: 0; /* Adjust heading margin */
+            margin-bottom: 15px;
+        }
+        
+        .historical-article .article-text h4 {
+             margin-top: 20px; /* Add space above subheadings */
+        }
+        
+        /* Table styling */
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .results-table th, .results-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .results-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        
+        .results-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        /* History Item display */
+        .history-item {
+            display: none; /* Hidden by default */
+            animation: fadeIn 0.5s;
+        }
+        
+        .history-item.active {
+            display: block; /* Shown when active */
+        }
     </style>
 </head>
 <body>
@@ -448,6 +513,120 @@
                             <button onclick="closeAllArticles()">Back to News</button>
                         </div>
                     </article>
+                    
+                    <!-- New History Section -->
+                    <hr class="article-divider"> <!-- Optional divider -->
+                    <section class="history-feature">
+                        <h2>From the Green, Through the Years - A Journey into Polmaise Bowling Club's Past</h2>
+                        <div class="history-intro">
+                           <p>Tucked away in a corner of our clubhouse is a framed treasure — a collection of yellowed clippings and fading type, lovingly preserved and gifted to Polmaise Bowling Club by W. Jenkins on the occasion of our 75th Anniversary in July 1986. These articles, drawn from newspapers and community reports, tell the quiet but proud story of our club — of roll-ups and rivalries, of jubilee celebrations, gala days, and the steadfast spirit of Fallin's bowling men and women.</p>
+                           <p>In this special News series, we'll be gently dusting off the past and sharing those moments once more — not as grand headlines, but as living memories. Each article is a snapshot in time: a nod to the suits and hats, the handshakes and speeches, the summer days on the green, and the laughter echoing from the clubhouse.</p>
+                           <p>Whether you're a lifelong member or new to our green, we invite you to wander with us down memory lane. We begin with a piece from 1961, when the club marked its golden jubilee with pride, and Fallin came together in celebration.</p>
+                           <p>These are our stories — handed down, and now, shared again.</p>
+                        </div>
+                        
+                        <!-- History Grid for Thumbnails -->
+                        <div class="news-grid" id="history-grid">
+                            <!-- History Card 1: 1961 -->
+                            <div class="news-card" onclick="toggleHistoryArticle('history-1961')">
+                                <div class="news-card-thumbnail">
+                                    <img src="./Images/Archive/HistoricalArchive/8th June 1961.jpg" alt="Scan of Alloa Journal article from June 8th, 1961">
+                                </div>
+                                <div class="news-card-date">June 8, 1961</div>
+                                <div class="news-card-title">
+                                    <h3>Polmaise Bowling Club Celebrate Their Jubilee (1961)</h3>
+                                </div>
+                            </div>
+                            <!-- Add more history cards here -->
+                        </div>
+
+                        <!-- Full Historical Articles (initially hidden) -->
+                        <div class="history-articles-content">
+                            <!-- Article from 1961 -->
+                            <div id="history-1961" class="history-item" style="display: none;">
+                                <div class="historical-article-container">
+                                    <article class="historical-article">
+                                        <h3>Alloa Journal and Advertiser – Thursday, June 8th, 1961</h3>
+                                        <div class="history-images">
+                                            <img src="./Images/Archive/HistoricalArchive/8th June 1961.jpg" alt="Scan of Alloa Journal article from June 8th, 1961" class="zoomable-image" onclick="openLightbox(this)">
+                                        </div>
+                                        <div class="article-text">
+                                            <h4>POLMAISE BOWLING CLUB CELEBRATE THEIR JUBILEE</h4>
+                                            <p>This is a memorable week for the mining village of Fallin for the Polmaise Bowling Club are celebrating their golden jubilee and doing it in real royal fashion. After an enjoyable mixed game on Monday night, the club had as guests on Tuesday night the President of the Scottish Bowling Association, Mr David Preston, Stirling, and the members of the S.B.A. Council, together with the British Isles championship rink from Kirkcaldy skipped by Mr R. Whitehead.</p>
+                                            <p>A keen game on the excellent green resulted in a draw of 68 shots each, after which the company sat down to supper in the lounge of the Gothenburg. There the guests were given a warm welcome by the president, Mr William Paterson, now in his eighth year of office, and in the party at the top table were Mr Preston ; Mr John Linning, secretary of the S.B.A. : Mr Tom Corrie, secretary of Stirling County Bowling Association; Mr Tom Bunyan, that grand old man of the Polmaise Club now resident in Perthshire ; Mr Robert Dick, vice-president ; Mr .Pat. Lyons, secretary, and Mr John Brown, treasurer, the oldest playing member of the club. He joined in 1912.</p>
+                                            <p>Mr Preston proposed a toast to the club, and after the secretary had the scores Mr. Paterson presented prizes to the members of the highest-up rink on each side. Referring to the auspicious occasion they were celebrating, Mr Paterson said that had been an outstanding night in the history of Polmaise Club and paid tribute to the Gothenburg for rallying round them to make the celebrations a success.</p>
+                                            <p>Mr Preston at the outset of a racy speech thanked the British Isles championship rink for coming all the way from Lochgelly to help out the Scottish on this important occasion. It was a great joy to him, he said, to be among his ain folk that night He had known the Polmaise Club for many years and he thanked them for their co-operation over the past 15 years.</p>
+                                            <p>Polmaise was born in 1911. It was one of the small clubs, but, strange to say, they had won every cup they had competed for in the County of Stirling. They had only a member-ship of around 30, but with the help of the "Goth" had never allowed the surface of their fine green to deteriorate.</p>
+                                            <p>When The club started the membership fee was 6/ -. After the second world war they raised it to 10/- and now be believed it was £1.</p>
+                                            <p>He could not, therefore, understand why more of the men folk of Fallin did not support the club in the way fit so richly deserved. They were missing a great opportunity of enjoying life to the full on the bowling green and taking part in the greatest sport in the world. Polmaise Club, said Mr Preston. had been four times to Queen's Park. They had also the rather peculiar distinction of having had only six presidents in their lifetime of 50 years. They must like to keep good men on the job, and " Willie" Paterson, now doing his eighth year, was also doing a very good job. He thanked the club for their kind invitation and for their generous hospitality, and wished them a very successful week and much success in the future.</p>
+                                            <p>Mr Paterson briefly acknowledged the Scottish president's remarks. Mr Tom Bunyan said he felt it an honour to have been asked to thank the "Scottish" for their presence and it had been a pleasure to see them enjoy themselves on laughable. The Scottish was a wonderful organisation and its affairs were well handled by Secretary Linning. It was a great honour to Polmaise to have the British Isles championship rink with them on this occasion. It was also a very nice gesture on the part of the Scottish Council members to present badges to the Polmaise players. He assured them they would be much appreciated by those who received them.</p>
+                                            <p>Mr John Linning, the Scottish secretary, added a word of congratulation to the club and said how much they appreciated the way Mr Preston was carrying out his duties as president. He also mentioned that this year they had a record entry for the Scottish championships. Out of the 772 clubs. 741 had entered the rink competition, 735 the singles and 734 the pairs. It was amazing, he said, to see such interest in the game.</p>
+                                            
+                                            <h4>Match Details</h4>
+                                            <table class="results-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Polmaise Skip</th>
+                                                        <th>Team Members (Polmaise)</th>
+                                                        <th>Scottish B.A. Skip</th>
+                                                        <th>Team Members (Scottish B.A.)</th>
+                                                        <th>Score (Polmaise - Scottish B.A.)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>W. Paterson</td>
+                                                        <td>H. Haughie, J. Park, T. Bunyan</td>
+                                                        <td>D. Preston</td>
+                                                        <td>A. Wallace, W. Dick, W. Paterson</td>
+                                                        <td>10 – 14</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>P. Lyons</td>
+                                                        <td>A. Cairns, D. Ryan, R. Dick</td>
+                                                        <td>J. Linning</td>
+                                                        <td>J. C. Anderson, J. Cuthbertson, N. Allan</td>
+                                                        <td>6 – 17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>J. Taylor</td>
+                                                        <td>D. Ivatt, H. Kirkwood, A. Buchanan</td>
+                                                        <td>R. Whitehead</td>
+                                                        <td>A. C. Stewart, Jas. Luing, D. Kirk</td>
+                                                        <td>8 – 21</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>T. Govan</td>
+                                                        <td>G. Anderson, J. Brown, jun., M. Boyle</td>
+                                                        <td>R. A. Blair</td>
+                                                        <td>G. Shaw, M. Duncan, W. Muir</td>
+                                                        <td>23 – 9</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>J. Liddle</td>
+                                                        <td>R. Duncan, W. Jenkins, F. Ryan</td>
+                                                        <td>A. Provan</td>
+                                                        <td>W. A. Aslett, J. Milligan, J. Morrison</td>
+                                                        <td>21 – 7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4" style="text-align:right; font-weight: bold;">Total</td>
+                                                        <td style="font-weight: bold;">68 - 68</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </article>
+                                </div> 
+                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                    <button onclick="closeAllHistoryArticles()">Back to History</button>
+                                </div>
+                            </div>
+                             <!-- Add more full history articles here -->
+                        </div>
+                    </section>
+                    <!-- End New History Section -->
+                    
                 </div>
             </div>
         </div>
@@ -538,6 +717,9 @@
             // Hide the grid
             document.querySelector('.news-grid').style.display = 'none';
             
+            // Hide the history section
+            document.querySelector('.history-feature').style.display = 'none';
+            
             // Show the close buttons in each article
             const closeButtons = document.querySelectorAll('.news-close-btn');
             closeButtons.forEach(button => {
@@ -558,6 +740,9 @@
             // Show the grid
             document.querySelector('.news-grid').style.display = 'grid';
             
+            // Show the history section again
+            document.querySelector('.history-feature').style.display = 'block';
+            
             // Hide the close buttons
             const closeButtons = document.querySelectorAll('.news-close-btn');
             closeButtons.forEach(button => {
@@ -566,6 +751,56 @@
             
             // Scroll to the top of the news section
             document.querySelector('.news-section').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // History Article toggle functionality
+        function toggleHistoryArticle(articleId) {
+            // First, make sure all news articles are closed
+            closeAllArticles();
+            
+            // Hide the history grid
+            document.getElementById('history-grid').style.display = 'none';
+            
+            // Hide all history articles first
+            const historyArticles = document.querySelectorAll('.history-item');
+            historyArticles.forEach(article => {
+                article.style.display = 'none'; // Ensure all are hidden initially
+                article.classList.remove('active');
+            });
+            
+            // Show the selected history article
+            const selectedArticle = document.getElementById(articleId);
+            if (selectedArticle) {
+                selectedArticle.style.display = 'block'; // Make it visible
+                selectedArticle.classList.add('active');
+                
+                // Explicitly ensure the back button is visible
+                const backButton = selectedArticle.querySelector('.news-close-btn');
+                if (backButton) {
+                    backButton.style.display = 'block';
+                }
+                
+                // Scroll to the top of the article
+                selectedArticle.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+        
+        function closeAllHistoryArticles() {
+            // Hide all history articles
+            const historyArticles = document.querySelectorAll('.history-item');
+            historyArticles.forEach(article => {
+                article.style.display = 'none';
+                article.classList.remove('active');
+            });
+            
+            // Show the history grid
+            const historyGrid = document.getElementById('history-grid');
+            if (historyGrid) {
+                 historyGrid.style.display = 'grid';
+            }
+            
+            // Scroll to the top of the history section feature
+            document.querySelector('.history-feature').scrollIntoView({ behavior: 'smooth' });
         }
         
         // Mobile menu toggle (if not already in script.js)
