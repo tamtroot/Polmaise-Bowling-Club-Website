@@ -571,8 +571,19 @@
                                     <h3>Opening of Bowling Green and Sale of Work</h3>
                                 </div>
                             </div>
+                            
+                            <!-- History Card 2: 1942 -->
+                            <div class="news-card" onclick="toggleHistoryArticle('history-1942')">
+                                <div class="news-card-thumbnail">
+                                    <img src="./Images/Archive/HistoricalArchive/Stirling_Observer_11_August_1942_0006_Clip.jpg" alt="J. Gwynne Sr. Championship Win 1942">
+                                </div>
+                                <div class="news-card-date">September 9, 1942</div>
+                                <div class="news-card-title">
+                                    <h3>Father Defeats Son in Club Championship Final</h3>
+                                </div>
+                            </div>
                         
-                            <!-- History Card 2: 1961 -->
+                            <!-- History Card 3: 1961 -->
                             <div class="news-card" onclick="toggleHistoryArticle('history-1961')">
                                 <div class="news-card-thumbnail">
                                     <img src="./Images/Archive/HistoricalArchive/Golden Jubilee.jpg" alt="Polmaise Bowling Club Golden Jubilee 1961">
@@ -583,7 +594,7 @@
                                 </div>
                             </div>
                             
-                            <!-- History Card 3: 1988 -->
+                            <!-- History Card 4: 1988 -->
                             <div class="news-card" onclick="toggleHistoryArticle('history-1988')">
                                 <div class="news-card-thumbnail">
                                     <img src="./Images/Archive/1988.jpg" alt="Polmaise Bowling Club - Scottish Top Ten Champions 1988">
@@ -594,7 +605,7 @@
                                 </div>
                             </div>
                             
-                            <!-- History Card 4: 2013 -->
+                            <!-- History Card 5: 2013 -->
                             <div class="news-card" onclick="toggleHistoryArticle('history-2013')">
                                 <div class="news-card-thumbnail">
                                     <img src="./Images/Archive/HistoricalArchive/Gary&Rita1.jpg" alt="Rita Smith and Gary Malcolmson - Scottish Mixed Pairs Champions">
@@ -751,6 +762,36 @@
                                 </div>
                             </div>
                         
+                            <!-- Article from 1942 -->
+                            <div id="history-1942" class="history-item" style="display: none;">
+                                <div class="historical-article-container">
+                                    <article class="historical-article">
+                                        <h3>Stirling Observer – Wednesday, September 9, 1942</h3>
+                                        
+                                        <!-- Featured image at top of article -->
+                                        <div style="text-align: center; margin-bottom: 20px;">
+                                            <img src="./Images/Archive/HistoricalArchive/Stirling_Observer_11_August_1942_0006_Clip.jpg" alt="J. Gwynne Sr. Championship Win 1942" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        </div>
+                                        
+                                        <h4>FALLIN BOWLING</h4>
+                                        
+                                        <!-- Original newspaper clipping in square format -->
+                                        <div style="float: right; margin: 0 0 20px 20px; width: 250px; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                            <img src="./Images/Archive/HistoricalArchive/J.Gwynne.jpg" alt="Original newspaper clipping from 1942" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                        </div>
+                                        
+                                        <p>The final of the championship was played on Wednesday between J. Gwynne and J. Gwynne, Jr., when the former won by 21 shots to 10. This is the ninth time J. Gwynne has been champion of the Polmaise Club.</p>
+                                        
+                                        <div style="margin-top: 20px; border-top: 1px dashed #ccc; padding-top: 20px;">
+                                            <p><em>Historical Note: This remarkable match between father and son represents one of the most unique moments in Polmaise Bowling Club's history. John Gwynne Sr. was a dominant force in the club during the 1920s-40s, with this victory marking his ninth and final club championship. What makes this match particularly special is that he faced his own son in the final, showing how bowling had become a family tradition at Polmaise. The article above - dated 11th August 1942, from the Stirling Observer, shows the incredible build up to the match and the results of that years semi-finals by both Father and Son.</em></p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                    <button onclick="closeAllHistoryArticles()">Back to History</button>
+                                </div>
+                            </div>
+                            
                             <!-- Article from 1961 -->
                             <div id="history-1961" class="history-item" style="display: none;">
                                 <div class="historical-article-container">
