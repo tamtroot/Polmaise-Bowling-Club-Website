@@ -522,8 +522,13 @@
                         <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; margin-bottom: 30px;">
                             <div class="history-intro" style="flex: 1; min-width: 300px;">
                                <p>Tucked away in a corner of our clubhouse is a framed treasure — a collection of yellowed clippings and fading type, lovingly preserved and gifted to Polmaise Bowling Club by W. Jenkins on the occasion of our 75th Anniversary in July 1986. These articles, drawn from newspapers and community reports, tell the quiet but proud story of our club — of roll-ups and rivalries, of jubilee celebrations, gala days, and the steadfast spirit of Fallin's bowling men and women.</p>
+                               
+                               <p>Thanks to a recent rediscovery, our journey now stretches all the way back to where it all began — with a news article from 1911, capturing the excitement and ceremony of Polmaise Bowling Club's official opening. This first recorded moment on our green sets the stage for over a century of camaraderie, competition, and community.</p>
+                               
                                <p>In this special News series, we'll be gently dusting off the past and sharing those moments once more — not as grand headlines, but as living memories. Each article is a snapshot in time: a nod to the suits and hats, the handshakes and speeches, the summer days on the green, and the laughter echoing from the clubhouse.</p>
-                               <p>Whether you're a lifelong member or new to our green, we invite you to wander with us down memory lane. We begin with a piece from 1961, when the club marked its golden jubilee with pride, and Fallin came together in celebration.</p>
+                               
+                               <p>Whether you're a lifelong member or new to our green, we invite you to wander with us down memory lane. We begin with that historic opening in 1911, and follow with a piece from 1961, when the club marked its golden jubilee with pride, and Fallin came together in celebration.</p>
+                               
                                <p>These are our stories — handed down, and now, shared again.</p>
                             </div>
                             
@@ -532,12 +537,45 @@
                             </div>
                         </div>
                         
+                        <!-- Looking Back Section -->
+                        <div class="looking-back-section" style="margin: 30px 0; padding: 25px; border: 1px solid #eaeaea; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                            <h3>LOOKING BACK - 75th Anniversary</h3>
+                            <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
+                                <div style="flex: 1; min-width: 300px;">
+                                    <p>Peter Black shared some of his memories from the 75th Anniversary:</p>
+                                    
+                                    <p>"I was President when we celebrated our 75th anniversary. On the Monday night, we invited every club we played tea games with to send a rink to play against us. Then, on Tuesday, we hosted a match against a Central Select team, followed by the County Select on Wednesday, and the Scottish on Thursday. Friday was a hat night with our own club members.</p>
+                                    
+                                    <p>After each game, the highest-scoring rink from each team was presented with a silver goblet. We also invited past Presidents to attend, and one of them even read a poem about Polmaise during the tea.</p>
+                                    
+                                    <p>I remember the Monday night against the tea games well—I was told I left F.P.H.S. around 9:30, only to be back at the bar by 9:40 asking for a pint and a vodka! I was just a boy of 36."</p>
+                                </div>
+                                <div style="flex: 0 0 auto; max-width: 300px;">
+                                    <figure style="margin: 0;">
+                                        <img src="./Images/Archive/HistoricalArchive/75th Presidents Trophy.jpg" alt="Silver Goblet from 75th Anniversary" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        <figcaption style="text-align: center; font-size: 0.9rem; margin-top: 10px; font-style: italic;">Silver Goblet Presented to the President. It says - 75th Anniversary, Polmaise B.C. 1986.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <!-- History Grid for Thumbnails -->
                         <div class="news-grid" id="history-grid">
-                            <!-- History Card 1: 1961 -->
+                            <!-- History Card 1: 1911 Opening -->
+                            <div class="news-card" onclick="toggleHistoryArticle('history-1911')">
+                                <div class="news-card-thumbnail">
+                                    <img src="./Images/Archive/HistoricalArchive/Opening of Green.jpg" alt="Opening of Bowling Green 1911">
+                                </div>
+                                <div class="news-card-date">June 3, 1911</div>
+                                <div class="news-card-title">
+                                    <h3>Opening of Bowling Green and Sale of Work</h3>
+                                </div>
+                            </div>
+                        
+                            <!-- History Card 2: 1961 -->
                             <div class="news-card" onclick="toggleHistoryArticle('history-1961')">
                                 <div class="news-card-thumbnail">
-                                    <img src="./Images/Archive/HistoricalArchive/8th June 1961.jpg" alt="Scan of Alloa Journal article from June 8th, 1961">
+                                    <img src="./Images/Archive/HistoricalArchive/Golden Jubilee.jpg" alt="Polmaise Bowling Club Golden Jubilee 1961">
                                 </div>
                                 <div class="news-card-date">June 8, 1961</div>
                                 <div class="news-card-title">
@@ -549,109 +587,236 @@
 
                         <!-- Full Historical Articles (initially hidden) -->
                         <div class="history-articles-content">
+                            <!-- 1911 Article -->
+                            <div id="history-1911" class="history-item" style="display: none;">
+                                <div class="historical-article-container">
+                                    <article class="historical-article">
+                                        <h3>A Gala Day at Fallin - June 3, 1911</h3>
+                                        
+                                        <!-- Featured image at top of article -->
+                                        <div style="text-align: center; margin-bottom: 20px;">
+                                            <img src="./Images/Archive/HistoricalArchive/Opening of Green.jpg" alt="Opening of Bowling Green 1911" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        </div>
+                                        
+                                        <h4>Opening of Bowling Green and Sale of Work</h4>
+                                        
+                                        <!-- Original newspaper clipping in square format -->
+                                        <div style="float: right; margin: 0 0 20px 20px; width: 250px; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                            <img src="./Images/Archive/HistoricalArchive/Opening of Green News.jpg" alt="Original newspaper clipping from 1911" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                        </div>
+                                        
+                                        <p><em>Photo by Bennett, St. Ninians.</em></p>
+                                        
+                                        <p>Saturday last was a great day at the mining village of Fallin, three miles from Stirling, the occasion being the opening of a bowling green and a sale of work, both these events being the first of the kind in the village. The weather was beautiful, and when Mr Horne, K.C., Edinburgh, the Unionist candidate for the County at the last election, turned up and performed both opening ceremonies, there was a very large audience collected round the fence of the new bowling green, and also inside the enclosure.</p>
+                                        
+                                        <p>Amongst those present were:- Mr and Mrs D. Todd, Fallin; Mr and Mrs R. Wallace, Greenfields Colliery, Hamilton; Mr and Miss Wallace, Greenfields Colliery, Hamilton; Mr and Mrs Gibb, Tannochside Collieries, Uddingston; Mr McKay and Mr J. Young, Cornselloch Collieries, Larkhall; Mr and Mrs Inglis, Plean; Mr and Mrs Simmons, Cowie; Mr and Mrs Roberts, Carnock; Dr and Mrs Porter, Fallin; Mr, Mrs, and Miss Kinniburgh, Cowie; Mr W. Davidson, Plean; Messrs Cowley, and Robertson, Craigend, Polmont; Mr J. MIndoe, Whistleberry, Blantyre; Mr J. Walker, Hamilton; Mr A. Falconer, Hamilton; Mr, Mrs, and Master G. Stewart, Rosebank, Blantyre; Mr and Mrs H. Barr, Motherwell; Mr W. and Miss Kerr, Motherwell; Mr and Misses McLaren, Alton Farm, Bandeath; Mr and Mrs Carsewell, Dykes Farm; Mr and Miss Tweedie, Throsk; Messrs Hunter, Wylie, and MIntosh, of Messrs Hunter and Warren, Glasgow; Mr Shallon, Buchers and Company, Leith; Dr Laidlaw; Messrs T. Muir, J. Laidlaw, and Skea, Stirling; Messrs A. Hannah, Wright, and Steel, Denny; Mr and Mrs Kerr, Bandeath Farm; Mr U. Henderson and Miss Henderson, Burnbank, Throsk; Mr D. Henderson and Miss Christie, Burnhead, Throsk; Mr and Mrs D. MNaughton, Old Polmaise; Rev. James Allan, Bannockburn; Misses Kerr, Mr and Mrs Mitchell, Mr and Mrs Penman, Mr and Mrs Johnston Barr, Mr and Mrs A. Campbell, Mr and Mrs W. Campbell, Mr and Mrs J. Campbell, Mr and Mrs Gemmell, and Mr and Mrs M'Phee, Fallin; Mr and Mrs J. Gemmel, Millhall; Mr W.F. Ferguson, Linden Avenue, Stirling; Mr Bryson, Cockspow Farm, etc.</p>
+                                        
+                                        <p>Representatives were also present from Cowie, Bannockburn; Livilands, Borestone, Cambusbarron, Stirling, Spittalmyre, and Causewayhead Bowling Clubs.</p>
+                                        
+                                        <p>The new green which is situated at the side of the road opposite the houses at Fallin, was laid by Mr Provan, Rutherglen, whilst the inclosing wall and fence were erected by Mr G. Stewart, Blantyre. Both are excellent pieces of work. The green has cost $300, and the expense of erecting the wall was $90. The green was opened practically free of debt, but it is still without a bowlhouse, which is a very necessary adjunct, and this is to be provided from funds raised by the sale of work and other sources.</p>
+                                        
+                                        <p>It is expected that the Gothenburg Society Committee will assist in this matter after the first year's profit has declared on their institution. The officials of the bowling club are:- President, Mr D. Todd, colliery manager; Vice-president, Mr J. Barr, sen.; Secretary, Mr D. Blythe; Treasurer, Mr A. Kerr, and greenkeeper, Mr. R. Denovan. There are already 40 members.</p>
+                                        
+                                        <p>No function like Saturday's is complete without a photograph of the company being taken, and this having been done by Mr Bennet, St. Ninians, the opening ceremony in connection with the green was proceeded with.</p>
+                                        
+                                        <p>Mr Todd, in introducing Mr Horne, said that that gentlemen had showed his goodwill and love for his native shire when he put himself to the inconvenience of coming all the way from Edinburgh that afternoon to open the first bowling green and sale of work held in the village of Fallin.</p>
+                                        
+                                        <p>Mr Horne, who made a neat little speech, said it was the greatest possible pleasure for him to be present that day and see Fallin in gala costume, and to assist in the opening of a bowling green which would be of the greatest possible use in the way of outdoor recreation in the future. They had met under the best conditions in regard to the weather, and he began to wonder if in this respect the nose of the Coronation had not been somewhat put out of joint when they had such a beautiful day as they were experiencing. (Laughter and applause.) He congratulated them on having such a fine green for recreation on a summer evening.</p>
+                                        
+                                        <p>Some form of amusement after the day's work was required, and they could realise how beneficent it was for the people of a small village like Fallin that they should have a form of sport in which every member of the community could take a part. Britain had led the way as a nation in sport. She had taught bowling, football, and cricket to the world, and in doing so they might congratulate themselves that in these things Britain had proved of the best possible service to mankind. Any sport such as bowling bred a healthy type of man among the people, and it was treating life as it ought to be treated that they should not have all work and no play.</p>
+                                        
+                                        <p>This was the spirit that animated Admiral Drake when he heard of the advent of the Spanish Armada on the English coast. He was playing bowls at the time, and when the news was brought to him of the enemy's appearance, he said they would finish their game, which he did, and then he went out and beat the Spaniards (Laughter and applause.) The new green would make the community of Fallin pure and better in every way, and the only thing he was uncertain of was that some of them might perhaps be so bent on playing bowls when they should be working on the night shift. (Laughter) They found themselves that day in a peculiarly happy situation.</p>
+                                        
+                                        <p>Before him lay a beautiful green, and around him he saw such a scene as he thought could not be witnessed anywhere else, bordered as that scene was by the base of the most beautiful hills in one of the loveliest counties of Scotland. (Applause.)</p>
+                                        
+                                        <p>Mr Horne then formally declared the green open, and Mr Johnston Barr, sen. proposed a vote of thanks to Mr Horne.</p>
+                                        
+                                        <p>Mr Todd next said he had much pleasure in calling upon Mrs Horne (Mr Horne's mother) to throw the first "jack."</p>
+                                        
+                                        <p>This lady did so, and managed to throw the "kitty" a very good length, amid applause. This over, Mrs Todd then formally presented Mrs Horne, on behalf of the club, with a silver jack, suitably inscribed, and placed on a stand.</p>
+                                        
+                                        <p>Mr Horne made a brief reply on behalf of his mother and said that that gift was more than she or he had ever thought of. They would cherish the souvenir which had been presented to Mrs Horne, and he hoped that many "jacks" would be thrown in future years on the Fallin bowling green.</p>
+                                        
+                                        <p>On the invitation of Mr Johnston Barr, Mrs Todd then threw the first bowl, which was also a good length, and she was then presented with a silver "jack" by Mr Provan, the contractor for the green.</p>
+                                        
+                                        <p>Mr Todd replied for his wife. The next part of the ceremony was the presenting of two silver cups and a set of gold badges to the club. The first cup was handed over by Mr Thallon, on behalf of Mr Buchers, Leith, and is for the single-banded championship; whilst the second trophy was presented by Dr Laidlaw, Stirling, and it will be played for by rinks. The Doctor also intimated that he would give a set of gold badges, to go to the members of the winning rink.</p>
+                                        
+                                        <p>Mr Todd returned thanks to the donors of the cup, and said these gifts would give every bowler in the green a chance of going in and winning something which he would look upon with regard in after years.</p>
+                                        
+                                        <p>It may be here stated that the club has equipped itself with bowls, but a gift was made to it of several mounted bowls from other gentlemen in the district.</p>
+                                        
+                                        <p>In concluding the proceedings, Mr Todd said that the green had been made and opened practically without there being a penny of debt on it, but the ladies thought they would like to assist in regard to the raising of the funds for a bowlhouse, and they had accordingly arranged to have a sale of work that afternoon in the recreation hall. The club had got on extra well so far through the aid of outside friends and subscriptions, and if the ladies did as well that afternoon everybody would be highly satisfied.</p>
+                                        
+                                        <h4>Match Results</h4>
+                                        <p>A match then took place between teams selected by the President and Vice-President of the Club. Six rinks took part, and the result was as follows:-</p>
+                                        
+                                        <table class="results-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>President</th>
+                                                    <th>Score</th>
+                                                    <th>Vice-President</th>
+                                                    <th>Score</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>D. Todd</td>
+                                                    <td>10</td>
+                                                    <td>J. Barr, Sen.</td>
+                                                    <td>19</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>R. Wallace</td>
+                                                    <td>13</td>
+                                                    <td>J. Barr, Jnr.</td>
+                                                    <td>11</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>H. Barr</td>
+                                                    <td>16</td>
+                                                    <td>J. Robertson</td>
+                                                    <td>9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A. Campbell</td>
+                                                    <td>12</td>
+                                                    <td>W. Minto</td>
+                                                    <td>17</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mr Smith</td>
+                                                    <td>18</td>
+                                                    <td>W. Gibb</td>
+                                                    <td>8</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Thos Muir</td>
+                                                    <td>10</td>
+                                                    <td>W. Campbell</td>
+                                                    <td>13</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Total</strong></td>
+                                                    <td><strong>79</strong></td>
+                                                    <td></td>
+                                                    <td><strong>77</strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        
+                                        <h4>Sale of Work</h4>
+                                        <p>Whilst the enthusiastic bowlers then went to engage in a game between sides captained by the President and Vice-President, a large section of the company proceeded to the Hall, where Mr Horne opened the sale of work.</p>
+                                        
+                                        <p>He said that having had the benefit of seeing the green he was in a very fortunate position of being able to recommend the sale of work to everybody in the room. If people were to have bowling greens they had to pay for them. That was, unfortunately, the way of the world, and it was therefore necessary to raise the funds to provide this means of recreation in the district. It was a somewhat extraordinary result of human nature that they could never get so much from subscriptions as in the way of work, and that if they started a sale of work, especially amongst ladies, they could raise far more money than they could from subscriptions from the pockets of gentlemen. (Laughter)</p>
+                                        
+                                        <p>The ladies of Fallin believed it would be for the good of their husbands and families that this green should exist where it did and he was quite certain that every married woman expected her "man" to come home in the evening with the sweetest possible temper, and never to say a hard word-(laughter)-which would be a very good results of the establishment of the green in the district. (More laughter.) As they all knew every bowl had its bias, and the great success in bowling was only to be done by rolling up the bowl to the jack with the proper bias. He hoped that everybody present had got a strong bias in favour of the things they saw before them and the result would be that most of the debt, if not the whole of it, would to a large extent be wiped of by the evening. (Applause.) He then declared the sale open. The sale was a great success, and £85 was realised.</p>
+                                        
+                                        <h4>Stallholders</h4>
+                                        <ul style="list-style-type: none; padding-left: 0;">
+                                            <li><strong>No. 1</strong> - Mrs. Todd and Mrs D. McNaughton</li>
+                                            <li><strong>No. 2</strong> - Mrs McPhee and Miss Christie</li>
+                                            <li><strong>No. 3</strong> - Miss C. Kerr and Miss M. Barr</li>
+                                            <li><strong>No. 4</strong> - Mrs W. Mitchell and Mrs J. Barr, Jr.</li>
+                                            <li><strong>No. 5</strong> - Mrs D. Blyth and Miss Weir</li>
+                                            <li><strong>Fruit and Flower stall</strong> - Miss M. Kerr, Miss Sedie Todd and Miss I. MPhee</li>
+                                            <li><strong>Tea room</strong> - Mrs P. Barr, Mrs A Penman, and Mrs A. Campbell</li>
+                                        </ul>
+                                    </article>
+                                </div>
+                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                    <button onclick="closeAllHistoryArticles()">Back to History</button>
+                                </div>
+                            </div>
+                        
                             <!-- Article from 1961 -->
                             <div id="history-1961" class="history-item" style="display: none;">
                                 <div class="historical-article-container">
                                     <article class="historical-article">
                                         <h3>Alloa Journal and Advertiser – Thursday, June 8th, 1961</h3>
-                                        <div class="history-images">
-                                            <img src="./Images/Archive/HistoricalArchive/8th June 1961.jpg" alt="Scan of Alloa Journal article from June 8th, 1961" class="zoomable-image" onclick="openLightbox(this)">
-                                        </div>
-                                        <div class="article-text">
-                                            <h4>POLMAISE BOWLING CLUB CELEBRATE THEIR JUBILEE</h4>
-                                            <p>This is a memorable week for the mining village of Fallin for the Polmaise Bowling Club are celebrating their golden jubilee and doing it in real royal fashion. After an enjoyable mixed game on Monday night, the club had as guests on Tuesday night the President of the Scottish Bowling Association, Mr David Preston, Stirling, and the members of the S.B.A. Council, together with the British Isles championship rink from Kirkcaldy skipped by Mr R. Whitehead.</p>
-                                            <p>A keen game on the excellent green resulted in a draw of 68 shots each, after which the company sat down to supper in the lounge of the Gothenburg. There the guests were given a warm welcome by the president, Mr William Paterson, now in his eighth year of office, and in the party at the top table were Mr Preston ; Mr John Linning, secretary of the S.B.A. : Mr Tom Corrie, secretary of Stirling County Bowling Association; Mr Tom Bunyan, that grand old man of the Polmaise Club now resident in Perthshire ; Mr Robert Dick, vice-president ; Mr .Pat. Lyons, secretary, and Mr John Brown, treasurer, the oldest playing member of the club. He joined in 1912.</p>
-                                            <p>Mr Preston proposed a toast to the club, and after the secretary had the scores Mr. Paterson presented prizes to the members of the highest-up rink on each side. Referring to the auspicious occasion they were celebrating, Mr Paterson said that had been an outstanding night in the history of Polmaise Club and paid tribute to the Gothenburg for rallying round them to make the celebrations a success.</p>
-                                            <p>Mr Preston at the outset of a racy speech thanked the British Isles championship rink for coming all the way from Lochgelly to help out the Scottish on this important occasion. It was a great joy to him, he said, to be among his ain folk that night He had known the Polmaise Club for many years and he thanked them for their co-operation over the past 15 years.</p>
-                                            <p>Polmaise was born in 1911. It was one of the small clubs, but, strange to say, they had won every cup they had competed for in the County of Stirling. They had only a member-ship of around 30, but with the help of the "Goth" had never allowed the surface of their fine green to deteriorate.</p>
-                                            <p>When The club started the membership fee was 6/ -. After the second world war they raised it to 10/- and now be believed it was £1.</p>
-                                            <p>He could not, therefore, understand why more of the men folk of Fallin did not support the club in the way fit so richly deserved. They were missing a great opportunity of enjoying life to the full on the bowling green and taking part in the greatest sport in the world. Polmaise Club, said Mr Preston. had been four times to Queen's Park. They had also the rather peculiar distinction of having had only six presidents in their lifetime of 50 years. They must like to keep good men on the job, and " Willie" Paterson, now doing his eighth year, was also doing a very good job. He thanked the club for their kind invitation and for their generous hospitality, and wished them a very successful week and much success in the future.</p>
-                                            <p>Mr Paterson briefly acknowledged the Scottish president's remarks. Mr Tom Bunyan said he felt it an honour to have been asked to thank the "Scottish" for their presence and it had been a pleasure to see them enjoy themselves on laughable. The Scottish was a wonderful organisation and its affairs were well handled by Secretary Linning. It was a great honour to Polmaise to have the British Isles championship rink with them on this occasion. It was also a very nice gesture on the part of the Scottish Council members to present badges to the Polmaise players. He assured them they would be much appreciated by those who received them.</p>
-                                            <p>Mr John Linning, the Scottish secretary, added a word of congratulation to the club and said how much they appreciated the way Mr Preston was carrying out his duties as president. He also mentioned that this year they had a record entry for the Scottish championships. Out of the 772 clubs. 741 had entered the rink competition, 735 the singles and 734 the pairs. It was amazing, he said, to see such interest in the game.</p>
-                                            
-                                            <h4>Match Details</h4>
-                                            <table class="results-table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Polmaise Skip</th>
-                                                        <th>Team Members (Polmaise)</th>
-                                                        <th>Scottish B.A. Skip</th>
-                                                        <th>Team Members (Scottish B.A.)</th>
-                                                        <th>Score (Polmaise - Scottish B.A.)</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>W. Paterson</td>
-                                                        <td>H. Haughie, J. Park, T. Bunyan</td>
-                                                        <td>D. Preston</td>
-                                                        <td>A. Wallace, W. Dick, W. Paterson</td>
-                                                        <td>10 – 14</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>P. Lyons</td>
-                                                        <td>A. Cairns, D. Ryan, R. Dick</td>
-                                                        <td>J. Linning</td>
-                                                        <td>J. C. Anderson, J. Cuthbertson, N. Allan</td>
-                                                        <td>6 – 17</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>J. Taylor</td>
-                                                        <td>D. Ivatt, H. Kirkwood, A. Buchanan</td>
-                                                        <td>R. Whitehead</td>
-                                                        <td>A. C. Stewart, Jas. Luing, D. Kirk</td>
-                                                        <td>8 – 21</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>T. Govan</td>
-                                                        <td>G. Anderson, J. Brown, jun., M. Boyle</td>
-                                                        <td>R. A. Blair</td>
-                                                        <td>G. Shaw, M. Duncan, W. Muir</td>
-                                                        <td>23 – 9</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>J. Liddle</td>
-                                                        <td>R. Duncan, W. Jenkins, F. Ryan</td>
-                                                        <td>A. Provan</td>
-                                                        <td>W. A. Aslett, J. Milligan, J. Morrison</td>
-                                                        <td>21 – 7</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="4" style="text-align:right; font-weight: bold;">Total</td>
-                                                        <td style="font-weight: bold;">68 - 68</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        
+                                        <!-- Featured image at top of article -->
+                                        <div style="text-align: center; margin-bottom: 20px;">
+                                            <img src="./Images/Archive/HistoricalArchive/Golden Jubilee.jpg" alt="Polmaise Bowling Club Golden Jubilee 1961" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
                                         </div>
                                         
-                                        <!-- Looking Back Section -->
-                                        <div class="looking-back-section" style="margin-top: 40px; border-top: 1px solid #e0e0e0; padding-top: 20px;">
-                                            <h4>LOOKING BACK - 75th Anniversary</h4>
-                                            <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
-                                                <div style="flex: 1; min-width: 300px;">
-                                                    <p>Peter Black shared some of his memories from the 75th Anniversary:</p>
-                                                    
-                                                    <p>"I was President when we celebrated our 75th anniversary. On the Monday night, we invited every club we played tea games with to send a rink to play against us. Then, on Tuesday, we hosted a match against a Central Select team, followed by the County Select on Wednesday, and the Scottish on Thursday. Friday was a hat night with our own club members.</p>
-                                                    
-                                                    <p>After each game, the highest-scoring rink from each team was presented with a silver goblet. We also invited past Presidents to attend, and one of them even read a poem about Polmaise during the tea.</p>
-                                                    
-                                                    <p>I remember the Monday night against the tea games well—I was told I left F.P.H.S. around 9:30, only to be back at the bar by 9:40 asking for a pint and a vodka! I was just a boy of 36."</p>
-                                                </div>
-                                                <div style="flex: 0 0 auto; max-width: 300px;">
-                                                    <figure style="margin: 0;">
-                                                        <img src="./Images/Archive/HistoricalArchive/75th Presidents Trophy.jpg" alt="Silver Goblet from 75th Anniversary" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                                        <figcaption style="text-align: center; font-size: 0.9rem; margin-top: 10px; font-style: italic;">Silver Goblet Presented to the President. It says - 75th Anniversary, Polmaise B.C. 1986.</figcaption>
-                                                    </figure>
-                                                </div>
-                                            </div>
+                                        <h4>POLMAISE BOWLING CLUB CELEBRATE THEIR JUBILEE</h4>
+                                        
+                                        <!-- Original newspaper clipping in square format -->
+                                        <div style="float: right; margin: 0 0 20px 20px; width: 250px; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                            <img src="./Images/Archive/HistoricalArchive/8th June 1961.jpg" alt="Original newspaper clipping from 1961" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
                                         </div>
+                                        
+                                        <p>This is a memorable week for the mining village of Fallin for the Polmaise Bowling Club are celebrating their golden jubilee and doing it in real royal fashion. After an enjoyable mixed game on Monday night, the club had as guests on Tuesday night the President of the Scottish Bowling Association, Mr David Preston, Stirling, and the members of the S.B.A. Council, together with the British Isles championship rink from Kirkcaldy skipped by Mr R. Whitehead.</p>
+                                        <p>A keen game on the excellent green resulted in a draw of 68 shots each, after which the company sat down to supper in the lounge of the Gothenburg. There the guests were given a warm welcome by the president, Mr William Paterson, now in his eighth year of office, and in the party at the top table were Mr Preston ; Mr John Linning, secretary of the S.B.A. : Mr Tom Corrie, secretary of Stirling County Bowling Association; Mr Tom Bunyan, that grand old man of the Polmaise Club now resident in Perthshire ; Mr Robert Dick, vice-president ; Mr .Pat. Lyons, secretary, and Mr John Brown, treasurer, the oldest playing member of the club. He joined in 1912.</p>
+                                        <p>Mr Preston proposed a toast to the club, and after the secretary had the scores Mr. Paterson presented prizes to the members of the highest-up rink on each side. Referring to the auspicious occasion they were celebrating, Mr Paterson said that had been an outstanding night in the history of Polmaise Club and paid tribute to the Gothenburg for rallying round them to make the celebrations a success.</p>
+                                        <p>Mr Preston at the outset of a racy speech thanked the British Isles championship rink for coming all the way from Lochgelly to help out the Scottish on this important occasion. It was a great joy to him, he said, to be among his ain folk that night He had known the Polmaise Club for many years and he thanked them for their co-operation over the past 15 years.</p>
+                                        <p>Polmaise was born in 1911. It was one of the small clubs, but, strange to say, they had won every cup they had competed for in the County of Stirling. They had only a member-ship of around 30, but with the help of the "Goth" had never allowed the surface of their fine green to deteriorate.</p>
+                                        <p>When The club started the membership fee was 6/ -. After the second world war they raised it to 10/- and now be believed it was £1.</p>
+                                        <p>He could not, therefore, understand why more of the men folk of Fallin did not support the club in the way fit so richly deserved. They were missing a great opportunity of enjoying life to the full on the bowling green and taking part in the greatest sport in the world. Polmaise Club, said Mr Preston. had been four times to Queen's Park. They had also the rather peculiar distinction of having had only six presidents in their lifetime of 50 years. They must like to keep good men on the job, and " Willie" Paterson, now doing his eighth year, was also doing a very good job. He thanked the club for their kind invitation and for their generous hospitality, and wished them a very successful week and much success in the future.</p>
+                                        <p>Mr Paterson briefly acknowledged the Scottish president's remarks. Mr Tom Bunyan said he felt it an honour to have been asked to thank the "Scottish" for their presence and it had been a pleasure to see them enjoy themselves on laughable. The Scottish was a wonderful organisation and its affairs were well handled by Secretary Linning. It was a great honour to Polmaise to have the British Isles championship rink with them on this occasion. It was also a very nice gesture on the part of the Scottish Council members to present badges to the Polmaise players. He assured them they would be much appreciated by those who received them.</p>
+                                        <p>Mr John Linning, the Scottish secretary, added a word of congratulation to the club and said how much they appreciated the way Mr Preston was carrying out his duties as president. He also mentioned that this year they had a record entry for the Scottish championships. Out of the 772 clubs. 741 had entered the rink competition, 735 the singles and 734 the pairs. It was amazing, he said, to see such interest in the game.</p>
+                                        
+                                        <h4>Match Details</h4>
+                                        <table class="results-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Polmaise Skip</th>
+                                                    <th>Team Members (Polmaise)</th>
+                                                    <th>Scottish B.A. Skip</th>
+                                                    <th>Team Members (Scottish B.A.)</th>
+                                                    <th>Score (Polmaise - Scottish B.A.)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>W. Paterson</td>
+                                                    <td>H. Haughie, J. Park, T. Bunyan</td>
+                                                    <td>D. Preston</td>
+                                                    <td>A. Wallace, W. Dick, W. Paterson</td>
+                                                    <td>10 – 14</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P. Lyons</td>
+                                                    <td>A. Cairns, D. Ryan, R. Dick</td>
+                                                    <td>J. Linning</td>
+                                                    <td>J. C. Anderson, J. Cuthbertson, N. Allan</td>
+                                                    <td>6 – 17</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>J. Taylor</td>
+                                                    <td>D. Ivatt, H. Kirkwood, A. Buchanan</td>
+                                                    <td>R. Whitehead</td>
+                                                    <td>A. C. Stewart, Jas. Luing, D. Kirk</td>
+                                                    <td>8 – 21</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>T. Govan</td>
+                                                    <td>G. Anderson, J. Brown, jun., M. Boyle</td>
+                                                    <td>R. A. Blair</td>
+                                                    <td>G. Shaw, M. Duncan, W. Muir</td>
+                                                    <td>23 – 9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>J. Liddle</td>
+                                                    <td>R. Duncan, W. Jenkins, F. Ryan</td>
+                                                    <td>A. Provan</td>
+                                                    <td>W. A. Aslett, J. Milligan, J. Morrison</td>
+                                                    <td>21 – 7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4" style="text-align:right; font-weight: bold;">Total</td>
+                                                    <td style="font-weight: bold;">68 - 68</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        
                                     </article>
-                                </div> 
+                                </div>
                                 <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
                                     <button onclick="closeAllHistoryArticles()">Back to History</button>
                                 </div>
                             </div>
-                             <!-- Add more full history articles here -->
                         </div>
                     </section>
                     <!-- End New History Section -->
