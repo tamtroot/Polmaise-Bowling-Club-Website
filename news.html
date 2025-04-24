@@ -597,7 +597,7 @@
                             <!-- History Card 1.8: 1935 Macintosh Trophy -->
                             <div class="news-card" onclick="toggleHistoryArticle('history-1935')">
                                 <div class="news-card-thumbnail">
-                                    <img src="./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_27_July_1935_0012_Clip.jpg" alt="Macintosh Trophy Win 1935">
+                                    <img src="./Images/Archive/HistoricalArchive/Macintosh 1935.jpg" alt="Macintosh Trophy Win 1935">
                                 </div>
                                 <div class="news-card-date">July 20, 1935</div>
                                 <div class="news-card-title">
@@ -891,16 +891,26 @@
                                     <article class="historical-article">
                                         <h3>Saturday, 20th July 1935</h3>
                                         
-                                        <!-- Featured image at top of article -->
+                                        <!-- Featured image at top of article - Updated -->
                                         <div style="text-align: center; margin-bottom: 20px;">
-                                            <img src="./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_27_July_1935_0012_Clip.jpg" alt="Macintosh Trophy Win 1935" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                            <img src="./Images/Archive/HistoricalArchive/Macintosh 1935.jpg" alt="Macintosh Trophy Win 1935" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
                                         </div>
                                         
                                         <h4>WINNERS OF THE MACINTOSH TROPHY</h4>
                                         
-                                        <!-- Original newspaper clipping in square format -->
-                                        <div style="float: right; margin: 0 0 20px 20px; width: 250px; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                            <img src="./Images/Archive/HistoricalArchive/20th July 1935.jpg" alt="Original newspaper clipping from July 1935" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                        <!-- Responsive image thumbnails that stack on mobile - similar to 1914 article -->
+                                        <div style="float: right; margin: 0 0 20px 20px; max-width: 100%;">
+                                            <!-- Use responsive layout with media query -->
+                                            <div style="display: flex; flex-direction: column; gap: 15px; max-width: 250px;">
+                                                <!-- First thumbnail -->
+                                                <div style="width: 100%; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                                    <img src="./Images/Archive/HistoricalArchive/20th July 1935.jpg" alt="Original newspaper clipping from July 1935" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                                </div>
+                                                <!-- Second thumbnail - New image -->
+                                                <div style="width: 100%; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                                    <img src="./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_27_July_1935_0012_Clip.jpg" alt="Bridge of Allan Gazette clipping about Macintosh Trophy" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                                </div>
+                                            </div>
                                         </div>
                                         
                                         <p>Polmaise and Bridge of Allan Bowling Clubs met in a four-rink game at Spittalmyre green on Saturday to decide the ownership of the Macintosh Trophy. Presented by Provost Macintosh for competition among clubs of the Stirling and District Bowling League the Cup has been won three times by both clubs during its ten years' existence.</p>
