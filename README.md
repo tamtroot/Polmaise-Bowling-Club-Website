@@ -27,14 +27,17 @@ A modern, responsive website for Polmaise Bowling Club based in Fallin, Scotland
 ### Color Scheme
 
 - **Primary Colors**:
-  - Forest Green (#228B22): Representing bowling greens and nature
-  - Gold (#FFD700): Signifying excellence and achievement
-- **Secondary Colors**:
+  - Club Blue (#1E3A8A): Main blue color representing the club
   - White (#FFFFFF): For backgrounds and clean spaces
+- **Secondary Colors**:
+  - Light Blue (#4B71BF): Lighter blue for accents
+  - Dark Blue (#0F2557): For depth and contrast
   - Dark Gray (#333333): For text and subtle accents
 - **Accent Colors**:
-  - Burgundy (#800020): For highlighting important information
-  - Light Gray (#D3D3D3): For borders and background elements
+  - Navy (#091534): Very dark blue for emphasis
+  - Light Gray (#E5E7EB): For borders and background elements
+- **Utility Colors**:
+  - Error Red (#FF3860): For form validation and error messages
 
 ### Typography
 
