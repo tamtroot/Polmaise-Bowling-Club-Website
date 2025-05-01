@@ -355,6 +355,17 @@
                     
                     <!-- News Grid for Thumbnails -->
                     <div class="news-grid">
+                        <!-- Card 0 (New) -->
+                        <div class="news-card" onclick="toggleArticle('article0')">
+                            <div class="news-card-thumbnail">
+                                <img src="./Images/2025/Shirt.png" alt="David Gourlay presents signed shirt to Polmaise Bowling Club">
+                            </div>
+                            <div class="news-card-date">May 1, 2025</div>
+                            <div class="news-card-title">
+                                <h3>Polmaise Bowling Club Receives Signed Shirt from David Gourlay</h3>
+                            </div>
+                        </div>
+                        
                         <!-- Card 1 -->
                         <div class="news-card" onclick="toggleArticle('article1')">
                             <div class="news-card-thumbnail">
@@ -401,6 +412,31 @@
                     </div>
                     
                     <!-- Full Articles (initially hidden) -->
+                    <article id="article0" class="news-item featured">
+                        <h3>Polmaise Bowling Club Receives Signed Shirt from David Gourlay</h3>
+                        <div class="news-image">
+                            <img src="./Images/2025/Shirt.png" alt="David Gourlay presents signed shirt to Polmaise Bowling Club" class="zoomable-image" onclick="openLightbox(this)">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> May 1, 2025</span>
+                                <span class="news-category"><i class="fas fa-tag"></i> Special Event</span>
+                            </div>
+                            <p>Polmaise Bowling Club was honoured yesterday with a special presentation from one of Scotland's most accomplished bowlers, David Gourlay, who gifted the club a signed World Bowls Tour shirt.</p></br>
+                            
+                            <p>The striking red and white shirt, presented during David's visit to the club, features the signatures of several legendary figures in Scottish bowls. Alongside David Gourlay's signature are those of Paul Foster MBE, Alex Marshall MBE, Stuart Anderson, and Darren Burnett—all renowned champions on both the national and international stage.</p></br>
+                            
+                            <p>This shirt not only represents an incredible gesture of support and recognition but also celebrates the deep connections Polmaise has within the wider Scottish bowls community.</p></br>
+                            
+                            <p>Club members were thrilled by the visit and expressed their appreciation for the generous gift. The signed shirt will be framed and proudly displayed in the clubhouse as a lasting reminder of the occasion and the distinguished players who have shaped the sport.</p></br>
+                            
+                            <p>We thank David and all the signatories for their support, and look forward to welcoming them to Polmaise again in the future.</p>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllArticles()">Back to News</button>
+                        </div>
+                    </article>
+                    
                     <article id="article1" class="news-item featured">
                         <h3>Fallin's Heartbeat: The Gothenburg and Polmaise Bowling Club Celebrated in The Herald</h3>
                         <div class="news-image">
