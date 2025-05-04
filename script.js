@@ -230,4 +230,198 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 5000);
         }
     });
+
+    // Direct JavaScript functions for album navigation - globally accessible
+    function showSubAlbum(albumId) {
+        // Hide the parent album
+        document.getElementById('album1').classList.remove('active');
+        
+        // Show the sub-album
+        document.getElementById(albumId).classList.add('active');
+        
+        // Scroll to the top of the sub-album
+        window.scrollTo({
+            top: document.getElementById(albumId).offsetTop - 100,
+            behavior: 'smooth'
+        });
+    }
+
+    function closeAlbum(albumId) {
+        // Hide all albums
+        const albums = document.querySelectorAll('.album-content');
+        albums.forEach(album => {
+            album.classList.remove('active');
+        });
+        
+        if (albumId) {
+            // If an albumId is provided, it means we're closing a sub-album
+            // and returning to its parent album
+            document.getElementById(albumId).classList.add('active');
+        } else {
+            // Show the main album cards
+            const albumCards = document.querySelectorAll('.album-cards');
+            albumCards.forEach(cards => {
+                cards.style.display = 'grid';
+            });
+        }
+        
+        // Scroll back to the gallery container
+        window.scrollTo({
+            top: document.querySelector('.gallery-container').offsetTop - 100,
+            behavior: 'smooth'
+        });
+    }
+
+    function backToMainGallery() {
+        // Hide all albums
+        const albums = document.querySelectorAll('.album-content');
+        albums.forEach(album => {
+            album.classList.remove('active');
+        });
+        
+        // Show the main album cards
+        const albumCards = document.querySelectorAll('.album-cards');
+        albumCards.forEach(cards => {
+            cards.style.display = 'grid';
+        });
+        
+        // Scroll back to the gallery container
+        window.scrollTo({
+            top: document.querySelector('.gallery-container').offsetTop - 100,
+            behavior: 'smooth'
+        });
+    }
+
+    // Add event listener to the "Back to 2025 Season" button in the BoA Tea Game album
+    const boaTeaBackButton = document.querySelector('#boa-tea .close-album');
+    if (boaTeaBackButton) {
+        boaTeaBackButton.addEventListener('click', function() {
+            document.getElementById('boa-tea').classList.remove('active');
+            document.getElementById('album1').classList.add('active');
+            
+            window.scrollTo({
+                top: document.getElementById('album1').offsetTop - 100,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Setup event listeners for album navigation in vanilla JS
+    const albumCards = document.querySelectorAll('.album-cards > .album-card');
+    albumCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const albumId = this.getAttribute('data-album');
+            if (albumId) {
+                document.querySelectorAll('.album-cards').forEach(cards => {
+                    cards.style.display = 'none';
+                });
+                document.getElementById(albumId).classList.add('active');
+                
+                window.scrollTo({
+                    top: document.getElementById(albumId).offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Add listeners to all "Back to Albums" buttons
+    const closeButtons = document.querySelectorAll('.close-album');
+    closeButtons.forEach(button => {
+        if (!button.hasAttribute('onclick')) {
+            button.addEventListener('click', function() {
+                const parentAlbum = this.closest('.album-content');
+                parentAlbum.classList.remove('active');
+                
+                // Check if this is a sub-album
+                if (this.textContent.includes('Back to 2025')) {
+                    document.getElementById('album1').classList.add('active');
+                } else {
+                    document.querySelectorAll('.album-cards').forEach(cards => {
+                        cards.style.display = 'grid';
+                    });
+                }
+                
+                window.scrollTo({
+                    top: document.querySelector('.gallery-container').offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    });
+});
+
+$(document).ready(function() {
+    // Mobile menu toggle
+    $('.mobile-menu').click(function() {
+        $('nav ul').toggleClass('show');
+    });
+    
+    // Close mobile menu when a link is clicked
+    $('nav ul li a').click(function() {
+        if ($('nav ul').hasClass('show')) {
+            $('nav ul').removeClass('show');
+        }
+    });
+
+    // Lightbox configuration
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'albumLabel': 'Image %1 of %2',
+        'fadeDuration': 300,
+        'imageFadeDuration': 300,
+        'positionFromTop': 50,
+        'maxWidth': 1200,
+        'maxHeight': 900,
+        'fitImagesInViewport': true,
+        'disableScrolling': false,
+        'showImageNumberLabel': true,
+        'alwaysShowNavOnTouchDevices': true
+    });
+    
+    // Main album card click functionality
+    $('.album-cards > .album-card').click(function() {
+        const albumId = $(this).data('album');
+        $('.album-cards').hide();
+        $('#' + albumId).addClass('active');
+        
+        // Scroll to the top of the album content
+        $('html, body').animate({
+            scrollTop: $('#' + albumId).offset().top - 100
+        }, 500);
+    });
+    
+    // Sub-album card click functionality within an album
+    $('.album-content .album-cards .album-card').click(function() {
+        const albumId = $(this).data('album');
+        $(this).closest('.album-content').removeClass('active');
+        $('#' + albumId).addClass('active');
+        
+        // Scroll to the top of the sub-album content
+        $('html, body').animate({
+            scrollTop: $('#' + albumId).offset().top - 100
+        }, 500);
+    });
+    
+    // Close album button functionality
+    $('.close-album').click(function() {
+        const parentAlbum = $(this).closest('.album-content');
+        
+        // Check if this is a sub-album by looking at the button text
+        if ($(this).text().includes('Back to 2025')) {
+            // This is a sub-album, go back to the parent album
+            parentAlbum.removeClass('active');
+            $('#album1').addClass('active');
+        } else {
+            // This is a main album, go back to the main gallery
+            parentAlbum.removeClass('active');
+            $('.album-cards').show();
+        }
+        
+        // Scroll back to the appropriate section
+        $('html, body').animate({
+            scrollTop: $('.gallery-container').offset().top - 100
+        }, 500);
+    });
 }); 
