@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandy Deans' Historical Archive - Polmaise Bowling Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./Images/polmaise_logo_favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Include jQuery first (required by lightbox) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Then include lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Archive page specific styles */
+        .archive-container {
+            padding: 2rem 0;
+        }
+
+        .archive-intro {
+            margin-bottom: 2rem;
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--club-blue);
+        }
+
+        .archive-intro img {
+            float: right;
+            max-width: 200px;
+            margin: 0 0 1rem 1rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .archive-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .archive-category {
+            flex: 1;
+            min-width: 200px;
+            background-color: white;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .archive-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .archive-category.active {
+            background-color: var(--club-blue);
+            color: white;
+        }
+
+        .archive-section {
+            margin-bottom: 3rem;
+        }
+
+        .archive-section h2 {
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--club-blue);
+        }
+
+        /* Gallery Grid styles (similar to gallery.html) */
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 1rem 0;
+        }
+
+        .archive-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .archive-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .archive-item a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .archive-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .archive-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .archive-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            font-size: 0.9rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .archive-item:hover .archive-caption {
+            transform: translateY(0);
+        }
+
+        /* Clippings display */
+        .news-clipping {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 3px solid var(--club-blue);
+        }
+
+        .news-clipping h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .news-clipping-date {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .news-clipping-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .news-clipping-image {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .news-clipping-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .news-clipping-text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        /* Timeline style for historical content */
+        .archive-timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .archive-timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--club-blue);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid var(--club-blue);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid var(--club-blue);
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent var(--club-blue);
+        }
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid var(--club-blue);
+            border-width: 10px 10px 10px 0;
+            border-color: transparent var(--club-blue) transparent transparent;
+        }
+
+        .right::after {
+            left: -16px;
+        }
+
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .timeline-content h3 {
+            margin-top: 0;
+        }
+
+        .timeline-content img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .archive-timeline::after {
+                left: 31px;
+            }
+
+            .timeline-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-container::before {
+                left: 60px;
+                border: medium solid var(--club-blue);
+                border-width: 10px 10px 10px 0;
+                border-color: transparent var(--club-blue) transparent transparent;
+            }
+
+            .left::after, .right::after {
+                left: 15px;
+            }
+
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="./Images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="fixtures.html">Fixtures</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="honours.html">Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h2>Sandy Deans Historical Archive</h2>
+            <p>A treasure trove of historical photographs and news clippings from our club's rich history</p>
+        </div>
+    </section>
+
+    <section class="archive-container">
+        <div class="container">
+            <!-- Introduction -->
+            <div class="archive-intro">
+                <img src="./Images/SD Archive/Sandy.jpg" alt="Sandy Deans">
+                <h2>About the Archive</h2>
+                <p>This archive is a comprehensive collection of photographs, news clippings, and memorabilia that documents the rich history of Polmaise Bowling Club from the early 1980s to the present day.</p>
+                <p>Sandy Deans, a long-standing and highly decorated member of our club, has collected and preserved these articles and photographs over many years. This archive represents his commitment to preserving the recent heritage and legacy of Polmaise Bowling Club for future generations.</p>
+                <p>From significant championship victories to special club events, from memorable matches to cherished moments of members past and present, this archive provides a fascinating glimpse into our club's development and achievements over the past four decades.</p>
+                <p>We invite you to explore this valuable collection and discover the stories that have shaped our club's modern identity and community.</p>
+                <p>Please note that the archive is extensive, so we'll be adding new content in stages. Be sure to check back regularly over the coming weeks as more materials are uploaded.</p>
+            </div>
+
+            <!-- Archive Categories -->
+            <div class="archive-categories">
+                <div class="archive-category active" data-category="all">
+                    <h3>All Items</h3>
+                </div>
+                <div class="archive-category" data-category="photos">
+                    <h3>Photos</h3>
+                </div>
+                <div class="archive-category" data-category="news-clippings">
+                    <h3>News Clippings</h3>
+                </div>
+            </div>
+
+            <!-- Photo Gallery Section -->
+            <div class="archive-section">
+                <h2>Photo Gallery</h2>
+                <div class="archive-grid">
+                    <!-- Stirling County B.A. Winners 1988 -->
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/20250506_120512.jpg" data-lightbox="archive" data-title="Stirling County B.A., Polmaise Bowling Club Winners 1988">
+                            <img src="./Images/SD Archive/20250506_120512.jpg" alt="Stirling County B.A. Winners 1988">
+                            <div class="archive-caption">Stirling County B.A., Polmaise Bowling Club Winners 1988</div>
+                        </a>
+                    </div>
+                    
+                    <!-- Additional Photo -->
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/20250506_121642 (2).jpg" data-lightbox="archive" data-title="Polmaise Bowling Club Historical Photo">
+                            <img src="./Images/SD Archive/20250506_121642 (2).jpg" alt="Polmaise Bowling Club Historical Photo">
+                            <div class="archive-caption">Sandy Deans - 2014</div>
+                        </a>
+                    </div>
+                    
+                    <!-- Jim Blevins Champion of Champions -->
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/20250506_133718.jpg" data-lightbox="archive" data-title="Jim Blevins Champion of Champions: JIM Blevins from the Polmaise Club is The Champion of Champions. The tournament, sponsored by Neilson's of Stirling, has taken place on the Bridge of Allan green over the past two Sundays. In the final Jim defeated Borestone's Brian Stillie by 21 shots to 11. Earlier in the semi-finals, Jim defeated Rab Graham (Guildhall) 21-15, and Brian defeated Sandy Deans (Cowie) 21-17.">
+                            <img src="./Images/SD Archive/20250506_133718.jpg" alt="Jim Blevins Champion of Champions">
+                            <div class="archive-caption">Jim Blevins Champion of Champions</div>
+                        </a>
+                    </div>
+                    
+                    <!-- SBA District Nine League Winners -->
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/20250506_133900.jpg" data-lightbox="archive" data-title="SBA District Nine League Winners">
+                            <img src="./Images/SD Archive/20250506_133900.jpg" alt="SBA District Nine League Winners">
+                            <div class="archive-caption">SBA District Nine League Winners</div>
+                        </a>
+                    </div>
+                    
+                    <!-- Polmaise Triples Winners -->
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/20250506_133914.jpg" data-lightbox="archive" data-title="Polmaise Triples Winners Derek Logie, Peter Black, Alex McNeil">
+                            <img src="./Images/SD Archive/20250506_133914.jpg" alt="Polmaise Triples Winners">
+                            <div class="archive-caption">Polmaise Triples Winners Derek Logie, Peter Black, Alex McNeil</div>
+                        </a>
+                    </div>
+                    
+                    <!-- New added photos -->
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250506_141956_464.jpg" data-lightbox="archive" data-title="Polmaise Bowling Club Historical Photo">
+                            <img src="./Images/SD Archive/Notes_250506_141956_464.jpg" alt="Polmaise Bowling Club Historical Photo">
+                            <div class="archive-caption">Polmaise Bowling Club Historical Photo</div>
+                        </a>
+                    </div>
+                    
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250506_142052_6fb.jpg" data-lightbox="archive" data-title="Polmaise Bowling Club Historical Photo">
+                            <img src="./Images/SD Archive/Notes_250506_142052_6fb.jpg" alt="Polmaise Bowling Club Historical Photo">
+                            <div class="archive-caption">Polmaise Bowling Club Historical Photo</div>
+                        </a>
+                    </div>
+                    
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250506_142155_5b6.jpg" data-lightbox="archive" data-title="Polmaise Bowling Club Historical Photo">
+                            <img src="./Images/SD Archive/Notes_250506_142155_5b6.jpg" alt="Polmaise Bowling Club Historical Photo">
+                            <div class="archive-caption">Polmaise Bowling Club Historical Photo</div>
+                        </a>
+                    </div>
+                    
+                    <!-- More items will be added by the club -->
+                </div>
+            </div>
+
+            <!-- News Clippings Section -->
+            <div class="archive-section">
+                <h2>News Clippings</h2>
+                <div class="news-clippings">
+                    <!-- Stirling Observer 2008 - Polmaise Triples Final -->
+                    <div class="news-clipping" data-category="news-clippings">
+                        <h3>Final Blow For Polmaise Hopes - No Scottish Joy at Northfield</h3>
+                        <span class="news-clipping-date">August 6, 2008 - Stirling Observer</span>
+                        <div class="news-clipping-content">
+                            <div class="news-clipping-image">
+                                <a href="./Images/SD Archive/20250506_133641.jpg" data-lightbox="archive" data-title="Final Blow For Polmaise Hopes - No Scottish Joy at Northfield">
+                                    <img src="./Images/SD Archive/20250506_133641.jpg" alt="Polmaise triples team at Northfield">
+                                </a>
+                            </div>
+                            <div class="news-clipping-text">
+                                <p>FINAL BLOW FOR POLMAISE HOPES</p>
+                                <p>No Scottish joy at Northfield</p>
+                                
+                                <p>Local Bowlers were again to the fore on the national championships' stage at Ayr last weekend.</p>
+                                
+                                <p>Following some top displays by the ladies the previous week it was the turn of the gents to shine at the SBA's three-day showpiece event on the Northfield greens.</p>
+                                
+                                <p>And none more so than Polmaise players David McEwan, Peter Black and Sandy Deans who made it all the way to Saturday's triples final only to lose out on national silverware, by just four shots, to near neighbours Clackmannan.</p>
+                                
+                                <p>Elsewhere, District Nine bowlers also featured in the quarter-finals of the fours and the singles with the spotlight firmly fixed on the Bridge of Allan Club in both events.</p>
+                                
+                                <p>The Polmaise triples got off to flyer in their opening match seeing off Bellahouston 22-7 followed by an equally impressive 23-5 victory over Grahamston. Things got a little tougher in the quarter-final but Polmaise survived to win 16-15 over Airdre to set up a Saturday semi-final date with Carrick Knowe. Another hard-earned 15-12 victory put then into the final.</p>
+                                
+                                <p>Standing in their way were Clackmannan's Joe Young, John Bell and Mark McCallum who trailed Polmaise 15-18 with four ends remaining. However the Wee County three produced a powerhouse finish carding nine shots for the loss of just two to dash Polmaise hopes 24-20.</p>
+                                
+                                <p>Bridge of Allan fours, Brian Cockburn, Stuart Muir, Bobby McGown and Ian Anderson won 17-13 against Ardrossan and 17-16 against Kinneil before making their quarter final exit 24-8 to Riccarton.</p>
+                                
+                                <p>Richard Guy (Bridge of Allan) won his opening singles match against Derek Logie (Cockenzie & Port Seton) 21-12 and then triumphed 21-19 over Ian Penwright (Inverness). In the quarter-final Richard lost out 21-10 to Burnbank's Alex Kelly.</p>
+                                
+                                <p>Spittalmyre pairing Sam McFarlane and Frazer Gray won 20-11 against Dunoon then lost 15-12 to Kirkcolm.</p>
+                                
+                                <p>In the junior singles, Gary Malcolmson from Polmaise BC lost his opener against Stuart Bebbington (Tweedmouth) 21-11, while senior four - Callander's Harry Crews, Bill McFarlane, Peter McCartney and John Bowes also lost out in their opening match 25-5 against eventual winners, Stranraer West End.</p>
+                                
+                                <p>TOP FIFTEEN</p>
+                                <p>THE City of Stirling Top Fifteen final goes ahead at the Bridge of Allan green on Sunday when Polmaise take on Borestone.</p>
+                                
+                                <p>In the recent semi-finals Polmaise defeated Spittalmyre by 34 shots while Borestone saw off Cambusbarron by four points to two.</p>
+                                
+                                <p>Players are requested to report to Bridge of Allan green on Sunday by 1.30p. The competition is being sponsored by sponsored by one Stop Motor Engineers and by Co-op Funeralcare.</p>
+                                
+                                <p>CAUSEWAYHEAD OPEN PAIRS</p>
+                                <p>WINNERS of last Sunday's open pairs competition were Borestone's Dougie Kerr and Andy Ferguson. Runners up were Jim Somerville and Pat Martin (Causewayhead).</p>
+                                
+                                <p>HAMILTON TROPHY</p>
+                                <p>STIRLING County West's quarter-final conquerors Lanarkshire South won last Sunday's Hamilton Trophy final against Ayrshire at Northfield (137-87)</p>
+                                
+                                <p>CAUSEWAYHEAD v STIRLING</p>
+                                <p>LAST Saturday's match at Causewayhead green resulted in an 18-shot victory for Stirling. Scores: P Doyle 19, D McKean 13; I Carnachan 12, JR Gilmour 15; J Blevins 11, P Neilson 21; B Morrison 10, J Miller 21. Totals: Causewayhead 52, Stirling 70.</p>
+                                
+                                <p>ALLOA v RIVERSIDE</p>
+                                <p>RESULTS from last Saturday's match were: R Grandison 12, J Purdie 12; J Marshall 14, I Gillies 11; J Dallas 12, T Millar 16; R Beverage 23, D Cairns 7. Totals: Alloa 61, Riverside 46.</p>
+                                
+                                <p>BANNOCKBURN v CAUSEWAYHEAD</p>
+                                <p>THE annual match between these clubs was played last Wednesday at Bannockburn. Scores: A Ivatt 12, I Carnachan 18; G Sludden 12, J Dawson 12; A Meldrum 13, B Morrison 10; I Cameron 19, P Martin 15. Totals: Bannockburn 56, Causewayhead 55.</p>
+                                
+                                <p class="news-source">Source: Stirling Observer, August 6, 2008</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Stirling Observer 2014 - City of Stirling Top 15 Title -->
+                    <div class="news-clipping" data-category="news-clippings">
+                        <h3>Polmaise Defend City of Stirling Top 15 Title</h3>
+                        <span class="news-clipping-date">August 20, 2014 - Stirling Observer</span>
+                        <div class="news-clipping-content">
+                            <div class="news-clipping-image">
+                                <a href="./Images/SD Archive/20250506_121613.jpg" data-lightbox="archive" data-title="Polmaise Defend City of Stirling Top 15 Title">
+                                    <img src="./Images/SD Archive/20250506_121613.jpg" alt="Polmaise defend City of Stirling Top 15 Title">
+                                </a>
+                            </div>
+                            <div class="news-clipping-text">
+                                <p>DEFENDING champions Polmaise held onto their City of Stirling Top 15 title last Sunday with a highly impressive show at Bridge of Allan green.</p>
+                                
+                                <p>In a rain-interrupted match, the Polmaise bowlers weathered the early challenges from their Borestone opponents to run out worthy 12-0 winners - marking an amazing 14th success in the popular competition since it began back in 1977.</p>
+                                
+                                <p>Junior singles Kevin Paterson got his Polmaise colleagues off to a superb start winning 21-5 over Borestone's Helen Dudgeon and this advantage was extended when Sandy Deans won a hard-fought singles match against Ian Forsyth 21-16.</p>
+                                
+                                <p>In the senior fours contest Chucks Johnstone, Peter Johnstone, Jim Walker and John Binnie added another two points with a 20-11 victory over John McLean, Rab Fleming, John Crombie and Neil Boyle.</p>
+                                
+                                <p>The title was wrapped up when triples James Brown, David McEwan and Ian Glen triumphed 22-12 over Richard Doran, Andy Ferguson and Dougie Kerr. The Polmaise trio carded a super seven on the seventh end to go in front and never looked back.</p>
+                                
+                                <p>The pairs match proved highly entertaining with Gary Malcolmson and Danny McCormick surviving a severe test from Rab Johnston and Brian McLaughlin to win 19-17. The Polmaise duo carded four at the final end to snatch victory following an impressive last-bowl delivery by Borestone skip McLaughlin which just failed to convert the head.</p>
+                                
+                                <p>Peter Black's final bowl in the fours proved to be a winner when he converted the head to a match-winning situation. Along with Alec McNeil, Ross McLeod and David McEwan jun, the Polmaise four held on for a 18-16 victory over Tom Keith, Brian Kelly, George Toner and Kevin Frogley.</p>
+                                
+                                <p>Finals totals were: Polmaise 12 points and 121 shots, Borestone no points and 77 shots.</p>
+                                
+                                <p>The City of Stirling Top 15 championship enjoyed sponsorship from Co-op Funeralcare and from One Stop Motor Engineers.</p>
+                                
+                                <p class="news-source">Source: Stirling Observer, August 20, 2014</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- More clippings will be added by the club -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polmaise Bowling Club</h3>
+                    <p>Address: Main Street,</p>
+                    <p>Fallin, Stirling, FK7 7HT</p>
+                    <p>Phone: 01786 811333</p>
+                    <p>Email: polmaisebc@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="fixtures.html">Fixtures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Polmaise-Bowling-Club-100008363985804/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include lightbox JS after jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialize lightbox
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'albumLabel': 'Image %1 of %2'
+            });
+            
+            // Category filtering
+            $('.archive-category').click(function() {
+                // Update active class
+                $('.archive-category').removeClass('active');
+                $(this).addClass('active');
+                
+                // Get selected category
+                const category = $(this).data('category');
+                
+                // Filter items
+                if (category === 'all') {
+                    $('.archive-item, .news-clipping').show();
+                    $('.archive-section').show();
+                } else if (category === 'photos') {
+                    $('.news-clipping').hide();
+                    $('.archive-item').show();
+                    $('.archive-section:has(.archive-grid)').show();
+                    $('.archive-section:has(.news-clippings)').hide();
+                } else if (category === 'news-clippings') {
+                    $('.archive-item').hide();
+                    $('.news-clipping').show();
+                    $('.archive-section:has(.archive-grid)').hide();
+                    $('.archive-section:has(.news-clippings)').show();
+                }
+            });
+        });
+    </script>
+    
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        $(document).ready(function() {
+            // Mobile menu toggle
+            $('.mobile-menu').click(function() {
+                $('nav ul').toggleClass('show');
+            });
+            
+            // Close mobile menu when a link is clicked
+            $('nav ul li a').click(function() {
+                if ($('nav ul').hasClass('show')) {
+                    $('nav ul').removeClass('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

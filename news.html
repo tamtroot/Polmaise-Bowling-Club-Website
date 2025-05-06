@@ -355,6 +355,17 @@
                     
                     <!-- News Grid for Thumbnails -->
                     <div class="news-grid">
+                        <!-- Sandy Deans Archive Announcement -->
+                        <div class="news-card" onclick="toggleArticle('sandy-deans-archive')">
+                            <div class="news-card-thumbnail">
+                                <img src="./Images/Archive/Photo 2.jpg" alt="Sandy Deans Historical Archive">
+                            </div>
+                            <div class="news-card-date">New Archive Added</div>
+                            <div class="news-card-title">
+                                <h3>Explore Our New Sandy Deans Historical Archive</h3>
+                            </div>
+                        </div>
+                        
                         <!-- Card 0 (New) -->
                         <div class="news-card" onclick="toggleArticle('article0')">
                             <div class="news-card-thumbnail">
@@ -412,6 +423,35 @@
                     </div>
                     
                     <!-- Full Articles (initially hidden) -->
+                    <!-- Sandy Deans Archive Article -->
+                    <article id="sandy-deans-archive" class="news-item featured">
+                        <h3>Club Launches Sandy Deans Historical Archive</h3>
+                        <div class="news-image">
+                            <img src="./Images/Archive/Photo 2.jpg" alt="Sandy Deans Historical Archive" class="zoomable-image" onclick="openLightbox(this)">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category"><i class="fas fa-tag"></i> New Archive Added</span>
+                            </div>
+                            <p>We are delighted to announce the launch of a special historical archive of Polmaise Bowling Club, made possible by the generous contribution of our long-standing member, Sandy Deans.</p></br>
+                            
+                            <p>Sandy has kindly handed over his personal collection of photographs and newspaper clippings, which he has gathered and preserved from the early 1980s right through to recent times. This remarkable archive provides a unique and vivid record of the club's journey over the past four decades.</p></br>
+                            
+                            <p>The collection captures the evolution of Polmaise Bowling Club, documenting everything from memorable matches and championship wins to the many familiar faces and moments that have shaped our club's story.</p></br>
+                            
+                            <p>A dedicated page has been created on our website to showcase this archive, thoughtfully organised by time period to make browsing a pleasure. Whether you're interested in revisiting the club's milestones from the 1980s, enjoying highlights from the 1990s and 2000s, or exploring our more recent history, this collection has something for everyone.</p></br>
+                            
+                            <p>We extend our heartfelt thanks to Sandy Deans for entrusting us with this treasured archive and for his outstanding dedication to preserving and celebrating the heritage of Polmaise Bowling Club.</p></br>
+                            
+                            <div class="cta-button" style="text-align: center; margin-top: 20px;">
+                                <a href="archive.html" class="btn primary-btn">Explore the Archive</a>
+                            </div>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllArticles()">Back to News</button>
+                        </div>
+                    </article>
+                    
                     <article id="article0" class="news-item featured">
                         <h3>Polmaise Bowling Club Receives Signed Shirt from David Gourlay</h3>
                         <div class="news-image">
