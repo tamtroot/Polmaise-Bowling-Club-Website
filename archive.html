@@ -296,6 +296,154 @@
                 left: 0%;
             }
         }
+
+        /* News Grid and Card styles (similar to news.html) */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .news-card {
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .news-card-thumbnail {
+            height: 180px;
+            overflow: hidden;
+        }
+
+        .news-card-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .news-card:hover .news-card-thumbnail img {
+            transform: scale(1.05);
+        }
+
+        .news-card-title {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .news-card-date {
+            background-color: #1e3a8a; /* Royal blue color */
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border-radius: 4px;
+            font-family: 'Open Sans', sans-serif;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .news-card-title h3 {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.4;
+            color: #333;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Full article styles */
+        .news-item {
+            display: none; /* Hide full articles initially */
+        }
+
+        .news-item.active {
+            display: block; /* Show when active */
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .news-close-btn {
+            display: none;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .news-close-btn button {
+            background: #1e3a8a; /* Royal blue color */
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .news-close-btn button:hover {
+            background: #152a62; /* Darker royal blue for hover */
+        }
+        
+        /* Article content styling */
+        .news-meta {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .news-meta span {
+            margin-right: 15px;
+        }
+        
+        .news-image {
+            margin-bottom: 20px;
+        }
+        
+        .news-image img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .zoomable-image {
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+        }
+        
+        .zoomable-image:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     </style>
 </head>
 <body>
@@ -464,6 +612,42 @@
                         </a>
                     </div>
                     
+                    <!-- Additional photos -->
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250506_155149_d7f.jpg" data-lightbox="archive" data-title="April 2010 - Polmaise BC in Fallin is hoping for a successful 2010 season after last years amazing haul of 11 trophies, including the Top 10 Cup, City of Stirling Top 15, Top Six Trophy and Area and District Champion of Champions cups.">
+                            <img src="./Images/SD Archive/Notes_250506_155149_d7f.jpg" alt="Polmaise BC 2010">
+                            <div class="archive-caption">April 2010 - Polmaise BC in Fallin is hoping for a successful 2010 season after last years amazing haul of 11 trophies, including the Top 10 Cup, City of Stirling Top 15, Top Six Trophy and Area and District Champion of Champions cups.</div>
+                        </a>
+                    </div>
+                    
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250506_155256_570.jpg" data-lightbox="archive" data-title="Gary Malcomson">
+                            <img src="./Images/SD Archive/Notes_250506_155256_570.jpg" alt="Gary Malcomson">
+                            <div class="archive-caption">Gary Malcomson</div>
+                        </a>
+                    </div>
+                    
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250506_160849_038.jpg" data-lightbox="archive" data-title="Bowlers get ready for battle!">
+                            <img src="./Images/SD Archive/Notes_250506_160849_038.jpg" alt="Bowlers get ready for battle!">
+                            <div class="archive-caption">Bowlers get ready for battle!</div>
+                        </a>
+                    </div>
+                    
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250506_161517_b63.jpg" data-lightbox="archive" data-title="Polmaise Bowling Club Historical Photo">
+                            <img src="./Images/SD Archive/Notes_250506_161517_b63.jpg" alt="Polmaise Bowling Club Historical Photo">
+                            <div class="archive-caption">Polmaise Bowling Club Historical Photo</div>
+                        </a>
+                    </div>
+                    
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250506_161421_d38 (2).jpg" data-lightbox="archive" data-title="Polmaise Bowling Club Historical Photo">
+                            <img src="./Images/SD Archive/Notes_250506_161421_d38 (2).jpg" alt="Polmaise Bowling Club Historical Photo">
+                            <div class="archive-caption">Polmaise Bowling Club Historical Photo</div>
+                        </a>
+                    </div>
+                    
                     <!-- More items will be added by the club -->
                 </div>
             </div>
@@ -471,103 +655,179 @@
             <!-- News Clippings Section -->
             <div class="archive-section">
                 <h2>News Clippings</h2>
-                <div class="news-clippings">
+                <div class="news-grid" id="news-clippings-grid">
+                    <!-- Stirling Observer 2015 - Bowlers target Scottish titles -->
+                    <div class="news-card" onclick="toggleNewsClipping('news-clipping-2015')">
+                        <div class="news-card-thumbnail">
+                            <img src="./Images/SD Archive/Notes_250506_155026_1ce.jpg" alt="Bowlers target Scottish titles">
+                        </div>
+                        <div class="news-card-date">July 30, 2015</div>
+                        <div class="news-card-title">
+                            <h3>Bowlers target Scottish titles</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Stirling Observer 2014 - Polmaise Defend City of Stirling Top 15 Title -->
+                    <div class="news-card" onclick="toggleNewsClipping('news-clipping-2014')">
+                        <div class="news-card-thumbnail">
+                            <img src="./Images/SD Archive/20250506_121613.jpg" alt="Polmaise defend City of Stirling Top 15 Title">
+                        </div>
+                        <div class="news-card-date">August 20, 2014</div>
+                        <div class="news-card-title">
+                            <h3>Polmaise Defend City of Stirling Top 15 Title</h3>
+                        </div>
+                    </div>
+                    
                     <!-- Stirling Observer 2008 - Polmaise Triples Final -->
-                    <div class="news-clipping" data-category="news-clippings">
-                        <h3>Final Blow For Polmaise Hopes - No Scottish Joy at Northfield</h3>
-                        <span class="news-clipping-date">August 6, 2008 - Stirling Observer</span>
-                        <div class="news-clipping-content">
-                            <div class="news-clipping-image">
-                                <a href="./Images/SD Archive/20250506_133641.jpg" data-lightbox="archive" data-title="Final Blow For Polmaise Hopes - No Scottish Joy at Northfield">
-                                    <img src="./Images/SD Archive/20250506_133641.jpg" alt="Polmaise triples team at Northfield">
-                                </a>
-                            </div>
-                            <div class="news-clipping-text">
-                                <p>FINAL BLOW FOR POLMAISE HOPES</p>
-                                <p>No Scottish joy at Northfield</p>
-                                
-                                <p>Local Bowlers were again to the fore on the national championships' stage at Ayr last weekend.</p>
-                                
-                                <p>Following some top displays by the ladies the previous week it was the turn of the gents to shine at the SBA's three-day showpiece event on the Northfield greens.</p>
-                                
-                                <p>And none more so than Polmaise players David McEwan, Peter Black and Sandy Deans who made it all the way to Saturday's triples final only to lose out on national silverware, by just four shots, to near neighbours Clackmannan.</p>
-                                
-                                <p>Elsewhere, District Nine bowlers also featured in the quarter-finals of the fours and the singles with the spotlight firmly fixed on the Bridge of Allan Club in both events.</p>
-                                
-                                <p>The Polmaise triples got off to flyer in their opening match seeing off Bellahouston 22-7 followed by an equally impressive 23-5 victory over Grahamston. Things got a little tougher in the quarter-final but Polmaise survived to win 16-15 over Airdre to set up a Saturday semi-final date with Carrick Knowe. Another hard-earned 15-12 victory put then into the final.</p>
-                                
-                                <p>Standing in their way were Clackmannan's Joe Young, John Bell and Mark McCallum who trailed Polmaise 15-18 with four ends remaining. However the Wee County three produced a powerhouse finish carding nine shots for the loss of just two to dash Polmaise hopes 24-20.</p>
-                                
-                                <p>Bridge of Allan fours, Brian Cockburn, Stuart Muir, Bobby McGown and Ian Anderson won 17-13 against Ardrossan and 17-16 against Kinneil before making their quarter final exit 24-8 to Riccarton.</p>
-                                
-                                <p>Richard Guy (Bridge of Allan) won his opening singles match against Derek Logie (Cockenzie & Port Seton) 21-12 and then triumphed 21-19 over Ian Penwright (Inverness). In the quarter-final Richard lost out 21-10 to Burnbank's Alex Kelly.</p>
-                                
-                                <p>Spittalmyre pairing Sam McFarlane and Frazer Gray won 20-11 against Dunoon then lost 15-12 to Kirkcolm.</p>
-                                
-                                <p>In the junior singles, Gary Malcolmson from Polmaise BC lost his opener against Stuart Bebbington (Tweedmouth) 21-11, while senior four - Callander's Harry Crews, Bill McFarlane, Peter McCartney and John Bowes also lost out in their opening match 25-5 against eventual winners, Stranraer West End.</p>
-                                
-                                <p>TOP FIFTEEN</p>
-                                <p>THE City of Stirling Top Fifteen final goes ahead at the Bridge of Allan green on Sunday when Polmaise take on Borestone.</p>
-                                
-                                <p>In the recent semi-finals Polmaise defeated Spittalmyre by 34 shots while Borestone saw off Cambusbarron by four points to two.</p>
-                                
-                                <p>Players are requested to report to Bridge of Allan green on Sunday by 1.30p. The competition is being sponsored by sponsored by one Stop Motor Engineers and by Co-op Funeralcare.</p>
-                                
-                                <p>CAUSEWAYHEAD OPEN PAIRS</p>
-                                <p>WINNERS of last Sunday's open pairs competition were Borestone's Dougie Kerr and Andy Ferguson. Runners up were Jim Somerville and Pat Martin (Causewayhead).</p>
-                                
-                                <p>HAMILTON TROPHY</p>
-                                <p>STIRLING County West's quarter-final conquerors Lanarkshire South won last Sunday's Hamilton Trophy final against Ayrshire at Northfield (137-87)</p>
-                                
-                                <p>CAUSEWAYHEAD v STIRLING</p>
-                                <p>LAST Saturday's match at Causewayhead green resulted in an 18-shot victory for Stirling. Scores: P Doyle 19, D McKean 13; I Carnachan 12, JR Gilmour 15; J Blevins 11, P Neilson 21; B Morrison 10, J Miller 21. Totals: Causewayhead 52, Stirling 70.</p>
-                                
-                                <p>ALLOA v RIVERSIDE</p>
-                                <p>RESULTS from last Saturday's match were: R Grandison 12, J Purdie 12; J Marshall 14, I Gillies 11; J Dallas 12, T Millar 16; R Beverage 23, D Cairns 7. Totals: Alloa 61, Riverside 46.</p>
-                                
-                                <p>BANNOCKBURN v CAUSEWAYHEAD</p>
-                                <p>THE annual match between these clubs was played last Wednesday at Bannockburn. Scores: A Ivatt 12, I Carnachan 18; G Sludden 12, J Dawson 12; A Meldrum 13, B Morrison 10; I Cameron 19, P Martin 15. Totals: Bannockburn 56, Causewayhead 55.</p>
-                                
-                                <p class="news-source">Source: Stirling Observer, August 6, 2008</p>
-                            </div>
+                    <div class="news-card" onclick="toggleNewsClipping('news-clipping-2008')">
+                        <div class="news-card-thumbnail">
+                            <img src="./Images/SD Archive/20250506_133641.jpg" alt="Polmaise triples team at Northfield">
+                        </div>
+                        <div class="news-card-date">August 6, 2008</div>
+                        <div class="news-card-title">
+                            <h3>Final Blow For Polmaise Hopes - No Scottish Joy at Northfield</h3>
                         </div>
                     </div>
+                </div>
+                
+                <!-- Full News Clipping Articles (initially hidden) -->
+                <div class="news-clippings-content">
+                    <!-- Stirling Observer 2015 - Bowlers target Scottish titles -->
+                    <article id="news-clipping-2015" class="news-item">
+                        <h3>Bowlers target Scottish titles</h3>
+                        <div class="news-image">
+                            <a href="./Images/SD Archive/Notes_250506_155026_1ce.jpg" data-lightbox="archive" data-title="Bowlers target Scottish titles">
+                                <img src="./Images/SD Archive/Notes_250506_155026_1ce.jpg" alt="Bowlers target Scottish titles" class="zoomable-image">
+                            </a>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> July 30, 2015</span>
+                                <span class="news-category"><i class="fas fa-tag"></i> Stirling Observer</span>
+                            </div>
+                            <p>BRIDGE OF ALLAN bowler Richard Guy staged a magnificent fightback at the Riverside green on Monday evening to win the Scottish District Nine singles title and book his place in the national championship finals at Northfield.</p>
+                            
+                            <p>Joining him were 14 other successful and delighted bowlers including Richard's Bridge of Allan clubmates who won the fours. Also qualifying were the Spittalmyre pairs, Polmaise triples, Polmaise junior singles and Callander's senior fours.</p>
+                            
+                            <p>The singles contest saw Richard Guy line up against Borestone's Ian Forsyth. Five apiece after eight ends, it was Forsyth who scored more consistently over the next 11 ends to hold a 15-9 advantage. However a superb six-end run saw Guy card 11 shots without reply to put him on the brink of victory at 20-15.</p>
+                            
+                            <p>On the 26th end the Bridge of Allan man clinched victory in style by ditching the jack to win 21-15.</p>
+                            
+                            <p>In the junior singles, Gary Malcolmson from the Polmaise Club eventually shrugged off an early challenge from Dunblane's Ian Nairn to win 21-11. Malcolmson finished strongly - carding eight shots over the final five ends.</p>
+                            
+                            <p>Pairs Sam McFarlane and Fraser Gray from the Spittalmyre Club were in scintillating form against Ian Glen and Danny McCormick (Polmaise) and raced to a 16-2 lead after 11 ends. A 4-4 share of the shots over the next five ends saw Spittalmyre triumph 20-6 with an end to spare.</p>
+                            
+                            <p>The triples contest proved to be rather one-sided with David McEwan sen., Peter Black and Sandy Deans (Polmaise) easing their way to a 25-9 victory over Cambusbarron's Craig Green, Barry Liddell and Jim Liddell after only 14 ends.</p>
+                            
+                            <p>It was a similar story in the senior fours where Callander's Gavin Renton, Bill McFarlane, Peter McCartney and John Bowes were in complete control in their overwhelming 28-1 victory against Borestone's Andrew Allan, David Murphy, Pasquale Tortolano and Willie Harrower after 13 ends.</p>
+                            
+                            <p>Last to finish was the fours contest which saw Bridge of Allan's Brian Coburn, Stuart Muir, Bobby McGown, and Ian Anderson triumph 15-12 over Richard Turnbull, Ian Ferrier, Peter Doyle and Ian Carnachan after an extremely close fought match.</p>
+                            
+                            <p>The winners now progress to the Scottish championship playdowns at Ayr's Northfield greens, on July 31 and August 1 and 2.</p>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllNewsClippings()">Back to News Clippings</button>
+                        </div>
+                    </article>
                     
-                    <!-- Stirling Observer 2014 - City of Stirling Top 15 Title -->
-                    <div class="news-clipping" data-category="news-clippings">
+                    <!-- Stirling Observer 2014 - Polmaise Defend City of Stirling Top 15 Title -->
+                    <article id="news-clipping-2014" class="news-item">
                         <h3>Polmaise Defend City of Stirling Top 15 Title</h3>
-                        <span class="news-clipping-date">August 20, 2014 - Stirling Observer</span>
-                        <div class="news-clipping-content">
-                            <div class="news-clipping-image">
-                                <a href="./Images/SD Archive/20250506_121613.jpg" data-lightbox="archive" data-title="Polmaise Defend City of Stirling Top 15 Title">
-                                    <img src="./Images/SD Archive/20250506_121613.jpg" alt="Polmaise defend City of Stirling Top 15 Title">
-                                </a>
-                            </div>
-                            <div class="news-clipping-text">
-                                <p>DEFENDING champions Polmaise held onto their City of Stirling Top 15 title last Sunday with a highly impressive show at Bridge of Allan green.</p>
-                                
-                                <p>In a rain-interrupted match, the Polmaise bowlers weathered the early challenges from their Borestone opponents to run out worthy 12-0 winners - marking an amazing 14th success in the popular competition since it began back in 1977.</p>
-                                
-                                <p>Junior singles Kevin Paterson got his Polmaise colleagues off to a superb start winning 21-5 over Borestone's Helen Dudgeon and this advantage was extended when Sandy Deans won a hard-fought singles match against Ian Forsyth 21-16.</p>
-                                
-                                <p>In the senior fours contest Chucks Johnstone, Peter Johnstone, Jim Walker and John Binnie added another two points with a 20-11 victory over John McLean, Rab Fleming, John Crombie and Neil Boyle.</p>
-                                
-                                <p>The title was wrapped up when triples James Brown, David McEwan and Ian Glen triumphed 22-12 over Richard Doran, Andy Ferguson and Dougie Kerr. The Polmaise trio carded a super seven on the seventh end to go in front and never looked back.</p>
-                                
-                                <p>The pairs match proved highly entertaining with Gary Malcolmson and Danny McCormick surviving a severe test from Rab Johnston and Brian McLaughlin to win 19-17. The Polmaise duo carded four at the final end to snatch victory following an impressive last-bowl delivery by Borestone skip McLaughlin which just failed to convert the head.</p>
-                                
-                                <p>Peter Black's final bowl in the fours proved to be a winner when he converted the head to a match-winning situation. Along with Alec McNeil, Ross McLeod and David McEwan jun, the Polmaise four held on for a 18-16 victory over Tom Keith, Brian Kelly, George Toner and Kevin Frogley.</p>
-                                
-                                <p>Finals totals were: Polmaise 12 points and 121 shots, Borestone no points and 77 shots.</p>
-                                
-                                <p>The City of Stirling Top 15 championship enjoyed sponsorship from Co-op Funeralcare and from One Stop Motor Engineers.</p>
-                                
-                                <p class="news-source">Source: Stirling Observer, August 20, 2014</p>
-                            </div>
+                        <div class="news-image">
+                            <a href="./Images/SD Archive/20250506_121613.jpg" data-lightbox="archive" data-title="Polmaise Defend City of Stirling Top 15 Title">
+                                <img src="./Images/SD Archive/20250506_121613.jpg" alt="Polmaise defend City of Stirling Top 15 Title" class="zoomable-image">
+                            </a>
                         </div>
-                    </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> August 20, 2014</span>
+                                <span class="news-category"><i class="fas fa-tag"></i> Stirling Observer</span>
+                            </div>
+                            <p>DEFENDING champions Polmaise held onto their City of Stirling Top 15 title last Sunday with a highly impressive show at Bridge of Allan green.</p>
+                            
+                            <p>In a rain-interrupted match, the Polmaise bowlers weathered the early challenges from their Borestone opponents to run out worthy 12-0 winners - marking an amazing 14th success in the popular competition since it began back in 1977.</p>
+                            
+                            <p>Junior singles Kevin Paterson got his Polmaise colleagues off to a superb start winning 21-5 over Borestone's Helen Dudgeon and this advantage was extended when Sandy Deans won a hard-fought singles match against Ian Forsyth 21-16.</p>
+                            
+                            <p>In the senior fours contest Chucks Johnstone, Peter Johnstone, Jim Walker and John Binnie added another two points with a 20-11 victory over John McLean, Rab Fleming, John Crombie and Neil Boyle.</p>
+                            
+                            <p>The title was wrapped up when triples James Brown, David McEwan and Ian Glen triumphed 22-12 over Richard Doran, Andy Ferguson and Dougie Kerr. The Polmaise trio carded a super seven on the seventh end to go in front and never looked back.</p>
+                            
+                            <p>The pairs match proved highly entertaining with Gary Malcolmson and Danny McCormick surviving a severe test from Rab Johnston and Brian McLaughlin to win 19-17. The Polmaise duo carded four at the final end to snatch victory following an impressive last-bowl delivery by Borestone skip McLaughlin which just failed to convert the head.</p>
+                            
+                            <p>Peter Black's final bowl in the fours proved to be a winner when he converted the head to a match-winning situation. Along with Alec McNeil, Ross McLeod and David McEwan jun, the Polmaise four held on for a 18-16 victory over Tom Keith, Brian Kelly, George Toner and Kevin Frogley.</p>
+                            
+                            <p>Finals totals were: Polmaise 12 points and 121 shots, Borestone no points and 77 shots.</p>
+                            
+                            <p>The City of Stirling Top 15 championship enjoyed sponsorship from Co-op Funeralcare and from One Stop Motor Engineers.</p>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllNewsClippings()">Back to News Clippings</button>
+                        </div>
+                    </article>
                     
-                    <!-- More clippings will be added by the club -->
+                    <!-- Stirling Observer 2008 - Polmaise Triples Final -->
+                    <article id="news-clipping-2008" class="news-item">
+                        <h3>Final Blow For Polmaise Hopes - No Scottish Joy at Northfield</h3>
+                        <div class="news-image">
+                            <a href="./Images/SD Archive/20250506_133641.jpg" data-lightbox="archive" data-title="Final Blow For Polmaise Hopes - No Scottish Joy at Northfield">
+                                <img src="./Images/SD Archive/20250506_133641.jpg" alt="Polmaise triples team at Northfield" class="zoomable-image">
+                            </a>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> August 6, 2008</span>
+                                <span class="news-category"><i class="fas fa-tag"></i> Stirling Observer</span>
+                            </div>
+                            <p>FINAL BLOW FOR POLMAISE HOPES</p>
+                            <p>No Scottish joy at Northfield</p>
+                            
+                            <p>Local Bowlers were again to the fore on the national championships' stage at Ayr last weekend.</p>
+                            
+                            <p>Following some top displays by the ladies the previous week it was the turn of the gents to shine at the SBA's three-day showpiece event on the Northfield greens.</p>
+                            
+                            <p>And none more so than Polmaise players David McEwan, Peter Black and Sandy Deans who made it all the way to Saturday's triples final only to lose out on national silverware, by just four shots, to near neighbours Clackmannan.</p>
+                            
+                            <p>Elsewhere, District Nine bowlers also featured in the quarter-finals of the fours and the singles with the spotlight firmly fixed on the Bridge of Allan Club in both events.</p>
+                            
+                            <p>The Polmaise triples got off to flyer in their opening match seeing off Bellahouston 22-7 followed by an equally impressive 23-5 victory over Grahamston. Things got a little tougher in the quarter-final but Polmaise survived to win 16-15 over Airdre to set up a Saturday semi-final date with Carrick Knowe. Another hard-earned 15-12 victory put then into the final.</p>
+                            
+                            <p>Standing in their way were Clackmannan's Joe Young, John Bell and Mark McCallum who trailed Polmaise 15-18 with four ends remaining. However the Wee County three produced a powerhouse finish carding nine shots for the loss of just two to dash Polmaise hopes 24-20.</p>
+                            
+                            <p>Bridge of Allan fours, Brian Cockburn, Stuart Muir, Bobby McGown and Ian Anderson won 17-13 against Ardrossan and 17-16 against Kinneil before making their quarter final exit 24-8 to Riccarton.</p>
+                            
+                            <p>Richard Guy (Bridge of Allan) won his opening singles match against Derek Logie (Cockenzie & Port Seton) 21-12 and then triumphed 21-19 over Ian Penwright (Inverness). In the quarter-final Richard lost out 21-10 to Burnbank's Alex Kelly.</p>
+                            
+                            <p>Spittalmyre pairing Sam McFarlane and Frazer Gray won 20-11 against Dunoon then lost 15-12 to Kirkcolm.</p>
+                            
+                            <p>In the junior singles, Gary Malcolmson from Polmaise BC lost his opener against Stuart Bebbington (Tweedmouth) 21-11, while senior four - Callander's Harry Crews, Bill McFarlane, Peter McCartney and John Bowes also lost out in their opening match 25-5 against eventual winners, Stranraer West End.</p>
+                            
+                            <p>TOP FIFTEEN</p>
+                            <p>THE City of Stirling Top Fifteen final goes ahead at the Bridge of Allan green on Sunday when Polmaise take on Borestone.</p>
+                            
+                            <p>In the recent semi-finals Polmaise defeated Spittalmyre by 34 shots while Borestone saw off Cambusbarron by four points to two.</p>
+                            
+                            <p>Players are requested to report to Bridge of Allan green on Sunday by 1.30p. The competition is being sponsored by sponsored by one Stop Motor Engineers and by Co-op Funeralcare.</p>
+                            
+                            <p>CAUSEWAYHEAD OPEN PAIRS</p>
+                            <p>WINNERS of last Sunday's open pairs competition were Borestone's Dougie Kerr and Andy Ferguson. Runners up were Jim Somerville and Pat Martin (Causewayhead).</p>
+                            
+                            <p>HAMILTON TROPHY</p>
+                            <p>STIRLING County West's quarter-final conquerors Lanarkshire South won last Sunday's Hamilton Trophy final against Ayrshire at Northfield (137-87)</p>
+                            
+                            <p>CAUSEWAYHEAD v STIRLING</p>
+                            <p>LAST Saturday's match at Causewayhead green resulted in an 18-shot victory for Stirling. Scores: P Doyle 19, D McKean 13; I Carnachan 12, JR Gilmour 15; J Blevins 11, P Neilson 21; B Morrison 10, J Miller 21. Totals: Causewayhead 52, Stirling 70.</p>
+                            
+                            <p>ALLOA v RIVERSIDE</p>
+                            <p>RESULTS from last Saturday's match were: R Grandison 12, J Purdie 12; J Marshall 14, I Gillies 11; J Dallas 12, T Millar 16; R Beverage 23, D Cairns 7. Totals: Alloa 61, Riverside 46.</p>
+                            
+                            <p>BANNOCKBURN v CAUSEWAYHEAD</p>
+                            <p>THE annual match between these clubs was played last Wednesday at Bannockburn. Scores: A Ivatt 12, I Carnachan 18; G Sludden 12, J Dawson 12; A Meldrum 13, B Morrison 10; I Cameron 19, P Martin 15. Totals: Bannockburn 56, Causewayhead 55.</p>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllNewsClippings()">Back to News Clippings</button>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -662,6 +922,54 @@
                 }
             });
         });
+    </script>
+
+    <!-- News Clipping toggle functionality -->
+    <script>
+        // News Clipping toggle functionality
+        function toggleNewsClipping(clippingId) {
+            // Hide the grid
+            document.getElementById('news-clippings-grid').style.display = 'none';
+            
+            // Hide all articles first
+            const articles = document.querySelectorAll('.news-item');
+            articles.forEach(article => {
+                article.classList.remove('active');
+            });
+            
+            // Show the selected article
+            const selectedArticle = document.getElementById(clippingId);
+            selectedArticle.classList.add('active');
+            
+            // Show the close button
+            const closeButtons = document.querySelectorAll('.news-close-btn');
+            closeButtons.forEach(button => {
+                button.style.display = 'block';
+            });
+            
+            // Scroll to the top of the article
+            selectedArticle.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function closeAllNewsClippings() {
+            // Hide all articles
+            const articles = document.querySelectorAll('.news-item');
+            articles.forEach(article => {
+                article.classList.remove('active');
+            });
+            
+            // Show the grid
+            document.getElementById('news-clippings-grid').style.display = 'grid';
+            
+            // Hide the close buttons
+            const closeButtons = document.querySelectorAll('.news-close-btn');
+            closeButtons.forEach(button => {
+                button.style.display = 'none';
+            });
+            
+            // Scroll to the top of the news clippings section
+            document.querySelector('.archive-section').scrollIntoView({ behavior: 'smooth' });
+        }
     </script>
 </body>
 </html> 
