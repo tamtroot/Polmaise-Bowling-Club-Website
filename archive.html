@@ -448,6 +448,83 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
+        /* News article styles */
+        .news-item {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .news-item.active {
+            display: block;
+        }
+
+        .news-item h3 {
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .news-item .news-image {
+            margin-bottom: 1.5rem;
+        }
+
+        .news-item .news-image img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .news-item .news-content {
+            line-height: 1.6;
+        }
+
+        .news-item .news-meta {
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .news-item .news-meta span {
+            margin-right: 1rem;
+        }
+
+        .news-item .news-meta i {
+            margin-right: 0.5rem;
+        }
+
+        .news-close-btn {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .news-close-btn button {
+            background: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .news-close-btn button:hover {
+            background: #152a62;
+        }
+
+        .news-clippings-content {
+            display: none;
+        }
+
+        .news-clippings-content.active {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -501,7 +578,7 @@
             </div>
 
             <!-- Archive Categories -->
-            <div class="archive-categories">
+            <div class="archive-categories" style="display: none;">
                 <div class="archive-category active" data-category="all">
                     <h3>All Items</h3>
                 </div>
@@ -877,338 +954,130 @@
                         </a>
                     </div>
                     
-                    <!-- More items will be added by the club -->
-                </div>
-            </div>
+                    <!-- New photos added May 29, 2025 -->
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250529_104327_d44.jpg" data-lightbox="archive" data-title="A line up of Central Association finalists before play commenced at Airthrey Spa Bowling Club">
+                            <img src="./Images/SD Archive/Notes_250529_104327_d44.jpg" alt="Central Association finalists at Airthrey Spa Bowling Club">
+                            <div class="archive-caption">A line up of Central Association finalists before play commenced at Airthrey Spa Bowling Club</div>
+                        </a>
+                    </div>
 
-            <!-- News Clippings Section -->
-            <div class="archive-section">
-                <h2>News Clippings</h2>
-                <div class="news-grid" id="news-clippings-grid">
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250529_104406_0f5.jpg" data-lightbox="archive" data-title="District Rinks Winners 2002 - Skip-Sandy Deans, Third-Peter Black, Second-Mark Bone, Lead-Alex McNeil">
+                            <img src="./Images/SD Archive/Notes_250529_104406_0f5.jpg" alt="District Rinks Winners 2002">
+                            <div class="archive-caption">District Rinks Winners 2002 - Skip-Sandy Deans, Third-Peter Black, Second-Mark Bone, Lead-Alex McNeil</div>
+                        </a>
+                    </div>
+
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250529_104413_308.jpg" data-lightbox="archive" data-title="2002 Stirling County Singles Champion - Sandy Deans">
+                            <img src="./Images/SD Archive/Notes_250529_104413_308.jpg" alt="2002 Stirling County Singles Champion - Sandy Deans">
+                            <div class="archive-caption">2002 Stirling County Singles Champion - Sandy Deans</div>
+                        </a>
+                    </div>
+
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250529_104355_f3e.jpg" data-lightbox="archive" data-title="Historical Polmaise Photo">
+                            <img src="./Images/SD Archive/Notes_250529_104355_f3e.jpg" alt="Historical Polmaise Photo">
+                            <div class="archive-caption">Historical Polmaise Photo</div>
+                        </a>
+                    </div>
+
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250529_104418_1ae.jpg" data-lightbox="archive" data-title="2001 District Pairs Winners Peter Black and Sandy Deans">
+                            <img src="./Images/SD Archive/Notes_250529_104418_1ae.jpg" alt="2001 District Pairs Winners Peter Black and Sandy Deans">
+                            <div class="archive-caption">2001 District Pairs Winners Peter Black and Sandy Deans</div>
+                        </a>
+                    </div>
+
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250529_104332_a85.jpg" data-lightbox="archive" data-title="May 1997 - Polmaise Bowling Club Junior President Iain Bone and his members look on as Ina Fleming, past ladies president, gets the youngsters' new season underway.">
+                            <img src="./Images/SD Archive/Notes_250529_104332_a85.jpg" alt="May 1997 - Junior President Iain Bone">
+                            <div class="archive-caption">May 1997 - Polmaise Bowling Club Junior President Iain Bone and his members look on as Ina Fleming, past ladies president, gets the youngsters' new season underway.</div>
+                        </a>
+                    </div>
+
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250529_104343_37e.jpg" data-lightbox="archive" data-title="Black Magic - Central Association singles champion Peter Black">
+                            <img src="./Images/SD Archive/Notes_250529_104343_37e.jpg" alt="Black Magic - Central Association singles champion Peter Black">
+                            <div class="archive-caption">Black Magic - Central Association singles champion Peter Black</div>
+                        </a>
+                    </div>
+                    
+                    <!-- News Clipping Images -->
                     <!-- Stirling Observer 2015 - Bowlers target Scottish titles -->
-                    <div class="news-card" onclick="toggleNewsClipping('news-clipping-2015')">
-                        <div class="news-card-thumbnail">
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250506_155026_1ce.jpg" data-lightbox="archive" data-title="Bowlers target Scottish titles - Stirling Observer, July 30, 2015">
                             <img src="./Images/SD Archive/Notes_250506_155026_1ce.jpg" alt="Bowlers target Scottish titles">
-                        </div>
-                        <div class="news-card-date">July 30, 2015</div>
-                        <div class="news-card-title">
-                            <h3>Bowlers target Scottish titles</h3>
-                        </div>
+                            <div class="archive-caption">Bowlers target Scottish titles - Stirling Observer, July 30, 2015</div>
+                        </a>
                     </div>
                     
                     <!-- Stirling Observer 2014 - Polmaise Defend City of Stirling Top 15 Title -->
-                    <div class="news-card" onclick="toggleNewsClipping('news-clipping-2014')">
-                        <div class="news-card-thumbnail">
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/20250506_121613.jpg" data-lightbox="archive" data-title="Polmaise Defend City of Stirling Top 15 Title - Stirling Observer, August 20, 2014">
                             <img src="./Images/SD Archive/20250506_121613.jpg" alt="Polmaise defend City of Stirling Top 15 Title">
-                        </div>
-                        <div class="news-card-date">August 20, 2014</div>
-                        <div class="news-card-title">
-                            <h3>Polmaise Defend City of Stirling Top 15 Title</h3>
-                        </div>
+                            <div class="archive-caption">Polmaise Defend City of Stirling Top 15 Title - Stirling Observer, August 20, 2014</div>
+                        </a>
                     </div>
                     
                     <!-- Stirling Observer 2008 - Polmaise Triples Final -->
-                    <div class="news-card" onclick="toggleNewsClipping('news-clipping-2008')">
-                        <div class="news-card-thumbnail">
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/20250506_133641.jpg" data-lightbox="archive" data-title="Final Blow For Polmaise Hopes - No Scottish Joy at Northfield - Stirling Observer, August 6, 2008">
                             <img src="./Images/SD Archive/20250506_133641.jpg" alt="Polmaise triples team at Northfield">
-                        </div>
-                        <div class="news-card-date">August 6, 2008</div>
-                        <div class="news-card-title">
-                            <h3>Final Blow For Polmaise Hopes - No Scottish Joy at Northfield</h3>
-                        </div>
+                            <div class="archive-caption">Final Blow For Polmaise Hopes - No Scottish Joy at Northfield - Stirling Observer, August 6, 2008</div>
+                        </a>
                     </div>
                     
                     <!-- Stirling Observer 2004 - Polmaise Retain District Nine League -->
-                    <div class="news-card" onclick="toggleNewsClipping('news-clipping-2004')">
-                        <div class="news-card-thumbnail">
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250506_162838_622.jpg" data-lightbox="archive" data-title="Polmaise Retain District Nine League Title - Stirling Observer, July 21, 2004">
                             <img src="./Images/SD Archive/Notes_250506_162838_622.jpg" alt="Polmaise Retain District Nine League">
-                        </div>
-                        <div class="news-card-date">July 21, 2004</div>
-                        <div class="news-card-title">
-                            <h3>Polmaise Retain District Nine League Title</h3>
-                        </div>
+                            <div class="archive-caption">Polmaise Retain District Nine League Title - Stirling Observer, July 21, 2004</div>
+                        </a>
+                    </div>
+
+                    <!-- District's Plucky Players at National Finals -->
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250529_104406_0f5.jpg" data-lightbox="archive" data-title="District's Plucky Players Pipped in National Finals - Stirling Observer, August 8, 2001">
+                            <img src="./Images/SD Archive/Notes_250529_104406_0f5.jpg" alt="District's Plucky Players Pipped in National Finals">
+                            <div class="archive-caption">District's Plucky Players Pipped in National Finals - Stirling Observer, August 8, 2001</div>
+                        </a>
                     </div>
 
                     <!-- Invitation Pairs Tournament -->
-                    <div class="news-card" onclick="toggleNewsClipping('news-clipping-pairs-tournament')">
-                        <div class="news-card-thumbnail">
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250507_122556_492.jpg" data-lightbox="archive" data-title="Polmaise Invitation Pairs Tournament - August 13, 2003">
                             <img src="./Images/SD Archive/Notes_250507_122556_492.jpg" alt="Sandy Deans and Pat Neilson - Pairs Tournament Winners">
-                        </div>
-                        <div class="news-card-date">August 13, 2003</div>
-                        <div class="news-card-title">
-                            <h3>Polmaise Invitation Pairs Tournament</h3>
-                        </div>
+                            <div class="archive-caption">Polmaise Invitation Pairs Tournament - August 13, 2003</div>
+                        </a>
                     </div>
 
                     <!-- Shape of things to come at Polmaise -->
-                    <div class="news-card" onclick="toggleNewsClipping('news-clipping-junior-success')">
-                        <div class="news-card-thumbnail">
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250516_135343_261.jpg" data-lightbox="archive" data-title="Shape of things to come at Polmaise - Stirling Observer, September 28, 1995">
                             <img src="./Images/SD Archive/Notes_250516_135343_261.jpg" alt="The young prizewinners of Polmaise Bowling Club">
-                        </div>
-                        <div class="news-card-date">September 28, 1995</div>
-                        <div class="news-card-title">
-                            <h3>Shape of things to come at Polmaise</h3>
-                        </div>
+                            <div class="archive-caption">Shape of things to come at Polmaise - Stirling Observer, September 28, 1995</div>
+                        </a>
                     </div>
 
-                    <!-- New news clipping added May 28, 2025 -->
-                    <div class="news-card" onclick="toggleNewsClipping('news-clipping-may-2025')">
-                        <div class="news-card-thumbnail">
-                            <img src="./Images/SD Archive/Notes_250528_110010_9f0.jpg" alt="Sandy Deans Archive News Clipping">
-                        </div>
-                        <div class="news-card-date">May 28, 2025</div>
-                        <div class="news-card-title">
-                            <h3>Sandy Deans Archive News Clipping</h3>
-                        </div>
+                    <!-- Triple Trophy Success for Polmaise Bowlers -->
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250529_104349_939.jpg" data-lightbox="archive" data-title="Triple Trophy Success for Polmaise Bowlers - Stirling Observer, July 25, 2001">
+                            <img src="./Images/SD Archive/Notes_250529_104349_939.jpg" alt="Trophy Presentation at Polmaise">
+                            <div class="archive-caption">Triple Trophy Success for Polmaise Bowlers - Stirling Observer, July 25, 2001</div>
+                        </a>
                     </div>
-                </div>
-                
-                <!-- Full News Clipping Articles (initially hidden) -->
-                <div class="news-clippings-content">
-                    <!-- Stirling Observer 2015 - Bowlers target Scottish titles -->
-                    <article id="news-clipping-2015" class="news-item">
-                        <h3>Bowlers target Scottish titles</h3>
-                        <div class="news-image">
-                            <a href="./Images/SD Archive/Notes_250506_155026_1ce.jpg" data-lightbox="archive" data-title="Bowlers target Scottish titles">
-                                <img src="./Images/SD Archive/Notes_250506_155026_1ce.jpg" alt="Bowlers target Scottish titles" class="zoomable-image">
-                            </a>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date"><i class="fas fa-calendar-alt"></i> July 30, 2015</span>
-                                <span class="news-category"><i class="fas fa-tag"></i> Stirling Observer</span>
-                            </div>
-                            <p>BRIDGE OF ALLAN bowler Richard Guy staged a magnificent fightback at the Riverside green on Monday evening to win the Scottish District Nine singles title and book his place in the national championship finals at Northfield.</p>
-                            
-                            <p>Joining him were 14 other successful and delighted bowlers including Richard's Bridge of Allan clubmates who won the fours. Also qualifying were the Spittalmyre pairs, Polmaise triples, Polmaise junior singles and Callander's senior fours.</p>
-                            
-                            <p>The singles contest saw Richard Guy line up against Borestone's Ian Forsyth. Five apiece after eight ends, it was Forsyth who scored more consistently over the next 11 ends to hold a 15-9 advantage. However a superb six-end run saw Guy card 11 shots without reply to put him on the brink of victory at 20-15.</p>
-                            
-                            <p>On the 26th end the Bridge of Allan man clinched victory in style by ditching the jack to win 21-15.</p>
-                            
-                            <p>In the junior singles, Gary Malcolmson from the Polmaise Club eventually shrugged off an early challenge from Dunblane's Ian Nairn to win 21-11. Malcolmson finished strongly - carding eight shots over the final five ends.</p>
-                            
-                            <p>Pairs Sam McFarlane and Fraser Gray from the Spittalmyre Club were in scintillating form against Ian Glen and Danny McCormick (Polmaise) and raced to a 16-2 lead after 11 ends. A 4-4 share of the shots over the next five ends saw Spittalmyre triumph 20-6 with an end to spare.</p>
-                            
-                            <p>The triples contest proved to be rather one-sided with David McEwan sen., Peter Black and Sandy Deans (Polmaise) easing their way to a 25-9 victory over Cambusbarron's Craig Green, Barry Liddell and Jim Liddell after only 14 ends.</p>
-                            
-                            <p>It was a similar story in the senior fours where Callander's Gavin Renton, Bill McFarlane, Peter McCartney and John Bowes were in complete control in their overwhelming 28-1 victory against Borestone's Andrew Allan, David Murphy, Pasquale Tortolano and Willie Harrower after 13 ends.</p>
-                            
-                            <p>Last to finish was the fours contest which saw Bridge of Allan's Brian Coburn, Stuart Muir, Bobby McGown, and Ian Anderson triumph 15-12 over Richard Turnbull, Ian Ferrier, Peter Doyle and Ian Carnachan after an extremely close fought match.</p>
-                            
-                            <p>The winners now progress to the Scottish championship playdowns at Ayr's Northfield greens, on July 31 and August 1 and 2.</p>
-                        </div>
-                        <div class="news-close-btn">
-                            <button onclick="closeAllNewsClippings()">Back to News Clippings</button>
-                        </div>
-                    </article>
-                    
-                    <!-- Stirling Observer 2014 - Polmaise Defend City of Stirling Top 15 Title -->
-                    <article id="news-clipping-2014" class="news-item">
-                        <h3>Polmaise Defend City of Stirling Top 15 Title</h3>
-                        <div class="news-image">
-                            <a href="./Images/SD Archive/20250506_121613.jpg" data-lightbox="archive" data-title="Polmaise Defend City of Stirling Top 15 Title">
-                                <img src="./Images/SD Archive/20250506_121613.jpg" alt="Polmaise defend City of Stirling Top 15 Title" class="zoomable-image">
-                            </a>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date"><i class="fas fa-calendar-alt"></i> August 20, 2014</span>
-                                <span class="news-category"><i class="fas fa-tag"></i> Stirling Observer</span>
-                            </div>
-                            <p>DEFENDING champions Polmaise held onto their City of Stirling Top 15 title last Sunday with a highly impressive show at Bridge of Allan green.</p>
-                            
-                            <p>In a rain-interrupted match, the Polmaise bowlers weathered the early challenges from their Borestone opponents to run out worthy 12-0 winners - marking an amazing 14th success in the popular competition since it began back in 1977.</p>
-                            
-                            <p>Junior singles Kevin Paterson got his Polmaise colleagues off to a superb start winning 21-5 over Borestone's Helen Dudgeon and this advantage was extended when Sandy Deans won a hard-fought singles match against Ian Forsyth 21-16.</p>
-                            
-                            <p>In the senior fours contest Chucks Johnstone, Peter Johnstone, Jim Walker and John Binnie added another two points with a 20-11 victory over John McLean, Rab Fleming, John Crombie and Neil Boyle.</p>
-                            
-                            <p>The title was wrapped up when triples James Brown, David McEwan and Ian Glen triumphed 22-12 over Richard Doran, Andy Ferguson and Dougie Kerr. The Polmaise trio carded a super seven on the seventh end to go in front and never looked back.</p>
-                            
-                            <p>The pairs match proved highly entertaining with Gary Malcolmson and Danny McCormick surviving a severe test from Rab Johnston and Brian McLaughlin to win 19-17. The Polmaise duo carded four at the final end to snatch victory following an impressive last-bowl delivery by Borestone skip McLaughlin which just failed to convert the head.</p>
-                            
-                            <p>Peter Black's final bowl in the fours proved to be a winner when he converted the head to a match-winning situation. Along with Alec McNeil, Ross McLeod and David McEwan jun, the Polmaise four held on for a 18-16 victory over Tom Keith, Brian Kelly, George Toner and Kevin Frogley.</p>
-                            
-                            <p>Finals totals were: Polmaise 12 points and 121 shots, Borestone no points and 77 shots.</p>
-                            
-                            <p>The City of Stirling Top 15 championship enjoyed sponsorship from Co-op Funeralcare and from One Stop Motor Engineers.</p>
-                        </div>
-                        <div class="news-close-btn">
-                            <button onclick="closeAllNewsClippings()">Back to News Clippings</button>
-                        </div>
-                    </article>
-                    
-                    <!-- Stirling Observer 2008 - Polmaise Triples Final -->
-                    <article id="news-clipping-2008" class="news-item">
-                        <h3>Final Blow For Polmaise Hopes - No Scottish Joy at Northfield</h3>
-                        <div class="news-image">
-                            <a href="./Images/SD Archive/20250506_133641.jpg" data-lightbox="archive" data-title="Final Blow For Polmaise Hopes - No Scottish Joy at Northfield">
-                                <img src="./Images/SD Archive/20250506_133641.jpg" alt="Polmaise triples team at Northfield" class="zoomable-image">
-                            </a>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date"><i class="fas fa-calendar-alt"></i> August 6, 2008</span>
-                                <span class="news-category"><i class="fas fa-tag"></i> Stirling Observer</span>
-                            </div>
-                            <p>FINAL BLOW FOR POLMAISE HOPES</p>
-                            <p>No Scottish joy at Northfield</p>
-                            
-                            <p>Local Bowlers were again to the fore on the national championships' stage at Ayr last weekend.</p>
-                            
-                            <p>Following some top displays by the ladies the previous week it was the turn of the gents to shine at the SBA's three-day showpiece event on the Northfield greens.</p>
-                            
-                            <p>And none more so than Polmaise players David McEwan, Peter Black and Sandy Deans who made it all the way to Saturday's triples final only to lose out on national silverware, by just four shots, to near neighbours Clackmannan.</p>
-                            
-                            <p>Elsewhere, District Nine bowlers also featured in the quarter-finals of the fours and the singles with the spotlight firmly fixed on the Bridge of Allan Club in both events.</p>
-                            
-                            <p>The Polmaise triples got off to flyer in their opening match seeing off Bellahouston 22-7 followed by an equally impressive 23-5 victory over Grahamston. Things got a little tougher in the quarter-final but Polmaise survived to win 16-15 over Airdre to set up a Saturday semi-final date with Carrick Knowe. Another hard-earned 15-12 victory put then into the final.</p>
-                            
-                            <p>Standing in their way were Clackmannan's Joe Young, John Bell and Mark McCallum who trailed Polmaise 15-18 with four ends remaining. However the Wee County three produced a powerhouse finish carding nine shots for the loss of just two to dash Polmaise hopes 24-20.</p>
-                            
-                            <p>Bridge of Allan fours, Brian Cockburn, Stuart Muir, Bobby McGown and Ian Anderson won 17-13 against Ardrossan and 17-16 against Kinneil before making their quarter final exit 24-8 to Riccarton.</p>
-                            
-                            <p>Richard Guy (Bridge of Allan) won his opening singles match against Derek Logie (Cockenzie & Port Seton) 21-12 and then triumphed 21-19 over Ian Penwright (Inverness). In the quarter-final Richard lost out 21-10 to Burnbank's Alex Kelly.</p>
-                            
-                            <p>Spittalmyre pairing Sam McFarlane and Frazer Gray won 20-11 against Dunoon then lost 15-12 to Kirkcolm.</p>
-                            
-                            <p>In the junior singles, Gary Malcolmson from Polmaise BC lost his opener against Stuart Bebbington (Tweedmouth) 21-11, while senior four - Callander's Harry Crews, Bill McFarlane, Peter McCartney and John Bowes also lost out in their opening match 25-5 against eventual winners, Stranraer West End.</p>
-                            
-                            <p>TOP FIFTEEN</p>
-                            <p>THE City of Stirling Top Fifteen final goes ahead at the Bridge of Allan green on Sunday when Polmaise take on Borestone.</p>
-                            
-                            <p>In the recent semi-finals Polmaise defeated Spittalmyre by 34 shots while Borestone saw off Cambusbarron by four points to two.</p>
-                            
-                            <p>Players are requested to report to Bridge of Allan green on Sunday by 1.30p. The competition is being sponsored by sponsored by one Stop Motor Engineers and by Co-op Funeralcare.</p>
-                            
-                            <p>CAUSEWAYHEAD OPEN PAIRS</p>
-                            <p>WINNERS of last Sunday's open pairs competition were Borestone's Dougie Kerr and Andy Ferguson. Runners up were Jim Somerville and Pat Martin (Causewayhead).</p>
-                            
-                            <p>HAMILTON TROPHY</p>
-                            <p>STIRLING County West's quarter-final conquerors Lanarkshire South won last Sunday's Hamilton Trophy final against Ayrshire at Northfield (137-87)</p>
-                            
-                            <p>CAUSEWAYHEAD v STIRLING</p>
-                            <p>LAST Saturday's match at Causewayhead green resulted in an 18-shot victory for Stirling. Scores: P Doyle 19, D McKean 13; I Carnachan 12, JR Gilmour 15; J Blevins 11, P Neilson 21; B Morrison 10, J Miller 21. Totals: Causewayhead 52, Stirling 70.</p>
-                            
-                            <p>ALLOA v RIVERSIDE</p>
-                            <p>RESULTS from last Saturday's match were: R Grandison 12, J Purdie 12; J Marshall 14, I Gillies 11; J Dallas 12, T Millar 16; R Beverage 23, D Cairns 7. Totals: Alloa 61, Riverside 46.</p>
-                            
-                            <p>BANNOCKBURN v CAUSEWAYHEAD</p>
-                            <p>THE annual match between these clubs was played last Wednesday at Bannockburn. Scores: A Ivatt 12, I Carnachan 18; G Sludden 12, J Dawson 12; A Meldrum 13, B Morrison 10; I Cameron 19, P Martin 15. Totals: Bannockburn 56, Causewayhead 55.</p>
-                        </div>
-                        <div class="news-close-btn">
-                            <button onclick="closeAllNewsClippings()">Back to News Clippings</button>
-                        </div>
-                    </article>
-                    
-                    <!-- Stirling Observer 2004 - Polmaise Retain District Nine League -->
-                    <article id="news-clipping-2004" class="news-item">
-                        <h3>Polmaise Retain District Nine League Title</h3>
-                        <div class="news-image">
-                            <a href="./Images/SD Archive/Notes_250506_162838_622.jpg" data-lightbox="archive" data-title="Polmaise Retain District Nine League Title">
-                                <img src="./Images/SD Archive/Notes_250506_162838_622.jpg" alt="Polmaise Retain District Nine League" class="zoomable-image">
-                            </a>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date"><i class="fas fa-calendar-alt"></i> July 21, 2004</span>
-                                <span class="news-category"><i class="fas fa-tag"></i> Stirling Observer</span>
-                            </div>
-                            <p>DEFENDING District Nine League champions Polmaise were in blistering form last Friday at the Spittalmyre green when they retained the title with a highly convincing final victory over Borestone.</p>
-                            
-                            <p>As early as the seventh end when Sandy Deans' four led 14-1 (aided by a super seven on the fourth), while Peter Black's team were 6-3 ahead on the other rink - the four-time champions looked to be heading for a fabulous fifth success.</p>
-                            
-                            <p>And so it proved with the Polmaise men running out comfortable winners by four points and an overall 15 shot majority.</p>
-                            
-                            <p>Ian Glen, Andy Craig, Iain Bone and Sandy Deans were never in trouble as they raced to a 23-12 victory over Ian Forsyth, Willie Ferguson, John Crombie and Rab Fleming.</p>
-                            
-                            <p>Securing the other two points for Polmaise were Alex McNeil, Robert Beattie, Danny McCormick and Peter Black who fended off a stern challenge from Andy Ferguson, Neil Lafferty, Willie Hunter and Dougie Kerr to win 17-13.</p>
-                            
-                            <p>Peels after 12 ends, Polmaise carded a four and three on the next two ends which carried them to victory.</p>
-                            
-                            <p>For Borestone it was bitter disappointment at losing for a third time in the final, but for Polmaise, now with a handful of successes in the 15 years of the competition, it was celebration time.</p>
-                            
-                            <p>This year's league campaign received generous sponsorship from Unicorn Travel and in attendance at the presentation ceremony was representative Glenys Thrower.</p>
-                        </div>
-                        <div class="news-close-btn">
-                            <button onclick="closeAllNewsClippings()">Back to News Clippings</button>
-                        </div>
-                    </article>
 
-                    <!-- Invitation Pairs Tournament -->
-                    <article id="news-clipping-pairs-tournament" class="news-item">
-                        <h3>Polmaise Invitation Pairs Tournament</h3>
-                        <div class="news-image">
-                            <a href="./Images/SD Archive/Notes_250507_122556_492.jpg" data-lightbox="archive" data-title="Sandy Deans and Pat Neilson - Pairs Tournament Winners">
-                                <img src="./Images/SD Archive/Notes_250507_122556_492.jpg" alt="Sandy Deans and Pat Neilson - Pairs Tournament Winners" class="zoomable-image">
-                            </a>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date"><i class="fas fa-calendar-alt"></i> August 13, 2003</span>
-                                <span class="news-category"><i class="fas fa-tag"></i> Tournament Results</span>
-                            </div>
-                            <p>SANDY Deans (Polmaise) and Pat Neilson (Stirling) were winners of last Sunday's invitation pairs tournament at the Polmaise green. The event, sponsored by Rab's Taxies, attracted 24 entries.</p>
-                            
-                            <p>Runners-up were Dick Kennedy (Bannockburn) and Gary Malcolmson (Polmaise Juniors).</p>
-                            
-                            <p>Losing out in the semi-finals were Jim Walker and Ross McLeod (Polmaise) along with Peter Smith (Polmaise) and Jock Gairns (Cowie).</p>
-                        </div>
-                        <div class="news-close-btn">
-                            <button onclick="closeAllNewsClippings()">Back to News Clippings</button>
-                        </div>
-                    </article>
-
-                    <!-- Shape of things to come at Polmaise -->
-                    <article id="news-clipping-junior-success" class="news-item">
-                        <h3>Shape of things to come at Polmaise</h3>
-                        <div class="news-image">
-                            <a href="./Images/SD Archive/Notes_250516_135343_261.jpg" data-lightbox="archive" data-title="The young prizewinners of Polmaise Bowling Club">
-                                <img src="./Images/SD Archive/Notes_250516_135343_261.jpg" alt="The young prizewinners of Polmaise Bowling Club" class="zoomable-image">
-                            </a>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date"><i class="fas fa-calendar-alt"></i> September 28, 1995</span>
-                                <span class="news-category"><i class="fas fa-tag"></i> Stirling Observer</span>
-                            </div>
-                            <p>FUTURE prospects at the Polmaise Club would appear to be bright if this season's trophy haul by their younger members is an indication.</p>
-                            
-                            <p>For junior bowlers within the club have enjoyed a hugely successful past few months winning no fewer than eight titles and being runners-up in another three contests.</p>
-                            
-                            <p>Amongst their successes were The British Alcan Pairs, Bonestone Shield, Campsite Pairs, Carron Triples, Sports Council Triples, Kirkinutilloch Triples and the Allanadale Rink. Near successes came in the League and District Triples. Three young players have also appeared with the county junior team.</p>
-                            
-                            <p>So it was a truly glittering occasion at the end of last week when club president Sandy Deans along with local councillor Tom Hazel were on hand to present the Junior Section competition trophies. Fourteen delighted youngsters also received diplomas from Mrs Janet Black.</p>
-                            
-                            <p>The 12/16 years Champion was Iain Bone, (r.u. William Ferguson); 10/12 years Champion was Ross McLoad, (r.u. Kirk Russell); and the Tom Hazel trophy winners were Iain Bone and James McLelchan, (r.u. William Ferguson and Ross McLoad).</p>
-                            
-                            <p>Junior coach Peter Black wishes to thank the Polmaise committee, club members and the Gothenburgh committee for support throughout the season. Thanks also to Betty Johnstone for chauffeur duties.</p>
-                        </div>
-                        <div class="news-close-btn">
-                            <button onclick="closeAllNewsClippings()">Back to News Clippings</button>
-                        </div>
-                    </article>
-
-                    <!-- New news clipping added May 28, 2025 -->
-                    <article id="news-clipping-may-2025" class="news-item">
-                        <h3>Sandy Deans Archive News Clipping</h3>
-                        <div class="news-image">
-                            <a href="./Images/SD Archive/Notes_250528_110010_9f0.jpg" data-lightbox="archive" data-title="Sandy Deans Archive News Clipping">
-                                <img src="./Images/SD Archive/Notes_250528_110010_9f0.jpg" alt="Sandy Deans Archive News Clipping" class="zoomable-image">
-                            </a>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date"><i class="fas fa-calendar-alt"></i> May 28, 2025</span>
-                                <span class="news-category"><i class="fas fa-tag"></i> Stirling Observer</span>
-                            </div>
-                            <p>This news clipping is added to the archive on May 28, 2025. It contains information about the recent achievements of Polmaise Bowling Club.</p>
-                        </div>
-                        <div class="news-close-btn">
-                            <button onclick="closeAllNewsClippings()">Back to News Clippings</button>
-                        </div>
-                    </article>
+                    <!-- District Rinks Champions 2002 -->
+                    <div class="archive-item" data-category="photos">
+                        <a href="./Images/SD Archive/Notes_250529_104424_08e.jpg" data-lightbox="archive" data-title="District Rinks Champions 2002 - Stirling Observer, July 30, 2002">
+                            <img src="./Images/SD Archive/Notes_250529_104424_08e.jpg" alt="District Rinks Champions 2002">
+                            <div class="archive-caption">District Rinks Champions 2002 - Stirling Observer, July 30, 2002</div>
+                        </a>
+                    </div>
+                    
+                    <!-- More items will be added by the club -->
                 </div>
             </div>
         </div>
@@ -1259,32 +1128,6 @@
                 'wrapAround': true,
                 'albumLabel': 'Image %1 of %2'
             });
-            
-            // Category filtering
-            $('.archive-category').click(function() {
-                // Update active class
-                $('.archive-category').removeClass('active');
-                $(this).addClass('active');
-                
-                // Get selected category
-                const category = $(this).data('category');
-                
-                // Filter items
-                if (category === 'all') {
-                    $('.archive-item, .news-clipping').show();
-                    $('.archive-section').show();
-                } else if (category === 'photos') {
-                    $('.news-clipping').hide();
-                    $('.archive-item').show();
-                    $('.archive-section:has(.archive-grid)').show();
-                    $('.archive-section:has(.news-clippings)').hide();
-                } else if (category === 'news-clippings') {
-                    $('.archive-item').hide();
-                    $('.news-clipping').show();
-                    $('.archive-section:has(.archive-grid)').hide();
-                    $('.archive-section:has(.news-clippings)').show();
-                }
-            });
         });
     </script>
     
@@ -1303,54 +1146,6 @@
                 }
             });
         });
-    </script>
-
-    <!-- News Clipping toggle functionality -->
-    <script>
-        // News Clipping toggle functionality
-        function toggleNewsClipping(clippingId) {
-            // Hide the grid
-            document.getElementById('news-clippings-grid').style.display = 'none';
-            
-            // Hide all articles first
-            const articles = document.querySelectorAll('.news-item');
-            articles.forEach(article => {
-                article.classList.remove('active');
-            });
-            
-            // Show the selected article
-            const selectedArticle = document.getElementById(clippingId);
-            selectedArticle.classList.add('active');
-            
-            // Show the close button
-            const closeButtons = document.querySelectorAll('.news-close-btn');
-            closeButtons.forEach(button => {
-                button.style.display = 'block';
-            });
-            
-            // Scroll to the top of the article
-            selectedArticle.scrollIntoView({ behavior: 'smooth' });
-        }
-        
-        function closeAllNewsClippings() {
-            // Hide all articles
-            const articles = document.querySelectorAll('.news-item');
-            articles.forEach(article => {
-                article.classList.remove('active');
-            });
-            
-            // Show the grid
-            document.getElementById('news-clippings-grid').style.display = 'grid';
-            
-            // Hide the close buttons
-            const closeButtons = document.querySelectorAll('.news-close-btn');
-            closeButtons.forEach(button => {
-                button.style.display = 'none';
-            });
-            
-            // Scroll to the top of the news clippings section
-            document.querySelector('.archive-section').scrollIntoView({ behavior: 'smooth' });
-        }
     </script>
 </body>
 </html> 
