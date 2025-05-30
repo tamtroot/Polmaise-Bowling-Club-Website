@@ -99,6 +99,122 @@
                 margin-bottom: 10px;
             }
         }
+
+        /* Article Viewer Styles */
+        .article-viewer-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .article-viewer {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 1000px;
+            max-height: 90vh;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+
+        .article-viewer.active,
+        .article-viewer-overlay.active {
+            display: block;
+        }
+
+        .article-close-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #333;
+            padding: 0.5rem;
+            line-height: 1;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+
+        .article-close-btn:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .article-content {
+            margin-top: 1rem;
+        }
+
+        .article-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        .article-clipping {
+            float: right;
+            margin: 0 0 1rem 1rem;
+            max-width: 300px;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .article-viewer {
+                width: 95%;
+                max-height: 85vh;
+                padding: 1rem;
+            }
+
+            .article-clipping {
+                float: none;
+                margin: 1rem 0;
+                max-width: 100%;
+            }
+        }
+
+        /* Timeline enhancements */
+        .timeline-content {
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            padding: 1rem;
+            border-radius: 4px;
+        }
+
+        .timeline-content:hover {
+            background-color: rgba(66, 103, 178, 0.1);
+        }
+
+        .view-article-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #4267B2;
+            color: white;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+
+        .view-article-btn:hover {
+            background-color: #365899;
+        }
     </style>
 </head>
 <body>
@@ -167,51 +283,79 @@
                 <ul class="timeline">
                     <li>
                         <div class="timeline-date">1911</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content" onclick="showHistoricalArticle('1911-founding')">
                             <h4>Club Founded</h4>
                             <p>Polmaise Bowling Club was established with a £286 donation from the Gothenburg Public House, providing a recreational outlet for local miners.</p>
+                            <span class="view-article-btn">
+                                <i class="fas fa-newspaper"></i>
+                                View Historical Article
+                            </span>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-date">1911</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content" onclick="showHistoricalArticle('1911-first-match')">
                             <h4>First Competitive Match</h4>
-                            <p>The club played its first recorded match on July 12, 1911, against Spittalmyre.</p>
+                            <p>The club played its first competitive match against Spittalmyre Bowling Club, marking the beginning of its sporting journey.</p>
+                            <span class="view-article-btn">
+                                <i class="fas fa-newspaper"></i>
+                                View Historical Article
+                            </span>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-date">1914</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content" onclick="showHistoricalArticle('history-1914')">
                             <h4>First Trophy Win</h4>
                             <p>Polmaise win their first trophy in The Polmaise Trophy in a 101 - 61 win against various clubs.</p>
+                            <span class="view-article-btn">
+                                <i class="fas fa-newspaper"></i>
+                                View Historical Article
+                            </span>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-date">1920s-1930s</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content" onclick="showChampionsBoard()">
                             <h4>Early Champions</h4>
                             <p>John Gwynne Snr. emerged as a dominant force, winning nine club championships, with his first title in 1913.</p>
+                            <span class="view-article-btn">
+                                <i class="fas fa-trophy"></i>
+                                View Club Champions
+                            </span>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-date">1935</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content" onclick="showHistoricalArticle('history-1935')">
                             <h4>MacIntosh Trophy</h4>
                             <p>Polmaise win permanent ownership of the MacIntosh Trophy after a nail-biting victory over Bridge of Allan Bowling Club.</p>
+                            <span class="view-article-btn">
+                                <i class="fas fa-newspaper"></i>
+                                View Historical Article
+                            </span>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-date">1942</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content" onclick="showHistoricalArticle('history-1942')">
                             <h4>Father vs. Son Championship Final</h4>
                             <p>John Gwynne Snr. faced his son in the club championship final, winning his last title.</p>
+                            <span class="view-article-btn">
+                                <i class="fas fa-newspaper"></i>
+                                View Historical Article
+                            </span>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-date">1988</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content" onclick="showHistoricalArticle('history-1988')">
                             <h4>National Top Ten Champions</h4>
                             <p>Polmaise won the National Inter-County Top Ten competition, marking one of the club's greatest achievements.</p>
+                            <span class="view-article-btn">
+                                <i class="fas fa-newspaper"></i>
+                                View Historical Article
+                            </span>
                         </div>
                     </li>
                     <li>
@@ -223,16 +367,24 @@
                     </li>
                     <li>
                         <div class="timeline-date">2002</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content" onclick="showHistoricalArticle('history-2002')">
                             <h4>Scottish Triples Champions</h4>
-                            <p>Club Members John Johnson, Jason Williams and Derek Logie win the Scottish National Triples Championship.</p>
+                            <p>John Johnstone, Derek Logie and Jason Williams secured the club's first national championship.</p>
+                            <span class="view-article-btn">
+                                <i class="fas fa-newspaper"></i>
+                                View Historical Article
+                            </span>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-date">2003</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content" onclick="showHistoricalArticle('history-2003')">
                             <h4>British Isles Triples Champions</h4>
-                            <p>Club members John Johnstone, Derek Logie, and Jason Williams won the prestigious British Isles Triples title.</p>
+                            <p>The club's Scottish champions went on to win Polmaise's first British Isles title.</p>
+                            <span class="view-article-btn">
+                                <i class="fas fa-newspaper"></i>
+                                View Historical Article
+                            </span>
                         </div>
                     </li>
                     <li>
@@ -251,9 +403,13 @@
                     </li>
                     <li>
                         <div class="timeline-date">2013</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content" onclick="showHistoricalArticle('history-2013')">
                             <h4>Scottish Mixed Pairs Champions</h4>
-                            <p>Club Members Gary Malcomson and Rita Smith won the prestigious Scottish Mixed Pairs Title.</p>
+                            <p>Rita Smith and Gary Malcolmson brought national glory to Polmaise with a dominant performance.</p>
+                            <span class="view-article-btn">
+                                <i class="fas fa-newspaper"></i>
+                                View Historical Article
+                            </span>
                         </div>
                     </li>
                     <li>
@@ -278,24 +434,28 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-date">2022</div>
-                        <div class="timeline-content">
-                            <h4>Historic 12-Trophy Season</h4>
-                            <p>Polmaise won an impressive 12 major titles, including the County Triples, Fours, and Senior Fours, during a standout season.</p>
-                        </div>
-                    </li>
-                    <li>
                         <div class="timeline-date">2023</div>
-                        <div class="timeline-content">
-                            <h4>Honoring a Legacy</h4>
-                            <p>The club paid tribute to past president Peter Smith, who was known for his unwavering support and passion for the club.</p>
+                        <div class="timeline-content" onclick="showImage('./Images/gallery47.webp')">
+                            <h4>Historic 12-Trophy Season</h4>
+                            <p>The club achieved unprecedented success, securing twelve major trophies in a single season.</p>
+                            <span class="view-article-btn">
+                                <i class="fas fa-image"></i>
+                                View Trophy Image
+                            </span>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-date">2024</div>
                         <div class="timeline-content">
+                            <h4>Honoring a Legacy</h4>
+                            <p>The club launched the Sandy Deans Historical Archive, preserving decades of club history.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
                             <h4>First Ever Sponsors' Day</h4>
-                            <p>The club introduced a Sponsors' Day, inviting business supporters for a day of appreciation and celebration.</p>
+                            <p>A new tradition begins as the club celebrates its valued sponsors with a dedicated event.</p>
                         </div>
                     </li>
                 </ul>
@@ -415,6 +575,13 @@
         <div class="lightbox-caption" id="lightboxCaption"></div>
     </div>
 
+    <!-- Article Viewer -->
+    <div class="article-viewer-overlay"></div>
+    <div class="article-viewer">
+        <button class="article-close-btn">&times;</button>
+        <div class="article-content"></div>
+    </div>
+
     <script src="script.js"></script>
     <script>
         // Lightbox functionality
@@ -453,6 +620,297 @@
                 }
             });
         });
+
+        // Historical articles data
+        const historicalArticles = {
+            '1911-founding': {
+                title: 'A Gala Day at Fallin - June 3, 1911',
+                subtitle: 'Opening of Bowling Green and Sale of Work',
+                content: `
+                    <img src="./Images/Archive/HistoricalArchive/Opening of Green.jpg" alt="Opening of Bowling Green 1911" class="article-image">
+                    <img src="./Images/Archive/HistoricalArchive/Opening of Green News.jpg" alt="Original newspaper clipping from 1911" class="article-clipping">
+                    <p><em>Photo by Bennett, St. Ninians.</em></p>
+                    <p>The new green which is situated at the side of the road opposite the Gothenburg Public House was opened by Mr. Archibald Russell, Esq. of Sauchie and Blackgrange. The green was laid out by Mr. Jas. Barr, Bowling Green Contractor, Kilmarnock, and is a credit to his workmanship.</p>
+                    <p>The opening ceremony was attended by a large gathering of the villagers and friends from the surrounding district. The weather was all that could be desired and the proceedings passed off most successfully.</p>
+                `
+            },
+            '1911-first-match': {
+                title: 'Bridge of Allan Gazette - 15th July 1911',
+                subtitle: 'First Match on New Green - Local Club Defeated',
+                content: `
+                    <img src="./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_15_July_1911_0005_Clip.jpg" alt="First Match on Polmaise Green 1911" class="article-image">
+                    <p>On Wednesday evening five rinks from the Spittalmyre Bowling Club visited Polmaise Bowling Club, when a most enjoyable game was contested, which ended in a victory for Spittalmyre with 32 shots up, the scores being :- Spittalmyre,106; Polmaise, 72.</p>
+                    <p>At the close of the game the president of the local club, Mr Todd, said that it gave them great pleasure to have their old friends from Spittalmyre at their first match on the Fallin green, and when he saw the visitors with so many veterans in their midst, he was not so surprised at the victory. He hoped, however, that Polmaise would yet be able to alter the figures.</p>
+                    <p>In reply, the vice-president of Spittalmyre, Mr George Liddle, said it was unfortunate that their president, Mr W Porter, was unavoidably absent, as he considered this to be a very important match. However, on behalf of the Spittalmyre club and himself he thanked the president, Mr Todd, and the Polmaise club for their kind invitation that evening. They had thoroughly enjoyed the game and the hospitality of the Fallin club, and in his opinion the green was in excellent order, and reflected the greatest credit on the parties responsible for its institution.</p>
+                `
+            },
+            'history-1914': {
+                title: 'The Polmaise Trophy - 1914',
+                subtitle: 'Fallin Club\'s First Victory',
+                content: `
+                    <img src="./Images/Archive/HistoricalArchive/8th June 1914.jpg" alt="Original newspaper clipping from 1914" class="article-image">
+                    <p>In a thrilling contest that marked a significant milestone in the club's history, Polmaise Bowling Club secured their first major trophy. The final score of 101-61 demonstrated the club's growing prowess on the green.</p>
+                    <p>The victory was particularly sweet as it came against a strong field of established clubs, proving that the young club from Fallin could compete at the highest level.</p>
+                `
+            },
+            'history-1935': {
+                title: 'Macintosh Trophy Secured',
+                subtitle: 'Polmaise Secure Macintosh Trophy Ownership',
+                content: `
+                    <img src="./Images/Archive/HistoricalArchive/Macintosh 1935.jpg" alt="Macintosh Trophy Win 1935" class="article-image">
+                    <img src="./Images/Archive/HistoricalArchive/20th July 1935.jpg" alt="Original newspaper clipping from July 1935" class="article-clipping">
+                    <p>After years of fierce competition, Polmaise Bowling Club has earned permanent ownership of the prestigious Macintosh Trophy. The final against Bridge of Allan Bowling Club was a testament to the high standard of bowling that Polmaise has become known for.</p>
+                    <p>The trophy will now remain at Polmaise as a symbol of the club's dedication and success in the sport.</p>
+                `
+            },
+            'history-1942': {
+                title: 'Father vs Son Championship Final',
+                subtitle: 'Father Defeats Son in Club Championship Final',
+                content: `
+                    <img src="./Images/Archive/HistoricalArchive/Stirling_Observer_11_August_1942_0006_Clip.jpg" alt="J. Gwynne Sr. Championship Win 1942" class="article-image">
+                    <img src="./Images/Archive/HistoricalArchive/J.Gwynne.jpg" alt="Original newspaper clipping from 1942" class="article-clipping">
+                    <p>In what will be remembered as one of the most memorable matches in club history, John Gwynne Snr. faced his own son in the club championship final. The match was a display of exceptional bowling from both players, with the elder Gwynne ultimately prevailing to claim his final club championship title.</p>
+                    <p>This victory marked John Gwynne Snr.'s ninth club championship, a record that stood as a testament to his dominance in the club's early decades.</p>
+                `
+            },
+            'history-1988': {
+                title: 'Polmaise Top Of The Pops!',
+                subtitle: 'Scottish Top Ten Champions',
+                content: `
+                    <img src="./Images/Archive/1988.jpg" alt="Polmaise Bowling Club - Scottish Top Ten Champions 1988" class="article-image">
+                    <img src="./Images/Archive/HistoricalArchive/Stirling_Observer_17_June_1988_0022_Clip.jpg" alt="Original newspaper clipping of Polmaise Top of the Pops" class="article-clipping">
+                    <p>In a remarkable display of team bowling, Polmaise Bowling Club has claimed the National Inter-County Top Ten title. The victory marks one of the most significant achievements in the club's history and establishes Polmaise as one of Scotland's premier bowling clubs.</p>
+                    <p>The team's performance throughout the competition showcased the depth of talent at the club and the strong bowling tradition that has been built over the years.</p>
+                `
+            },
+            'history-2002': {
+                title: 'Super Bowl',
+                subtitle: 'Polmaise trio snatch Scottish title in last gasp thriller',
+                content: `
+                    <img src="./Images/Archive/HistoricalArchive/IMG-20250509-WA0001.jpg" alt="Polmaise Bowling Club - Scottish Triples Champions 2002" class="article-image">
+                    <img src="./Images/Archive/HistoricalArchive/IMG-20250509-WA0002.jpg" alt="Original newspaper clipping of Scottish Triples Championship win" class="article-clipping">
+                    <p>The trio of John Johnstone, Derek Logie, and Jason Williams created history by becoming the first Polmaise members to win a national championship. In a thrilling final that went down to the last bowl, the Polmaise team showed exceptional skill and nerve to secure the Scottish Triples title.</p>
+                    <p>This victory marked a new era for the club, proving that Polmaise could compete and win at the highest level of the sport.</p>
+                `
+            },
+            'history-2003': {
+                title: 'Best of British',
+                subtitle: 'Victory over Auld Enemy gives Polmaise the UK title',
+                content: `
+                    <img src="./Images/Archive/HistoricalArchive/Triples.jpg" alt="Polmaise Bowling Club - British Isles Triples Champions 2003" class="article-image">
+                    <img src="./Images/Archive/HistoricalArchive/IMG-20250509-WA0000.jpg" alt="Original newspaper clipping of British Isles championship win" class="article-clipping">
+                    <p>Building on their Scottish success, the formidable trio of John Johnstone, Derek Logie, and Jason Williams have added the British Isles Triples title to their collection. The victory over strong opposition from across the British Isles demonstrates the exceptional standard of bowling at Polmaise.</p>
+                    <p>This historic achievement marks the first time a Polmaise team has won a British Isles title, setting a new benchmark for future generations.</p>
+                `
+            },
+            'history-2013': {
+                title: 'Silverware for Rita and Gary',
+                subtitle: 'Scottish Mixed Pairs Champions',
+                content: `
+                    <img src="./Images/Archive/HistoricalArchive/Gary&Rita1.jpg" alt="Rita Smith and Gary Malcolmson - Scottish Mixed Pairs Champions" class="article-image">
+                    <img src="./Images/Archive/HistoricalArchive/Gary&Rita.jpg" alt="Original newspaper clipping of Rita and Gary's championship win" class="article-clipping">
+                    <p>Rita Smith and Gary Malcolmson have brought national glory to Polmaise once again with their victory in the Scottish Mixed Pairs Championship. Their partnership proved unbeatable throughout the competition, displaying both skill and determination.</p>
+                    <p>This victory adds another prestigious national title to the club's growing collection and highlights the strength of both the men's and women's sections at Polmaise.</p>
+                `
+            }
+        };
+
+        // Article viewer functionality
+        function showHistoricalArticle(articleId) {
+            const article = historicalArticles[articleId];
+            const viewer = document.querySelector('.article-viewer');
+            const overlay = document.querySelector('.article-viewer-overlay');
+            const content = viewer.querySelector('.article-content');
+            
+            content.innerHTML = `
+                <h2>${article.title}</h2>
+                <h3>${article.subtitle}</h3>
+                ${article.content}
+            `;
+            
+            viewer.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeHistoricalArticle() {
+            const viewer = document.querySelector('.article-viewer');
+            const overlay = document.querySelector('.article-viewer-overlay');
+            viewer.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Event listeners
+        document.querySelector('.article-close-btn').addEventListener('click', closeHistoricalArticle);
+        document.querySelector('.article-viewer-overlay').addEventListener('click', closeHistoricalArticle);
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeHistoricalArticle();
+            }
+        });
+
+        // Prevent click propagation from article content to overlay
+        document.querySelector('.article-viewer').addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        function showChampionsBoard() {
+            // Create modal for champions board
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            `;
+
+            const content = document.createElement('div');
+            content.className = 'modal-content';
+            content.style.cssText = `
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                max-width: 800px;
+                max-height: 80vh;
+                overflow-y: auto;
+                position: relative;
+            `;
+
+            const closeBtn = document.createElement('button');
+            closeBtn.innerHTML = '×';
+            closeBtn.style.cssText = `
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                background: none;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+                padding: 5px 10px;
+            `;
+            closeBtn.onclick = () => modal.remove();
+
+            // Add champions board content
+            content.innerHTML = `
+                <h2>Club Champions of Polmaise Bowling Club</h2>
+                <p class="board-intro">Honoring our club champions throughout our proud history.</p>
+                <div class="champions-list" style="columns: 3; column-gap: 20px;">
+                    <div class="entry"><span>1911</span> J. Barr Snr</div>
+                    <div class="entry"><span>1912</span> J. Barr Jnr</div>
+                    <div class="entry"><span>1913</span> J. Gwynne Snr</div>
+                    <div class="entry"><span>1914</span> G. M. McLaughlan</div>
+                    <div class="entry"><span>1915</span> W. Campbell Jnr</div>
+                    <div class="entry"><span>1916</span> G. M. McLaughlan</div>
+                    <div class="entry"><span>1917</span> J. Campbell</div>
+                    <div class="entry"><span>1918</span> H. Campbell</div>
+                    <div class="entry"><span>1919</span> H. Campbell</div>
+                    <div class="entry"><span>1920</span> T. Russell</div>
+                    <div class="entry"><span>1921</span> J. Gwynne Snr</div>
+                    <div class="entry"><span>1922</span> J. Gwynne Snr</div>
+                    <div class="entry"><span>1923</span> J. Gwynne Snr</div>
+                    <div class="entry"><span>1924</span> J. Gwynne Snr</div>
+                    <div class="entry"><span>1925</span> T. Bunyan Snr</div>
+                    <div class="entry"><span>1926</span> J. Stevenson</div>
+                    <div class="entry"><span>1927</span> D. Nicol Jnr</div>
+                    <div class="entry"><span>1928</span> J. Jack</div>
+                    <div class="entry"><span>1929</span> T. Bunyan Snr</div>
+                    <div class="entry"><span>1930</span> J. Gwynne Snr</div>
+                    <div class="entry"><span>1931</span> J. McDonald</div>
+                    <div class="entry"><span>1932</span> A. Jarvie</div>
+                    <div class="entry"><span>1933</span> A. Jeffery</div>
+                    <div class="entry"><span>1934</span> J. McDonald</div>
+                    <div class="entry"><span>1935</span> J. Gwynne Snr</div>
+                    <div class="entry"><span>1936</span> R. Woods</div>
+                    <div class="entry"><span>1937</span> T. Bunyan Snr</div>
+                    <div class="entry"><span>1938</span> J. Brown</div>
+                    <div class="entry"><span>1939</span> <em>No Club This Year</em></div>
+                </div>
+                <style>
+                    .champions-list .entry {
+                        margin-bottom: 10px;
+                        break-inside: avoid;
+                    }
+                    .champions-list .entry span {
+                        font-weight: bold;
+                        margin-right: 10px;
+                    }
+                    @media (max-width: 768px) {
+                        .champions-list {
+                            columns: 1 !important;
+                        }
+                    }
+                </style>
+            `;
+
+            content.insertBefore(closeBtn, content.firstChild);
+            modal.appendChild(content);
+            document.body.appendChild(modal);
+
+            // Close modal when clicking outside
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) modal.remove();
+            });
+        }
+
+        function showImage(imagePath) {
+            // Create modal for image viewing
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            `;
+
+            const img = document.createElement('img');
+            img.src = imagePath;
+            img.style.cssText = `
+                max-width: 90%;
+                max-height: 90vh;
+                object-fit: contain;
+                border-radius: 8px;
+            `;
+
+            const closeBtn = document.createElement('button');
+            closeBtn.innerHTML = '×';
+            closeBtn.style.cssText = `
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 36px;
+                cursor: pointer;
+                padding: 5px 10px;
+            `;
+            closeBtn.onclick = () => modal.remove();
+
+            modal.appendChild(img);
+            modal.appendChild(closeBtn);
+            document.body.appendChild(modal);
+
+            // Close modal when clicking outside
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) modal.remove();
+            });
+        }
     </script>
 </body>
 </html> 
