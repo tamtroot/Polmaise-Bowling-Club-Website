@@ -93,7 +93,7 @@
         }
 
         .news-card-thumbnail {
-            height: 180px;
+            height: 220px;  /* Increased from 180px to 220px */
             overflow: hidden;
         }
 
@@ -101,6 +101,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: top;
             transition: transform 0.3s ease;
         }
 
@@ -355,6 +356,17 @@
                     
                     <!-- News Grid for Thumbnails -->
                     <div class="news-grid">
+                        <!-- Kyle Malcomson Article -->
+                        <div class="news-card" onclick="toggleArticle('article-kyle')">
+                            <div class="news-card-thumbnail">
+                                <img src="./Images/2025/KyleMalcomson.jpeg" alt="Kyle Malcomson - Rising Star of Polmaise Bowling Club">
+                            </div>
+                            <div class="news-card-date">May 30, 2025</div>
+                            <div class="news-card-title">
+                                <h3>Rising Star Shines Bright: Kyle Malcomson Selected for National Championships</h3>
+                            </div>
+                        </div>
+                        
                         <!-- Sandy Deans Archive Announcement -->
                         <div class="news-card" onclick="toggleArticle('sandy-deans-archive')">
                             <div class="news-card-thumbnail">
@@ -423,6 +435,47 @@
                     </div>
                     
                     <!-- Full Articles (initially hidden) -->
+                    <!-- Kyle Malcomson Article -->
+                    <article id="article-kyle" class="news-item featured">
+                        <h3>Rising Star Shines Bright: Polmaise's Kyle Malcomson Selected for National Bowls Championships</h3>
+                        <div class="news-image">
+                            <img src="./Images/2025/KyleMalcomson.jpeg" alt="Kyle Malcomson - Rising Star of Polmaise Bowling Club" class="zoomable-image" onclick="openLightbox(this)">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> May 30, 2025</span>
+                                <span class="news-category"><i class="fas fa-tag"></i> Club Achievement</span>
+                            </div>
+                            
+                            <p>Polmaise Bowling Club is proudly celebrating the exceptional achievements of its youngest adult member, Kyle Malcomson, whose talent and dedication to the sport have earned him significant recognition on the national stage.</p>
+                            
+                            <p>Kyle has recently been selected to represent Stirlingshire in the Scottish Under 25 County Championships, a prestigious tournament that showcases the very best young talent in the country. He will compete as part of Team 6 in the Stirlingshire U25 squad facing Renfrewshire U25s on Sunday, 1st June at 2pm, hosted at Denny Bowling Club. This marks a major milestone in Kyle's bowling career and reflects his ongoing commitment and hard work both on and off the green.</p>
+                            
+                            <p>Adding to his string of recent successes, Kyle delivered a phenomenal performance at the Podium Open Triples event held on Saturday, 17th May. Going head-to-head with some of Scotland's top talent, Kyle defeated Neil Spears, a highly respected former Scotland captain and current skip. His victory not only showcased his strategic prowess and composure under pressure but also secured him a place at the national finals in Ayr on 7th June.</p>
+                            
+                            <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                                "Kyle has just beaten two Scotland skips – an incredible achievement at any level, let alone at his age," said Dave Stewart, club Vice-President and long-time supporter. "His success is a testament to the talent we nurture at Polmaise and to Kyle's passion for the game. The entire club is behind him, and we couldn't be prouder."
+                            </blockquote>
+                            
+                            <p>This remarkable journey is not just a solo effort—it is part of a family legacy. Kyle's father, Gary Malcomson, shared his pride:</p>
+                            
+                            <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                                "As father and son, we won back-to-back Singles and U25 Central titles in 2024 and 2025. A record I don't think can be beaten."
+                            </blockquote>
+                            
+                            <p>Together, the Malcomsons have etched their names into the history books of Central District bowling, blending generational skill with shared determination.</p>
+                            
+                            <p>Kyle's back-to-back achievements highlight him as a future star of the sport. As the youngest adult player at Polmaise, his progress serves as an inspiration to fellow members and young players across the region.</p>
+                            
+                            <p>The Polmaise community is encouraged to come out and support Kyle and the Stirlingshire team at Denny Bowling Club this weekend. Let's get behind our local talent and show what the Polmaise spirit is all about.</p>
+                            
+                            <p>Well done, Kyle — your club and your county are proud of you!</p>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllArticles()">Back to News</button>
+                        </div>
+                    </article>
+                    
                     <!-- Sandy Deans Archive Article -->
                     <article id="sandy-deans-archive" class="news-item featured">
                         <h3>Club Launches Sandy Deans Historical Archive</h3>
