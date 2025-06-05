@@ -89,4 +89,4 @@ This website is designed to work on modern browsers including:
 
 ---
 
-© 2023 Polmaise Bowling Club. All Rights Reserved. 
+© 2025 Polmaise Bowling Club. All Rights Reserved. 
