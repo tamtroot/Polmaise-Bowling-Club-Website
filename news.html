@@ -356,6 +356,17 @@
                     
                     <!-- News Grid for Thumbnails -->
                     <div class="news-grid">
+                        <!-- County & Scottish Qualifier Finals Article -->
+                        <div class="news-card" onclick="toggleArticle('article-county-finals')">
+                            <div class="news-card-thumbnail">
+                                <img src="./Images/2025/CountyFinals.jpg" alt="Polmaise players competing in County and Scottish Qualifier Finals">
+                            </div>
+                            <div class="news-card-date">June 22, 2025</div>
+                            <div class="news-card-title">
+                                <h3>Polmaise Bowling Club – County Finals and Scottish Qualifier Success</h3>
+                            </div>
+                        </div>
+                        
                         <!-- Greg Ryan Memorial Pairs Tournament Article -->
                         <div class="news-card" onclick="toggleArticle('article-greg-ryan-memorial')">
                             <div class="news-card-thumbnail">
@@ -457,6 +468,49 @@
                     </div>
                     
                     <!-- Full Articles (initially hidden) -->
+                    <!-- County & Scottish Qualifier Finals Article -->
+                    <article id="article-county-finals" class="news-item featured">
+                        <h3>Polmaise Bowling Club – County Finals and Scottish Qualifier Success</h3>
+                        <div class="news-image">
+                            <img src="./Images/2025/CountyFinals.jpg" alt="Polmaise players competing in County and Scottish Qualifier Finals" class="zoomable-image" onclick="openLightbox(this)">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> June 22, 2025</span>
+                                <span class="news-category"><i class="fas fa-tag"></i> Competition News</span>
+                            </div>
+                            
+                            <p>Polmaise Bowling Club is proud to announce an outstanding run of success, with our players reaching both the Stirling County Finals and the final qualifying stages for the Scottish National Championships.</p>
+                            
+                            <h4>County Finals – Sunday 13th July at Bridge of Allan Bowling Club</h4>
+                            <p>Two of our teams have progressed to the Stirling County Finals:</p>
+                            
+                            <p><strong>Aaron Furzer</strong> will compete in the Men's Singles Final against Jim Aitken of Allandale.</p>
+                            
+                            <p>Our <strong>Triples team, made up of Kyle Malcolmson, Stephen Fleming, and Gary Malcolmson</strong>, will take on Stenhousemuir in what promises to be a closely contested match.</p>
+                            
+                            <p>These finals reflect the hard work, skill, and determination shown by our players throughout the season. Reaching this stage is an impressive achievement and a testament to their dedication on and off the green.</p>
+                            
+                            <h4>Scottish Qualifier Finals – Tuesday 24th June, 6:45 PM at Spittalmyre Bowling Club</h4>
+                            <p>We are also delighted to share that:</p>
+                            
+                            <p><strong>Gary Malcolmson</strong> has reached the final of the District Singles Qualifying round.</p>
+                            
+                            <p><strong>Aaron Furzer and James Brown</strong> have progressed to the final of the District Pairs Qualifier.</p>
+                            
+                            <p>These matches represent the final hurdle before the Scottish National Championships in Ayr. A win at this stage will secure their place at one of the most prestigious events in the national bowling calendar.</p>
+                            
+                            <p>We encourage all members, friends, and supporters of the club to attend and support our players as they aim to take Polmaise Bowling Club to the national stage.</p>
+                            
+                            <p>These successes reflect not only individual excellence but the strength of the club as a whole. We are proud of all our finalists and wish them the very best of luck.</p>
+                            
+                            <p><strong>Polmaise is proud, and we'll be behind you every step of the way.</strong></p>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllArticles()">Back to News</button>
+                        </div>
+                    </article>
+                    
                     <!-- Greg Ryan Memorial Pairs Tournament Article -->
                     <article id="article-greg-ryan-memorial" class="news-item featured">
                         <h3>Greg Ryan Memorial Pairs Tournament 2025 – A Fantastic Day at Polmaise</h3>
@@ -568,6 +622,10 @@
                             </blockquote>
                             
                             <p>The semi-finals will be held on Sunday 22nd June at Sighthill Bowling Club. Supporters are encouraged to attend, and transport arrangements can be made for those interested.</p>
+                            
+                            <p class="update-note" style="background-color: #f0f8ff; padding: 15px; border-left: 4px solid #1e3a8a; margin: 20px 0;">
+                                <strong>Update (June 21, 2025):</strong> Kyle and his Stirlingshire U25 teammates have reached the final of the Scottish Under 25 County Championships! After their impressive semi-final performance at Sighthill Bowling Club, the team has secured their place in the championship final. This is a tremendous achievement for Kyle and the entire Stirlingshire squad, marking another milestone in what has been an exceptional season for our young champion.
+                            </p>
                         </div>
                         <div class="news-close-btn">
                             <button onclick="closeAllArticles()">Back to News</button>
