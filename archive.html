@@ -111,11 +111,48 @@
             height: 250px;
             object-fit: cover;
             display: block;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            /* Performance optimizations */
+            image-rendering: auto;
+            background-color: #f0f0f0; /* Placeholder color while loading */
+            /* Skeleton loading animation */
+            background-image: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            background-size: 200px 100%;
+            background-repeat: no-repeat;
+            animation: loading 1.5s infinite;
         }
-
-        .archive-item:hover img {
-            transform: scale(1.05);
+        
+        /* Remove animation when image is loaded */
+        .archive-item img[src]:not([src=""]) {
+            animation: none;
+            background-image: none;
+        }
+        
+        /* Loading and loaded states */
+        .archive-item img.loading {
+            filter: blur(2px);
+            opacity: 0.8;
+        }
+        
+        .archive-item img.loaded {
+            filter: none;
+            opacity: 1;
+            animation: none;
+            background-image: none;
+        }
+        
+        .archive-item img.fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes loading {
+            0% { background-position: -200px 0; }
+            100% { background-position: calc(200px + 100%) 0; }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0.7; }
+            to { opacity: 1; }
         }
 
         .archive-caption {
@@ -496,11 +533,6 @@
 
         .news-item .news-meta i {
             margin-right: 0.5rem;
-        }
-
-        .news-close-btn {
-            margin-top: 2rem;
-            text-align: center;
         }
 
         .news-close-btn button {
@@ -1487,14 +1519,67 @@
             lightbox.option({
                 'resizeDuration': 200,
                 'wrapAround': true,
-                'albumLabel': 'Image %1 of %2'
+                'albumLabel': 'Image %1 of %2',
+                'fadeDuration': 300,
+                'imageFadeDuration': 300,
+                'positionFromTop': 50,
+                'maxWidth': 1200,
+                'maxHeight': 900,
+                'fitImagesInViewport': true,
+                'disableScrolling': false,
+                'showImageNumberLabel': true,
+                'alwaysShowNavOnTouchDevices': true
             });
-        });
-    </script>
-    
-    <!-- Mobile Menu Toggle Script -->
-    <script>
-        $(document).ready(function() {
+
+            // Add thumbnail loading for existing images
+            $('.archive-item img').each(function() {
+                const img = this;
+                const fullSrc = img.src;
+                
+                // Check if this is an SD Archive image
+                if (fullSrc.includes('/SD Archive/')) {
+                    // Try to create a thumbnail path
+                    const thumbSrc = fullSrc.replace(/(\.[^.]+)$/, '-thumb$1');
+                    
+                    // Test if thumbnail exists
+                    const testImg = new Image();
+                    testImg.onload = function() {
+                        // Thumbnail exists, use it
+                        img.src = thumbSrc;
+                        img.dataset.fullsrc = fullSrc;
+                        
+                        // Add click handler to show full image on demand
+                        $(img).on('click', function() {
+                            img.src = fullSrc;
+                        });
+                    };
+                    testImg.onerror = function() {
+                        // Thumbnail doesn't exist, keep original
+                        console.log('No thumbnail available for', fullSrc);
+                    };
+                    testImg.src = thumbSrc;
+                } else if (fullSrc.includes('/Archive/')) {
+                    // This is a regular Archive photo, create thumbnail path
+                    const thumbSrc = fullSrc.replace(/(\.[^.]+)$/, '-thumb$1');
+                    
+                    // Test if thumbnail exists
+                    const testImg = new Image();
+                    testImg.onload = function() {
+                        // Thumbnail exists, use it
+                        img.src = thumbSrc;
+                        img.dataset.fullsrc = fullSrc;
+                    };
+                    testImg.onerror = function() {
+                        // Thumbnail doesn't exist, keep original
+                        console.log('No thumbnail available for', fullSrc);
+                    };
+                    testImg.src = thumbSrc;
+                }
+            });
+
+            // Show the photo gallery section by default
+            $('.archive-section').show();
+            
             // Mobile menu toggle
             $('.mobile-menu').click(function() {
                 $('nav ul').toggleClass('show');
@@ -1509,4 +1594,4 @@
         });
     </script>
 </body>
-</html> 
+</html>
