@@ -65,8 +65,8 @@ Most content can be updated directly within the HTML files:
 
 ### Updating Images
 
-1. Place new images in the `images` folder
-2. Reference them in HTML using the relative path: `images/your-image-name.jpg`
+1. Place new images in the `Images` folder
+2. Reference them in HTML using the relative path: `Images/your-image-name.jpg`
 
 ### Adding New Pages
 
