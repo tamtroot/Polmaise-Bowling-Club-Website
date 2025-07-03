@@ -215,6 +215,30 @@
         .view-article-btn:hover {
             background-color: #365899;
         }
+        
+        .history-cta {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .history-cta .btn {
+            font-size: 1.1rem;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .history-cta .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(66, 103, 178, 0.3);
+        }
     </style>
 </head>
 <body>
@@ -453,6 +477,12 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+            <div class="history-cta">
+                <a href="history.html" class="btn primary-btn">
+                    <i class="fas fa-book"></i>
+                    Find Out More About Our History
+                </a>
             </div>
         </div>
     </section>
