@@ -770,11 +770,15 @@
                             // We're assuming the year is 2025 as per the page content
                             const fixtureDate = new Date(2025, month, day);
                             
-                            // If the fixture date is before today, add the past-fixture class
-                            if (fixtureDate < currentDate) {
+                            // Create date objects without time components for accurate comparison
+                            const today = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
+                            const fixtureOnlyDate = new Date(2025, month, day);
+                            
+                            // If the fixture date is before today (not including today), add the past-fixture class
+                            if (fixtureOnlyDate < today) {
                                 row.classList.add('past-fixture');
                             } else {
-                                // This is a future fixture
+                                // This is today's fixture or a future fixture
                                 // Check if it's the closest one
                                 if (closestFutureDate === null || fixtureDate < closestFutureDate) {
                                     closestFutureDate = fixtureDate;
