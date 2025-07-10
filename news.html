@@ -356,6 +356,16 @@
                     
                     <!-- News Grid for Thumbnails -->
                     <div class="news-grid">
+                        <!-- Kyle Malcolmson Scotland U18 Article -->
+                        <div class="news-card" onclick="toggleArticle('article-kyle-u18')">
+                            <div class="news-card-thumbnail">
+                                <img src="./Images/2025/KyleMalcomson.jpeg" alt="Kyle Malcolmson - Scotland U18 International Squad">
+                            </div>
+                            <div class="news-card-date">July 5, 2025</div>
+                            <div class="news-card-title">
+                                <h3>Kyle Malcolmson Selected for Scotland U18 International Squad</h3>
+                            </div>
+                        </div>
                         <!-- Scottish District Qualifier Finals - Pairs Victory Article -->
                         <div class="news-card" onclick="toggleArticle('article-pairs-victory')">
                             <div class="news-card-thumbnail">
@@ -479,6 +489,37 @@
                     </div>
                     
                     <!-- Full Articles (initially hidden) -->
+                    <!-- Kyle Malcolmson Scotland U18 Article -->
+                    <article id="article-kyle-u18" class="news-item featured">
+                        <h3>Kyle Malcolmson Selected for Scotland U18 International Squad</h3>
+                        <div class="news-image">
+                            <img src="./Images/2025/KyleMalcomson.jpeg" alt="Kyle Malcolmson - Scotland U18 International Squad" class="zoomable-image" onclick="openLightbox(this)">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> July 5, 2025</span>
+                                <span class="news-category"><i class="fas fa-tag"></i> Club News</span>
+                            </div>
+
+                            <p>Polmaise Bowling Club is delighted to share some fantastic news — our very own Kyle Malcolmson has been selected to represent Scotland's U18 Mixed International Team for 2025!</p>
+
+                            <p>This incredible achievement is a testament to Kyle’s dedication, talent, and the hard work he has put in on and off the green. As one of only 24 players chosen from across the country, Kyle will join the national squad to compete in the prestigious U18 International Series, taking place at Northfield on Sunday 20th and Monday 21st July.</p>
+
+                            <p>Kyle is also recognised as a New Cap (N/C), highlighting this as his debut on the international stage — an outstanding milestone for a young bowler and a proud moment for the club.</p>
+
+                            <p>The U18 Pathway is led by Julie Forrest, with support from coaches Rebecca Houston and Colin Noon, and will see Scotland take on teams from England, Wales, and Ireland in a series of competitive matches.</p>
+
+                            <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                                “We are absolutely proud as punch of Kyle. His selection is not just a personal triumph, but a proud moment for everyone at Polmaise. We look forward to cheering him on as he represents the club and country with pride!” — Polmaise Bowling Club Committee
+                            </blockquote>
+
+                            <p>Please join us in congratulating Kyle and wishing him every success as he dons the blue of Scotland. We’ll be cheering him all the way!</p>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllArticles()">Back to News</button>
+                        </div>
+                    </article>
+
                     <!-- Scottish District Qualifier Finals - Pairs Victory Article -->
                     <article id="article-pairs-victory" class="news-item featured">
                         <h3>Polmaise Celebrate Pairs Victory and Look Ahead to Under 25 Final</h3>
