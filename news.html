@@ -356,6 +356,16 @@
                     
                     <!-- News Grid for Thumbnails -->
                     <div class="news-grid">
+                        <!-- National Pairs Semi-Final Article -->
+                        <div class="news-card" onclick="toggleArticle('article-national-pairs')">
+                            <div class="news-card-thumbnail">
+                                <img src="./Images/2025/NationalPairs/Bronze Medal.jpeg" alt="Aaron Furzer and James Brown at the Scottish National Pairs Championship">
+                            </div>
+                            <div class="news-card-date">August 2, 2025</div>
+                            <div class="news-card-title">
+                                <h3>Furzer and Brown Shine Bright in Scottish National Pairs Semi-Final</h3>
+                            </div>
+                        </div>
                         <!-- Kyle Malcolmson Double Medal Success Article -->
                         <div class="news-card" onclick="toggleArticle('article-kyle-double-medal')">
                             <div class="news-card-thumbnail">
@@ -519,6 +529,39 @@
                     </div>
                     
                     <!-- Full Articles (initially hidden) -->
+                    <!-- National Pairs Semi-Final Article -->
+                    <article id="article-national-pairs" class="news-item featured">
+                        <h3>Furzer and Brown Shine Bright in Scottish National Pairs Semi-Final</h3>
+                        <div class="news-image">
+                            <img src="./Images/2025/NationalPairs/Bronze Medal.jpeg" alt="Aaron Furzer and James Brown at the Scottish National Pairs Championship" class="zoomable-image" onclick="openLightbox(this)">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> August 2, 2025</span>
+                                <span class="news-category"><i class="fas fa-tag"></i> Competition News</span>
+                            </div>
+
+                            <p>Polmaise Bowling Club is proud to celebrate the outstanding achievement of Aaron Furzer and James "Basher" Brown, who reached the semi-final of the 2025 Scottish National Pairs Championship held at Ayr over the weekend.</p>
+
+                            <p>The dynamic duo represented Polmaise with distinction, navigating a fiercely competitive field to take their place among the top four pairs in the country. Their campaign was a testament to their skill, teamwork, and composure under pressure – qualities that have become hallmarks of their partnership.</p>
+
+                            <p>In the semi-final, Aaron and James faced the formidable pairing of Colin Howe and Paul Foster MBE, one of Scotland's most decorated international bowlers. Despite a valiant effort, the Polmaise pair were defeated 21–8 by the experienced side.</p>
+
+                            <p>While the result didn't go their way, the achievement of reaching the semi-finals on the national stage cannot be understated. Competing against top-level opposition and holding their own with pride and sportsmanship is something the entire club can celebrate.</p>
+
+                            <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                                "To reach the final four in Scotland is no small feat. Aaron and James have done Polmaise proud – they've demonstrated that talent from our club can stand tall on the national stage," said Alex Brown, club President..
+                            </blockquote>
+
+                            <p>This milestone adds to an already impressive season for both players, with Aaron also clinching the District Pairs title earlier this year. The club looks forward to what the future holds for this talented pair.</p>
+
+                            <p>From everyone at Polmaise Bowling Club – congratulations, Aaron and James, on a brilliant national run!</p>
+                        </div>
+                        <div class="news-close-btn">
+                            <button onclick="closeAllArticles()">Back to News</button>
+                        </div>
+                    </article>
+
                     <!-- Kyle Malcolmson Double Medal Success Article -->
                     <article id="article-kyle-double-medal" class="news-item featured">
                         <h3>Double Medal Success for Kyle Malcolmson – International Silver and National Bronze!</h3>
