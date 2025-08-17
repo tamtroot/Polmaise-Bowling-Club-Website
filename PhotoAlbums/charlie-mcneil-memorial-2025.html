@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie McNeil Memorial Pairs 2025 - Polmaise Bowling Club</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../Images/polmaise_logo_favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Include jQuery first (required by lightbox) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Then include lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Album page specific styles */
+        .album-container {
+            padding: 2rem 0;
+        }
+
+        .album-intro {
+            margin-bottom: 2rem;
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--club-blue);
+        }
+
+        .album-intro img {
+            float: right;
+            max-width: 300px;
+            margin: 0 0 1rem 1rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--club-blue);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #152a62;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Gallery Grid styles */
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 1rem 0;
+        }
+
+        .album-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .album-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .album-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center 25%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .album-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .album-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 2rem;
+        }
+
+        .album-item:hover .overlay {
+            opacity: 1;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .album-intro img {
+                float: none;
+                max-width: 100%;
+                margin: 1rem 0;
+            }
+
+            .album-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 15px;
+            }
+
+            .album-item img {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .album-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="../Images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../membership.html">Membership</a></li>
+                    <li><a href="../fixtures.html">Fixtures</a></li>
+                    <li><a href="../news.html">News & Events</a></li>
+                    <li><a href="../gallery.html" class="active">Gallery</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                    <li><a href="../sponsors.html">Sponsors</a></li>
+                    <li><a href="../honours.html">Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h2>Charlie McNeil Memorial Pairs 2025</h2>
+            <p>A day of friendship, competition, and community spirit in honour of a much-loved figure</p>
+        </div>
+    </section>
+
+    <section class="album-container">
+        <div class="container">
+            <a href="../gallery.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Back to Gallery
+            </a>
+
+            <div class="album-intro">
+                <img src="../Images/2025/CharlieMcN/20250816_164614.jpg" alt="Charlie McNeil Memorial Tournament 2025">
+                <h2>The Charlie McNeil Memorial Pairs Tournament 2025</h2>
+                <p>Polmaise Bowling Club was proud to host this year's Annual Charles McNeil Memorial Open Pairs Tournament on August 16, 2025. The day brought together friendship, competition, and community spirit in honour of a much-loved figure in our club's history.</p>
+                
+                <p>With 16 pairs taking to the green, the standard of bowling was excellent throughout, and the sun certainly added to the occasion – with roasting conditions making it a memorable day for everyone involved.</p>
+                
+                <p><strong>Tournament Winners:</strong> George Rough & Gary Stevens</p>
+                <p><strong>Runners-Up:</strong> Alec & Jamie</p>
+                
+                <p>Browse through the photos below to relive the memories of this special day. Click on any image to view it in full size.</p>
+            </div>
+
+            <div class="album-grid" id="charlie-mcneil-gallery">
+                <!-- Images will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polmaise Bowling Club</h3>
+                    <p>Address: Main Street,</p>
+                    <p>Fallin, Stirling, FK7 7HT</p>
+                    <p>Phone: 01786 811333</p>
+                    <p>Email: polmaisebc@gmail.com </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../membership.html">Membership</a></li>
+                        <li><a href="../fixtures.html">Fixtures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <!-- Include lightbox JS after jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Array of all image filenames in the Charlie McNeil directory
+            const images = [
+                '20250816_094516.jpg',
+                '20250816_100733.jpg',
+                '20250816_110953.jpg',
+                '20250816_110956.jpg',
+                '20250816_111001.jpg',
+                '20250816_111008.jpg',
+                '20250816_111016.jpg',
+                '20250816_111021.jpg',
+                '20250816_111103.jpg',
+                '20250816_113407.jpg',
+                '20250816_122731.jpg',
+                '20250816_123501.jpg',
+                '20250816_124011.jpg',
+                '20250816_124030.jpg',
+                '20250816_125503.jpg',
+                '20250816_125559.jpg',
+                '20250816_125738.jpg',
+                '20250816_125743.jpg',
+                '20250816_125914.jpg',
+                '20250816_125939.jpg',
+                '20250816_130114.jpg',
+                '20250816_130318.jpg',
+                '20250816_134042.jpg',
+                '20250816_135923.jpg',
+                '20250816_140023.jpg',
+                '20250816_142509.jpg',
+                '20250816_142616.jpg',
+                '20250816_142618.jpg',
+                '20250816_142727.jpg',
+                '20250816_142738.jpg',
+                '20250816_142746.jpg',
+                '20250816_142749.jpg',
+                '20250816_142751.jpg',
+                '20250816_142755.jpg',
+                '20250816_142802.jpg',
+                '20250816_145613.jpg',
+                '20250816_150630.jpg',
+                '20250816_150639.jpg',
+                '20250816_151640.jpg',
+                '20250816_151643.jpg',
+                '20250816_151653.jpg',
+                '20250816_151703.jpg',
+                '20250816_151706.jpg',
+                '20250816_151714.jpg',
+                '20250816_151715.jpg',
+                '20250816_152211.jpg',
+                '20250816_152320.jpg',
+                '20250816_154154.jpg',
+                '20250816_154259.jpg',
+                '20250816_154326.jpg',
+                '20250816_154434.jpg',
+                '20250816_155751.jpg',
+                '20250816_160415.jpg',
+                '20250816_160600.jpg',
+                '20250816_161552.jpg',
+                '20250816_161601.jpg',
+                '20250816_161613.jpg',
+                '20250816_161618.jpg',
+                '20250816_162015.jpg',
+                '20250816_162027.jpg',
+                '20250816_162605.jpg',
+                '20250816_164229.jpg',
+                '20250816_164239.jpg',
+                '20250816_164246.jpg',
+                '20250816_164253.jpg',
+                '20250816_164404.jpg',
+                '20250816_164411.jpg',
+                '20250816_164426.jpg',
+                '20250816_164441.jpg',
+                '20250816_164450.jpg',
+                '20250816_164529.jpg',
+                '20250816_164556.jpg',
+                '20250816_164614.jpg',
+                '20250816_165535.jpg',
+                '20250816_192136.jpg'
+            ];
+
+            const gallery = $('#charlie-mcneil-gallery');
+            
+            // Generate gallery items for all images
+            images.forEach((filename, index) => {
+                const galleryItem = `
+                    <div class="album-item">
+                        <a href="../Images/2025/CharlieMcN/${filename}" data-lightbox="charlie-mcneil-2025" data-title="Charlie McNeil Memorial Pairs 2025 - Photo ${index + 1}">
+                            <img src="../Images/2025/CharlieMcN/${filename}" alt="Charlie McNeil Memorial 2025 - Photo ${index + 1}" loading="lazy">
+                            <div class="overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                    </div>
+                `;
+                gallery.append(galleryItem);
+            });
+
+            // Configure lightbox
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'albumLabel': 'Image %1 of %2',
+                'fadeDuration': 300,
+                'imageFadeDuration': 300
+            });
+        });
+    </script>
+</body>
+</html>

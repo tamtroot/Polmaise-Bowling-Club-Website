@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 'Twa Peters' Memorial Tournament 2025 - Polmaise Bowling Club</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../Images/polmaise_logo_favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Include jQuery first (required by lightbox) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Then include lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Album page specific styles */
+        .album-container {
+            padding: 2rem 0;
+        }
+
+        .album-intro {
+            margin-bottom: 2rem;
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--club-blue);
+        }
+
+        .album-intro img {
+            float: right;
+            max-width: 300px;
+            margin: 0 0 1rem 1rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--club-blue);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #152a62;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Gallery Grid styles */
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 1rem 0;
+        }
+
+        .album-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .album-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .album-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center 25%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .album-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .album-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 2rem;
+        }
+
+        .album-item:hover .overlay {
+            opacity: 1;
+        }
+
+        /* Tournament results styles */
+        .tournament-results {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--club-blue);
+        }
+
+        .tournament-results h4 {
+            color: var(--club-blue);
+            margin-bottom: 1rem;
+        }
+
+        .result-category {
+            margin-bottom: 1rem;
+            padding: 0.5rem 0;
+        }
+
+        .result-category h5 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .album-intro img {
+                float: none;
+                max-width: 100%;
+                margin: 1rem 0;
+            }
+
+            .album-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 15px;
+            }
+
+            .album-item img {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .album-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="../Images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../membership.html">Membership</a></li>
+                    <li><a href="../fixtures.html">Fixtures</a></li>
+                    <li><a href="../news.html">News & Events</a></li>
+                    <li><a href="../gallery.html" class="active">Gallery</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                    <li><a href="../sponsors.html">Sponsors</a></li>
+                    <li><a href="../honours.html">Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h2>The 'Twa Peters' Memorial Tournament 2025</h2>
+            <p>A fantastic day on the green celebrating friendship, competition, and remembrance</p>
+        </div>
+    </section>
+
+    <section class="album-container">
+        <div class="container">
+            <a href="../gallery.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Back to Gallery
+            </a>
+
+            <div class="album-intro">
+                <img src="../Images/2025/TwaPeters/Winners.jpg" alt="Winners - David McKean, James Brown, and Aaron Furzer lift the Twa Peters Memorial Trophy 2025">
+                <h2>The 'Twa Peters' Memorial Tournament 2025 – A Fantastic Day on the Green</h2>
+                <p>The annual Twa Peters Memorial Tournament took place on Saturday 9th August 2025, at Polmaise Bowling Club. The event, run by Sandy Deans and Gary Malcolmson, once again brought together players, members, and friends for a great day of bowling, camaraderie, and remembrance.</p>
+                
+                <p>This tournament is held each year in memory of two much-loved past members of the club, Peter Johnstone and Peter Smith, who sadly passed away a few years ago. Their contributions to Polmaise Bowling Club are fondly remembered, and the event stands as a fitting tribute to their friendship and dedication.</p>
+                
+                <div class="tournament-results">
+                    <h4>Tournament Results</h4>
+                    <div class="result-category">
+                        <h5>Winners</h5>
+                        <p><strong>David McKean, James Brown, Aaron Furzer</strong></p>
+                    </div>
+                    <div class="result-category">
+                        <h5>Runners-Up</h5>
+                        <p>James Wray, Derek Wallace, Gary Malcolmson</p>
+                    </div>
+                    <div class="result-category">
+                        <h5>Beaten Semi-Finalists</h5>
+                        <p><strong>Team 1:</strong> Josie Kilgannon, Billy Guy, Sandy Deans</p>
+                        <p><strong>Team 2:</strong> Wullie Nicol, Robert Johnstone, Martyn "Tino" Scott</p>
+                    </div>
+                </div>
+                
+                <p>A special thank you goes to Rita Smith, wife of the late Peter Smith, who attended the day and joined Club President Alex Brown in presenting the prizes to the winners.</p>
+                
+                <p>Congratulations to all who took part, and especially to our winners, who put in a fantastic performance to lift this year's title.</p>
+                
+                <p>Browse through the photos below to relive the memories of this special day. Click on any image to view it in full size.</p>
+            </div>
+
+            <div class="album-grid" id="twa-peters-gallery">
+                <!-- Images will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polmaise Bowling Club</h3>
+                    <p>Address: Main Street,</p>
+                    <p>Fallin, Stirling, FK7 7HT</p>
+                    <p>Phone: 01786 811333</p>
+                    <p>Email: polmaisebc@gmail.com </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../membership.html">Membership</a></li>
+                        <li><a href="../fixtures.html">Fixtures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <!-- Include lightbox JS after jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Array of all image filenames in the TwaPeters directory (full-size images only)
+            const images = [
+                '20250809_130017.jpg',
+                '20250809_130031.jpg',
+                '20250809_130040.jpg',
+                '20250809_130047.jpg',
+                '20250809_130054.jpg',
+                '20250809_130102.jpg',
+                '20250809_130117.jpg',
+                '20250809_131353.jpg',
+                '20250809_131358.jpg',
+                '20250809_131432.jpg',
+                '20250809_131438.jpg',
+                '20250809_131445.jpg',
+                '20250809_142836.jpg',
+                '20250809_142839.jpg',
+                '20250809_142844.jpg',
+                '20250809_142847.jpg',
+                '20250809_142849.jpg',
+                '20250809_142851.jpg',
+                '20250809_160320.jpg',
+                '20250809_160323.jpg',
+                '20250809_160325.jpg',
+                '20250809_160327.jpg',
+                '20250809_160330.jpg',
+                '20250809_163829.jpg',
+                '20250809_163833.jpg',
+                '20250809_163837.jpg',
+                '20250809_163844.jpg',
+                '20250809_183856.jpg',
+                '20250809_183903.jpg',
+                '20250809_184007.jpg',
+                '20250809_190836.jpg',
+                '20250809_190909.jpg',
+                '20250809_190944.jpg',
+                '20250809_191037.jpg',
+                'Winners.jpg',
+                'Runnersup.jpg',
+                'DefeatedSemi.jpg',
+                'DefeatedSemi2.jpg'
+            ];
+
+            const gallery = $('#twa-peters-gallery');
+            
+            // Generate gallery items for all images
+            images.forEach((filename, index) => {
+                const galleryItem = `
+                    <div class="album-item">
+                        <a href="../Images/2025/TwaPeters/${filename}" data-lightbox="twa-peters-2025" data-title="The 'Twa Peters' Memorial Tournament 2025 - Photo ${index + 1}">
+                            <img src="../Images/2025/TwaPeters/${filename}" alt="Twa Peters Memorial 2025 - Photo ${index + 1}" loading="lazy">
+                            <div class="overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                    </div>
+                `;
+                gallery.append(galleryItem);
+            });
+
+            // Configure lightbox
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'albumLabel': 'Image %1 of %2',
+                'fadeDuration': 300,
+                'imageFadeDuration': 300
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Stirling Top Fifteen Champions 2025 - Polmaise Bowling Club</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../Images/polmaise_logo_favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Include jQuery first (required by lightbox) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Then include lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Album page specific styles */
+        .album-container {
+            padding: 2rem 0;
+        }
+
+        .album-intro {
+            margin-bottom: 2rem;
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--club-blue);
+        }
+
+        .album-intro img {
+            float: right;
+            max-width: 300px;
+            margin: 0 0 1rem 1rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--club-blue);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #152a62;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Gallery Grid styles */
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 1rem 0;
+        }
+
+        .album-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .album-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .album-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center 25%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .album-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .album-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 2rem;
+        }
+
+        .album-item:hover .overlay {
+            opacity: 1;
+        }
+
+        /* Tournament journey styles */
+        .tournament-journey {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--club-blue);
+        }
+
+        .tournament-journey h4 {
+            color: var(--club-blue);
+            margin-bottom: 1rem;
+        }
+
+        .tournament-round {
+            margin-bottom: 1rem;
+            padding: 0.5rem 0;
+        }
+
+        .tournament-round h5 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .album-intro img {
+                float: none;
+                max-width: 100%;
+                margin: 1rem 0;
+            }
+
+            .album-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 15px;
+            }
+
+            .album-item img {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .album-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="../Images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../membership.html">Membership</a></li>
+                    <li><a href="../fixtures.html">Fixtures</a></li>
+                    <li><a href="../news.html">News & Events</a></li>
+                    <li><a href="../gallery.html" class="active">Gallery</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                    <li><a href="../sponsors.html">Sponsors</a></li>
+                    <li><a href="../honours.html">Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h2>City of Stirling Top Fifteen Champions 2025</h2>
+            <p>A triumphant victory showcasing dedication, talent, and unwavering team spirit</p>
+        </div>
+    </section>
+
+    <section class="album-container">
+        <div class="container">
+            <a href="../gallery.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Back to Gallery
+            </a>
+
+            <div class="album-intro">
+                <img src="../Images/2025/Top15Final/20250810_134840.jpg" alt="Polmaise BC – City of Stirling Top Fifteen Champions 2025">
+                <h2>Polmaise BC Crowned Champions of the 2025 City of Stirling Top Fifteen!</h2>
+                <p>Polmaise Bowling Club can proudly announce a major victory in the 2025 City of Stirling Top Fifteen tournament, securing the title with a thrilling final win on Sunday, 10 August 2025. This well-earned triumph reflects the club's skill, determination, and unwavering team spirit.</p>
+                
+                <div class="tournament-journey">
+                    <h4>The Winning Journey</h4>
+                    <div class="tournament-round">
+                        <h5>Round One (3 July 2025)</h5>
+                        <p>Polmaise opened their campaign with a decisive win over Doune Castle BC, advancing comfortably to the quarter-finals.</p>
+                    </div>
+                    <div class="tournament-round">
+                        <h5>Quarter-Final (10 July 2025)</h5>
+                        <p>In a compelling match, Polmaise outplayed Bridge of Allan BC to book their place in the semi-finals.</p>
+                    </div>
+                    <div class="tournament-round">
+                        <h5>Semi-Final (17 July 2025)</h5>
+                        <p>At home, Polmaise delivered a commanding performance against Cambusbarron BC to reach the final.</p>
+                    </div>
+                    <div class="tournament-round">
+                        <h5>Final (10 August 2025)</h5>
+                        <p>Facing Causewayhead BC, Polmaise maintained their momentum and secured a decisive victory, clinching the championship.</p>
+                    </div>
+                </div>
+                
+                <p>This landmark victory showcases the dedication and talent of the Polmaise squad. From the tense opener through to the gripping final, they have demonstrated teamwork, precision, and remarkable composure under pressure.</p>
+                
+                <p>Browse through the photos below to relive the memories of this championship victory. Click on any image to view it in full size.</p>
+            </div>
+
+            <div class="album-grid" id="top15-gallery">
+                <!-- Images will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polmaise Bowling Club</h3>
+                    <p>Address: Main Street,</p>
+                    <p>Fallin, Stirling, FK7 7HT</p>
+                    <p>Phone: 01786 811333</p>
+                    <p>Email: polmaisebc@gmail.com </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../membership.html">Membership</a></li>
+                        <li><a href="../fixtures.html">Fixtures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <!-- Include lightbox JS after jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Array of all image filenames in the Top15Final directory (full-size images only)
+            const images = [
+                '20250810_134840.jpg',
+                '20250810_140143.jpg',
+                '20250810_140145.jpg',
+                '20250810_140149.jpg',
+                '20250810_140154.jpg',
+                '20250810_144206.jpg',
+                '20250810_144213.jpg',
+                '20250810_144218.jpg',
+                '20250810_144230.jpg',
+                '20250810_144315.jpg',
+                '20250810_144400.jpg',
+                '20250810_144418.jpg',
+                '20250810_144424.jpg',
+                '20250810_144427.jpg',
+                '20250810_144444.jpg',
+                '20250810_144445.jpg',
+                '20250810_145500.jpg',
+                '20250810_145512.jpg',
+                '20250810_145603.jpg',
+                '20250810_145607.jpg',
+                '20250810_145611.jpg',
+                '20250810_145633.jpg',
+                '20250810_145700.jpg',
+                '20250810_145710.jpg',
+                '20250810_145711.jpg',
+                '20250810_145726.jpg',
+                '20250810_145804.jpg',
+                '20250810_145813.jpg',
+                '20250810_145818.jpg',
+                '20250810_145830.jpg',
+                '20250810_163123.jpg',
+                '20250810_163224.jpg',
+                '20250810_163329.jpg',
+                '20250810_163344.jpg',
+                '20250810_163405.jpg',
+                '20250810_163618.jpg',
+                '20250810_163631.jpg',
+                '20250810_163640.jpg',
+                '20250810_163641.jpg',
+                '20250810_163647.jpg',
+                '20250810_163648.jpg',
+                '20250810_163658.jpg',
+                '20250810_164103.jpg'
+            ];
+
+            const gallery = $('#top15-gallery');
+            
+            // Generate gallery items for all images
+            images.forEach((filename, index) => {
+                const galleryItem = `
+                    <div class="album-item">
+                        <a href="../Images/2025/Top15Final/${filename}" data-lightbox="top15-2025" data-title="City of Stirling Top Fifteen Champions 2025 - Photo ${index + 1}">
+                            <img src="../Images/2025/Top15Final/${filename}" alt="Top 15 Final 2025 - Photo ${index + 1}" loading="lazy">
+                            <div class="overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                    </div>
+                `;
+                gallery.append(galleryItem);
+            });
+
+            // Configure lightbox
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'albumLabel': 'Image %1 of %2',
+                'fadeDuration': 300,
+                'imageFadeDuration': 300
+            });
+        });
+    </script>
+</body>
+</html>
