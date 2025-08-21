@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Presentation Dance 2025 - Polmaise Bowling Club</title>
+    <link rel="icon" type="image/x-icon" href="../Images/polmaise_logo_favicon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Special Presentation Dance Theme Styles */
+        
+        /* Color Variables */
+        :root {
+            --gold: #FFD700;
+            --rich-gold: #DAA520;
+            --navy: #0A1A2F;
+            --midnight-blue: #1E2E47;
+            --charcoal: #2C2C2C;
+            --fresh-green: #4CAF50;
+            --light-gold: #FFF8DC;
+        }
+        
+        /* Override body background for this special page */
+        body {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--midnight-blue) 50%, #000 100%);
+            min-height: 100vh;
+            color: #fff;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* Subtle background pattern */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="sparkle" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23FFD700" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23sparkle)"/></svg>');
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        /* Polmaise Crest Watermark */
+        .page-watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.03;
+            z-index: -1;
+            font-size: 20rem;
+            color: var(--gold);
+            pointer-events: none;
+        }
+        
+        /* Header adjustments for dark theme */
+        header {
+            background: rgba(10, 26, 47, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--gold);
+        }
+        
+        header .logo h1 {
+            color: var(--gold);
+        }
+        
+        nav ul li a {
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: var(--gold);
+        }
+        
+        /* Hero Banner Section */
+        .hero-banner {
+            width: 100%;
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(1.1) contrast(1.1);
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(10, 26, 47, 0.3), rgba(30, 46, 71, 0.2));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+        
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--gold);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .hero-subtitle {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+            background: rgba(10, 26, 47, 0.8);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            border: 2px solid var(--gold);
+            backdrop-filter: blur(10px);
+            margin-bottom: 2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        /* Sparkle decorations */
+        .sparkle {
+            position: absolute;
+            color: var(--gold);
+            animation: sparkle 2s infinite alternate;
+        }
+        
+        .sparkle-1 { top: 10%; left: 15%; font-size: 1.5rem; animation-delay: 0s; }
+        .sparkle-2 { top: 20%; right: 20%; font-size: 1rem; animation-delay: 0.5s; }
+        .sparkle-3 { bottom: 30%; left: 10%; font-size: 1.2rem; animation-delay: 1s; }
+        .sparkle-4 { bottom: 15%; right: 15%; font-size: 0.8rem; animation-delay: 1.5s; }
+        
+        @keyframes sparkle {
+            0% { opacity: 0.3; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.2); }
+        }
+        
+        /* Main content container */
+        .dance-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+        
+        /* Event Details Card */
+        .event-details-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(30, 46, 71, 0.8));
+            border: 2px solid var(--gold);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .event-details-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .event-details-card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .event-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .event-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+            border-color: var(--gold);
+        }
+        
+        .event-item i {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        .event-item h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+        
+        .event-item p {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+        
+        /* Content sections */
+        .content-section {
+            margin: 4rem 0;
+            padding: 2rem;
+            background: rgba(30, 46, 71, 0.6);
+            border-radius: 20px;
+            border-left: 5px solid var(--gold);
+            position: relative;
+        }
+        
+        .content-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .content-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--fresh-green));
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        
+        /* Entertainment Section Special Styling */
+        .entertainment-highlight {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(76, 175, 80, 0.1));
+            border: 2px solid var(--gold);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 0;
+            position: relative;
+        }
+        
+        .entertainment-highlight::before {
+            content: '♪';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--navy);
+            color: var(--gold);
+            font-size: 2rem;
+            padding: 0 15px;
+        }
+        
+        .entertainment-highlight h3 {
+            color: var(--gold);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Call to Action Button */
+        .cta-section {
+            text-align: center;
+            margin: 4rem 0;
+            padding: 3rem;
+            background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.1), transparent);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--gold), var(--rich-gold));
+            color: var(--navy);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 1.5rem 3rem;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.6);
+            background: linear-gradient(45deg, var(--fresh-green), var(--gold));
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.5s ease;
+        }
+        
+        .cta-button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .cta-text {
+            font-size: 1.2rem;
+            color: var(--light-gold);
+            margin-top: 1rem;
+        }
+        
+        /* Footer adjustments */
+        footer {
+            background: var(--navy);
+            border-top: 2px solid var(--gold);
+        }
+        
+        footer h3 {
+            color: var(--gold);
+        }
+        
+        footer p, footer li {
+            color: #fff;
+        }
+        
+        footer a {
+            color: var(--light-gold);
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: var(--gold);
+        }
+        
+        /* Section dividers */
+        .section-divider {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .section-divider::before {
+            content: '✦ ✦ ✦';
+            color: var(--gold);
+            font-size: 1.5rem;
+            letter-spacing: 2rem;
+        }
+        
+        /* Mobile menu button - hidden by default */
+        .mobile-menu {
+            display: none !important;
+        }
+        
+        /* Mobile dropdown - hidden by default */
+        .mobile-nav-dropdown {
+            display: none !important;
+        }
+        
+        /* Mobile-only styles */
+        @media (max-width: 768px) {
+            /* Hide desktop navigation completely */
+            header nav ul {
+                display: none !important;
+            }
+            
+            /* Show mobile menu button */
+            header .mobile-menu {
+                display: block !important;
+                cursor: pointer !important;
+                font-size: 1.5rem !important;
+                color: #fff !important;
+                background: transparent !important;
+                border: none !important;
+                padding: 10px !important;
+                transition: color 0.3s ease !important;
+                position: relative !important;
+                z-index: 10001 !important;
+            }
+            
+            header .mobile-menu i {
+                color: #fff !important;
+                font-size: 1.5rem !important;
+            }
+            
+            header .mobile-menu:hover,
+            header .mobile-menu:hover i {
+                color: var(--gold) !important;
+            }
+            
+            /* Mobile dropdown menu */
+            .mobile-nav-dropdown {
+                display: none !important;
+                position: absolute !important;
+                top: 100% !important;
+                left: 0 !important;
+                right: 0 !important;
+                background: rgba(10, 26, 47, 0.98) !important;
+                backdrop-filter: blur(10px) !important;
+                border-top: 2px solid var(--gold) !important;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3) !important;
+                z-index: 10000 !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            
+            .mobile-nav-dropdown.show {
+                display: block !important;
+            }
+            
+            .mobile-nav-dropdown a {
+                display: block !important;
+                padding: 1rem !important;
+                color: #fff !important;
+                text-decoration: none !important;
+                border-bottom: 1px solid rgba(255, 215, 0, 0.1) !important;
+                transition: all 0.3s ease !important;
+                font-family: 'Open Sans', sans-serif !important;
+            }
+            
+            .mobile-nav-dropdown a:hover {
+                background: rgba(255, 215, 0, 0.1) !important;
+                color: var(--gold) !important;
+            }
+        }
+        
+        /* Desktop-only styles - ensure mobile elements are hidden */
+        @media (min-width: 769px) {
+            .mobile-menu {
+                display: none !important;
+            }
+            
+            .mobile-nav-dropdown {
+                display: none !important;
+            }
+            
+            .mobile-nav-dropdown.show {
+                display: none !important;
+            }
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .dance-content {
+                padding: 2rem 1rem;
+            }
+            
+            .event-details-card {
+                padding: 2rem;
+                margin: 2rem 0;
+            }
+            
+            .event-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .cta-button {
+                font-size: 1.2rem;
+                padding: 1rem 2rem;
+            }
+            
+            .sparkle {
+                display: none; /* Hide sparkles on mobile for cleaner look */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Polmaise Crest Watermark -->
+    <div class="page-watermark">
+        <i class="fas fa-crown"></i>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="../Images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../membership.html">Membership</a></li>
+                    <li><a href="../fixtures.html">Fixtures</a></li>
+                    <li><a href="../news.html">News & Events</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                    <li><a href="../sponsors.html">Sponsors</a></li>
+                    <li><a href="../honours.html">Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- Custom Mobile Navigation Dropdown -->
+            <div class="mobile-nav-dropdown" id="mobileNavDropdown">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About Us</a>
+                <a href="../membership.html">Membership</a>
+                <a href="../fixtures.html">Fixtures</a>
+                <a href="../news.html">News & Events</a>
+                <a href="../gallery.html">Gallery</a>
+                <a href="../contact.html">Contact Us</a>
+                <a href="../sponsors.html">Sponsors</a>
+                <a href="../honours.html">Honours</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <img src="../Images/2025/Presentation.png" alt="Annual Presentation Dance 2025">
+        <div class="hero-overlay">
+            <p class="hero-subtitle">A Night to Remember • October 25th, 2025</p>
+            
+            <!-- Sparkle decorations -->
+            <div class="sparkle sparkle-1">✦</div>
+            <div class="sparkle sparkle-2">✧</div>
+            <div class="sparkle sparkle-3">✦</div>
+            <div class="sparkle sparkle-4">✧</div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="dance-content">
+        <!-- Event Details Card -->
+        <div class="event-details-card">
+            <h2>Event Details</h2>
+            <div class="event-grid">
+                <div class="event-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Date</h3>
+                    <p>Saturday<br>25th October</p>
+                </div>
+                <div class="event-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Venue</h3>
+                    <p>Gothenburg<br>Fallin</p>
+                </div>
+                <div class="event-item">
+                    <i class="fas fa-ticket-alt"></i>
+                    <h3>Tickets</h3>
+                    <p>£5 each<br>Great Value!</p>
+                </div>
+                <div class="event-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Time</h3>
+                    <p>8pm - 1am<br>5 Hours of Fun!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Welcome Section -->
+        <section class="content-section">
+            <h2>Join Us for a Fantastic Evening</h2>
+            <p>Polmaise Bowling Club is delighted to announce our Annual Presentation Dance, which promises to be a fantastic evening to round off another great year at the club.</p>
+            <p>This year's dance has been organised by our Vice President, David Stewart, who is keen to see as many members, partners, and friends of the club join us for what we hope will become a long-standing highlight in the Polmaise calendar.</p>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Entertainment Section -->
+        <section class="content-section">
+            <h2>Entertainment & Refreshments</h2>
+            
+            <div class="entertainment-highlight">
+                <h3>Jim Smith on Vocals</h3>
+                <p>Get ready for a lively night of music and dancing with our fantastic entertainer!</p>
+            </div>
+            
+            <p>Entertainment will be provided by Jim Smith on vocals, ensuring a lively night of music and dancing. A buffet is also included, making this excellent value for money and a perfect chance to celebrate the club's achievements together.</p>
+            <p>The evening will run from 8pm until 1am, giving everyone plenty of time to enjoy the music, food, and good company.</p>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <h2 class="content-section" style="text-align: center; margin-bottom: 2rem;">Get Your Tickets Now!</h2>
+            <a href="#" class="cta-button" onclick="alert('Please see David Stewart or committee members to purchase tickets!')">
+                <span style="position: relative; z-index: 2;">Secure Your Tickets</span>
+            </a>
+            <p class="cta-text">Tickets are available now – please see David Stewart or committee members to secure yours.</p>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Closing Message -->
+        <section class="content-section">
+            <h2>Let's Make This Special</h2>
+            <p>Let's make this a successful year-end celebration and a tradition that continues for years to come. We look forward to seeing you all there!</p>
+            <p style="text-align: center; font-style: italic; color: var(--gold); font-size: 1.2rem; margin-top: 2rem;">
+                "A night to celebrate our community, our achievements, and our future together."
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polmaise Bowling Club</h3>
+                    <p>Address: Main Street,</p>
+                    <p>Fallin, Stirling, FK7 7HT</p>
+                    <p>Phone: 01786 811333</p>
+                    <p>Email: polmaisebc@gmail.com </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../membership.html">Membership</a></li>
+                        <li><a href="../fixtures.html">Fixtures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    
+    <script>
+        // Custom Mobile menu functionality - completely independent
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.mobile-menu');
+            const mobileDropdown = document.getElementById('mobileNavDropdown');
+            
+            console.log('Mobile menu button found:', !!mobileMenuButton);
+            console.log('Mobile dropdown found:', !!mobileDropdown);
+            
+            if (mobileMenuButton && mobileDropdown) {
+                mobileMenuButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    console.log('Mobile menu button clicked');
+                    
+                    // Toggle the dropdown
+                    if (mobileDropdown.classList.contains('show')) {
+                        // Hide menu
+                        mobileDropdown.classList.remove('show');
+                        console.log('Menu closed');
+                        
+                        // Change icon back to hamburger
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    } else {
+                        // Show menu
+                        mobileDropdown.classList.add('show');
+                        console.log('Menu opened');
+                        
+                        // Change icon to X
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-bars');
+                            icon.classList.add('fa-times');
+                        }
+                    }
+                });
+                
+                // Close menu when clicking on a link
+                const dropdownLinks = mobileDropdown.querySelectorAll('a');
+                dropdownLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileDropdown.classList.remove('show');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!mobileMenuButton.contains(event.target) && !mobileDropdown.contains(event.target)) {
+                        mobileDropdown.classList.remove('show');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                });
+            } else {
+                console.error('Mobile menu elements not found');
+            }
+        });
+    </script>
+</body>
+</html>
