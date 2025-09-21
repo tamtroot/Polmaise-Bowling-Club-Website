@@ -169,15 +169,35 @@
                     <div class="year-header">
                         <h3>2025</h3>
                     </div>
-                    <div class="year-achievements">
-                        <ul>
-                            <li>Top 9 Indoor Champions</li>
-                            <li>Scottish Area Pairs: W. Black & A. Furzer</li>
-                            <li>County Triples: Gary Malcomson, William Black, Stephen Flemming</li>
-                            <li>Area & District Champion of Champions: Gary Malcomson</li>
-                            <li>Reid Trophy</li>
-                            <li>City of Stirling Top Fifteen Champions</li>
-                        </ul>
+                    <div class="year-content-grid">
+                        <div class="year-achievements">
+                            <ul>
+                                <li>Top 9 Indoor Champions</li>
+                                <li>Scottish Area Pairs: W. Black & A. Furzer</li>
+                                <li>County Triples: Gary Malcomson, William Black, Stephen Flemming</li>
+                                <li>Area & District Champion of Champions: Gary Malcomson</li>
+                                <li>Reid Trophy</li>
+                                <li>City of Stirling Top Fifteen Champions</li>
+                                <li>Steins Trophy</li>
+                            </ul>
+                        </div>
+                        <div class="year-competitions">
+                            <h4>Club Competitions (2025)</h4>
+                            <ul>
+                                <li><strong>2 Bowl Pairs</strong> - Billy Johnstone & Alex Brown</li>
+                                <li><strong>4 Bowl Pairs</strong> - Gary Malcomson & James Brown</li>
+                                <li><strong>Mixed Pairs</strong> - Gary Malcomson & Rita Smith</li>
+                                <li><strong>Ladies Pairs</strong> - Rebecca Liddle & Jen Rough</li>
+                                <li><strong>Victory</strong> - James Craig</li>
+                                <li><strong>Junior Singles</strong> - James Craig</li>
+                                <li><strong>Ladies Championship</strong> - R. Liddell</li>
+                                <li><strong>Gents Championship</strong> - Aaron Furzer</li>
+                                <li><strong>Senior Singles Gentlemens Championship</strong> - Sandy Deans</li>
+                                <li><strong>Presidents Cup</strong> - Gary Malcomson</li>
+                                <li><strong>The Stuart Primrose Cup</strong> - Craig Leishman</li>
+                                <li><strong>James Black</strong> - Kevin Patterson</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -737,7 +757,8 @@
                             <div class="entry"><span>2021</span> D. McCormick</div>
                             <div class="entry"><span>2022</span> G. Malcolmson</div>
                             <div class="entry"><span>2023</span> K. Paterson</div>
-                            <div class="entry current-champion"><span>2024</span> G. Malcolmson</div>
+                            <div class="entry"><span>2024</span> G. Malcolmson</div>
+                            <div class="entry current-champion"><span>2025</span> A. Furzer</div>
                         </div>
                     </div>
                 </div>
@@ -754,7 +775,8 @@
                     <div class="columns">
                         <div class="champion-column">
                             <div class="entry"><span>2023</span> R. Smith</div>
-                            <div class="entry current-champion"><span>2024</span> J. Rough</div>
+                            <div class="entry"><span>2024</span> J. Rough</div>
+                            <div class="entry current-champion"><span>2025</span> R. Liddel</div>
                         </div>
                     </div>
                 </div>
@@ -838,6 +860,7 @@
         .year-achievements ul {
             list-style-type: disc;
             margin-left: 1.5rem;
+            margin-top: 0; /* Align with Club Competitions column */
         }
         
         .year-achievements ul li {
@@ -847,6 +870,30 @@
         .year-achievements p {
             font-style: italic;
             color: var(--dark-gray);
+        }
+        
+        /* Layout for honours and club competitions (stacked under year honours) */
+        .year-content-grid {
+            display: block;
+        }
+
+        .year-competitions {
+            margin-top: 1rem;
+        }
+
+        .year-competitions h4 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: var(--club-blue);
+        }
+
+        .year-competitions ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+        }
+
+        .year-competitions ul li {
+            margin-bottom: 0.5rem;
         }
         
         .achievement-card {
@@ -880,6 +927,7 @@
             .honour-year {
                 padding-left: 1rem;
             }
+            .year-content-grid { display: block; }
         }
 
         /* Presidents Board Styles */
