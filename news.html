@@ -277,6 +277,285 @@
              margin-top: 20px; /* Add space above subheadings */
         }
         
+        /* Mobile responsive styles for historical articles */
+        @media (max-width: 768px) {
+            .historical-article-container {
+                padding: 15px;
+                margin-bottom: 15px;
+                border-radius: 6px;
+            }
+            
+            .historical-article-date {
+                top: 10px;
+                right: 10px;
+                font-size: 0.75rem;
+                padding: 4px 8px;
+            }
+            
+            .historical-article h3 {
+                font-size: 1.1rem;
+                margin-bottom: 12px;
+                padding-right: 80px; /* Make room for date badge */
+            }
+            
+            .historical-article p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                margin-bottom: 12px;
+            }
+            
+            .historical-article h4 {
+                font-size: 1rem;
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
+            
+            /* Adjust images in articles */
+            .historical-article img {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+            
+            /* Fix floating images on mobile */
+            .historical-article div[style*="float: right"] {
+                float: none !important;
+                width: 100% !important;
+                height: auto !important;
+                margin: 15px 0 !important;
+            }
+        }
+        
+        /* Portrait orientation on mobile */
+        @media (max-width: 768px) and (orientation: portrait) {
+            .historical-article-container {
+                padding: 12px;
+                margin-left: -5px;
+                margin-right: -5px;
+                border-left: none;
+                border-right: none;
+                border-radius: 0;
+            }
+            
+            /* Adjust history archive content padding for portrait */
+            #history .news-archive-content {
+                padding-left: 0.5rem !important;
+                padding-right: 0.5rem !important;
+            }
+            
+            /* Ensure articles use full width in portrait */
+            .history-item.active {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        
+        /* Landscape orientation on mobile */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .historical-article-container {
+                padding: 18px;
+                max-width: 100%;
+            }
+            
+            .historical-article h3 {
+                padding-right: 90px;
+            }
+            
+            /* Better spacing in landscape */
+            #history .news-archive-content {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+        }
+        
+        /* Ensure history items expand properly on mobile */
+        @media (max-width: 768px) {
+            .history-item.active {
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+            
+            .history-articles-content {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        
+        /* Fix Looking Back section for mobile */
+        @media (max-width: 768px) {
+            .looking-back-section {
+                padding: 15px !important;
+                margin: 20px 0 !important;
+                border-radius: 6px !important;
+                overflow: visible !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+            }
+            
+            .looking-back-section h3 {
+                font-size: 1.1rem;
+                margin-bottom: 15px;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+                hyphens: auto;
+                max-width: 100% !important;
+            }
+            
+            .looking-back-section > div {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 15px !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+            }
+            
+            .looking-back-section > div > div {
+                flex: 1 1 auto !important;
+                min-width: 0 !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                overflow: visible !important;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+            }
+            
+            .looking-back-section p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+                hyphens: auto;
+                margin-bottom: 12px;
+                max-width: 100% !important;
+                width: 100% !important;
+                overflow: visible !important;
+                box-sizing: border-box !important;
+            }
+            
+            .looking-back-section figure {
+                max-width: 100% !important;
+                width: 100% !important;
+                margin: 15px 0 !important;
+                box-sizing: border-box !important;
+            }
+            
+            .looking-back-section img {
+                max-width: 100% !important;
+                width: 100% !important;
+                height: auto !important;
+                box-sizing: border-box !important;
+            }
+            
+            .looking-back-section figcaption {
+                font-size: 0.85rem !important;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+                max-width: 100% !important;
+            }
+        }
+        
+        /* Portrait orientation specific fixes */
+        @media (max-width: 768px) and (orientation: portrait) {
+            .looking-back-section {
+                padding: 12px !important;
+                margin-left: -5px !important;
+                margin-right: -5px !important;
+                border-left: none !important;
+                border-right: none !important;
+                border-radius: 0 !important;
+                width: calc(100% + 10px) !important;
+                max-width: calc(100% + 10px) !important;
+            }
+        }
+        
+        /* Ensure parent containers don't constrain */
+        @media (max-width: 768px) {
+            #history .news-archive-content .looking-back-section {
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+        }
+        
+        /* Fix history intro section for mobile */
+        @media (max-width: 768px) {
+            /* Target the flex container that wraps history-intro and image */
+            #history .news-archive-content > div:first-child {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 20px !important;
+                margin-bottom: 20px !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+                overflow: visible !important;
+            }
+            
+            .history-intro {
+                flex: 1 1 auto !important;
+                min-width: 0 !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+                overflow: visible !important;
+            }
+            
+            .history-intro p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+                hyphens: auto;
+                margin-bottom: 12px;
+                max-width: 100% !important;
+                width: 100% !important;
+                overflow: visible !important;
+                box-sizing: border-box !important;
+            }
+            
+            /* Fix the image container */
+            #history .news-archive-content > div:first-child > div:last-child {
+                flex: 1 1 auto !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                align-self: center !important;
+                box-sizing: border-box !important;
+                overflow: visible !important;
+            }
+            
+            #history .news-archive-content > div:first-child > div:last-child img {
+                max-width: 100% !important;
+                width: 100% !important;
+                height: auto !important;
+                box-sizing: border-box !important;
+            }
+            
+            /* Ensure history archive content doesn't constrain */
+            #history .news-archive-content {
+                overflow-x: hidden !important;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+            }
+        }
+        
+        /* Portrait orientation specific fixes for history intro */
+        @media (max-width: 768px) and (orientation: portrait) {
+            #history .news-archive-content > div:first-child {
+                gap: 15px !important;
+                margin-bottom: 15px !important;
+            }
+            
+            .history-intro {
+                padding: 0 !important;
+            }
+        }
+        
         /* Table styling */
         .results-table {
             width: 100%;
