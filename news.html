@@ -309,6 +309,61 @@
         .history-item.active {
             display: block; /* Shown when active */
         }
+        
+        /* News Archive Styling */
+        .news-archive {
+            border: 1px solid #e0e0e0;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .news-archive-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.2s ease;
+        }
+        
+        .news-archive-header:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .news-archive-header h2 {
+            color: var(--club-blue, #1e3a8a);
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        
+        .archive-toggle-icon {
+            color: var(--club-blue, #1e3a8a);
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .news-archive-header.expanded .archive-toggle-icon {
+            transform: rotate(180deg);
+        }
+        
+        .news-archive-content {
+            padding: 0 2rem 2rem 2rem;
+            max-height: 900px;
+            overflow-y: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .news-archive-header {
+                padding: 1.25rem 1.5rem;
+            }
+            
+            .news-archive-content {
+                max-height: 70vh;
+                padding: 0 1.5rem 1.5rem 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -352,10 +407,65 @@
         <div class="container">
             <div class="news-layout">
                 <div class="news-main">
-                    <h2>News</h2>
+                    <!-- Latest News Section -->
+                    <section id="latest-news">
+                        <h2>Latest News</h2>
+                        
+                        <!-- News Grid for Thumbnails -->
+                        <div class="news-grid">
+                            <!-- Opening of the Green 2026 -->
+                            <div class="news-card" onclick="toggleArticle('article-opening-green-2026')">
+                                <div class="news-card-thumbnail">
+                                    <img src="./Images/2026/Bye.png" alt="Opening of the Green 2026">
+                                </div>
+                                <div class="news-card-date">February 6, 2026</div>
+                                <div class="news-card-title">
+                                    <h3>Opening of the Green – Saturday 4th April 2026</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Full Articles (initially hidden) -->
+                        <article id="article-opening-green-2026" class="news-item featured">
+                            <h3>Opening of the Green – Saturday 4th April 2026</h3>
+                            <div class="news-image">
+                                <img src="./Images/2026/Bye.png" alt="Opening of the Green 2026" class="zoomable-image" onclick="openLightbox(this)">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="news-date"><i class="fas fa-calendar-alt"></i> February 6, 2026</span>
+                                    <span class="news-category"><i class="fas fa-tag"></i> Club Event</span>
+                                </div>
+                                <p>Spring is finally on the horizon, and at Polmaise Bowling Club that can only mean one thing — the green is about to open and the bowls bags are coming back out of hiding.</p>
+                                
+                                <p>After a long winter hiatus, the green will officially open on Saturday 4th April 2026, marking the start of another busy and sociable bowling season at Polmaise. Judging by the cartoon above, many of our members have been waiting patiently (or not so patiently!) for this moment — bags packed, smiles on faces, and partners already resigned to seeing a little less of them over the coming months.</p>
+                                
+                                <p>The opening day is always a special occasion in the club calendar, and this year is no exception. We're delighted that several of our valued sponsors will be making an appearance, and the club is keen to ensure they're welcomed by a strong turnout from the membership. Their continued support plays a vital role in keeping the club thriving, and opening day is the perfect opportunity to show our appreciation.</p>
+                                
+                                <p>As ever, the emphasis will be on good company, friendly conversation, and that unmistakable sense of anticipation that comes with the first roll of the season. Whether you're a regular on the green, returning after a winter break, or simply keen to soak up the atmosphere, all members are encouraged to attend.</p>
+                                
+                                <p>So dust off the whites, locate the bowls bag, and prepare for the familiar seasonal farewell to your partner — "See you in five months!" We look forward to welcoming everyone back to the green and kicking off what promises to be another enjoyable year at Polmaise.</p>
+                                
+                                <p>For more information on this years fixtures check out: <a href="https://polmaisebowlingclub.com/fixtures.html" target="_blank">https://polmaisebowlingclub.com/fixtures.html</a></p>
+                            </div>
+                            <div class="news-close-btn">
+                                <button onclick="closeAllArticles()">Back to News</button>
+                            </div>
+                        </article>
+                    </section>
                     
-                    <!-- News Grid for Thumbnails -->
-                    <div class="news-grid">
+                    <!-- 2025 News Archive -->
+                    <section id="news-archive-2025" class="news-archive">
+                        <div class="news-archive-header" onclick="toggleArchive()">
+                            <h2>2025 News</h2>
+                            <span class="archive-toggle-icon" id="archive-toggle-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        
+                        <div class="news-archive-content" id="news-archive-content" style="display: none;">
+                        <!-- News Grid for Thumbnails -->
+                        <div class="news-grid">
                         <!-- Presentation Dance 2025 Event Report -->
                         <div class="news-card" onclick="toggleArticle('article-presentation-dance-2025-event')">
                             <div class="news-card-thumbnail">
@@ -1386,12 +1496,20 @@
                             <button onclick="closeAllArticles()">Back to News</button>
                         </div>
                     </article>
+                        </div> <!-- End of news-archive-content -->
+                    </section> <!-- End of 2025 News Archive -->
                     
-                    <!-- New History Section -->
+                    <!-- History Section -->
                     <hr class="article-divider"> <!-- Optional divider -->
-                    <section class="history-feature">
-                        <h2>From the Green, Through the Years - A Journey into Polmaise Bowling Club's Past</h2>
+                    <section id="history" class="history-feature news-archive">
+                        <div class="news-archive-header" onclick="toggleHistoryArchive()">
+                            <h2>From the Green, Through the Years - A Journey into Polmaise Bowling Club's Past</h2>
+                            <span class="archive-toggle-icon" id="history-toggle-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
                         
+                        <div class="news-archive-content" id="history-archive-content" style="display: none;">
                         <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; margin-bottom: 30px;">
                             <div class="history-intro" style="flex: 1; min-width: 300px;">
                                <p>Tucked away in a corner of our clubhouse is a framed treasure — a collection of yellowed clippings and fading type, lovingly preserved and gifted to Polmaise Bowling Club by W. Jenkins on the occasion of our 75th Anniversary in July 1986. These articles, drawn from newspapers and community reports, tell the quiet but proud story of our club — of roll-ups and rivalries, of jubilee celebrations, gala days, and the steadfast spirit of Fallin's bowling men and women.</p>
@@ -2248,6 +2366,7 @@
                                 </div>
                             </div>
                         </div>
+                        </div> <!-- End of history-archive-content -->
                     </section>
                     <!-- End New History Section -->
                     
@@ -2431,6 +2550,36 @@
         document.querySelector('.mobile-menu').addEventListener('click', function() {
             document.querySelector('nav ul').classList.toggle('active');
         });
+        
+        // Archive toggle functionality
+        function toggleArchive() {
+            const archiveContent = document.getElementById('news-archive-content');
+            const archiveHeader = document.querySelector('.news-archive-header');
+            const toggleIcon = document.getElementById('archive-toggle-icon');
+            
+            if (archiveContent.style.display === 'none') {
+                archiveContent.style.display = 'block';
+                archiveHeader.classList.add('expanded');
+            } else {
+                archiveContent.style.display = 'none';
+                archiveHeader.classList.remove('expanded');
+            }
+        }
+        
+        // History archive toggle functionality
+        function toggleHistoryArchive() {
+            const historyContent = document.getElementById('history-archive-content');
+            const historyHeader = document.querySelector('#history .news-archive-header');
+            const toggleIcon = document.getElementById('history-toggle-icon');
+            
+            if (historyContent.style.display === 'none') {
+                historyContent.style.display = 'block';
+                historyHeader.classList.add('expanded');
+            } else {
+                historyContent.style.display = 'none';
+                historyHeader.classList.remove('expanded');
+            }
+        }
     </script>
 </body>
 </html> 
