@@ -672,6 +672,53 @@ body.menu-open {
     font-size: 1.2rem;
 }
 
+.bank-transfer-details {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bank-transfer-details h4 {
+    margin-bottom: 12px;
+    color: var(--club-blue);
+}
+
+.bank-details {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+    max-width: 320px;
+}
+
+.bank-details dt {
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--dark-gray);
+}
+
+.bank-details dt:first-child {
+    margin-top: 0;
+}
+
+.bank-details dd {
+    margin: 4px 0 0 0;
+}
+
+.payment-notice {
+    margin-top: 20px;
+    padding: 15px 18px;
+    background-color: #fff8e6;
+    border-left: 4px solid #e6a800;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.payment-notice strong {
+    display: block;
+    margin-bottom: 6px;
+}
+
 .membership-faq {
     background-color: var(--light-gray);
 }
