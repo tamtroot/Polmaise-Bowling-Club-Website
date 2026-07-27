@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Scores - Polmaise Bowling Club</title>
+    <link rel="icon" type="image/x-icon" href="./Images/polmaise_logo_favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Let the header scroll away on this page so more scoreboard is visible */
+        body.live-scoring-page header {
+            position: relative;
+        }
+
+        .live-scoring-page .page-banner {
+            padding: 48px 0;
+        }
+
+        .live-scoring-section {
+            background-color: var(--white);
+            padding: 28px 0 48px;
+        }
+
+        .live-scoring-intro {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            text-align: center;
+        }
+
+        .live-scoring-intro p {
+            margin-bottom: 0;
+        }
+
+        .live-scoring-toolbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 12px;
+            max-width: 1200px;
+            margin: 0 auto 12px;
+        }
+
+        .live-scoring-toolbar .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .live-scoring-frame-wrap {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: var(--white);
+            border: 1px solid var(--light-gray);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .live-scoring-frame-wrap iframe {
+            display: block;
+            width: 100%;
+            height: min(85vh, 960px);
+            min-height: 640px;
+            border: 0;
+            background: var(--white);
+        }
+
+        .live-scoring-fallback {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--dark-gray);
+        }
+
+        .live-scoring-fallback a {
+            font-weight: 600;
+        }
+
+        /* Full-screen scoreboard mode */
+        body.scoreboard-expanded {
+            overflow: hidden;
+        }
+
+        body.scoreboard-expanded .live-scoring-frame-wrap {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            max-width: none;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            background: var(--white);
+        }
+
+        body.scoreboard-expanded .live-scoring-frame-wrap iframe {
+            height: 100%;
+            min-height: 0;
+        }
+
+        .scoreboard-exit-btn {
+            display: none;
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            z-index: 2001;
+        }
+
+        body.scoreboard-expanded .scoreboard-exit-btn {
+            display: inline-flex;
+        }
+
+        @media (max-width: 768px) {
+            .live-scoring-page .page-banner {
+                padding: 36px 0;
+            }
+
+            .live-scoring-section {
+                padding: 20px 0 36px;
+            }
+
+            .live-scoring-toolbar {
+                justify-content: center;
+            }
+
+            .live-scoring-frame-wrap iframe {
+                height: 75vh;
+                min-height: 520px;
+            }
+        }
+    </style>
+</head>
+<body class="live-scoring-page">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="./Images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="fixtures.html">Fixtures</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="honours.html">Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h2>Live Scores</h2>
+            <p>Follow matches as they happen on the green</p>
+        </div>
+    </section>
+
+    <section class="live-scoring-section">
+        <div class="container">
+            <div class="live-scoring-intro">
+                <p>Live scores from Polmaise Bowling Club appear below when a match day is in progress. If nothing is showing, there are no live games at the moment.</p>
+            </div>
+            <div class="live-scoring-toolbar">
+                <button type="button" class="btn primary-btn" id="expandScoreboardBtn" aria-pressed="false">
+                    <i class="fas fa-expand" aria-hidden="true"></i>
+                    Expand scoreboard
+                </button>
+            </div>
+            <div class="live-scoring-frame-wrap" id="liveScoreboard">
+                <iframe
+                    src="https://polmaise-bowls-live.base44.app/embed"
+                    title="Polmaise Bowling Club Live Scores"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p class="live-scoring-fallback">
+                Having trouble viewing the board?
+                <a href="https://polmaise-bowls-live.base44.app/embed" target="_blank" rel="noopener noreferrer">Open live scores in a new tab</a>
+            </p>
+        </div>
+    </section>
+
+    <button type="button" class="btn secondary-btn scoreboard-exit-btn" id="exitScoreboardBtn">
+        <i class="fas fa-compress" aria-hidden="true"></i>
+        Exit full screen
+    </button>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polmaise Bowling Club</h3>
+                    <p>Address: Main Street,</p>
+                    <p>Fallin, Stirling, FK7 7HT</p>
+                    <p>Phone: 01786 811333</p>
+                    <p>Email: polmaisebc@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="fixtures.html">Fixtures</a></li>
+                        <li><a href="live-scoring.html">Live Scores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Polmaise-Bowling-Club-100008363985804/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        (function () {
+            var expandBtn = document.getElementById('expandScoreboardBtn');
+            var exitBtn = document.getElementById('exitScoreboardBtn');
+
+            function setExpanded(isExpanded) {
+                document.body.classList.toggle('scoreboard-expanded', isExpanded);
+                if (expandBtn) {
+                    expandBtn.setAttribute('aria-pressed', isExpanded ? 'true' : 'false');
+                }
+            }
+
+            if (expandBtn) {
+                expandBtn.addEventListener('click', function () {
+                    setExpanded(true);
+                });
+            }
+
+            if (exitBtn) {
+                exitBtn.addEventListener('click', function () {
+                    setExpanded(false);
+                });
+            }
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape') {
+                    setExpanded(false);
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

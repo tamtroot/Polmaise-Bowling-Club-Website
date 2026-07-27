@@ -126,28 +126,60 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    gap: 16px;
+    padding: 12px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.logo-image img {
+    width: 56px;
+    height: auto;
+    display: block;
 }
 
 .logo h1 {
     color: var(--club-blue);
-    font-size: 1.8rem;
+    font-size: 1.45rem;
+    line-height: 1.2;
     margin-bottom: 0;
+}
+
+nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 0;
 }
 
 nav ul {
     display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.65rem;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 0;
+    flex-shrink: 0;
 }
 
 nav ul li a {
     color: var(--dark-gray);
     font-weight: 600;
+    font-size: 0.92rem;
     padding: 5px 0;
     position: relative;
+    white-space: nowrap;
 }
 
 nav ul li a.active,
@@ -171,6 +203,13 @@ nav ul li a:hover:after {
     width: 100%;
 }
 
+/* Keep brand from compressing on desktop while nav has room */
+@media (min-width: 993px) {
+    .logo {
+        flex-shrink: 0;
+    }
+}
+
 /* Mobile Menu Styles */
 .mobile-menu {
     display: none; /* Hidden by default */
@@ -185,6 +224,7 @@ nav ul li a:hover:after {
     background-color: white;
     align-items: center;
     gap: 8px;
+    flex-shrink: 0;
 }
 
 .mobile-menu:hover {
@@ -1019,6 +1059,23 @@ footer {
     header .container {
         position: relative;
     }
+
+    .logo {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    /* Keep desktop nav panel out of the flex flow; drawer is position:fixed */
+    nav {
+        flex: 0 0 0;
+        width: 0;
+        min-width: 0;
+        overflow: visible;
+    }
     
     nav ul {
         display: none;
@@ -1029,6 +1086,10 @@ footer {
         height: 100vh;
         background-color: var(--white);
         flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 0;
         padding: 70px 20px 20px;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
         transition: left 0.3s ease-in-out;
@@ -1050,10 +1111,12 @@ footer {
         display: block;
         padding: 6px 0; /* Reduced padding */
         transition: color 0.3s ease;
+        white-space: normal;
     }
 
     .mobile-menu {
         display: flex; /* Only display on mobile */
+        margin-left: auto;
     }
 
     .welcome-content {
