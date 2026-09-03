@@ -210,6 +210,11 @@
             background-repeat: no-repeat;
             animation: loading 1.5s infinite;
         }
+
+        .album-card[data-album="finals-day-2026"] .album-thumbnail,
+        #finals-day-2026 .gallery-item img {
+            object-position: top center;
+        }
         
         /* Remove animation when image is loaded */
         .gallery-item img[src]:not([src=""]) {
@@ -345,6 +350,14 @@
             <!-- Album Cards -->
             <div class="album-cards">
                 
+                <!-- Finals Day 2026 -->
+                <div class="album-card" data-album="finals-day-2026">
+                    <img src="./Images/2026/Finals Day/Finalists.jpg" alt="Finals Day 2026" class="album-thumbnail" loading="lazy">
+                    <div class="album-info">
+                        <h3>Finals Day 2026</h3>
+                    </div>
+                </div>
+
                 <!-- Opening of Green 2026 -->
                 <div class="album-card" data-album="opening-of-green-2026">
                     <img src="./Images/2026/Opening of Green 2026/Opening of Green.jpg" alt="Opening of Green 2026" class="album-thumbnail" loading="lazy">
@@ -519,6 +532,46 @@
             </div>
             
             <!-- Album Contents (initially hidden) -->
+            <!-- Album: Finals Day 2026 -->
+            <div class="album-content" id="finals-day-2026">
+                <div class="album-header">
+                    <h2>Finals Day 2026</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <a href="./Images/2026/Finals Day/Finalists.jpg" data-lightbox="finals-day-2026" data-title="Finalists">
+                            <img loading="lazy" src="./Images/2026/Finals Day/Finalists.jpg" alt="Finals Day 2026 finalists">
+                        </a>
+                        <div class="gallery-caption">Finalists</div>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="./Images/2026/Finals Day/Aaron Furzer.jpg" data-lightbox="finals-day-2026" data-title="Aaron Furzer">
+                            <img loading="lazy" src="./Images/2026/Finals Day/Aaron Furzer.jpg" alt="Aaron Furzer at Finals Day 2026">
+                        </a>
+                        <div class="gallery-caption">Aaron Furzer</div>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="./Images/2026/Finals Day/Anne Irving.jpg" data-lightbox="finals-day-2026" data-title="Anne Irving">
+                            <img loading="lazy" src="./Images/2026/Finals Day/Anne Irving.jpg" alt="Anne Irving at Finals Day 2026">
+                        </a>
+                        <div class="gallery-caption">Anne Irving</div>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="./Images/2026/Finals Day/Elaine McMeechan.jpg" data-lightbox="finals-day-2026" data-title="Elaine McMeechan">
+                            <img loading="lazy" src="./Images/2026/Finals Day/Elaine McMeechan.jpg" alt="Elaine McMeechan at Finals Day 2026">
+                        </a>
+                        <div class="gallery-caption">Elaine McMeechan</div>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="./Images/2026/Finals Day/James Craig.jpg" data-lightbox="finals-day-2026" data-title="James Craig">
+                            <img loading="lazy" src="./Images/2026/Finals Day/James Craig.jpg" alt="James Craig at Finals Day 2026">
+                        </a>
+                        <div class="gallery-caption">James Craig</div>
+                    </div>
+                </div>
+                <button class="close-album" onclick="closeAlbum()">Back to Gallery</button>
+            </div>
+
             <!-- Album: Opening of Green 2026 -->
             <div class="album-content" id="opening-of-green-2026">
                 <div class="album-header">
@@ -3494,4 +3547,4 @@
         });
     </script>
 </body>
-</html> 
+</html>
