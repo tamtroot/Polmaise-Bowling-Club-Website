@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 16,
-  "totalBytes": 3314669,
+  "totalBytes": 3312106,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 29352
+      "bytes": 26415
     },
     "image": {
       "count": 13,
@@ -26,7 +26,7 @@
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27126
+      "bytes": 27500
     }
   },
   "largestResources": [
@@ -66,18 +66,18 @@
       "contentType": "image/jpeg"
     },
     {
-      "url": "http://127.0.0.1:4173/sponsors.html",
-      "bytes": 29352,
-      "status": 200,
-      "resourceType": "document",
-      "contentType": "text/html; charset=utf-8"
-    },
-    {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27126,
+      "bytes": 27500,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/sponsors.html",
+      "bytes": 26415,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/lyon%20safety.jpg",
@@ -244,14 +244,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/sponsors.html",
-      "bytes": 29352,
+      "bytes": 26415,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27126,
+      "bytes": 27500,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

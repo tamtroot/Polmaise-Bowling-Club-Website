@@ -1,14 +1,90 @@
+---
+pageTitle: "News & Events - Polmaise Bowling Club"
+permalink: "/news.html"
+navActive: "news"
+prefix: ""
+assetPrefix: "./"
+headVariant: "standard"
+mobileMenuIcon: "fas fa-bars"
+mobileNavDropdown: false
+fontFamilies: "family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600"
+scriptJs: true
+jquery: false
+lightboxCss: false
+lightboxScript: false
+facebookLink: false
+bodyClass: ""
+---
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News & Events - Polmaise Bowling Club</title>
-    <link rel="icon" type="image/x-icon" href="./Images/polmaise_logo_favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <style>
+
+{% include "head.njk" %}
+
+<style>
+        /* Repeated inline-style replacements */
+        .news-image-spaced {
+            margin: 20px 0;
+        }
+
+        .historical-quote {
+            font-style: italic;
+            border-left: 3px solid #1e3a8a;
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+
+        .historical-image-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .historical-feature-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-card);
+        }
+
+        .historical-clipping-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: zoom-in;
+        }
+
+        .historical-clipping-frame {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-card);
+        }
+
+        .historical-inline-image {
+            float: right;
+            margin: 0 0 20px 20px;
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-card);
+        }
+
+        .historical-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .historical-section {
+            margin-top: 20px;
+            border-top: 1px dashed #ccc;
+            padding-top: 20px;
+        }
+
         /* Lightbox styles */
         .lightbox {
             display: none;
@@ -171,62 +247,12 @@
             background: #152a62; /* Darker royal blue for hover */
         }
         
-        .history-images {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px; /* Small gap between images for visual separation */
-            justify-content: center;
-        }
-        
-        .history-images img {
-            cursor: pointer;
-            transition: opacity 0.3s;
-            max-width: calc(50% - 5px); /* 2 images per row with gap consideration */
-            height: auto; /* Maintain aspect ratio */
-            object-fit: contain; /* Ensure image isn't stretched */
-            margin: 0; /* Remove default margins */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-        }
-        
-        /* Adjust container to better handle landscape images */
-        .history-content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        
-        /* Add more specific handling for landscape images */
-        @media (min-width: 769px) {
-            .history-images {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-            }
-            
-            .history-images img {
-                width: 100%;
-                max-width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
-        }
-        
-        .history-images img:hover {
-            opacity: 0.8;
-        }
-        
         @media only screen and (max-width: 768px) {
             .lightbox-content {
                 max-width: 100%;
                 margin-top: 20px;
             }
-            
-            .history-images img {
-                max-width: 100%; /* Full width on mobile */
-                margin-bottom: 10px;
-            }
-
-            .article-divider {
+.article-divider {
                 margin: 40px 0;
                 border: 0;
                 height: 1px;
@@ -643,38 +669,14 @@
             }
         }
     </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <div class="logo-image">
-                    <img src="./Images/club-logo.png" alt="Polmaise Bowling Club Logo">
-                </div>
-                <div class="logo-text">
-                    <h1>Polmaise Bowling Club</h1>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="membership.html">Membership</a></li>
-                    <li><a href="fixtures.html">Fixtures</a></li>
-                    <li><a href="news.html" class="active">News & Events</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="sponsors.html">Sponsors</a></li>
-                    <li><a href="honours.html">Honours</a></li>
-                </ul>
-            </nav>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
 
-    <section class="page-banner">
+</head>
+
+<body>
+
+{% include "header.njk" %}
+
+<section class="page-banner">
         <div class="banner-content">
             <h2>News & Events</h2>
             <p>Stay updated with the latest club news, announcements, and upcoming events</p>
@@ -895,7 +897,7 @@
 
                                 <p>The achievement is made even more impressive by the fact that Aaron is <strong>one of the youngest players competing at this level</strong>. To come through a field made up of club singles champions from across both county districts and lift such a prestigious title is a tremendous accomplishment and a proud moment for both Aaron and <strong>Polmaise Bowling Club</strong>.</p>
 
-                                <figure class="news-image" style="margin: 20px 0;">
+                                <figure class="news-image news-image-spaced">
                                     <img src="./Images/2026/Aaron Champ of Champs/Aaron Furzer with Champion of Champions Trophy.jpg" alt="Aaron Furzer with the Champion of Champions trophy after his 21&ndash;15 victory in the Grand Final." class="zoomable-image" onclick="openLightbox(this)">
                                     <figcaption style="text-align: center; font-size: 0.9rem; margin-top: 10px; font-style: italic;">Aaron Furzer with the Champion of Champions trophy after his 21&ndash;15 victory in the Grand Final.</figcaption>
                                 </figure>
@@ -971,11 +973,11 @@
 
                                 <p>Aaron faced James Wray of Cambusbarron Bowling Club in an exceptionally close and competitive match. There was little between the two players throughout, with both producing excellent bowls under pressure as the final moved towards a tense conclusion.</p>
 
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Champion of Champions 2026/James Wray.jpg" alt="James Wray of Cambusbarron Bowling Club delivers a bowl during the closely contested Stirling Area and District Champion of Champions final at Borestone Bowling Club." class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
 
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Champion of Champions 2026/Aaron Furzer.jpg" alt="Polmaise’s Aaron Furzer delivers a bowl during the final on his way to becoming the 2026 Stirling Area and District Champion of Champions." class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
 
@@ -983,7 +985,7 @@
 
                                 <p>The result also marks a remarkable milestone for Polmaise Bowling Club, as this is the second consecutive year that a Polmaise player has won the Champion of Champions title. Gary Malcomson lifted the trophy last year, making back-to-back victories an outstanding achievement for the club and a proud reflection of the quality of bowling at Polmaise.</p>
 
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Champion of Champions 2026/Aaron with his grandad.jpg" alt="Stirling Area and District Champion of Champions winner Aaron Furzer celebrates his victory with his proud grandad and the trophy at Borestone Bowling Club." class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
 
@@ -1012,7 +1014,7 @@
                                 <h4>Under 25s Singles</h4>
                                 <p>In the Under 25s Singles, Kyle Malcomson of Polmaise faced TJ Frickleton of Laurieston Bowling Club. Kyle produced a strong and composed performance, building a commanding lead before closing out the match with a convincing 21-7 victory. It was a fantastic achievement and a well-deserved county title for one of the club's young talents.</p>
 
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/County Finals 2026/Kyle M.jpg" alt="Kyle Malcomson of Polmaise Bowling Club pictured with the Under 25s Singles trophy after winning the Stirling County Association Final at Burnhead Bowling Club." class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
 
@@ -1047,33 +1049,33 @@
 
                                 <p>In the Under 25 Singles, James Craig showcased incredible focus and skill, overcoming a tough opponent, D. Kirk from Clackmannan Bowling Club. His precise drawing and composure under pressure earned him a well-deserved victory, finishing with a commanding 21-13 scoreline.</p>
 
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Scottish Area Final 2026/James Craig.jpg" alt="James Craig in action, delivering a crucial bowl during his victorious Junior Singles match against Clackmannan" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
 
                                 <p>Matching this success in the Gents Singles, Aaron Furzer delivered a dramatic performance against K. Wallace from Alloa East End. After trailing for the majority of the game, Aaron showed incredible resilience and pushed hard in the final ends to seize the lead, ultimately claiming a stunning 21-19 victory.</p>
 
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Scottish Area Final 2026/Aaron Furzer.jpg" alt="Aaron Furzer preparing to deliver his bowl with focused precision during the Gents Singles final" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
 
                                 <h4>Valiant Effort in the Gents Pairs</h4>
                                 <p>In the Gents Pairs, James Brown and Gary Malcomson fought a brilliant and tightly contested battle against a strong duo from Alloa East End. Despite displaying excellent teamwork and making some superb shots throughout the match, they were ultimately edged out, ending the game with a 12-18 score. Though defeated, James and Gary represented Polmaise with exceptional grit and sportsmanship, and the club is immensely proud of their journey to the Area Finals.</p>
 
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Scottish Area Final 2026/Basher.jpg" alt="A dynamic shot of James &quot;Basher&quot; Brown in his Polmaise kit, fully focused on his delivery during the Gents Pairs final" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Scottish Area Final 2026/Gary Malcomson.jpg" alt="Gary Malcomson stepping up to the mat during the fiercely contested Gents Pairs match, surrounded by watching supporters" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
 
                                 <h4>Next Stop: Northfield, Ayr</h4>
                                 <p>Following their fantastic triumphs, both James Craig and Aaron Furzer will now proudly go on to represent Polmaise Bowling Club at the prestigious Bowls Scotland National Finals at Northfield, Ayr. This is a monumental achievement for the players and a proud moment for our club. We encourage all members to get behind the lads and support them as they take on the best in the country!</p>
 
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Scottish Area Final 2026/Menstrie Green.jpg" alt="A wide shot of the bustling Menstrie Bowling Club green, capturing the fantastic atmosphere of the Area Finals" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Scottish Area Final 2026/View of the hills.jpg" alt="The stunning backdrop of the Ochil Hills overlooking the green, providing a beautiful and dramatic setting for the evening's matches" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
                             </div>
@@ -1105,16 +1107,16 @@
 
                                 <p>Congratulations once again to Aaron Furzer and Sandy Deans on becoming the 2026 Greig Ryan Pairs Champions.</p>
 
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Greg Ryan Memorial 2026/SemiFinalist1.jpg" alt="Defeated semi-finalists C. Carderry and A. Brown pictured with Polmaise Bowling Club President David Stewart" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Greg Ryan Memorial 2026/SemiFinalist2.jpg" alt="President David Stewart presents prizes to defeated semi-finalists A. Edmonds and D. Wallace" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Greg Ryan Memorial 2026/Runners Up.jpg" alt="Runners-up K. Patterson (&quot;Pepsi&quot;) and Gary Malcolmson receive their prizes from President David Stewart" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Greg Ryan Memorial 2026/All.jpg" alt="Winners, runners-up, and semi-finalists gather with John Ryan, Greg's father, following the conclusion of the 2026 Greig Ryan Pairs competition" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
                             </div>
@@ -1142,7 +1144,7 @@
 
                                 <p>As part of the day, Club President David Stewart was pleased to present Head Teacher Mrs Brennan with a donation of £425 from Polmaise Bowling Club. The donation was made possible thanks to the generosity of club members and funds raised through the club's recent charity day. The money will go towards supporting wider opportunities for pupils at Fallin Primary School.</p>
 
-                                <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                                <blockquote class="historical-quote">
                                     Mrs Brennan thanked Polmaise Bowling Club for hosting the school's P5 and P6 pupils, saying that everyone had been made to feel very welcome and that the children had really enjoyed the taster sessions.
                                 </blockquote>
 
@@ -1152,7 +1154,7 @@
 
                                 <p>Well done to everyone involved.</p>
 
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/FPS Try Bowls Day/FPS4.jpg" alt="Club Secretary Peter Black and President David Stewart hand Fallin Primary School Head Teacher Mrs Brennan a £425 donation from Polmaise Bowling Club" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
                             </div>
@@ -1231,16 +1233,16 @@
 
                                 <p>Well done to everyone who took part and helped make the day such an enjoyable occasion.</p>
 
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Patons Friendly/FB_IMG_1779707572369.jpg" alt="Friendly fixture in progress at Patons & Baldwins Bowling Club" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Patons Friendly/FB_IMG_1779707575207.jpg" alt="Polmaise and Patons & Baldwins players on the green during the centenary friendly" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Patons Friendly/FB_IMG_1779707577972.jpg" alt="Players applaud on the green at Patons & Baldwins Bowling Club" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Patons Friendly/FB_IMG_1779707599591.jpg" alt="Commemorative centenary plaque presented by Polmaise Bowling Club" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
                             </div>
@@ -1270,7 +1272,7 @@
 
                                 <p>After the event, Sandy shared a heartfelt message of thanks:</p>
 
-                                <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                                <blockquote class="historical-quote">
                                     "I have had one of the best days of my life today. Polmaise Bowling Club looked after me so well and made me proud to be a member of this great club. They showed exactly how a special Hamilton Trophy county game should be done.<br><br>
                                     Thank you from Sandy and Linda."
                                 </blockquote>
@@ -1281,13 +1283,13 @@
 
                                 <p>Congratulations, Sandy — a true Polmaise great.</p>
 
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Hamilton Trophy/FB_IMG_1779550807585.jpg" alt="Guard of honour for Sandy Deans on the green at Polmaise Bowling Club" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Hamilton Trophy/FB_IMG_1779550810769.jpg" alt="Sandy Deans receives a guard of honour from fellow bowlers at Polmaise Bowling Club" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
-                                <div class="news-image" style="margin: 20px 0;">
+                                <div class="news-image news-image-spaced">
                                     <img src="./Images/2026/Hamilton Trophy/FB_IMG_1779550804606.jpg" alt="Sandy and Linda Deans with club officials and guests celebrating Sandy's 300th county cap" class="zoomable-image" onclick="openLightbox(this)">
                                 </div>
                             </div>
@@ -1618,7 +1620,7 @@
 
                             <p>Polmaise extends sincere thanks to all sponsors for their continued support throughout the year. Plans are already in motion for a Sponsor Bowling Day this summer, offering another chance to celebrate our shared success on and off the green.</p>
 
-                            <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                            <blockquote class="historical-quote">
                                 "What a fantastic night! We're so lucky to have such a great group of members, friends, and supporters. We are the Polmaise." — Vice President Dave Stewart
                             </blockquote>
 
@@ -1650,7 +1652,7 @@
                             <h4>Tournament Results</h4>
 
                             <p>The winners of this year's event were:</p>
-                            <ul style="list-style-type: disc; margin-left: 20px;">
+                            <ul class="historical-list">
                                 <li>Gary Malcolmson</li>
                                 <li>Kyle Malcolmson</li>
                                 <li>Rab Johnstone</li>
@@ -1693,14 +1695,14 @@
 
                             <p>With 16 pairs taking to the green, the standard of bowling was excellent throughout, and the sun certainly added to the occasion – with roasting conditions making it a memorable day for everyone involved.</p>
 
-                            <div class="news-image" style="margin: 20px 0;">
+                            <div class="news-image news-image-spaced">
                                 <img src="./Images/2025/CharlieMcN/20250816_164239.jpg" alt="Charles McNeil Memorial Tournament action" class="zoomable-image" onclick="openLightbox(this)">
                             </div>
 
                             <h4>Results</h4>
                             
                             <h5>Beaten Semi-Finalists:</h5>
-                            <ul style="list-style-type: disc; margin-left: 20px;">
+                            <ul class="historical-list">
                                 <li>Sandy Deans & Jimmy McNeil</li>
                                 <li>Alex McNeil & David Stewart</li>
                             </ul>
@@ -1715,7 +1717,7 @@
                             <h4>Thanks and Acknowledgements</h4>
                             <p>The success of the Charles McNeil Memorial Tournament would not be possible without the support of so many individuals and families who contributed to the day:</p>
 
-                            <ul style="list-style-type: disc; margin-left: 20px;">
+                            <ul class="historical-list">
                                 <li>Everyone who sponsored the tournament.</li>
                                 <li>The McNeil family, especially Charlie's daughters Gillian and Charlene, for their continued support and for the special moment of presenting the trophy to the winners.</li>
                                 <li>Rhonda Armitage, for supplying a wonderful buffet enjoyed by all.</li>
@@ -1731,7 +1733,7 @@
                             <h4>A Special Day for Polmaise</h4>
                             <p>Vice President David Stewart summed up the occasion perfectly:</p>
 
-                            <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                            <blockquote class="historical-quote">
                                 "We have a very special club and lovely people in Polmaise, and we are so lucky to have you all as members."
                             </blockquote>
 
@@ -1771,7 +1773,7 @@
                             <h5>Final (10 August 2025)</h5>
                             <p>Facing Causewayhead BC, Polmaise maintained their momentum and secured a decisive victory, clinching the championship.</p>
 
-                            <div class="news-image" style="margin: 20px 0;">
+                            <div class="news-image news-image-spaced">
                                 <img src="./Images/2025/Top15Final/20250810_163647.jpg" alt="Club President Alex Brown accepting the City of Stirling Top Fifteen Trophy – 2025" class="zoomable-image" onclick="openLightbox(this)">
                             </div>
 
@@ -1813,21 +1815,21 @@
 
                             <h4>Results</h4>
                             <h5>Defeated Semi-Finalists</h5>
-                            <ul style="list-style-type: disc; margin-left: 20px;">
+                            <ul class="historical-list">
                                 <li>Team 1: Josie Kilgannon, Billy Guy, Sandy Deans</li>
                             </ul>
 
-                            <div class="news-image" style="margin: 20px 0;">
+                            <div class="news-image news-image-spaced">
                                 <img src="./Images/2025/TwaPeters/DefeatedSemi.jpg" alt="Defeated Semi-Finalists – Team 1: Josie Kilgannon, Billy Guy, Sandy Deans" class="zoomable-image" onclick="openLightbox(this)">
                             </div>
                             <li>Team 2: Wullie Nicol, Robert Johnstone, Martyn &quot;Tino&quot; Scott</li>
-                            <div class="news-image" style="margin: 20px 0;">
+                            <div class="news-image news-image-spaced">
                                 <img src="./Images/2025/TwaPeters/DefeatedSemi2.jpg" alt="Defeated Semi-Finalists – Team 2: Wullie Nicol, Robert Johnstone, Martyn &quot;Tino&quot; Scott" class="zoomable-image" onclick="openLightbox(this)">
                             </div>
 
                             <h5>Runners-Up</h5>
                             <p>James Wray, Derek Wallace, Gary Malcolmson</p>
-                            <div class="news-image" style="margin: 20px 0;">
+                            <div class="news-image news-image-spaced">
                                 <img src="./Images/2025/TwaPeters/Runnersup.jpg" alt="Runners-Up – James Wray, Derek Lawrence, and Gary Malcolmson" class="zoomable-image" onclick="openLightbox(this)">
                             </div>
 
@@ -1859,7 +1861,7 @@
 
                             <p>While the result didn't go their way, the achievement of reaching the semi-finals on the national stage cannot be understated. Competing against top-level opposition and holding their own with pride and sportsmanship is something the entire club can celebrate.</p>
 
-                            <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                            <blockquote class="historical-quote">
                                 "To reach the final four in Scotland is no small feat. Aaron and James have done Polmaise proud – they've demonstrated that talent from our club can stand tall on the national stage," said Alex Brown, club President..
                             </blockquote>
 
@@ -1895,7 +1897,7 @@
                             <h4>A Remarkable Run of Success</h4>
                             <p>To earn both international silver and national bronze medals within the space of two weeks is an incredible achievement. Kyle continues to build on his reputation as one of the most promising junior bowlers in the country, and everyone at Polmaise is extremely proud.</p>
                             <br>
-                            <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                            <blockquote class="historical-quote">
                                 "We are absolutely delighted with Kyle's achievements. To represent Scotland and bring home a silver medal, and then to back it up with a bronze in the national singles, is a remarkable double. Kyle is a credit to our club and sets a brilliant example for all our young players."<br>
                                 — Polmaise Bowling Club Committee
                             </blockquote>
@@ -1988,7 +1990,7 @@
 
                             <p>The U18 Pathway is led by Julie Forrest, with support from coaches Rebecca Houston and Colin Noon, and will see Scotland take on teams from England, Wales, and Ireland in a series of competitive matches.</p>
 
-                            <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                            <blockquote class="historical-quote">
                                 "We are absolutely proud as punch of Kyle. His selection is not just a personal triumph, but a proud moment for everyone at Polmaise. We look forward to cheering him on as he represents the club and country with pride!" — Polmaise Bowling Club Committee
                             </blockquote>
 
@@ -2013,7 +2015,7 @@
                             
                             <p>Spittalmyre Bowling Club played host to an exciting evening of competition on Tuesday 24th June, as Polmaise's finest took to the green in the Scottish District Qualifier Finals.</p>
                             
-                            <div class="news-image" style="margin: 20px 0;">
+                            <div class="news-image news-image-spaced">
                                 <img src="./Images/2025/ScottishQ/20250624_193855.jpg" alt="Gary Malcolmson in action during the District Singles Final" class="zoomable-image" onclick="openLightbox(this)">
                             </div>
                             
@@ -2094,7 +2096,7 @@
                             
                             <p>This year's winners were Sandy Deans and Aaron Furzer, who played exceptionally well throughout the tournament and secured a well-deserved win in the final.</p>
                             
-                            <div class="news-image" style="margin: 20px 0;">
+                            <div class="news-image news-image-spaced">
                                 <img src="./Images/2025/GregRyanMemorial/James and Andrew.jpg" alt="Runners Up - James Craig and Andrew Borg" class="zoomable-image" onclick="openLightbox(this)">
                             </div>
                             
@@ -2162,13 +2164,13 @@
                             
                             <p>Adding to his string of recent successes, Kyle delivered a phenomenal performance at the Podium Open Triples event held on Saturday, 17th May. Going head-to-head with some of Scotland's top talent, Kyle defeated Neil Spears, a highly respected former Scotland captain and current skip. His victory not only showcased his strategic prowess and composure under pressure but also secured him a place at the national finals in Ayr on 7th June.</p>
                             
-                            <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                            <blockquote class="historical-quote">
                                 "Kyle has just beaten two Scotland skips – an incredible achievement at any level, let alone at his age," said Dave Stewart, club Vice-President and long-time supporter. "His success is a testament to the talent we nurture at Polmaise and to Kyle's passion for the game. The entire club is behind him, and we couldn't be prouder."
                             </blockquote>
                             
                             <p>This remarkable journey is not just a solo effort—it is part of a family legacy. Kyle's father, Gary Malcomson, shared his pride:</p>
                             
-                            <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                            <blockquote class="historical-quote">
                                 "As father and son, we won back-to-back Singles and U25 Central titles in 2024 and 2025. A record I don't think can be beaten."
                             </blockquote>
                             
@@ -2184,7 +2186,7 @@
                                 <strong>Update (June 5, 2025):</strong> Kyle and his Stirlingshire U25 teammates have progressed to the semi-finals of the Scottish Under 25 County Championships! In a thrilling contest on Sunday 1st June, the Stirlingshire team delivered a spectacular comeback victory, overturning a 22-shot deficit early in the match to storm to a 140–103 win over Renfrewshire. The team showed remarkable grit and determination, with Kyle once again contributing to the squad's success.
                             </p>
                             
-                            <blockquote style="font-style: italic; border-left: 3px solid #1e3a8a; padding-left: 20px; margin: 20px 0;">
+                            <blockquote class="historical-quote">
                                 "22 back when I walked in after 4/5 ends – superb comeback to win with 37 shots. Go and finish the job now on 22nd June, boys and girls!" - Gary Malcomson
                             </blockquote>
                             
@@ -2345,7 +2347,7 @@
                         <br>
                             <h4>Renovation Milestones and Acknowledgments</h4>
                             <p>Significant contributions have been made by Lawrence Begg, George Rough, John McKenna, and Dave Stewart, with special thanks to Ian and Harvey, the greenkeepers from Braehead Golf Club. Recent improvements include:</p>
-                            <ul style="list-style-type: disc; margin-left: 20px;">
+                            <ul class="historical-list">
                                 <li>David Christie installed two lights and double sockets in the new greenkeepers' shed</li>
                                 <li>William Black is set to repaint the clubhouse</li>
                                 <li>Robert Bone and team completed work on the clubhouse floor and new shed roof</li>
@@ -2354,7 +2356,7 @@
                         <br>
                             <h4>Final Steps to Completion</h4>
                             <p>Remaining tasks include:</p>
-                            <ul style="list-style-type: disc; margin-left: 20px;">
+                            <ul class="historical-list">
                                 <li>Painting the clubhouse</li>
                                 <li>Screeding and vinyl flooring installation</li>
                                 <li>Installing doors for the greenkeepers' shed</li>
@@ -2532,15 +2534,15 @@
                                         <h3>Stirling Observer – Wednesday, July 31, 2013</h3>
                                         
                                         <!-- Featured image at top of article -->
-                                        <div style="text-align: center; margin-bottom: 20px;">
-                                            <img src="./Images/Archive/HistoricalArchive/Gary&amp;Rita1.jpg" alt="Rita Smith and Gary Malcolmson - Scottish Mixed Pairs Champions" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        <div class="historical-image-wrapper">
+                                            <img src="./Images/Archive/HistoricalArchive/Gary&amp;Rita1.jpg" alt="Rita Smith and Gary Malcolmson - Scottish Mixed Pairs Champions" class="zoomable-image historical-feature-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <h4>SILVERWARE FOR RITA AND GARY</h4>
                                         
                                         <!-- Original newspaper clipping in square format -->
-                                        <div style="float: right; margin: 0 0 20px 20px; width: 250px; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                            <img src="./Images/Archive/HistoricalArchive/Gary&amp;Rita.jpg" alt="Original newspaper clipping of Rita and Gary's championship win" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                        <div class="historical-inline-image">
+                                            <img src="./Images/Archive/HistoricalArchive/Gary&amp;Rita.jpg" alt="Original newspaper clipping of Rita and Gary's championship win" class="zoomable-image historical-clipping-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <p>There were celebrations in the Stirling area last week as two outstanding Polmaise bowlers collected national silverware. Rita Smith and Gary Malcolmson were in dazzling form on the sun-drenched Northfield greens in Ayr to become the Bowls Scotland mixed pairs champions.</p>
@@ -2565,16 +2567,16 @@
                                         <h3>Wednesday, July 9, 2003</h3>
                                         
                                         <!-- Featured image at top of article -->
-                                        <div style="text-align: center; margin-bottom: 20px;">
-                                            <img src="./Images/Archive/HistoricalArchive/Triples.jpg" alt="Polmaise Bowling Club - British Isles Triples Champions 2003" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        <div class="historical-image-wrapper">
+                                            <img src="./Images/Archive/HistoricalArchive/Triples.jpg" alt="Polmaise Bowling Club - British Isles Triples Champions 2003" class="zoomable-image historical-feature-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <h4>BEST OF BRITISH</h4>
                                         <h5>Victory over Auld Enemy gives Polmaise the UK title</h5>
                                         
                                         <!-- Original newspaper clipping in square format -->
-                                        <div style="float: right; margin: 0 0 20px 20px; width: 250px; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                            <img src="./Images/Archive/HistoricalArchive/IMG-20250509-WA0000.jpg" alt="Original newspaper clipping of British Isles championship win" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                        <div class="historical-inline-image">
+                                            <img src="./Images/Archive/HistoricalArchive/IMG-20250509-WA0000.jpg" alt="Original newspaper clipping of British Isles championship win" class="zoomable-image historical-clipping-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <p>POLMAISE bowlers brought glory to the Stirling area last week when they captured the British Isles triples championship at Ayr - in dramatic fashion.</p>
@@ -2599,7 +2601,7 @@
                                         
                                         <p>The Polmaise success was the first-ever British title won by an SBA Stirling district club. The only other Stirlingshire success came in 1966 when Denny's Andrew Cruickshank, Jim Logan, John Bradbury and Jim Adams won the British Isles fours.</p>
                                         
-                                        <div style="margin-top: 20px; border-top: 1px dashed #ccc; padding-top: 20px;">
+                                        <div class="historical-section">
                                             <p><em>Historical Note: This remarkable victory in 2003 marked a significant milestone in Polmaise's history as the first club from the SBA Stirling district to win a British Isles title. The dramatic comeback from being 10-1 down early in the match to forcing an extra end, and then securing victory in such nail-biting fashion, made this achievement even more memorable. This win not only brought prestigious recognition to Polmaise but also helped Scotland secure the NatWest Trophy as the best overall nation in the championships.</em></p>
                                         </div>
                                     </article>
@@ -2617,16 +2619,16 @@
                                         <h3>Wednesday, July 24, 2002</h3>
                                         
                                         <!-- Featured image at top of article -->
-                                        <div style="text-align: center; margin-bottom: 20px;">
-                                            <img src="./Images/Archive/HistoricalArchive/IMG-20250509-WA0001.jpg" alt="Polmaise Bowling Club - Scottish Triples Champions 2002" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        <div class="historical-image-wrapper">
+                                            <img src="./Images/Archive/HistoricalArchive/IMG-20250509-WA0001.jpg" alt="Polmaise Bowling Club - Scottish Triples Champions 2002" class="zoomable-image historical-feature-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <h4>SUPER BOWL</h4>
                                         <h5>Polmaise trio snatch Scottish title in last gasp thriller</h5>
                                         
                                         <!-- Original newspaper clipping in square format -->
-                                        <div style="float: right; margin: 0 0 20px 20px; width: 250px; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                            <img src="./Images/Archive/HistoricalArchive/IMG-20250509-WA0002.jpg" alt="Original newspaper clipping of Scottish Triples Championship win" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                        <div class="historical-inline-image">
+                                            <img src="./Images/Archive/HistoricalArchive/IMG-20250509-WA0002.jpg" alt="Original newspaper clipping of Scottish Triples Championship win" class="zoomable-image historical-clipping-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <p><strong>SCOTTISH silverware was being flaunted in Fallin last Saturday evening.</strong></p>
@@ -2673,7 +2675,7 @@
                                         
                                         <p>Dunblane's Steven Eddie and Neal Nairn made an early exit in the pairs, losing 11-18 to Longside, and likewise in the senior fours where Doune Castle bowlers Hugh Reid, Tam Muirhead, Sandy McIntosh and David Lauder went down 11-18 to Rothesay.</p>
                                         
-                                        <div style="margin-top: 20px; border-top: 1px dashed #ccc; padding-top: 20px;">
+                                        <div class="historical-section">
                                             <p><em>Historical Note: This momentous victory in 2002 marked Polmaise Bowling Club's first national championship success, breaking a long drought for the Stirling area that stretched back to 1967. The dramatic fashion of the win - with skip Jason Williams burning the end when two shots down, then securing the three shots needed on the replay - demonstrated the skill and nerves of steel possessed by the Polmaise trio. This Scottish title also qualified the team for the 2003 British Isles Championships, where they would go on to achieve even greater glory.</em></p>
                                         </div>
                                     </article>
@@ -2690,15 +2692,15 @@
                                         <h3>Stirling Observer – Friday, June 17, 1988</h3>
                                         
                                         <!-- Featured image at top of article -->
-                                        <div style="text-align: center; margin-bottom: 20px;">
-                                            <img src="./Images/Archive/1988.jpg" alt="Polmaise Bowling Club - Scottish Top Ten Champions 1988" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        <div class="historical-image-wrapper">
+                                            <img src="./Images/Archive/1988.jpg" alt="Polmaise Bowling Club - Scottish Top Ten Champions 1988" class="zoomable-image historical-feature-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <h4>POLMAISE TOP OF THE POPS!</h4>
                                         
                                         <!-- Original newspaper clipping in square format -->
-                                        <div style="float: right; margin: 0 0 20px 20px; width: 250px; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                            <img src="./Images/Archive/HistoricalArchive/Stirling_Observer_17_June_1988_0022_Clip.jpg" alt="Original newspaper clipping of Polmaise Top of the Pops" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                        <div class="historical-inline-image">
+                                            <img src="./Images/Archive/HistoricalArchive/Stirling_Observer_17_June_1988_0022_Clip.jpg" alt="Original newspaper clipping of Polmaise Top of the Pops" class="zoomable-image historical-clipping-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <p>Polmaise Bowling Club were the pride of Stirlingshire on Sunday when they became Scottish Top Ten Champions. In the finals of the inter-county tournament in Edinburgh they won the title with a fine win over Bonnyrigg Bowling Club by six points to two.</p>
@@ -2731,15 +2733,15 @@
                                         <h3>Alloa Journal and Advertiser – Thursday, June 8th, 1961</h3>
                                         
                                         <!-- Featured image at top of article -->
-                                        <div style="text-align: center; margin-bottom: 20px;">
-                                            <img src="./Images/Archive/HistoricalArchive/Golden Jubilee.jpg" alt="Polmaise Bowling Club Golden Jubilee 1961" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        <div class="historical-image-wrapper">
+                                            <img src="./Images/Archive/HistoricalArchive/Golden Jubilee.jpg" alt="Polmaise Bowling Club Golden Jubilee 1961" class="zoomable-image historical-feature-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <h4>POLMAISE BOWLING CLUB CELEBRATE THEIR JUBILEE</h4>
                                         
                                         <!-- Original newspaper clipping in square format -->
-                                        <div style="float: right; margin: 0 0 20px 20px; width: 250px; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                            <img src="./Images/Archive/HistoricalArchive/8th June 1961.jpg" alt="Original newspaper clipping from 1961" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                        <div class="historical-inline-image">
+                                            <img src="./Images/Archive/HistoricalArchive/8th June 1961.jpg" alt="Original newspaper clipping from 1961" class="zoomable-image historical-clipping-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <p>This is a memorable week for the mining village of Fallin for the Polmaise Bowling Club are celebrating their golden jubilee and doing it in real royal fashion. After an enjoyable mixed game on Monday night, the club had as guests on Tuesday night the President of the Scottish Bowling Association, Mr David Preston, Stirling, and the members of the S.B.A. Council, together with the British Isles championship rink from Kirkcaldy skipped by Mr R. Whitehead.</p>
@@ -2820,20 +2822,20 @@
                                         <h3>Stirling Observer – Wednesday, September 9, 1942</h3>
                                         
                                         <!-- Featured image at top of article -->
-                                        <div style="text-align: center; margin-bottom: 20px;">
-                                            <img src="./Images/Archive/HistoricalArchive/Stirling_Observer_11_August_1942_0006_Clip.jpg" alt="J. Gwynne Sr. Championship Win 1942" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        <div class="historical-image-wrapper">
+                                            <img src="./Images/Archive/HistoricalArchive/Stirling_Observer_11_August_1942_0006_Clip.jpg" alt="J. Gwynne Sr. Championship Win 1942" class="zoomable-image historical-feature-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <h4>FALLIN BOWLING</h4>
                                         
                                         <!-- Original newspaper clipping in square format -->
-                                        <div style="float: right; margin: 0 0 20px 20px; width: 250px; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                            <img src="./Images/Archive/HistoricalArchive/J.Gwynne.jpg" alt="Original newspaper clipping from 1942" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                        <div class="historical-inline-image">
+                                            <img src="./Images/Archive/HistoricalArchive/J.Gwynne.jpg" alt="Original newspaper clipping from 1942" class="zoomable-image historical-clipping-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <p>The final of the championship was played on Wednesday between J. Gwynne and J. Gwynne, Jr., when the former won by 21 shots to 10. This is the ninth time J. Gwynne has been champion of the Polmaise Club.</p>
                                         
-                                        <div style="margin-top: 20px; border-top: 1px dashed #ccc; padding-top: 20px;">
+                                        <div class="historical-section">
                                             <p><em>Historical Note: This remarkable match between father and son represents one of the most unique moments in Polmaise Bowling Club's history. John Gwynne Sr. was a dominant force in the club during the 1920s-40s, with this victory marking his ninth and final club championship. What makes this match particularly special is that he faced his own son in the final, showing how bowling had become a family tradition at Polmaise. The article above - dated 11th August 1942, from the Stirling Observer, shows the incredible build up to the match and the results of that years semi-finals by both Father and Son.</em></p>
                                         </div>
                                     </article>
@@ -2850,8 +2852,8 @@
                                         <h3>Saturday, 20th July 1935</h3>
                                         
                                         <!-- Featured image at top of article - Updated -->
-                                        <div style="text-align: center; margin-bottom: 20px;">
-                                            <img src="./Images/Archive/HistoricalArchive/Macintosh 1935.jpg" alt="Macintosh Trophy Win 1935" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        <div class="historical-image-wrapper">
+                                            <img src="./Images/Archive/HistoricalArchive/Macintosh 1935.jpg" alt="Macintosh Trophy Win 1935" class="zoomable-image historical-feature-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <h4>WINNERS OF THE MACINTOSH TROPHY</h4>
@@ -2861,12 +2863,12 @@
                                             <!-- Use responsive layout with media query -->
                                             <div style="display: flex; flex-direction: column; gap: 15px; max-width: 250px;">
                                                 <!-- First thumbnail -->
-                                                <div style="width: 100%; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                                    <img src="./Images/Archive/HistoricalArchive/20th July 1935.jpg" alt="Original newspaper clipping from July 1935" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                                <div class="historical-clipping-frame">
+                                                    <img src="./Images/Archive/HistoricalArchive/20th July 1935.jpg" alt="Original newspaper clipping from July 1935" class="zoomable-image historical-clipping-image" onclick="openLightbox(this)">
                                                 </div>
                                                 <!-- Second thumbnail - New image -->
-                                                <div style="width: 100%; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                                    <img src="./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_27_July_1935_0012_Clip.jpg" alt="Bridge of Allan Gazette clipping about Macintosh Trophy" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                                <div class="historical-clipping-frame">
+                                                    <img src="./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_27_July_1935_0012_Clip.jpg" alt="Bridge of Allan Gazette clipping about Macintosh Trophy" class="zoomable-image historical-clipping-image" onclick="openLightbox(this)">
                                                 </div>
                                             </div>
                                         </div>
@@ -2957,7 +2959,7 @@
                                             </tbody>
                                         </table>
                                         
-                                        <div style="margin-top: 20px; border-top: 1px dashed #ccc; padding-top: 20px;">
+                                        <div class="historical-section">
                                             <p><em>Historical Note: This victory was particularly significant as it granted Polmaise permanent ownership of the prestigious Macintosh Trophy. After a decade of competition between clubs in the Stirling and District Bowling League, both Polmaise and Bridge of Allan had won the cup three times each. This final, decisive match—with its nail-biting finish where Polmaise came from behind to win by just 4 shots—determined that the trophy would remain forever at Fallin. The match featured some of the club's most notable players, including J. Gwynne Sr. and Jr., who would later face each other in the famous 1942 club championship final.</em></p>
                                         </div>
                                     </article>
@@ -2974,8 +2976,8 @@
                                         <h3>June 8th, 1914</h3>
                                         
                                         <!-- Featured image at top of article -->
-                                        <div style="text-align: center; margin-bottom: 20px;">
-                                            <img src="./Images/Archive/1914 - 1.jpg" alt="Polmaise Club's First Trophy Win 1914" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        <div class="historical-image-wrapper">
+                                            <img src="./Images/Archive/1914 - 1.jpg" alt="Polmaise Club's First Trophy Win 1914" class="zoomable-image historical-feature-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <h4>THE POLMAISE TROPHY - FALLIN CLUB'S FIRST VICTORY</h4>
@@ -2985,12 +2987,12 @@
                                             <!-- Use responsive layout with media query -->
                                             <div style="display: flex; flex-direction: column; gap: 15px; max-width: 250px;">
                                                 <!-- First thumbnail -->
-                                                <div style="width: 100%; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                                    <img src="./Images/Archive/HistoricalArchive/8th June 1914.jpg" alt="Original newspaper clipping from 1914" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                                <div class="historical-clipping-frame">
+                                                    <img src="./Images/Archive/HistoricalArchive/8th June 1914.jpg" alt="Original newspaper clipping from 1914" class="zoomable-image historical-clipping-image" onclick="openLightbox(this)">
                                                 </div>
                                                 <!-- Second thumbnail -->
-                                                <div style="width: 100%; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                                    <img src="./Images/Archive/HistoricalArchive/10th June 1914.jpg" alt="Additional newspaper clipping from 1914" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                                <div class="historical-clipping-frame">
+                                                    <img src="./Images/Archive/HistoricalArchive/10th June 1914.jpg" alt="Additional newspaper clipping from 1914" class="zoomable-image historical-clipping-image" onclick="openLightbox(this)">
                                                 </div>
                                             </div>
                                         </div>
@@ -3047,7 +3049,7 @@
                                             </tbody>
                                         </table>
                                         
-                                        <div style="margin-top: 20px; border-top: 1px dashed #ccc; padding-top: 20px;">
+                                        <div class="historical-section">
                                             <p><em>Historical Note: This victory marks a significant milestone in Polmaise Bowling Club's history - their first trophy win, just three years after the club's founding. The "youngest combination in the competition" showed their developing skill by defeating more established clubs from Cowie, Cambusbarron, and Borestone with a substantial 40-shot margin. This achievement laid the foundation for many future successes and helped establish Polmaise as a competitive force in local bowling.</em></p>
                                         </div>
                                     </article>
@@ -3064,15 +3066,15 @@
                                         <h3>Bridge of Allan Gazette - 15th July 1911</h3>
                                         
                                         <!-- Featured image at top of article -->
-                                        <div style="text-align: center; margin-bottom: 20px;">
-                                            <img src="./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_15_July_1911_0005_Clip.jpg" alt="First Match on Polmaise Green 1911" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        <div class="historical-image-wrapper">
+                                            <img src="./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_15_July_1911_0005_Clip.jpg" alt="First Match on Polmaise Green 1911" class="zoomable-image historical-feature-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <h4>FALLIN BOWLING - FIRST MATCH ON NEW GREEN - LOCAL CLUB DEFEATED</h4>
                                         
                                         <!-- Original newspaper clipping in square format -->
-                                        <div style="float: right; margin: 0 0 20px 20px; width: 250px; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                            <img src="./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_15_July_1911_0005_Clip.jpg" alt="Original newspaper clipping from July 1911" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                        <div class="historical-inline-image">
+                                            <img src="./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_15_July_1911_0005_Clip.jpg" alt="Original newspaper clipping from July 1911" class="zoomable-image historical-clipping-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <p>On Wednesday evening five rinks from the Spittalmyre Bowling Club visited Polmaise Bowling Club, when a most enjoyable game was contested, which ended in a victory for Spittalmyre with 32 shots up, the scores being :- Spittalmyre,106; Polmaise, 72.</p>
@@ -3083,7 +3085,7 @@
                                         
                                         <p>He, of course, was also delighted at the victory for Spittalmyre, but greater than the victory was the good feeling and friendly spirit which existed all through the game, and he hoped that these estimable traits would continue amongst them. He had much pleasure in asking for three hearty cheers for the Fallin club members, and three cheers for their president, Mr Todd. (Cheers.)</p>
                                         
-                                        <div style="margin-top: 20px; border-top: 1px dashed #ccc; padding-top: 20px;">
+                                        <div class="historical-section">
                                             <p><em>Historical Note: This article captures the very first competitive match played on the new Polmaise Bowling Club green, just over a month after its official opening in June 1911. Despite the defeat, the gracious sportsmanship shown by both clubs set the tone for what would become a century-long tradition of friendly competition. President Todd's optimistic prediction that "Polmaise would yet be able to alter the figures" would prove prophetic, as the club went on to achieve numerous successes in the years to come, beginning with their first trophy win in 1914.</em></p>
                                         </div>
                                     </article>
@@ -3100,15 +3102,15 @@
                                         <h3>A Gala Day at Fallin - June 3, 1911</h3>
                                         
                                         <!-- Featured image at top of article -->
-                                        <div style="text-align: center; margin-bottom: 20px;">
-                                            <img src="./Images/Archive/HistoricalArchive/Opening of Green.jpg" alt="Opening of Bowling Green 1911" class="zoomable-image" onclick="openLightbox(this)" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
+                                        <div class="historical-image-wrapper">
+                                            <img src="./Images/Archive/HistoricalArchive/Opening of Green.jpg" alt="Opening of Bowling Green 1911" class="zoomable-image historical-feature-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <h4>Opening of Bowling Green and Sale of Work</h4>
                                         
                                         <!-- Original newspaper clipping in square format -->
-                                        <div style="float: right; margin: 0 0 20px 20px; width: 250px; height: 250px; overflow: hidden; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);">
-                                            <img src="./Images/Archive/HistoricalArchive/Opening of Green News.jpg" alt="Original newspaper clipping from 1911" class="zoomable-image" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;">
+                                        <div class="historical-inline-image">
+                                            <img src="./Images/Archive/HistoricalArchive/Opening of Green News.jpg" alt="Original newspaper clipping from 1911" class="zoomable-image historical-clipping-image" onclick="openLightbox(this)">
                                         </div>
                                         
                                         <p><em>Photo by Bennett, St. Ninians.</em></p>
@@ -3251,45 +3253,11 @@
         <div id="lightbox-caption" class="lightbox-caption"></div>
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Polmaise Bowling Club</h3>
-                    <p>Address: Main Street,</p>
-                    <p>Fallin, Stirling, FK7 7HT</p>
-                    <p>Phone: 01786 811333</p>
-                    <p>Email: polmaisebc@gmail.com </p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="membership.html">Membership</a></li>
-                        <li><a href="fixtures.html">Fixtures</a></li>
-                        <li><a href="live-scoring.html">Live Scores</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Connect With Us</h3>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+{% include "footer.njk" %}
 
-    <script src="script.js"></script>
-    
-    <script>
+{% include "scripts.njk" %}
+
+<script>
         // Lightbox functionality
         function openLightbox(img) {
             const lightbox = document.getElementById("imageLightbox");
@@ -3451,5 +3419,7 @@
             }
         }
     </script>
+
 </body>
-</html> 
+
+</html>

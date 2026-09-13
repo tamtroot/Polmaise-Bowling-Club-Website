@@ -1,0 +1,76 @@
+{
+  "pages": [
+    {
+      "path": "/index.html",
+      "bytes": 11041
+    },
+    {
+      "path": "/about.html",
+      "bytes": 50579
+    },
+    {
+      "path": "/membership.html",
+      "bytes": 18760
+    },
+    {
+      "path": "/fixtures.html",
+      "bytes": 83099
+    },
+    {
+      "path": "/news.html",
+      "bytes": 275244
+    },
+    {
+      "path": "/gallery.html",
+      "bytes": 250663
+    },
+    {
+      "path": "/contact.html",
+      "bytes": 24026
+    },
+    {
+      "path": "/sponsors.html",
+      "bytes": 29352
+    },
+    {
+      "path": "/honours.html",
+      "bytes": 56035
+    },
+    {
+      "path": "/archive.html",
+      "bytes": 86648
+    },
+    {
+      "path": "/history.html",
+      "bytes": 29961
+    },
+    {
+      "path": "/signup.html",
+      "bytes": 19398
+    },
+    {
+      "path": "/live-scoring.html",
+      "bytes": 9970
+    },
+    {
+      "path": "/News articles/presentation-dance-2025.html",
+      "bytes": 30920
+    },
+    {
+      "path": "/PhotoAlbums/presentation-dance-2025.html",
+      "bytes": 12297
+    },
+    {
+      "path": "/PhotoAlbums/charlie-mcneil-memorial-2025.html",
+      "bytes": 13358
+    },
+    {
+      "path": "/PhotoAlbums/top-15-final-2025.html",
+      "bytes": 13835
+    },
+    {
+      "path": "/PhotoAlbums/twa-peters-memorial-2025.html",
+      "bytes": 13748
+    }
+  ]
+}

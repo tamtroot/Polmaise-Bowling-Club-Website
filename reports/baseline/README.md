@@ -26,5 +26,8 @@ are the machine-readable source of truth used to distinguish known defects from
 new regressions. `measurements/` stores informational values such as page
 resource weights and validation counts.
 
+`reports/stage-2a/` preserves the accepted Stage 2A rendered HTML. The
+build-output test compares that structure with the current generated pages.
+
 The baseline must not be updated to make an unexplained test pass. Update it only
 when the change in findings is deliberate and reviewed.

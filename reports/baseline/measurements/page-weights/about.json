@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 12,
-  "totalBytes": 6100379,
+  "totalBytes": 6100675,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 50579
+      "bytes": 50501
     },
     "image": {
       "count": 9,
@@ -26,7 +26,7 @@
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27126
+      "bytes": 27500
     }
   },
   "largestResources": [
@@ -88,14 +88,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/about.html",
-      "bytes": 50579,
+      "bytes": 50501,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27126,
+      "bytes": 27500,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -118,7 +118,7 @@
   "resources": [
     {
       "url": "http://127.0.0.1:4173/about.html",
-      "bytes": 50579,
+      "bytes": 50501,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -195,7 +195,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27126,
+      "bytes": 27500,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

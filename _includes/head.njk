@@ -1,0 +1,26 @@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% if headVariant == "icon-first" %}
+    <link rel="icon" type="image/x-icon" href="{{ assetPrefix }}Images/polmaise_logo_favicon.png">
+    <title>{{ pageTitle | safe }}</title>
+    <link rel="stylesheet" href="{{ prefix }}styles.css">
+{% elif headVariant == "styles-first" %}
+    <title>{{ pageTitle | safe }}</title>
+    <link rel="stylesheet" href="{{ prefix }}styles.css">
+    <link rel="icon" type="image/x-icon" href="{{ assetPrefix }}Images/polmaise_logo_favicon.png">
+{% else %}
+    <title>{{ pageTitle | safe }}</title>
+    <link rel="icon" type="image/x-icon" href="{{ assetPrefix }}Images/polmaise_logo_favicon.png">
+    <link rel="stylesheet" href="{{ prefix }}styles.css">
+{% endif %}
+    <link href="https://fonts.googleapis.com/css2?{{ fontFamilies | safe }}&display=swap" rel="stylesheet">
+{% if jquery %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+{% endif %}
+{% if lightboxCss %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+{% endif %}
+{% if lightboxScript == "head" %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+{% endif %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">

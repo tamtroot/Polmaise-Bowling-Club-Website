@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 215,
-  "totalBytes": 13947105,
+  "totalBytes": 13944087,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 250663
+      "bytes": 247271
     },
     "image": {
       "count": 213,
@@ -22,7 +22,7 @@
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27126
+      "bytes": 27500
     }
   },
   "largestResources": [
@@ -63,7 +63,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/gallery.html",
-      "bytes": 250663,
+      "bytes": 247271,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -195,17 +195,17 @@
       "contentType": "image/jpeg"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/Archive/Photo%20185-thumb.jpg",
-      "bytes": 27211,
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 27500,
       "status": 200,
-      "resourceType": "image",
-      "contentType": "image/jpeg"
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
     }
   ],
   "resources": [
     {
       "url": "http://127.0.0.1:4173/gallery.html",
-      "bytes": 250663,
+      "bytes": 247271,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -1703,7 +1703,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27126,
+      "bytes": 27500,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

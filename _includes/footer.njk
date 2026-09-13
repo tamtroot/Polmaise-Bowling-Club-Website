@@ -1,0 +1,39 @@
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polmaise Bowling Club</h3>
+                    <p>Address: Main Street,</p>
+                    <p>Fallin, Stirling, FK7 7HT</p>
+                    <p>Phone: 01786 811333</p>
+                    <p>Email: polmaisebc@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="{{ prefix }}index.html">Home</a></li>
+                        <li><a href="{{ prefix }}about.html">About Us</a></li>
+                        <li><a href="{{ prefix }}membership.html">Membership</a></li>
+                        <li><a href="{{ prefix }}fixtures.html">Fixtures</a></li>
+                        <li><a href="{{ prefix }}live-scoring.html">Live Scores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+{% if facebookLink %}
+                        <a href="https://www.facebook.com/p/Polmaise-Bowling-Club-100008363985804/" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+{% else %}
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+{% endif %}
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>

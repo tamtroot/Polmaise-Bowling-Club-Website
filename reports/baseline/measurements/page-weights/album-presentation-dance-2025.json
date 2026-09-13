@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 41,
-  "totalBytes": 36024644,
+  "totalBytes": 36021866,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 12297
+      "bytes": 9145
     },
     "image": {
       "count": 38,
@@ -26,7 +26,7 @@
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27126
+      "bytes": 27500
     }
   },
   "largestResources": [
@@ -475,7 +475,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/PhotoAlbums/presentation-dance-2025.html",
-      "bytes": 12297,
+      "bytes": 9145,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -489,7 +489,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27126,
+      "bytes": 27500,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

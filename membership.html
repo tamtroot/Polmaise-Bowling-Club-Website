@@ -1,143 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership - Polmaise Bowling Club</title>
-    <link rel="icon" type="image/x-icon" href="./Images/polmaise_logo_favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <style>
-        /* Lightbox styles */
-        .lightbox {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            overflow: auto;
-            text-align: center;
-        }
-        
-        .lightbox-content {
-            margin: auto;
-            display: block;
-            max-width: 90%;
-            max-height: 90%;
-            margin-top: 50px;
-        }
-        
-        .lightbox-caption {
-            margin: 20px auto;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: white;
-            font-family: 'Open Sans', sans-serif;
-        }
-        
-        .lightbox-close {
-            position: absolute;
-            top: 15px;
-            right: 25px;
-            color: white;
-            font-size: 35px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        
-        .history-images {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px; /* Small gap between images for visual separation */
-            justify-content: center;
-        }
-        
-        .history-images img {
-            cursor: pointer;
-            transition: opacity 0.3s;
-            max-width: calc(50% - 5px); /* 2 images per row with gap consideration */
-            height: auto; /* Maintain aspect ratio */
-            object-fit: contain; /* Ensure image isn't stretched */
-            margin: 0; /* Remove default margins */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-        }
-        
-        /* Adjust container to better handle landscape images */
-        .history-content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        
-        /* Add more specific handling for landscape images */
-        @media (min-width: 769px) {
-            .history-images {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-            }
-            
-            .history-images img {
-                width: 100%;
-                max-width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
-        }
-        
-        .history-images img:hover {
-            opacity: 0.8;
-        }
-        
-        @media only screen and (max-width: 768px) {
-            .lightbox-content {
-                max-width: 100%;
-                margin-top: 20px;
-            }
-            
-            .history-images img {
-                max-width: 100%; /* Full width on mobile */
-                margin-bottom: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <div class="logo-image">
-                    <img src="./Images/club-logo.png" alt="Polmaise Bowling Club Logo">
-                </div>
-                <div class="logo-text">
-                    <h1>Polmaise Bowling Club</h1>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="membership.html" class="active">Membership</a></li>
-                    <li><a href="fixtures.html">Fixtures</a></li>
-                    <li><a href="news.html">News & Events</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="sponsors.html">Sponsors</a></li>
-                    <li><a href="honours.html">Honours</a></li>
-                </ul>
-            </nav>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
+---
+pageTitle: "Membership - Polmaise Bowling Club"
+permalink: "/membership.html"
+navActive: "membership"
+prefix: ""
+assetPrefix: "./"
+headVariant: "standard"
+mobileMenuIcon: "fas fa-bars"
+mobileNavDropdown: false
+fontFamilies: "family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600"
+scriptJs: true
+jquery: false
+lightboxCss: false
+lightboxScript: false
+facebookLink: true
+bodyClass: ""
+---
 
-    <section class="page-banner">
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+{% include "head.njk" %}
+
+</head>
+
+<body>
+
+{% include "header.njk" %}
+
+<section class="page-banner">
         <div class="banner-content">
             <h2>Membership</h2>
             <p>Join our community and enjoy the benefits of being a member</p>
@@ -365,42 +258,10 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Polmaise Bowling Club</h3>
-                    <p>Address: Main Street,</p>
-                    <p>Fallin, Stirling, FK7 7HT</p>
-                    <p>Phone: 01786 811333</p>
-                    <p>Email: polmaisebc@gmail.com </p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="membership.html">Membership</a></li>
-                        <li><a href="fixtures.html">Fixtures</a></li>
-                        <li><a href="live-scoring.html">Live Scores</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Connect With Us</h3>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/p/Polmaise-Bowling-Club-100008363985804/" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+{% include "footer.njk" %}
 
-    <script src="script.js"></script>
+{% include "scripts.njk" %}
+
 </body>
-</html> 
+
+</html>

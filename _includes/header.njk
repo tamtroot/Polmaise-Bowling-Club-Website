@@ -1,0 +1,41 @@
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="{{ assetPrefix }}Images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Polmaise Bowling Club</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ prefix }}index.html"{% if navActive == "home" %} class="active"{% endif %}>Home</a></li>
+                    <li><a href="{{ prefix }}about.html"{% if navActive == "about" %} class="active"{% endif %}>About Us</a></li>
+                    <li><a href="{{ prefix }}membership.html"{% if navActive == "membership" %} class="active"{% endif %}>Membership</a></li>
+                    <li><a href="{{ prefix }}fixtures.html"{% if navActive == "fixtures" %} class="active"{% endif %}>Fixtures</a></li>
+                    <li><a href="{{ prefix }}news.html"{% if navActive == "news" %} class="active"{% endif %}>News & Events</a></li>
+                    <li><a href="{{ prefix }}gallery.html"{% if navActive == "gallery" %} class="active"{% endif %}>Gallery</a></li>
+                    <li><a href="{{ prefix }}contact.html"{% if navActive == "contact" %} class="active"{% endif %}>Contact Us</a></li>
+                    <li><a href="{{ prefix }}sponsors.html"{% if navActive == "sponsors" %} class="active"{% endif %}>Sponsors</a></li>
+                    <li><a href="{{ prefix }}honours.html"{% if navActive == "honours" %} class="active"{% endif %}>Honours</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="{{ mobileMenuIcon }}"></i>
+            </div>
+{% if mobileNavDropdown %}
+            <div class="mobile-nav-dropdown" id="mobileNavDropdown">
+                <a href="{{ prefix }}index.html">Home</a>
+                <a href="{{ prefix }}about.html">About Us</a>
+                <a href="{{ prefix }}membership.html">Membership</a>
+                <a href="{{ prefix }}fixtures.html">Fixtures</a>
+                <a href="{{ prefix }}news.html">News & Events</a>
+                <a href="{{ prefix }}gallery.html">Gallery</a>
+                <a href="{{ prefix }}contact.html">Contact Us</a>
+                <a href="{{ prefix }}sponsors.html">Sponsors</a>
+                <a href="{{ prefix }}honours.html">Honours</a>
+            </div>
+{% endif %}
+        </div>
+    </header>
