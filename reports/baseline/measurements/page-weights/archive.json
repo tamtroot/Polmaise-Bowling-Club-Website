@@ -9,16 +9,20 @@
     "height": 900
   },
   "status": 200,
-  "resourceCount": 121,
-  "totalBytes": 186204781,
+  "resourceCount": 122,
+  "totalBytes": 186209081,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 76974
+      "bytes": 76035
     },
     "image": {
       "count": 119,
       "bytes": 186100307
+    },
+    "script": {
+      "count": 1,
+      "bytes": 5239
     },
     "stylesheet": {
       "count": 1,
@@ -205,7 +209,7 @@
   "resources": [
     {
       "url": "http://127.0.0.1:4173/archive.html",
-      "bytes": 76974,
+      "bytes": 76035,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -1042,6 +1046,13 @@
       "status": 200,
       "resourceType": "image",
       "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 5239,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",

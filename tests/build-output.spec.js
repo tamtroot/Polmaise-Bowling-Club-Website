@@ -71,6 +71,24 @@ async function compareFileTrees(sourceDirectory, outputDirectory) {
 
 function normaliseDocument() {
   const ignoredTags = new Set(["script", "style"]);
+  const ignoredEventAttributes = new Set([
+    "data-action",
+    "data-album-link",
+    "data-album-open",
+    "data-back-to-albums",
+    "data-close-album",
+    "data-close-privacy",
+    "data-cookie-action",
+    "data-href",
+    "data-history-archive-toggle",
+    "data-history-article",
+    "data-history-close",
+    "data-image-viewer",
+    "data-news-archive-toggle",
+    "data-news-article",
+    "data-news-close",
+    "data-purchase-message",
+  ]);
   const ignoredCssClasses = new Set([
     "gallery-image-top",
     "gallery-image-top-position",
@@ -105,12 +123,17 @@ function normaliseDocument() {
       return null;
     }
 
-    if (node.tagName.toLowerCase() === "style") {
+    if (ignoredTags.has(node.tagName.toLowerCase())) {
       return null;
     }
 
     const attributes = [...node.attributes]
-      .filter((attribute) => attribute.name !== "style")
+      .filter(
+        (attribute) =>
+          attribute.name !== "style" &&
+          !attribute.name.startsWith("on") &&
+          !ignoredEventAttributes.has(attribute.name),
+      )
       .map((attribute) => {
         if (attribute.name !== "class") {
           return [attribute.name, attribute.value];

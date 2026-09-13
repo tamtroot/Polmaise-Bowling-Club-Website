@@ -8,7 +8,7 @@ headVariant: "styles-first"
 mobileMenuIcon: "fas fa-bars"
 mobileNavDropdown: false
 fontFamilies: "family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600"
-scriptJs: false
+scriptJs: true
 jquery: true
 lightboxCss: true
 lightboxScript: "end"
@@ -1085,22 +1085,7 @@ bodyClass: ""
 <script>
         $(document).ready(function() {
             // Initialize lightbox
-            lightbox.option({
-                'resizeDuration': 200,
-                'wrapAround': true,
-                'albumLabel': 'Image %1 of %2',
-                'fadeDuration': 300,
-                'imageFadeDuration': 300,
-                'positionFromTop': 50,
-                'maxWidth': 1200,
-                'maxHeight': 900,
-                'fitImagesInViewport': true,
-                'disableScrolling': false,
-                'showImageNumberLabel': true,
-                'alwaysShowNavOnTouchDevices': true
-            });
-
-            // Add thumbnail loading for existing images
+// Add thumbnail loading for existing images
             $('.archive-item img').each(function() {
                 const img = this;
                 const fullSrc = img.src;
@@ -1148,19 +1133,7 @@ bodyClass: ""
 
             // Show the photo gallery section by default
             $('.archive-section').show();
-            
-            // Mobile menu toggle
-            $('.mobile-menu').click(function() {
-                $('nav ul').toggleClass('show');
-            });
-            
-            // Close mobile menu when a link is clicked
-            $('nav ul li a').click(function() {
-                if ($('nav ul').hasClass('show')) {
-                    $('nav ul').removeClass('show');
-                }
-            });
-        });
+});
     </script>
 
 </body>

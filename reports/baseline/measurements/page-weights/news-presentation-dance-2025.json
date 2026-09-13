@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 5,
-  "totalBytes": 2930059,
+  "totalBytes": 2919465,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 30869
+      "bytes": 30693
     },
     "image": {
       "count": 2,
@@ -22,7 +22,7 @@
     },
     "script": {
       "count": 1,
-      "bytes": 15657
+      "bytes": 5239
     },
     "stylesheet": {
       "count": 1,
@@ -46,7 +46,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/News%20articles/presentation-dance-2025.html",
-      "bytes": 30869,
+      "bytes": 30693,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -60,7 +60,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 15657,
+      "bytes": 5239,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
@@ -83,14 +83,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/News%20articles/presentation-dance-2025.html",
-      "bytes": 30869,
+      "bytes": 30693,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 15657,
+      "bytes": 5239,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"

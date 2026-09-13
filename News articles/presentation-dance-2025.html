@@ -722,7 +722,7 @@ bodyClass: ""
         <!-- Call to Action Section -->
         <section class="cta-section">
             <h2 class="content-section" style="text-align: center; margin-bottom: 2rem;">Get Your Tickets Now!</h2>
-            <a href="#" class="cta-button" onclick="alert('Please see David Stewart or committee members to purchase tickets!')">
+            <a href="#" class="cta-button" data-purchase-message>
                 <span style="position: relative; z-index: 2;">Secure Your Tickets</span>
             </a>
             <p class="cta-text">Tickets are available now – please see David Stewart or committee members to secure yours.</p>
@@ -750,21 +750,15 @@ bodyClass: ""
             const mobileMenuButton = document.querySelector('.mobile-menu');
             const mobileDropdown = document.getElementById('mobileNavDropdown');
             
-            console.log('Mobile menu button found:', !!mobileMenuButton);
-            console.log('Mobile dropdown found:', !!mobileDropdown);
-            
             if (mobileMenuButton && mobileDropdown) {
                 mobileMenuButton.addEventListener('click', function(e) {
                     e.preventDefault();
                     e.stopPropagation();
                     
-                    console.log('Mobile menu button clicked');
-                    
                     // Toggle the dropdown
                     if (mobileDropdown.classList.contains('show')) {
                         // Hide menu
                         mobileDropdown.classList.remove('show');
-                        console.log('Menu closed');
                         
                         // Change icon back to hamburger
                         const icon = mobileMenuButton.querySelector('i');
@@ -775,7 +769,6 @@ bodyClass: ""
                     } else {
                         // Show menu
                         mobileDropdown.classList.add('show');
-                        console.log('Menu opened');
                         
                         // Change icon to X
                         const icon = mobileMenuButton.querySelector('i');
@@ -810,8 +803,13 @@ bodyClass: ""
                         }
                     }
                 });
-            } else {
-                console.error('Mobile menu elements not found');
+            }
+
+            const purchaseLink = document.querySelector('[data-purchase-message]');
+            if (purchaseLink) {
+                purchaseLink.addEventListener('click', function () {
+                    alert('Please see David Stewart or committee members to purchase tickets!');
+                });
             }
         });
     </script>

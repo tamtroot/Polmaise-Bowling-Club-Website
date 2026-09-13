@@ -341,7 +341,7 @@ bodyClass: ""
                 <ul class="timeline">
                     <li>
                         <div class="timeline-date">1911</div>
-                        <div class="timeline-content" onclick="showHistoricalArticle('1911-founding')">
+                        <div class="timeline-content" data-history-article="1911-founding">
                             <h4>Club Founded</h4>
                             <p>Polmaise Bowling Club was established with a £286 donation from the Gothenburg Public House, providing a recreational outlet for local miners.</p>
                             <span class="view-article-btn">
@@ -352,7 +352,7 @@ bodyClass: ""
                     </li>
                     <li>
                         <div class="timeline-date">1911</div>
-                        <div class="timeline-content" onclick="showHistoricalArticle('1911-first-match')">
+                        <div class="timeline-content" data-history-article="1911-first-match">
                             <h4>First Competitive Match</h4>
                             <p>The club played its first competitive match against Spittalmyre Bowling Club, marking the beginning of its sporting journey.</p>
                             <span class="view-article-btn">
@@ -363,7 +363,7 @@ bodyClass: ""
                     </li>
                     <li>
                         <div class="timeline-date">1914</div>
-                        <div class="timeline-content" onclick="showHistoricalArticle('history-1914')">
+                        <div class="timeline-content" data-history-article="history-1914">
                             <h4>First Trophy Win</h4>
                             <p>Polmaise win their first trophy in The Polmaise Trophy in a 101 - 61 win against various clubs.</p>
                             <span class="view-article-btn">
@@ -374,7 +374,7 @@ bodyClass: ""
                     </li>
                     <li>
                         <div class="timeline-date">1920s-1930s</div>
-                        <div class="timeline-content" onclick="showChampionsBoard()">
+                        <div class="timeline-content" data-action="show-champions-board">
                             <h4>Early Champions</h4>
                             <p>John Gwynne Snr. emerged as a dominant force, winning nine club championships, with his first title in 1913.</p>
                             <span class="view-article-btn">
@@ -385,7 +385,7 @@ bodyClass: ""
                     </li>
                     <li>
                         <div class="timeline-date">1935</div>
-                        <div class="timeline-content" onclick="showHistoricalArticle('history-1935')">
+                        <div class="timeline-content" data-history-article="history-1935">
                             <h4>MacIntosh Trophy</h4>
                             <p>Polmaise win permanent ownership of the MacIntosh Trophy after a nail-biting victory over Bridge of Allan Bowling Club.</p>
                             <span class="view-article-btn">
@@ -396,7 +396,7 @@ bodyClass: ""
                     </li>
                     <li>
                         <div class="timeline-date">1942</div>
-                        <div class="timeline-content" onclick="showHistoricalArticle('history-1942')">
+                        <div class="timeline-content" data-history-article="history-1942">
                             <h4>Father vs. Son Championship Final</h4>
                             <p>John Gwynne Snr. faced his son in the club championship final, winning his last title.</p>
                             <span class="view-article-btn">
@@ -407,7 +407,7 @@ bodyClass: ""
                     </li>
                     <li>
                         <div class="timeline-date">1988</div>
-                        <div class="timeline-content" onclick="showHistoricalArticle('history-1988')">
+                        <div class="timeline-content" data-history-article="history-1988">
                             <h4>National Top Ten Champions</h4>
                             <p>Polmaise won the National Inter-County Top Ten competition, marking one of the club's greatest achievements.</p>
                             <span class="view-article-btn">
@@ -425,7 +425,7 @@ bodyClass: ""
                     </li>
                     <li>
                         <div class="timeline-date">2002</div>
-                        <div class="timeline-content" onclick="showHistoricalArticle('history-2002')">
+                        <div class="timeline-content" data-history-article="history-2002">
                             <h4>Scottish Triples Champions</h4>
                             <p>John Johnstone, Derek Logie and Jason Williams secured the club's first national championship.</p>
                             <span class="view-article-btn">
@@ -436,7 +436,7 @@ bodyClass: ""
                     </li>
                     <li>
                         <div class="timeline-date">2003</div>
-                        <div class="timeline-content" onclick="showHistoricalArticle('history-2003')">
+                        <div class="timeline-content" data-history-article="history-2003">
                             <h4>British Isles Triples Champions</h4>
                             <p>The club's Scottish champions went on to win Polmaise's first British Isles title.</p>
                             <span class="view-article-btn">
@@ -461,7 +461,7 @@ bodyClass: ""
                     </li>
                     <li>
                         <div class="timeline-date">2013</div>
-                        <div class="timeline-content" onclick="showHistoricalArticle('history-2013')">
+                        <div class="timeline-content" data-history-article="history-2013">
                             <h4>Scottish Mixed Pairs Champions</h4>
                             <p>Rita Smith and Gary Malcolmson brought national glory to Polmaise with a dominant performance.</p>
                             <span class="view-article-btn">
@@ -493,7 +493,7 @@ bodyClass: ""
                     </li>
                     <li>
                         <div class="timeline-date">2023</div>
-                        <div class="timeline-content" onclick="showImage('./Images/gallery47.webp')">
+                        <div class="timeline-content" data-image-viewer="./Images/gallery47.webp">
                             <h4>Historic 12-Trophy Season</h4>
                             <p>The club achieved unprecedented success, securing twelve major trophies in a single season.</p>
                             <span class="view-article-btn">
@@ -564,42 +564,7 @@ bodyClass: ""
 {% include "scripts.njk" %}
 
 <script>
-        // Lightbox functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const lightbox = document.getElementById('imageLightbox');
-            const lightboxImg = document.getElementById('lightboxImage');
-            const lightboxCaption = document.getElementById('lightboxCaption');
-            const lightboxClose = document.querySelector('.lightbox-close');
-            const images = document.querySelectorAll('.lightbox-image');
-            
-            // Open lightbox when an image is clicked
-            images.forEach(image => {
-                image.addEventListener('click', function() {
-                    lightbox.style.display = 'block';
-                    lightboxImg.src = this.src;
-                    lightboxCaption.innerHTML = this.alt;
-                });
-            });
-            
-            // Close lightbox when X is clicked
-            lightboxClose.addEventListener('click', function() {
-                lightbox.style.display = 'none';
-            });
-            
-            // Close lightbox when clicking outside the image
-            lightbox.addEventListener('click', function(e) {
-                if (e.target === lightbox) {
-                    lightbox.style.display = 'none';
-                }
-            });
-            
-            // Close lightbox with Escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && lightbox.style.display === 'block') {
-                    lightbox.style.display = 'none';
-                }
-            });
-        });
+        (function () {
 
         // Historical articles data
         const historicalArticles = {
@@ -891,6 +856,25 @@ bodyClass: ""
                 if (e.target === modal) modal.remove();
             });
         }
+
+        document.addEventListener('click', function (event) {
+            const articleTrigger = event.target.closest('[data-history-article]');
+            if (articleTrigger) {
+                showHistoricalArticle(articleTrigger.dataset.historyArticle);
+                return;
+            }
+
+            if (event.target.closest('[data-action="show-champions-board"]')) {
+                showChampionsBoard();
+                return;
+            }
+
+            const imageTrigger = event.target.closest('[data-image-viewer]');
+            if (imageTrigger) {
+                showImage(imageTrigger.dataset.imageViewer);
+            }
+        });
+        })();
     </script>
 
 </body>

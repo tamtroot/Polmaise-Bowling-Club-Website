@@ -1,6 +1,7 @@
 import { createRequire } from "node:module";
 import { test } from "@playwright/test";
 import { compareOrUpdateBaseline, writeMeasurement } from "./helpers/baseline.mjs";
+import { freezeBaselineClock } from "./helpers/baseline-clock.mjs";
 import { SITE_PAGES } from "./helpers/site-pages.mjs";
 
 const require = createRequire(import.meta.url);
@@ -49,6 +50,8 @@ test.describe("page audit baseline", () => {
       const pageErrors = [];
       const failedRequests = [];
       const responseTasks = new Map();
+
+      await freezeBaselineClock(page);
 
       page.on("console", (message) => {
         if (message.type() === "error") {

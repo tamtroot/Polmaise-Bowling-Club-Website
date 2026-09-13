@@ -150,8 +150,8 @@ bodyClass: ""
                 We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. This site uses Google Maps which requires cookies to function properly.
             </div>
             <div class="cookie-buttons">
-                <button type="button" class="cookie-btn accept-cookies" onclick="acceptCookies()">Accept</button>
-                <button type="button" class="cookie-btn decline-cookies" onclick="declineCookies()">Decline</button>
+                <button type="button" class="cookie-btn accept-cookies" data-cookie-action="accept">Accept</button>
+                <button type="button" class="cookie-btn decline-cookies" data-cookie-action="decline">Decline</button>
             </div>
         </div>
     </div>
@@ -322,7 +322,7 @@ bodyClass: ""
 <!-- Privacy Policy Modal -->
     <div id="privacyModal" class="privacy-modal">
         <div class="privacy-modal-content">
-            <span class="privacy-close" onclick="closePrivacyPolicy()">&times;</span>
+            <span class="privacy-close" data-close-privacy>&times;</span>
             <h2>Privacy Policy</h2>
             <h3>Information Collection and Use</h3>
             <p>When you submit information through our contact form, we collect the following personal data:</p>
@@ -361,6 +361,7 @@ bodyClass: ""
 {% include "scripts.njk" %}
 
 <script>
+        (function () {
         // Cookie consent handling
         function showCookieBanner() {
             if (!localStorage.getItem('cookieConsent')) {
@@ -397,7 +398,7 @@ bodyClass: ""
                     message.id = 'map-disabled-message';
                     message.style.padding = '20px';
                     message.style.textAlign = 'center';
-                    message.innerHTML = 'Google Maps has been disabled due to cookie preferences. <button type="button" onclick="acceptCookies()" class="btn primary-btn">Enable Maps</button>';
+                    message.innerHTML = 'Google Maps has been disabled due to cookie preferences. <button type="button" data-cookie-action="accept" class="btn primary-btn">Enable Maps</button>';
                     mapParent.appendChild(message);
                 }
             }
@@ -414,22 +415,9 @@ bodyClass: ""
         });
 
         // Privacy Policy Modal Functions
-        function openPrivacyPolicy() {
-            document.getElementById('privacyModal').style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
-        }
-
         function closePrivacyPolicy() {
             document.getElementById('privacyModal').style.display = 'none';
             document.body.style.overflow = 'auto'; // Restore scrolling
-        }
-
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            const modal = document.getElementById('privacyModal');
-            if (event.target == modal) {
-                closePrivacyPolicy();
-            }
         }
 
         // Close modal with Escape key
@@ -438,6 +426,28 @@ bodyClass: ""
                 closePrivacyPolicy();
             }
         });
+
+        document.addEventListener('click', function (event) {
+            const cookieAction = event.target.closest('[data-cookie-action]');
+            if (cookieAction) {
+                if (cookieAction.dataset.cookieAction === 'accept') {
+                    acceptCookies();
+                } else {
+                    declineCookies();
+                }
+                return;
+            }
+
+            if (event.target.closest('[data-close-privacy]')) {
+                closePrivacyPolicy();
+                return;
+            }
+
+            if (event.target === document.getElementById('privacyModal')) {
+                closePrivacyPolicy();
+            }
+        });
+        })();
     </script>
 
 </body>

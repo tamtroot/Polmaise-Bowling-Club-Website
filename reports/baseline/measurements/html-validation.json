@@ -1,6 +1,6 @@
 {
   "pagesChecked": 18,
-  "errorCount": 603,
+  "errorCount": 602,
   "warningCount": 0,
   "ruleCounts": {
     "element-permitted-content": 4,
@@ -8,7 +8,7 @@
     "element-required-attributes": 2,
     "no-inline-style": 44,
     "no-raw-characters": 116,
-    "no-trailing-whitespace": 436
+    "no-trailing-whitespace": 435
   },
   "findings": [
     {
@@ -1160,15 +1160,6 @@
       "severity": "error",
       "message": "Trailing whitespace",
       "line": 3136,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "gallery.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 3330,
       "column": 1,
       "selector": null
     },
@@ -3500,7 +3491,7 @@
       "severity": "error",
       "message": "Inline style is not allowed",
       "line": 2422,
-      "column": 185,
+      "column": 156,
       "selector": "#history-archive-content > div:nth-child(1) > div:nth-child(2) > img"
     },
     {
@@ -3590,7 +3581,7 @@
       "severity": "error",
       "message": "Inline style is not allowed",
       "line": 2441,
-      "column": 208,
+      "column": 179,
       "selector": "#history-archive-content > div:nth-child(2) > div > div:nth-child(2) > figure > img"
     },
     {

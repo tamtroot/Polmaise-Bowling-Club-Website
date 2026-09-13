@@ -10,7 +10,7 @@
   },
   "status": 200,
   "resourceCount": 5,
-  "totalBytes": 149537,
+  "totalBytes": 139119,
   "byType": {
     "document": {
       "count": 1,
@@ -22,7 +22,7 @@
     },
     "script": {
       "count": 1,
-      "bytes": 15657
+      "bytes": 5239
     },
     "stylesheet": {
       "count": 1,
@@ -53,7 +53,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 15657,
+      "bytes": 5239,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
@@ -90,7 +90,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 15657,
+      "bytes": 5239,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"

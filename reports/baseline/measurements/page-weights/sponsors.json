@@ -10,7 +10,7 @@
   },
   "status": 200,
   "resourceCount": 16,
-  "totalBytes": 3312106,
+  "totalBytes": 3301688,
   "byType": {
     "document": {
       "count": 1,
@@ -22,7 +22,7 @@
     },
     "script": {
       "count": 1,
-      "bytes": 15657
+      "bytes": 5239
     },
     "stylesheet": {
       "count": 1,
@@ -94,13 +94,6 @@
       "contentType": "image/png"
     },
     {
-      "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 15657,
-      "status": 200,
-      "resourceType": "script",
-      "contentType": "text/javascript; charset=utf-8"
-    },
-    {
       "url": "http://127.0.0.1:4173/Images/rbjoinery.png",
       "bytes": 15078,
       "status": 200,
@@ -127,6 +120,13 @@
       "status": 200,
       "resourceType": "image",
       "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 5239,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/philc.webp",
@@ -237,7 +237,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 15657,
+      "bytes": 5239,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
