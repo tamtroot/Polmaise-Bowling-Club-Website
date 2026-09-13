@@ -351,7 +351,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-$(document).ready(function() {
+if (typeof window.jQuery === 'function' && window.lightbox) {
+    $(document).ready(function() {
     // Mobile menu toggle
     $('.mobile-menu').click(function() {
         $('nav ul').toggleClass('show');
@@ -424,4 +425,5 @@ $(document).ready(function() {
             scrollTop: $('.gallery-container').offset().top - 100
         }, 500);
     });
-}); 
+    });
+}

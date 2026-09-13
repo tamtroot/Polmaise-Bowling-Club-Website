@@ -1,0 +1,498 @@
+{
+  "page": {
+    "name": "album-presentation-dance-2025",
+    "label": "Album: Presentation Dance 2025",
+    "path": "/PhotoAlbums/presentation-dance-2025.html"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "status": 200,
+  "resourceCount": 41,
+  "totalBytes": 36024644,
+  "byType": {
+    "document": {
+      "count": 1,
+      "bytes": 12297
+    },
+    "image": {
+      "count": 38,
+      "bytes": 35969564
+    },
+    "script": {
+      "count": 1,
+      "bytes": 15657
+    },
+    "stylesheet": {
+      "count": 1,
+      "bytes": 27126
+    }
+  },
+  "largestResources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200820.jpg",
+      "bytes": 1183678,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200839.jpg",
+      "bytes": 1153055,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200750.jpg",
+      "bytes": 1152412,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200829.jpg",
+      "bytes": 1111872,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200725.jpg",
+      "bytes": 1099510,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200718.jpg",
+      "bytes": 1086061,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_210045.jpg",
+      "bytes": 1070455,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_201048.jpg",
+      "bytes": 1051584,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200722.jpg",
+      "bytes": 1047582,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_201012.jpg",
+      "bytes": 1022785,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_221131.jpg",
+      "bytes": 1013051,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200947.jpg",
+      "bytes": 1009482,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200731.jpg",
+      "bytes": 1005676,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_201007.jpg",
+      "bytes": 1003778,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_221658.jpg",
+      "bytes": 1003641,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_222908.jpg",
+      "bytes": 1002940,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_222953.jpg",
+      "bytes": 1001603,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_221634.jpg",
+      "bytes": 997396,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_222544.jpg",
+      "bytes": 989242,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_221736.jpg",
+      "bytes": 973154,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_222341.jpg",
+      "bytes": 966566,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_201207.jpg",
+      "bytes": 965529,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_201001.jpg",
+      "bytes": 963526,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_221145.jpg",
+      "bytes": 961836,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200933.jpg",
+      "bytes": 956195,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    }
+  ],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200718.jpg",
+      "bytes": 1086061,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200722.jpg",
+      "bytes": 1047582,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200725.jpg",
+      "bytes": 1099510,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200731.jpg",
+      "bytes": 1005676,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200737.jpg",
+      "bytes": 933928,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200750.jpg",
+      "bytes": 1152412,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200820.jpg",
+      "bytes": 1183678,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200829.jpg",
+      "bytes": 1111872,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200839.jpg",
+      "bytes": 1153055,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200855.jpg",
+      "bytes": 932904,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200921.jpg",
+      "bytes": 948207,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200924.jpg",
+      "bytes": 912416,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200928.jpg",
+      "bytes": 790869,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200933.jpg",
+      "bytes": 956195,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_200947.jpg",
+      "bytes": 1009482,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_201001.jpg",
+      "bytes": 963526,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_201007.jpg",
+      "bytes": 1003778,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_201012.jpg",
+      "bytes": 1022785,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_201048.jpg",
+      "bytes": 1051584,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_201207.jpg",
+      "bytes": 965529,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_201217.jpg",
+      "bytes": 940930,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_210045.jpg",
+      "bytes": 1070455,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_221106.jpg",
+      "bytes": 900653,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_221131.jpg",
+      "bytes": 1013051,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_221145.jpg",
+      "bytes": 961836,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_221634.jpg",
+      "bytes": 997396,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_221658.jpg",
+      "bytes": 1003641,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_221736.jpg",
+      "bytes": 973154,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_222341.jpg",
+      "bytes": 966566,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_222544.jpg",
+      "bytes": 989242,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_222548.jpg",
+      "bytes": 940416,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_222551.jpg",
+      "bytes": 904433,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_222800.jpg",
+      "bytes": 933395,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_222813.jpg",
+      "bytes": 948223,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_222908.jpg",
+      "bytes": 1002940,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_222953.jpg",
+      "bytes": 1001603,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/banner-bg.jpg",
+      "bytes": 9,
+      "status": 404,
+      "resourceType": "image",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/club-logo.png",
+      "bytes": 90572,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/PhotoAlbums/presentation-dance-2025.html",
+      "bytes": 12297,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 15657,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 27126,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    }
+  ]
+}

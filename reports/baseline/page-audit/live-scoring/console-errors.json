@@ -1,0 +1,9 @@
+{
+  "name": "page-audit/live-scoring/console-errors",
+  "items": [
+    "Failed to load resource: the server responded with a status of 401 () (https://polmaise-bowls-live.base44.app/api/apps/6a67540c63c66fcd6b7e63ab/entities/User/me:0:0)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found) (http://127.0.0.1:4173/images/banner-bg.jpg:0:0)",
+    "connect_error Error: Connection rejected by server\n    at Rx.onpacket (https://polmaise-bowls-live.base44.app/assets/index-4jF7QsO0.js:200:58542)\n    at yt.emit (https://polmaise-bowls-live.base44.app/assets/index-4jF7QsO0.js:200:29357)\n    at https://polmaise-bowls-live.base44.app/assets/index-4jF7QsO0.js:200:64452 (https://polmaise-bowls-live.base44.app/assets/index-4jF7QsO0.js:199:66955)",
+    "error Error: Connection rejected by server\n    at Rx.onpacket (https://polmaise-bowls-live.base44.app/assets/index-4jF7QsO0.js:200:58542)\n    at yt.emit (https://polmaise-bowls-live.base44.app/assets/index-4jF7QsO0.js:200:29357)\n    at https://polmaise-bowls-live.base44.app/assets/index-4jF7QsO0.js:200:64452 (https://polmaise-bowls-live.base44.app/assets/index-4jF7QsO0.js:199:67446)"
+  ]
+}

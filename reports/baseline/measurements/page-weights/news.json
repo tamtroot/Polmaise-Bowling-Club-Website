@@ -1,0 +1,855 @@
+{
+  "page": {
+    "name": "news",
+    "label": "News & Events",
+    "path": "/news.html"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "status": 200,
+  "resourceCount": 92,
+  "totalBytes": 66178574,
+  "byType": {
+    "document": {
+      "count": 1,
+      "bytes": 275244
+    },
+    "image": {
+      "count": 89,
+      "bytes": 65860547
+    },
+    "script": {
+      "count": 1,
+      "bytes": 15657
+    },
+    "stylesheet": {
+      "count": 1,
+      "bytes": 27126
+    }
+  },
+  "largestResources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/GaryChamp/FB_IMG_1752916966707.jpg",
+      "bytes": 5849987,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_134840.jpg",
+      "bytes": 3365167,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Frame.jpg",
+      "bytes": 2974449,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Presentation.png",
+      "bytes": 2765461,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_164614.jpg",
+      "bytes": 2580391,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_164239.jpg",
+      "bytes": 2121208,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/ScottishQ/20250624_193833.jpg",
+      "bytes": 1962931,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/ScottishQ/20250624_193855.jpg",
+      "bytes": 1754772,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/GregRyanMemorial/Aaron%20and%20Sandy.jpg",
+      "bytes": 1721984,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/Winners.jpg",
+      "bytes": 1690266,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_163647.jpg",
+      "bytes": 1689154,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Bye.png",
+      "bytes": 1623873,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/GregRyanMemorial/James%20and%20Andrew.jpg",
+      "bytes": 1544990,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/1914%20-%201.jpg",
+      "bytes": 1532234,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/DefeatedSemi2.jpg",
+      "bytes": 1348481,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/Runnersup.jpg",
+      "bytes": 1323874,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/DefeatedSemi.jpg",
+      "bytes": 1320348,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/Aaron%20Furzer.jpg",
+      "bytes": 1224188,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/James%20Craig.jpg",
+      "bytes": 1222722,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/Gary%20Malcomson.jpg",
+      "bytes": 1212414,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/Basher.jpg",
+      "bytes": 1201067,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/KyleMalcomson.jpeg",
+      "bytes": 1180948,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/View%20of%20the%20hills.jpg",
+      "bytes": 1178334,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Stirling_Observer_17_June_1988_0022_Clip.jpg",
+      "bytes": 1148758,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Champion%20of%20Champions%202026/Trophy.jpg",
+      "bytes": 1147878,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    }
+  ],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_164239.jpg",
+      "bytes": 2121208,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_164614.jpg",
+      "bytes": 2580391,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/chucks%20winners.jpg",
+      "bytes": 267631,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CountyFinals.jpg",
+      "bytes": 219761,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CountyTrips.jpg",
+      "bytes": 309829,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/FallinPrimaryCertificate.jpg",
+      "bytes": 130231,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/GaryChamp/FB_IMG_1752916966707.jpg",
+      "bytes": 5849987,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/GregRyanMemorial/Aaron%20and%20Sandy.jpg",
+      "bytes": 1721984,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/GregRyanMemorial/James%20and%20Andrew.jpg",
+      "bytes": 1544990,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Kyle%20Medal.jpg",
+      "bytes": 333640,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/KyleMalcomson.jpeg",
+      "bytes": 1180948,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/NationalPairs/Bronze%20Medal.jpeg",
+      "bytes": 176872,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Presentation.png",
+      "bytes": 2765461,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_223526.jpg",
+      "bytes": 1023184,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/ScottishQ/20250624_193833.jpg",
+      "bytes": 1962931,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/ScottishQ/20250624_193855.jpg",
+      "bytes": 1754772,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/ScottishQ/FB_IMG_1750800227934%20(2).jpg",
+      "bytes": 288512,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Shirt.png",
+      "bytes": 971181,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_134840.jpg",
+      "bytes": 3365167,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_163647.jpg",
+      "bytes": 1689154,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/DefeatedSemi.jpg",
+      "bytes": 1320348,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/DefeatedSemi2.jpg",
+      "bytes": 1348481,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/Runnersup.jpg",
+      "bytes": 1323874,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/Winners.jpg",
+      "bytes": 1690266,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Aaron%20Champ%20of%20Champs/Aaron%20&%20President%20Davie.jpg",
+      "bytes": 196972,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Aaron%20Champ%20of%20Champs/Aaron%20Furzer%20with%20Champion%20of%20Champions%20Trophy.jpg",
+      "bytes": 144258,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Bye.png",
+      "bytes": 1623873,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Champion%20of%20Champions%202026/Aaron%20Furzer.jpg",
+      "bytes": 343408,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Champion%20of%20Champions%202026/Aaron%20with%20his%20grandad.jpg",
+      "bytes": 160964,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Champion%20of%20Champions%202026/James%20Wray.jpg",
+      "bytes": 368517,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Champion%20of%20Champions%202026/Trophy.jpg",
+      "bytes": 1147878,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Charlie%20McNiel%202026/Champs.jpg",
+      "bytes": 180900,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Chucks%202026/Winners.jpg",
+      "bytes": 355435,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/County%20Finals%202026/Kyle%20M.jpg",
+      "bytes": 218942,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/County%20Finals%202026/Senior%20Fours.jpg",
+      "bytes": 260890,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/FPS%20Try%20Bowls%20Day/FPS1.jpg",
+      "bytes": 174978,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/FPS%20Try%20Bowls%20Day/FPS4.jpg",
+      "bytes": 206397,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Greg%20Ryan%20Memorial%202026/All.jpg",
+      "bytes": 205232,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Greg%20Ryan%20Memorial%202026/Runners%20Up.jpg",
+      "bytes": 101927,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Greg%20Ryan%20Memorial%202026/SemiFinalist1.jpg",
+      "bytes": 179161,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Greg%20Ryan%20Memorial%202026/SemiFinalist2.jpg",
+      "bytes": 140744,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Greg%20Ryan%20Memorial%202026/Winners.jpg",
+      "bytes": 111784,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Hamilton%20Trophy/FB_IMG_1779550801450.jpg",
+      "bytes": 329628,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Hamilton%20Trophy/FB_IMG_1779550804606.jpg",
+      "bytes": 336746,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Hamilton%20Trophy/FB_IMG_1779550807585.jpg",
+      "bytes": 276165,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Hamilton%20Trophy/FB_IMG_1779550810769.jpg",
+      "bytes": 291980,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/John%20Binnie%20Trophy/JB1.jpg",
+      "bytes": 187739,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Patons%20Friendly/FB_IMG_1779707564940.jpg",
+      "bytes": 378556,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Patons%20Friendly/FB_IMG_1779707572369.jpg",
+      "bytes": 363399,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Patons%20Friendly/FB_IMG_1779707575207.jpg",
+      "bytes": 421333,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Patons%20Friendly/FB_IMG_1779707577972.jpg",
+      "bytes": 384666,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Patons%20Friendly/FB_IMG_1779707599591.jpg",
+      "bytes": 233238,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/Aaron%20and%20James%20Winners%20medals.jpg",
+      "bytes": 335246,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/Aaron%20Furzer.jpg",
+      "bytes": 1224188,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/Basher.jpg",
+      "bytes": 1201067,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/Gary%20Malcomson.jpg",
+      "bytes": 1212414,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/James%20Craig.jpg",
+      "bytes": 1222722,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/Menstrie%20Green.jpg",
+      "bytes": 988416,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/View%20of%20the%20hills.jpg",
+      "bytes": 1178334,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/1914%20-%201.jpg",
+      "bytes": 1532234,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/1988.jpg",
+      "bytes": 303874,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/10th%20June%201914.jpg",
+      "bytes": 115710,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/20th%20July%201935.jpg",
+      "bytes": 101905,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/75th%20Presidents%20Trophy.jpg",
+      "bytes": 124049,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/8th%20June%201914.jpg",
+      "bytes": 77994,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/8th%20June%201961.jpg",
+      "bytes": 684945,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_15_July_1911_0005_Clip.jpg",
+      "bytes": 331801,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_27_July_1935_0012_Clip.jpg",
+      "bytes": 431671,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Frame.jpg",
+      "bytes": 2974449,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Gary&Rita.jpg",
+      "bytes": 230950,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Gary&Rita1.jpg",
+      "bytes": 51921,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Golden%20Jubilee.jpg",
+      "bytes": 213684,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/IMG-20250509-WA0000.jpg",
+      "bytes": 448824,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/IMG-20250509-WA0001.jpg",
+      "bytes": 348774,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/IMG-20250509-WA0002.jpg",
+      "bytes": 356708,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/J.Gwynne.jpg",
+      "bytes": 338782,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Macintosh%201935.jpg",
+      "bytes": 786658,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Opening%20of%20Green.jpg",
+      "bytes": 202520,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Opening%20of%20Green%20News.jpg",
+      "bytes": 249866,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Stirling_Observer_11_August_1942_0006_Clip.jpg",
+      "bytes": 138960,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Stirling_Observer_17_June_1988_0022_Clip.jpg",
+      "bytes": 1148758,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Triples.jpg",
+      "bytes": 138521,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/Photo%202.jpg",
+      "bytes": 311907,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/banner-bg.jpg",
+      "bytes": 9,
+      "status": 404,
+      "resourceType": "image",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/club-logo.png",
+      "bytes": 90572,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Green%20Maintenance.jpg",
+      "bytes": 414926,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Green%20Opening.jpg",
+      "bytes": 282536,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/news%20goth.jpg",
+      "bytes": 652602,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Top9.jpg",
+      "bytes": 145537,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/news.html",
+      "bytes": 275244,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 15657,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 27126,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    }
+  ]
+}

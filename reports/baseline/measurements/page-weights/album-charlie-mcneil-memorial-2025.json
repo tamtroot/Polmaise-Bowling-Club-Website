@@ -1,0 +1,505 @@
+{
+  "page": {
+    "name": "album-charlie-mcneil-memorial-2025",
+    "label": "Album: Charlie McNeil Memorial 2025",
+    "path": "/PhotoAlbums/charlie-mcneil-memorial-2025.html"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "status": 200,
+  "resourceCount": 42,
+  "totalBytes": 76259754,
+  "byType": {
+    "document": {
+      "count": 1,
+      "bytes": 13358
+    },
+    "image": {
+      "count": 39,
+      "bytes": 76203613
+    },
+    "script": {
+      "count": 1,
+      "bytes": 15657
+    },
+    "stylesheet": {
+      "count": 1,
+      "bytes": 27126
+    }
+  },
+  "largestResources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_100733.jpg",
+      "bytes": 3948649,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_110956.jpg",
+      "bytes": 3857635,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111016.jpg",
+      "bytes": 2864071,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_134042.jpg",
+      "bytes": 2794801,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142738.jpg",
+      "bytes": 2735027,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_110953.jpg",
+      "bytes": 2725509,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142727.jpg",
+      "bytes": 2636220,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_135923.jpg",
+      "bytes": 2619992,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_164614.jpg",
+      "bytes": 2580391,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125914.jpg",
+      "bytes": 2455823,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111001.jpg",
+      "bytes": 2131169,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111008.jpg",
+      "bytes": 2099376,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_094516.jpg",
+      "bytes": 2053348,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_140023.jpg",
+      "bytes": 1999602,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125939.jpg",
+      "bytes": 1920088,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125738.jpg",
+      "bytes": 1912367,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125503.jpg",
+      "bytes": 1907039,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111103.jpg",
+      "bytes": 1891446,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_130114.jpg",
+      "bytes": 1868454,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124011.jpg",
+      "bytes": 1862800,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125559.jpg",
+      "bytes": 1830445,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125743.jpg",
+      "bytes": 1823868,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142802.jpg",
+      "bytes": 1814030,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124030.jpg",
+      "bytes": 1710600,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142751.jpg",
+      "bytes": 1674054,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    }
+  ],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_094516.jpg",
+      "bytes": 2053348,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_100733.jpg",
+      "bytes": 3948649,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_110953.jpg",
+      "bytes": 2725509,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_110956.jpg",
+      "bytes": 3857635,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111001.jpg",
+      "bytes": 2131169,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111008.jpg",
+      "bytes": 2099376,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111016.jpg",
+      "bytes": 2864071,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111021.jpg",
+      "bytes": 1419242,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111103.jpg",
+      "bytes": 1891446,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_113407.jpg",
+      "bytes": 1606287,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_122731.jpg",
+      "bytes": 1662489,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_123501.jpg",
+      "bytes": 1631527,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124011.jpg",
+      "bytes": 1862800,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124030.jpg",
+      "bytes": 1710600,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125503.jpg",
+      "bytes": 1907039,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125559.jpg",
+      "bytes": 1830445,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125738.jpg",
+      "bytes": 1912367,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125743.jpg",
+      "bytes": 1823868,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125914.jpg",
+      "bytes": 2455823,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125939.jpg",
+      "bytes": 1920088,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_130114.jpg",
+      "bytes": 1868454,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_130318.jpg",
+      "bytes": 1543431,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_134042.jpg",
+      "bytes": 2794801,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_135923.jpg",
+      "bytes": 2619992,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_140023.jpg",
+      "bytes": 1999602,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142509.jpg",
+      "bytes": 1420093,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142616.jpg",
+      "bytes": 1465786,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142618.jpg",
+      "bytes": 1467281,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142727.jpg",
+      "bytes": 2636220,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142738.jpg",
+      "bytes": 2735027,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142746.jpg",
+      "bytes": 1648707,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142749.jpg",
+      "bytes": 1666004,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142751.jpg",
+      "bytes": 1674054,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142755.jpg",
+      "bytes": 1569100,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142802.jpg",
+      "bytes": 1814030,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_145613.jpg",
+      "bytes": 1296281,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_164614.jpg",
+      "bytes": 2580391,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/banner-bg.jpg",
+      "bytes": 9,
+      "status": 404,
+      "resourceType": "image",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/club-logo.png",
+      "bytes": 90572,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/PhotoAlbums/charlie-mcneil-memorial-2025.html",
+      "bytes": 13358,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 15657,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 27126,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    }
+  ]
+}

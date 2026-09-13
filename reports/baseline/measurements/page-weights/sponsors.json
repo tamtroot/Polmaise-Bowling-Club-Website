@@ -1,0 +1,260 @@
+{
+  "page": {
+    "name": "sponsors",
+    "label": "Sponsors",
+    "path": "/sponsors.html"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "status": 200,
+  "resourceCount": 16,
+  "totalBytes": 3314669,
+  "byType": {
+    "document": {
+      "count": 1,
+      "bytes": 29352
+    },
+    "image": {
+      "count": 13,
+      "bytes": 3242534
+    },
+    "script": {
+      "count": 1,
+      "bytes": 15657
+    },
+    "stylesheet": {
+      "count": 1,
+      "bytes": 27126
+    }
+  },
+  "largestResources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/forwardsector.png",
+      "bytes": 1120749,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Paton.png",
+      "bytes": 1054112,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/eddies.png",
+      "bytes": 847077,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/club-logo.png",
+      "bytes": 90572,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/willsweep-banner.jpg",
+      "bytes": 39488,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/sponsors.html",
+      "bytes": 29352,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 27126,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/lyon%20safety.jpg",
+      "bytes": 21121,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/allson.png",
+      "bytes": 19870,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 15657,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/rbjoinery.png",
+      "bytes": 15078,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/scotia.jpg",
+      "bytes": 10863,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Highland.svg",
+      "bytes": 10004,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/hamilton.svg",
+      "bytes": 9055,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/philc.webp",
+      "bytes": 4536,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/banner-bg.jpg",
+      "bytes": 9,
+      "status": 404,
+      "resourceType": "image",
+      "contentType": "text/plain; charset=utf-8"
+    }
+  ],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Highland.svg",
+      "bytes": 10004,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Paton.png",
+      "bytes": 1054112,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/allson.png",
+      "bytes": 19870,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/banner-bg.jpg",
+      "bytes": 9,
+      "status": 404,
+      "resourceType": "image",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/club-logo.png",
+      "bytes": 90572,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/eddies.png",
+      "bytes": 847077,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/forwardsector.png",
+      "bytes": 1120749,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/hamilton.svg",
+      "bytes": 9055,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/lyon%20safety.jpg",
+      "bytes": 21121,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/philc.webp",
+      "bytes": 4536,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/rbjoinery.png",
+      "bytes": 15078,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/scotia.jpg",
+      "bytes": 10863,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/willsweep-banner.jpg",
+      "bytes": 39488,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 15657,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/sponsors.html",
+      "bytes": 29352,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 27126,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    }
+  ]
+}

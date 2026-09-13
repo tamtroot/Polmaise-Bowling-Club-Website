@@ -1,0 +1,463 @@
+{
+  "page": {
+    "name": "album-twa-peters-memorial-2025",
+    "label": "Album: Twa Peters Memorial 2025",
+    "path": "/PhotoAlbums/twa-peters-memorial-2025.html"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "status": 200,
+  "resourceCount": 36,
+  "totalBytes": 58157042,
+  "byType": {
+    "document": {
+      "count": 1,
+      "bytes": 13748
+    },
+    "image": {
+      "count": 33,
+      "bytes": 58100511
+    },
+    "script": {
+      "count": 1,
+      "bytes": 15657
+    },
+    "stylesheet": {
+      "count": 1,
+      "bytes": 27126
+    }
+  },
+  "largestResources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_130017.jpg",
+      "bytes": 3043393,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_130040.jpg",
+      "bytes": 2756879,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_163829.jpg",
+      "bytes": 2453196,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_183903.jpg",
+      "bytes": 2375988,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_130117.jpg",
+      "bytes": 2334809,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_183856.jpg",
+      "bytes": 2333538,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_131438.jpg",
+      "bytes": 2161493,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_184007.jpg",
+      "bytes": 2137585,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_131432.jpg",
+      "bytes": 2119528,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_131445.jpg",
+      "bytes": 2119134,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_142849.jpg",
+      "bytes": 2073148,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_142851.jpg",
+      "bytes": 2051324,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_163837.jpg",
+      "bytes": 1986322,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_142847.jpg",
+      "bytes": 1949700,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_160327.jpg",
+      "bytes": 1877581,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_160325.jpg",
+      "bytes": 1841232,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_142844.jpg",
+      "bytes": 1820688,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_130031.jpg",
+      "bytes": 1715736,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/Winners.jpg",
+      "bytes": 1690266,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_142839.jpg",
+      "bytes": 1664126,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_160330.jpg",
+      "bytes": 1634854,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_130102.jpg",
+      "bytes": 1632709,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_131353.jpg",
+      "bytes": 1587653,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_160320.jpg",
+      "bytes": 1564239,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_142836.jpg",
+      "bytes": 1458072,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    }
+  ],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_130017.jpg",
+      "bytes": 3043393,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_130031.jpg",
+      "bytes": 1715736,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_130040.jpg",
+      "bytes": 2756879,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_130047.jpg",
+      "bytes": 1172099,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_130054.jpg",
+      "bytes": 1162187,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_130102.jpg",
+      "bytes": 1632709,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_130117.jpg",
+      "bytes": 2334809,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_131353.jpg",
+      "bytes": 1587653,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_131358.jpg",
+      "bytes": 1176996,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_131432.jpg",
+      "bytes": 2119528,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_131438.jpg",
+      "bytes": 2161493,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_131445.jpg",
+      "bytes": 2119134,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_142836.jpg",
+      "bytes": 1458072,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_142839.jpg",
+      "bytes": 1664126,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_142844.jpg",
+      "bytes": 1820688,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_142847.jpg",
+      "bytes": 1949700,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_142849.jpg",
+      "bytes": 2073148,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_142851.jpg",
+      "bytes": 2051324,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_160320.jpg",
+      "bytes": 1564239,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_160323.jpg",
+      "bytes": 1375423,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_160325.jpg",
+      "bytes": 1841232,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_160327.jpg",
+      "bytes": 1877581,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_160330.jpg",
+      "bytes": 1634854,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_163829.jpg",
+      "bytes": 2453196,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_163833.jpg",
+      "bytes": 1394643,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_163837.jpg",
+      "bytes": 1986322,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_163844.jpg",
+      "bytes": 1345389,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_183856.jpg",
+      "bytes": 2333538,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_183903.jpg",
+      "bytes": 2375988,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/20250809_184007.jpg",
+      "bytes": 2137585,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/TwaPeters/Winners.jpg",
+      "bytes": 1690266,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/banner-bg.jpg",
+      "bytes": 9,
+      "status": 404,
+      "resourceType": "image",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/club-logo.png",
+      "bytes": 90572,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/PhotoAlbums/twa-peters-memorial-2025.html",
+      "bytes": 13748,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 15657,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 27126,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    }
+  ]
+}

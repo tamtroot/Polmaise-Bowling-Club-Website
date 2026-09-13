@@ -1,0 +1,7 @@
+{
+  "name": "page-audit/signup/axe-violations",
+  "items": [
+    "color-contrast | impact=serious | nodes=3 | targets=.footer-section:nth-child(1) > h3 | .footer-section:nth-child(2) > h3 | .footer-section:nth-child(3) > h3",
+    "link-in-text-block | impact=serious | nodes=1 | targets=p > a[href=\"#\"]"
+  ]
+}

@@ -1,0 +1,1054 @@
+{
+  "page": {
+    "name": "archive",
+    "label": "Sandy Deans Archive",
+    "path": "/archive.html"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "status": 200,
+  "resourceCount": 121,
+  "totalBytes": 186214081,
+  "byType": {
+    "document": {
+      "count": 1,
+      "bytes": 86648
+    },
+    "image": {
+      "count": 119,
+      "bytes": 186100307
+    },
+    "stylesheet": {
+      "count": 1,
+      "bytes": 27126
+    }
+  },
+  "largestResources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_122556_492.jpg",
+      "bytes": 6658361,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_104413_308.jpg",
+      "bytes": 3735906,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_160849_038.jpg",
+      "bytes": 3689173,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_163758_23b.jpg",
+      "bytes": 3598167,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_104418_1ae.jpg",
+      "bytes": 3193974,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145637_4de.jpg",
+      "bytes": 3155448,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145632_ecf.jpg",
+      "bytes": 3074546,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_130723_ac3.jpg",
+      "bytes": 2636103,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124057_c55.jpg",
+      "bytes": 2634082,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_163832_27a.jpg",
+      "bytes": 2629621,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_105932_fe5.jpg",
+      "bytes": 2623845,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125244_f54.jpg",
+      "bytes": 2617420,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250516_135343_261.jpg",
+      "bytes": 2616945,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_105945_fa5.jpg",
+      "bytes": 2485457,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_105942_9a9.jpg",
+      "bytes": 2436785,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_161517_b63.jpg",
+      "bytes": 2413014,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_150114_646.jpg",
+      "bytes": 2407529,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_110002_87d.jpg",
+      "bytes": 2300562,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125258_c6f.jpg",
+      "bytes": 2285748,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_130634_47b.jpg",
+      "bytes": 2257240,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125302_91a.jpg",
+      "bytes": 2235299,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125254_8af.jpg",
+      "bytes": 2226711,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125237_308.jpg",
+      "bytes": 2212652,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124102_504.jpg",
+      "bytes": 2115737,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145627_f63.jpg",
+      "bytes": 2107979,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    }
+  ],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4173/archive.html",
+      "bytes": 86648,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/banner-bg.jpg",
+      "bytes": 9,
+      "status": 404,
+      "resourceType": "image",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/club-logo.png",
+      "bytes": 90572,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/20250506_120512.jpg",
+      "bytes": 945003,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/20250506_121613.jpg",
+      "bytes": 2077764,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/20250506_121642%20(2).jpg",
+      "bytes": 938116,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/20250506_133641.jpg",
+      "bytes": 1410297,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/20250506_133718.jpg",
+      "bytes": 1290832,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/20250506_133900.jpg",
+      "bytes": 1065584,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/20250506_133914.jpg",
+      "bytes": 1121910,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0003.jpg",
+      "bytes": 123225,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0004.jpg",
+      "bytes": 102697,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0005.jpg",
+      "bytes": 174322,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0006.jpg",
+      "bytes": 195144,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0007.jpg",
+      "bytes": 327904,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0008.jpg",
+      "bytes": 291046,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0009.jpg",
+      "bytes": 294715,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0010.jpg",
+      "bytes": 159972,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0011.jpg",
+      "bytes": 216701,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_141956_464.jpg",
+      "bytes": 979920,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_142052_6fb.jpg",
+      "bytes": 1603211,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_142155_5b6.jpg",
+      "bytes": 1784833,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_150114_646.jpg",
+      "bytes": 2407529,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_150213_ea3.jpg",
+      "bytes": 1307850,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_150301_119.jpg",
+      "bytes": 1270390,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_151034_ac4.jpg",
+      "bytes": 1401628,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_151150_76c.jpg",
+      "bytes": 1028591,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_155026_1ce.jpg",
+      "bytes": 1695509,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_155149_d7f.jpg",
+      "bytes": 1844323,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_155256_570.jpg",
+      "bytes": 758710,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_160849_038.jpg",
+      "bytes": 3689173,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_161421_d38%20(2).jpg",
+      "bytes": 523587,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_161517_b63.jpg",
+      "bytes": 2413014,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_162838_622.jpg",
+      "bytes": 1860132,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_121112_ce0.jpg",
+      "bytes": 1820343,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_122556_492.jpg",
+      "bytes": 6658361,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_123522_f43.jpg",
+      "bytes": 1813313,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_130634_47b.jpg",
+      "bytes": 2257240,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_130639_151.jpg",
+      "bytes": 1627281,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_130645_3bc.jpg",
+      "bytes": 1860309,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_130703_f6f.jpg",
+      "bytes": 1451731,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_130723_ac3.jpg",
+      "bytes": 2636103,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250516_135343_261.jpg",
+      "bytes": 2616945,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145609_9b7.jpg",
+      "bytes": 1047736,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145620_52e.jpg",
+      "bytes": 1809751,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145627_f63.jpg",
+      "bytes": 2107979,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145632_ecf.jpg",
+      "bytes": 3074546,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145637_4de.jpg",
+      "bytes": 3155448,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145642_a01.jpg",
+      "bytes": 932951,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145646_1bb.jpg",
+      "bytes": 963490,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_105928_fac.jpg",
+      "bytes": 1997049,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_105932_fe5.jpg",
+      "bytes": 2623845,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_105936_1c9.jpg",
+      "bytes": 1589644,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_105942_9a9.jpg",
+      "bytes": 2436785,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_105945_fa5.jpg",
+      "bytes": 2485457,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_105950_f94.jpg",
+      "bytes": 1807585,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_105955_990.jpg",
+      "bytes": 1423782,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_110002_87d.jpg",
+      "bytes": 2300562,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250528_110006_21e.jpg",
+      "bytes": 1252583,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_104327_d44.jpg",
+      "bytes": 1602242,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_104332_a85.jpg",
+      "bytes": 1544807,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_104343_37e.jpg",
+      "bytes": 1002645,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_104349_939.jpg",
+      "bytes": 548424,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_104355_f3e.jpg",
+      "bytes": 1579164,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_104406_0f5.jpg",
+      "bytes": 1078729,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_104413_308.jpg",
+      "bytes": 3735906,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_104418_1ae.jpg",
+      "bytes": 3193974,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_104424_08e.jpg",
+      "bytes": 1672318,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_163749_a08.jpg",
+      "bytes": 1119503,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_163754_e0b.jpg",
+      "bytes": 2017814,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_163758_23b.jpg",
+      "bytes": 3598167,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_163808_c4e.jpg",
+      "bytes": 1430776,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_163819_d25.jpg",
+      "bytes": 783128,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_163826_b40.jpg",
+      "bytes": 1050392,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_163832_27a.jpg",
+      "bytes": 2629621,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_163836_9a0.jpg",
+      "bytes": 1794766,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_163841_5e8.jpg",
+      "bytes": 1205130,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250529_163847_674.jpg",
+      "bytes": 2044365,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250530_151643_cca.jpg",
+      "bytes": 1142701,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250530_151648_4af.jpg",
+      "bytes": 1321407,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250530_151651_c86.jpg",
+      "bytes": 1382329,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250530_151655_c0b.jpg",
+      "bytes": 1927970,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250530_151704_4d5.jpg",
+      "bytes": 1756104,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250530_151709_a8c.jpg",
+      "bytes": 1433755,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250530_151712_fbe.jpg",
+      "bytes": 1508771,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250530_151717_2be.jpg",
+      "bytes": 702827,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250530_151721_09c.jpg",
+      "bytes": 920486,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250530_151725_cdf.jpg",
+      "bytes": 1431307,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250530_151728_3d4.jpg",
+      "bytes": 1615720,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124052_f3c.jpg",
+      "bytes": 1942690,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124057_c55.jpg",
+      "bytes": 2634082,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124102_504.jpg",
+      "bytes": 2115737,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124108_80a.jpg",
+      "bytes": 1178794,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124113_8f1.jpg",
+      "bytes": 1329257,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124117_2d7.jpg",
+      "bytes": 1625034,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124122_26c.jpg",
+      "bytes": 1245836,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124127_70d.jpg",
+      "bytes": 1721577,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124132_2d3.jpg",
+      "bytes": 1297163,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124136_8c1.jpg",
+      "bytes": 1807073,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_124142_3a4.jpg",
+      "bytes": 1371708,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125230_784.jpg",
+      "bytes": 1804260,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125237_308.jpg",
+      "bytes": 2212652,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125244_f54.jpg",
+      "bytes": 2617420,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125248_683.jpg",
+      "bytes": 1408045,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125251_9e6.jpg",
+      "bytes": 1829687,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125254_8af.jpg",
+      "bytes": 2226711,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125258_c6f.jpg",
+      "bytes": 2285748,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125302_91a.jpg",
+      "bytes": 2235299,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125305_b07.jpg",
+      "bytes": 1274184,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125309_a52.jpg",
+      "bytes": 1118770,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125312_802.jpg",
+      "bytes": 930154,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125318_c09.jpg",
+      "bytes": 981435,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125321_e16.jpg",
+      "bytes": 1228729,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125324_43d.jpg",
+      "bytes": 891732,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125328_39a.jpg",
+      "bytes": 928141,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_125332_809.jpg",
+      "bytes": 1473194,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_164015_d4b.jpg",
+      "bytes": 1437317,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_164020_e37.jpg",
+      "bytes": 2007008,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250605_164025_967.jpg",
+      "bytes": 997176,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Sandy.jpg",
+      "bytes": 23414,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 27126,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    }
+  ]
+}

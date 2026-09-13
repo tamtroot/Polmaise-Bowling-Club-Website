@@ -1,0 +1,456 @@
+{
+  "page": {
+    "name": "album-top-15-final-2025",
+    "label": "Album: Top 15 Final 2025",
+    "path": "/PhotoAlbums/top-15-final-2025.html"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "status": 200,
+  "resourceCount": 35,
+  "totalBytes": 64997511,
+  "byType": {
+    "document": {
+      "count": 1,
+      "bytes": 13835
+    },
+    "image": {
+      "count": 32,
+      "bytes": 64940893
+    },
+    "script": {
+      "count": 1,
+      "bytes": 15657
+    },
+    "stylesheet": {
+      "count": 1,
+      "bytes": 27126
+    }
+  },
+  "largestResources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145813.jpg",
+      "bytes": 7894110,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_134840.jpg",
+      "bytes": 3365167,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144424.jpg",
+      "bytes": 3148236,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144427.jpg",
+      "bytes": 2836939,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145818.jpg",
+      "bytes": 2750124,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144444.jpg",
+      "bytes": 2638673,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145512.jpg",
+      "bytes": 2521697,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145500.jpg",
+      "bytes": 2458039,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144400.jpg",
+      "bytes": 2450914,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144315.jpg",
+      "bytes": 2443643,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145611.jpg",
+      "bytes": 2297255,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145726.jpg",
+      "bytes": 2264826,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145603.jpg",
+      "bytes": 2232852,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145607.jpg",
+      "bytes": 2089774,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144213.jpg",
+      "bytes": 2027315,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145804.jpg",
+      "bytes": 2019446,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144418.jpg",
+      "bytes": 1941222,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144218.jpg",
+      "bytes": 1914621,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144445.jpg",
+      "bytes": 1828016,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145711.jpg",
+      "bytes": 1699650,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145633.jpg",
+      "bytes": 1692644,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145710.jpg",
+      "bytes": 1644066,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145700.jpg",
+      "bytes": 1630581,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145830.jpg",
+      "bytes": 1608022,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144230.jpg",
+      "bytes": 1596878,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    }
+  ],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_134840.jpg",
+      "bytes": 3365167,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140143.jpg",
+      "bytes": 381408,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140145.jpg",
+      "bytes": 642616,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140149.jpg",
+      "bytes": 536818,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140154.jpg",
+      "bytes": 847063,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144206.jpg",
+      "bytes": 1447697,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144213.jpg",
+      "bytes": 2027315,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144218.jpg",
+      "bytes": 1914621,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144230.jpg",
+      "bytes": 1596878,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144315.jpg",
+      "bytes": 2443643,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144400.jpg",
+      "bytes": 2450914,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144418.jpg",
+      "bytes": 1941222,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144424.jpg",
+      "bytes": 3148236,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144427.jpg",
+      "bytes": 2836939,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144444.jpg",
+      "bytes": 2638673,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144445.jpg",
+      "bytes": 1828016,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145500.jpg",
+      "bytes": 2458039,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145512.jpg",
+      "bytes": 2521697,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145603.jpg",
+      "bytes": 2232852,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145607.jpg",
+      "bytes": 2089774,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145611.jpg",
+      "bytes": 2297255,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145633.jpg",
+      "bytes": 1692644,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145700.jpg",
+      "bytes": 1630581,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145710.jpg",
+      "bytes": 1644066,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145711.jpg",
+      "bytes": 1699650,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145726.jpg",
+      "bytes": 2264826,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145804.jpg",
+      "bytes": 2019446,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145813.jpg",
+      "bytes": 7894110,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145818.jpg",
+      "bytes": 2750124,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145830.jpg",
+      "bytes": 1608022,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/banner-bg.jpg",
+      "bytes": 9,
+      "status": 404,
+      "resourceType": "image",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/club-logo.png",
+      "bytes": 90572,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/PhotoAlbums/top-15-final-2025.html",
+      "bytes": 13835,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 15657,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 27126,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    }
+  ]
+}

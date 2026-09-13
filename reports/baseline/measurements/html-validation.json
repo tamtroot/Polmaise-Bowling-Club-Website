@@ -1,0 +1,7035 @@
+{
+  "pagesChecked": 18,
+  "errorCount": 780,
+  "warningCount": 0,
+  "ruleCounts": {
+    "element-permitted-content": 4,
+    "element-permitted-parent": 1,
+    "element-required-attributes": 2,
+    "no-inline-style": 209,
+    "no-raw-characters": 116,
+    "no-trailing-whitespace": 448
+  },
+  "findings": [
+    {
+      "file": "about.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 261,
+      "column": 50,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 287,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 289,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 291,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 293,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 295,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 305,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 306,
+      "column": 44,
+      "selector": "html > body > section:nth-child(3) > div > div:nth-child(3)"
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 309,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 321,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 332,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 343,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 346,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "about.html",
+      "ruleId": "element-required-attributes",
+      "severity": "error",
+      "message": "<img> is missing required \"src\" attribute",
+      "line": 595,
+      "column": 10,
+      "selector": "#lightboxImage"
+    },
+    {
+      "file": "about.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 937,
+      "column": 8,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 579,
+      "column": 50,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 636,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 644,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 652,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 660,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 668,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 676,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 683,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 690,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 698,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 705,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 712,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 720,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 727,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 735,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 742,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 749,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 756,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 763,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 770,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 777,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 784,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 791,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 798,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 805,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 812,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 865,
+      "column": 166,
+      "selector": "html > body > section:nth-child(3) > div > div:nth-child(3) > div > div:nth-child(33) > a > div"
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 924,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 932,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 939,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 946,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 953,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 960,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 967,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 974,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 981,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 988,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1038,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1047,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1055,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1063,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1111,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1182,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1260,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1450,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "archive.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1472,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 253,
+      "column": 50,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 279,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 289,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 299,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 309,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 318,
+      "column": 27,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 328,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 333,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 357,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 370,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 378,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 399,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 407,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 414,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "contact.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 581,
+      "column": 8,
+      "selector": null
+    },
+    {
+      "file": "fixtures.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 127,
+      "column": 50,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "fixtures.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 151,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "fixtures.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 517,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "fixtures.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 669,
+      "column": 69,
+      "selector": "html > body > section:nth-child(3) > div > div:nth-child(4) > div:nth-child(9) > div:nth-child(3) > div:nth-child(2) > span:nth-child(2)"
+    },
+    {
+      "file": "fixtures.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 788,
+      "column": 69,
+      "selector": "html > body > section:nth-child(3) > div > div:nth-child(4) > div:nth-child(16) > div:nth-child(3) > div:nth-child(2) > span:nth-child(2)"
+    },
+    {
+      "file": "fixtures.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1371,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "fixtures.html",
+      "ruleId": "element-permitted-content",
+      "severity": "error",
+      "message": "<style> element is not permitted as content under <body>",
+      "line": 1389,
+      "column": 6,
+      "selector": "html > body > style"
+    },
+    {
+      "file": "fixtures.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1674,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "fixtures.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1789,
+      "column": 8,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 328,
+      "column": 50,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 352,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 368,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 399,
+      "column": 160,
+      "selector": "html > body > section:nth-child(3) > div > div:nth-child(1) > div:nth-child(7) > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 404,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 409,
+      "column": 40,
+      "selector": "html > body > section:nth-child(3) > div > div:nth-child(1) > div:nth-child(8) > div > h3"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 412,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 420,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 428,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 436,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 444,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 452,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 460,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 468,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 476,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 484,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 492,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 500,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 508,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 516,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 524,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 533,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 602,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 611,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(1) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 617,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(2) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 623,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(3) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 629,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(4) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 635,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(5) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 641,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(6) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 647,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(7) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 653,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(8) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 659,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(9) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 665,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(10) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 671,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(11) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 677,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(12) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 683,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(13) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 689,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(14) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 695,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(15) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 701,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(16) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 707,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(17) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 713,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(18) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 719,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(19) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 725,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(20) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 731,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(21) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 737,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(22) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 743,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(23) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 749,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(24) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 755,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(25) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 761,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(26) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 767,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(27) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 773,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(28) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 779,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(29) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 785,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(30) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 791,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(31) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 797,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(32) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 803,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(33) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 809,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(34) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 815,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(35) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 821,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(36) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 827,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(37) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 833,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(38) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 839,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(39) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 845,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(40) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 851,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(41) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 857,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(42) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 863,
+      "column": 178,
+      "selector": "#top-15-final-2025-08-10 > div:nth-child(2) > div:nth-child(43) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 873,
+      "column": 36,
+      "selector": "#john-iain-bone-family > div:nth-child(1) > h2"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 878,
+      "column": 191,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(1) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 880,
+      "column": 65,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(1) > div"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 884,
+      "column": 191,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(2) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 886,
+      "column": 65,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(2) > div"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 890,
+      "column": 191,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(3) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 892,
+      "column": 65,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(3) > div"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 896,
+      "column": 191,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(4) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 898,
+      "column": 65,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(4) > div"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 902,
+      "column": 194,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(5) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 904,
+      "column": 65,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(5) > div"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 908,
+      "column": 194,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(6) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 910,
+      "column": 65,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(6) > div"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 914,
+      "column": 194,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(7) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 916,
+      "column": 65,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(7) > div"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 920,
+      "column": 194,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(8) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 922,
+      "column": 65,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(8) > div"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 926,
+      "column": 194,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(9) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 928,
+      "column": 65,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(9) > div"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 932,
+      "column": 178,
+      "selector": "#john-iain-bone-family > div:nth-child(2) > div:nth-child(10) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 939,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 948,
+      "column": 197,
+      "selector": "#polmaise-ladies-top-5-2025 > div:nth-child(2) > div:nth-child(1) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 954,
+      "column": 197,
+      "selector": "#polmaise-ladies-top-5-2025 > div:nth-child(2) > div:nth-child(2) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 960,
+      "column": 197,
+      "selector": "#polmaise-ladies-top-5-2025 > div:nth-child(2) > div:nth-child(3) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 966,
+      "column": 197,
+      "selector": "#polmaise-ladies-top-5-2025 > div:nth-child(2) > div:nth-child(4) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 972,
+      "column": 197,
+      "selector": "#polmaise-ladies-top-5-2025 > div:nth-child(2) > div:nth-child(5) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 978,
+      "column": 197,
+      "selector": "#polmaise-ladies-top-5-2025 > div:nth-child(2) > div:nth-child(6) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 984,
+      "column": 197,
+      "selector": "#polmaise-ladies-top-5-2025 > div:nth-child(2) > div:nth-child(7) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 990,
+      "column": 197,
+      "selector": "#polmaise-ladies-top-5-2025 > div:nth-child(2) > div:nth-child(8) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 996,
+      "column": 197,
+      "selector": "#polmaise-ladies-top-5-2025 > div:nth-child(2) > div:nth-child(9) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1003,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1012,
+      "column": 165,
+      "selector": "#murray-cup-2025 > div:nth-child(2) > div:nth-child(1) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1018,
+      "column": 165,
+      "selector": "#murray-cup-2025 > div:nth-child(2) > div:nth-child(2) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1130,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1512,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1732,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1740,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1759,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1761,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1768,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1770,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1893,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2250,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2284,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3127,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3136,
+      "column": 201,
+      "selector": "#ayr-nationals-2025 > div:nth-child(2) > div:nth-child(1) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3142,
+      "column": 200,
+      "selector": "#ayr-nationals-2025 > div:nth-child(2) > div:nth-child(2) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3148,
+      "column": 200,
+      "selector": "#ayr-nationals-2025 > div:nth-child(2) > div:nth-child(3) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3154,
+      "column": 190,
+      "selector": "#ayr-nationals-2025 > div:nth-child(2) > div:nth-child(4) > a > img"
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3161,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "gallery.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3350,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 29,
+      "column": 50,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 66,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 68,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 80,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 82,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 87,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 99,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 101,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 115,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 117,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 122,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 134,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 136,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 152,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 157,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 177,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 195,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 197,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 210,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 212,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 221,
+      "column": 47,
+      "selector": "html > body > section:nth-child(5) > div > h3"
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 224,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 234,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 236,
+      "column": 35,
+      "selector": "html > body > section:nth-child(5) > div > div > div:nth-child(3) > h4"
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 244,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 254,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 264,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 266,
+      "column": 44,
+      "selector": "html > body > section:nth-child(5) > div > div > div:nth-child(6) > h4"
+    },
+    {
+      "file": "history.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 273,
+      "column": 23,
+      "selector": null
+    },
+    {
+      "file": "history.html",
+      "ruleId": "element-permitted-content",
+      "severity": "error",
+      "message": "<style> element is not permitted as content under <body>",
+      "line": 278,
+      "column": 6,
+      "selector": "html > body > style"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 6,
+      "column": 20,
+      "selector": "html > head > title"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 127,
+      "column": 50,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 142,
+      "column": 25,
+      "selector": "html > body > section:nth-child(2) > div > h2"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 151,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 164,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 179,
+      "column": 42,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > ul > li:nth-child(6)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 193,
+      "column": 78,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(6)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 194,
+      "column": 78,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(7)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 196,
+      "column": 82,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(9)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 215,
+      "column": 67,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > ul > li:nth-child(2)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 217,
+      "column": 42,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > ul > li:nth-child(4)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 226,
+      "column": 85,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(1)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 227,
+      "column": 84,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 228,
+      "column": 83,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 229,
+      "column": 84,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(4)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 252,
+      "column": 58,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(3) > div:nth-child(2) > ul > li:nth-child(3)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 253,
+      "column": 88,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(3) > div:nth-child(2) > ul > li:nth-child(4)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 254,
+      "column": 93,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(3) > div:nth-child(2) > ul > li:nth-child(5)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 274,
+      "column": 63,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(4) > div:nth-child(2) > ul > li:nth-child(9)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 275,
+      "column": 38,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(4) > div:nth-child(2) > ul > li:nth-child(10)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 292,
+      "column": 98,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(5) > div:nth-child(2) > ul > li:nth-child(6)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 294,
+      "column": 83,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(5) > div:nth-child(2) > ul > li:nth-child(8)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 295,
+      "column": 80,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(5) > div:nth-child(2) > ul > li:nth-child(9)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 296,
+      "column": 72,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(5) > div:nth-child(2) > ul > li:nth-child(10)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 297,
+      "column": 84,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(5) > div:nth-child(2) > ul > li:nth-child(11)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 298,
+      "column": 78,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(5) > div:nth-child(2) > ul > li:nth-child(12)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 337,
+      "column": 97,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(8) > div:nth-child(2) > ul > li:nth-child(6)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 349,
+      "column": 73,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(9) > div:nth-child(2) > ul > li:nth-child(1)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 351,
+      "column": 85,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(9) > div:nth-child(2) > ul > li:nth-child(3)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 365,
+      "column": 71,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(10) > div:nth-child(2) > ul > li:nth-child(1)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 366,
+      "column": 79,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(10) > div:nth-child(2) > ul > li:nth-child(2)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 367,
+      "column": 73,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(10) > div:nth-child(2) > ul > li:nth-child(3)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 369,
+      "column": 75,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(10) > div:nth-child(2) > ul > li:nth-child(5)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 370,
+      "column": 84,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(10) > div:nth-child(2) > ul > li:nth-child(6)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 386,
+      "column": 42,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(11) > div:nth-child(2) > ul > li:nth-child(2)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 387,
+      "column": 81,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(11) > div:nth-child(2) > ul > li:nth-child(3)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 388,
+      "column": 78,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(11) > div:nth-child(2) > ul > li:nth-child(4)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 404,
+      "column": 73,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(12) > div:nth-child(2) > ul > li:nth-child(2)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 405,
+      "column": 82,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(12) > div:nth-child(2) > ul > li:nth-child(3)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 407,
+      "column": 67,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(12) > div:nth-child(2) > ul > li:nth-child(5)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 408,
+      "column": 77,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(12) > div:nth-child(2) > ul > li:nth-child(6)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 410,
+      "column": 57,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(12) > div:nth-child(2) > ul > li:nth-child(8)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 425,
+      "column": 73,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(13) > div:nth-child(2) > ul > li:nth-child(2)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 426,
+      "column": 60,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(13) > div:nth-child(2) > ul > li:nth-child(3)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 443,
+      "column": 74,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(14) > div:nth-child(2) > ul > li:nth-child(1)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 444,
+      "column": 73,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(14) > div:nth-child(2) > ul > li:nth-child(2)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 449,
+      "column": 69,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(14) > div:nth-child(2) > ul > li:nth-child(7)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 464,
+      "column": 70,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(15) > div:nth-child(2) > ul > li:nth-child(2)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 465,
+      "column": 73,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(15) > div:nth-child(2) > ul > li:nth-child(3)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 466,
+      "column": 60,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(15) > div:nth-child(2) > ul > li:nth-child(4)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 469,
+      "column": 38,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(15) > div:nth-child(2) > ul > li:nth-child(7)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 483,
+      "column": 67,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(16) > div:nth-child(2) > ul > li:nth-child(1)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 485,
+      "column": 91,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(16) > div:nth-child(2) > ul > li:nth-child(3)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 501,
+      "column": 67,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(17) > div:nth-child(2) > ul > li:nth-child(2)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 502,
+      "column": 101,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(17) > div:nth-child(2) > ul > li:nth-child(3)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 505,
+      "column": 57,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(17) > div:nth-child(2) > ul > li:nth-child(6)"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 520,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "element-permitted-content",
+      "severity": "error",
+      "message": "<style> element is not permitted as content under <body>",
+      "line": 864,
+      "column": 6,
+      "selector": "html > body > style"
+    },
+    {
+      "file": "honours.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1157,
+      "column": 8,
+      "selector": null
+    },
+    {
+      "file": "index.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 174,
+      "column": 50,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "index.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 285,
+      "column": 8,
+      "selector": null
+    },
+    {
+      "file": "live-scoring.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 162,
+      "column": 50,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 127,
+      "column": 50,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 151,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 160,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 168,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 173,
+      "column": 34,
+      "selector": "html > body > section:nth-child(3) > div > div > div:nth-child(3) > h3"
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 176,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 184,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 200,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 209,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 217,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 225,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 233,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 242,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 254,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 266,
+      "column": 52,
+      "selector": "html > body > section:nth-child(5) > div > div:nth-child(3) > table > tbody > tr:nth-child(1) > td:nth-child(1)"
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 271,
+      "column": 47,
+      "selector": "html > body > section:nth-child(5) > div > div:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(1)"
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 293,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 328,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 336,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 343,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 350,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 357,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "membership.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 406,
+      "column": 8,
+      "selector": null
+    },
+    {
+      "file": "News articles\\presentation-dance-2025.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 645,
+      "column": 53,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "News articles\\presentation-dance-2025.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 661,
+      "column": 45,
+      "selector": "#mobileNavDropdown > a:nth-child(5)"
+    },
+    {
+      "file": "News articles\\presentation-dance-2025.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 729,
+      "column": 31,
+      "selector": "html > body > main > section:nth-child(4) > h2"
+    },
+    {
+      "file": "News articles\\presentation-dance-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 730,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "News articles\\presentation-dance-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 735,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "News articles\\presentation-dance-2025.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 744,
+      "column": 41,
+      "selector": "html > body > main > section:nth-child(6) > h2"
+    },
+    {
+      "file": "News articles\\presentation-dance-2025.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 746,
+      "column": 23,
+      "selector": "html > body > main > section:nth-child(6) > a > span"
+    },
+    {
+      "file": "News articles\\presentation-dance-2025.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 757,
+      "column": 16,
+      "selector": "html > body > main > section:nth-child(8) > p:nth-child(3)"
+    },
+    {
+      "file": "News articles\\presentation-dance-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 800,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 6,
+      "column": 17,
+      "selector": "html > head > title"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 664,
+      "column": 65,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 679,
+      "column": 22,
+      "selector": "html > body > section:nth-child(2) > div > h2"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 691,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 747,
+      "column": 227,
+      "selector": "#latest-news > div > div:nth-child(6) > div:nth-child(1) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 815,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 874,
+      "column": 56,
+      "selector": "#article-east-west-champion-of-champions-2026 > figure"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 876,
+      "column": 45,
+      "selector": "#article-east-west-champion-of-champions-2026 > figure > figcaption"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 898,
+      "column": 60,
+      "selector": "#article-east-west-champion-of-champions-2026 > div:nth-child(3) > figure"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 900,
+      "column": 49,
+      "selector": "#article-east-west-champion-of-champions-2026 > div:nth-child(3) > figure > figcaption"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 974,
+      "column": 57,
+      "selector": "#article-champion-of-champions-2026 > div:nth-child(3) > div:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 978,
+      "column": 57,
+      "selector": "#article-champion-of-champions-2026 > div:nth-child(3) > div:nth-child(5)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 986,
+      "column": 57,
+      "selector": "#article-champion-of-champions-2026 > div:nth-child(3) > div:nth-child(8)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1015,
+      "column": 57,
+      "selector": "#article-county-finals-2026 > div:nth-child(3) > div:nth-child(6)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1050,
+      "column": 57,
+      "selector": "#article-scottish-area-final-2026 > div:nth-child(3) > div:nth-child(6)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1056,
+      "column": 57,
+      "selector": "#article-scottish-area-final-2026 > div:nth-child(3) > div:nth-child(8)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1063,
+      "column": 57,
+      "selector": "#article-scottish-area-final-2026 > div:nth-child(3) > div:nth-child(11)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1066,
+      "column": 57,
+      "selector": "#article-scottish-area-final-2026 > div:nth-child(3) > div:nth-child(12)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1073,
+      "column": 57,
+      "selector": "#article-scottish-area-final-2026 > div:nth-child(3) > div:nth-child(15)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1076,
+      "column": 57,
+      "selector": "#article-scottish-area-final-2026 > div:nth-child(3) > div:nth-child(16)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1102,
+      "column": 95,
+      "selector": "#article-greig-ryan-2026 > div:nth-child(3) > p:nth-child(6)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1102,
+      "column": 124,
+      "selector": "#article-greig-ryan-2026 > div:nth-child(3) > p:nth-child(6)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1108,
+      "column": 57,
+      "selector": "#article-greig-ryan-2026 > div:nth-child(3) > div:nth-child(9)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1111,
+      "column": 57,
+      "selector": "#article-greig-ryan-2026 > div:nth-child(3) > div:nth-child(10)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1114,
+      "column": 57,
+      "selector": "#article-greig-ryan-2026 > div:nth-child(3) > div:nth-child(11)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1117,
+      "column": 57,
+      "selector": "#article-greig-ryan-2026 > div:nth-child(3) > div:nth-child(12)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1145,
+      "column": 45,
+      "selector": "#article-fallin-primary-2026 > div:nth-child(3) > blockquote"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1155,
+      "column": 57,
+      "selector": "#article-fallin-primary-2026 > div:nth-child(3) > div:nth-child(11)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1183,
+      "column": 37,
+      "selector": "#article-john-binnie-2026 > div:nth-child(3) > ul"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1211,
+      "column": 89,
+      "selector": "#article-patons-100th-2026 > div:nth-child(3) > p:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1213,
+      "column": 83,
+      "selector": "#article-patons-100th-2026 > div:nth-child(3) > p:nth-child(3)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1215,
+      "column": 79,
+      "selector": "#article-patons-100th-2026 > div:nth-child(3) > p:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1219,
+      "column": 37,
+      "selector": "#article-patons-100th-2026 > div:nth-child(3) > ul"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1230,
+      "column": 145,
+      "selector": "#article-patons-100th-2026 > div:nth-child(3) > p:nth-child(9)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1234,
+      "column": 57,
+      "selector": "#article-patons-100th-2026 > div:nth-child(3) > div:nth-child(11)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1237,
+      "column": 57,
+      "selector": "#article-patons-100th-2026 > div:nth-child(3) > div:nth-child(12)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1240,
+      "column": 57,
+      "selector": "#article-patons-100th-2026 > div:nth-child(3) > div:nth-child(13)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1243,
+      "column": 57,
+      "selector": "#article-patons-100th-2026 > div:nth-child(3) > div:nth-child(14)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1273,
+      "column": 45,
+      "selector": "#article-sandy-300th-cap-2026 > div:nth-child(3) > blockquote"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1284,
+      "column": 57,
+      "selector": "#article-sandy-300th-cap-2026 > div:nth-child(3) > div:nth-child(12)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1287,
+      "column": 57,
+      "selector": "#article-sandy-300th-cap-2026 > div:nth-child(3) > div:nth-child(13)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1290,
+      "column": 57,
+      "selector": "#article-sandy-300th-cap-2026 > div:nth-child(3) > div:nth-child(14)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1309,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1311,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1313,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1315,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1317,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1325,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1334,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1351,
+      "column": 142,
+      "selector": "#news-archive-content > div > div:nth-child(2) > div:nth-child(1) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1458,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1469,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1480,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1491,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1502,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1513,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1524,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1535,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1546,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1557,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1569,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1600,
+      "column": 33,
+      "selector": "#article-presentation-dance-2025-event > div:nth-child(3) > ul"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1601,
+      "column": 84,
+      "selector": "#article-presentation-dance-2025-event > div:nth-child(3) > ul > li:nth-child(1)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1602,
+      "column": 83,
+      "selector": "#article-presentation-dance-2025-event > div:nth-child(3) > ul > li:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1603,
+      "column": 82,
+      "selector": "#article-presentation-dance-2025-event > div:nth-child(3) > ul > li:nth-child(3)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1604,
+      "column": 83,
+      "selector": "#article-presentation-dance-2025-event > div:nth-child(3) > ul > li:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1621,
+      "column": 41,
+      "selector": "#article-presentation-dance-2025-event > div:nth-child(3) > blockquote"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1653,
+      "column": 33,
+      "selector": "#article-chucks-2025 > div:nth-child(3) > ul"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1696,
+      "column": 53,
+      "selector": "#article-charlie-mcneil-2025 > div:nth-child(3) > div:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1701,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1703,
+      "column": 33,
+      "selector": "#article-charlie-mcneil-2025 > div:nth-child(3) > ul:nth-child(7)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1704,
+      "column": 49,
+      "selector": "#article-charlie-mcneil-2025 > div:nth-child(3) > ul:nth-child(7) > li:nth-child(1)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1705,
+      "column": 49,
+      "selector": "#article-charlie-mcneil-2025 > div:nth-child(3) > ul:nth-child(7) > li:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1709,
+      "column": 46,
+      "selector": "#article-charlie-mcneil-2025 > div:nth-child(3) > p:nth-child(9)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 1713,
+      "column": 53,
+      "selector": "#article-charlie-mcneil-2025 > div:nth-child(3) > p:nth-child(13) > strong"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1718,
+      "column": 33,
+      "selector": "#article-charlie-mcneil-2025 > div:nth-child(3) > ul:nth-child(17)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1734,
+      "column": 41,
+      "selector": "#article-charlie-mcneil-2025 > div:nth-child(3) > blockquote"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1746,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1774,
+      "column": 53,
+      "selector": "#article-top-15-2025 > div:nth-child(3) > div:nth-child(12)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1816,
+      "column": 33,
+      "selector": "#article-twa-peters-2025 > div:nth-child(5) > ul"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1820,
+      "column": 53,
+      "selector": "#article-twa-peters-2025 > div:nth-child(5) > div:nth-child(14)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "element-permitted-content",
+      "severity": "error",
+      "message": "<li> element is not permitted as content under <div>",
+      "line": 1823,
+      "column": 30,
+      "selector": "#article-twa-peters-2025 > div:nth-child(5) > li"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "element-permitted-parent",
+      "severity": "error",
+      "message": "<li> element requires a <ul>, <ol>, <menu> or <template> element as parent",
+      "line": 1823,
+      "column": 30,
+      "selector": "#article-twa-peters-2025 > div:nth-child(5) > li"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1824,
+      "column": 53,
+      "selector": "#article-twa-peters-2025 > div:nth-child(5) > div:nth-child(16)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1830,
+      "column": 53,
+      "selector": "#article-twa-peters-2025 > div:nth-child(5) > div:nth-child(19)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1862,
+      "column": 41,
+      "selector": "#article-national-pairs > div:nth-child(3) > blockquote"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1898,
+      "column": 41,
+      "selector": "#article-kyle-double-medal > div:nth-child(3) > blockquote"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1940,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1962,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 1970,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 1991,
+      "column": 41,
+      "selector": "#article-kyle-u18 > div:nth-child(3) > blockquote"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2013,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2015,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2016,
+      "column": 53,
+      "selector": "#article-pairs-victory > div:nth-child(3) > div:nth-child(3)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2019,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2021,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2023,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2025,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2032,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2044,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2049,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2051,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2053,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2058,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2060,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2064,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2066,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2069,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2071,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2073,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2080,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2092,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2094,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2096,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2097,
+      "column": 53,
+      "selector": "#article-greg-ryan-memorial > div:nth-child(3) > div:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2100,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2102,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2104,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2106,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2108,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2110,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2117,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2129,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2131,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2133,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2135,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2137,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2139,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2146,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2158,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2160,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2162,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2164,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2165,
+      "column": 41,
+      "selector": "#article-kyle > div:nth-child(3) > blockquote:nth-child(5)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2168,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2170,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2171,
+      "column": 41,
+      "selector": "#article-kyle > div:nth-child(3) > blockquote:nth-child(7)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2174,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2176,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2178,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2180,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2183,
+      "column": 52,
+      "selector": "#article-kyle > div:nth-child(3) > p:nth-child(12)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2186,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2187,
+      "column": 41,
+      "selector": "#article-kyle > div:nth-child(3) > blockquote:nth-child(13)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2190,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2192,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2193,
+      "column": 52,
+      "selector": "#article-kyle > div:nth-child(3) > p:nth-child(15)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2201,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2213,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2215,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2217,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2219,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2221,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2222,
+      "column": 53,
+      "selector": "#sandy-deans-archive > div:nth-child(3) > div:nth-child(12)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2230,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2242,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2244,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2246,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2248,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2255,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2267,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2274,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2286,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2289,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2292,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2300,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2312,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2318,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2320,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2322,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2329,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2344,
+      "column": 355,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2348,
+      "column": 33,
+      "selector": "#article4 > div:nth-child(3) > ul:nth-child(10)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2357,
+      "column": 33,
+      "selector": "#article4 > div:nth-child(3) > ul:nth-child(14)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2370,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2380,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2382,
+      "column": 30,
+      "selector": "#history-archive-content > div:nth-child(1)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2383,
+      "column": 56,
+      "selector": "#history-archive-content > div:nth-child(1) > div:nth-child(1)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2385,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2387,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2389,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2391,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2394,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2395,
+      "column": 34,
+      "selector": "#history-archive-content > div:nth-child(1) > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2396,
+      "column": 185,
+      "selector": "#history-archive-content > div:nth-child(1) > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2399,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2401,
+      "column": 59,
+      "selector": "#history-archive-content > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2403,
+      "column": 34,
+      "selector": "#history-archive-content > div:nth-child(2) > div"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2404,
+      "column": 38,
+      "selector": "#history-archive-content > div:nth-child(2) > div > div:nth-child(1)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2406,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2408,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2410,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2413,
+      "column": 38,
+      "selector": "#history-archive-content > div:nth-child(2) > div > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2414,
+      "column": 45,
+      "selector": "#history-archive-content > div:nth-child(2) > div > div:nth-child(2) > figure"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2415,
+      "column": 208,
+      "selector": "#history-archive-content > div:nth-child(2) > div > div:nth-child(2) > figure > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2416,
+      "column": 53,
+      "selector": "#history-archive-content > div:nth-child(2) > div > div:nth-child(2) > figure > figcaption"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2421,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2533,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2535,
+      "column": 46,
+      "selector": "#history-2013 > div:nth-child(1) > article > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2536,
+      "column": 232,
+      "selector": "#history-2013 > div:nth-child(1) > article > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2538,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2540,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2542,
+      "column": 46,
+      "selector": "#history-2013 > div:nth-child(1) > article > div:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2543,
+      "column": 231,
+      "selector": "#history-2013 > div:nth-child(1) > article > div:nth-child(4) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2545,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2547,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2549,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2551,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2555,
+      "column": 61,
+      "selector": "#history-2013 > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2559,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2566,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2568,
+      "column": 46,
+      "selector": "#history-2003 > div:nth-child(1) > article > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2569,
+      "column": 222,
+      "selector": "#history-2003 > div:nth-child(1) > article > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2571,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2574,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2576,
+      "column": 46,
+      "selector": "#history-2003 > div:nth-child(1) > article > div:nth-child(5)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2577,
+      "column": 235,
+      "selector": "#history-2003 > div:nth-child(1) > article > div:nth-child(5) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2579,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2581,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2583,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2585,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2587,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2589,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2591,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2593,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2595,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2597,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2599,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2601,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2602,
+      "column": 46,
+      "selector": "#history-2003 > div:nth-child(1) > article > div:nth-child(17)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2607,
+      "column": 61,
+      "selector": "#history-2003 > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2611,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2618,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2620,
+      "column": 46,
+      "selector": "#history-2002 > div:nth-child(1) > article > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2621,
+      "column": 229,
+      "selector": "#history-2002 > div:nth-child(1) > article > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2623,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2626,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2628,
+      "column": 46,
+      "selector": "#history-2002 > div:nth-child(1) > article > div:nth-child(5)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2629,
+      "column": 238,
+      "selector": "#history-2002 > div:nth-child(1) > article > div:nth-child(5) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2631,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2633,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2635,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2637,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2639,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2641,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2643,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2645,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2647,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2649,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2651,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2653,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2655,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2657,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2659,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2661,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2663,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2665,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2667,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2669,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2671,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2673,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2675,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2676,
+      "column": 46,
+      "selector": "#history-2002 > div:nth-child(1) > article > div:nth-child(28)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2681,
+      "column": 61,
+      "selector": "#history-2002 > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2685,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2691,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2693,
+      "column": 46,
+      "selector": "#history-1988 > div:nth-child(1) > article > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2694,
+      "column": 196,
+      "selector": "#history-1988 > div:nth-child(1) > article > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2696,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2698,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2700,
+      "column": 46,
+      "selector": "#history-1988 > div:nth-child(1) > article > div:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2701,
+      "column": 250,
+      "selector": "#history-1988 > div:nth-child(1) > article > div:nth-child(4) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2703,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2705,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2707,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2708,
+      "column": 45,
+      "selector": "#history-1988 > div:nth-child(1) > article > ul"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2714,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2716,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2718,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2722,
+      "column": 61,
+      "selector": "#history-1988 > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2726,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2732,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2734,
+      "column": 46,
+      "selector": "#history-1961 > div:nth-child(1) > article > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2735,
+      "column": 210,
+      "selector": "#history-1961 > div:nth-child(1) > article > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2737,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2739,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2741,
+      "column": 46,
+      "selector": "#history-1961 > div:nth-child(1) > article > div:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2742,
+      "column": 205,
+      "selector": "#history-1961 > div:nth-child(1) > article > div:nth-child(4) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2744,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2754,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2803,
+      "column": 69,
+      "selector": "#history-1961 > div:nth-child(1) > article > table > tbody > tr:nth-child(6) > td:nth-child(1)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2804,
+      "column": 57,
+      "selector": "#history-1961 > div:nth-child(1) > article > table > tbody > tr:nth-child(6) > td:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2808,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2811,
+      "column": 61,
+      "selector": "#history-1961 > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2815,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2821,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2823,
+      "column": 46,
+      "selector": "#history-1942 > div:nth-child(1) > article > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2824,
+      "column": 232,
+      "selector": "#history-1942 > div:nth-child(1) > article > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2826,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2828,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2830,
+      "column": 46,
+      "selector": "#history-1942 > div:nth-child(1) > article > div:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2831,
+      "column": 200,
+      "selector": "#history-1942 > div:nth-child(1) > article > div:nth-child(4) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2833,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2835,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2836,
+      "column": 46,
+      "selector": "#history-1942 > div:nth-child(1) > article > div:nth-child(6)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2841,
+      "column": 61,
+      "selector": "#history-1942 > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2845,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2851,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2853,
+      "column": 46,
+      "selector": "#history-1935 > div:nth-child(1) > article > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2854,
+      "column": 194,
+      "selector": "#history-1935 > div:nth-child(1) > article > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2856,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2858,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2860,
+      "column": 46,
+      "selector": "#history-1935 > div:nth-child(1) > article > div:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2862,
+      "column": 50,
+      "selector": "#history-1935 > div:nth-child(1) > article > div:nth-child(4) > div"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2864,
+      "column": 54,
+      "selector": "#history-1935 > div:nth-child(1) > article > div:nth-child(4) > div > div:nth-child(1)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2865,
+      "column": 219,
+      "selector": "#history-1935 > div:nth-child(1) > article > div:nth-child(4) > div > div:nth-child(1) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2868,
+      "column": 54,
+      "selector": "#history-1935 > div:nth-child(1) > article > div:nth-child(4) > div > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2869,
+      "column": 264,
+      "selector": "#history-1935 > div:nth-child(1) > article > div:nth-child(4) > div > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2873,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2875,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2877,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2959,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2960,
+      "column": 46,
+      "selector": "#history-1935 > div:nth-child(1) > article > div:nth-child(9)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2965,
+      "column": 61,
+      "selector": "#history-1935 > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2969,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2975,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2977,
+      "column": 46,
+      "selector": "#history-1914 > div:nth-child(1) > article > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2978,
+      "column": 182,
+      "selector": "#history-1914 > div:nth-child(1) > article > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2980,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2982,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2984,
+      "column": 46,
+      "selector": "#history-1914 > div:nth-child(1) > article > div:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2986,
+      "column": 50,
+      "selector": "#history-1914 > div:nth-child(1) > article > div:nth-child(4) > div"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2988,
+      "column": 54,
+      "selector": "#history-1914 > div:nth-child(1) > article > div:nth-child(4) > div > div:nth-child(1)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2989,
+      "column": 213,
+      "selector": "#history-1914 > div:nth-child(1) > article > div:nth-child(4) > div > div:nth-child(1) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2992,
+      "column": 54,
+      "selector": "#history-1914 > div:nth-child(1) > article > div:nth-child(4) > div > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 2993,
+      "column": 216,
+      "selector": "#history-1914 > div:nth-child(1) > article > div:nth-child(4) > div > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2997,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 2999,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3001,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3004,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3006,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3049,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3050,
+      "column": 46,
+      "selector": "#history-1914 > div:nth-child(1) > article > div:nth-child(11)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3055,
+      "column": 61,
+      "selector": "#history-1914 > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3059,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3065,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3067,
+      "column": 46,
+      "selector": "#history-1911-july > div:nth-child(1) > article > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3068,
+      "column": 235,
+      "selector": "#history-1911-july > div:nth-child(1) > article > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3070,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3072,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3074,
+      "column": 46,
+      "selector": "#history-1911-july > div:nth-child(1) > article > div:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3075,
+      "column": 243,
+      "selector": "#history-1911-july > div:nth-child(1) > article > div:nth-child(4) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3077,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3079,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3081,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3083,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3085,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3086,
+      "column": 46,
+      "selector": "#history-1911-july > div:nth-child(1) > article > div:nth-child(9)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3091,
+      "column": 61,
+      "selector": "#history-1911-july > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3095,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3101,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3103,
+      "column": 46,
+      "selector": "#history-1911 > div:nth-child(1) > article > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3104,
+      "column": 200,
+      "selector": "#history-1911 > div:nth-child(1) > article > div:nth-child(2) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3106,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3108,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3110,
+      "column": 46,
+      "selector": "#history-1911 > div:nth-child(1) > article > div:nth-child(4)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3111,
+      "column": 213,
+      "selector": "#history-1911 > div:nth-child(1) > article > div:nth-child(4) > img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3113,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3115,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3117,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3119,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3121,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3123,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3125,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3127,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3129,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3131,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3133,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3135,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3137,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3139,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3141,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3143,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3145,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3147,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3149,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3151,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3153,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3155,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3158,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3213,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3216,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3218,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3220,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3222,
+      "column": 45,
+      "selector": "#history-1911 > div:nth-child(1) > article > ul"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-inline-style",
+      "severity": "error",
+      "message": "Inline style is not allowed",
+      "line": 3233,
+      "column": 61,
+      "selector": "#history-1911 > div:nth-child(2)"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3241,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "element-required-attributes",
+      "severity": "error",
+      "message": "<img> is missing required \"src\" attribute",
+      "line": 3250,
+      "column": 10,
+      "selector": "#lightbox-img"
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3291,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "news.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 3455,
+      "column": 8,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\charlie-mcneil-memorial-2025.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 152,
+      "column": 53,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "PhotoAlbums\\charlie-mcneil-memorial-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 183,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\charlie-mcneil-memorial-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 185,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\charlie-mcneil-memorial-2025.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 186,
+      "column": 70,
+      "selector": "html > body > section:nth-child(3) > div > div:nth-child(2) > p:nth-child(5)"
+    },
+    {
+      "file": "PhotoAlbums\\charlie-mcneil-memorial-2025.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 187,
+      "column": 68,
+      "selector": "html > body > section:nth-child(3) > div > div:nth-child(2) > p:nth-child(6)"
+    },
+    {
+      "file": "PhotoAlbums\\charlie-mcneil-memorial-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 188,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\presentation-dance-2025.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 152,
+      "column": 53,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "PhotoAlbums\\presentation-dance-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 183,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\presentation-dance-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 185,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\top-15-final-2025.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 176,
+      "column": 53,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "PhotoAlbums\\top-15-final-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 207,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\top-15-final-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 227,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\top-15-final-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 229,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\twa-peters-memorial-2025.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 176,
+      "column": 53,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "PhotoAlbums\\twa-peters-memorial-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 207,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\twa-peters-memorial-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 209,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\twa-peters-memorial-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 226,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\twa-peters-memorial-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 228,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "PhotoAlbums\\twa-peters-memorial-2025.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 230,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 127,
+      "column": 50,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 190,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 195,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 200,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 205,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 211,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 216,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 221,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 226,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 229,
+      "column": 91,
+      "selector": "#signupForm > div:nth-child(9) > label > a:nth-child(1)"
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 231,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 236,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 251,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 258,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 264,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "signup.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 431,
+      "column": 8,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 252,
+      "column": 50,
+      "selector": "html > body > header > div > nav > ul > li:nth-child(5) > a"
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 282,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 287,
+      "column": 71,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(1) > div:nth-child(1) > p:nth-child(2)"
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 289,
+      "column": 115,
+      "selector": "html > body > section:nth-child(4) > div > div > div:nth-child(1) > div:nth-child(1) > p:nth-child(4)"
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 317,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 332,
+      "column": 31,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 372,
+      "column": 42,
+      "selector": "html > body > section:nth-child(5) > div > div > div:nth-child(4) > div:nth-child(1) > h3"
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 385,
+      "column": 23,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 416,
+      "column": 31,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-raw-characters",
+      "severity": "error",
+      "message": "Raw \"&\" must be encoded as \"&amp;\"",
+      "line": 506,
+      "column": 62,
+      "selector": "html > body > section:nth-child(5) > div > div > div:nth-child(12) > div:nth-child(2) > p"
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 521,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 527,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 538,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 548,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 558,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 568,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 578,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 590,
+      "column": 1,
+      "selector": null
+    },
+    {
+      "file": "sponsors.html",
+      "ruleId": "no-trailing-whitespace",
+      "severity": "error",
+      "message": "Trailing whitespace",
+      "line": 640,
+      "column": 8,
+      "selector": null
+    }
+  ]
+}

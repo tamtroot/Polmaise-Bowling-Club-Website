@@ -7,8 +7,7 @@
     <link rel="icon" type="image/x-icon" href="./Images/polmaise_logo_favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <style>
         /* Lightbox styles */
         .lightbox {
@@ -229,8 +228,8 @@
                 We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. This site uses Google Maps which requires cookies to function properly.
             </div>
             <div class="cookie-buttons">
-                <button class="cookie-btn accept-cookies" onclick="acceptCookies()">Accept</button>
-                <button class="cookie-btn decline-cookies" onclick="declineCookies()">Decline</button>
+                <button type="button" class="cookie-btn accept-cookies" onclick="acceptCookies()">Accept</button>
+                <button type="button" class="cookie-btn decline-cookies" onclick="declineCookies()">Decline</button>
             </div>
         </div>
     </div>
@@ -294,7 +293,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Phone</h3>
-                            <p>Clubhouse: 01786 811333<br>
+                            <p>Clubhouse: 01786 811333<br></p>
                         </div>
                     </div>
                     
@@ -304,7 +303,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Email</h3>
-                            <p>General Inquiries:<a href="mailto:polmaisebc@gmail.com</p>">polmaisebc@gmail.com</p></a> 
+                            <p>General Inquiries:<a href="mailto:polmaisebc@gmail.com">polmaisebc@gmail.com</a></p>
                         </div>
                     </div>
                     
@@ -329,7 +328,7 @@
             
             <div class="map-container">
                 <!-- Updated Google Maps embed for Polmaise Bowling Club -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2225.193398518217!2d-3.868174123266615!3d56.10187296505084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48887d1c2eeef82d%3A0xf6fe2c520f188d7c!2sPolmaise%20Bowling%20Club!5e0!3m2!1sen!2suk!4v1741688691592!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2225.193398518217!2d-3.868174123266615!3d56.10187296505084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48887d1c2eeef82d%3A0xf6fe2c520f188d7c!2sPolmaise%20Bowling%20Club!5e0!3m2!1sen!2suk!4v1741688691592!5m2!1sen!2suk" title="Map showing Polmaise Bowling Club in Fallin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             
             <div class="directions">
@@ -340,17 +339,17 @@
                         <h4>By Car</h4>
                         <p>Polmaise Bowling Club is located at Main Street, Fallin, Stirling, FK7 7HT.</p>
                         <div class="directions-detail">
-                        </br>
+                        <br>
                             <h5>From Stirling City Centre:</h5>
                             <ul>
                                 <li>Take the A905 (Shore Road) east towards Fallin (approx. 3 miles).</li>
                                 <li>Continue along Main Street; the club is on your left, next to The Goth.</li>
                             </ul>
-                            </br>
+                            <br>
                             <h5>From M9 Motorway:</h5>
                             <ul>
                                 <li>Exit at Junction 9 towards Stirling Services.</li>
-                                <li>Follow signs for A91 > A905 (Shore Road) towards Fallin.</li>
+                                <li>Follow signs for A91 &gt; A905 (Shore Road) towards Fallin.</li>
                                 <li>Stay on Main Street, and the club will be on your left.</li>
                             </ul>
                         </div>
@@ -446,10 +445,10 @@
                 <div class="footer-section">
                     <h3>Connect With Us</h3>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -536,7 +535,7 @@
                     message.id = 'map-disabled-message';
                     message.style.padding = '20px';
                     message.style.textAlign = 'center';
-                    message.innerHTML = 'Google Maps has been disabled due to cookie preferences. <button onclick="acceptCookies()" class="btn primary-btn">Enable Maps</button>';
+                    message.innerHTML = 'Google Maps has been disabled due to cookie preferences. <button type="button" onclick="acceptCookies()" class="btn primary-btn">Enable Maps</button>';
                     mapParent.appendChild(message);
                 }
             }
