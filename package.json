@@ -5,17 +5,20 @@
   "description": "Development-only baseline and verification tooling for the Polmaise Bowling Club website.",
   "type": "module",
   "scripts": {
+    "build": "node tools/build-site.mjs",
     "baseline": "npm run baseline:update && npm run baseline:summary",
-    "baseline:update": "playwright test --update-snapshots",
+    "baseline:update": "npm run build && playwright test --update-snapshots",
     "baseline:summary": "node tools/summarize-baseline.mjs",
-    "test": "playwright test",
+    "test": "npm run build && playwright test",
     "test:audit": "playwright test tests/page-audit.spec.js",
+    "test:build": "playwright test tests/build-output.spec.js",
     "test:html": "playwright test tests/html-validation.spec.js",
     "test:links": "playwright test tests/internal-links.spec.js",
     "test:visual": "playwright test tests/visual-regression.spec.js",
     "test:report": "playwright show-report"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
     "@playwright/test": "^1.63.0",
     "axe-core": "^4.13.0",
     "html-validate": "^10.9.0"

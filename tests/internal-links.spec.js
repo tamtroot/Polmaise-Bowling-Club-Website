@@ -3,9 +3,10 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { test } from "@playwright/test";
 import { compareOrUpdateBaseline, writeMeasurement } from "./helpers/baseline.mjs";
+import { SITE_ROOT } from "./helpers/site-root.mjs";
 import { SITE_PAGES } from "./helpers/site-pages.mjs";
 
-const projectRoot = process.cwd();
+const projectRoot = SITE_ROOT;
 const ignoredDirectories = new Set([
   ".git",
   "node_modules",

@@ -9,7 +9,13 @@ Run the complete baseline refresh with:
 npm run baseline
 ```
 
-Run the suite without updating the baseline with:
+Build the generated site with:
+
+```sh
+npm run build
+```
+
+Build and run the suite against `_site` without updating the baseline with:
 
 ```sh
 npm test

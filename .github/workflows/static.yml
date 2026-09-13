@@ -33,24 +33,15 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Prepare production artifact
-        run: |
-          mkdir -p _site
-          rsync -a \
-            --exclude='.git/' \
-            --exclude='.github/' \
-            --exclude='.gitignore' \
-            --exclude='node_modules/' \
-            --exclude='tests/' \
-            --exclude='tools/' \
-            --exclude='reports/' \
-            --exclude='test-results/' \
-            --exclude='playwright-report/' \
-            --exclude='package.json' \
-            --exclude='package-lock.json' \
-            --exclude='playwright.config.js' \
-            --exclude='_site/' \
-            ./ _site/
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Build static site
+        run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

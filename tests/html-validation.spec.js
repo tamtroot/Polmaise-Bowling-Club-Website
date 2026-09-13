@@ -3,8 +3,9 @@ import path from "node:path";
 import { test } from "@playwright/test";
 import { HtmlValidate } from "html-validate";
 import { compareOrUpdateBaseline, writeMeasurement } from "./helpers/baseline.mjs";
+import { SITE_ROOT } from "./helpers/site-root.mjs";
 
-const projectRoot = process.cwd();
+const projectRoot = SITE_ROOT;
 const ignoredDirectories = new Set([
   ".git",
   "node_modules",

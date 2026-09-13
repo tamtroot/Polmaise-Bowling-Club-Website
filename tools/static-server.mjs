@@ -76,11 +76,24 @@ function getRequestedPort() {
   return portIndex >= 0 ? Number(process.argv[portIndex + 1]) : 4173;
 }
 
+function getRequestedRoot() {
+  const rootArgument = process.argv.find((argument) => argument.startsWith("--root="));
+  if (rootArgument) {
+    return rootArgument.split("=")[1];
+  }
+
+  const rootIndex = process.argv.indexOf("--root");
+  return rootIndex >= 0 ? process.argv[rootIndex + 1] : process.cwd();
+}
+
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const port = getRequestedPort();
-  const server = createStaticServer();
+  const root = getRequestedRoot();
+  const server = createStaticServer(root);
 
   server.listen(port, "127.0.0.1", () => {
-    console.log(`Static baseline server listening on http://127.0.0.1:${port}`);
+    console.log(
+      `Static baseline server listening on http://127.0.0.1:${port} from ${root}`,
+    );
   });
 }
