@@ -1,0 +1,310 @@
+{
+  "total": 55,
+  "files": [
+    {
+      "file": "about.html",
+      "count": 2,
+      "entries": [
+        {
+          "line": 301,
+          "value": "margin-top: 3rem;",
+          "tag": "<div class=\"committee-members\" style=\"margin-top: 3rem;\""
+        },
+        {
+          "line": 756,
+          "value": "columns: 3; column-gap: 20px;",
+          "tag": "<div class=\"champions-list\" style=\"columns: 3; column-gap: 20px;\""
+        }
+      ]
+    },
+    {
+      "file": "archive.html",
+      "count": 1,
+      "entries": [
+        {
+          "line": 218,
+          "value": "display: none;",
+          "tag": "<div class=\"archive-categories\" style=\"display: none;\""
+        }
+      ]
+    },
+    {
+      "file": "News articles/presentation-dance-2025.html",
+      "count": 3,
+      "entries": [
+        {
+          "line": 661,
+          "value": "text-align: center; margin-bottom: 2rem;",
+          "tag": "<h2 class=\"content-section\" style=\"text-align: center; margin-bottom: 2rem;\""
+        },
+        {
+          "line": 663,
+          "value": "position: relative; z-index: 2;",
+          "tag": "<span style=\"position: relative; z-index: 2;\""
+        },
+        {
+          "line": 674,
+          "value": "text-align: center; font-style: italic; color: var(--gold); font-size: 1.2rem; margin-top: 2rem;",
+          "tag": "<p style=\"text-align: center; font-style: italic; color: var(--gold); font-size: 1.2rem; margin-top: 2rem;\""
+        }
+      ]
+    },
+    {
+      "file": "news.html",
+      "count": 48,
+      "entries": [
+        {
+          "line": 882,
+          "value": "margin: 0 0 20px;",
+          "tag": "<figure class=\"news-image\" style=\"margin: 0 0 20px;\""
+        },
+        {
+          "line": 884,
+          "value": "text-align: center; font-size: 0.9rem; margin-top: 10px; font-style: italic;",
+          "tag": "<figcaption style=\"text-align: center; font-size: 0.9rem; margin-top: 10px; font-style: italic;\""
+        },
+        {
+          "line": 908,
+          "value": "text-align: center; font-size: 0.9rem; margin-top: 10px; font-style: italic;",
+          "tag": "<figcaption style=\"text-align: center; font-size: 0.9rem; margin-top: 10px; font-style: italic;\""
+        },
+        {
+          "line": 1191,
+          "value": "list-style-type: none; padding-left: 0; margin: 15px 0;",
+          "tag": "<ul style=\"list-style-type: none; padding-left: 0; margin: 15px 0;\""
+        },
+        {
+          "line": 1227,
+          "value": "list-style-type: none; padding-left: 0; margin: 15px 0;",
+          "tag": "<ul style=\"list-style-type: none; padding-left: 0; margin: 15px 0;\""
+        },
+        {
+          "line": 1343,
+          "value": "display: none;",
+          "tag": "<div class=\"news-archive-content\" id=\"news-archive-content\" style=\"display: none;\""
+        },
+        {
+          "line": 1608,
+          "value": "list-style-type: none; padding-left: 0; margin: 15px 0;",
+          "tag": "<ul style=\"list-style-type: none; padding-left: 0; margin: 15px 0;\""
+        },
+        {
+          "line": 2191,
+          "value": "background-color: #f0f8ff; padding: 15px; border-left: 4px solid #1e3a8a; margin: 20px 0;",
+          "tag": "<p class=\"update-note\" style=\"background-color: #f0f8ff; padding: 15px; border-left: 4px solid #1e3a8a; margin: 20px 0;\""
+        },
+        {
+          "line": 2201,
+          "value": "background-color: #f0f8ff; padding: 15px; border-left: 4px solid #1e3a8a; margin: 20px 0;",
+          "tag": "<p class=\"update-note\" style=\"background-color: #f0f8ff; padding: 15px; border-left: 4px solid #1e3a8a; margin: 20px 0;\""
+        },
+        {
+          "line": 2230,
+          "value": "text-align: center; margin-top: 20px;",
+          "tag": "<div class=\"cta-button\" style=\"text-align: center; margin-top: 20px;\""
+        },
+        {
+          "line": 2389,
+          "value": "display: none;",
+          "tag": "<div class=\"news-archive-content\" id=\"history-archive-content\" style=\"display: none;\""
+        },
+        {
+          "line": 2390,
+          "value": "display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; margin-bottom: 30px;",
+          "tag": "<div style=\"display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; margin-bottom: 30px;\""
+        },
+        {
+          "line": 2391,
+          "value": "flex: 1; min-width: 300px;",
+          "tag": "<div class=\"history-intro\" style=\"flex: 1; min-width: 300px;\""
+        },
+        {
+          "line": 2403,
+          "value": "flex: 0 0 auto; max-width: 260px; align-self: center;",
+          "tag": "<div style=\"flex: 0 0 auto; max-width: 260px; align-self: center;\""
+        },
+        {
+          "line": 2409,
+          "value": "margin: 30px 0; padding: 25px; border: 1px solid #eaeaea; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);",
+          "tag": "<div class=\"looking-back-section\" style=\"margin: 30px 0; padding: 25px; border: 1px solid #eaeaea; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);\""
+        },
+        {
+          "line": 2411,
+          "value": "display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;",
+          "tag": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\""
+        },
+        {
+          "line": 2412,
+          "value": "flex: 1; min-width: 300px;",
+          "tag": "<div style=\"flex: 1; min-width: 300px;\""
+        },
+        {
+          "line": 2421,
+          "value": "flex: 0 0 auto; max-width: 300px;",
+          "tag": "<div style=\"flex: 0 0 auto; max-width: 300px;\""
+        },
+        {
+          "line": 2422,
+          "value": "margin: 0;",
+          "tag": "<figure style=\"margin: 0;\""
+        },
+        {
+          "line": 2424,
+          "value": "text-align: center; font-size: 0.9rem; margin-top: 10px; font-style: italic;",
+          "tag": "<figcaption style=\"text-align: center; font-size: 0.9rem; margin-top: 10px; font-style: italic;\""
+        },
+        {
+          "line": 2537,
+          "value": "display: none;",
+          "tag": "<div id=\"history-2013\" class=\"history-item\" style=\"display: none;\""
+        },
+        {
+          "line": 2563,
+          "value": "display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;",
+          "tag": "<div class=\"news-close-btn\" style=\"display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;\""
+        },
+        {
+          "line": 2569,
+          "value": "display: none;",
+          "tag": "<div id=\"history-2003\" class=\"history-item\" style=\"display: none;\""
+        },
+        {
+          "line": 2615,
+          "value": "display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;",
+          "tag": "<div class=\"news-close-btn\" style=\"display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;\""
+        },
+        {
+          "line": 2621,
+          "value": "display: none;",
+          "tag": "<div id=\"history-2002\" class=\"history-item\" style=\"display: none;\""
+        },
+        {
+          "line": 2689,
+          "value": "display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;",
+          "tag": "<div class=\"news-close-btn\" style=\"display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;\""
+        },
+        {
+          "line": 2695,
+          "value": "display: none;",
+          "tag": "<div id=\"history-1988\" class=\"history-item\" style=\"display: none;\""
+        },
+        {
+          "line": 2716,
+          "value": "list-style-type: none; padding-left: 20px; margin-bottom: 20px;",
+          "tag": "<ul style=\"list-style-type: none; padding-left: 20px; margin-bottom: 20px;\""
+        },
+        {
+          "line": 2730,
+          "value": "display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;",
+          "tag": "<div class=\"news-close-btn\" style=\"display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;\""
+        },
+        {
+          "line": 2736,
+          "value": "display: none;",
+          "tag": "<div id=\"history-1961\" class=\"history-item\" style=\"display: none;\""
+        },
+        {
+          "line": 2811,
+          "value": "text-align:right; font-weight: bold;",
+          "tag": "<td colspan=\"4\" style=\"text-align:right; font-weight: bold;\""
+        },
+        {
+          "line": 2812,
+          "value": "font-weight: bold;",
+          "tag": "<td style=\"font-weight: bold;\""
+        },
+        {
+          "line": 2819,
+          "value": "display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;",
+          "tag": "<div class=\"news-close-btn\" style=\"display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;\""
+        },
+        {
+          "line": 2825,
+          "value": "display: none;",
+          "tag": "<div id=\"history-1942\" class=\"history-item\" style=\"display: none;\""
+        },
+        {
+          "line": 2849,
+          "value": "display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;",
+          "tag": "<div class=\"news-close-btn\" style=\"display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;\""
+        },
+        {
+          "line": 2855,
+          "value": "display: none;",
+          "tag": "<div id=\"history-1935\" class=\"history-item\" style=\"display: none;\""
+        },
+        {
+          "line": 2868,
+          "value": "float: right; margin: 0 0 20px 20px; max-width: 100%;",
+          "tag": "<div style=\"float: right; margin: 0 0 20px 20px; max-width: 100%;\""
+        },
+        {
+          "line": 2870,
+          "value": "display: flex; flex-direction: column; gap: 15px; max-width: 250px;",
+          "tag": "<div style=\"display: flex; flex-direction: column; gap: 15px; max-width: 250px;\""
+        },
+        {
+          "line": 2973,
+          "value": "display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;",
+          "tag": "<div class=\"news-close-btn\" style=\"display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;\""
+        },
+        {
+          "line": 2979,
+          "value": "display: none;",
+          "tag": "<div id=\"history-1914\" class=\"history-item\" style=\"display: none;\""
+        },
+        {
+          "line": 2992,
+          "value": "float: right; margin: 0 0 20px 20px; max-width: 100%;",
+          "tag": "<div style=\"float: right; margin: 0 0 20px 20px; max-width: 100%;\""
+        },
+        {
+          "line": 2994,
+          "value": "display: flex; flex-direction: column; gap: 15px; max-width: 250px;",
+          "tag": "<div style=\"display: flex; flex-direction: column; gap: 15px; max-width: 250px;\""
+        },
+        {
+          "line": 3063,
+          "value": "display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;",
+          "tag": "<div class=\"news-close-btn\" style=\"display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;\""
+        },
+        {
+          "line": 3069,
+          "value": "display: none;",
+          "tag": "<div id=\"history-1911-july\" class=\"history-item\" style=\"display: none;\""
+        },
+        {
+          "line": 3099,
+          "value": "display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;",
+          "tag": "<div class=\"news-close-btn\" style=\"display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;\""
+        },
+        {
+          "line": 3105,
+          "value": "display: none;",
+          "tag": "<div id=\"history-1911\" class=\"history-item\" style=\"display: none;\""
+        },
+        {
+          "line": 3230,
+          "value": "list-style-type: none; padding-left: 0;",
+          "tag": "<ul style=\"list-style-type: none; padding-left: 0;\""
+        },
+        {
+          "line": 3241,
+          "value": "display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;",
+          "tag": "<div class=\"news-close-btn\" style=\"display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;\""
+        }
+      ]
+    },
+    {
+      "file": "signup.html",
+      "count": 1,
+      "entries": [
+        {
+          "line": 118,
+          "value": "display: none;",
+          "tag": "<div id=\"memberNumberField\" class=\"form-group\" style=\"display: none;\""
+        }
+      ]
+    }
+  ]
+}

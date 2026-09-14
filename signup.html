@@ -115,7 +115,7 @@ bodyClass: ""
                             <label for="membershipStatus">I am already a member of Polmaise Bowling Club</label>
                         </div>
                         
-                        <div id="memberNumberField" class="form-group" style="display: none;">
+                        <div id="memberNumberField" class="form-group is-hidden">
                             <label for="memberNumber">Membership Number</label>
                             <input type="text" id="memberNumber" name="memberNumber">
                         </div>
@@ -183,7 +183,7 @@ bodyClass: ""
             
             if (membershipStatusCheckbox && memberNumberField) {
                 membershipStatusCheckbox.addEventListener('change', function() {
-                    memberNumberField.style.display = this.checked ? 'block' : 'none';
+                    memberNumberField.classList.toggle('is-hidden', !this.checked);
                 });
             }
             

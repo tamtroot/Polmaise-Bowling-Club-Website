@@ -97,6 +97,95 @@ PNG/SVG for logos rather than photographic formats.
 4. Run `node tools/write-image-manifest.mjs` so the archive-preservation check
    covers the new file.
 
+## Day and night themes
+
+The site ships one component system with two themes. The day theme is the
+default and needs no JavaScript; the night theme is opt-in through the header
+toggle and is remembered in `localStorage` (`polmaise-theme`).
+
+1. All colours come from semantic tokens in `styles.css` (`--color-bg`,
+   `--color-surface`, `--color-surface-alt`, `--color-text`,
+   `--color-text-muted`, `--color-primary`, `--color-accent`,
+   `--color-accent-soft`, `--color-border`, `--color-focus`,
+   `--color-on-primary`, `--color-on-inverse`, the `--color-positive/warning/
+   neutral/notice/heritage-*` status tokens, `--color-row-stripe`,
+   `--color-row-hover`).
+2. Add a new colour by defining it in the `:root` block **and** in the
+   `[data-theme="dark"]` block. Never give a component its own
+   `[data-theme="dark"]` override unless the value is genuinely
+   theme-specific.
+3. `_includes/head.njk` applies the saved theme before first paint so there is
+   no flash; `script.js` keeps the toggle, its `aria-pressed` state and the
+   stored preference in sync.
+4. Inline `style` attributes are not used for presentation: add a class
+   instead. Only per-image focal points passed to `{% photoImage %}` keep a
+   `style` option.
+5. Coverage: `tests/theme.spec.js` (toggle behaviour), `tools/audit-accessibility.mjs`
+   (axe in both themes at desktop and mobile), `tools/audit-header-layout.mjs`
+   (header collisions across breakpoints) and the visual baselines
+   (`<page>-<viewport>.png` for day, `<page>-night-desktop.png` for desktop
+   night).
+
+## Third-party assets (vendor/)
+
+The site does not load anything from a CDN. jQuery, Lightbox2, Font Awesome and
+the web fonts live in `vendor/` and are copied into the build:
+
+```powershell
+node tools/fetch-vendor-assets.mjs   # refresh the pinned versions
+```
+
+The script pins exact versions, trims the Font Awesome stylesheet to the solid
+and brand faces the site uses, and keeps only the `latin` font subset. Two tests
+protect this: `tests/external-dependency-resilience.spec.js` (the site must
+paint and stay interactive even when third-party origins are stalled, and no
+page may load scripts, styles or fonts cross-origin) and
+`tests/rapid-navigation.spec.js` (clicking quickly through the site must never
+leave a page unresponsive; the mobile drawer must never arrive open or leave
+`body` scroll-locked).
+
+When adding an icon, check it exists in `fa-solid` or `fa-brands`: the other
+Font Awesome faces are deliberately not shipped.
+
+## Club crest
+
+`Images/club-logo.png` must have a transparent background. The archived asset
+was exported on an opaque white square, which showed as a white box in the night
+theme — the source of the long-standing logo defect:
+
+```powershell
+node tools/normalise-club-logo.mjs --check   # is the background transparent?
+node tools/normalise-club-logo.mjs           # mask everything outside the badge circle
+```
+
+The crest is only 110px wide, so it is displayed at 56px in the header and
+110px (88px on mobile) in the homepage welcome panel; the image pipeline never
+upscales. After changing any original run `node tools/write-image-manifest.mjs`.
+
+## Header breakpoints
+
+The inline desktop navigation needs room for the club wordmark and the theme
+toggle, so it appears at **1280px and above**; below that the burger menu takes
+over. `script.js` reads the same `min-width: 1280px` media query, so the two can
+never disagree.
+
+The navigation must also keep still while the web fonts load: it is
+right-aligned with no reserved widths, so a fallback font with different metrics
+used to re-flow every item by up to 33px while the gap between items is only
+4px, which made clicks land in the gap (nothing happened) or on the neighbouring
+page. Two things prevent that:
+
+1. `styles.css` declares a metric-matched `'Open Sans Fallback'` family (one
+   `@font-face` per system font with its own measured `size-adjust`) and lists it
+   straight after `'Open Sans'` in `--font-ui`.
+2. `_includes/head.njk` preloads the Open Sans and Playfair Display files that
+   the header needs, so the real metrics are normally there for the first paint.
+
+`tests/navigation-hit-target.spec.js` guards both: it fails if any navigation
+item moves 3px or more across the font swap (light and dark, 1440/1280/1024px)
+and it clicks nine points across the label the user sees. Re-tune after changing
+a font with `node tools/diagnose-navigation-lock.mjs --tune`.
+
 ## Common troubleshooting
 
 | Symptom | Cause / fix |
@@ -107,6 +196,10 @@ PNG/SVG for logos rather than photographic formats.
 | Visual test fails after an image change | run `npm run test:visual` and inspect the diff artefacts in `test-results/`; only update baselines with `npm run baseline:update` once the change is approved |
 | Fixtures page looks wrong on a specific day | fixture styling is date-driven; tests freeze the clock, the live site does not |
 | Live Scores shows a service error | the embedded third-party score service is unavailable; the rest of the site is unaffected |
+| A page seems frozen after clicking through several pages quickly | run `npx playwright test tests/rapid-navigation.spec.js tests/external-dependency-resilience.spec.js`; a page must paint and stay interactive even when outside origins stall |
+| An icon renders as an empty circle | the glyph is the same colour as its background, or it lives in a Font Awesome face that is not shipped (`vendor/` carries only solid and brand) |
+| A navigation click occasionally opens the wrong page or does nothing | the menu moved under the cursor while the web font loaded: rebuild and run `npx playwright test tests/navigation-hit-target.spec.js`; the tuned fallback and preload keep the items still |
+| The burger menu closes by itself shortly after opening | check the drawer reset logic in `script.js`: it may only run on a back/forward restore (`event.persisted`), never on a normal load |
 
 ## Known product decisions (do not "fix" silently)
 

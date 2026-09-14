@@ -165,6 +165,35 @@ function normaliseDocument(document) {
     // Stage 7 gives the placeholder social icons a decorative class so they
     // are no longer announced as links.
     "social-link",
+    // Stage 9 replaces inline `style` attributes with named classes (the
+    // comparison already ignores `style`) and adds presentation hooks that do
+    // not change the structure or content of the page.
+    "is-hidden",
+    "news-figure",
+    "news-figcaption",
+    "plain-list",
+    "plain-list--inset",
+    "plain-list--flush",
+    "news-cta",
+    "history-feature-row",
+    "history-feature-figure",
+    "looking-back-row",
+    "looking-back-text",
+    "looking-back-figure",
+    "figure-reset",
+    "history-table-total",
+    "history-table-total-value",
+    "history-float-figure",
+    "history-thumb-stack",
+    "committee-members--spaced",
+    "cta-heading",
+    "cta-button-label",
+    "closing-quote",
+    // Icon-font classes are presentational. Stage 10 swapped the square
+    // Facebook tile (whose "f" is negative space and vanished on the navy
+    // circle) for the standalone "f" glyph.
+    "fa-facebook",
+    "fa-facebook-f",
   ]);
   // Stage 6 serves build-time image derivatives with responsive attributes, so
   // the image-specific presentation attributes are intentionally different from
@@ -241,6 +270,11 @@ function normaliseDocument(document) {
     // those anchors are compared by their text content only.
     const placeholderHrefs = new Set(["#", "", "login.html"]);
     const href = node.getAttribute("href");
+    // Stage 9 adds a day/night theme toggle to the shared header: a new control,
+    // not a change to existing structure, so it is not part of the comparison.
+    if (classes.contains("theme-toggle")) {
+      return null;
+    }
     // Controls whose placeholder link was replaced by a real element (the
     // social icons became decorative, the ticket link became a button) are
     // compared by their content only.

@@ -22,6 +22,8 @@ export default function configureEleventy(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("styles.css");
   eleventyConfig.addPassthroughCopy("script.js");
   eleventyConfig.addPassthroughCopy("downloads");
+  // Self-hosted jQuery, Lightbox2, Font Awesome and web fonts (Stage 10).
+  eleventyConfig.addPassthroughCopy("vendor");
   eleventyConfig.ignores.add("_site/**");
   eleventyConfig.ignores.add("node_modules/**");
   eleventyConfig.ignores.add("playwright-report/**");

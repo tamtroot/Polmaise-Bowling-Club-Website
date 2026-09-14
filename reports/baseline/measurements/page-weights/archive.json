@@ -9,33 +9,72 @@
     "height": 900
   },
   "status": 200,
-  "resourceCount": 41,
-  "totalBytes": 1031558,
+  "resourceCount": 52,
+  "totalBytes": 1635181,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 105297
+      "bytes": 106095
+    },
+    "font": {
+      "count": 5,
+      "bytes": 444100
     },
     "image": {
-      "count": 38,
-      "bytes": 890674
+      "count": 39,
+      "bytes": 822304
     },
     "script": {
-      "count": 1,
-      "bytes": 6825
+      "count": 3,
+      "bytes": 108573
     },
     "stylesheet": {
-      "count": 1,
-      "bytes": 28762
+      "count": 4,
+      "bytes": 154109
     }
   },
   "largestResources": [
     {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-solid-900.woff2",
+      "bytes": 150020,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-brands-400.woff2",
+      "bytes": 109808,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
       "url": "http://127.0.0.1:4173/archive.html",
-      "bytes": 105297,
+      "bytes": 106095,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
+      "bytes": 100307,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/merriweather-400-normal-latin.woff2",
+      "bytes": 97548,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/jquery/jquery-3.6.0.min.js",
+      "bytes": 89501,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0007-w400.webp",
@@ -43,6 +82,20 @@
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 48347,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/open-sans-400-normal-latin.woff2",
+      "bytes": 48320,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
     },
     {
       "url": "http://127.0.0.1:4173/Images/SD%20Archive/20250506_133718-w400.webp",
@@ -73,6 +126,13 @@
       "contentType": "image/webp"
     },
     {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/playfair-display-400-normal-latin.woff2",
+      "bytes": 38404,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
       "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0003-w400.webp",
       "bytes": 37588,
       "status": 200,
@@ -94,13 +154,6 @@
       "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0011-w400.webp",
-      "bytes": 30118,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
       "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0006-w400.webp",
       "bytes": 29766,
       "status": 200,
@@ -110,20 +163,6 @@
     {
       "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_160849_038-w400.webp",
       "bytes": 29138,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 28762,
-      "status": 200,
-      "resourceType": "stylesheet",
-      "contentType": "text/css; charset=utf-8"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145632_ecf-w400.webp",
-      "bytes": 26976,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
@@ -164,43 +203,8 @@
       "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145642_a01-w400.webp",
-      "bytes": 23638,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
       "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_150301_119-w400.webp",
       "bytes": 21648,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_130634_47b-w400.webp",
-      "bytes": 21508,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/SD%20Archive/20250506_133914-w400.webp",
-      "bytes": 20748,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250506_150213_ea3-w400.webp",
-      "bytes": 19844,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250507_121112_ce0-w400.webp",
-      "bytes": 17130,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
@@ -209,14 +213,14 @@
   "resources": [
     {
       "url": "http://127.0.0.1:4173/archive.html",
-      "bytes": 105297,
+      "bytes": 106095,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
-      "bytes": 3540,
+      "bytes": 4436,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
@@ -308,13 +312,6 @@
     {
       "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0010-w400.webp",
       "bytes": 37320,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/SD%20Archive/IMG-20250507-WA0011-w400.webp",
-      "bytes": 30118,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
@@ -460,20 +457,6 @@
       "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145632_ecf-w400.webp",
-      "bytes": 26976,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/SD%20Archive/Notes_250527_145642_a01-w400.webp",
-      "bytes": 23638,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
       "url": "http://127.0.0.1:4173/Images/SD%20Archive/Sandy-w800.webp",
       "bytes": 8692,
       "status": 200,
@@ -482,17 +465,115 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 6825,
+      "bytes": 9589,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 28762,
+      "bytes": 48347,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
+      "bytes": 100307,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-brands-400.woff2",
+      "bytes": 109808,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-solid-900.woff2",
+      "bytes": 150020,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/merriweather-400-normal-latin.woff2",
+      "bytes": 97548,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/open-sans-400-normal-latin.woff2",
+      "bytes": 48320,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/playfair-display-400-normal-latin.woff2",
+      "bytes": 38404,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/fonts.css",
+      "bytes": 2923,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/jquery/jquery-3.6.0.min.js",
+      "bytes": 89501,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/css/lightbox.min.css",
+      "bytes": 2532,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/images/close.png",
+      "bytes": 280,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/images/loading.gif",
+      "bytes": 8476,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/gif"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/images/next.png",
+      "bytes": 1350,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/images/prev.png",
+      "bytes": 1360,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/js/lightbox.min.js",
+      "bytes": 9483,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
     }
   ]
 }

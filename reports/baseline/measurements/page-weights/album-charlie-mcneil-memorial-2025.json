@@ -9,33 +9,72 @@
     "height": 900
   },
   "status": 200,
-  "resourceCount": 41,
-  "totalBytes": 1275731,
+  "resourceCount": 52,
+  "totalBytes": 1896117,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 12982
+      "bytes": 13687
+    },
+    "font": {
+      "count": 5,
+      "bytes": 444100
     },
     "image": {
-      "count": 38,
-      "bytes": 1227162
+      "count": 39,
+      "bytes": 1175648
     },
     "script": {
-      "count": 1,
-      "bytes": 6825
+      "count": 3,
+      "bytes": 108573
     },
     "stylesheet": {
-      "count": 1,
-      "bytes": 28762
+      "count": 4,
+      "bytes": 154109
     }
   },
   "largestResources": [
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-solid-900.woff2",
+      "bytes": 150020,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-brands-400.woff2",
+      "bytes": 109808,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
+      "bytes": 100307,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/merriweather-400-normal-latin.woff2",
+      "bytes": 97548,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
     {
       "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_140023-w400.webp",
       "bytes": 92160,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/jquery/jquery-3.6.0.min.js",
+      "bytes": 89501,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125914-w400.webp",
@@ -94,6 +133,20 @@
       "contentType": "image/webp"
     },
     {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 48347,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/open-sans-400-normal-latin.woff2",
+      "bytes": 48320,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
       "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124030-w400.webp",
       "bytes": 45084,
       "status": 200,
@@ -122,6 +175,13 @@
       "contentType": "image/webp"
     },
     {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/playfair-display-400-normal-latin.woff2",
+      "bytes": 38404,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
       "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_123501-w400.webp",
       "bytes": 38360,
       "status": 200,
@@ -143,64 +203,8 @@
       "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 28762,
-      "status": 200,
-      "resourceType": "stylesheet",
-      "contentType": "text/css; charset=utf-8"
-    },
-    {
       "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142618-w400.webp",
       "bytes": 28536,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142616-w400.webp",
-      "bytes": 27946,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_094516-w400.webp",
-      "bytes": 26800,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_145613-w400.webp",
-      "bytes": 26594,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142802-w400.webp",
-      "bytes": 21370,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_135923-w400.webp",
-      "bytes": 21254,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_134042-w400.webp",
-      "bytes": 20970,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142738-w400.webp",
-      "bytes": 19400,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
@@ -439,27 +443,6 @@
       "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142755-w400.webp",
-      "bytes": 15912,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142802-w400.webp",
-      "bytes": 21370,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_145613-w400.webp",
-      "bytes": 26594,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
       "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_164614-w400.webp",
       "bytes": 17136,
       "status": 200,
@@ -468,31 +451,129 @@
     },
     {
       "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
-      "bytes": 3540,
+      "bytes": 4436,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
     },
     {
       "url": "http://127.0.0.1:4173/PhotoAlbums/charlie-mcneil-memorial-2025.html",
-      "bytes": 12982,
+      "bytes": 13687,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 6825,
+      "bytes": 9589,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 28762,
+      "bytes": 48347,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
+      "bytes": 100307,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-brands-400.woff2",
+      "bytes": 109808,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-solid-900.woff2",
+      "bytes": 150020,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/merriweather-400-normal-latin.woff2",
+      "bytes": 97548,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/open-sans-400-normal-latin.woff2",
+      "bytes": 48320,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/playfair-display-400-normal-latin.woff2",
+      "bytes": 38404,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/fonts.css",
+      "bytes": 2923,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/jquery/jquery-3.6.0.min.js",
+      "bytes": 89501,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/css/lightbox.min.css",
+      "bytes": 2532,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/images/close.png",
+      "bytes": 280,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/images/loading.gif",
+      "bytes": 8476,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/gif"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/images/next.png",
+      "bytes": 1350,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/images/prev.png",
+      "bytes": 1360,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/js/lightbox.min.js",
+      "bytes": 9483,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
     }
   ]
 }

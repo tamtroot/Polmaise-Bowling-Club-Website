@@ -128,8 +128,8 @@ bodyClass: ""
         }
 
         .fixtures-table th {
-            background-color: var(--club-blue);
-            color: white;
+            background-color: var(--color-primary);
+            color: var(--color-on-primary);
             text-align: left;
             padding: 12px 15px;
             font-weight: 600;
@@ -137,47 +137,46 @@ bodyClass: ""
 
         .fixtures-table td {
             padding: 10px 15px;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid var(--color-border);
         }
 
         .fixtures-table tbody tr:nth-child(even) {
-            background-color: #f8f9fa;
+            background-color: var(--color-surface-alt);
         }
 
         .fixtures-table tbody tr:hover {
-            background-color: #e8f4ff;
+            background-color: var(--color-row-hover);
         }
 
         /* Style for past fixtures */
         .fixtures-table tbody tr.past-fixture {
-            /* 4.96:1 on #f5f5f5; was #aaa at 2.13:1 */
-            color: #6a6a6a;
-            background-color: #f5f5f5;
+            color: var(--color-text-muted);
+            background-color: var(--color-surface-alt);
         }
 
         .fixtures-table tbody tr.past-fixture:hover {
-            background-color: #eaeaea;
+            background-color: var(--color-surface-alt);
         }
 
         /* Style for next upcoming fixture */
         .fixtures-table tbody tr.next-fixture {
-            background-color: rgba(255, 248, 220, 0.7);
-            border-left: 4px solid var(--club-blue);
+            background-color: var(--color-accent-soft);
+            border-left: 4px solid var(--color-primary);
             font-weight: 500;
         }
 
         .fixtures-table tbody tr.next-fixture:hover {
-            background-color: rgba(255, 248, 220, 0.9);
+            background-color: color-mix(in srgb, var(--color-accent) 22%, var(--color-surface));
         }
 
         .fixtures-table tbody tr.next-fixture td {
-            border-bottom: 1px solid var(--club-blue);
+            border-bottom: 1px solid var(--color-primary);
         }
 
         .hamilton-title {
             margin-top: 2.5rem;
-            color: var(--club-blue);
-            border-left: 4px solid var(--club-blue);
+            color: var(--color-primary);
+            border-left: 4px solid var(--color-primary);
             padding-left: 1rem;
         }
 
@@ -188,7 +187,7 @@ bodyClass: ""
 
         .upcoming-ties {
             padding: 2rem 0;
-            background-color: #f5f8fa;
+            background-color: var(--color-surface-alt);
         }
 
         .ties-section {
@@ -196,20 +195,20 @@ bodyClass: ""
         }
 
         .ties-section h3 {
-            color: var(--club-blue);
+            color: var(--color-primary);
             margin-bottom: 1rem;
-            border-left: 4px solid var(--club-blue);
+            border-left: 4px solid var(--color-primary);
             padding-left: 1rem;
         }
 
         /* Download section styles */
         .download-fixture-list {
             padding: 2rem 0 3rem;
-            background-color: #f8f9fa;
+            background-color: var(--color-surface-alt);
         }
 
         .download-box {
-            background-color: white;
+            background-color: var(--color-primary);
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             padding: 2rem;
@@ -217,7 +216,7 @@ bodyClass: ""
         }
 
         .download-content h3 {
-            color: var(--club-blue);
+            color: var(--color-on-primary);
             margin-bottom: 1rem;
         }
 
@@ -238,8 +237,8 @@ bodyClass: ""
 
             /* Card styles for mobile */
             .fixture-card {
-                background-color: white;
-                border: 1px solid #e0e0e0;
+                background-color: var(--color-surface);
+                border: 1px solid var(--color-border);
                 border-radius: 8px;
                 padding: 15px;
                 margin-bottom: 15px;
@@ -247,39 +246,39 @@ bodyClass: ""
             }
 
             .fixture-card.past-fixture {
-                background-color: #f5f5f5 !important;
-                /* 4.96:1 on #f5f5f5; was #aaa at 2.13:1 */
-                color: #6a6a6a;
+                background-color: var(--color-surface-alt) !important;
+                color: var(--color-text-muted);
             }
 
             /* Next fixture highlighting - must come after base .fixture-card */
             .fixture-card.next-fixture {
-                background-color: #fffacd !important;
-                border: 2px solid #1e3a8a !important;
-                border-left: 5px solid #1e3a8a !important;
+                background-color: var(--color-accent-soft) !important;
+                border: 2px solid var(--color-primary) !important;
+                border-left: 5px solid var(--color-primary) !important;
                 border-radius: 8px !important;
                 font-weight: 500;
-                box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25) !important;
+                box-shadow: var(--shadow-md) !important;
                 position: relative;
             }
 
             .fixture-card.next-fixture .fixture-title {
-                color: #1e3a8a !important;
+                color: var(--color-text) !important;
                 font-weight: 600;
             }
 
             .fixture-card.next-fixture .fixture-date {
-                color: #1e3a8a !important;
+                color: var(--color-text) !important;
                 font-weight: 700;
                 font-size: 1.1rem;
             }
 
             .fixture-card.next-fixture .fixture-card-header {
-                border-bottom-color: rgba(30, 58, 138, 0.3) !important;
+                border-bottom-color: var(--color-border) !important;
             }
 
+            /* Status badges keep their own semantic colours inside the
+               highlighted next-fixture card. */
             .fixture-card.next-fixture .fixture-confirmed {
-                background-color: #1e3a8a !important;
                 font-weight: 700;
             }
 
@@ -289,18 +288,18 @@ bodyClass: ""
                 align-items: flex-start;
                 margin-bottom: 12px;
                 padding-bottom: 10px;
-                border-bottom: 1px solid #e0e0e0;
+                border-bottom: 1px solid var(--color-border);
             }
 
             .fixture-date {
                 font-weight: 600;
-                color: var(--club-blue, #1e3a8a);
+                color: var(--color-primary);
                 font-size: 1rem;
             }
 
             .fixture-confirmed {
-                background-color: var(--club-blue, #1e3a8a);
-                color: white;
+                background-color: var(--color-primary);
+                color: var(--color-on-primary);
                 padding: 4px 10px;
                 border-radius: 4px;
                 font-size: 0.75rem;
@@ -309,24 +308,25 @@ bodyClass: ""
             }
 
             .fixture-confirmed.Proposed {
-                /* white on #b45309 = 5.02:1; #ff9800 was 2.16:1 */
-                background-color: #b45309;
+                background-color: var(--color-warning-surface);
+                color: var(--color-warning-text);
             }
 
             .fixture-confirmed.TBC {
-                background-color: #757575;
+                background-color: var(--color-neutral-surface);
+                color: var(--color-neutral-text);
             }
 
             .fixture-confirmed.Confirmed {
-                /* white on #2e7d32 = 5.13:1; #4caf50 was 2.78:1 */
-                background-color: #2e7d32;
+                background-color: var(--color-positive-surface);
+                color: var(--color-positive-text);
             }
 
             .fixture-title {
                 font-weight: 600;
                 font-size: 1rem;
                 margin-bottom: 8px;
-                color: #333;
+                color: var(--color-text);
             }
 
             .fixture-details {
@@ -334,7 +334,7 @@ bodyClass: ""
                 flex-direction: column;
                 gap: 6px;
                 font-size: 0.9rem;
-                color: #666;
+                color: var(--color-text);
             }
 
             .fixture-detail-item {
@@ -345,7 +345,7 @@ bodyClass: ""
             .fixture-detail-label {
                 font-weight: 600;
                 min-width: 70px;
-                color: #555;
+                color: var(--color-text);
             }
 
             .fixture-detail-value {

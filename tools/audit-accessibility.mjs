@@ -51,6 +51,21 @@ try {
 
     const axe = await runAxe();
 
+    // Day theme at the mobile breakpoint (mobile fixture cards, stacked grids).
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.waitForTimeout(250);
+    const axeDayMobile = await runAxe();
+    await page.setViewportSize({ width: 1440, height: 900 });
+
+    // Night theme pass: axe must hold with the dark palette too.
+    await page.addInitScript(() => {
+      try { window.localStorage.setItem("polmaise-theme", "dark"); } catch (error) {}
+    });
+    await page.reload({ waitUntil: "domcontentloaded" });
+    await page.waitForLoadState("load", { timeout: 15000 }).catch(() => {});
+    await page.waitForTimeout(300);
+    const axeNight = await runAxe();
+
     // Some components (mobile fixture cards, offline badges) only render small.
     await page.setViewportSize({ width: 390, height: 844 });
     await page.waitForTimeout(250);
@@ -176,11 +191,13 @@ try {
       label: sitePage.label,
       path: sitePage.path,
       axe,
+      axeDayMobile,
       axeMobile,
+      axeNight,
       ...audit,
     });
     console.log(
-      `${sitePage.path}: axe desktop ${axe.reduce((total, violation) => total + violation.nodeCount, 0)} / mobile ${axeMobile.reduce((total, violation) => total + violation.nodeCount, 0)}, h1=${audit.h1Count}, main=${audit.landmarks.main}, description=${audit.description ? "yes" : "NO"}, canonical=${audit.canonical ? "yes" : "NO"}`,
+      `${sitePage.path}: day desktop ${axe.reduce((total, violation) => total + violation.nodeCount, 0)} / day mobile ${axeDayMobile.reduce((total, violation) => total + violation.nodeCount, 0)} / night desktop ${axeNight.reduce((total, violation) => total + violation.nodeCount, 0)} / night mobile ${axeMobile.reduce((total, violation) => total + violation.nodeCount, 0)}, h1=${audit.h1Count}, main=${audit.landmarks.main}, description=${audit.description ? "yes" : "NO"}, canonical=${audit.canonical ? "yes" : "NO"}`,
     );
     await context.close();
   }
@@ -194,6 +211,16 @@ const totals = {
     (total, page) => total + page.axe.reduce((sum, violation) => sum + violation.nodeCount, 0),
     0,
   ),
+  dayMobileViolationInstances: pages.reduce(
+    (total, page) =>
+      total + page.axeDayMobile.reduce((sum, violation) => sum + violation.nodeCount, 0),
+    0,
+  ),
+  nightViolationInstances: pages.reduce(
+    (total, page) =>
+      total + page.axeNight.reduce((sum, violation) => sum + violation.nodeCount, 0),
+    0,
+  ),
   mobileViolationInstances: pages.reduce(
     (total, page) =>
       total + page.axeMobile.reduce((sum, violation) => sum + violation.nodeCount, 0),
@@ -205,6 +232,8 @@ const totals = {
       ...new Set(
         pages.flatMap((page) => [
           ...page.axe.map((violation) => violation.id),
+          ...page.axeDayMobile.map((violation) => violation.id),
+          ...page.axeNight.map((violation) => violation.id),
           ...page.axeMobile.map((violation) => violation.id),
         ]),
       ),
@@ -212,7 +241,7 @@ const totals = {
       .sort()
       .map((ruleId) => {
         const matching = pages.flatMap((page) =>
-          [...page.axe, ...page.axeMobile]
+          [...page.axe, ...page.axeDayMobile, ...page.axeNight, ...page.axeMobile]
             .filter((violation) => violation.id === ruleId)
             .map((violation) => ({ page, violation })),
         );
@@ -251,7 +280,11 @@ await writeFile(
 const lines = [
   "# Stage 7 accessibility and SEO audit",
   "",
-  `- axe violation instances: ${totals.violationInstances} across ${totals.rules} rule/page combinations`,
+  `- axe violation instances (day desktop): ${totals.violationInstances}`,
+  `- axe violation instances (day mobile): ${totals.dayMobileViolationInstances}`,
+  `- axe violation instances (night desktop): ${totals.nightViolationInstances}`,
+  `- axe violation instances (night mobile): ${totals.mobileViolationInstances}`,
+  `- rule/page combinations: ${totals.rules}`,
   `- pages missing meta description: ${totals.pagesMissingDescription.length}`,
   `- pages missing canonical: ${totals.pagesMissingCanonical.length}`,
   `- pages missing <main>: ${totals.pagesMissingMain.length}`,
@@ -270,11 +303,11 @@ const lines = [
   "",
   "## Per page",
   "",
-  "| Page | axe rules | instances | h1 | main | description | canonical | OG |",
+  "| Page | instances (all four passes) | rules | h1 | main | description | canonical | OG |",
   "| --- | --- | --- | --- | --- | --- | --- | --- |",
   ...pages.map(
     (page) =>
-      `| ${page.path} | ${page.axe.length} | ${page.axe.reduce((total, violation) => total + violation.nodeCount, 0)} | ${page.h1Count} | ${page.landmarks.main} | ${page.description ? "yes" : "NO"} | ${page.canonical ? "yes" : "NO"} | ${page.ogTitle ? "yes" : "NO"} |`,
+      `| ${page.path} | ${[...page.axe, ...page.axeDayMobile, ...page.axeNight, ...page.axeMobile].reduce((total, violation) => total + violation.nodeCount, 0)} | ${page.axe.length + page.axeDayMobile.length + page.axeNight.length + page.axeMobile.length} | ${page.h1Count} | ${page.landmarks.main} | ${page.description ? "yes" : "NO"} | ${page.canonical ? "yes" : "NO"} | ${page.ogTitle ? "yes" : "NO"} |`,
   ),
   "",
   "## Heading outlines",

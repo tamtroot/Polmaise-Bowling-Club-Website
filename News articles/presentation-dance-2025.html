@@ -29,37 +29,13 @@ bodyClass: ""
 <style>
         /* Special Presentation Dance Theme Styles */
 
-        /* Color Variables */
-        :root {
-            --gold: #FFD700;
-            --rich-gold: #DAA520;
-            --navy: #0A1A2F;
-            --midnight-blue: #1E2E47;
-            --charcoal: #2C2C2C;
-            --fresh-green: #4CAF50;
-            --light-gold: #FFF8DC;
-        }
-
-        /* Override body background for this special page */
+        /* Stage 9: the retired gold/green event palette has been replaced by the
+           shared semantic theme tokens, so this page follows the club day and
+           night themes like every other page. Layout is unchanged. */
         body {
-            background: linear-gradient(135deg, var(--navy) 0%, var(--midnight-blue) 50%, #000 100%);
             min-height: 100vh;
-            color: #fff;
             position: relative;
             overflow-x: hidden;
-        }
-
-        /* Subtle background pattern */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="sparkle" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23FFD700" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23sparkle)"/></svg>');
-            pointer-events: none;
-            z-index: -1;
         }
 
         /* Polmaise Crest Watermark */
@@ -71,30 +47,11 @@ bodyClass: ""
             opacity: 0.03;
             z-index: -1;
             font-size: 20rem;
-            color: var(--gold);
+            color: var(--color-accent);
             pointer-events: none;
         }
 
-        /* Header adjustments for dark theme */
-        header {
-            background: rgba(10, 26, 47, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid var(--gold);
-        }
-
-        header .logo h1 {
-            color: var(--gold);
-        }
-
-        nav ul li a {
-            color: #fff;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover,
-        nav ul li a.active {
-            color: var(--gold);
-        }
+        /* The header now uses the shared component styling. */
 
         /* Hero Banner Section */
         .hero-banner {
@@ -122,7 +79,7 @@ bodyClass: ""
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, rgba(10, 26, 47, 0.3), rgba(30, 46, 71, 0.2));
+            background: linear-gradient(45deg, rgba(9, 21, 52, 0.55), rgba(15, 37, 87, 0.35));
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -135,7 +92,7 @@ bodyClass: ""
             font-family: 'Playfair Display', serif;
             font-size: 3.5rem;
             font-weight: 900;
-            color: var(--gold);
+            color: var(--color-on-inverse);
             text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
             margin-bottom: 1rem;
             position: relative;
@@ -144,12 +101,12 @@ bodyClass: ""
         .hero-subtitle {
             font-family: 'Open Sans', sans-serif;
             font-size: 1.8rem;
-            color: var(--gold);
+            color: var(--color-on-inverse);
             text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
-            background: rgba(10, 26, 47, 0.8);
+            background: rgba(9, 21, 52, 0.75);
             padding: 1rem 2rem;
             border-radius: 50px;
-            border: 2px solid var(--gold);
+            border: 2px solid rgba(255, 255, 255, 0.35);
             backdrop-filter: blur(10px);
             margin-bottom: 2rem;
             font-weight: 600;
@@ -158,10 +115,10 @@ bodyClass: ""
 
         /* Standalone subtitle section */
         .hero-subtitle-section {
-            background: linear-gradient(135deg, var(--navy) 0%, var(--midnight-blue) 100%);
+            background: var(--color-surface-alt);
             padding: 3rem 0;
             text-align: center;
-            border-bottom: 1px solid var(--gold);
+            border-bottom: 1px solid var(--color-border);
             position: relative;
         }
 
@@ -173,24 +130,22 @@ bodyClass: ""
             transform: translateX(-50%);
             width: 100px;
             height: 3px;
-            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
         }
 
         .hero-subtitle-standalone {
             font-family: 'Open Sans', sans-serif;
             font-size: 2rem;
-            color: var(--gold);
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
-            background: rgba(10, 26, 47, 0.8);
+            color: var(--color-text);
+            background: var(--color-surface);
             padding: 1.5rem 3rem;
             border-radius: 50px;
-            border: 2px solid var(--gold);
-            backdrop-filter: blur(10px);
+            border: 2px solid var(--color-border);
             font-weight: 600;
             letter-spacing: 1px;
             display: inline-block;
             margin: 0;
-            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+            box-shadow: var(--shadow-sm);
             position: relative;
             overflow: hidden;
         }
@@ -202,7 +157,7 @@ bodyClass: ""
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, color-mix(in srgb, var(--color-accent) 12%, transparent) 0%, transparent 70%);
             animation: rotate 15s linear infinite;
             z-index: -1;
         }
@@ -210,7 +165,7 @@ bodyClass: ""
         /* Sparkle decorations */
         .sparkle {
             position: absolute;
-            color: var(--gold);
+            color: var(--color-on-inverse);
             animation: sparkle 2s infinite alternate;
         }
 
@@ -234,12 +189,12 @@ bodyClass: ""
 
         /* Event Details Card */
         .event-details-card {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(30, 46, 71, 0.8));
-            border: 2px solid var(--gold);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
             border-radius: 20px;
             padding: 3rem;
             margin: 3rem 0;
-            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.2);
+            box-shadow: var(--shadow-sm);
             position: relative;
             overflow: hidden;
         }
@@ -251,7 +206,7 @@ bodyClass: ""
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+            background: radial-gradient(circle, color-mix(in srgb, var(--color-accent) 6%, transparent) 0%, transparent 70%);
             animation: rotate 20s linear infinite;
         }
 
@@ -263,7 +218,7 @@ bodyClass: ""
         .event-details-card h2 {
             font-family: 'Playfair Display', serif;
             font-size: 2.5rem;
-            color: var(--gold);
+            color: var(--color-text);
             text-align: center;
             margin-bottom: 2rem;
             position: relative;
@@ -281,32 +236,32 @@ bodyClass: ""
         .event-item {
             text-align: center;
             padding: 1.5rem;
-            background: rgba(0, 0, 0, 0.3);
+            background: var(--color-surface-alt);
             border-radius: 15px;
-            border: 1px solid rgba(255, 215, 0, 0.3);
+            border: 1px solid var(--color-border);
             transition: all 0.3s ease;
         }
 
         .event-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
-            border-color: var(--gold);
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-accent);
         }
 
         .event-item i {
             font-size: 2.5rem;
-            color: var(--gold);
+            color: var(--color-accent);
             margin-bottom: 1rem;
         }
 
         .event-item h3 {
             font-family: 'Playfair Display', serif;
-            color: var(--gold);
+            color: var(--color-text);
             margin-bottom: 0.5rem;
         }
 
         .event-item p {
-            color: #fff;
+            color: var(--color-text-muted);
             font-size: 1.1rem;
         }
 
@@ -314,16 +269,16 @@ bodyClass: ""
         .content-section {
             margin: 4rem 0;
             padding: 2rem;
-            background: rgba(30, 46, 71, 0.6);
+            background: var(--color-surface);
             border-radius: 20px;
-            border-left: 5px solid var(--gold);
+            border-left: 5px solid var(--color-accent);
             position: relative;
         }
 
         .content-section h2 {
             font-family: 'Playfair Display', serif;
             font-size: 2.2rem;
-            color: var(--gold);
+            color: var(--color-text);
             margin-bottom: 1.5rem;
             position: relative;
         }
@@ -335,20 +290,20 @@ bodyClass: ""
             left: 0;
             width: 50px;
             height: 3px;
-            background: linear-gradient(90deg, var(--gold), var(--fresh-green));
+            background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
         }
 
         .content-section p {
             font-size: 1.1rem;
             line-height: 1.8;
-            color: #fff;
+            color: var(--color-text);
             margin-bottom: 1rem;
         }
 
         /* Entertainment Section Special Styling */
         .entertainment-highlight {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(76, 175, 80, 0.1));
-            border: 2px solid var(--gold);
+            background: var(--color-accent-soft);
+            border: 1px solid var(--color-border);
             border-radius: 15px;
             padding: 2rem;
             text-align: center;
@@ -362,14 +317,14 @@ bodyClass: ""
             top: -15px;
             left: 50%;
             transform: translateX(-50%);
-            background: var(--navy);
-            color: var(--gold);
+            background: var(--color-bg);
+            color: var(--color-accent);
             font-size: 2rem;
             padding: 0 15px;
         }
 
         .entertainment-highlight h3 {
-            color: var(--gold);
+            color: var(--color-text);
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             margin-bottom: 1rem;
@@ -380,13 +335,12 @@ bodyClass: ""
             text-align: center;
             margin: 4rem 0;
             padding: 3rem;
-            background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.1), transparent);
         }
 
         .cta-button {
             display: inline-block;
-            background: linear-gradient(45deg, var(--gold), var(--rich-gold));
-            color: var(--navy);
+            background: var(--color-primary);
+            color: var(--color-on-primary);
             font-family: 'Playfair Display', serif;
             font-size: 1.5rem;
             font-weight: 700;
@@ -396,7 +350,7 @@ bodyClass: ""
             text-decoration: none;
             text-transform: uppercase;
             letter-spacing: 2px;
-            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+            box-shadow: var(--shadow-sm);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -406,8 +360,9 @@ bodyClass: ""
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.6);
-            background: linear-gradient(45deg, var(--fresh-green), var(--gold));
+            box-shadow: var(--shadow-md);
+            background: var(--color-accent);
+            color: var(--color-on-primary);
         }
 
         .cta-button::before {
@@ -430,32 +385,30 @@ bodyClass: ""
 
         .cta-text {
             font-size: 1.2rem;
-            color: var(--light-gold);
+            color: var(--color-text-muted);
             margin-top: 1rem;
         }
 
-        /* Footer adjustments */
-        footer {
-            background: var(--navy);
-            border-top: 2px solid var(--gold);
+        /* Stage 9: promoted from inline style attributes. */
+        .cta-heading {
+            text-align: center;
+            margin-bottom: 2rem;
         }
 
-        footer h3 {
-            color: var(--gold);
+        .cta-button-label {
+            position: relative;
+            z-index: 2;
         }
 
-        footer p, footer li {
-            color: #fff;
+        .closing-quote {
+            text-align: center;
+            font-style: italic;
+            color: var(--color-text-muted);
+            font-size: 1.2rem;
+            margin-top: 2rem;
         }
 
-        footer a {
-            color: var(--light-gold);
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: var(--gold);
-        }
+        /* The footer now uses the shared component styling. */
 
         /* Section dividers */
         .section-divider {
@@ -465,7 +418,7 @@ bodyClass: ""
 
         .section-divider::before {
             content: '✦ ✦ ✦';
-            color: var(--gold);
+            color: var(--color-accent);
             font-size: 1.5rem;
             letter-spacing: 2rem;
         }
@@ -492,9 +445,9 @@ bodyClass: ""
                 display: block !important;
                 cursor: pointer !important;
                 font-size: 1.5rem !important;
-                color: #fff !important;
-                background: transparent !important;
-                border: none !important;
+                color: var(--color-primary) !important;
+                background: var(--color-surface) !important;
+                border: 1px solid var(--color-border) !important;
                 padding: 10px !important;
                 transition: color 0.3s ease !important;
                 position: relative !important;
@@ -502,13 +455,13 @@ bodyClass: ""
             }
 
             header .mobile-menu i {
-                color: #fff !important;
+                color: var(--color-primary) !important;
                 font-size: 1.5rem !important;
             }
 
             header .mobile-menu:hover,
             header .mobile-menu:hover i {
-                color: var(--gold) !important;
+                color: var(--color-accent) !important;
             }
 
             /* Mobile dropdown menu */
@@ -518,10 +471,9 @@ bodyClass: ""
                 top: 100% !important;
                 left: 0 !important;
                 right: 0 !important;
-                background: rgba(10, 26, 47, 0.98) !important;
-                backdrop-filter: blur(10px) !important;
-                border-top: 2px solid var(--gold) !important;
-                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3) !important;
+                background: var(--color-surface) !important;
+                border-top: 2px solid var(--color-primary) !important;
+                box-shadow: var(--shadow-md) !important;
                 z-index: 10000 !important;
                 padding: 0 !important;
                 margin: 0 !important;
@@ -534,16 +486,16 @@ bodyClass: ""
             .mobile-nav-dropdown a {
                 display: block !important;
                 padding: 1rem !important;
-                color: #fff !important;
+                color: var(--color-text) !important;
                 text-decoration: none !important;
-                border-bottom: 1px solid rgba(255, 215, 0, 0.1) !important;
+                border-bottom: 1px solid var(--color-border) !important;
                 transition: all 0.3s ease !important;
                 font-family: 'Open Sans', sans-serif !important;
             }
 
             .mobile-nav-dropdown a:hover {
-                background: rgba(255, 215, 0, 0.1) !important;
-                color: var(--gold) !important;
+                background: var(--color-accent-soft) !important;
+                color: var(--color-primary) !important;
             }
         }
 
@@ -575,7 +527,7 @@ bodyClass: ""
                 object-fit: contain;
                 object-position: center;
                 max-width: 100%;
-                background: var(--navy);
+                background: var(--color-surface-alt);
             }
 
             .hero-title {
@@ -725,9 +677,9 @@ bodyClass: ""
 
         <!-- Call to Action Section -->
         <section class="cta-section">
-            <h2 class="content-section" style="text-align: center; margin-bottom: 2rem;">Get Your Tickets Now!</h2>
+            <h2 class="content-section cta-heading">Get Your Tickets Now!</h2>
             <button type="button" class="cta-button" data-purchase-message>
-                <span style="position: relative; z-index: 2;">Secure Your Tickets</span>
+                <span class="cta-button-label">Secure Your Tickets</span>
             </button>
             <p class="cta-text">Tickets are available now – please see David Stewart or committee members to secure yours.</p>
         </section>
@@ -738,7 +690,7 @@ bodyClass: ""
         <section class="content-section">
             <h2>Let's Make This Special</h2>
             <p>Let's make this a successful year-end celebration and a tradition that continues for years to come. We look forward to seeing you all there!</p>
-            <p style="text-align: center; font-style: italic; color: var(--gold); font-size: 1.2rem; margin-top: 2rem;">
+            <p class="closing-quote">
                 "A night to celebrate our community, our achievements, and our future together."
             </p>
         </section>

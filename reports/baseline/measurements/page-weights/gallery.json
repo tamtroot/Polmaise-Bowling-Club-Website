@@ -9,33 +9,86 @@
     "height": 900
   },
   "status": 200,
-  "resourceCount": 26,
-  "totalBytes": 812792,
+  "resourceCount": 40,
+  "totalBytes": 1497255,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 319133
+      "bytes": 320039
+    },
+    "font": {
+      "count": 5,
+      "bytes": 444100
     },
     "image": {
-      "count": 23,
-      "bytes": 458072
+      "count": 27,
+      "bytes": 470434
     },
     "script": {
-      "count": 1,
-      "bytes": 6825
+      "count": 3,
+      "bytes": 108573
     },
     "stylesheet": {
-      "count": 1,
-      "bytes": 28762
+      "count": 4,
+      "bytes": 154109
     }
   },
   "largestResources": [
     {
       "url": "http://127.0.0.1:4173/gallery.html",
-      "bytes": 319133,
+      "bytes": 320039,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-solid-900.woff2",
+      "bytes": 150020,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-brands-400.woff2",
+      "bytes": 109808,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
+      "bytes": 100307,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/merriweather-400-normal-latin.woff2",
+      "bytes": 97548,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/jquery/jquery-3.6.0.min.js",
+      "bytes": 89501,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 48347,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/open-sans-400-normal-latin.woff2",
+      "bytes": 48320,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
     },
     {
       "url": "http://127.0.0.1:4173/Images/2026/Opening%20of%20Green%202026/Opening%20of%20Green-w400.webp",
@@ -59,6 +112,13 @@
       "contentType": "image/webp"
     },
     {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/playfair-display-400-normal-latin.woff2",
+      "bytes": 38404,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
       "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_134840-thumb-w400.webp",
       "bytes": 37200,
       "status": 200,
@@ -78,13 +138,6 @@
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 28762,
-      "status": 200,
-      "resourceType": "stylesheet",
-      "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/2025/PolmaiseLadiesTop5/20250626_190850-thumb-w400.webp",
@@ -155,61 +208,12 @@
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/Archive/Opening%20of%20Green%202011/OPEN%20OF%20THE%20GREEN%202011%20045-thumb-w400.webp",
-      "bytes": 10574,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/Archive/Photo%202-thumb-w400.webp",
-      "bytes": 10192,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/gallery1-thumb-w400.webp",
-      "bytes": 10186,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/gallery41-thumb-w400.webp",
-      "bytes": 9466,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/Archive/Opening%20of%20Green%202023/DSC_0022-thumb-w400.webp",
-      "bytes": 8224,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/Archive/Chucks%20Memorial%202023/DSC_0091-thumb-w400.webp",
-      "bytes": 7736,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 6825,
-      "status": 200,
-      "resourceType": "script",
-      "contentType": "text/javascript; charset=utf-8"
     }
   ],
   "resources": [
     {
       "url": "http://127.0.0.1:4173/gallery.html",
-      "bytes": 319133,
+      "bytes": 320039,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -328,7 +332,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
-      "bytes": 3540,
+      "bytes": 4436,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
@@ -377,17 +381,115 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 6825,
+      "bytes": 9589,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 28762,
+      "bytes": 48347,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
+      "bytes": 100307,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-brands-400.woff2",
+      "bytes": 109808,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-solid-900.woff2",
+      "bytes": 150020,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/merriweather-400-normal-latin.woff2",
+      "bytes": 97548,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/open-sans-400-normal-latin.woff2",
+      "bytes": 48320,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/playfair-display-400-normal-latin.woff2",
+      "bytes": 38404,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/fonts.css",
+      "bytes": 2923,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/jquery/jquery-3.6.0.min.js",
+      "bytes": 89501,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/css/lightbox.min.css",
+      "bytes": 2532,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/images/close.png",
+      "bytes": 280,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/images/loading.gif",
+      "bytes": 8476,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/gif"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/images/next.png",
+      "bytes": 1350,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/images/prev.png",
+      "bytes": 1360,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/lightbox2/js/lightbox.min.js",
+      "bytes": 9483,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
     }
   ]
 }

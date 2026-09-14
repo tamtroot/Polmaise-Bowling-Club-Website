@@ -53,7 +53,7 @@ bodyClass: ""
             width: 80%;
             max-width: 700px;
             text-align: center;
-            color: white;
+            color: var(--color-on-inverse);
             font-family: 'Open Sans', sans-serif;
         }
         
@@ -61,7 +61,7 @@ bodyClass: ""
             position: absolute;
             top: 15px;
             right: 25px;
-            color: white;
+            color: var(--color-on-inverse);
             font-size: 35px;
             font-weight: bold;
             cursor: pointer;
@@ -138,7 +138,7 @@ bodyClass: ""
             width: 80%;
             max-width: 1000px;
             max-height: 90vh;
-            background: white;
+            background: var(--color-surface);
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             z-index: 1000;
@@ -159,7 +159,7 @@ bodyClass: ""
             border: none;
             font-size: 1.5rem;
             cursor: pointer;
-            color: #333;
+            color: var(--color-text);
             padding: 0.5rem;
             line-height: 1;
             border-radius: 50%;
@@ -204,6 +204,10 @@ bodyClass: ""
         }
 
         /* Timeline enhancements */
+        /* Stage 9: promoted from an inline style attribute. */
+        .committee-members--spaced {
+            margin-top: 3rem;
+        }
         .timeline-content {
             position: relative;
             cursor: pointer;
@@ -213,7 +217,7 @@ bodyClass: ""
         }
 
         .timeline-content:hover {
-            background-color: rgba(66, 103, 178, 0.1);
+            background-color: var(--color-row-hover);
         }
 
         .view-article-btn {
@@ -222,22 +226,22 @@ bodyClass: ""
             gap: 0.5rem;
             margin-top: 0.5rem;
             padding: 0.5rem 1rem;
-            background-color: #4267B2;
-            color: white;
+            background-color: var(--color-primary);
+            color: var(--color-on-primary);
             border-radius: 4px;
             font-size: 0.9rem;
             transition: background-color 0.3s;
         }
 
         .view-article-btn:hover {
-            background-color: #365899;
+            background-color: var(--color-primary);
         }
         
         .history-cta {
             text-align: center;
             margin-top: 3rem;
             padding: 2rem;
-            background-color: #f8f9fa;
+            background-color: var(--color-surface-alt);
             border-radius: 8px;
         }
         
@@ -298,7 +302,7 @@ bodyClass: ""
                 </div>
             </div>
             
-            <div class="committee-members" style="margin-top: 3rem;">
+            <div class="committee-members committee-members--spaced">
                 <h2>Meet Our Committee</h2>
                 <p class="section-intro">Our dedicated committee members work tirelessly to ensure the smooth running and continued success of Polmaise Bowling Club.</p>
                 
@@ -753,7 +757,7 @@ bodyClass: ""
             content.innerHTML = `
                 <h2>Club Champions of Polmaise Bowling Club</h2>
                 <p class="board-intro">Honoring our club champions throughout our proud history.</p>
-                <div class="champions-list" style="columns: 3; column-gap: 20px;">
+                <div class="champions-list">
                     <div class="entry"><span>1911</span> J. Barr Snr</div>
                     <div class="entry"><span>1912</span> J. Barr Jnr</div>
                     <div class="entry"><span>1913</span> J. Gwynne Snr</div>
@@ -788,6 +792,11 @@ bodyClass: ""
                     .champions-list .entry {
                         margin-bottom: 10px;
                         break-inside: avoid;
+                    }
+                    /* Stage 9: promoted from an inline style attribute. */
+                    .champions-list {
+                        columns: 3;
+                        column-gap: 20px;
                     }
                     .champions-list .entry span {
                         font-weight: bold;

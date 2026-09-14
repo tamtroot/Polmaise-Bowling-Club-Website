@@ -1,0 +1,688 @@
+{
+  "startedAt": "2026-09-14T16:25:08.401Z",
+  "base": "http://127.0.0.1:4190",
+  "mode": "rapid",
+  "iterations": 120,
+  "width": 1440,
+  "height": 900,
+  "theme": "light",
+  "serverProfile": "nostore",
+  "steps": [],
+  "inventories": {},
+  "failure": null,
+  "documentRequests": [
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403108409,
+      "frame": "about:blank"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403108428,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403110093,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403110098,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403111334,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403111353,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403111940,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403111946,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403113416,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403113425,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403114032,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403114037,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403115506,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403115514,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403116114,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403116119,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403117587,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403117594,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403118198,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403118204,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403119675,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403119681,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403120284,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403120289,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403121754,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403121760,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403122358,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403122363,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403123839,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403123849,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403124450,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403124455,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403125925,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403125931,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403126534,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403126539,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403128003,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403128010,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403128613,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403128618,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403130091,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403130097,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403130697,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403130703,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403132177,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403132184,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403132786,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403132791,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403134264,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403134270,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403134875,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403134886,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403136357,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403136364,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403136966,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403136971,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403138437,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403138443,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403139046,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403139051,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403140519,
+      "frame": "http://127.0.0.1:4190/fixtures.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/news.html",
+      "at": 1789403140525,
+      "event": "framenavigated"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403141130,
+      "frame": "http://127.0.0.1:4190/news.html"
+    },
+    {
+      "url": "http://127.0.0.1:4190/fixtures.html",
+      "at": 1789403141135,
+      "event": "framenavigated"
+    }
+  ],
+  "repro": {
+    "fontDelay": 1200,
+    "beforeSwap": {
+      "navLinks": [
+        {
+          "text": "Home",
+          "left": 463.64,
+          "right": 519.61,
+          "top": 23.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "About Us",
+          "left": 523.61,
+          "right": 601.23,
+          "top": 23.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "Membership",
+          "left": 605.23,
+          "right": 703.66,
+          "top": 23.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "Fixtures",
+          "left": 707.66,
+          "right": 776.94,
+          "top": 23.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "News & Events",
+          "left": 780.94,
+          "right": 898.52,
+          "top": 23.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "Gallery",
+          "left": 902.52,
+          "right": 965.97,
+          "top": 23.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "Contact Us",
+          "left": 969.97,
+          "right": 1060.08,
+          "top": 23.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "Sponsors",
+          "left": 1064.08,
+          "right": 1143.38,
+          "top": 23.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "Honours",
+          "left": 1147.38,
+          "right": 1220,
+          "top": 23.8,
+          "bottom": 59.8
+        }
+      ],
+      "fontsReady": "loading",
+      "openSansLoaded": true
+    },
+    "afterSwap": {
+      "navLinks": [
+        {
+          "text": "Home",
+          "left": 460.94,
+          "right": 517.44,
+          "top": 24.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "About Us",
+          "left": 521.44,
+          "right": 599.23,
+          "top": 24.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "Membership",
+          "left": 603.23,
+          "right": 704.72,
+          "top": 24.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "Fixtures",
+          "left": 708.72,
+          "right": 779.16,
+          "top": 24.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "News & Events",
+          "left": 783.16,
+          "right": 898.66,
+          "top": 24.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "Gallery",
+          "left": 902.66,
+          "right": 966.34,
+          "top": 24.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "Contact Us",
+          "left": 970.34,
+          "right": 1059.66,
+          "top": 24.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "Sponsors",
+          "left": 1063.66,
+          "right": 1141.73,
+          "top": 24.8,
+          "bottom": 59.8
+        },
+        {
+          "text": "Honours",
+          "left": 1145.73,
+          "right": 1220,
+          "top": 24.8,
+          "bottom": 59.8
+        }
+      ],
+      "fontsReady": "loaded",
+      "openSansLoaded": true
+    },
+    "aim": {
+      "x": 783.94,
+      "y": 41.8
+    },
+    "hitBeforeSwap": {
+      "top": "a",
+      "anchorText": "News & Events",
+      "anchorHref": "news.html"
+    },
+    "hitAfterSwap": {
+      "top": "a",
+      "anchorText": "News & Events",
+      "anchorHref": "news.html"
+    },
+    "shifts": {
+      "news": 2.22,
+      "fixtures": 1.06
+    },
+    "gap": {
+      "start": 898.66,
+      "end": 902.66,
+      "width": 4
+    },
+    "trials": [
+      {
+        "name": "6% across the label",
+        "x": 788.29,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a.active",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "13% across the label",
+        "x": 795.64,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "19% across the label",
+        "x": 802.99,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "25% across the label",
+        "x": 810.34,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "31% across the label",
+        "x": 817.68,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "38% across the label",
+        "x": 825.03,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "44% across the label",
+        "x": 832.38,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "50% across the label",
+        "x": 839.73,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "56% across the label",
+        "x": 847.08,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "63% across the label",
+        "x": 854.43,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "69% across the label",
+        "x": 861.78,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "75% across the label",
+        "x": 869.13,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "81% across the label",
+        "x": 876.47,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "88% across the label",
+        "x": 883.82,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      },
+      {
+        "name": "94% across the label",
+        "x": 891.17,
+        "y": 42,
+        "hitAfterSwap": {
+          "top": "a",
+          "anchorText": "News & Events",
+          "anchorHref": "news.html"
+        },
+        "navigated": true,
+        "url": "http://127.0.0.1:4190/news.html"
+      }
+    ],
+    "headerStateAtGap": null,
+    "variantA": {
+      "navigated": true,
+      "url": "http://127.0.0.1:4190/news.html",
+      "clicks": []
+    }
+  },
+  "finishedAt": "2026-09-14T16:25:42.599Z"
+}

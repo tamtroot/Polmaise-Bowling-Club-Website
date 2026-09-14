@@ -25,6 +25,52 @@
     --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* ==================================================================
+   Stage 11: metric-matched local fallbacks
+
+   The web font is applied with font-display: swap, so the first paint uses a
+   system fallback and the text re-flows when the real font arrives. The header
+   navigation is right-aligned with no reserved widths, so that re-flow moved
+   every navigation item (measured: up to 33px at 1440px) against a 4px gap
+   between items. A click aimed at the label the user could see then landed in
+   the gap (no navigation at all) or on the neighbouring page.
+
+   These faces scale a system font to the web font's advance widths, so the
+   first paint and the final paint occupy the same space. The vertical metrics
+   are Open Sans' own (ascent 106.88%, descent 29.29%, line gap 0) so the
+   header keeps its height too. Every size-adjust value below was measured
+   against the real font files (`node tools/diagnose-navigation-lock.mjs
+   --tune`), not guessed.
+   ================================================================== */
+@font-face {
+    font-family: 'Open Sans Fallback';
+    /* Windows: Segoe UI is the platform UI font and the closest match. */
+    src: local('Segoe UI');
+    size-adjust: 109.75%;        /* measured: worst nav shift 1.44px */
+    ascent-override: 106.88%;
+    descent-override: 29.29%;
+    line-gap-override: 0%;
+}
+
+@font-face {
+    font-family: 'Open Sans Fallback';
+    src: local('Tahoma');
+    size-adjust: 110.75%;        /* measured: worst nav shift 1.66px */
+    ascent-override: 106.88%;
+    descent-override: 29.29%;
+    line-gap-override: 0%;
+}
+
+@font-face {
+    font-family: 'Open Sans Fallback';
+    /* Arial ships on both Windows and macOS, so it covers the Apple case. */
+    src: local('Arial');
+    size-adjust: 107%;           /* measured: worst nav shift 2.70px */
+    ascent-override: 106.88%;
+    descent-override: 29.29%;
+    line-gap-override: 0%;
+}
+
 /* Global Styles */
 * {
     margin: 0;
@@ -34,25 +80,25 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: var(--dark-gray);
-    background-color: var(--white);
+    color: var(--color-text);
+    background-color: var(--color-bg);
     line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
     margin-bottom: 1rem;
-    color: var(--club-blue);
+    color: var(--color-primary);
 }
 
 a {
     text-decoration: none;
-    color: var(--club-blue);
+    color: var(--color-primary);
     transition: all 0.3s ease;
 }
 
 a:hover {
-    color: var(--light-blue);
+    color: var(--color-accent);
 }
 
 ul {
@@ -94,15 +140,15 @@ section {
 }
 
 .primary-btn {
-    background-color: var(--club-blue);
-    color: var(--white);
-    border: 2px solid var(--club-blue);
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    border: 2px solid var(--color-primary);
 }
 
 .secondary-btn {
-    background-color: var(--white);
-    color: var(--club-blue);
-    border: 2px solid var(--club-blue);
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
 }
 
 .small-btn {
@@ -111,19 +157,19 @@ section {
 }
 
 .primary-btn:hover {
-    background-color: var(--light-blue);
-    border-color: var(--light-blue);
-    color: var(--white);
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-on-primary);
 }
 
 .secondary-btn:hover {
-    background-color: var(--light-gray);
-    color: var(--dark-blue);
+    background-color: var(--color-surface-alt);
+    color: var(--color-primary);
 }
 
 /* Header Styles */
 header {
-    background-color: var(--white);
+    background-color: var(--color-surface);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -153,7 +199,8 @@ header .container {
 }
 
 .logo h1 {
-    color: var(--club-blue);
+    font-family: var(--font-wordmark);
+    color: var(--color-primary);
     font-size: 1.45rem;
     line-height: 1.2;
     margin-bottom: 0;
@@ -182,7 +229,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--dark-gray);
+    color: var(--color-text);
     font-weight: 600;
     font-size: 0.92rem;
     padding: 5px 0;
@@ -192,27 +239,32 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: var(--club-blue);
+    color: var(--color-primary);
 }
 
 nav ul li a:after {
     content: '';
     position: absolute;
-    width: 0;
+    left: 0.55rem;
+    right: 0.55rem;
+    bottom: 0.2rem;
     height: 2px;
-    background-color: var(--light-blue);
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s ease;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-accent);
+    transform: scaleX(0);
+    transition: transform var(--duration-fast) var(--ease-standard);
 }
 
 nav ul li a.active:after,
 nav ul li a:hover:after {
-    width: 100%;
+    transform: scaleX(1);
 }
 
 /* Keep brand from compressing on desktop while nav has room */
-@media (min-width: 993px) {
+/* Stage 9: the desktop navigation shares the header with the theme toggle, so
+   the inline navigation now needs a wider viewport before it can fit beside
+   the club wordmark. Below this the burger menu takes over unchanged. */
+@media (min-width: 1280px) {
     .logo {
         flex-shrink: 0;
     }
@@ -226,21 +278,21 @@ nav ul li a:hover:after {
     line-height: inherit;
     appearance: none;
     font-size: 1.25rem;
-    color: var(--club-blue);
+    color: var(--color-primary);
     z-index: 101;
     padding: 8px 12px;
     border-radius: 4px;
     transition: all 0.3s ease;
-    border: 2px solid var(--club-blue);
-    background-color: white;
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-surface);
     align-items: center;
     gap: 8px;
     flex-shrink: 0;
 }
 
 .mobile-menu:hover {
-    background-color: var(--light-blue);
-    color: white;
+    background-color: var(--color-accent);
+    color: var(--color-on-primary);
 }
 
 .mobile-menu i {
@@ -263,7 +315,7 @@ body.menu-open {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--white);
+    color: var(--color-on-inverse);
 }
 
 .hero-content {
@@ -274,7 +326,7 @@ body.menu-open {
 .hero-content h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--white);
+    color: var(--color-on-inverse);
 }
 
 .hero-content p {
@@ -291,7 +343,7 @@ body.menu-open {
 
 /* Welcome Section */
 .welcome {
-    background-color: var(--white);
+    background-color: var(--color-bg);
 }
 
 .welcome h2 {
@@ -322,7 +374,7 @@ body.menu-open {
 
 /* Quick Links Section */
 .quick-links {
-    background-color: var(--light-gray);
+    background-color: var(--color-surface-alt);
 }
 
 .quick-links .container {
@@ -332,7 +384,7 @@ body.menu-open {
 }
 
 .link-card {
-    background-color: var(--white);
+    background-color: var(--color-surface);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -346,7 +398,7 @@ body.menu-open {
 
 .link-card i {
     font-size: 2.5rem;
-    color: var(--light-blue);
+    color: var(--color-accent);
     margin-bottom: 15px;
 }
 
@@ -365,7 +417,7 @@ body.menu-open {
     background-position: center;
     padding: 100px 0;
     text-align: center;
-    color: var(--white);
+    color: var(--color-on-inverse);
 }
 
 .banner-content {
@@ -377,7 +429,7 @@ body.menu-open {
 .banner-content h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--white);
+    color: var(--color-on-inverse);
 }
 
 .banner-content p {
@@ -386,7 +438,7 @@ body.menu-open {
 
 /* About Page Styles */
 .club-history {
-    background-color: var(--white);
+    background-color: var(--color-bg);
 }
 
 .history-content {
@@ -433,7 +485,7 @@ body.menu-open {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: var(--light-gray);
+    background-color: var(--color-surface-alt);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -459,7 +511,7 @@ body.menu-open {
 
 .timeline-content {
     padding: 20px;
-    background-color: var(--white);
+    background-color: var(--color-surface);
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -469,8 +521,8 @@ body.menu-open {
 .timeline-date {
     position: absolute;
     width: 120px;
-    background-color: var(--light-blue);
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
     text-align: center;
     padding: 5px 0;
     border-radius: 5px;
@@ -487,7 +539,7 @@ body.menu-open {
 }
 
 .mission-vision {
-    background-color: var(--light-gray);
+    background-color: var(--color-surface-alt);
 }
 
 .mission-vision-content {
@@ -499,7 +551,7 @@ body.menu-open {
 .mission-box, .vision-box {
     flex: 1;
     min-width: 300px;
-    background-color: var(--white);
+    background-color: var(--color-surface);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -511,7 +563,7 @@ body.menu-open {
 }
 
 .committee-members {
-    background-color: var(--white);
+    background-color: var(--color-bg);
 }
 
 .committee-grid {
@@ -522,7 +574,7 @@ body.menu-open {
 }
 
 .committee-member {
-    background-color: var(--white);
+    background-color: var(--color-surface);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -561,7 +613,7 @@ body.menu-open {
 }
 
 .member-info h4 {
-    color: var(--light-blue);
+    color: var(--color-accent);
     font-size: 1rem;
     margin-bottom: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -570,7 +622,7 @@ body.menu-open {
 
 /* Membership Page Styles */
 .membership-benefits {
-    background-color: var(--white);
+    background-color: var(--color-bg);
 }
 
 .benefits-grid {
@@ -580,7 +632,7 @@ body.menu-open {
 }
 
 .benefit-card {
-    background-color: var(--white);
+    background-color: var(--color-surface);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -594,7 +646,7 @@ body.menu-open {
 
 .benefit-icon {
     font-size: 3rem;
-    color: var(--light-blue);
+    color: var(--color-accent);
     margin-bottom: 20px;
 }
 
@@ -603,7 +655,7 @@ body.menu-open {
 }
 
 .how-to-join {
-    background-color: var(--light-gray);
+    background-color: var(--color-surface-alt);
 }
 
 .join-steps {
@@ -620,9 +672,9 @@ body.menu-open {
 .step-number {
     width: 50px;
     height: 50px;
-    background-color: var(--club-blue);
+    background-color: var(--color-primary);
     border-radius: 50%;
-    color: var(--white);
+    color: var(--color-on-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -640,7 +692,7 @@ body.menu-open {
     content: '';
     position: absolute;
     width: 2px;
-    background-color: var(--light-gray);
+    background-color: var(--color-surface-alt);
     top: 50px;
     bottom: 0;
     left: 25px;
@@ -650,7 +702,7 @@ body.menu-open {
     text-align: center;
     margin-top: 40px;
     padding: 30px;
-    background-color: var(--white);
+    background-color: var(--color-surface);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -660,7 +712,7 @@ body.menu-open {
 }
 
 .membership-fees {
-    background-color: var(--white);
+    background-color: var(--color-bg);
 }
 
 .fees-table-container {
@@ -676,24 +728,24 @@ body.menu-open {
 
 .fees-table th, .fees-table td {
     padding: 15px;
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .fees-table th {
-    background-color: var(--club-blue);
-    color: var(--white);
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
 }
 
 .fees-table tr:nth-child(even) {
-    background-color: rgba(75, 113, 191, 0.1);
+    background-color: var(--color-row-stripe);
 }
 
 .fees-table tr:hover {
-    background-color: rgba(75, 113, 191, 0.2);
+    background-color: var(--color-row-hover);
 }
 
 .payment-methods {
-    background-color: var(--light-gray);
+    background-color: var(--color-surface-alt);
     padding: 30px;
     border-radius: 10px;
 }
@@ -713,7 +765,7 @@ body.menu-open {
 }
 
 .payment-methods ul li i {
-    color: var(--club-blue);
+    color: var(--color-primary);
     margin-right: 10px;
     font-size: 1.2rem;
 }
@@ -721,16 +773,16 @@ body.menu-open {
 .bank-transfer-details {
     margin-top: 25px;
     padding-top: 25px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid var(--color-border);
 }
 
 .bank-transfer-details h4 {
     margin-bottom: 12px;
-    color: var(--club-blue);
+    color: var(--color-primary);
 }
 
 .bank-details {
-    background-color: var(--white);
+    background-color: var(--color-surface);
     padding: 20px;
     border-radius: 8px;
     margin: 15px 0;
@@ -740,7 +792,7 @@ body.menu-open {
 .bank-details dt {
     font-weight: 600;
     margin-top: 10px;
-    color: var(--dark-gray);
+    color: var(--color-text);
 }
 
 .bank-details dt:first-child {
@@ -754,8 +806,9 @@ body.menu-open {
 .payment-notice {
     margin-top: 20px;
     padding: 15px 18px;
-    background-color: #fff8e6;
-    border-left: 4px solid #e6a800;
+    background-color: var(--color-notice-surface);
+    border-left: 4px solid var(--color-notice-border);
+    color: var(--color-text);
     border-radius: 4px;
     font-size: 0.95rem;
 }
@@ -766,12 +819,12 @@ body.menu-open {
 }
 
 .membership-faq {
-    background-color: var(--light-gray);
+    background-color: var(--color-surface-alt);
 }
 
 /* Contact Page Styles */
 .contact-info {
-    background-color: var(--white);
+    background-color: var(--color-surface);
 }
 
 .contact-grid {
@@ -782,7 +835,7 @@ body.menu-open {
 
 .contact-details {
     padding: 30px;
-    background-color: var(--light-gray);
+    background-color: var(--color-surface-alt);
     border-radius: 10px;
 }
 
@@ -797,7 +850,7 @@ body.menu-open {
 
 .contact-icon {
     font-size: 1.5rem;
-    color: var(--club-blue);
+    color: var(--color-primary);
     margin-right: 15px;
     width: 30px;
     text-align: center;
@@ -813,8 +866,8 @@ body.menu-open {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: var(--club-blue);
-    color: var(--white);
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
     border-radius: 50%;
     margin-right: 10px;
     display: inline-flex;
@@ -824,8 +877,8 @@ body.menu-open {
 }
 
 .social-links a:hover {
-    background-color: var(--light-blue);
-    color: var(--dark-gray);
+    background-color: var(--color-accent);
+    color: var(--color-text);
     transform: translateY(-3px);
 }
 
@@ -846,7 +899,7 @@ body.menu-open {
 }
 
 .location-map {
-    background-color: var(--light-gray);
+    background-color: var(--color-surface-alt);
     padding: 60px 0;
 }
 
@@ -890,7 +943,7 @@ body.menu-open {
 }
 
 .direction-item {
-    background-color: var(--white);
+    background-color: var(--color-surface);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -899,7 +952,7 @@ body.menu-open {
 
 .direction-item i {
     font-size: 2rem;
-    color: var(--club-blue);
+    color: var(--color-primary);
     margin-bottom: 15px;
 }
 
@@ -921,7 +974,8 @@ body.menu-open {
 }
 
 .accordion-header {
-    background-color: var(--white);
+    background-color: var(--color-surface);
+    color: var(--color-text);
     padding: 15px 20px;
     cursor: pointer;
     font-weight: 600;
@@ -937,7 +991,7 @@ body.menu-open {
 }
 
 .accordion-header:hover {
-    background-color: rgba(75, 113, 191, 0.1);
+    background-color: var(--color-row-stripe);
 }
 
 .accordion-header::after {
@@ -952,7 +1006,8 @@ body.menu-open {
 }
 
 .accordion-content {
-    background-color: var(--white);
+    background-color: var(--color-surface);
+    color: var(--color-text);
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
@@ -966,8 +1021,8 @@ body.menu-open {
 
 /* Footer Styles */
 footer {
-    background-color: var(--club-blue);
-    color: var(--white);
+    background-color: var(--color-surface-alt);
+    color: var(--color-text);
     padding: 60px 0 20px;
 }
 
@@ -979,8 +1034,7 @@ footer {
 }
 
 .footer-section h3 {
-    /* 5.71:1 on the footer blue; --light-blue (#4b71bf) was 2.17:1 */
-    color: #a8c1f2;
+    color: var(--color-primary);
     margin-bottom: 20px;
     font-size: 1.3rem;
 }
@@ -994,11 +1048,11 @@ footer {
 }
 
 .footer-section ul li a {
-    color: var(--white);
+    color: var(--color-text-muted);
 }
 
 .footer-section ul li a:hover {
-    color: var(--light-blue);
+    color: var(--color-text-muted);
 }
 
 .social-links {
@@ -1008,22 +1062,22 @@ footer {
 
 .social-links a,
 .social-links .social-link {
-    color: var(--white);
+    color: var(--color-on-primary);
     font-size: 1.5rem;
 }
 
 .social-links a:hover {
-    color: var(--light-blue);
+    color: var(--color-on-primary);
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--color-border);
     padding-top: 20px;
     text-align: center;
 }
 
 /* Responsive Styles */
-@media (max-width: 992px) {
+@media (max-width: 1279px) {
     header .container {
         position: relative;
     }
@@ -1052,7 +1106,7 @@ footer {
         left: -100%;
         width: 80%;
         height: 100vh;
-        background-color: var(--white);
+        background-color: var(--color-surface);
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: stretch;
@@ -1198,9 +1252,14 @@ input.error, textarea.error {
     border-color: var(--error-red);
 }
 
+/* Shared state helper: replaces inline `display: none` toggles. */
+.is-hidden {
+    display: none !important;
+}
+
 /* Ensure accordion functionality works correctly */
 .accordion-item.active .accordion-header {
-    background-color: rgba(75, 113, 191, 0.2);
+    background-color: var(--color-row-hover);
 }
 
 .accordion-item.active .accordion-content {
@@ -1210,7 +1269,7 @@ input.error, textarea.error {
 
 /* Signup Page Styles */
 .signup-section {
-    background-color: var(--white);
+    background-color: var(--color-bg);
 }
 
 .signup-container {
@@ -1226,11 +1285,11 @@ input.error, textarea.error {
 }
 
 .signup-info {
-    background-color: var(--light-gray);
+    background-color: var(--color-surface-alt);
 }
 
 .signup-form-container {
-    background-color: var(--white);
+    background-color: var(--color-surface);
 }
 
 .benefits-list {
@@ -1243,7 +1302,7 @@ input.error, textarea.error {
 }
 
 .benefits-list li i {
-    color: var(--club-blue);
+    color: var(--color-primary);
     font-size: 1.5rem;
     margin-right: 15px;
     margin-top: 5px;
@@ -1270,7 +1329,7 @@ input.error, textarea.error {
 .signup-form input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--light-gray);
+    border: 1px solid var(--color-border);
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -1281,7 +1340,7 @@ input.error, textarea.error {
 
 .password-hint {
     font-size: 0.85rem;
-    color: var(--dark-gray);
+    color: var(--color-text);
     margin-top: 5px;
     font-style: italic;
 }
@@ -1307,7 +1366,7 @@ input.error, textarea.error {
 }
 
 .login-link a {
-    color: var(--club-blue);
+    color: var(--color-primary);
     font-weight: 600;
 }
 
@@ -1316,7 +1375,7 @@ input.error, textarea.error {
 }
 
 .account-help {
-    background-color: var(--light-gray);
+    background-color: var(--color-surface-alt);
 }
 
 .help-options {
@@ -1326,7 +1385,7 @@ input.error, textarea.error {
 }
 
 .help-option {
-    background-color: var(--white);
+    background-color: var(--color-surface);
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -1335,7 +1394,7 @@ input.error, textarea.error {
 
 .help-option i {
     font-size: 2.5rem;
-    color: var(--club-blue);
+    color: var(--color-primary);
     margin-bottom: 15px;
 }
 
@@ -1355,8 +1414,8 @@ input.error, textarea.error {
 
 /* News & Events Page Styles */
 .news-meta .news-category {
-    background-color: var(--light-blue);
-    color: var(--white);
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
     padding: 3px 8px;
     border-radius: 3px;
     font-size: 0.8rem;
@@ -1364,8 +1423,8 @@ input.error, textarea.error {
 
 /* Download/Submit Boxes */
 .download-box {
-    background-color: var(--club-blue);
-    color: var(--white);
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -1382,8 +1441,8 @@ input.error, textarea.error {
 }
 
 .business-card {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -1396,17 +1455,17 @@ input.error, textarea.error {
 }
 
 .card-header {
-    background: #3a4f7a;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-on-primary);
     padding: 1.5rem;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .card-header h3 {
     margin: 0;
     font-size: 1.2rem;
     line-height: 1.4;
-    color: white;
+    color: var(--color-on-primary);
 }
 
 .card-body {
@@ -1414,14 +1473,14 @@ input.error, textarea.error {
 }
 
 .company-description {
-    color: #666;
+    color: var(--color-text);
     margin-bottom: 1.5rem;
     font-size: 0.95rem;
     line-height: 1.5;
 }
 
 .contact-info {
-    color: #444;
+    color: var(--color-text);
 }
 
 .contact-info p {
@@ -1434,7 +1493,7 @@ input.error, textarea.error {
 .contact-info i {
     width: 20px;
     margin-right: 10px;
-    color: #3a4f7a;
+    color: var(--color-primary);
 }
 
 /* Shared PhotoAlbums Page Styles */
@@ -1444,10 +1503,10 @@ input.error, textarea.error {
 
 .album-intro {
     margin-bottom: 2rem;
-    background-color: var(--surface-subtle);
+    background-color: var(--color-surface-alt);
     padding: 2rem;
     border-radius: var(--radius-md);
-    border-left: 4px solid var(--club-blue);
+    border-left: 4px solid var(--color-primary);
 }
 
 .album-intro img {
@@ -1462,8 +1521,8 @@ input.error, textarea.error {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background-color: var(--club-blue);
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
     padding: 10px 20px;
     border-radius: var(--radius-sm);
     text-decoration: none;
@@ -1472,8 +1531,8 @@ input.error, textarea.error {
 }
 
 .back-button:hover {
-    background-color: #152a62;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
     text-decoration: none;
 }
 
@@ -1516,7 +1575,7 @@ input.error, textarea.error {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
-    color: white;
+    color: var(--color-on-inverse);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1571,13 +1630,6 @@ input.error, textarea.error {
     outline-offset: -3px;
 }
 
-.mobile-menu:focus-visible,
-.accordion-header:focus-visible,
-.close-album:focus-visible {
-    outline: 3px solid var(--club-blue);
-    outline-offset: 2px;
-}
-
 /* Respect the operating-system reduced-motion preference. */
 @media (prefers-reduced-motion: reduce) {
     *,
@@ -1588,4 +1640,595 @@ input.error, textarea.error {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+/* ==================================================================
+   Stage 9 design system — dual-theme visual language
+   Day theme is the default (no JavaScript required); the night theme is
+   opt-in via <html data-theme="dark"> set by the header toggle.
+   Colours are derived from the club kit: white/navy/sky for day,
+   graphite/black with electric blue for night.
+   ================================================================== */
+:root {
+    /* Typography */
+    --font-display: 'Merriweather', Georgia, 'Times New Roman', serif;
+    --font-wordmark: 'Playfair Display', 'Merriweather', Georgia, 'Times New Roman', serif;
+    --font-ui: 'Open Sans', 'Open Sans Fallback', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --step-display: clamp(2.25rem, 1.7rem + 2.4vw, 3.25rem);
+    --step-h1: clamp(1.85rem, 1.45rem + 1.5vw, 2.5rem);
+    --step-h2: clamp(1.5rem, 1.3rem + 0.8vw, 1.95rem);
+    --step-h3: clamp(1.2rem, 1.1rem + 0.4vw, 1.35rem);
+    --step-card: 1.0625rem;
+    --step-body: 1rem;
+    --step-small: 0.875rem;
+    --step-label: 0.8125rem;
+    --leading-body: 1.65;
+    --tracking-label: 0.08em;
+
+    /* Spacing scale */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --section-y: clamp(2.5rem, 1.8rem + 2.2vw, 4.5rem);
+    --gutter: clamp(1rem, 0.6rem + 1.6vw, 2rem);
+    --content-max: 72rem;
+    --content-narrow: 48rem;
+
+    /* Shape and depth */
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-pill: 999px;
+    --shadow-xs: 0 1px 2px rgba(12, 24, 48, 0.06);
+    --shadow-sm: 0 2px 10px rgba(12, 24, 48, 0.08);
+    --shadow-md: 0 14px 30px rgba(12, 24, 48, 0.12);
+
+    /* Motion */
+    --duration-fast: 150ms;
+    --duration-base: 300ms;
+    --ease-standard: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+    /* Day theme semantic colours */
+    --color-bg: #FFFFFF;
+    --color-surface: #F4F7FC;
+    --color-surface-alt: #E8EFF9;
+    --color-text: #14203A;
+    --color-text-muted: #4A566E;
+    --color-primary: #16307A;
+    --color-accent: #1F6FB2;
+    --color-accent-soft: #D6E6F7;
+    --color-border: #D3DDEB;
+    --color-focus: #0B5FFF;
+    --color-on-primary: #FFFFFF;
+    /* Text over photography and dark scrims stays light in both themes. */
+    --color-on-inverse: #FFFFFF;
+    /* Status surfaces: confirmations, warnings and neutral badges. */
+    --color-positive-surface: #E4F4E9;
+    --color-positive-text: #16653A;
+    --color-warning-surface: #FDF1DC;
+    --color-warning-text: #8A4B08;
+    --color-neutral-surface: #EEF0F3;
+    --color-neutral-text: #4A566E;
+    /* Heritage display boards (honours roll) keep a warm, framed look. */
+    --color-heritage-surface: #F6EDE1;
+    --color-heritage-surface-alt: #E9D9C2;
+    --color-heritage-border: #D2B48C;
+    --color-heritage-inner: rgba(139, 108, 66, 0.3);
+    --color-heritage-text: #62461E;
+    --color-heritage-highlight: rgba(222, 184, 135, 0.2);
+    /* Soft notice panel (payments, membership reminders). */
+    --color-notice-surface: #FFF8E6;
+    --color-notice-border: #E6A800;
+    /* Zebra striping and hover for tables and lists. */
+    --color-row-stripe: rgba(22, 48, 122, 0.06);
+    --color-row-hover: rgba(22, 48, 122, 0.12);
+    /* Heritage brass: used sparingly for the wordmark rule and section accents. */
+    --color-brass: #8A6A2F;
+    /* Footer: royal navy anchor in day, a darker relative tone at night. */
+    --color-footer-bg: #16307A;
+    --color-footer-bg-alt: #122867;
+    --color-footer-text: #F4F7FC;
+    --color-footer-muted: #C6D6EF;
+    --color-footer-heading: #E8C88A;
+    --color-footer-border: rgba(255, 255, 255, 0.16);
+    --color-footer-icon: rgba(255, 255, 255, 0.14);
+    --color-footer-icon-hover: rgba(255, 255, 255, 0.26);
+    /* Solid buttons used on top of photography: identical in both themes
+       because the photograph behind them does not change. */
+    --color-inverse-button-bg: rgba(255, 255, 255, 0.94);
+    --color-inverse-button-text: #12203A;
+    --color-shadow: rgba(12, 24, 48, 0.1);
+}
+
+[data-theme="dark"] {
+    --color-bg: #0E1116;
+    --color-surface: #171C23;
+    --color-surface-alt: #1F2630;
+    --color-text: #F2F5F9;
+    --color-text-muted: #A9B4C4;
+    --color-primary: #9FC3F0;
+    --color-accent: #63B3F5;
+    --color-accent-soft: #20303F;
+    --color-border: #2A323D;
+    --color-focus: #7CC4FF;
+    --color-on-primary: #0E1116;
+    --color-on-inverse: #FFFFFF;
+    --color-positive-surface: #16301F;
+    --color-positive-text: #86DCA6;
+    --color-warning-surface: #33260F;
+    --color-warning-text: #F2C879;
+    --color-neutral-surface: #232A34;
+    --color-neutral-text: #A9B4C4;
+    --color-heritage-surface: #241C12;
+    --color-heritage-surface-alt: #2E2418;
+    --color-heritage-border: #6B5433;
+    --color-heritage-inner: rgba(231, 211, 174, 0.25);
+    --color-heritage-text: #E7D3AE;
+    --color-heritage-highlight: rgba(231, 211, 174, 0.12);
+    --color-notice-surface: #2A2412;
+    --color-notice-border: #F0C24B;
+    --color-row-stripe: rgba(99, 179, 245, 0.08);
+    --color-row-hover: rgba(99, 179, 245, 0.16);
+    --color-brass: #D3B173;
+    --color-footer-bg: #101725;
+    --color-footer-bg-alt: #0C121D;
+    --color-footer-text: #F2F5F9;
+    --color-footer-muted: #B7C2D2;
+    --color-footer-heading: #E8C88A;
+    --color-footer-border: rgba(255, 255, 255, 0.12);
+    --color-footer-icon: rgba(255, 255, 255, 0.12);
+    --color-footer-icon-hover: rgba(255, 255, 255, 0.22);
+    --color-inverse-button-bg: rgba(255, 255, 255, 0.94);
+    --color-inverse-button-text: #12203A;
+    --color-shadow: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-ui);
+    font-size: var(--step-body);
+    line-height: var(--leading-body);
+}
+
+h1, h2, h3, h4, .logo-text h1 {
+    font-family: var(--font-display);
+    color: var(--color-text);
+}
+
+h1 { font-size: var(--step-h1); }
+h2 { font-size: var(--step-h2); }
+h3 { font-size: var(--step-h3); }
+
+/* Stage 10: this rule lost its `.container a:not([class])` selector — it was
+   over-specific and out-ranked component link colours such as the footer
+   social icons, which is what made the Facebook glyph disappear. Bare links
+   still inherit the base `a` colour. */
+p a, .footer-section ul li a {
+    color: var(--color-primary);
+}
+
+.container {
+    max-width: var(--content-max);
+    padding-inline: var(--gutter);
+}
+
+section:not(.page-banner):not(.hero) {
+    padding-block: var(--section-y);
+    background-color: var(--color-bg);
+}
+
+/* Stage 10 refinement: a hairline keeps stacked sections distinct without
+   introducing bands, gradients or heavier chrome. */
+main > section + section:not(.page-banner):not(.hero) {
+    border-top: 1px solid var(--color-border);
+}
+
+/* Inline links in prose read as links without shouting. */
+p a:not(.btn) {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+.section-intro {
+    color: var(--color-text-muted);
+    font-size: 1.0625rem;
+    max-width: 62ch;
+}
+
+/* Section headings: consistent rule + optional eyebrow */
+h2 {
+    position: relative;
+    padding-bottom: var(--space-3);
+    line-height: 1.22;
+    letter-spacing: -0.005em;
+}
+
+h3 {
+    line-height: 1.28;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 56px;
+    height: 3px;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-accent);
+}
+
+.page-banner .banner-content h2::after,
+.footer-section h3::after {
+    display: none;
+}
+
+/* Header */
+header {
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+header .container {
+    gap: var(--space-5);
+    min-height: 84px;
+}
+
+.logo-text h1 {
+    /* Stage 10: a heritage clubhouse wordmark — high-contrast serif, tight
+       leading and a fine brass rule, rather than a generic sans heading.
+       The name wraps onto two lines ("Polmaise" / "Bowling Club"), which keeps
+       the mark narrow enough for the navigation and theme toggle to fit. */
+    font-family: var(--font-wordmark);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: 0.004em;
+    color: var(--color-primary);
+    margin-bottom: 0;
+    max-width: 10em;
+    /* Balance the two lines ("Polmaise" / "Bowling Club") where supported. */
+    text-wrap: balance;
+}
+
+.logo-text h1::after {
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 2px;
+    margin-top: 0.25rem;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-brass);
+}
+
+@media (max-width: 1279px) {
+    .logo-text h1 {
+        font-size: 1.15rem;
+    }
+
+    .logo-text h1::after {
+        width: 2.25rem;
+        height: 1.5px;
+        margin-top: 0.25rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .logo-text h1 {
+        font-size: 1.02rem;
+        max-width: 9em;
+    }
+
+    .logo-text h1::after {
+        width: 1.75rem;
+        margin-top: 0.2rem;
+    }
+}
+
+nav ul {
+    gap: var(--space-1);
+}
+
+nav ul li a {
+    color: var(--color-text);
+    font-family: var(--font-ui);
+    font-size: var(--step-small);
+    font-weight: 600;
+    letter-spacing: 0;
+    padding: var(--space-2) var(--space-2);
+    border-radius: var(--radius-sm);
+    transition: background-color var(--duration-fast) var(--ease-standard),
+        color var(--duration-fast) var(--ease-standard);
+}
+
+nav ul li a:hover {
+    color: var(--color-primary);
+}
+
+nav ul li a.active {
+    /* Understated: colour plus the accent rule, never a filled block. */
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* Theme toggle */
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-left: var(--space-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color var(--duration-fast) var(--ease-standard),
+        border-color var(--duration-fast) var(--ease-standard);
+}
+
+.theme-toggle:hover {
+    background-color: var(--color-accent-soft);
+}
+
+.theme-toggle .fa-sun,
+[data-theme="dark"] .theme-toggle .fa-moon {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .fa-sun {
+    display: inline-block;
+}
+
+/* Buttons */
+.btn,
+.primary-btn,
+.secondary-btn,
+.small-btn {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid transparent;
+    font-family: var(--font-ui);
+    font-size: var(--step-label);
+    font-weight: 700;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform var(--duration-fast) var(--ease-standard),
+        background-color var(--duration-fast) var(--ease-standard),
+        color var(--duration-fast) var(--ease-standard),
+        border-color var(--duration-fast) var(--ease-standard),
+        box-shadow var(--duration-fast) var(--ease-standard);
+}
+
+.btn:hover,
+.primary-btn:hover,
+.secondary-btn:hover,
+.small-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.primary-btn,
+.btn.primary-btn {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+}
+
+.secondary-btn,
+.btn.secondary-btn {
+    background-color: transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.small-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--color-accent-soft);
+    color: var(--color-primary);
+}
+
+/* Stage 10: calls to action over photography are solid and high-contrast —
+   the primary action dominates, secondary actions stay clearly legible. */
+.hero .btn.primary-btn,
+.page-banner .btn.primary-btn,
+.history-cta .btn.primary-btn {
+    padding-inline: 2.1rem;
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    box-shadow: var(--shadow-md);
+}
+
+.hero .btn.secondary-btn,
+.page-banner .btn.secondary-btn {
+    background-color: var(--color-inverse-button-bg);
+    border-color: transparent;
+    color: var(--color-inverse-button-text);
+    box-shadow: var(--shadow-sm);
+}
+
+.hero .btn.secondary-btn:hover,
+.page-banner .btn.secondary-btn:hover {
+    background-color: var(--color-on-inverse);
+    color: var(--color-inverse-button-text);
+}
+
+.hero .cta-buttons {
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.hero .btn.primary-btn:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-on-primary);
+}
+
+/* Footer */
+footer {
+    /* Stage 10: a royal navy anchor in day mode, a darker relative tone at
+       night, always with light text. */
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
+    border-top: 1px solid var(--color-footer-border);
+}
+
+.footer-section h3 {
+    color: var(--color-footer-heading);
+    font-size: 1.0625rem;
+    letter-spacing: 0.02em;
+    margin-bottom: var(--space-4);
+}
+
+.footer-section p,
+.footer-section ul li a {
+    color: var(--color-footer-muted);
+}
+
+.footer-section ul li a:hover {
+    color: var(--color-footer-text);
+}
+
+.social-links a,
+.social-links .social-link {
+    background-color: var(--color-footer-icon);
+    color: var(--color-on-inverse);
+    transition: background-color var(--duration-fast) var(--ease-standard);
+}
+
+.social-links a:hover {
+    background-color: var(--color-footer-icon-hover);
+    color: var(--color-on-inverse);
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--color-footer-border);
+    color: var(--color-footer-muted);
+}
+
+/* Cards: shared language, page-specific layouts untouched */
+.card,
+.news-card,
+.album-card,
+.business-card,
+.main-sponsor-card,
+.achievement-card,
+.event-details-card,
+.benefit-item {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-xs);
+    transition: transform var(--duration-base) var(--ease-standard),
+        box-shadow var(--duration-base) var(--ease-standard);
+}
+
+.news-card:hover,
+.album-card:hover,
+.business-card:hover,
+.main-sponsor-card:hover {
+    box-shadow: var(--shadow-sm);
+}
+
+.news-card-date {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    border-radius: var(--radius-sm);
+}
+
+/* Forms */
+.form-group input,
+.form-group select,
+.form-group textarea,
+.signup-form input {
+    width: 100%;
+    padding: 0.75rem 0.875rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-ui);
+    font-size: var(--step-body);
+    transition: border-color var(--duration-fast) var(--ease-standard),
+        box-shadow var(--duration-fast) var(--ease-standard);
+}
+
+.form-group input:focus-visible,
+.signup-form input:focus-visible {
+    border-color: var(--color-focus);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-focus) 25%, transparent);
+}
+
+.form-group label,
+.signup-form label {
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: var(--step-small);
+}
+
+.error-message {
+    color: #B3261E;
+    font-size: var(--step-small);
+}
+
+[data-theme="dark"] .error-message {
+    color: #FF8A80;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--color-surface);
+}
+
+th {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    font-family: var(--font-ui);
+    font-size: var(--step-small);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+td, th {
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Focus ring: Stage 7 behaviour, recoloured per theme */
+:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+}
+
+.theme-toggle:focus-visible,
+.mobile-menu:focus-visible,
+.accordion-header:focus-visible,
+.close-album:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+}
+
+/* Night theme coherence for page-level surfaces */
+[data-theme="dark"] .page-banner,
+[data-theme="dark"] .page-watermark {
+    background-color: var(--color-surface);
 }

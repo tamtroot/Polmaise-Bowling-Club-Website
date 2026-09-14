@@ -9,77 +9,123 @@
     "height": 900
   },
   "status": 200,
-  "resourceCount": 11,
-  "totalBytes": 383374,
+  "resourceCount": 18,
+  "totalBytes": 955174,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 57909
+      "bytes": 59134
+    },
+    "font": {
+      "count": 5,
+      "bytes": 444100
     },
     "image": {
       "count": 8,
-      "bytes": 289878
+      "bytes": 290774
     },
     "script": {
       "count": 1,
-      "bytes": 6825
+      "bytes": 9589
     },
     "stylesheet": {
-      "count": 1,
-      "bytes": 28762
+      "count": 3,
+      "bytes": 151577
     }
   },
   "largestResources": [
     {
-      "url": "http://127.0.0.1:4173/about.html",
-      "bytes": 57909,
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-solid-900.woff2",
+      "bytes": 150020,
       "status": 200,
-      "resourceType": "document",
-      "contentType": "text/html; charset=utf-8"
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/Peter%20Black-w800.webp",
-      "bytes": 55314,
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-brands-400.woff2",
+      "bytes": 109808,
       "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/history-2-w800.webp",
-      "bytes": 54572,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/history-1-w800.webp",
-      "bytes": 45776,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/history-4-w800.webp",
-      "bytes": 44134,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/history-3-w800.webp",
-      "bytes": 41548,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 28762,
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
+      "bytes": 100307,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
     },
     {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/merriweather-400-normal-latin.woff2",
+      "bytes": 97548,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/about.html",
+      "bytes": 59134,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Peter%20Black-w800.webp",
+      "bytes": 55314,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/history-2-w800.webp",
+      "bytes": 54572,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 48347,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/open-sans-400-normal-latin.woff2",
+      "bytes": 48320,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/history-1-w800.webp",
+      "bytes": 45776,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/history-4-w800.webp",
+      "bytes": 44134,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/history-3-w800.webp",
+      "bytes": 41548,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/playfair-display-400-normal-latin.woff2",
+      "bytes": 38404,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
       "url": "http://127.0.0.1:4173/Images/David%20Stewart-w800.webp",
       "bytes": 26738,
       "status": 200,
@@ -95,30 +141,37 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 6825,
+      "bytes": 9589,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
-      "bytes": 3540,
+      "bytes": 4436,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/fonts.css",
+      "bytes": 2923,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
     }
   ],
   "resources": [
     {
       "url": "http://127.0.0.1:4173/about.html",
-      "bytes": 57909,
+      "bytes": 59134,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
-      "bytes": 3540,
+      "bytes": 4436,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
@@ -174,14 +227,63 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 6825,
+      "bytes": 9589,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 28762,
+      "bytes": 48347,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
+      "bytes": 100307,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-brands-400.woff2",
+      "bytes": 109808,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-solid-900.woff2",
+      "bytes": 150020,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/merriweather-400-normal-latin.woff2",
+      "bytes": 97548,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/open-sans-400-normal-latin.woff2",
+      "bytes": 48320,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/files/playfair-display-400-normal-latin.woff2",
+      "bytes": 38404,
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/fonts/fonts.css",
+      "bytes": 2923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

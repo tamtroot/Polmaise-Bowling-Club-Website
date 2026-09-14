@@ -21,6 +21,10 @@
                     <li><a href="{{ prefix }}honours.html"{% if navActive == "honours" %} class="active"{% endif %}>Honours</a></li>
                 </ul>
             </nav>
+            <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Switch to night theme">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+                <i class="fas fa-sun" aria-hidden="true"></i>
+            </button>
             <button type="button" class="mobile-menu" id="mobileMenuButton" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-menu">
                 <i class="{{ mobileMenuIcon }}" aria-hidden="true"></i>
             </button>

@@ -189,7 +189,7 @@ bodyClass: ""
 
         .honour-year {
             margin-bottom: 2rem;
-            border-left: 4px solid var(--club-blue);
+            border-left: 4px solid var(--color-primary);
             padding-left: 2rem;
             position: relative;
         }
@@ -199,7 +199,7 @@ bodyClass: ""
             position: absolute;
             width: 20px;
             height: 20px;
-            background-color: var(--club-blue);
+            background-color: var(--color-primary);
             border-radius: 50%;
             left: -12px;
             top: 0;
@@ -211,8 +211,8 @@ bodyClass: ""
 
         .year-header h3 {
             display: inline-block;
-            background-color: var(--club-blue);
-            color: var(--white);
+            background-color: var(--color-primary);
+            color: var(--color-on-primary);
             padding: 5px 15px;
             border-radius: 5px;
             margin-bottom: 0.5rem;
@@ -230,7 +230,7 @@ bodyClass: ""
 
         .year-achievements p {
             font-style: italic;
-            color: var(--dark-gray);
+            color: var(--color-text);
         }
 
         /* Layout for honours and club competitions (stacked under year honours) */
@@ -245,7 +245,7 @@ bodyClass: ""
         .year-competitions h4 {
             margin-top: 0;
             margin-bottom: 0.5rem;
-            color: var(--club-blue);
+            color: var(--color-primary);
         }
 
         .year-competitions ul {
@@ -258,7 +258,7 @@ bodyClass: ""
         }
 
         .achievement-card {
-            background-color: var(--light-gray);
+            background-color: var(--color-surface-alt);
             border-radius: 10px;
             overflow: hidden;
             margin-bottom: 1.5rem;
@@ -266,13 +266,13 @@ bodyClass: ""
         }
 
         .achievement-header {
-            background-color: var(--club-blue);
-            color: var(--white);
+            background-color: var(--color-primary);
+            color: var(--color-on-primary);
             padding: 15px 20px;
         }
 
         .achievement-header h3 {
-            color: var(--white);
+            color: var(--color-on-primary);
             margin-bottom: 0;
         }
 
@@ -294,14 +294,14 @@ bodyClass: ""
         /* Presidents Board Styles */
         .presidents-board-section {
             padding: 3rem 0;
-            background-color: #f9f7f4;
+            background-color: var(--color-surface-alt);
         }
 
         .presidents-board {
             max-width: 1200px;
             margin: 2rem auto;
-            border: 8px solid #d2b48c;
-            background: linear-gradient(to bottom, #f6ede1, #e9d9c2);
+            border: 8px solid var(--color-heritage-border);
+            background: linear-gradient(to bottom, var(--color-heritage-surface), var(--color-heritage-surface-alt));
             padding: 2rem;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             position: relative;
@@ -315,7 +315,7 @@ bodyClass: ""
             left: 12px;
             right: 12px;
             bottom: 12px;
-            border: 2px solid rgba(139, 108, 66, 0.3);
+            border: 2px solid var(--color-heritage-inner);
             pointer-events: none;
         }
 
@@ -328,14 +328,14 @@ bodyClass: ""
             text-align: center;
             font-family: 'Merriweather', serif;
             font-size: 2rem;
-            color: #62461e;
+            color: var(--color-heritage-text);
             margin-bottom: 1rem;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
 
         .board-intro {
             text-align: center;
-            color: #62461e;
+            color: var(--color-heritage-text);
             font-style: italic;
             margin-bottom: 2rem;
             font-family: 'Merriweather', serif;
@@ -357,14 +357,14 @@ bodyClass: ""
         .entry {
             font-family: 'Merriweather', serif;
             font-size: 1rem;
-            color: #333;
+            color: var(--color-text);
             margin-bottom: 0;
             text-align: left;
         }
 
         .entry span {
             font-weight: 700;
-            color: #62461e;
+            color: var(--color-heritage-text);
             margin-bottom: 0.5rem;
             text-align: left;
             display: block;
@@ -385,7 +385,8 @@ bodyClass: ""
         }
 
         .current-president, .current-champion {
-            background-color: rgba(222, 184, 135, 0.2);
+            background-color: var(--color-heritage-highlight);
+            color: var(--color-heritage-text);
             padding: 8px;
             border-radius: 4px;
             font-weight: bold;
@@ -394,7 +395,7 @@ bodyClass: ""
         /* Change the spacing of the champions board */
         .champions-board-section {
             padding: 4rem 0 3rem;
-            background-color: #f9f7f4;
+            background-color: var(--color-surface-alt);
             margin-top: -2rem;
         }
 
@@ -402,8 +403,8 @@ bodyClass: ""
         .champions-board {
             max-width: 1200px;
             margin: 2rem auto;
-            border: 8px solid #d2b48c;
-            background: linear-gradient(to bottom, #f6ede1, #e9d9c2);
+            border: 8px solid var(--color-heritage-border);
+            background: linear-gradient(to bottom, var(--color-heritage-surface), var(--color-heritage-surface-alt));
             padding: 2rem;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             position: relative;
@@ -417,7 +418,7 @@ bodyClass: ""
             left: 12px;
             right: 12px;
             bottom: 12px;
-            border: 2px solid rgba(139, 108, 66, 0.3);
+            border: 2px solid var(--color-heritage-inner);
             pointer-events: none;
         }
 
@@ -425,7 +426,7 @@ bodyClass: ""
             text-align: center;
             font-family: 'Merriweather', serif;
             font-size: 2rem;
-            color: #62461e;
+            color: var(--color-heritage-text);
             margin-bottom: 1rem;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
@@ -438,7 +439,8 @@ bodyClass: ""
         }
 
         .current-champion {
-            background-color: rgba(222, 184, 135, 0.2);
+            background-color: var(--color-heritage-highlight);
+            color: var(--color-heritage-text);
             padding: 8px;
             border-radius: 4px;
             font-weight: bold;

@@ -33,7 +33,7 @@ bodyClass: ""
 
         .historical-quote {
             font-style: italic;
-            border-left: 3px solid #1e3a8a;
+            border-left: 3px solid var(--color-primary);
             padding-left: 20px;
             margin: 20px 0;
         }
@@ -82,7 +82,7 @@ bodyClass: ""
 
         .historical-section {
             margin-top: 20px;
-            border-top: 1px dashed #ccc;
+            border-top: 1px dashed var(--color-border);
             padding-top: 20px;
         }
 
@@ -113,7 +113,7 @@ bodyClass: ""
             width: 80%;
             max-width: 700px;
             text-align: center;
-            color: white;
+            color: var(--color-on-inverse);
             font-family: 'Open Sans', sans-serif;
         }
 
@@ -121,7 +121,7 @@ bodyClass: ""
             position: absolute;
             top: 15px;
             right: 25px;
-            color: white;
+            color: var(--color-on-inverse);
             font-size: 35px;
             font-weight: bold;
             cursor: pointer;
@@ -129,6 +129,10 @@ bodyClass: ""
 
         /* Zoomable image styles */
         .zoomable-image {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-sm);
             cursor: zoom-in;
             transition: transform 0.3s ease;
         }
@@ -154,7 +158,7 @@ bodyClass: ""
         }
 
         .news-card {
-            border: 1px solid #eaeaea;
+            border: 1px solid var(--color-border);
             border-radius: 8px;
             overflow: hidden;
             transition: transform 0.3s ease;
@@ -194,8 +198,8 @@ bodyClass: ""
         }
 
         .news-card-date {
-            background-color: #1e3a8a; /* Royal blue color */
-            color: white;
+            background-color: var(--color-primary); /* Royal blue color */
+            color: var(--color-on-primary);
             padding: 5px 10px;
             font-size: 0.8rem;
             position: absolute;
@@ -210,7 +214,7 @@ bodyClass: ""
             margin: 0;
             font-size: 1rem;
             line-height: 1.4;
-            color: #333;
+            color: var(--color-text);
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
@@ -233,13 +237,124 @@ bodyClass: ""
 
         .news-close-btn {
             display: none;
+            text-align: center;
+            margin: 20px 0 30px;
+        }
+
+        .news-close-btn.is-visible {
+            display: block;
+        }
+
+        /* Stage 9: former inline styles, now named classes. */
+        .news-figure {
+            margin: 0 0 20px;
+        }
+
+        .news-figcaption {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .plain-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 15px 0;
+        }
+
+        .plain-list--inset {
+            list-style-type: none;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .plain-list--flush {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .update-note {
+            background-color: var(--color-accent-soft);
+            border-left: 4px solid var(--color-primary);
+            color: var(--color-text);
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .news-cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .history-feature-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .history-feature-figure {
+            flex: 0 0 auto;
+            max-width: 260px;
+            align-self: center;
+        }
+
+        .looking-back-section {
+            margin: 30px 0;
+            padding: 25px;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            box-shadow: var(--shadow-xs);
+        }
+
+        .looking-back-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .looking-back-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .looking-back-figure {
+            flex: 0 0 auto;
+            max-width: 300px;
+        }
+
+        .figure-reset {
+            margin: 0;
+        }
+
+        .history-table-total {
             text-align: right;
-            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .history-table-total-value {
+            font-weight: bold;
+        }
+
+        .history-float-figure {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 100%;
+        }
+
+        .history-thumb-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 250px;
         }
 
         .news-close-btn button {
-            background: #1e3a8a; /* Royal blue color */
-            color: white;
+            background: var(--color-primary); /* Royal blue color */
+            color: var(--color-on-primary);
             border: none;
             padding: 8px 15px;
             border-radius: 4px;
@@ -248,7 +363,7 @@ bodyClass: ""
         }
 
         .news-close-btn button:hover {
-            background: #152a62; /* Darker royal blue for hover */
+            background: var(--color-primary); /* Darker royal blue for hover */
         }
 
         @media only screen and (max-width: 768px) {
@@ -276,7 +391,7 @@ bodyClass: ""
 
         /* Styling for historical article box */
         .historical-article-container {
-            border: 1px solid #eaeaea;
+            border: 1px solid var(--color-border);
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 20px; /* Space between articles */
@@ -285,8 +400,8 @@ bodyClass: ""
         }
 
         .historical-article-date {
-            background-color: #1e3a8a; /* Royal blue color */
-            color: white;
+            background-color: var(--color-primary); /* Royal blue color */
+            color: var(--color-on-primary);
             padding: 5px 10px;
             font-size: 0.8rem;
             position: absolute;
@@ -594,18 +709,18 @@ bodyClass: ""
         }
 
         .results-table th, .results-table td {
-            border: 1px solid #ddd;
+            border: 1px solid var(--color-border);
             padding: 8px;
             text-align: left;
         }
 
         .results-table th {
-            background-color: #f2f2f2;
+            background-color: var(--color-surface-alt);
             font-weight: bold;
         }
 
         .results-table tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
+            background-color: var(--color-surface-alt);
         }
 
         /* History Item display */
@@ -620,8 +735,8 @@ bodyClass: ""
 
         /* News Archive Styling */
         .news-archive {
-            border: 1px solid #e0e0e0;
-            background-color: #f8f9fa;
+            border: 1px solid var(--color-border);
+            background-color: var(--color-surface-alt);
             border-radius: 8px;
             margin: 2rem 0;
         }
@@ -637,17 +752,17 @@ bodyClass: ""
         }
 
         .news-archive-header:hover {
-            background-color: #f0f0f0;
+            background-color: var(--color-surface-alt);
         }
 
         .news-archive-header h2 {
-            color: var(--club-blue, #1e3a8a);
+            color: var(--color-primary);
             margin: 0;
             font-size: 1.5rem;
         }
 
         .archive-toggle-icon {
-            color: var(--club-blue, #1e3a8a);
+            color: var(--color-primary);
             font-size: 1.2rem;
             transition: transform 0.3s ease;
         }
@@ -879,9 +994,9 @@ bodyClass: ""
                         </article>
                         <article id="article-east-west-champion-of-champions-2026" class="news-item featured">
                             <h3>Aaron Furzer Crowned East &amp; West Champion of Champions</h3>
-                            <figure class="news-image" style="margin: 0 0 20px;">
+                            <figure class="news-image news-figure">
                                 {% photoImage "./Images/2026/Aaron Champ of Champs/Aaron & President Davie.jpg", "Proud Polmaise President Davie Stewart congratulates Aaron Furzer following his East & West Champion of Champions victory.", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "zoomable-image" } %}
-                                <figcaption style="text-align: center; font-size: 0.9rem; margin-top: 10px; font-style: italic;">Proud Polmaise President Davie Stewart congratulates Aaron Furzer following his East &amp; West Champion of Champions victory.</figcaption>
+                                <figcaption class="news-figcaption">Proud Polmaise President Davie Stewart congratulates Aaron Furzer following his East &amp; West Champion of Champions victory.</figcaption>
                             </figure>
                             <div class="news-content">
                                 <div class="news-meta">
@@ -905,7 +1020,7 @@ bodyClass: ""
 
                                 <figure class="news-image news-image-spaced">
                                     {% photoImage "./Images/2026/Aaron Champ of Champs/Aaron Furzer with Champion of Champions Trophy.jpg", "Aaron Furzer with the Champion of Champions trophy after his 21–15 victory in the Grand Final.", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "zoomable-image" } %}
-                                    <figcaption style="text-align: center; font-size: 0.9rem; margin-top: 10px; font-style: italic;">Aaron Furzer with the Champion of Champions trophy after his 21&ndash;15 victory in the Grand Final.</figcaption>
+                                    <figcaption class="news-figcaption">Aaron Furzer with the Champion of Champions trophy after his 21&ndash;15 victory in the Grand Final.</figcaption>
                                 </figure>
 
                                 <p>Club President <strong>Davie Stewart</strong> was delighted to share in the celebrations afterwards, with Aaron proudly returning to Polmaise with the trophy.</p>
@@ -1188,7 +1303,7 @@ bodyClass: ""
 
                                 <p>Polmaise skips first</p>
 
-                                <ul style="list-style-type: none; padding-left: 0; margin: 15px 0;">
+                                <ul class="plain-list">
                                     <li>D. Stewart 12 v 7 G. Dawson</li>
                                     <li>T. Stevenson 16 v 9 M. Reid</li>
                                     <li>P. M. Black 16 v 6 F. Gray</li>
@@ -1224,7 +1339,7 @@ bodyClass: ""
 
                                 <p>The rink scores were as follows (Patons and Baldwins skips first):</p>
 
-                                <ul style="list-style-type: none; padding-left: 0; margin: 15px 0;">
+                                <ul class="plain-list">
                                     <li>S. Franklye 15–17 D. Dalgleish</li>
                                     <li>H. Spence 18–12 R. Donaldson</li>
                                     <li>J. Buckley 17–13 P. M. Black</li>
@@ -1340,7 +1455,7 @@ bodyClass: ""
                             </span>
                         </div>
 
-                        <div class="news-archive-content" id="news-archive-content" style="display: none;">
+                        <div class="news-archive-content is-hidden" id="news-archive-content">
                         <!-- News Grid for Thumbnails -->
                         <div class="news-grid">
                         <!-- Presentation Dance 2025 Event Report -->
@@ -1605,7 +1720,7 @@ bodyClass: ""
 
                             <p>The highlight of the evening was the presentation of trophies and honours to our 2025 competition winners and runners-up. Congratulations to all who took part across a brilliant season of bowling:</p>
 
-                            <ul style="list-style-type: none; padding-left: 0; margin: 15px 0;">
+                            <ul class="plain-list">
                                 <li><strong>2 Bowl Pairs:</strong> Billy Johnstone & Alex Brown</li>
                                 <li><strong>4 Bowl Pairs:</strong> Gary Malcomson & James Brown</li>
                                 <li><strong>Mixed Pairs:</strong> Gary Malcomson & Rita Smith</li>
@@ -2188,7 +2303,7 @@ bodyClass: ""
 
                             <p>Well done, Kyle — your club and your county are proud of you!</p>
 
-                            <p class="update-note" style="background-color: #f0f8ff; padding: 15px; border-left: 4px solid #1e3a8a; margin: 20px 0;">
+                            <p class="update-note">
                                 <strong>Update (June 5, 2025):</strong> Kyle and his Stirlingshire U25 teammates have progressed to the semi-finals of the Scottish Under 25 County Championships! In a thrilling contest on Sunday 1st June, the Stirlingshire team delivered a spectacular comeback victory, overturning a 22-shot deficit early in the match to storm to a 140–103 win over Renfrewshire. The team showed remarkable grit and determination, with Kyle once again contributing to the squad's success.
                             </p>
 
@@ -2198,7 +2313,7 @@ bodyClass: ""
 
                             <p>The semi-finals will be held on Sunday 22nd June at Sighthill Bowling Club. Supporters are encouraged to attend, and transport arrangements can be made for those interested.</p>
 
-                            <p class="update-note" style="background-color: #f0f8ff; padding: 15px; border-left: 4px solid #1e3a8a; margin: 20px 0;">
+                            <p class="update-note">
                                 <strong>Update (June 21, 2025):</strong> Kyle and his Stirlingshire U25 teammates have reached the final of the Scottish Under 25 County Championships! After their impressive semi-final performance at Sighthill Bowling Club, the team has secured their place in the championship final. This is a tremendous achievement for Kyle and the entire Stirlingshire squad, marking another milestone in what has been an exceptional season for our young champion.
                             </p>
                         </div>
@@ -2227,7 +2342,7 @@ bodyClass: ""
 
                             <p>We extend our heartfelt thanks to Sandy Deans for entrusting us with this treasured archive and for his outstanding dedication to preserving and celebrating the heritage of Polmaise Bowling Club.</p><br>
 
-                            <div class="cta-button" style="text-align: center; margin-top: 20px;">
+                            <div class="cta-button news-cta">
                                 <a href="archive.html" class="btn primary-btn">Explore the Archive</a>
                             </div>
                         </div>
@@ -2386,9 +2501,9 @@ bodyClass: ""
                             </span>
                         </div>
 
-                        <div class="news-archive-content" id="history-archive-content" style="display: none;">
-                        <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; margin-bottom: 30px;">
-                            <div class="history-intro" style="flex: 1; min-width: 300px;">
+                        <div class="news-archive-content is-hidden" id="history-archive-content">
+                        <div class="history-feature-row">
+                            <div class="history-intro">
                                <p>Tucked away in a corner of our clubhouse is a framed treasure — a collection of yellowed clippings and fading type, lovingly preserved and gifted to Polmaise Bowling Club by W. Jenkins on the occasion of our 75th Anniversary in July 1986. These articles, drawn from newspapers and community reports, tell the quiet but proud story of our club — of roll-ups and rivalries, of jubilee celebrations, gala days, and the steadfast spirit of Fallin's bowling men and women.</p>
 
                                <p>Thanks to a recent rediscovery, our journey now stretches all the way back to where it all began — with a news article from 1911, capturing the excitement and ceremony of Polmaise Bowling Club's official opening. This first recorded moment on our green sets the stage for over a century of camaraderie, competition, and community.</p>
@@ -2400,16 +2515,16 @@ bodyClass: ""
                                <p>These are our stories — handed down, and now, shared again.</p>
                             </div>
 
-                            <div style="flex: 0 0 auto; max-width: 260px; align-self: center;">
-                                {% photoImage "./Images/Archive/HistoricalArchive/Frame.jpg", "Framed historical newspaper clippings", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "zoomable-image", style: "width: 100%; height: auto; border-radius: 5px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);" } %}
+                            <div class="history-feature-figure">
+                                {% photoImage "./Images/Archive/HistoricalArchive/Frame.jpg", "Framed historical newspaper clippings", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "zoomable-image" } %}
                             </div>
                         </div>
 
                         <!-- Looking Back Section -->
-                        <div class="looking-back-section" style="margin: 30px 0; padding: 25px; border: 1px solid #eaeaea; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                        <div class="looking-back-section">
                             <h3>LOOKING BACK - 75th Anniversary</h3>
-                            <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
-                                <div style="flex: 1; min-width: 300px;">
+                            <div class="looking-back-row">
+                                <div class="looking-back-text">
                                     <p>Peter Black shared some of his memories from the 75th Anniversary:</p>
 
                                     <p>"I was President when we celebrated our 75th anniversary. On the Monday night, we invited every club we played tea games with to send a rink to play against us. Then, on Tuesday, we hosted a match against a Central Select team, followed by the County Select on Wednesday, and the Scottish on Thursday. Friday was a hat night with our own club members.</p>
@@ -2418,10 +2533,10 @@ bodyClass: ""
 
                                     <p>I remember the Monday night against the tea games well—I was told I left F.P.H.S. around 9:30, only to be back at the bar by 9:40 asking for a pint and a vodka! I was just a boy of 36."</p>
                                 </div>
-                                <div style="flex: 0 0 auto; max-width: 300px;">
-                                    <figure style="margin: 0;">
-                                        {% photoImage "./Images/Archive/HistoricalArchive/75th Presidents Trophy.jpg", "Silver Goblet from 75th Anniversary", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "zoomable-image", style: "width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);" } %}
-                                        <figcaption style="text-align: center; font-size: 0.9rem; margin-top: 10px; font-style: italic;">Silver Goblet Presented to the President. It says - 75th Anniversary, Polmaise B.C. 1986.</figcaption>
+                                <div class="looking-back-figure">
+                                    <figure class="figure-reset">
+                                        {% photoImage "./Images/Archive/HistoricalArchive/75th Presidents Trophy.jpg", "Silver Goblet from 75th Anniversary", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "zoomable-image" } %}
+                                        <figcaption class="news-figcaption">Silver Goblet Presented to the President. It says - 75th Anniversary, Polmaise B.C. 1986.</figcaption>
                                     </figure>
                                 </div>
                             </div>
@@ -2534,7 +2649,7 @@ bodyClass: ""
                         <!-- Full Historical Articles (initially hidden) -->
                         <div class="history-articles-content">
                             <!-- Article from 2013 - Scottish Mixed Pairs Champions -->
-                            <div id="history-2013" class="history-item" style="display: none;">
+                            <div id="history-2013" class="history-item is-hidden">
                                 <div class="historical-article-container">
                                     <article class="historical-article">
                                         <h3>Stirling Observer – Wednesday, July 31, 2013</h3>
@@ -2560,13 +2675,13 @@ bodyClass: ""
                                         <p>Their national success was the Stirling district's first since 2002 when Polmaise triples triumphed on the same stage.</p>
                                     </article>
                                 </div>
-                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                <div class="news-close-btn">
                                     <button type="button" data-history-close>Back to History</button>
                                 </div>
                             </div>
 
                             <!-- Article from 2003 - British Isles Triples Champions -->
-                            <div id="history-2003" class="history-item" style="display: none;">
+                            <div id="history-2003" class="history-item is-hidden">
                                 <div class="historical-article-container">
                                     <div class="historical-article-date">July 9, 2003</div>
                                     <article class="historical-article">
@@ -2612,13 +2727,13 @@ bodyClass: ""
                                         </div>
                                     </article>
                                 </div>
-                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                <div class="news-close-btn">
                                     <button type="button" data-history-close>Back to History</button>
                                 </div>
                             </div>
 
                             <!-- Article from 2002 - Scottish Triples Champions -->
-                            <div id="history-2002" class="history-item" style="display: none;">
+                            <div id="history-2002" class="history-item is-hidden">
                                 <div class="historical-article-container">
                                     <div class="historical-article-date">July 24, 2002</div>
                                     <article class="historical-article">
@@ -2686,13 +2801,13 @@ bodyClass: ""
                                         </div>
                                     </article>
                                 </div>
-                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                <div class="news-close-btn">
                                     <button type="button" data-history-close>Back to History</button>
                                 </div>
                             </div>
 
                             <!-- Article from 1988 - Scottish Top Ten Champions -->
-                            <div id="history-1988" class="history-item" style="display: none;">
+                            <div id="history-1988" class="history-item is-hidden">
                                 <div class="historical-article-container">
                                     <article class="historical-article">
                                         <h3>Stirling Observer – Friday, June 17, 1988</h3>
@@ -2713,7 +2828,7 @@ bodyClass: ""
 
                                         <p>The final took place on the Blairfield green and the scores were:</p>
 
-                                        <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 20px;">
+                                        <ul class="plain-list--inset">
                                             <li><strong>Singles</strong> - Polmaise (J. Blevins) 21, Bonnyrigg 19</li>
                                             <li><strong>Pairs</strong> - Polmaise (S. Deans and P. Black) 25, Bonnyrigg 10</li>
                                             <li><strong>Triples</strong> - Polmaise (J. Walker, W. Bone and R. Fulton) 15, Bonnyrigg 14</li>
@@ -2727,13 +2842,13 @@ bodyClass: ""
                                         <p>Congratulations Polmaise!</p>
                                     </article>
                                 </div>
-                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                <div class="news-close-btn">
                                     <button type="button" data-history-close>Back to History</button>
                                 </div>
                             </div>
 
                             <!-- Article from 1961 -->
-                            <div id="history-1961" class="history-item" style="display: none;">
+                            <div id="history-1961" class="history-item is-hidden">
                                 <div class="historical-article-container">
                                     <article class="historical-article">
                                         <h3>Alloa Journal and Advertiser – Thursday, June 8th, 1961</h3>
@@ -2808,21 +2923,21 @@ bodyClass: ""
                                                     <td>21 – 7</td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="4" style="text-align:right; font-weight: bold;">Total</td>
-                                                    <td style="font-weight: bold;">68 - 68</td>
+                                                    <td colspan="4" class="history-table-total">Total</td>
+                                                    <td class="history-table-total-value">68 - 68</td>
                                                 </tr>
                                             </tbody>
                                         </table>
 
                                     </article>
                                 </div>
-                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                <div class="news-close-btn">
                                     <button type="button" data-history-close>Back to History</button>
                                 </div>
                             </div>
 
                             <!-- Article from 1942 -->
-                            <div id="history-1942" class="history-item" style="display: none;">
+                            <div id="history-1942" class="history-item is-hidden">
                                 <div class="historical-article-container">
                                     <article class="historical-article">
                                         <h3>Stirling Observer – Wednesday, September 9, 1942</h3>
@@ -2846,13 +2961,13 @@ bodyClass: ""
                                         </div>
                                     </article>
                                 </div>
-                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                <div class="news-close-btn">
                                     <button type="button" data-history-close>Back to History</button>
                                 </div>
                             </div>
 
                             <!-- Article from 1935 - Macintosh Trophy -->
-                            <div id="history-1935" class="history-item" style="display: none;">
+                            <div id="history-1935" class="history-item is-hidden">
                                 <div class="historical-article-container">
                                     <article class="historical-article">
                                         <h3>Saturday, 20th July 1935</h3>
@@ -2865,9 +2980,9 @@ bodyClass: ""
                                         <h4>WINNERS OF THE MACINTOSH TROPHY</h4>
 
                                         <!-- Responsive image thumbnails that stack on mobile - similar to 1914 article -->
-                                        <div style="float: right; margin: 0 0 20px 20px; max-width: 100%;">
+                                        <div class="history-float-figure">
                                             <!-- Use responsive layout with media query -->
-                                            <div style="display: flex; flex-direction: column; gap: 15px; max-width: 250px;">
+                                            <div class="history-thumb-stack">
                                                 <!-- First thumbnail -->
                                                 <div class="historical-clipping-frame">
                                                     {% photoImage "./Images/Archive/HistoricalArchive/20th July 1935.jpg", "Original newspaper clipping from July 1935", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "zoomable-image historical-clipping-image" } %}
@@ -2970,13 +3085,13 @@ bodyClass: ""
                                         </div>
                                     </article>
                                 </div>
-                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                <div class="news-close-btn">
                                     <button type="button" data-history-close>Back to History</button>
                                 </div>
                             </div>
 
                             <!-- Article from 1914 -->
-                            <div id="history-1914" class="history-item" style="display: none;">
+                            <div id="history-1914" class="history-item is-hidden">
                                 <div class="historical-article-container">
                                     <article class="historical-article">
                                         <h3>June 8th, 1914</h3>
@@ -2989,9 +3104,9 @@ bodyClass: ""
                                         <h4>THE POLMAISE TROPHY - FALLIN CLUB'S FIRST VICTORY</h4>
 
                                         <!-- Responsive image thumbnails that stack on mobile -->
-                                        <div style="float: right; margin: 0 0 20px 20px; max-width: 100%;">
+                                        <div class="history-float-figure">
                                             <!-- Use responsive layout with media query -->
-                                            <div style="display: flex; flex-direction: column; gap: 15px; max-width: 250px;">
+                                            <div class="history-thumb-stack">
                                                 <!-- First thumbnail -->
                                                 <div class="historical-clipping-frame">
                                                     {% photoImage "./Images/Archive/HistoricalArchive/8th June 1914.jpg", "Original newspaper clipping from 1914", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "zoomable-image historical-clipping-image" } %}
@@ -3060,13 +3175,13 @@ bodyClass: ""
                                         </div>
                                     </article>
                                 </div>
-                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                <div class="news-close-btn">
                                     <button type="button" data-history-close>Back to History</button>
                                 </div>
                             </div>
 
                             <!-- Article from 1911 July -->
-                            <div id="history-1911-july" class="history-item" style="display: none;">
+                            <div id="history-1911-july" class="history-item is-hidden">
                                 <div class="historical-article-container">
                                     <article class="historical-article">
                                         <h3>Bridge of Allan Gazette - 15th July 1911</h3>
@@ -3096,13 +3211,13 @@ bodyClass: ""
                                         </div>
                                     </article>
                                 </div>
-                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                <div class="news-close-btn">
                                     <button type="button" data-history-close>Back to History</button>
                                 </div>
                             </div>
 
                             <!-- Article from 1911 -->
-                            <div id="history-1911" class="history-item" style="display: none;">
+                            <div id="history-1911" class="history-item is-hidden">
                                 <div class="historical-article-container">
                                     <article class="historical-article">
                                         <h3>A Gala Day at Fallin - June 3, 1911</h3>
@@ -3227,7 +3342,7 @@ bodyClass: ""
                                         <p>The ladies of Fallin believed it would be for the good of their husbands and families that this green should exist where it did and he was quite certain that every married woman expected her "man" to come home in the evening with the sweetest possible temper, and never to say a hard word-(laughter)-which would be a very good results of the establishment of the green in the district. (More laughter.) As they all knew every bowl had its bias, and the great success in bowling was only to be done by rolling up the bowl to the jack with the proper bias. He hoped that everybody present had got a strong bias in favour of the things they saw before them and the result would be that most of the debt, if not the whole of it, would to a large extent be wiped of by the evening. (Applause.) He then declared the sale open. The sale was a great success, and £85 was realised.</p>
 
                                         <h4>Stallholders</h4>
-                                        <ul style="list-style-type: none; padding-left: 0;">
+                                        <ul class="plain-list--flush">
                                             <li><strong>No. 1</strong> - Mrs. Todd and Mrs D. McNaughton</li>
                                             <li><strong>No. 2</strong> - Mrs McPhee and Miss Christie</li>
                                             <li><strong>No. 3</strong> - Miss C. Kerr and Miss M. Barr</li>
@@ -3238,7 +3353,7 @@ bodyClass: ""
                                         </ul>
                                     </article>
                                 </div>
-                                <div class="news-close-btn" style="display: block; text-align: center; margin-top: 20px; margin-bottom: 30px;">
+                                <div class="news-close-btn">
                                     <button type="button" data-history-close>Back to History</button>
                                 </div>
                             </div>
@@ -3281,15 +3396,15 @@ bodyClass: ""
             selectedArticle.classList.add('active');
 
             // Hide the grid
-            document.querySelector('.news-grid').style.display = 'none';
+            document.querySelector('.news-grid').classList.add('is-hidden');
 
             // Hide the history section
-            document.querySelector('.history-feature').style.display = 'none';
+            document.querySelector('.history-feature').classList.add('is-hidden');
 
             // Show the close buttons in each article
             const closeButtons = document.querySelectorAll('.news-close-btn');
             closeButtons.forEach(button => {
-                button.style.display = 'block';
+                button.classList.add('is-visible');
             });
 
             // Scroll to the top of the article
@@ -3304,15 +3419,15 @@ bodyClass: ""
             });
 
             // Show the grid
-            document.querySelector('.news-grid').style.display = 'grid';
+            document.querySelector('.news-grid').classList.remove('is-hidden');
 
             // Show the history section again
-            document.querySelector('.history-feature').style.display = 'block';
+            document.querySelector('.history-feature').classList.remove('is-hidden');
 
             // Hide the close buttons
             const closeButtons = document.querySelectorAll('.news-close-btn');
             closeButtons.forEach(button => {
-                button.style.display = 'none';
+                button.classList.remove('is-visible');
             });
 
             // Scroll to the top of the news section
@@ -3325,25 +3440,25 @@ bodyClass: ""
             closeAllArticles();
 
             // Hide the history grid
-            document.getElementById('history-grid').style.display = 'none';
+            document.getElementById('history-grid').classList.add('is-hidden');
 
             // Hide all history articles first
             const historyArticles = document.querySelectorAll('.history-item');
             historyArticles.forEach(article => {
-                article.style.display = 'none'; // Ensure all are hidden initially
+                article.classList.add('is-hidden'); // Ensure all are hidden initially
                 article.classList.remove('active');
             });
 
             // Show the selected history article
             const selectedArticle = document.getElementById(articleId);
             if (selectedArticle) {
-                selectedArticle.style.display = 'block'; // Make it visible
+                selectedArticle.classList.remove('is-hidden'); // Make it visible
                 selectedArticle.classList.add('active');
 
                 // Explicitly ensure the back button is visible
                 const backButton = selectedArticle.querySelector('.news-close-btn');
                 if (backButton) {
-                    backButton.style.display = 'block';
+                    backButton.classList.add('is-visible');
                 }
 
                 // Scroll to the top of the article
@@ -3355,14 +3470,14 @@ bodyClass: ""
             // Hide all history articles
             const historyArticles = document.querySelectorAll('.history-item');
             historyArticles.forEach(article => {
-                article.style.display = 'none';
+                article.classList.add('is-hidden');
                 article.classList.remove('active');
             });
 
             // Show the history grid
             const historyGrid = document.getElementById('history-grid');
             if (historyGrid) {
-                 historyGrid.style.display = 'grid';
+                 historyGrid.classList.remove('is-hidden');
             }
 
             // Scroll to the top of the history section feature
@@ -3373,11 +3488,11 @@ bodyClass: ""
             const archiveContent = document.getElementById('news-archive-content');
             const archiveHeader = document.querySelector('.news-archive-header');
 
-            if (archiveContent.style.display === 'none') {
-                archiveContent.style.display = 'block';
+            if (archiveContent.classList.contains('is-hidden')) {
+                archiveContent.classList.remove('is-hidden');
                 archiveHeader.classList.add('expanded');
             } else {
-                archiveContent.style.display = 'none';
+                archiveContent.classList.add('is-hidden');
                 archiveHeader.classList.remove('expanded');
             }
         }
@@ -3387,11 +3502,11 @@ bodyClass: ""
             const historyContent = document.getElementById('history-archive-content');
             const historyHeader = document.querySelector('#history .news-archive-header');
 
-            if (historyContent.style.display === 'none') {
-                historyContent.style.display = 'block';
+            if (historyContent.classList.contains('is-hidden')) {
+                historyContent.classList.remove('is-hidden');
                 historyHeader.classList.add('expanded');
             } else {
-                historyContent.style.display = 'none';
+                historyContent.classList.add('is-hidden');
                 historyHeader.classList.remove('expanded');
             }
         }

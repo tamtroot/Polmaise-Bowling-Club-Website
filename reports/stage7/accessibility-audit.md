@@ -1,8 +1,12 @@
 # Stage 7 accessibility and SEO audit
 
-- axe violation instances: 0 across 0 rule/page combinations
-- pages missing meta description: 18
-- pages missing canonical: 18
+- axe violation instances (day desktop): 0
+- axe violation instances (day mobile): 0
+- axe violation instances (night desktop): 0
+- axe violation instances (night mobile): 0
+- rule/page combinations: 0
+- pages missing meta description: 0
+- pages missing canonical: 0
 - pages missing <main>: 0
 - pages without an h1: 0
 - pages with multiple h1: 0
@@ -15,26 +19,26 @@
 
 ## Per page
 
-| Page | axe rules | instances | h1 | main | description | canonical | OG |
+| Page | instances (all four passes) | rules | h1 | main | description | canonical | OG |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| /index.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /about.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /membership.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /fixtures.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /news.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /gallery.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /contact.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /sponsors.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /honours.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /archive.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /history.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /signup.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /live-scoring.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /News%20articles/presentation-dance-2025.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /PhotoAlbums/presentation-dance-2025.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /PhotoAlbums/charlie-mcneil-memorial-2025.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /PhotoAlbums/top-15-final-2025.html | 0 | 0 | 1 | 1 | NO | NO | NO |
-| /PhotoAlbums/twa-peters-memorial-2025.html | 0 | 0 | 1 | 1 | NO | NO | NO |
+| /index.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /about.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /membership.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /fixtures.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /news.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /gallery.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /contact.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /sponsors.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /honours.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /archive.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /history.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /signup.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /live-scoring.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /News%20articles/presentation-dance-2025.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /PhotoAlbums/presentation-dance-2025.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /PhotoAlbums/charlie-mcneil-memorial-2025.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /PhotoAlbums/top-15-final-2025.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /PhotoAlbums/twa-peters-memorial-2025.html | 0 | 0 | 1 | 1 | yes | yes | yes |
 
 ## Heading outlines
 

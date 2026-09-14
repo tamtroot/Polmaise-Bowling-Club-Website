@@ -4,6 +4,7 @@
     function initialiseMobileNavigation() {
         const mobileMenu = document.querySelector('.mobile-menu');
         const navMenu = document.querySelector('nav ul');
+        const mobileDropdown = document.querySelector('.mobile-nav-dropdown');
         const body = document.body;
 
         if (!mobileMenu || !navMenu) {
@@ -11,6 +12,9 @@
         }
 
         const icon = mobileMenu.querySelector('i');
+        // Must match the CSS breakpoint that swaps the inline navigation for
+        // the burger menu (styles.css: max-width 1279px).
+        const desktopNavigation = window.matchMedia('(min-width: 1280px)');
 
         function setMenuOpen(isOpen) {
             navMenu.classList.toggle('show', isOpen);
@@ -48,10 +52,35 @@
             });
         });
 
-        window.addEventListener('resize', function () {
-            if (window.innerWidth > 992 && navMenu.classList.contains('show')) {
+        if (mobileDropdown) {
+            mobileDropdown.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    setMenuOpen(false);
+                });
+            });
+        }
+
+        // Any width change that reveals the desktop navigation closes the
+        // drawer. One listener, keyed off the same media query the CSS uses.
+        const closeIfDesktop = function () {
+            if (desktopNavigation.matches && navMenu.classList.contains('show')) {
                 setMenuOpen(false);
             }
+        };
+        window.addEventListener('resize', closeIfDesktop);
+
+        // The body carries `overflow: hidden` while the drawer is open. Never
+        // let that state survive a back/forward restore, otherwise the page
+        // scrolls not at all and looks frozen. `pageshow` also fires on a
+        // normal load (after `load`), so only react to a real restore — a user
+        // who opens the menu before the page finishes loading must keep it.
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                setMenuOpen(false);
+            }
+        });
+        window.addEventListener('pagehide', function () {
+            setMenuOpen(false);
         });
     }
 
@@ -71,6 +100,43 @@
                     targetElement.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
                 }
             });
+        });
+    }
+
+    /**
+     * Day/night theme toggle. The saved preference is applied before first
+     * paint by the inline script in head.njk; this keeps the control in sync
+     * and persists changes.
+     */
+    function initialiseThemeToggle() {
+        const toggle = document.querySelector('[data-theme-toggle]');
+        if (!toggle) {
+            return;
+        }
+
+        const root = document.documentElement;
+        const storageKey = 'polmaise-theme';
+
+        function applyTheme(mode) {
+            const isDark = mode === 'dark';
+            root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+            toggle.setAttribute('aria-pressed', String(isDark));
+            toggle.setAttribute(
+                'aria-label',
+                isDark ? 'Switch to day theme' : 'Switch to night theme',
+            );
+        }
+
+        applyTheme(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
+
+        toggle.addEventListener('click', function () {
+            const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            applyTheme(next);
+            try {
+                window.localStorage.setItem(storageKey, next);
+            } catch (error) {
+                // Private browsing or blocked storage: the theme still applies for this page.
+            }
         });
     }
 
@@ -193,6 +259,7 @@
 
     document.addEventListener('DOMContentLoaded', function () {
         initialiseMobileNavigation();
+        initialiseThemeToggle();
         initialiseSmoothScrolling();
         initialiseKeyboardActivation();
         initialiseAccordions();

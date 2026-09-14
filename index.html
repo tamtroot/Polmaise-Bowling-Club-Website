@@ -52,7 +52,8 @@ bodyClass: ""
         .welcome-logo {
             float: left;
             margin: 0 20px 10px 0;
-            width: 150px;
+            /* The crest source is 110px wide, so it is never upscaled. */
+            width: 110px;
             height: auto;
         }
         
@@ -68,7 +69,7 @@ bodyClass: ""
         
         @media (max-width: 768px) {
             .welcome-logo {
-                width: 100px;
+                width: 88px;
                 margin: 0 15px 10px 0;
             }
         }
