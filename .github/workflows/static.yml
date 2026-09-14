@@ -28,6 +28,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,11 +41,19 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Build static site
-        run: npm run build
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+      - name: Build and verify static site
+        # `npm test` builds `_site` (npm run build) and then runs the full
+        # regression suite: structure, links, image references,
+        # accessibility/SEO, interactions and visual comparisons. A failure
+        # here stops the deployment, so nothing broken is published.
+        run: npm test
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # Only the generated site is published; the image archive, data files,
+          # tooling, tests and reports stay in the repository.
           path: '_site'
       - name: Deploy to GitHub Pages
         id: deployment

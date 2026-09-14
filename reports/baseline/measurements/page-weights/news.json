@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 16,
-  "totalBytes": 1433824,
+  "totalBytes": 1424741,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 302408
+      "bytes": 293486
     },
     "image": {
       "count": 13,
@@ -26,13 +26,13 @@
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 28923
+      "bytes": 28762
     }
   },
   "largestResources": [
     {
       "url": "http://127.0.0.1:4173/news.html",
-      "bytes": 302408,
+      "bytes": 293486,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -123,7 +123,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 28923,
+      "bytes": 28762,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -237,7 +237,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/news.html",
-      "bytes": 302408,
+      "bytes": 293486,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -251,7 +251,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 28923,
+      "bytes": 28762,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

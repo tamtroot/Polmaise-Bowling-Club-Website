@@ -3,16 +3,16 @@
     /* Primary Colors */
     --club-blue: #1E3A8A;     /* Main blue color (replacing forest green) */
     --white: #FFFFFF;         /* Keeping white as is */
-    
+
     /* Secondary Colors */
     --light-blue: #4B71BF;    /* Lighter blue for accents (replacing gold) */
     --dark-blue: #0F2557;     /* Darker blue for depth */
     --dark-gray: #333333;     /* Keeping dark gray for text */
-    
+
     /* Accent Colors */
     --navy: #091534;          /* Very dark blue (replacing burgundy) */
     --light-gray: #E5E7EB;    /* Lighter gray for backgrounds */
-    
+
     /* Utility Colors */
     --error-red: #ff3860;     /* Keeping error red the same */
 
@@ -246,11 +246,6 @@ nav ul li a:hover:after {
 .mobile-menu i {
     display: inline-block;
     font-size: 1.5rem;
-}
-
-.menu-text {
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
 }
 
 /* Body class when menu is open */
@@ -1049,7 +1044,7 @@ footer {
         min-width: 0;
         overflow: visible;
     }
-    
+
     nav ul {
         display: none;
         position: fixed;
@@ -1069,12 +1064,12 @@ footer {
         z-index: 100;
         overflow-y: auto; /* Make menu scrollable */
     }
-    
+
     nav ul.show {
         display: flex;
         left: 0;
     }
-    
+
     nav ul li {
         margin: 8px 0; /* Reduced margin */
     }
@@ -1099,21 +1094,21 @@ footer {
     .hero-content h2 {
         font-size: 2.5rem;
     }
-    
+
     .timeline::after {
         left: 31px;
     }
-    
+
     .timeline li {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
-    
+
     .timeline li:nth-child(even) {
         left: 0;
     }
-    
+
     .timeline li:nth-child(odd) .timeline-date,
     .timeline li:nth-child(even) .timeline-date {
         left: -30px;
@@ -1134,20 +1129,20 @@ footer {
     section {
         padding: 40px 0;
     }
-    
+
     .page-banner {
         padding: 60px 0;
     }
-    
+
     .banner-content h2 {
         font-size: 2rem;
     }
-    
-    .history-content, 
+
+    .history-content,
     .mission-vision-content {
         flex-direction: column;
     }
-    
+
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -1169,24 +1164,24 @@ footer {
     .logo h1 {
         font-size: 1.5rem;
     }
-    
+
     .page-banner {
         padding: 40px 0;
     }
-    
+
     .banner-content h2 {
         font-size: 1.8rem;
     }
-    
+
     .step {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .step-number {
         margin-bottom: 10px;
     }
-    
+
     .step:not(:last-child)::after {
         display: none;
     }
@@ -1352,7 +1347,7 @@ input.error, textarea.error {
     .signup-container {
         grid-template-columns: 1fr;
     }
-    
+
     .signup-info, .signup-form-container {
         max-width: 100%;
     }

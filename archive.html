@@ -133,35 +133,35 @@ bodyClass: ""
             background-repeat: no-repeat;
             animation: loading 1.5s infinite;
         }
-        
+
         /* Remove animation when image is loaded */
         .archive-item img[src]:not([src=""]) {
             animation: none;
             background-image: none;
         }
-        
+
         /* Loading and loaded states */
         .archive-item img.loading {
             filter: blur(2px);
             opacity: 0.8;
         }
-        
+
         .archive-item img.loaded {
             filter: none;
             opacity: 1;
             animation: none;
             background-image: none;
         }
-        
+
         .archive-item img.fade-in {
             animation: fadeIn 0.5s ease-in-out;
         }
-        
+
         @keyframes loading {
             0% { background-position: -200px 0; }
             100% { background-position: calc(200px + 100%) 0; }
         }
-        
+
         @keyframes fadeIn {
             from { opacity: 0.7; }
             to { opacity: 1; }
@@ -259,19 +259,19 @@ bodyClass: ""
             $('.archive-item img').each(function() {
                 const img = this;
                 const fullSrc = img.src;
-                
+
                 // Check if this is an SD Archive image
                 if (fullSrc.includes('/SD Archive/')) {
                     // Try to create a thumbnail path
                     const thumbSrc = fullSrc.replace(/(\.[^.]+)$/, '-thumb$1');
-                    
+
                     // Test if thumbnail exists
                     const testImg = new Image();
                     testImg.onload = function() {
                         // Thumbnail exists, use it
                         img.src = thumbSrc;
                         img.dataset.fullsrc = fullSrc;
-                        
+
                         // Add click handler to show full image on demand
                         $(img).on('click', function() {
                             img.src = fullSrc;
@@ -285,7 +285,7 @@ bodyClass: ""
                 } else if (fullSrc.includes('/Archive/')) {
                     // This is a regular Archive photo, create thumbnail path
                     const thumbSrc = fullSrc.replace(/(\.[^.]+)$/, '-thumb$1');
-                    
+
                     // Test if thumbnail exists
                     const testImg = new Image();
                     testImg.onload = function() {

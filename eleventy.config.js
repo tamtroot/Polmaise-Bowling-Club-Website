@@ -22,7 +22,6 @@ export default function configureEleventy(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("styles.css");
   eleventyConfig.addPassthroughCopy("script.js");
   eleventyConfig.addPassthroughCopy("downloads");
-  eleventyConfig.addPassthroughCopy("README.md");
   eleventyConfig.ignores.add("_site/**");
   eleventyConfig.ignores.add("node_modules/**");
   eleventyConfig.ignores.add("playwright-report/**");

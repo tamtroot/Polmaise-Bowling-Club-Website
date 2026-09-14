@@ -44,7 +44,7 @@ bodyClass: ""
         <div class="container">
             <h2>2026 Fixtures</h2>
             <p class="section-intro">Below is our schedule of fixtures for the 2026 season. Early in the season, fixtures are subject to change while they are being finalised, so please keep an eye on the Confirmed column before committing to a date.</p>
-            
+
             <div class="table-responsive">
                 <table class="fixtures-table">
                     <thead>
@@ -69,7 +69,7 @@ bodyClass: ""
                     </tbody>
                 </table>
             </div>
-            
+
             <!-- Mobile Card Layout -->            <div class="fixtures-table-mobile">
 {% for fixture in fixtures.items %}
                 <div class="fixture-card" data-date="{{ fixture.date }}">
@@ -91,7 +91,7 @@ bodyClass: ""
                 </div>
 {% endfor %}
             </div>
-                       
+
         </div>
     </section>
 
@@ -114,19 +114,19 @@ bodyClass: ""
         .fixtures-section {
             padding: 2rem 0;
         }
-        
+
         .table-responsive {
             overflow-x: auto;
             margin-bottom: 2rem;
         }
-        
+
         .fixtures-table {
             width: 100%;
             border-collapse: collapse;
             margin: 1.5rem 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .fixtures-table th {
             background-color: var(--club-blue);
             color: white;
@@ -134,80 +134,80 @@ bodyClass: ""
             padding: 12px 15px;
             font-weight: 600;
         }
-        
+
         .fixtures-table td {
             padding: 10px 15px;
             border-bottom: 1px solid #e0e0e0;
         }
-        
+
         .fixtures-table tbody tr:nth-child(even) {
             background-color: #f8f9fa;
         }
-        
+
         .fixtures-table tbody tr:hover {
             background-color: #e8f4ff;
         }
-        
+
         /* Style for past fixtures */
         .fixtures-table tbody tr.past-fixture {
             /* 4.96:1 on #f5f5f5; was #aaa at 2.13:1 */
             color: #6a6a6a;
             background-color: #f5f5f5;
         }
-        
+
         .fixtures-table tbody tr.past-fixture:hover {
             background-color: #eaeaea;
         }
-        
+
         /* Style for next upcoming fixture */
         .fixtures-table tbody tr.next-fixture {
             background-color: rgba(255, 248, 220, 0.7);
             border-left: 4px solid var(--club-blue);
             font-weight: 500;
         }
-        
+
         .fixtures-table tbody tr.next-fixture:hover {
             background-color: rgba(255, 248, 220, 0.9);
         }
-        
+
         .fixtures-table tbody tr.next-fixture td {
             border-bottom: 1px solid var(--club-blue);
         }
-        
+
         .hamilton-title {
             margin-top: 2.5rem;
             color: var(--club-blue);
             border-left: 4px solid var(--club-blue);
             padding-left: 1rem;
         }
-        
-        .hamilton-table th, 
+
+        .hamilton-table th,
         .hamilton-table td {
             text-align: left;
         }
-        
+
         .upcoming-ties {
             padding: 2rem 0;
             background-color: #f5f8fa;
         }
-        
+
         .ties-section {
             margin-bottom: 2.5rem;
         }
-        
+
         .ties-section h3 {
             color: var(--club-blue);
             margin-bottom: 1rem;
             border-left: 4px solid var(--club-blue);
             padding-left: 1rem;
         }
-        
+
         /* Download section styles */
         .download-fixture-list {
             padding: 2rem 0 3rem;
             background-color: #f8f9fa;
         }
-        
+
         .download-box {
             background-color: white;
             border-radius: 8px;
@@ -215,27 +215,27 @@ bodyClass: ""
             padding: 2rem;
             text-align: center;
         }
-        
+
         .download-content h3 {
             color: var(--club-blue);
             margin-bottom: 1rem;
         }
-        
+
         .download-content p {
             margin-bottom: 1.5rem;
         }
-        
+
         @media (max-width: 768px) {
             /* Hide the table on mobile */
             .fixtures-table {
                 display: none;
             }
-            
+
             /* Show card-based layout */
             .fixtures-table-mobile {
                 display: block;
             }
-            
+
             /* Card styles for mobile */
             .fixture-card {
                 background-color: white;
@@ -245,13 +245,13 @@ bodyClass: ""
                 margin-bottom: 15px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             }
-            
+
             .fixture-card.past-fixture {
                 background-color: #f5f5f5 !important;
                 /* 4.96:1 on #f5f5f5; was #aaa at 2.13:1 */
                 color: #6a6a6a;
             }
-            
+
             /* Next fixture highlighting - must come after base .fixture-card */
             .fixture-card.next-fixture {
                 background-color: #fffacd !important;
@@ -262,27 +262,27 @@ bodyClass: ""
                 box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25) !important;
                 position: relative;
             }
-            
+
             .fixture-card.next-fixture .fixture-title {
                 color: #1e3a8a !important;
                 font-weight: 600;
             }
-            
+
             .fixture-card.next-fixture .fixture-date {
                 color: #1e3a8a !important;
                 font-weight: 700;
                 font-size: 1.1rem;
             }
-            
+
             .fixture-card.next-fixture .fixture-card-header {
                 border-bottom-color: rgba(30, 58, 138, 0.3) !important;
             }
-            
+
             .fixture-card.next-fixture .fixture-confirmed {
                 background-color: #1e3a8a !important;
                 font-weight: 700;
             }
-            
+
             .fixture-card-header {
                 display: flex;
                 justify-content: space-between;
@@ -291,13 +291,13 @@ bodyClass: ""
                 padding-bottom: 10px;
                 border-bottom: 1px solid #e0e0e0;
             }
-            
+
             .fixture-date {
                 font-weight: 600;
                 color: var(--club-blue, #1e3a8a);
                 font-size: 1rem;
             }
-            
+
             .fixture-confirmed {
                 background-color: var(--club-blue, #1e3a8a);
                 color: white;
@@ -307,28 +307,28 @@ bodyClass: ""
                 font-weight: 600;
                 white-space: nowrap;
             }
-            
+
             .fixture-confirmed.Proposed {
                 /* white on #b45309 = 5.02:1; #ff9800 was 2.16:1 */
                 background-color: #b45309;
             }
-            
+
             .fixture-confirmed.TBC {
                 background-color: #757575;
             }
-            
+
             .fixture-confirmed.Confirmed {
                 /* white on #2e7d32 = 5.13:1; #4caf50 was 2.78:1 */
                 background-color: #2e7d32;
             }
-            
+
             .fixture-title {
                 font-weight: 600;
                 font-size: 1rem;
                 margin-bottom: 8px;
                 color: #333;
             }
-            
+
             .fixture-details {
                 display: flex;
                 flex-direction: column;
@@ -336,23 +336,23 @@ bodyClass: ""
                 font-size: 0.9rem;
                 color: #666;
             }
-            
+
             .fixture-detail-item {
                 display: flex;
                 align-items: center;
             }
-            
+
             .fixture-detail-label {
                 font-weight: 600;
                 min-width: 70px;
                 color: #555;
             }
-            
+
             .fixture-detail-value {
                 flex: 1;
             }
         }
-        
+
         /* Hide mobile cards on desktop */
         @media (min-width: 769px) {
             .fixtures-table-mobile {
@@ -373,11 +373,11 @@ bodyClass: ""
             const currentDate = new Date();
             const fixtureRows = document.querySelectorAll('.fixtures-table tbody tr');
             const fixtureCards = document.querySelectorAll('.fixture-card');
-            
+
             let closestFutureDate = null;
             let closestFutureRow = null;
             let closestFutureCard = null;
-            
+
             // Helper function to parse date and determine if it's past/future
             function parseFixtureDate(dateText) {
                 // Handle date ranges (e.g., "08-Aug to 15-Aug")
@@ -385,7 +385,7 @@ bodyClass: ""
                     const dateParts = dateText.split(' to ');
                     dateText = dateParts[0]; // Just use the start date
                 }
-                
+
                 // Parse date (format: DD-MMM)
                 const dateParts = dateText.split('-');
                 if (dateParts.length >= 2) {
@@ -395,27 +395,27 @@ bodyClass: ""
                         'Jul': 6, 'Aug': 7, 'Sep': 8, 'Oct': 9, 'Nov': 10, 'Dec': 11
                     };
                     const month = monthMap[dateParts[1]];
-                    
+
                     if (!isNaN(day) && month !== undefined) {
                         return new Date(2026, month, day);
                     }
                 }
                 return null;
             }
-            
+
             // Create today's date without time (once, outside loops)
             const today = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
-            
+
             // Store all fixtures with their dates for processing
             const allFixtures = [];
-            
+
             // Process table rows
             fixtureRows.forEach(row => {
                 const dateCell = row.querySelector('td:first-child');
                 if (dateCell) {
                     const dateText = dateCell.textContent.trim();
                     const fixtureDate = parseFixtureDate(dateText);
-                    
+
                     if (fixtureDate) {
                         // If fixture date is before today, mark as past
                         if (fixtureDate < today) {
@@ -427,23 +427,23 @@ bodyClass: ""
                     }
                 }
             });
-            
+
             // Process mobile cards
             fixtureCards.forEach(card => {
                 const dateAttr = card.getAttribute('data-date');
                 if (dateAttr) {
                     const fixtureDate = parseFixtureDate(dateAttr);
-                    
+
                     if (fixtureDate) {
                         // If fixture date is before today, mark as past
                         if (fixtureDate < today) {
                             card.classList.add('past-fixture');
                         } else {
                             // Find matching fixture by date (matching both table rows and other cards)
-                            const existingFixture = allFixtures.find(f => 
+                            const existingFixture = allFixtures.find(f =>
                                 f.date.getTime() === fixtureDate.getTime()
                             );
-                            
+
                             if (existingFixture) {
                                 // Link this card to the existing fixture entry
                                 existingFixture.card = card;
@@ -455,7 +455,7 @@ bodyClass: ""
                     }
                 }
             });
-            
+
             // Find the closest future fixture from all fixtures
             if (allFixtures.length > 0) {
                 allFixtures.sort((a, b) => a.date - b.date);
@@ -463,11 +463,11 @@ bodyClass: ""
                 closestFutureDate = closestFixture.date;
                 closestFutureRow = closestFixture.row;
                 closestFutureCard = closestFixture.card;
-                
+
                 // Calculate day after the fixture date
                 const dayAfterFixture = new Date(closestFutureDate);
                 dayAfterFixture.setDate(dayAfterFixture.getDate() + 1);
-                
+
                 // Only highlight if today is on or before the day after the fixture
                 if (today <= dayAfterFixture) {
                     if (closestFutureRow) {

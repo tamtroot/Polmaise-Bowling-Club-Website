@@ -1,105 +1,107 @@
 # Polmaise Bowling Club Website
 
-A modern, responsive website for Polmaise Bowling Club based in Fallin, Scotland. This website serves as a digital platform for the club to showcase its history, facilities, events, and engage with current and prospective members.
+The public website for Polmaise Bowling Club (Fallin, Stirling): fixtures, news,
+membership information, photo galleries, club history, sponsors and honours.
 
-## Features
+The site is a static build. Templates, structured data, styles and photographs
+live in this repository; `npm run build` renders them into `_site`, which is what
+gets deployed.
 
-- **Responsive Design**: Fully responsive website that works seamlessly across desktop, tablet, and mobile devices
-- **Modern UI**: Clean and professional interface utilizing the club's color scheme
-- **Content Management**: Easy-to-update structure for club administrators
-- **Interactive Elements**: Contact forms, image galleries, and event calendars
-- **Social Media Integration**: Connectivity with the club's social media profiles
+## Requirements
 
-## Pages
+- Node.js 22 (matches the GitHub Actions runner)
+- npm 10+
+- No database, CMS or server runtime
 
-- **Homepage**: Hero banner, welcome message, and quick links to key sections
-- **About Us**: Club history, mission, vision, and committee members
-- **Membership**: Benefits, application process, and fee structure
-- **Fixtures & Results**: Match schedules and past results
-- **News & Events**: Blog-style updates and event calendar
-- **Gallery**: Photo albums and video highlights
-- **Contact Us**: Contact form, location map, and club information
-- **Sponsors**: Sponsor listings and sponsorship opportunities
-- **Honours & Achievements**: Club and individual accomplishments
+## Install
 
-## Technical Details
+```powershell
+npm ci          # exact dependency versions from package-lock.json
+```
 
-### Build and images
+## Development
 
-The site is built with Eleventy (`npm.cmd run build`), which renders the
-templates into `_site/` and then generates optimised image derivatives. The
-original photographs in `Images/` are the club archive: they are never modified
-and are not deployed. See [docs/image-pipeline.md](docs/image-pipeline.md) for
-how the pipeline works, the derivative sizes and quality settings, and how to
-add a new photograph.
+```powershell
+npm run build   # render _site (HTML, images, sitemap, robots)
+```
 
-Development tooling (audit, image pipeline, scripts, tests and reports) lives in
-`tools/`, `tests/` and `reports/` and is excluded from the deployed site and
-from source control where generated.
+There is no long-running dev server in the repository; serve the built output
+with the bundled static server when you want to click through the site:
 
-### Color Scheme
+```powershell
+node tools/static-server.mjs --root _site --port 4173
+```
 
-- **Primary Colors**:
-  - Club Blue (#1E3A8A): Main blue color representing the club
-  - White (#FFFFFF): For backgrounds and clean spaces
-- **Secondary Colors**:
-  - Light Blue (#4B71BF): Lighter blue for accents
-  - Dark Blue (#0F2557): For depth and contrast
-  - Dark Gray (#333333): For text and subtle accents
-- **Accent Colors**:
-  - Navy (#091534): Very dark blue for emphasis
-  - Light Gray (#E5E7EB): For borders and background elements
-- **Utility Colors**:
-  - Error Red (#FF3860): For form validation and error messages
+If the repository lives in a cloud-synced folder (OneDrive), see
+[ARCHITECTURE.md](ARCHITECTURE.md#cloud-synced-working-copies) for the
+`SITE_ROOT` / `IMAGE_CACHE_ROOT` overrides.
 
-### Typography
+## Build
 
-- **Headings**: Merriweather (serif) - conveying tradition and formality
-- **Body Text**: Open Sans (sans-serif) - for readability and modern feel
+```powershell
+npm run build
+```
 
-## Setup Instructions
+This runs `tools/build-site.mjs`, which:
 
-1. **Clone or Download**: Get the website files onto your local machine or server
-2. **Customize Content**: Replace placeholder text, images, and contact information with the club's actual content
-3. **Update Map**: Replace the Google Maps embed code with the actual coordinates for the club
-4. **Adjust Colors** (if needed): Modify the CSS variables in `styles.css` to match club branding
-5. **Test Responsive Design**: Ensure the website looks good on different screen sizes
+1. clears `_site`;
+2. renders every page, partial and generated file with Eleventy;
+3. generates the image derivatives the pages reference (cached in `.cache`);
+4. verifies that every image reference in the built site resolves.
 
-## Customization Guide
+The build fails with a clear error when a reference cannot be resolved, when an
+image cannot be processed, or when the output directory cannot be cleaned.
 
-### Updating Content
+## Test
 
-Most content can be updated directly within the HTML files:
+```powershell
+npm test              # build + the full Playwright suite
+npm run test:build    # structure and deployment checks
+npm run test:html     # html-validate against the accepted baseline
+npm run test:links    # internal links, CSS references, placeholders
+npm run test:visual   # 54 screenshot comparisons (desktop/tablet/mobile)
+npm run test:audit    # console errors, failed requests, axe, page weights
+```
 
-- `index.html` - Homepage content
-- `about.html` - Club history and committee information
-- `membership.html` - Membership benefits and fee structure
-- `contact.html` - Contact details and location information
+Audit helpers:
 
-### Updating Images
+```powershell
+node tools/audit-accessibility.mjs     # axe + semantics/metadata audit per page
+node tools/audit-repository.mjs        # dead selectors, JS hooks, page inventory
+node tools/capture-layout.mjs before   # geometry fingerprint (all pages/viewports)
+node tools/compare-layout.mjs before after
+```
 
-1. Place new images in the `Images` folder
-2. Reference them in HTML using the relative path: `Images/your-image-name.jpg`
+## Deployment
 
-### Adding New Pages
+GitHub Pages, via `.github/workflows/static.yml`: `npm ci`, `npm run build`, the
+test gate, then upload `_site`. Details and rollback steps are in
+[RELEASE.md](RELEASE.md).
 
-1. Copy an existing HTML file as a template
-2. Update the content while keeping the header and footer consistent
-3. Add a link to the new page in the navigation menu in all HTML files
+## Image pipeline
 
-## Browser Compatibility
+Original photographs in `Images/` are the club archive. They are never modified
+and are not deployed; the build generates WebP derivatives sized for their
+rendered role. See [docs/image-pipeline.md](docs/image-pipeline.md).
 
-This website is designed to work on modern browsers including:
-- Google Chrome
-- Mozilla Firefox
-- Safari
-- Microsoft Edge
+## Data architecture
 
-## Credits
+Repeated structured content lives in `_data/`: fixtures, honours, gallery
+albums, archive items, PhotoAlbum metadata and sponsors. Page templates loop
+over those files. See [ARCHITECTURE.md](ARCHITECTURE.md).
 
-- Fonts: Google Fonts (Merriweather, Open Sans)
-- Icons: Font Awesome
+## Editing content
 
----
+Step-by-step instructions for adding fixtures, news, gallery photos, honours,
+sponsors and images are in [MAINTENANCE.md](MAINTENANCE.md).
 
-© 2025 Polmaise Bowling Club. All Rights Reserved. 
+## Colour scheme and typography
+
+Recorded here because the Stage 9 visual redesign will need it:
+
+- Club Blue `#1E3A8A`, Light Blue `#4B71BF`, Dark Blue `#0F2557`, Navy `#091534`
+- Dark Gray `#333333`, Light Gray `#E5E7EB`, Error Red `#FF3860`
+- Accessibility-adjusted values: footer headings `#a8c1f2` on club blue
+  (5.71:1), past fixtures `#6a6a6a` on `#f5f5f5` (4.96:1), mobile fixture
+  badges `#2e7d32` (Confirmed) and `#b45309` (Proposed) with white text
+- Headings: Merriweather (serif). Body: Open Sans (sans-serif)

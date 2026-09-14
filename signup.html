@@ -134,7 +134,8 @@ bodyClass: ""
                         <button type="submit" class="btn primary-btn">Create Account</button>
                     </form>
                     <div class="login-link">
-                        <p>Already have an account? <a href="login.html">Log In</a></p>
+                    {# There is no login feature, so this is plain text rather than a broken link. #}
+                    <p>Already have an account? Log In</p>
                     </div>
                 </div>
             </div>
@@ -253,7 +254,7 @@ bodyClass: ""
                         // In a real implementation, you would send the form data to a server
                         alert('Account created successfully! You can now log in.');
                         signupForm.reset();
-                        window.location.href = 'login.html';
+                        // No login page exists yet, so the form must not redirect to a 404.
                     }
                 });
             }
@@ -261,7 +262,7 @@ bodyClass: ""
             function highlightInvalid(element, message) {
                 element.classList.add('error');
                 element.setAttribute('aria-invalid', 'true');
-                
+
                 // Create error message if it doesn't exist
                 let errorMessage = element.parentNode.querySelector('.error-message');
                 if (!errorMessage) {
@@ -271,7 +272,7 @@ bodyClass: ""
                     errorMessage.setAttribute('role', 'alert');
                     element.parentNode.appendChild(errorMessage);
                 }
-                
+
                 errorMessage.textContent = message;
 
                 // Keep any existing description (e.g. the password hint) intact.
@@ -281,11 +282,11 @@ bodyClass: ""
                 describedBy.push(errorMessage.id);
                 element.setAttribute('aria-describedby', describedBy.join(' '));
             }
-            
+
             function removeHighlight(element) {
                 element.classList.remove('error');
                 element.removeAttribute('aria-invalid');
-                
+
                 const errorMessage = element.parentNode.querySelector('.error-message');
                 if (errorMessage) {
                     const describedBy = (element.getAttribute('aria-describedby') || '')

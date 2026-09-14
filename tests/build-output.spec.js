@@ -237,14 +237,16 @@ function normaliseDocument(document) {
     const classes = node.classList ?? [];
 
     // Stage 7 removed placeholder links (href="#" / href="") because they had
-    // no destination; compare their text content only.
+    // no destination, and Stage 8 turned the broken login.html link into text;
+    // those anchors are compared by their text content only.
+    const placeholderHrefs = new Set(["#", "", "login.html"]);
     const href = node.getAttribute("href");
     // Controls whose placeholder link was replaced by a real element (the
     // social icons became decorative, the ticket link became a button) are
     // compared by their content only.
     const isUpgradedPlaceholder =
       classes.contains("social-link") || classes.contains("cta-button");
-    if ((realTag === "a" && (href === "#" || href === "")) || isUpgradedPlaceholder) {
+    if ((realTag === "a" && placeholderHrefs.has(href)) || isUpgradedPlaceholder) {
       return {
         fragment: true,
         children: mergeAdjacentText(
