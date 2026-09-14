@@ -4,9 +4,17 @@ import Eleventy from "@11ty/eleventy";
 import { generateSiteImages, loadSourceIndex } from "./image-pipeline.mjs";
 
 const projectRoot = process.cwd();
-const outputDirectory = path.resolve(projectRoot, "_site");
+// The output directory defaults to _site. SITE_ROOT can point somewhere outside
+// a cloud-synced working copy (OneDrive placeholders can lock generated files).
+const outputDirectory = path.resolve(projectRoot, process.env.SITE_ROOT ?? "_site");
 
-if (path.dirname(outputDirectory) !== projectRoot) {
+const isDefaultOutput = outputDirectory === path.join(projectRoot, "_site");
+const isExplicitOutput =
+  Boolean(process.env.SITE_ROOT) &&
+  outputDirectory !== projectRoot &&
+  path.dirname(path.dirname(outputDirectory)) !== outputDirectory;
+
+if (!isDefaultOutput && !isExplicitOutput) {
   throw new Error(`Refusing to clean unexpected output directory: ${outputDirectory}`);
 }
 
@@ -19,7 +27,7 @@ async function collectArtifactStats(directory) {
     const entryPath = path.join(directory, entry.name);
     // stat() (rather than the dirent type) keeps hard-linked and OneDrive
     // placeholder files counted correctly on Windows.
-    const entryStat = await stat(entryPath).catch(() => null);
+    const entryStat = await statWithRetry(entryPath);
     if (!entryStat) {
       continue;
     }
@@ -36,13 +44,56 @@ async function collectArtifactStats(directory) {
   return { fileCount, totalBytes };
 }
 
-await rm(outputDirectory, { recursive: true, force: true });
+// Cloud-synced folders can briefly lock generated files; retry transient errors.
+async function statWithRetry(target, attempts = 5) {
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      return await stat(target);
+    } catch (error) {
+      if (error.code === "ENOENT") {
+        return null;
+      }
+      if (!["EPERM", "EBUSY", "EACCES"].includes(error.code) || attempt === attempts) {
+        throw error;
+      }
+      await new Promise((resolve) => setTimeout(resolve, 250 * attempt));
+    }
+  }
+  return null;
+}
+
+/**
+ * Clears the previous build. Cloud-synced folders (OneDrive) can hold brief
+ * locks on generated files, so removal is retried with backoff before giving
+ * up.
+ */
+async function cleanOutputDirectory(directory) {
+  let lastError;
+  for (let attempt = 1; attempt <= 6; attempt += 1) {
+    try {
+      await rm(directory, { recursive: true, force: true });
+      return;
+    } catch (error) {
+      lastError = error;
+      if (!["EPERM", "EBUSY", "EACCES", "UNKNOWN"].includes(error.code)) {
+        throw error;
+      }
+      await new Promise((resolve) => setTimeout(resolve, 1000 * attempt));
+    }
+  }
+  throw new Error(
+    `Could not clean ${directory} after 6 attempts (${lastError.code}: ${lastError.message}). ` +
+      "A syncing tool is holding the generated files open.",
+  );
+}
+
+await cleanOutputDirectory(outputDirectory);
 
 // Image dimensions must be known before templates render so that srcset
 // candidates and intrinsic sizes never upscale an original photograph.
 await loadSourceIndex();
 
-const eleventy = new Eleventy(".", "_site", {
+const eleventy = new Eleventy(".", outputDirectory, {
   configPath: "eleventy.config.js",
 });
 

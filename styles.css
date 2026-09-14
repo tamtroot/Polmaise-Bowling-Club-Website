@@ -222,6 +222,9 @@ nav ul li a:hover:after {
 .mobile-menu {
     display: none; /* Hidden by default */
     cursor: pointer;
+    font-family: inherit;
+    line-height: inherit;
+    appearance: none;
     font-size: 1.25rem;
     color: var(--club-blue);
     z-index: 101;
@@ -810,7 +813,8 @@ body.menu-open {
     margin-bottom: 5px;
 }
 
-.social-links a {
+.social-links a,
+.social-links .social-link {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -928,6 +932,13 @@ body.menu-open {
     font-weight: 600;
     position: relative;
     transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: 0;
 }
 
 .accordion-header:hover {
@@ -973,7 +984,8 @@ footer {
 }
 
 .footer-section h3 {
-    color: var(--light-blue);
+    /* 5.71:1 on the footer blue; --light-blue (#4b71bf) was 2.17:1 */
+    color: #a8c1f2;
     margin-bottom: 20px;
     font-size: 1.3rem;
 }
@@ -999,7 +1011,8 @@ footer {
     gap: 15px;
 }
 
-.social-links a {
+.social-links a,
+.social-links .social-link {
     color: var(--white);
     font-size: 1.5rem;
 }
@@ -1541,5 +1554,43 @@ input.error, textarea.error {
 @media (max-width: 480px) {
     .album-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* ------------------------------------------------------------------
+   Accessibility additions (Stage 7)
+   Visible keyboard focus ring. currentColor keeps it legible on both the
+   light content areas and the dark header, banner and footer.
+   ------------------------------------------------------------------ */
+:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 2px;
+}
+
+/* Cards clip their content, so keep the ring inside the card edge. */
+.album-card:focus-visible,
+.news-card:focus-visible,
+.gallery-item:focus-visible,
+.timeline-content:focus-visible,
+.social-link:focus-visible {
+    outline-offset: -3px;
+}
+
+.mobile-menu:focus-visible,
+.accordion-header:focus-visible,
+.close-album:focus-visible {
+    outline: 3px solid var(--club-blue);
+    outline-offset: 2px;
+}
+
+/* Respect the operating-system reduced-motion preference. */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }

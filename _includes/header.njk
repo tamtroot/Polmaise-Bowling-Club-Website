@@ -8,8 +8,8 @@
                     <h1>Polmaise Bowling Club</h1>
                 </div>
             </div>
-            <nav>
-                <ul>
+            <nav aria-label="Main navigation">
+                <ul id="primary-menu">
                     <li><a href="{{ prefix }}index.html"{% if navActive == "home" %} class="active"{% endif %}>Home</a></li>
                     <li><a href="{{ prefix }}about.html"{% if navActive == "about" %} class="active"{% endif %}>About Us</a></li>
                     <li><a href="{{ prefix }}membership.html"{% if navActive == "membership" %} class="active"{% endif %}>Membership</a></li>
@@ -21,9 +21,9 @@
                     <li><a href="{{ prefix }}honours.html"{% if navActive == "honours" %} class="active"{% endif %}>Honours</a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu">
-                <i class="{{ mobileMenuIcon }}"></i>
-            </div>
+            <button type="button" class="mobile-menu" id="mobileMenuButton" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-menu">
+                <i class="{{ mobileMenuIcon }}" aria-hidden="true"></i>
+            </button>
 {% if mobileNavDropdown %}
             <div class="mobile-nav-dropdown" id="mobileNavDropdown">
                 <a href="{{ prefix }}index.html">Home</a>

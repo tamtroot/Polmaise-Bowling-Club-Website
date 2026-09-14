@@ -15,6 +15,11 @@
         function setMenuOpen(isOpen) {
             navMenu.classList.toggle('show', isOpen);
             body.classList.toggle('menu-open', isOpen);
+            mobileMenu.setAttribute('aria-expanded', String(isOpen));
+            mobileMenu.setAttribute(
+                'aria-label',
+                isOpen ? 'Close navigation menu' : 'Open navigation menu',
+            );
 
             if (icon) {
                 icon.classList.toggle('fa-bars', !isOpen);
@@ -62,9 +67,31 @@
 
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                    targetElement.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
                 }
             });
+        });
+    }
+
+    /**
+     * Cards and other non-button controls are marked with role="button" so
+     * they are focusable. This bridge lets Enter and Space activate them
+     * through the existing click handlers, so behaviour stays in one place.
+     */
+    function initialiseKeyboardActivation() {
+        document.addEventListener('keydown', function (event) {
+            if (event.key !== 'Enter' && event.key !== ' ' && event.key !== 'Spacebar') {
+                return;
+            }
+
+            const control = event.target.closest('[role="button"]');
+            if (!control || control.tagName === 'BUTTON' || control.tagName === 'A') {
+                return;
+            }
+
+            event.preventDefault();
+            control.click();
         });
     }
 
@@ -77,14 +104,21 @@
                 return;
             }
 
+            header.setAttribute('aria-expanded', String(item.classList.contains('active')));
+
             header.addEventListener('click', function () {
                 accordionItems.forEach(function (otherItem) {
                     if (otherItem !== item && otherItem.classList.contains('active')) {
                         otherItem.classList.remove('active');
+                        const otherHeader = otherItem.querySelector('.accordion-header');
+                        if (otherHeader) {
+                            otherHeader.setAttribute('aria-expanded', 'false');
+                        }
                     }
                 });
 
                 item.classList.toggle('active');
+                header.setAttribute('aria-expanded', String(item.classList.contains('active')));
             });
         });
     }
@@ -160,6 +194,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         initialiseMobileNavigation();
         initialiseSmoothScrolling();
+        initialiseKeyboardActivation();
         initialiseAccordions();
         initialiseCustomLightbox();
         initialiseLightboxLibrary();

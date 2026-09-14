@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 7,
-  "totalBytes": 370258,
+  "totalBytes": 376202,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 8513
+      "bytes": 11392
     },
     "image": {
       "count": 4,
@@ -22,11 +22,11 @@
     },
     "script": {
       "count": 1,
-      "bytes": 5239
+      "bytes": 6825
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27444
+      "bytes": 28923
     }
   },
   "largestResources": [
@@ -46,21 +46,21 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
+      "bytes": 28923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/index.html",
-      "bytes": 8513,
+      "bytes": 11392,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 5239,
+      "bytes": 6825,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
@@ -111,21 +111,21 @@
     },
     {
       "url": "http://127.0.0.1:4173/index.html",
-      "bytes": 8513,
+      "bytes": 11392,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 5239,
+      "bytes": 6825,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
+      "bytes": 28923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

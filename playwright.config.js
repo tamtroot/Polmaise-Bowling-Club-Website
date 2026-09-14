@@ -37,7 +37,7 @@ export default defineConfig({
     video: "off",
   },
   webServer: {
-    command: `node tools/static-server.mjs --root _site --port ${port}`,
+    command: `node tools/static-server.mjs --root ${process.env.SITE_ROOT ?? "_site"} --port ${port}`,
     url: `${baseURL}/index.html`,
     reuseExistingServer: true,
     timeout: 15_000,

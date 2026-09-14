@@ -1,5 +1,6 @@
 ---
 pageTitle: "Contact Us - Polmaise Bowling Club"
+metaDescription: "Contact Polmaise Bowling Club: address, phone, email, visiting information and how to arrange a taster session."
 permalink: "/contact.html"
 navActive: "contact"
 prefix: ""
@@ -158,6 +159,8 @@ bodyClass: ""
 
 {% include "header.njk" %}
 
+<main>
+
 <section class="page-banner">
         <div class="banner-content">
             <h2>Contact Us</h2>
@@ -294,28 +297,30 @@ bodyClass: ""
             
             <div class="accordion">
                 <div class="accordion-item">
-                    <div class="accordion-header">What are the best times to visit the club?</div>
-                    <div class="accordion-content">
+                    <button type="button" class="accordion-header" id="faq-1-header" aria-expanded="false" aria-controls="faq-1-content">What are the best times to visit the club?</button>
+                    <div class="accordion-content" id="faq-1-content" aria-labelledby="faq-1-header" role="region">
                         <p>The club is most active during weekday evenings and weekend afternoons. If you're interested in visiting, we recommend calling ahead to ensure someone is available to welcome you and show you around.</p>
-                    </div>
+                        </div>
                 </div>
                 
                 <div class="accordion-item">
-                    <div class="accordion-header">Can I hire the clubhouse for private events?</div>
-                    <div class="accordion-content">
+                    <button type="button" class="accordion-header" id="faq-2-header" aria-expanded="false" aria-controls="faq-2-content">Can I hire the clubhouse for private events?</button>
+                    <div class="accordion-content" id="faq-2-content" aria-labelledby="faq-2-header" role="region">
                         <p>No, the clubhouse is too small to hold events. The pub next door "The Goth" has an events hall and is available for hire. Please contact the Goth for more information on availability and pricing.</p>
-                    </div>
+                        </div>
                 </div>
                 
                 <div class="accordion-item">
-                    <div class="accordion-header">How can I arrange a taster session?</div>
-                    <div class="accordion-content">
+                    <button type="button" class="accordion-header" id="faq-3-header" aria-expanded="false" aria-controls="faq-3-content">How can I arrange a taster session?</button>
+                    <div class="accordion-content" id="faq-3-content" aria-labelledby="faq-3-header" role="region">
                         <p>Taster sessions can be arranged by contacting our membership secretary via email or phone. We typically run these sessions on Saturday mornings during the bowling season, but can accommodate other times by arrangement.</p>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
     </section>
+
+</main>
 
 {% include "footer.njk" %}
 

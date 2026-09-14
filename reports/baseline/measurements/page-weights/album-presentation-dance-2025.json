@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 40,
-  "totalBytes": 596586,
+  "totalBytes": 602640,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 9257
+      "bytes": 12246
     },
     "image": {
       "count": 37,
@@ -22,27 +22,27 @@
     },
     "script": {
       "count": 1,
-      "bytes": 5239
+      "bytes": 6825
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27444
+      "bytes": 28923
     }
   },
   "largestResources": [
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 28923,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
     {
       "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_210045-w400.webp",
       "bytes": 27524,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
-      "status": 200,
-      "resourceType": "stylesheet",
-      "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/2025/PresentationDance2025/20251025_201207-w400.webp",
@@ -468,21 +468,21 @@
     },
     {
       "url": "http://127.0.0.1:4173/PhotoAlbums/presentation-dance-2025.html",
-      "bytes": 9257,
+      "bytes": 12246,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 5239,
+      "bytes": 6825,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
+      "bytes": 28923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

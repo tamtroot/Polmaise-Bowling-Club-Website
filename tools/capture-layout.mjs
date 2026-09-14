@@ -7,7 +7,7 @@ import { createStaticServer } from "./static-server.mjs";
 
 const label = process.argv[2] ?? "before";
 const root = process.cwd();
-const siteRoot = path.resolve(root, "_site");
+const siteRoot = path.resolve(root, process.env.SITE_ROOT ?? "_site");
 const port = 4180;
 const viewports = [
   { name: "desktop", width: 1440, height: 900 },

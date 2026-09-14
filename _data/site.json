@@ -1,0 +1,16 @@
+{
+  "url": "https://polmaisebowlingclub.com",
+  "name": "Polmaise Bowling Club",
+  "description": "Polmaise Bowling Club is a lawn bowls club in Fallin, Stirling, with fixtures, news, membership information, photo galleries and a club archive.",
+  "address": {
+    "streetAddress": "Main Street",
+    "addressLocality": "Fallin",
+    "addressRegion": "Stirling",
+    "postalCode": "FK7 7HT",
+    "addressCountry": "GB"
+  },
+  "telephone": "01786 811333",
+  "email": "polmaisebc@gmail.com",
+  "facebook": "https://www.facebook.com/p/Polmaise-Bowling-Club-100008363985804/",
+  "defaultSocialImage": "/Images/Archive/Photo%2025-w1600.webp"
+}

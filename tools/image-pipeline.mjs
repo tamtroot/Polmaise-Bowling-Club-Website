@@ -1,13 +1,18 @@
 import { createHash } from "node:crypto";
-import { copyFile, link, mkdir, readdir, readFile, rm, stat, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 
 const PROJECT_ROOT = process.cwd();
 const ORIGINALS_ROOT = path.join(PROJECT_ROOT, "Images");
-const CACHE_ROOT = path.join(PROJECT_ROOT, ".cache", "images");
+// Defaults to .cache/images; IMAGE_CACHE_ROOT can move it outside a
+// cloud-synced working copy, where generated files can become locked.
+const CACHE_ROOT = path.resolve(
+  PROJECT_ROOT,
+  process.env.IMAGE_CACHE_ROOT ?? path.join(".cache", "images"),
+);
 const INDEX_FILE = path.join(CACHE_ROOT, "source-index.json");
-const SITE_ROOT = path.join(PROJECT_ROOT, "_site");
+const SITE_ROOT = path.resolve(PROJECT_ROOT, process.env.SITE_ROOT ?? "_site");
 
 // Encoder settings for every photographic derivative. WebP is used for all
 // photographs: every browser the club's audience uses supports it, and keeping
@@ -56,6 +61,26 @@ const SAMPLE_SOURCES = new Set([
 export const SAMPLE_MODE = process.env.IMAGE_PIPELINE_SAMPLE === "1";
 
 const isSampled = (relative) => !SAMPLE_MODE || SAMPLE_SOURCES.has(relative);
+
+/**
+ * Cloud-synced working copies (OneDrive) can briefly lock generated files, so
+ * transient filesystem errors are retried with a short backoff.
+ */
+async function withRetry(operation, { attempts = 6, delayMs = 250, label = "file operation" } = {}) {
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      return await operation();
+    } catch (error) {
+      if (!["EPERM", "EBUSY", "EACCES", "ENOENT", "UNKNOWN"].includes(error.code)) {
+        throw error;
+      }
+      lastError = error;
+      await new Promise((resolve) => setTimeout(resolve, delayMs * attempt));
+    }
+  }
+  throw new Error(`${label} failed after ${attempts} attempts: ${lastError.message}`);
+}
 
 let sourceIndex = null;
 let indexDirty = false;
@@ -297,12 +322,10 @@ export function imageAttributes(source, requestedWidth, { sizes, widths = ROLE_W
 
 async function deployFile(fromPath, toPath) {
   await mkdir(path.dirname(toPath), { recursive: true });
-  await rm(toPath, { force: true });
-  try {
-    await link(fromPath, toPath);
-  } catch {
-    await copyFile(fromPath, toPath);
-  }
+  await withRetry(() => rm(toPath, { force: true }), { label: `remove ${toPath}` });
+  // Real copies, not hard links: cloud-synced working copies (OneDrive) treat
+  // hard links as reparse points and can drop them from the generated artifact.
+  await withRetry(() => copyFile(fromPath, toPath), { label: `copy ${toPath}` });
 }
 
 async function ensureCachedOutput({ relative, width, cacheTag, extension, transform, outputName }) {
@@ -588,7 +611,10 @@ export async function generateSiteImages() {
     // References are relative to the page that contains them.
     const deployedPath = path.resolve(SITE_ROOT, pageDirectory, decodeReference(reference));
     try {
-      const fileStat = await stat(deployedPath);
+      const fileStat = await withRetry(() => stat(deployedPath), {
+        label: `verify ${reference}`,
+        attempts: 4,
+      });
       if (!fileStat.isFile()) {
         missing.push(reference);
       }

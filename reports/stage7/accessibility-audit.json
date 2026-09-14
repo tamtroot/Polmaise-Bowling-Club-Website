@@ -1,0 +1,2888 @@
+{
+  "totals": {
+    "violationInstances": 0,
+    "mobileViolationInstances": 0,
+    "rules": 0,
+    "byRule": {},
+    "pagesMissingDescription": [
+      "/index.html",
+      "/about.html",
+      "/membership.html",
+      "/fixtures.html",
+      "/news.html",
+      "/gallery.html",
+      "/contact.html",
+      "/sponsors.html",
+      "/honours.html",
+      "/archive.html",
+      "/history.html",
+      "/signup.html",
+      "/live-scoring.html",
+      "/News%20articles/presentation-dance-2025.html",
+      "/PhotoAlbums/presentation-dance-2025.html",
+      "/PhotoAlbums/charlie-mcneil-memorial-2025.html",
+      "/PhotoAlbums/top-15-final-2025.html",
+      "/PhotoAlbums/twa-peters-memorial-2025.html"
+    ],
+    "pagesMissingCanonical": [
+      "/index.html",
+      "/about.html",
+      "/membership.html",
+      "/fixtures.html",
+      "/news.html",
+      "/gallery.html",
+      "/contact.html",
+      "/sponsors.html",
+      "/honours.html",
+      "/archive.html",
+      "/history.html",
+      "/signup.html",
+      "/live-scoring.html",
+      "/News%20articles/presentation-dance-2025.html",
+      "/PhotoAlbums/presentation-dance-2025.html",
+      "/PhotoAlbums/charlie-mcneil-memorial-2025.html",
+      "/PhotoAlbums/top-15-final-2025.html",
+      "/PhotoAlbums/twa-peters-memorial-2025.html"
+    ],
+    "pagesMissingMain": [],
+    "pagesWithoutH1": [],
+    "pagesWithMultipleH1": [],
+    "duplicateTitles": []
+  },
+  "pages": [
+    {
+      "name": "home",
+      "label": "Home",
+      "path": "/index.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 10,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Welcome to Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Welcome to Our Club"
+        },
+        {
+          "level": 3,
+          "text": "Upcoming Fixtures"
+        },
+        {
+          "level": 3,
+          "text": "Photo Gallery"
+        },
+        {
+          "level": 3,
+          "text": "Club News"
+        },
+        {
+          "level": 3,
+          "text": "Membership"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 24,
+      "focusOutlineSuppressedCount": 24,
+      "focusOutlineSuppressedSample": [
+        "a.active",
+        "a",
+        "button.mobile-menu",
+        "a.btn.primary-btn",
+        "a.btn.secondary-btn",
+        "a.btn.small-btn"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "about",
+      "label": "About Us",
+      "path": "/about.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "About Us - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 35,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "About Us"
+        },
+        {
+          "level": 2,
+          "text": "Club History"
+        },
+        {
+          "level": 2,
+          "text": "Meet Our Committee"
+        },
+        {
+          "level": 3,
+          "text": "David Stewart"
+        },
+        {
+          "level": 4,
+          "text": "President"
+        },
+        {
+          "level": 3,
+          "text": "Robert Donaldson"
+        },
+        {
+          "level": 4,
+          "text": "Vice President & Treasurer"
+        },
+        {
+          "level": 3,
+          "text": "Peter Black"
+        },
+        {
+          "level": 4,
+          "text": "Secretary"
+        },
+        {
+          "level": 3,
+          "text": "Key Milestones"
+        },
+        {
+          "level": 4,
+          "text": "Club Founded"
+        },
+        {
+          "level": 4,
+          "text": "First Competitive Match"
+        },
+        {
+          "level": 4,
+          "text": "First Trophy Win"
+        },
+        {
+          "level": 4,
+          "text": "Early Champions"
+        },
+        {
+          "level": 4,
+          "text": "MacIntosh Trophy"
+        },
+        {
+          "level": 4,
+          "text": "Father vs. Son Championship Final"
+        },
+        {
+          "level": 4,
+          "text": "National Top Ten Champions"
+        },
+        {
+          "level": 4,
+          "text": "New Clubhouse Opening"
+        },
+        {
+          "level": 4,
+          "text": "Scottish Triples Champions"
+        },
+        {
+          "level": 4,
+          "text": "British Isles Triples Champions"
+        },
+        {
+          "level": 4,
+          "text": "Major Clubhouse Renovation"
+        },
+        {
+          "level": 4,
+          "text": "Centenary Celebrations"
+        },
+        {
+          "level": 4,
+          "text": "Scottish Mixed Pairs Champions"
+        },
+        {
+          "level": 4,
+          "text": "First Stirling County Top Five Champions"
+        },
+        {
+          "level": 4,
+          "text": "Scottish Top Five Participation"
+        },
+        {
+          "level": 4,
+          "text": "COVID-19 Challenges and Clubhouse Refurbishment"
+        },
+        {
+          "level": 4,
+          "text": "Historic 12-Trophy Season"
+        },
+        {
+          "level": 4,
+          "text": "First Ever Sponsors' Day"
+        },
+        {
+          "level": 4,
+          "text": "Gary Malcomson's Historic Fourth Title"
+        },
+        {
+          "level": 2,
+          "text": "Our Mission"
+        },
+        {
+          "level": 2,
+          "text": "Our Vision"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 28,
+      "focusOutlineSuppressedCount": 28,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "a.active",
+        "button.mobile-menu",
+        "div.timeline-content",
+        "a.btn.primary-btn",
+        "button.article-close-btn"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "membership",
+      "label": "Membership",
+      "path": "/membership.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Membership - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 21,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Membership"
+        },
+        {
+          "level": 2,
+          "text": "Benefits of Membership"
+        },
+        {
+          "level": 3,
+          "text": "Access to Facilities"
+        },
+        {
+          "level": 3,
+          "text": "Competition Entry"
+        },
+        {
+          "level": 3,
+          "text": "Coaching & Development"
+        },
+        {
+          "level": 3,
+          "text": "Social Events"
+        },
+        {
+          "level": 3,
+          "text": "Club Governance"
+        },
+        {
+          "level": 2,
+          "text": "How to Join"
+        },
+        {
+          "level": 3,
+          "text": "Contact Us"
+        },
+        {
+          "level": 3,
+          "text": "Try a Session"
+        },
+        {
+          "level": 3,
+          "text": "Complete Application"
+        },
+        {
+          "level": 3,
+          "text": "Pay Membership Fee"
+        },
+        {
+          "level": 3,
+          "text": "Receive Confirmation"
+        },
+        {
+          "level": 2,
+          "text": "Membership Fees"
+        },
+        {
+          "level": 3,
+          "text": "Payment Methods"
+        },
+        {
+          "level": 4,
+          "text": "Membership Payments – Bank Transfer"
+        },
+        {
+          "level": 2,
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 23,
+      "focusOutlineSuppressedCount": 23,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "a.active",
+        "button.mobile-menu",
+        "a.btn.primary-btn",
+        "section.fees-table-container",
+        "button.accordion-header"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "fixtures",
+      "label": "Fixtures",
+      "path": "/fixtures.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Fixtures - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 7,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Fixtures"
+        },
+        {
+          "level": 2,
+          "text": "2026 Fixtures"
+        },
+        {
+          "level": 3,
+          "text": "Download Full Fixture List"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 17,
+      "focusOutlineSuppressedCount": 17,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "a.active",
+        "button.mobile-menu",
+        "a.btn.primary-btn"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "news",
+      "label": "News & Events",
+      "path": "/news.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "News & Events - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 167,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "News & Events"
+        },
+        {
+          "level": 2,
+          "text": "Latest News"
+        },
+        {
+          "level": 3,
+          "text": "John “Chucks” Johnstone Memorial Tournament 2026 – A Fantastic Day at Polmaise"
+        },
+        {
+          "level": 3,
+          "text": "Aaron Furzer Crowned East & West Champion of Champions"
+        },
+        {
+          "level": 3,
+          "text": "10th Anniversary Charles McNeil Memorial Pairs"
+        },
+        {
+          "level": 3,
+          "text": "Aaron Furzer Crowned Stirling Area and District Champion of Champions"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Success at Stirling County Association Finals"
+        },
+        {
+          "level": 3,
+          "text": "Triumph at the Area Finals: Polmaise Bowlers Secure Spots at National Finals in Ayr"
+        },
+        {
+          "level": 3,
+          "text": "Greig Ryan Pairs 2026 – A Successful Day at Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Fallin Primary Pupils Enjoy Try Bowls Day at Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Renew Friendly with Spittalmyre Bowling Club in Memory of John Binnie"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Help Mark Patons' 100th Anniversary"
+        },
+        {
+          "level": 3,
+          "text": "Sandy Deans Marks 300th County Cap at Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Opening of the Green – Saturday 4th April 2026"
+        },
+        {
+          "level": 3,
+          "text": "John “Chucks” Johnstone Memorial Tournament 2026 – A Fantastic Day at Polmaise"
+        },
+        {
+          "level": 4,
+          "text": "Seven Games, Seven Wins"
+        },
+        {
+          "level": 4,
+          "text": "A Great Day for the Club"
+        },
+        {
+          "level": 4,
+          "text": "Thanks and Appreciation"
+        },
+        {
+          "level": 3,
+          "text": "Aaron Furzer Crowned East & West Champion of Champions"
+        },
+        {
+          "level": 3,
+          "text": "10th Anniversary Charles McNeil Memorial Pairs"
+        },
+        {
+          "level": 4,
+          "text": "President's Thanks and Appreciation"
+        },
+        {
+          "level": 4,
+          "text": "A Special Day of Remembrance"
+        },
+        {
+          "level": 3,
+          "text": "Aaron Furzer Crowned Stirling Area and District Champion of Champions"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Success at Stirling County Association Finals"
+        },
+        {
+          "level": 4,
+          "text": "Under 25s Singles"
+        },
+        {
+          "level": 4,
+          "text": "Senior Fours"
+        },
+        {
+          "level": 4,
+          "text": "Fours"
+        },
+        {
+          "level": 3,
+          "text": "Triumph at the Area Finals: Polmaise Bowlers Secure Spots at National Finals in Ayr"
+        },
+        {
+          "level": 4,
+          "text": "Singles Success: Craig and Furzer Claim Gold"
+        },
+        {
+          "level": 4,
+          "text": "Valiant Effort in the Gents Pairs"
+        },
+        {
+          "level": 4,
+          "text": "Next Stop: Northfield, Ayr"
+        },
+        {
+          "level": 3,
+          "text": "Greig Ryan Pairs 2026 – A Successful Day at Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Fallin Primary Pupils Enjoy Try Bowls Day at Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Renew Friendly with Spittalmyre Bowling Club in Memory of John Binnie"
+        },
+        {
+          "level": 4,
+          "text": "Match Results"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Help Mark Patons' 100th Anniversary"
+        },
+        {
+          "level": 3,
+          "text": "Sandy Deans Marks 300th County Cap at Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Opening of the Green – Saturday 4th April 2026"
+        },
+        {
+          "level": 2,
+          "text": "2025 News"
+        },
+        {
+          "level": 3,
+          "text": "Presentation Dance 2025 – A Night to Remember at Polmaise"
+        },
+        {
+          "level": 3,
+          "text": "John “Chucks” Johnstone Memorial Tournament 2025"
+        },
+        {
+          "level": 3,
+          "text": "Annual Presentation Dance – Tickets Now Available!"
+        },
+        {
+          "level": 3,
+          "text": "Charles McNeil Memorial Pairs Tournament 2025"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise win the City of Stirling Top Fifteen 2025"
+        },
+        {
+          "level": 3,
+          "text": "The 'Twa Peters' Memorial Tournament 2025 – A Fantastic Day on the Green"
+        },
+        {
+          "level": 3,
+          "text": "Furzer and Brown Shine Bright in Scottish National Pairs Semi-Final"
+        },
+        {
+          "level": 3,
+          "text": "Double Medal Success for Kyle Malcolmson – International Silver and National Bronze!"
+        },
+        {
+          "level": 3,
+          "text": "Gary Malcomson Crowned District Champion of Champions for Fourth Time"
+        },
+        {
+          "level": 3,
+          "text": "County Championship Glory for Polmaise Triples Team!"
+        },
+        {
+          "level": 3,
+          "text": "Kyle Malcolmson Selected for Scotland U18 International Squad"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Celebrate Pairs Victory and Look Ahead to Under 25 Final"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club – County Finals and Scottish Qualifier Success"
+        },
+        {
+          "level": 3,
+          "text": "Greg Ryan Memorial Pairs Tournament 2025 – A Fantastic Day at Polmaise"
+        },
+        {
+          "level": 3,
+          "text": "Fallin Primary Pupils Try Their Hand at Bowls at Polmaise"
+        },
+        {
+          "level": 3,
+          "text": "Rising Star Shines Bright: Kyle Malcomson Selected for National Championships"
+        },
+        {
+          "level": 3,
+          "text": "Explore Our New Sandy Deans Historical Archive"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club Receives Signed Shirt from David Gourlay"
+        },
+        {
+          "level": 3,
+          "text": "Fallin's Heartbeat: The Gothenburg and Polmaise Bowling Club Celebrated in The Herald"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club Claims Top 9 Title with Dominant Victory"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club – Opening of the Green 2025"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club Undergoes Major Cleanup and Renovation Efforts"
+        },
+        {
+          "level": 3,
+          "text": "Presentation Dance 2025 – A Night to Remember at Polmaise Bowling Club"
+        },
+        {
+          "level": 4,
+          "text": "Setting the Scene"
+        },
+        {
+          "level": 4,
+          "text": "Food, Fun, and Entertainment"
+        },
+        {
+          "level": 4,
+          "text": "2025 Club Competition Winners"
+        },
+        {
+          "level": 4,
+          "text": "Appreciation and Looking Ahead"
+        },
+        {
+          "level": 3,
+          "text": "John \"Chucks\" Johnstone Memorial Tournament"
+        },
+        {
+          "level": 4,
+          "text": "Tournament Results"
+        },
+        {
+          "level": 4,
+          "text": "Thanks and Acknowledgements"
+        },
+        {
+          "level": 4,
+          "text": "A Special Day"
+        },
+        {
+          "level": 3,
+          "text": "Charles McNeil Memorial Pairs Tournament 2025"
+        },
+        {
+          "level": 4,
+          "text": "Results"
+        },
+        {
+          "level": 5,
+          "text": "Beaten Semi-Finalists:"
+        },
+        {
+          "level": 5,
+          "text": "Runners-Up:"
+        },
+        {
+          "level": 5,
+          "text": "Winners:"
+        },
+        {
+          "level": 4,
+          "text": "Thanks and Acknowledgements"
+        },
+        {
+          "level": 4,
+          "text": "A Special Day for Polmaise"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise BC Crowned Champions of the 2025 City of Stirling Top Fifteen!"
+        },
+        {
+          "level": 4,
+          "text": "The Winning Journey"
+        },
+        {
+          "level": 5,
+          "text": "Round One (3 July 2025)"
+        },
+        {
+          "level": 5,
+          "text": "Quarter-Final (10 July 2025)"
+        },
+        {
+          "level": 5,
+          "text": "Semi-Final (17 July 2025)"
+        },
+        {
+          "level": 5,
+          "text": "Final (10 August 2025)"
+        },
+        {
+          "level": 4,
+          "text": "A Triumph Worth Celebrating"
+        },
+        {
+          "level": 3,
+          "text": "The 'Twa Peters' Memorial Tournament 2025 – A Fantastic Day on the Green"
+        },
+        {
+          "level": 5,
+          "text": "Winners"
+        },
+        {
+          "level": 4,
+          "text": "Thank You"
+        },
+        {
+          "level": 4,
+          "text": "Results"
+        },
+        {
+          "level": 5,
+          "text": "Defeated Semi-Finalists"
+        },
+        {
+          "level": 5,
+          "text": "Runners-Up"
+        },
+        {
+          "level": 3,
+          "text": "Furzer and Brown Shine Bright in Scottish National Pairs Semi-Final"
+        },
+        {
+          "level": 3,
+          "text": "Double Medal Success for Kyle Malcolmson – International Silver and National Bronze!"
+        },
+        {
+          "level": 4,
+          "text": "Scotland U18 International Squad – Silver Medal"
+        },
+        {
+          "level": 4,
+          "text": "U18 Scottish National Singles – Bronze Medal"
+        },
+        {
+          "level": 4,
+          "text": "A Remarkable Run of Success"
+        },
+        {
+          "level": 4,
+          "text": "What's Next"
+        },
+        {
+          "level": 4,
+          "text": "Congratulations, Kyle!"
+        },
+        {
+          "level": 3,
+          "text": "Gary Malcomson Crowned District Champion of Champions for Fourth Time"
+        },
+        {
+          "level": 3,
+          "text": "County Championship Glory for Polmaise Triples Team!"
+        },
+        {
+          "level": 3,
+          "text": "Kyle Malcolmson Selected for Scotland U18 International Squad"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Celebrate Pairs Victory and Look Ahead to Under 25 Final"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club – County Finals and Scottish Qualifier Success"
+        },
+        {
+          "level": 4,
+          "text": "County Finals – Sunday 13th July at Bridge of Allan Bowling Club"
+        },
+        {
+          "level": 4,
+          "text": "Scottish Qualifier Finals – Tuesday 24th June, 6:45 PM at Spittalmyre Bowling Club"
+        },
+        {
+          "level": 4,
+          "text": "Scottish Under 25 Qualifier Finals – Monday 30th June, 6:45 PM at Spittalmyre Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Greg Ryan Memorial Pairs Tournament 2025 – A Fantastic Day at Polmaise"
+        },
+        {
+          "level": 3,
+          "text": "Fallin Primary Pupils Try Their Hand at Bowls at Polmaise"
+        },
+        {
+          "level": 3,
+          "text": "Rising Star Shines Bright: Polmaise's Kyle Malcomson Selected for National Bowls Champions"
+        },
+        {
+          "level": 3,
+          "text": "Club Launches Sandy Deans Historical Archive"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club Receives Signed Shirt from David Gourlay"
+        },
+        {
+          "level": 3,
+          "text": "Fallin's Heartbeat: The Gothenburg and Polmaise Bowling Club Celebrated in The Herald"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club Claims Top 9 Title with Dominant Victory"
+        },
+        {
+          "level": 4,
+          "text": "A Season to Remember"
+        },
+        {
+          "level": 4,
+          "text": "Celebrating Success"
+        },
+        {
+          "level": 4,
+          "text": "Looking Ahead"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club – Opening of the Green 2025"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club Undergoes Major Cleanup and Renovation Efforts"
+        },
+        {
+          "level": 4,
+          "text": "Community Spirit in Action"
+        },
+        {
+          "level": 4,
+          "text": "Renovation Milestones and Acknowledgments"
+        },
+        {
+          "level": 4,
+          "text": "Final Steps to Completion"
+        },
+        {
+          "level": 2,
+          "text": "From the Green, Through the Years - A Journey into Polmaise Bowling Club's Past"
+        },
+        {
+          "level": 3,
+          "text": "LOOKING BACK - 75th Anniversary"
+        },
+        {
+          "level": 3,
+          "text": "Silverware for Rita and Gary - Scottish Mixed Pairs Champions"
+        },
+        {
+          "level": 3,
+          "text": "Best of British - Victory over Auld Enemy gives Polmaise the UK title"
+        },
+        {
+          "level": 3,
+          "text": "Super Bowl - Polmaise trio snatch Scottish title in last gasp thriller"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Top Of The Pops! - Scottish Top Ten Champions"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club Celebrate Their Jubilee (1961)"
+        },
+        {
+          "level": 3,
+          "text": "Father Defeats Son in Club Championship Final"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Secure Macintosh Trophy Ownership"
+        },
+        {
+          "level": 3,
+          "text": "The Polmaise Trophy - Fallin Club's First Victory"
+        },
+        {
+          "level": 3,
+          "text": "First Match on New Green - Local Club Defeated"
+        },
+        {
+          "level": 3,
+          "text": "Opening of Bowling Green and Sale of Work"
+        },
+        {
+          "level": 3,
+          "text": "Stirling Observer – Wednesday, July 31, 2013"
+        },
+        {
+          "level": 4,
+          "text": "SILVERWARE FOR RITA AND GARY"
+        },
+        {
+          "level": 3,
+          "text": "Wednesday, July 9, 2003"
+        },
+        {
+          "level": 4,
+          "text": "BEST OF BRITISH"
+        },
+        {
+          "level": 5,
+          "text": "Victory over Auld Enemy gives Polmaise the UK title"
+        },
+        {
+          "level": 4,
+          "text": "Rock-solid"
+        },
+        {
+          "level": 4,
+          "text": "Determined"
+        },
+        {
+          "level": 3,
+          "text": "Wednesday, July 24, 2002"
+        },
+        {
+          "level": 4,
+          "text": "SUPER BOWL"
+        },
+        {
+          "level": 5,
+          "text": "Polmaise trio snatch Scottish title in last gasp thriller"
+        },
+        {
+          "level": 4,
+          "text": "Replay"
+        },
+        {
+          "level": 4,
+          "text": "Challenges"
+        },
+        {
+          "level": 3,
+          "text": "Stirling Observer – Friday, June 17, 1988"
+        },
+        {
+          "level": 4,
+          "text": "POLMAISE TOP OF THE POPS!"
+        },
+        {
+          "level": 3,
+          "text": "Alloa Journal and Advertiser – Thursday, June 8th, 1961"
+        },
+        {
+          "level": 4,
+          "text": "POLMAISE BOWLING CLUB CELEBRATE THEIR JUBILEE"
+        },
+        {
+          "level": 4,
+          "text": "Match Details"
+        },
+        {
+          "level": 3,
+          "text": "Stirling Observer – Wednesday, September 9, 1942"
+        },
+        {
+          "level": 4,
+          "text": "FALLIN BOWLING"
+        },
+        {
+          "level": 3,
+          "text": "Saturday, 20th July 1935"
+        },
+        {
+          "level": 4,
+          "text": "WINNERS OF THE MACINTOSH TROPHY"
+        },
+        {
+          "level": 4,
+          "text": "Match Details"
+        },
+        {
+          "level": 3,
+          "text": "June 8th, 1914"
+        },
+        {
+          "level": 4,
+          "text": "THE POLMAISE TROPHY - FALLIN CLUB'S FIRST VICTORY"
+        },
+        {
+          "level": 3,
+          "text": "Bridge of Allan Gazette - 15th July 1911"
+        },
+        {
+          "level": 4,
+          "text": "FALLIN BOWLING - FIRST MATCH ON NEW GREEN - LOCAL CLUB DEFEATED"
+        },
+        {
+          "level": 3,
+          "text": "A Gala Day at Fallin - June 3, 1911"
+        },
+        {
+          "level": 4,
+          "text": "Opening of Bowling Green and Sale of Work"
+        },
+        {
+          "level": 4,
+          "text": "Match Results"
+        },
+        {
+          "level": 4,
+          "text": "Sale of Work"
+        },
+        {
+          "level": 4,
+          "text": "Stallholders"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 110,
+      "focusOutlineSuppressedCount": 110,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "a.active",
+        "button.mobile-menu",
+        "div.news-card",
+        "button",
+        "div.news-archive-header",
+        "a.news-card",
+        "a.btn.primary-btn"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "gallery",
+      "label": "Gallery",
+      "path": "/gallery.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Gallery - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 53,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Gallery"
+        },
+        {
+          "level": 3,
+          "text": "Finals Day 2026"
+        },
+        {
+          "level": 3,
+          "text": "Opening of Green 2026"
+        },
+        {
+          "level": 3,
+          "text": "Presentation Dance 2025 - 25/10/2025"
+        },
+        {
+          "level": 3,
+          "text": "The Charlie McNeil Memorial Pairs 2025"
+        },
+        {
+          "level": 3,
+          "text": "Top 15 Final 10/08/2025"
+        },
+        {
+          "level": 3,
+          "text": "The 'Twa Peters' Memorial Tournament 2025"
+        },
+        {
+          "level": 3,
+          "text": "Ayr National Championships 2025"
+        },
+        {
+          "level": 3,
+          "text": "John, Mark & Iain Bone – A Family of Bowlers"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Ladies Top 5 - 26/06/2025"
+        },
+        {
+          "level": 3,
+          "text": "Scottish Area Finals Spittalmyre - 24/06/2025"
+        },
+        {
+          "level": 3,
+          "text": "Murray Cup 2025 - 21/06/2025"
+        },
+        {
+          "level": 3,
+          "text": "Greg Ryan Memorial Tournament 2025 - 07/06/2025"
+        },
+        {
+          "level": 3,
+          "text": "Sandy Deans Archive"
+        },
+        {
+          "level": 3,
+          "text": "2025 Season"
+        },
+        {
+          "level": 3,
+          "text": "Ayr National Championships 2024"
+        },
+        {
+          "level": 3,
+          "text": "Opening of the green 2023"
+        },
+        {
+          "level": 3,
+          "text": "Chucks Memorial 2023"
+        },
+        {
+          "level": 3,
+          "text": "Recent Club Photos"
+        },
+        {
+          "level": 3,
+          "text": "Opening of the green 2011"
+        },
+        {
+          "level": 3,
+          "text": "Club Memorabilia and Special Moments"
+        },
+        {
+          "level": 3,
+          "text": "Club Events and Achievements"
+        },
+        {
+          "level": 3,
+          "text": "Championships and Awards"
+        },
+        {
+          "level": 3,
+          "text": "Archive"
+        },
+        {
+          "level": 2,
+          "text": "Finals Day 2026"
+        },
+        {
+          "level": 2,
+          "text": "Opening of Green 2026"
+        },
+        {
+          "level": 2,
+          "text": "Top 15 Final 10/08/2025"
+        },
+        {
+          "level": 2,
+          "text": "John, Mark & Iain Bone – A Family of Bowlers"
+        },
+        {
+          "level": 2,
+          "text": "Polmaise Ladies Top 5 - 26/06/2025"
+        },
+        {
+          "level": 2,
+          "text": "Murray Cup 21st June 2025"
+        },
+        {
+          "level": 2,
+          "text": "Scottish Area Finals Spittalmyre"
+        },
+        {
+          "level": 2,
+          "text": "Opening of the green 2023"
+        },
+        {
+          "level": 2,
+          "text": "Opening of the green 2011"
+        },
+        {
+          "level": 2,
+          "text": "2025 Season"
+        },
+        {
+          "level": 3,
+          "text": "Opening of the Green 5th April 2025"
+        },
+        {
+          "level": 3,
+          "text": "Menstrie Tea Game 12th April 2025"
+        },
+        {
+          "level": 3,
+          "text": "Bridge of Allan Tea Game - 19th April 2025"
+        },
+        {
+          "level": 3,
+          "text": "Bridgeness Tea Game 3rd May 2025"
+        },
+        {
+          "level": 3,
+          "text": "District 9 19th May 2025"
+        },
+        {
+          "level": 2,
+          "text": "Ayr National Championships 2024"
+        },
+        {
+          "level": 2,
+          "text": "Recent Club Photos"
+        },
+        {
+          "level": 2,
+          "text": "Club Memorabilia and Special Moments"
+        },
+        {
+          "level": 2,
+          "text": "Chucks Memorial 2023"
+        },
+        {
+          "level": 2,
+          "text": "Championships and Awards"
+        },
+        {
+          "level": 2,
+          "text": "Archive"
+        },
+        {
+          "level": 2,
+          "text": "The Twa Peters - 09/08/2025"
+        },
+        {
+          "level": 2,
+          "text": "Greg Ryan Memorial Tournament 2025"
+        },
+        {
+          "level": 2,
+          "text": "Ayr National Championships 2025"
+        },
+        {
+          "level": 2,
+          "text": "Sandy Deans Archive"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 674,
+      "focusOutlineSuppressedCount": 674,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "a.active",
+        "button.mobile-menu",
+        "div.album-card",
+        "a.album-card",
+        "button.close-album",
+        "a.lb-prev",
+        "a.lb-next"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "contact",
+      "label": "Contact Us",
+      "path": "/contact.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Contact Us - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 26,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Contact Us"
+        },
+        {
+          "level": 2,
+          "text": "Get In Touch"
+        },
+        {
+          "level": 3,
+          "text": "Address"
+        },
+        {
+          "level": 3,
+          "text": "Phone"
+        },
+        {
+          "level": 3,
+          "text": "Email"
+        },
+        {
+          "level": 3,
+          "text": "Opening Hours"
+        },
+        {
+          "level": 2,
+          "text": "Find Us"
+        },
+        {
+          "level": 3,
+          "text": "Getting Here"
+        },
+        {
+          "level": 4,
+          "text": "By Car"
+        },
+        {
+          "level": 5,
+          "text": "From Stirling City Centre:"
+        },
+        {
+          "level": 5,
+          "text": "From M9 Motorway:"
+        },
+        {
+          "level": 4,
+          "text": "Public Transport"
+        },
+        {
+          "level": 5,
+          "text": "From Stirling City Centre:"
+        },
+        {
+          "level": 5,
+          "text": "From Stirling Railway Station:"
+        },
+        {
+          "level": 4,
+          "text": "Parking"
+        },
+        {
+          "level": 2,
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        },
+        {
+          "level": 2,
+          "text": "Privacy Policy"
+        },
+        {
+          "level": 3,
+          "text": "Information Collection and Use"
+        },
+        {
+          "level": 3,
+          "text": "How We Use Your Information"
+        },
+        {
+          "level": 3,
+          "text": "Data Storage and Security"
+        },
+        {
+          "level": 3,
+          "text": "Your Rights"
+        },
+        {
+          "level": 3,
+          "text": "Contact Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [
+        {
+          "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2225.193398518217!2d-3.868",
+          "title": "Map showing Polmaise Bowling Club in Fallin"
+        }
+      ],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 21,
+      "focusOutlineSuppressedCount": 21,
+      "focusOutlineSuppressedSample": [
+        "button.cookie-btn.accept-cookies",
+        "button.cookie-btn.decline-cookies",
+        "a",
+        "a.active",
+        "button.mobile-menu",
+        "button.accordion-header"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "sponsors",
+      "label": "Sponsors",
+      "path": "/sponsors.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Sponsors - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 31,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Our Sponsors"
+        },
+        {
+          "level": 2,
+          "text": "Thank You to Our Sponsors"
+        },
+        {
+          "level": 2,
+          "text": "Primary Sponsors"
+        },
+        {
+          "level": 3,
+          "text": "Will Sweep"
+        },
+        {
+          "level": 3,
+          "text": "Fallin Public House Society (\"The Goth\")"
+        },
+        {
+          "level": 2,
+          "text": "Club Sponsors"
+        },
+        {
+          "level": 3,
+          "text": "Forward Sector Security"
+        },
+        {
+          "level": 3,
+          "text": "Paton Construction Ltd"
+        },
+        {
+          "level": 3,
+          "text": "Highland Broadband"
+        },
+        {
+          "level": 3,
+          "text": "R.B. Joinery & Building Services"
+        },
+        {
+          "level": 3,
+          "text": "Allson Wholesale Co. UK"
+        },
+        {
+          "level": 3,
+          "text": "Hamilton Waste"
+        },
+        {
+          "level": 3,
+          "text": "Eddies Engineering"
+        },
+        {
+          "level": 3,
+          "text": "Phil Crowton Joinery"
+        },
+        {
+          "level": 3,
+          "text": "Lyon Safety"
+        },
+        {
+          "level": 3,
+          "text": "Scotia Plastics Limited"
+        },
+        {
+          "level": 3,
+          "text": "Craig Project Management UK Ltd"
+        },
+        {
+          "level": 3,
+          "text": "James Mailey Surfacing Ltd"
+        },
+        {
+          "level": 2,
+          "text": "Become a Sponsor"
+        },
+        {
+          "level": 3,
+          "text": "Benefits of Sponsoring Polmaise Bowling Club"
+        },
+        {
+          "level": 4,
+          "text": "Brand Visibility"
+        },
+        {
+          "level": 4,
+          "text": "Community Engagement"
+        },
+        {
+          "level": 4,
+          "text": "Networking Opportunities"
+        },
+        {
+          "level": 4,
+          "text": "Corporate Social Responsibility"
+        },
+        {
+          "level": 4,
+          "text": "Exclusive Sponsorship Events"
+        },
+        {
+          "level": 4,
+          "text": "Media Coverage"
+        },
+        {
+          "level": 3,
+          "text": "Interested in Becoming a Sponsor?"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 27,
+      "focusOutlineSuppressedCount": 27,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "a.active",
+        "button.mobile-menu"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "honours",
+      "label": "Honours",
+      "path": "/honours.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Honours & Achievements - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 31,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Honours & Achievements"
+        },
+        {
+          "level": 2,
+          "text": "A History of Excellence"
+        },
+        {
+          "level": 2,
+          "text": "Honours Won (2010–2026)"
+        },
+        {
+          "level": 3,
+          "text": "2026"
+        },
+        {
+          "level": 4,
+          "text": "Club Competitions (2026)"
+        },
+        {
+          "level": 3,
+          "text": "2025"
+        },
+        {
+          "level": 4,
+          "text": "Club Competitions (2025)"
+        },
+        {
+          "level": 3,
+          "text": "2024"
+        },
+        {
+          "level": 3,
+          "text": "2023"
+        },
+        {
+          "level": 3,
+          "text": "2022"
+        },
+        {
+          "level": 3,
+          "text": "2021"
+        },
+        {
+          "level": 3,
+          "text": "2020"
+        },
+        {
+          "level": 3,
+          "text": "2019"
+        },
+        {
+          "level": 3,
+          "text": "2018"
+        },
+        {
+          "level": 3,
+          "text": "2017"
+        },
+        {
+          "level": 3,
+          "text": "2016"
+        },
+        {
+          "level": 3,
+          "text": "2015"
+        },
+        {
+          "level": 3,
+          "text": "2014"
+        },
+        {
+          "level": 3,
+          "text": "2013"
+        },
+        {
+          "level": 3,
+          "text": "2012"
+        },
+        {
+          "level": 3,
+          "text": "2011"
+        },
+        {
+          "level": 3,
+          "text": "2010"
+        },
+        {
+          "level": 2,
+          "text": "Historic Achievements"
+        },
+        {
+          "level": 3,
+          "text": "Key Historic Moments"
+        },
+        {
+          "level": 2,
+          "text": "Presidents of Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Club Champions of Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Ladies Club Champions of Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 15,
+      "focusOutlineSuppressedCount": 15,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "a.active",
+        "button.mobile-menu"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "archive",
+      "label": "Sandy Deans Archive",
+      "path": "/archive.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Sandy Deans' Historical Archive - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 10,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Sandy Deans Historical Archive"
+        },
+        {
+          "level": 2,
+          "text": "About the Archive"
+        },
+        {
+          "level": 3,
+          "text": "All Items"
+        },
+        {
+          "level": 3,
+          "text": "Photos"
+        },
+        {
+          "level": 3,
+          "text": "News Clippings"
+        },
+        {
+          "level": 2,
+          "text": "Photo Gallery"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 135,
+      "focusOutlineSuppressedCount": 135,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "button.mobile-menu",
+        "a.lb-prev",
+        "a.lb-next"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "history",
+      "label": "History",
+      "path": "/history.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "History - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 27,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Our History"
+        },
+        {
+          "level": 2,
+          "text": "Polmaise Bowling Club: A History and Heritage Overview"
+        },
+        {
+          "level": 3,
+          "text": "Origins of Fallin and the Gothenburg System"
+        },
+        {
+          "level": 3,
+          "text": "Founding of Polmaise Bowling Club"
+        },
+        {
+          "level": 4,
+          "text": "The Foundation"
+        },
+        {
+          "level": 3,
+          "text": "The Grand Opening"
+        },
+        {
+          "level": 3,
+          "text": "Early Growth and Community Impact"
+        },
+        {
+          "level": 4,
+          "text": "Early Champion"
+        },
+        {
+          "level": 3,
+          "text": "Mid-Century Challenges and Triumphs"
+        },
+        {
+          "level": 4,
+          "text": "Golden Jubilee - 1961"
+        },
+        {
+          "level": 3,
+          "text": "Modern Era: Expansion and Sporting Excellence"
+        },
+        {
+          "level": 4,
+          "text": "National Glory - 1988"
+        },
+        {
+          "level": 4,
+          "text": "Championship Success"
+        },
+        {
+          "level": 3,
+          "text": "Facility Developments"
+        },
+        {
+          "level": 3,
+          "text": "Community Engagement and Future"
+        },
+        {
+          "level": 4,
+          "text": "Looking Forward"
+        },
+        {
+          "level": 3,
+          "text": "Our Legacy"
+        },
+        {
+          "level": 3,
+          "text": "Sources & References"
+        },
+        {
+          "level": 4,
+          "text": "Primary Club Records"
+        },
+        {
+          "level": 4,
+          "text": "Community & Local History"
+        },
+        {
+          "level": 4,
+          "text": "Contemporary Newspaper Coverage"
+        },
+        {
+          "level": 4,
+          "text": "Modern Documentation"
+        },
+        {
+          "level": 4,
+          "text": "Historical Context & Background"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 16,
+      "focusOutlineSuppressedCount": 16,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "button.mobile-menu"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "signup",
+      "label": "Create Account",
+      "path": "/signup.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Create Account - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 15,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Create an Account"
+        },
+        {
+          "level": 2,
+          "text": "Benefits of Creating an Account"
+        },
+        {
+          "level": 3,
+          "text": "Convenient Membership Management"
+        },
+        {
+          "level": 3,
+          "text": "Event Registration"
+        },
+        {
+          "level": 3,
+          "text": "Member Communications"
+        },
+        {
+          "level": 3,
+          "text": "Access to Member Resources"
+        },
+        {
+          "level": 2,
+          "text": "Create Your Account"
+        },
+        {
+          "level": 2,
+          "text": "Need Help?"
+        },
+        {
+          "level": 3,
+          "text": "Call Us"
+        },
+        {
+          "level": 3,
+          "text": "Email Support"
+        },
+        {
+          "level": 3,
+          "text": "FAQ"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "firstName",
+          "name": "firstName",
+          "hasLabel": true,
+          "describedBy": null,
+          "ariaInvalid": null
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "lastName",
+          "name": "lastName",
+          "hasLabel": true,
+          "describedBy": null,
+          "ariaInvalid": null
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "id": "email",
+          "name": "email",
+          "hasLabel": true,
+          "describedBy": null,
+          "ariaInvalid": null
+        },
+        {
+          "tag": "input",
+          "type": "tel",
+          "id": "phone",
+          "name": "phone",
+          "hasLabel": true,
+          "describedBy": null,
+          "ariaInvalid": null
+        },
+        {
+          "tag": "input",
+          "type": "password",
+          "id": "password",
+          "name": "password",
+          "hasLabel": true,
+          "describedBy": "password-hint",
+          "ariaInvalid": null
+        },
+        {
+          "tag": "input",
+          "type": "password",
+          "id": "confirmPassword",
+          "name": "confirmPassword",
+          "hasLabel": true,
+          "describedBy": null,
+          "ariaInvalid": null
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "id": "membershipStatus",
+          "name": "membershipStatus",
+          "hasLabel": true,
+          "describedBy": null,
+          "ariaInvalid": null
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "memberNumber",
+          "name": "memberNumber",
+          "hasLabel": true,
+          "describedBy": null,
+          "ariaInvalid": null
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "id": "termsConditions",
+          "name": "termsConditions",
+          "hasLabel": true,
+          "describedBy": null,
+          "ariaInvalid": null
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "id": "newsletter",
+          "name": "newsletter",
+          "hasLabel": true,
+          "describedBy": null,
+          "ariaInvalid": null
+        }
+      ],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 27,
+      "focusOutlineSuppressedCount": 27,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "button.mobile-menu",
+        "input",
+        "button.btn.primary-btn"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "live-scoring",
+      "label": "Live Scores",
+      "path": "/live-scoring.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Live Scores - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 5,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Live Scores"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [
+        {
+          "src": "https://polmaise-bowls-live.base44.app/embed",
+          "title": "Polmaise Bowling Club Live Scores"
+        }
+      ],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 20,
+      "focusOutlineSuppressedCount": 20,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "button.mobile-menu",
+        "button.btn.primary-btn",
+        "button.btn.secondary-btn.scoreboard-exit-btn"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "news-presentation-dance-2025",
+      "label": "News article: Presentation Dance 2025",
+      "path": "/News%20articles/presentation-dance-2025.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Annual Presentation Dance 2025 - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 14,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Event Details"
+        },
+        {
+          "level": 3,
+          "text": "Date"
+        },
+        {
+          "level": 3,
+          "text": "Venue"
+        },
+        {
+          "level": 3,
+          "text": "Tickets"
+        },
+        {
+          "level": 3,
+          "text": "Time"
+        },
+        {
+          "level": 2,
+          "text": "Join Us for a Fantastic Evening"
+        },
+        {
+          "level": 2,
+          "text": "Entertainment & Refreshments"
+        },
+        {
+          "level": 3,
+          "text": "Jim Smith on Vocals"
+        },
+        {
+          "level": 2,
+          "text": "Get Your Tickets Now!"
+        },
+        {
+          "level": 2,
+          "text": "Let's Make This Special"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 25,
+      "focusOutlineSuppressedCount": 25,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "button.mobile-menu",
+        "button.cta-button"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "album-presentation-dance-2025",
+      "label": "Album: Presentation Dance 2025",
+      "path": "/PhotoAlbums/presentation-dance-2025.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Presentation Dance 2025 - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 6,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Presentation Dance 2025"
+        },
+        {
+          "level": 2,
+          "text": "Presentation Dance 2025"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 70,
+      "focusOutlineSuppressedCount": 70,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "a.active",
+        "button.mobile-menu",
+        "a.back-button",
+        "a.lb-prev",
+        "a.lb-next"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "album-charlie-mcneil-memorial-2025",
+      "label": "Album: Charlie McNeil Memorial 2025",
+      "path": "/PhotoAlbums/charlie-mcneil-memorial-2025.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "Charlie McNeil Memorial Pairs 2025 - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 6,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "Charlie McNeil Memorial Pairs 2025"
+        },
+        {
+          "level": 2,
+          "text": "The Charlie McNeil Memorial Pairs Tournament 2025"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 93,
+      "focusOutlineSuppressedCount": 93,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "a.active",
+        "button.mobile-menu",
+        "a.back-button",
+        "a.lb-prev",
+        "a.lb-next"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "album-top-15-final-2025",
+      "label": "Album: Top 15 Final 2025",
+      "path": "/PhotoAlbums/top-15-final-2025.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "City of Stirling Top Fifteen Champions 2025 - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 11,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "City of Stirling Top Fifteen Champions 2025"
+        },
+        {
+          "level": 2,
+          "text": "Polmaise BC Crowned Champions of the 2025 City of Stirling Top Fifteen!"
+        },
+        {
+          "level": 4,
+          "text": "The Winning Journey"
+        },
+        {
+          "level": 5,
+          "text": "Round One (3 July 2025)"
+        },
+        {
+          "level": 5,
+          "text": "Quarter-Final (10 July 2025)"
+        },
+        {
+          "level": 5,
+          "text": "Semi-Final (17 July 2025)"
+        },
+        {
+          "level": 5,
+          "text": "Final (10 August 2025)"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 61,
+      "focusOutlineSuppressedCount": 61,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "a.active",
+        "button.mobile-menu",
+        "a.back-button",
+        "a.lb-prev",
+        "a.lb-next"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    },
+    {
+      "name": "album-twa-peters-memorial-2025",
+      "label": "Album: Twa Peters Memorial 2025",
+      "path": "/PhotoAlbums/twa-peters-memorial-2025.html",
+      "axe": [],
+      "axeMobile": [],
+      "title": "The 'Twa Peters' Memorial Tournament 2025 - Polmaise Bowling Club",
+      "description": null,
+      "canonical": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null,
+      "htmlLang": "en",
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "nav": 1,
+        "footer": 1,
+        "aside": 0
+      },
+      "headingCount": 10,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 2,
+          "text": "The 'Twa Peters' Memorial Tournament 2025"
+        },
+        {
+          "level": 2,
+          "text": "The 'Twa Peters' Memorial Tournament 2025 – A Fantastic Day on the Green"
+        },
+        {
+          "level": 4,
+          "text": "Tournament Results"
+        },
+        {
+          "level": 5,
+          "text": "Winners"
+        },
+        {
+          "level": 5,
+          "text": "Runners-Up"
+        },
+        {
+          "level": 5,
+          "text": "Beaten Semi-Finalists"
+        },
+        {
+          "level": 3,
+          "text": "Polmaise Bowling Club"
+        },
+        {
+          "level": 3,
+          "text": "Quick Links"
+        },
+        {
+          "level": 3,
+          "text": "Connect With Us"
+        }
+      ],
+      "h1Count": 1,
+      "imagesWithoutAlt": [],
+      "linksWithoutAccessibleName": [],
+      "iframes": [],
+      "formControls": [],
+      "liveRegions": [],
+      "jsonLd": [],
+      "focusableCount": 56,
+      "focusOutlineSuppressedCount": 56,
+      "focusOutlineSuppressedSample": [
+        "a",
+        "a.active",
+        "button.mobile-menu",
+        "a.back-button",
+        "a.lb-prev",
+        "a.lb-next"
+      ],
+      "placeholderLinks": 0,
+      "tabindexPositive": 0,
+      "clickHandlersOnNonInteractive": 0
+    }
+  ]
+}

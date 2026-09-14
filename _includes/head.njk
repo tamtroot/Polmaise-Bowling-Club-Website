@@ -14,6 +14,65 @@
     <link rel="stylesheet" href="{{ prefix }}styles.css">
 {% endif %}
     <link href="https://fonts.googleapis.com/css2?{{ fontFamilies | safe }}&display=swap" rel="stylesheet">
+{% set canonicalUrl %}{{ site.url }}{{ page.url | replace(" ", "%20") }}{% endset %}
+{% set socialImage %}{{ site.url }}{{ socialImagePath | default(site.defaultSocialImage, true) }}{% endset %}
+    <meta name="description" content="{{ metaDescription | default(site.description, true) }}">
+    <link rel="canonical" href="{{ canonicalUrl }}">
+    <meta property="og:type" content="{{ ogType | default('website') }}">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:title" content="{{ pageTitle }}">
+    <meta property="og:description" content="{{ metaDescription | default(site.description, true) }}">
+    <meta property="og:url" content="{{ canonicalUrl }}">
+    <meta property="og:image" content="{{ socialImage }}">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ pageTitle }}">
+    <meta name="twitter:description" content="{{ metaDescription | default(site.description, true) }}">
+    <meta name="twitter:image" content="{{ socialImage }}">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "SportsOrganization",
+                    "@id": "{{ site.url }}/#organisation",
+                    "name": "{{ site.name }}",
+                    "url": "{{ site.url }}/",
+                    "email": "{{ site.email }}",
+                    "telephone": "{{ site.telephone }}",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "{{ site.address.streetAddress }}",
+                        "addressLocality": "{{ site.address.addressLocality }}",
+                        "addressRegion": "{{ site.address.addressRegion }}",
+                        "postalCode": "{{ site.address.postalCode }}",
+                        "addressCountry": "{{ site.address.addressCountry }}"
+                    },
+                    "sameAs": ["{{ site.facebook }}"]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "{{ site.url }}/#website",
+                    "name": "{{ site.name }}",
+                    "url": "{{ site.url }}/",
+                    "publisher": { "@id": "{{ site.url }}/#organisation" },
+                    "inLanguage": "en-GB"
+                }
+                {%- if ogType == "article" %},
+                {
+                    "@type": "Article",
+                    "headline": "{{ pageTitle }}",
+                    "description": "{{ metaDescription }}",
+                    "image": "{{ socialImage }}",
+                    "mainEntityOfPage": "{{ canonicalUrl }}",
+                    "author": { "@id": "{{ site.url }}/#organisation" },
+                    "publisher": { "@id": "{{ site.url }}/#organisation" },
+                    "inLanguage": "en-GB"
+                }
+                {%- endif %}
+            ]
+        }
+    </script>
 {% if jquery %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 {% endif %}

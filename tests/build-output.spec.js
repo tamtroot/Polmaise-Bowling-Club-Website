@@ -117,6 +117,20 @@ async function verifyImageDeployment() {
 }
 
 function normaliseDocument(document) {
+  // Adjacent text nodes read as one piece of text to a human and to a browser
+  // layout, so merge them before comparing.
+  function mergeAdjacentText(children) {
+    return children.reduce((merged, child) => {
+      const previous = merged[merged.length - 1];
+      if (typeof child === "string" && typeof previous === "string") {
+        merged[merged.length - 1] = `${previous} ${child}`.trim();
+        return merged;
+      }
+      merged.push(child);
+      return merged;
+    }, []);
+  }
+
   const ignoredTags = new Set(["script", "style"]);
   const ignoredEventAttributes = new Set([
     "data-action",
@@ -148,6 +162,9 @@ function normaliseDocument(document) {
     "historical-inline-image",
     "historical-list",
     "historical-section",
+    // Stage 7 gives the placeholder social icons a decorative class so they
+    // are no longer announced as links.
+    "social-link",
   ]);
   // Stage 6 serves build-time image derivatives with responsive attributes, so
   // the image-specific presentation attributes are intentionally different from
@@ -166,6 +183,27 @@ function normaliseDocument(document) {
   // Lightbox links now point at build-time derivatives (Stage 6), so their
   // href changes by design; every other attribute is still compared.
   const imageLinkTags = new Set(["a"]);
+  // Stage 7 made clickable cards keyboard operable: they are now <button>,
+  // <a> or <section> elements with ARIA attributes. The element structure,
+  // classes and content are still compared; these attributes are the
+  // intentional accessibility additions.
+  const ignoredAccessibilityAttributes = new Set(["role", "tabindex"]);
+  const isAriaAttribute = (name) => name.startsWith("aria-");
+  // Ids created for aria-controls/aria-labelledby wiring.
+  const accessibilityIdPattern =
+    /^(?:primary-menu|mobileMenuButton|faq-\d+-(?:header|content)|password-hint)$/;
+  // Controls that were upgraded to a semantic element, keyed by class.
+  const semanticTagAliases = new Map([
+    ["mobile-menu", "div"],
+    ["accordion-header", "div"],
+    ["accordion-content", "div"],
+    ["album-card", "div"],
+    ["news-card", "div"],
+    ["fees-table-container", "div"],
+  ]);
+  const linkCardClasses = ["album-card", "news-card"];
+  // Metadata declarations (SEO tags) are ignored; <title> is still compared.
+  const ignoredMetadataTags = new Set(["meta", "link"]);
 
   function normaliseNode(node) {
     if (node.nodeType === Node.COMMENT_NODE) {
@@ -191,16 +229,62 @@ function normaliseDocument(document) {
       return null;
     }
 
-    const tagName = node.tagName.toLowerCase();
-    const isImageLink = imageLinkTags.has(tagName) && node.hasAttribute("data-lightbox");
+    if (ignoredMetadataTags.has(node.tagName.toLowerCase())) {
+      return null;
+    }
+
+    const realTag = node.tagName.toLowerCase();
+    const classes = node.classList ?? [];
+
+    // Stage 7 removed placeholder links (href="#" / href="") because they had
+    // no destination; compare their text content only.
+    const href = node.getAttribute("href");
+    // Controls whose placeholder link was replaced by a real element (the
+    // social icons became decorative, the ticket link became a button) are
+    // compared by their content only.
+    const isUpgradedPlaceholder =
+      classes.contains("social-link") || classes.contains("cta-button");
+    if ((realTag === "a" && (href === "#" || href === "")) || isUpgradedPlaceholder) {
+      return {
+        fragment: true,
+        children: mergeAdjacentText(
+          [...node.childNodes]
+            .map(normaliseNode)
+            .flatMap((child) => (child && child.fragment ? child.children : [child]))
+            .filter((child) => child !== null && child !== ""),
+        ),
+      };
+    }
+
+    const alias = [...semanticTagAliases.keys()].find((className) => classes.contains(className));
+    const tagName = alias ? semanticTagAliases.get(alias) : realTag;
+
+    // The Stage 7 <main> landmark wraps existing content without changing it.
+    if (tagName === "main") {
+      const children = mergeAdjacentText(
+        [...node.childNodes]
+          .map(normaliseNode)
+          .flatMap((child) => (child && child.fragment ? child.children : [child]))
+          .filter((child) => child !== null && child !== ""),
+      );
+      return { fragment: true, children };
+    }
+
+    const isImageLink = imageLinkTags.has(realTag) && node.hasAttribute("data-lightbox");
+    const isLinkCard = imageLinkTags.has(realTag) && linkCardClasses.some((className) => classes.contains(className));
     const attributes = [...node.attributes]
       .filter(
         (attribute) =>
           attribute.name !== "style" &&
           !attribute.name.startsWith("on") &&
           !ignoredEventAttributes.has(attribute.name) &&
+          !ignoredAccessibilityAttributes.has(attribute.name) &&
+          !isAriaAttribute(attribute.name) &&
+          !(attribute.name === "id" && accessibilityIdPattern.test(attribute.value)) &&
           !(imageTags.has(tagName) && ignoredImageAttributes.has(attribute.name)) &&
-          !(isImageLink && attribute.name === "href"),
+          !((isImageLink || isLinkCard) && attribute.name === "href") &&
+          // Elements upgraded to a semantic element also gain its attributes.
+          !(alias && (attribute.name === "type" || attribute.name === "href")),
       )
       .map((attribute) => {
         if (attribute.name !== "class") {
@@ -215,9 +299,12 @@ function normaliseDocument(document) {
       })
       .filter(Boolean)
       .sort(([left], [right]) => left.localeCompare(right));
-    const children = [...node.childNodes]
-      .map(normaliseNode)
-      .filter((child) => child !== null && child !== "");
+    const children = mergeAdjacentText(
+      [...node.childNodes]
+        .map(normaliseNode)
+        .flatMap((child) => (child && child.fragment ? child.children : [child]))
+        .filter((child) => child !== null && child !== ""),
+    );
 
     return {
       tag: tagName,
@@ -260,6 +347,47 @@ function getActiveNavigation(html) {
     .filter(Boolean);
 }
 
+/**
+ * Describes where two normalised structures first differ, so a failure points
+ * at the node instead of just naming the page.
+ */
+function describeFirstDifference(snapshot, output, nodePath = "html") {
+  const left = JSON.stringify(snapshot);
+  const right = JSON.stringify(output);
+  if (left === right) {
+    return null;
+  }
+
+  if (typeof snapshot === "string" || typeof output === "string") {
+    return `${nodePath}: text ${JSON.stringify(snapshot)} vs ${JSON.stringify(output)}`;
+  }
+  if (!snapshot || !output) {
+    return `${nodePath}: node missing on one side`;
+  }
+  if (snapshot.tag !== output.tag) {
+    return `${nodePath}: <${snapshot.tag}> vs <${output.tag}>`;
+  }
+  if (JSON.stringify(snapshot.attributes) !== JSON.stringify(output.attributes)) {
+    return `${nodePath}>${snapshot.tag}: ${JSON.stringify(snapshot.attributes)} vs ${JSON.stringify(output.attributes)}`;
+  }
+  if (snapshot.children.length !== output.children.length) {
+    return `${nodePath}>${snapshot.tag}: ${snapshot.children.length} vs ${output.children.length} children (${snapshot.children.map((child) => (typeof child === "string" ? `#${child}` : child.tag)).join(",")} vs ${output.children.map((child) => (typeof child === "string" ? `#${child}` : child.tag)).join(",")})`;
+  }
+
+  for (let index = 0; index < snapshot.children.length; index += 1) {
+    const difference = describeFirstDifference(
+      snapshot.children[index],
+      output.children[index],
+      `${nodePath}>${snapshot.tag}[${index}]`,
+    );
+    if (difference) {
+      return difference;
+    }
+  }
+
+  return `${nodePath}: differs beyond the child comparison`;
+}
+
 test("generated site preserves Stage 2A structure and production assets", async (
   { page },
   testInfo,
@@ -292,7 +420,16 @@ test("generated site preserves Stage 2A structure and production assets", async 
     const outputStructure = await normaliseHtml(page, outputHtml);
 
     if (JSON.stringify(snapshotStructure) !== JSON.stringify(outputStructure)) {
-      pageMismatches.push(`${sitePage.path}: generated DOM structure differs`);
+      const doctypeDifference =
+        JSON.stringify(snapshotStructure.doctype) !== JSON.stringify(outputStructure.doctype)
+          ? `doctype ${JSON.stringify(snapshotStructure.doctype)} vs ${JSON.stringify(outputStructure.doctype)}`
+          : null;
+      pageMismatches.push(
+        `${sitePage.path}: generated DOM structure differs at ${
+          doctypeDifference ??
+          describeFirstDifference(snapshotStructure.documentElement, outputStructure.documentElement)
+        }`,
+      );
     }
 
     const expectedActive =

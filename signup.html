@@ -1,5 +1,6 @@
 ---
 pageTitle: "Create Account - Polmaise Bowling Club"
+metaDescription: "Create a Polmaise Bowling Club website account, including member sign-up and membership number verification."
 permalink: "/signup.html"
 navActive: ""
 prefix: ""
@@ -29,6 +30,8 @@ bodyClass: ""
 <body>
 
 {% include "header.njk" %}
+
+<main>
 
 <section class="page-banner">
         <div class="banner-content">
@@ -98,8 +101,8 @@ bodyClass: ""
                         
                         <div class="form-group">
                             <label for="password">Password *</label>
-                            <input type="password" id="password" name="password" autocomplete="new-password" required>
-                            <p class="password-hint">Password must be at least 8 characters long and include a number, uppercase letter, and special character.</p>
+                            <input type="password" id="password" name="password" autocomplete="new-password" aria-describedby="password-hint" required>
+                            <p class="password-hint" id="password-hint">Password must be at least 8 characters long and include a number, uppercase letter, and special character.</p>
                         </div>
                         
                         <div class="form-group">
@@ -119,7 +122,8 @@ bodyClass: ""
                         
                         <div class="form-group checkbox-group">
                             <input type="checkbox" id="termsConditions" name="termsConditions" required>
-                            <label for="termsConditions">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+                            {# No published Terms or Privacy pages exist yet, so these stay plain text. #}
+                            <label for="termsConditions">I agree to the Terms &amp; Conditions and Privacy Policy</label>
                         </div>
                         
                         <div class="form-group checkbox-group">
@@ -158,11 +162,13 @@ bodyClass: ""
                 <div class="help-option">
                     <i class="fas fa-question-circle"></i>
                     <h3>FAQ</h3>
-                    <p>Check our <a href="#">Frequently Asked Questions</a> for common account issues.</p>
+                    <p>Check our Frequently Asked Questions for common account issues.</p>
                 </div>
             </div>
         </div>
     </section>
+
+</main>
 
 {% include "footer.njk" %}
 
@@ -254,23 +260,42 @@ bodyClass: ""
             
             function highlightInvalid(element, message) {
                 element.classList.add('error');
+                element.setAttribute('aria-invalid', 'true');
                 
                 // Create error message if it doesn't exist
                 let errorMessage = element.parentNode.querySelector('.error-message');
                 if (!errorMessage) {
                     errorMessage = document.createElement('p');
                     errorMessage.className = 'error-message';
+                    errorMessage.id = (element.id || element.name) + '-error';
+                    errorMessage.setAttribute('role', 'alert');
                     element.parentNode.appendChild(errorMessage);
                 }
                 
                 errorMessage.textContent = message;
+
+                // Keep any existing description (e.g. the password hint) intact.
+                const describedBy = (element.getAttribute('aria-describedby') || '')
+                    .split(/\s+/)
+                    .filter((id) => id && id !== errorMessage.id);
+                describedBy.push(errorMessage.id);
+                element.setAttribute('aria-describedby', describedBy.join(' '));
             }
             
             function removeHighlight(element) {
                 element.classList.remove('error');
+                element.removeAttribute('aria-invalid');
                 
                 const errorMessage = element.parentNode.querySelector('.error-message');
                 if (errorMessage) {
+                    const describedBy = (element.getAttribute('aria-describedby') || '')
+                        .split(/\s+/)
+                        .filter((id) => id && id !== errorMessage.id);
+                    if (describedBy.length > 0) {
+                        element.setAttribute('aria-describedby', describedBy.join(' '));
+                    } else {
+                        element.removeAttribute('aria-describedby');
+                    }
                     errorMessage.remove();
                 }
             }

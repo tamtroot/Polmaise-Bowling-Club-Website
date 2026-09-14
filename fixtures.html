@@ -1,5 +1,6 @@
 ---
 pageTitle: "Fixtures - Polmaise Bowling Club"
+metaDescription: "Polmaise Bowling Club fixture list for the 2026 season, including competitions, venues, dates and confirmation status."
 permalink: "/fixtures.html"
 navActive: "fixtures"
 prefix: ""
@@ -29,6 +30,8 @@ bodyClass: ""
 <body>
 
 {% include "header.njk" %}
+
+<main>
 
 <section class="page-banner">
         <div class="banner-content">
@@ -147,7 +150,8 @@ bodyClass: ""
         
         /* Style for past fixtures */
         .fixtures-table tbody tr.past-fixture {
-            color: #aaa;
+            /* 4.96:1 on #f5f5f5; was #aaa at 2.13:1 */
+            color: #6a6a6a;
             background-color: #f5f5f5;
         }
         
@@ -244,7 +248,8 @@ bodyClass: ""
             
             .fixture-card.past-fixture {
                 background-color: #f5f5f5 !important;
-                color: #aaa;
+                /* 4.96:1 on #f5f5f5; was #aaa at 2.13:1 */
+                color: #6a6a6a;
             }
             
             /* Next fixture highlighting - must come after base .fixture-card */
@@ -304,7 +309,8 @@ bodyClass: ""
             }
             
             .fixture-confirmed.Proposed {
-                background-color: #ff9800;
+                /* white on #b45309 = 5.02:1; #ff9800 was 2.16:1 */
+                background-color: #b45309;
             }
             
             .fixture-confirmed.TBC {
@@ -312,7 +318,8 @@ bodyClass: ""
             }
             
             .fixture-confirmed.Confirmed {
-                background-color: #4caf50;
+                /* white on #2e7d32 = 5.13:1; #4caf50 was 2.78:1 */
+                background-color: #2e7d32;
             }
             
             .fixture-title {
@@ -353,6 +360,8 @@ bodyClass: ""
             }
         }
     </style>
+
+</main>
 
 {% include "footer.njk" %}
 

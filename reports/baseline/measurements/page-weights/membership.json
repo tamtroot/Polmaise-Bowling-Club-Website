@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 4,
-  "totalBytes": 52126,
+  "totalBytes": 58978,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 15903
+      "bytes": 19690
     },
     "image": {
       "count": 1,
@@ -22,31 +22,31 @@
     },
     "script": {
       "count": 1,
-      "bytes": 5239
+      "bytes": 6825
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27444
+      "bytes": 28923
     }
   },
   "largestResources": [
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
+      "bytes": 28923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/membership.html",
-      "bytes": 15903,
+      "bytes": 19690,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 5239,
+      "bytes": 6825,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
@@ -69,21 +69,21 @@
     },
     {
       "url": "http://127.0.0.1:4173/membership.html",
-      "bytes": 15903,
+      "bytes": 19690,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 5239,
+      "bytes": 6825,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
+      "bytes": 28923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

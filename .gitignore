@@ -1,6 +1,8 @@
 node_modules/
 _site/
+_site-alt/
 .cache/
+.cache-alt/
 playwright-report/
 test-results/
 reports/latest/

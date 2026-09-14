@@ -41,6 +41,15 @@ test("HTML validation baseline", async ({}, testInfo) => {
 
   const htmlValidate = new HtmlValidate({
     extends: ["html-validate:recommended"],
+    rules: {
+      // Stage 7 marks card controls (gallery albums, news cards) with
+      // role="button". They contain headings, which a native <button> may not,
+      // so the ARIA pattern is the correct choice here.
+      // role="region" is used for the FAQ panels and the scrollable fees table;
+      // the site's global `section { padding: 60px 0 }` rule would change their
+      // layout, so the div + role pattern is deliberate.
+      "prefer-native-element": ["error", { exclude: ["button", "region"] }],
+    },
   });
   const htmlFiles = await findHtmlFiles(projectRoot);
   const findings = [];

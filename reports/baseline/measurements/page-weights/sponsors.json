@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 15,
-  "totalBytes": 324463,
+  "totalBytes": 330400,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 26993
+      "bytes": 29865
     },
     "image": {
       "count": 12,
@@ -22,11 +22,11 @@
     },
     "script": {
       "count": 1,
-      "bytes": 5239
+      "bytes": 6825
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27444
+      "bytes": 28923
     }
   },
   "largestResources": [
@@ -52,18 +52,18 @@
       "contentType": "image/png"
     },
     {
-      "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
-      "status": 200,
-      "resourceType": "stylesheet",
-      "contentType": "text/css; charset=utf-8"
-    },
-    {
       "url": "http://127.0.0.1:4173/sponsors.html",
-      "bytes": 26993,
+      "bytes": 29865,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 28923,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/willsweep-banner-w1600.webp",
@@ -101,18 +101,18 @@
       "contentType": "image/svg+xml"
     },
     {
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 6825,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
       "url": "http://127.0.0.1:4173/Images/scotia-w400.jpg",
       "bytes": 6331,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/jpeg"
-    },
-    {
-      "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 5239,
-      "status": 200,
-      "resourceType": "script",
-      "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/philc-w400.webp",
@@ -223,21 +223,21 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 5239,
+      "bytes": 6825,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/sponsors.html",
-      "bytes": 26993,
+      "bytes": 29865,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
+      "bytes": 28923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

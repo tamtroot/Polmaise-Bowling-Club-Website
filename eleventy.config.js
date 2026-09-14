@@ -1,3 +1,5 @@
+import path from "node:path";
+
 import {
   ROLE_WIDTHS,
   imageAttributes,
@@ -38,6 +40,17 @@ export default function configureEleventy(eleventyConfig) {
   eleventyConfig.addFilter("imageSize", imageSize);
   eleventyConfig.addFilter("imageAttributes", imageAttributes);
   eleventyConfig.addGlobalData("imageWidths", ROLE_WIDTHS);
+
+  // The sitemap lists rendered HTML pages only (never the sitemap itself,
+  // robots.txt or copied development files).
+  eleventyConfig.addFilter("publicPages", (pages) =>
+    (pages ?? [])
+      .filter(
+        (item) =>
+          typeof item.url === "string" && (item.url.endsWith(".html") || item.url === "/"),
+      )
+      .sort((left, right) => left.url.localeCompare(right.url)),
+  );
 
   // The same helpers are exposed as callable Nunjucks globals so templates can
   // register derivatives for markup that is generated in JavaScript.
@@ -99,10 +112,13 @@ export default function configureEleventy(eleventyConfig) {
   return {
     dir: {
       input: ".",
-      output: "_site",
+      // Defaults to _site; SITE_ROOT lets a cloud-synced working copy build
+      // somewhere else (see tools/build-site.mjs).
+      output: process.env.SITE_ROOT ? path.resolve(process.cwd(), process.env.SITE_ROOT) : "_site",
     },
     htmlTemplateEngine: "njk",
-    templateFormats: ["html"],
+    // "njk" lets sitemap.xml and robots.txt be generated from templates.
+    templateFormats: ["html", "njk"],
     pathPrefix: "/",
   };
 }

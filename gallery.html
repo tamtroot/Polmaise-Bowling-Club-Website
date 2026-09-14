@@ -1,5 +1,6 @@
 ---
 pageTitle: "Gallery - Polmaise Bowling Club"
+metaDescription: "Photo galleries from Polmaise Bowling Club, including recent seasons, competitions, social events and the Sandy Deans archive."
 permalink: "/gallery.html"
 navActive: "gallery"
 prefix: ""
@@ -63,6 +64,9 @@ bodyClass: ""
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
             background-color: #fff;
+            display: block;
+            color: inherit;
+            text-decoration: none;
         }
 
         .album-card:hover {
@@ -283,6 +287,8 @@ bodyClass: ""
 
 {% include "header.njk" %}
 
+<main>
+
 <section class="page-banner">
         <div class="banner-content">
             <h2>Gallery</h2>
@@ -297,12 +303,20 @@ bodyClass: ""
                 
                 <!-- Finals Day 2026 -->
 {% for card in gallery.cards %}
-                <div class="album-card"{% if card.dataAlbum %} data-album="{{ card.dataAlbum }}"{% endif %}{% if card.open %} data-album-open="{{ card.open }}"{% else %} data-album-link="{{ card.link }}"{% endif %}>
+{% if card.open %}
+                <div class="album-card" role="button" tabindex="0"{% if card.dataAlbum %} data-album="{{ card.dataAlbum }}"{% endif %} data-album-open="{{ card.open }}">
+{% else %}
+                <a class="album-card" href="{{ card.link }}">
+{% endif %}
                     {% photoImage card.thumbnail.src, card.thumbnail.alt, { role: "grid", sizes: "(max-width: 768px) 90vw, 380px", class: "album-thumbnail" + (" " + card.thumbnail.extraClass if card.thumbnail.extraClass else "") } %}
                     <div class="album-info">
                         <h3>{{ card.title }}</h3>
                     </div>
+{% if card.open %}
                 </div>
+{% else %}
+                </a>
+{% endif %}
 {% endfor %}
             </div>{% for album in gallery.albums %}
             <div class="album-content" id="{{ album.id }}">
@@ -331,6 +345,8 @@ bodyClass: ""
 {% endfor %}
         </div>
     </section>
+
+</main>
 
 {% include "footer.njk" %}
 

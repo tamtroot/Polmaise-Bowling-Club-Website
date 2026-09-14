@@ -1,5 +1,6 @@
 ---
 pageTitle: "News & Events - Polmaise Bowling Club"
+metaDescription: "Latest news and events from Polmaise Bowling Club, including competition results, club events and community stories."
 permalink: "/news.html"
 navActive: "news"
 prefix: ""
@@ -160,6 +161,9 @@ bodyClass: ""
             cursor: pointer;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: relative;
+            display: block;
+            color: inherit;
+            text-decoration: none;
         }
 
         .news-card:hover {
@@ -676,6 +680,8 @@ bodyClass: ""
 
 {% include "header.njk" %}
 
+<main>
+
 <section class="page-banner">
         <div class="banner-content">
             <h2>News & Events</h2>
@@ -694,7 +700,7 @@ bodyClass: ""
                         <!-- News Grid for Thumbnails -->
                         <div class="news-grid">
                             <!-- John “Chucks” Johnstone Memorial Tournament 2026 -->
-                            <div class="news-card" data-news-article="article-chucks-memorial-2026">
+                            <div role="button" tabindex="0" class="news-card" data-news-article="article-chucks-memorial-2026">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/2026/Chucks 2026/Winners.jpg", "John “Chucks” Johnstone Memorial Tournament 2026 winners William Maxwell, James Craig and Club President David Stewart", { loading: false, sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -704,7 +710,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- East & West Champion of Champions 2026 -->
-                            <div class="news-card" data-news-article="article-east-west-champion-of-champions-2026">
+                            <div role="button" tabindex="0" class="news-card" data-news-article="article-east-west-champion-of-champions-2026">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/2026/Aaron Champ of Champs/Aaron & President Davie.jpg", "Polmaise President Davie Stewart congratulates Aaron Furzer following his East & West Champion of Champions victory", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -714,7 +720,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- Charles McNeil Memorial Pairs 2026 -->
-                            <div class="news-card" data-news-article="article-charlie-mcneil-2026">
+                            <div role="button" tabindex="0" class="news-card" data-news-article="article-charlie-mcneil-2026">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/2026/Charlie McNiel 2026/Champs.jpg", "Charlie's daughters, Stacy and Charlene, present the Memorial Trophy to winners Thomas Stevenson and Lewis Lyle", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -724,7 +730,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- Champion of Champions 2026 -->
-                            <div class="news-card" data-news-article="article-champion-of-champions-2026">
+                            <div role="button" tabindex="0" class="news-card" data-news-article="article-champion-of-champions-2026">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/2026/Champion of Champions 2026/Trophy.jpg", "Aaron Furzer receives the Stirling Area and District Champion of Champions trophy following his 21–19 victory over James Wray, alongside the event sponsor and his opponent.", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -734,7 +740,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- County Finals 2026 -->
-                            <div class="news-card" data-news-article="article-county-finals-2026">
+                            <div role="button" tabindex="0" class="news-card" data-news-article="article-county-finals-2026">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/2026/County Finals 2026/Senior Fours.jpg", "Polmaise Bowling Club's winning Senior Fours team pictured at Burnhead Bowling Club following their Stirling County Association Finals victory", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -744,7 +750,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- Scottish Area Final 2026 -->
-                            <div class="news-card" data-news-article="article-scottish-area-final-2026">
+                            <div role="button" tabindex="0" class="news-card" data-news-article="article-scottish-area-final-2026">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/2026/Scottish Area Final 2026/Aaron and James Winners medals.jpg", "Aaron Furzer and James Craig proudly displaying their gold medals after their Area Final victories", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", style: "object-position: center 38%;" } %}
                                 </div>
@@ -754,7 +760,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- Greig Ryan Pairs 2026 -->
-                            <div class="news-card" data-news-article="article-greig-ryan-2026">
+                            <div role="button" tabindex="0" class="news-card" data-news-article="article-greig-ryan-2026">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/2026/Greg Ryan Memorial 2026/Winners.jpg", "2026 Greig Ryan Pairs champions Aaron Furzer and Sandy Deans", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -764,7 +770,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- Fallin Primary Try Bowls Day 2026 -->
-                            <div class="news-card" data-news-article="article-fallin-primary-2026">
+                            <div role="button" tabindex="0" class="news-card" data-news-article="article-fallin-primary-2026">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/2026/FPS Try Bowls Day/FPS1.jpg", "Fallin Primary School pupils proudly pose outside Polmaise Bowling Club holding their participation certificates", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -774,7 +780,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- John Binnie Memorial Friendly -->
-                            <div class="news-card" data-news-article="article-john-binnie-2026">
+                            <div role="button" tabindex="0" class="news-card" data-news-article="article-john-binnie-2026">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/2026/John Binnie Trophy/JB1.jpg", "John Binnie's sons present the memorial trophy at the Polmaise and Spittalmyre friendly match", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -784,7 +790,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- Patons & Baldwins 100th Anniversary Friendly -->
-                            <div class="news-card" data-news-article="article-patons-100th-2026">
+                            <div role="button" tabindex="0" class="news-card" data-news-article="article-patons-100th-2026">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/2026/Patons Friendly/FB_IMG_1779707564940.jpg", "Robert Donaldson presents a commemorative plaque to Patons President H. Spence", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -794,7 +800,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- Sandy Deans 300th County Cap -->
-                            <div class="news-card" data-news-article="article-sandy-300th-cap-2026">
+                            <div role="button" tabindex="0" class="news-card" data-news-article="article-sandy-300th-cap-2026">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/2026/Hamilton Trophy/FB_IMG_1779550801450.jpg", "Sandy Deans marks his 300th county cap at Polmaise Bowling Club", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -804,7 +810,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- Opening of the Green 2026 -->
-                            <div class="news-card" data-news-article="article-opening-green-2026">
+                            <div role="button" tabindex="0" class="news-card" data-news-article="article-opening-green-2026">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/2026/Bye.png", "Opening of the Green 2026", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -1327,7 +1333,7 @@ bodyClass: ""
                     
                     <!-- 2025 News Archive -->
                     <section id="news-archive-2025" class="news-archive">
-                        <div class="news-archive-header" data-news-archive-toggle>
+                        <div role="button" tabindex="0" class="news-archive-header" data-news-archive-toggle>
                             <h2>2025 News</h2>
                             <span class="archive-toggle-icon" id="archive-toggle-icon">
                                 <i class="fas fa-chevron-down"></i>
@@ -1338,7 +1344,7 @@ bodyClass: ""
                         <!-- News Grid for Thumbnails -->
                         <div class="news-grid">
                         <!-- Presentation Dance 2025 Event Report -->
-                        <div class="news-card" data-news-article="article-presentation-dance-2025-event">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-presentation-dance-2025-event">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/PresentationDance2025/20251025_223526.jpg", "Presentation Dance 2025 – A Night to Remember", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1348,7 +1354,7 @@ bodyClass: ""
                             </div>
                         </div>
                         <!-- John “Chucks” Johnstone Memorial Tournament 2025 -->
-                        <div class="news-card" data-news-article="article-chucks-2025">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-chucks-2025">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/chucks winners.jpg", "John “Chucks” Johnstone Memorial Tournament 2025 – Winners", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", style: "object-position: center 35%;" } %}
                             </div>
@@ -1358,7 +1364,7 @@ bodyClass: ""
                             </div>
                         </div>
                         <!-- Annual Presentation Dance 2025 -->
-                        <div class="news-card" data-href="News articles/presentation-dance-2025.html">
+                        <a class="news-card" href="News articles/presentation-dance-2025.html" data-href="News articles/presentation-dance-2025.html">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/Presentation.png", "Annual Presentation Dance – Tickets Now Available!", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1366,9 +1372,9 @@ bodyClass: ""
                             <div class="news-card-title">
                                 <h3>Annual Presentation Dance – Tickets Now Available!</h3>
                             </div>
-                        </div>
+                        </a>
                         <!-- Charles McNeil Memorial Pairs Tournament 2025 -->
-                        <div class="news-card" data-news-article="article-charlie-mcneil-2025">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-charlie-mcneil-2025">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/CharlieMcN/20250816_164614.jpg", "Charles McNeil Memorial Pairs Tournament 2025", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1378,7 +1384,7 @@ bodyClass: ""
                             </div>
                         </div>
                         <!-- City of Stirling Top Fifteen Champions 2025 -->
-                        <div class="news-card" data-news-article="article-top-15-2025">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-top-15-2025">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/Top15Final/20250810_134840.jpg", "Polmaise BC – City of Stirling Top Fifteen Champions 2025", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1388,7 +1394,7 @@ bodyClass: ""
                             </div>
                         </div>
                         <!-- Twa Peters Memorial Tournament 2025 Article -->
-                        <div class="news-card" data-news-article="article-twa-peters-2025">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-twa-peters-2025">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/TwaPeters/Winners.jpg", "Winners - David McKean, James Brown, and Aaron Furzer lift the Twa Peters Memorial Trophy 2025", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1398,7 +1404,7 @@ bodyClass: ""
                             </div>
                         </div>
                         <!-- National Pairs Semi-Final Article -->
-                        <div class="news-card" data-news-article="article-national-pairs">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-national-pairs">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/NationalPairs/Bronze Medal.jpeg", "Aaron Furzer and James Brown at the Scottish National Pairs Championship", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1408,7 +1414,7 @@ bodyClass: ""
                             </div>
                         </div>
                         <!-- Kyle Malcolmson Double Medal Success Article -->
-                        <div class="news-card" data-news-article="article-kyle-double-medal">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-kyle-double-medal">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/Kyle Medal.jpg", "Kyle Malcolmson with his International Silver and National Bronze medals", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1418,7 +1424,7 @@ bodyClass: ""
                             </div>
                         </div>
                         <!-- Gary Malcomson Fourth District Champion of Champions Title -->
-                        <div class="news-card" data-news-article="article-gary-fourth-title">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-gary-fourth-title">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/GaryChamp/FB_IMG_1752916966707.jpg", "Gary Malcomson - District Champion of Champions 2025", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1428,7 +1434,7 @@ bodyClass: ""
                             </div>
                         </div>
                         <!-- County Triples Champions Article -->
-                        <div class="news-card" data-news-article="article-county-triples-win">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-county-triples-win">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/CountyTrips.jpg", "Polmaise County Triples Champions 2025", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1438,7 +1444,7 @@ bodyClass: ""
                             </div>
                         </div>
                         <!-- Kyle Malcolmson Scotland U18 Article -->
-                        <div class="news-card" data-news-article="article-kyle-u18">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-kyle-u18">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/KyleMalcomson.jpeg", "Kyle Malcolmson - Scotland U18 International Squad", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1448,7 +1454,7 @@ bodyClass: ""
                             </div>
                         </div>
                         <!-- Scottish District Qualifier Finals - Pairs Victory Article -->
-                        <div class="news-card" data-news-article="article-pairs-victory">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-pairs-victory">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/ScottishQ/20250624_193833.jpg", "Aaron Furzer and William Black celebrate their Scottish District Pairs victory", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1459,7 +1465,7 @@ bodyClass: ""
                         </div>
                         
                         <!-- County & Scottish Qualifier Finals Article -->
-                        <div class="news-card" data-news-article="article-county-finals">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-county-finals">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/CountyFinals.jpg", "Polmaise players competing in County and Scottish Qualifier Finals", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1470,7 +1476,7 @@ bodyClass: ""
                         </div>
                         
                         <!-- Greg Ryan Memorial Pairs Tournament Article -->
-                        <div class="news-card" data-news-article="article-greg-ryan-memorial">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-greg-ryan-memorial">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/GregRyanMemorial/Aaron and Sandy.jpg", "Winners - Sandy Deans and Aaron Furzer", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1481,7 +1487,7 @@ bodyClass: ""
                         </div>
                         
                         <!-- Fallin Primary Article -->
-                        <div class="news-card" data-news-article="article-fallin-primary">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-fallin-primary">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/FallinPrimaryCertificate.jpg", "Fallin Primary School Try Bowls Certificate", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1492,7 +1498,7 @@ bodyClass: ""
                         </div>
                         
                         <!-- Kyle Malcomson Article -->
-                        <div class="news-card" data-news-article="article-kyle">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article-kyle">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/KyleMalcomson.jpeg", "Kyle Malcomson - Rising Star of Polmaise Bowling Club", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1503,7 +1509,7 @@ bodyClass: ""
                         </div>
                         
                         <!-- Sandy Deans Archive Announcement -->
-                        <div class="news-card" data-news-article="sandy-deans-archive">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="sandy-deans-archive">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/Archive/Photo 2.jpg", "Sandy Deans Historical Archive", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1514,7 +1520,7 @@ bodyClass: ""
                         </div>
                         
                         <!-- Card 0 (New) -->
-                        <div class="news-card" data-news-article="article0">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article0">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/2025/Shirt.png", "David Gourlay presents signed shirt to Polmaise Bowling Club", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1525,7 +1531,7 @@ bodyClass: ""
                         </div>
                         
                         <!-- Card 1 -->
-                        <div class="news-card" data-news-article="article1">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article1">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/news goth.jpg", "The Herald feature on Gothenburg Pub and Polmaise Bowling Club", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1536,7 +1542,7 @@ bodyClass: ""
                         </div>
                         
                         <!-- Card 2 -->
-                        <div class="news-card" data-news-article="article2">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article2">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/Top9.jpg", "Polmaise Bowling Club Top 9 Victory", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1547,7 +1553,7 @@ bodyClass: ""
                         </div>
                         
                         <!-- Card 3 -->
-                        <div class="news-card" data-news-article="article3">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article3">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/Green Opening.jpg", "Opening of the Green 2025", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -1558,7 +1564,7 @@ bodyClass: ""
                         </div>
                         
                         <!-- Card 4 -->
-                        <div class="news-card" data-news-article="article4">
+                        <div role="button" tabindex="0" class="news-card" data-news-article="article4">
                             <div class="news-card-thumbnail">
                                 {% photoImage "./Images/Green Maintenance.jpg", "Club Renovation Progress", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                             </div>
@@ -2373,7 +2379,7 @@ bodyClass: ""
                     <!-- History Section -->
                     <hr class="article-divider"> <!-- Optional divider -->
                     <section id="history" class="history-feature news-archive">
-                        <div class="news-archive-header" data-history-archive-toggle>
+                        <div role="button" tabindex="0" class="news-archive-header" data-history-archive-toggle>
                             <h2>From the Green, Through the Years - A Journey into Polmaise Bowling Club's Past</h2>
                             <span class="archive-toggle-icon" id="history-toggle-icon">
                                 <i class="fas fa-chevron-down"></i>
@@ -2424,7 +2430,7 @@ bodyClass: ""
                         <!-- History Grid for Thumbnails -->
                         <div class="news-grid" id="history-grid">
                             <!-- History Card 5: 2013 -->
-                            <div class="news-card" data-history-article="history-2013">
+                            <div role="button" tabindex="0" class="news-card" data-history-article="history-2013">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/Archive/HistoricalArchive/Gary&Rita1.jpg", "Rita Smith and Gary Malcolmson - Scottish Mixed Pairs Champions", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -2434,7 +2440,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- History Card 6: 2003 - British Isles Triples Champions -->
-                            <div class="news-card" data-history-article="history-2003">
+                            <div role="button" tabindex="0" class="news-card" data-history-article="history-2003">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/Archive/HistoricalArchive/Triples.jpg", "Polmaise Bowling Club - British Isles Triples Champions 2003", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -2444,7 +2450,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- History Card 7: 2002 - Scottish Triples Champions -->
-                            <div class="news-card" data-history-article="history-2002">
+                            <div role="button" tabindex="0" class="news-card" data-history-article="history-2002">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/Archive/HistoricalArchive/IMG-20250509-WA0001.jpg", "Polmaise Bowling Club - Scottish Triples Champions 2002", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -2454,7 +2460,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- History Card 4: 1988 -->
-                            <div class="news-card" data-history-article="history-1988">
+                            <div role="button" tabindex="0" class="news-card" data-history-article="history-1988">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/Archive/1988.jpg", "Polmaise Bowling Club - Scottish Top Ten Champions 1988", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -2464,7 +2470,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- History Card 3: 1961 -->
-                            <div class="news-card" data-history-article="history-1961">
+                            <div role="button" tabindex="0" class="news-card" data-history-article="history-1961">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/Archive/HistoricalArchive/Golden Jubilee.jpg", "Polmaise Bowling Club Golden Jubilee 1961", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -2474,7 +2480,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- History Card 2: 1942 -->
-                            <div class="news-card" data-history-article="history-1942">
+                            <div role="button" tabindex="0" class="news-card" data-history-article="history-1942">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/Archive/HistoricalArchive/Stirling_Observer_11_August_1942_0006_Clip.jpg", "J. Gwynne Sr. Championship Win 1942", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -2484,7 +2490,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- History Card 1.8: 1935 Macintosh Trophy -->
-                            <div class="news-card" data-history-article="history-1935">
+                            <div role="button" tabindex="0" class="news-card" data-history-article="history-1935">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/Archive/HistoricalArchive/Macintosh 1935.jpg", "Macintosh Trophy Win 1935", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -2494,7 +2500,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- History Card 1.5: 1914 Trophy -->
-                            <div class="news-card" data-history-article="history-1914">
+                            <div role="button" tabindex="0" class="news-card" data-history-article="history-1914">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/Archive/HistoricalArchive/8th June 1914.jpg", "Polmaise Club's First Trophy Win 1914", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -2504,7 +2510,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- History Card 1.2: 1911 First Match -->
-                            <div class="news-card" data-history-article="history-1911-july">
+                            <div role="button" tabindex="0" class="news-card" data-history-article="history-1911-july">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_15_July_1911_0005_Clip.jpg", "First Match on Polmaise Green 1911", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -2514,7 +2520,7 @@ bodyClass: ""
                                 </div>
                             </div>
                             <!-- History Card 1: 1911 Opening -->
-                            <div class="news-card" data-history-article="history-1911">
+                            <div role="button" tabindex="0" class="news-card" data-history-article="history-1911">
                                 <div class="news-card-thumbnail">
                                     {% photoImage "./Images/Archive/HistoricalArchive/Opening of Green.jpg", "Opening of Bowling Green 1911", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                                 </div>
@@ -3252,6 +3258,8 @@ bodyClass: ""
         <img class="lightbox-content" id="lightbox-img" alt="">
         <div id="lightbox-caption" class="lightbox-caption"></div>
     </div>
+
+</main>
 
 {% include "footer.njk" %}
 

@@ -1,5 +1,6 @@
 ---
 pageTitle: "Membership - Polmaise Bowling Club"
+metaDescription: "Membership at Polmaise Bowling Club: benefits, how to join, fees and payment methods, plus answers to common joining questions."
 permalink: "/membership.html"
 navActive: "membership"
 prefix: ""
@@ -29,6 +30,8 @@ bodyClass: ""
 <body>
 
 {% include "header.njk" %}
+
+<main>
 
 <section class="page-banner">
         <div class="banner-content">
@@ -145,7 +148,7 @@ bodyClass: ""
             <h2>Membership Fees</h2>
             <p class="section-intro">Our membership fees are structured to be inclusive and provide excellent value for all members.</p>
             
-            <div class="fees-table-container">
+            <div class="fees-table-container" tabindex="0" role="region" aria-label="Membership fees table">
                 <table class="fees-table">
                     <thead>
                         <tr>
@@ -221,42 +224,44 @@ bodyClass: ""
             
             <div class="accordion">
                 <div class="accordion-item">
-                    <div class="accordion-header">Do I need to have played bowls before to join?</div>
-                    <div class="accordion-content">
+                    <button type="button" class="accordion-header" id="faq-1-header" aria-expanded="false" aria-controls="faq-1-content">Do I need to have played bowls before to join?</button>
+                    <div class="accordion-content" id="faq-1-content" aria-labelledby="faq-1-header" role="region">
                         <p>No, we welcome complete beginners! Our club has experienced coaches who will help you learn the basics and develop your skills. We provide all necessary equipment for beginners.</p>
-                    </div>
+                        </div>
                 </div>
                 
                 <div class="accordion-item">
-                    <div class="accordion-header">Is there a dress code for playing?</div>
-                    <div class="accordion-content">
+                    <button type="button" class="accordion-header" id="faq-2-header" aria-expanded="false" aria-controls="faq-2-content">Is there a dress code for playing?</button>
+                    <div class="accordion-content" id="faq-2-content" aria-labelledby="faq-2-header" role="region">
                         <p>For casual play and practice, comfortable clothing and flat-soled shoes are sufficient. For matches and competitions, white or club-approved clothing is required. Full details are provided in our welcome pack.</p>
-                    </div>
+                        </div>
                 </div>
                 
                 <div class="accordion-item">
-                    <div class="accordion-header">Can I try before I join?</div>
-                    <div class="accordion-content">
+                    <button type="button" class="accordion-header" id="faq-3-header" aria-expanded="false" aria-controls="faq-3-content">Can I try before I join?</button>
+                    <div class="accordion-content" id="faq-3-content" aria-labelledby="faq-3-header" role="region">
                         <p>Absolutely! We offer free taster sessions for prospective members. Contact us to arrange a convenient time to visit the club and try bowling under the guidance of our friendly members.</p>
-                    </div>
+                        </div>
                 </div>
                 
                 <div class="accordion-item">
-                    <div class="accordion-header">Are there opportunities for competitive play?</div>
-                    <div class="accordion-content">
+                    <button type="button" class="accordion-header" id="faq-4-header" aria-expanded="false" aria-controls="faq-4-content">Are there opportunities for competitive play?</button>
+                    <div class="accordion-content" id="faq-4-content" aria-labelledby="faq-4-header" role="region">
                         <p>Yes, we offer various levels of competitive play, from friendly internal competitions to league matches and national tournaments. Members can participate at a level that suits their ability and ambition.</p>
-                    </div>
+                        </div>
                 </div>
                 
                 <div class="accordion-item">
-                    <div class="accordion-header">Do I need to own my own bowls?</div>
-                    <div class="accordion-content">
+                    <button type="button" class="accordion-header" id="faq-5-header" aria-expanded="false" aria-controls="faq-5-content">Do I need to own my own bowls?</button>
+                    <div class="accordion-content" id="faq-5-content" aria-labelledby="faq-5-header" role="region">
                         <p>While many members eventually purchase their own bowls, we have club sets available for beginners and those trying the sport. Our members can also advise you on purchasing suitable equipment when you're ready.</p>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
     </section>
+
+</main>
 
 {% include "footer.njk" %}
 

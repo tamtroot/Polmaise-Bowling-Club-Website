@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 11,
-  "totalBytes": 377249,
+  "totalBytes": 383535,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 54688
+      "bytes": 57909
     },
     "image": {
       "count": 8,
@@ -22,27 +22,27 @@
     },
     "script": {
       "count": 1,
-      "bytes": 5239
+      "bytes": 6825
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27444
+      "bytes": 28923
     }
   },
   "largestResources": [
+    {
+      "url": "http://127.0.0.1:4173/about.html",
+      "bytes": 57909,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
+    },
     {
       "url": "http://127.0.0.1:4173/Images/Peter%20Black-w800.webp",
       "bytes": 55314,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/about.html",
-      "bytes": 54688,
-      "status": 200,
-      "resourceType": "document",
-      "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/history-2-w800.webp",
@@ -74,7 +74,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
+      "bytes": 28923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -95,7 +95,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 5239,
+      "bytes": 6825,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
@@ -111,7 +111,7 @@
   "resources": [
     {
       "url": "http://127.0.0.1:4173/about.html",
-      "bytes": 54688,
+      "bytes": 57909,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -174,14 +174,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 5239,
+      "bytes": 6825,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
+      "bytes": 28923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

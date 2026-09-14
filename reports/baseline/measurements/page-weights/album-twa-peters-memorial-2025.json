@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 35,
-  "totalBytes": 695532,
+  "totalBytes": 701574,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 10871
+      "bytes": 13848
     },
     "image": {
       "count": 32,
@@ -22,11 +22,11 @@
     },
     "script": {
       "count": 1,
-      "bytes": 5239
+      "bytes": 6825
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27444
+      "bytes": 28923
     }
   },
   "largestResources": [
@@ -46,7 +46,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
+      "bytes": 28923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -433,21 +433,21 @@
     },
     {
       "url": "http://127.0.0.1:4173/PhotoAlbums/twa-peters-memorial-2025.html",
-      "bytes": 10871,
+      "bytes": 13848,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 5239,
+      "bytes": 6825,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
+      "bytes": 28923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

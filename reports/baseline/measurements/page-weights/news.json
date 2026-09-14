@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 16,
-  "totalBytes": 1426480,
+  "totalBytes": 1433824,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 298129
+      "bytes": 302408
     },
     "image": {
       "count": 13,
@@ -22,17 +22,17 @@
     },
     "script": {
       "count": 1,
-      "bytes": 5239
+      "bytes": 6825
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27444
+      "bytes": 28923
     }
   },
   "largestResources": [
     {
       "url": "http://127.0.0.1:4173/news.html",
-      "bytes": 298129,
+      "bytes": 302408,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -123,14 +123,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
+      "bytes": 28923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 5239,
+      "bytes": 6825,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
@@ -237,21 +237,21 @@
     },
     {
       "url": "http://127.0.0.1:4173/news.html",
-      "bytes": 298129,
+      "bytes": 302408,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 5239,
+      "bytes": 6825,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27444,
+      "bytes": 28923,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
