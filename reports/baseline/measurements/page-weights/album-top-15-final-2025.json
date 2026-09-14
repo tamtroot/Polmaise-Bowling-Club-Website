@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 35,
-  "totalBytes": 64984081,
+  "totalBytes": 64983436,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 10449
+      "bytes": 9804
     },
     "image": {
       "count": 32,
@@ -433,7 +433,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/PhotoAlbums/top-15-final-2025.html",
-      "bytes": 10449,
+      "bytes": 9804,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"

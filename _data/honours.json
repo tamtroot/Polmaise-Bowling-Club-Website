@@ -1,0 +1,1294 @@
+{
+  "years": [
+    {
+      "year": "2026",
+      "achievements": [
+        "Pullar Trophy",
+        "Scottish Area Under 25 Singles: James Craig",
+        "Scottish Area Gents Singles: Aaron Furzer",
+        "County Under 25 Singles: K. Malcomson",
+        "County Senior Fours: D. McCormick, P. M. Black, D. Dalgleish, G. Rough",
+        "Area & District Champion of Champions: Aaron Furzer",
+        "Peter Smith Memorial Trophy",
+        "Murray Cup",
+        "John Binnie Memorial Trophy"
+      ],
+      "competitionHeading": "Club Competitions (2026)",
+      "competitions": [
+        {
+          "name": "Gents Championship",
+          "winner": "A. Furzer"
+        },
+        {
+          "name": "Presidents Cup",
+          "winner": "A. Furzer"
+        },
+        {
+          "name": "Ladies Championship",
+          "winner": "A. Irving"
+        },
+        {
+          "name": "Ladies Thistle Shield",
+          "winner": "E. McMeechan"
+        },
+        {
+          "name": "The Stuart Primrose Cup",
+          "winner": "James Craig"
+        },
+        {
+          "name": "Mixed Pairs",
+          "winner": "R. Liddle & D. Dalgliesh"
+        },
+        {
+          "name": "2 Bowl Pairs",
+          "winner": "A. Deans & A. McNeil"
+        },
+        {
+          "name": "4 Bowl Pairs",
+          "winner": "T.B.D"
+        },
+        {
+          "name": "Ladies Pairs",
+          "winner": "S. Donaldson & I. Wylie"
+        },
+        {
+          "name": "Victory",
+          "winner": "T.B.D"
+        },
+        {
+          "name": "Junior Singles",
+          "winner": "K. Malcolmson"
+        },
+        {
+          "name": "Senior Singles Gentlemens Championship",
+          "winner": "D. McCormick"
+        },
+        {
+          "name": "James Black",
+          "winner": "T.B.D"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "achievements": [
+        "Top 9 Indoor Champions",
+        "Scottish Area Pairs: W. Black & A. Furzer",
+        "County Triples: G. Malcomson, W. Black, S. Flemming",
+        "Area & District Champion of Champions: Gary Malcomson",
+        "Reid Trophy",
+        "City of Stirling Top Fifteen Champions",
+        "Steins Trophy"
+      ],
+      "competitionHeading": "Club Competitions (2025)",
+      "competitions": [
+        {
+          "name": "2 Bowl Pairs",
+          "winner": "Billy Johnstone & Alex Brown"
+        },
+        {
+          "name": "4 Bowl Pairs",
+          "winner": "Gary Malcomson & James Brown"
+        },
+        {
+          "name": "Mixed Pairs",
+          "winner": "Gary Malcomson & Rita Smith"
+        },
+        {
+          "name": "Ladies Pairs",
+          "winner": "Rebecca Liddle & Jen Rough"
+        },
+        {
+          "name": "Victory",
+          "winner": "James Craig"
+        },
+        {
+          "name": "Junior Singles",
+          "winner": "James Craig"
+        },
+        {
+          "name": "Ladies Championship",
+          "winner": "R. Liddell"
+        },
+        {
+          "name": "Gents Championship",
+          "winner": "Aaron Furzer"
+        },
+        {
+          "name": "Senior Singles Gentlemens Championship",
+          "winner": "Sandy Deans"
+        },
+        {
+          "name": "Presidents Cup",
+          "winner": "Gary Malcomson"
+        },
+        {
+          "name": "The Stuart Primrose Cup",
+          "winner": "Craig Leishman"
+        },
+        {
+          "name": "James Black",
+          "winner": "Kevin Patterson"
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "achievements": [
+        "Central Singles: G. Malcolmson",
+        "Junior Singles: K. Malcolmson",
+        "County Pairs: S. Fleming & G. Malcolmson",
+        "County Senior Fours: A. Reynolds, L. Begg, P. M. Black & A. Deans",
+        "Scottish Senior Fours: A. McNeil, R. Johnstone, P. M. Black & A. Deans"
+      ]
+    },
+    {
+      "year": "2023",
+      "achievements": [
+        "Murray Cup",
+        "Pullar Trophy",
+        "Top Five Champions",
+        "Steins Trophy",
+        "Mackintosh Trophy",
+        "St. Dunstans Trophy",
+        "Duncan Trophy",
+        "Reid Trophy",
+        "Scottish Area Pairs: J. Brown & A. Furzer",
+        "Area & District Champion of Champions: G. Malcolmson"
+      ]
+    },
+    {
+      "year": "2022",
+      "achievements": [
+        "Murray Cup",
+        "Pullar Trophy",
+        "Top Five Champions",
+        "Kennard Trophy",
+        "Steins Trophy",
+        "Scottish Area Senior Fours: P. Smith, R. Johnstone, D. McCormick & A. Deans",
+        "Central Singles: G. Malcolmson",
+        "Central Fours: A. McNeil, M. Hearns, R. Donaldson & A. Hazel",
+        "Senior Fours: R. Goodman, R. Kennedy, P. Smith & R. Johnstone",
+        "County Triples: G. Brown, R. Johnstone & J. Brown",
+        "County Fours: M. Hearns, W. Armitage, R. Donaldson & A. Hazel",
+        "Senior Fours: L. Begg, P. Smith, P. M. Black & D. McCormick"
+      ]
+    },
+    {
+      "year": "2021",
+      "achievements": [
+        "City of Stirling Top Fifteen"
+      ]
+    },
+    {
+      "year": "2020",
+      "note": "No competitions due to COVID-19"
+    },
+    {
+      "year": "2019",
+      "achievements": [
+        "Scottish District Junior Singles: Aaron Furzel",
+        "St. Dunstans Trophy",
+        "County Top Five Singles",
+        "Central Singles: Gary Malcolmson",
+        "Central Junior Singles: Arron Furzel",
+        "Central Senior Rink: Rodger Goodman, Lawrence Begg, Peter Smith & Dick Kennedy"
+      ]
+    },
+    {
+      "year": "2018",
+      "achievements": [
+        "Scottish District Mixed Pairs: R. Smith & G. Malcolmson",
+        "Central Singles Champion: G. Malcolmson",
+        "Central Senior Rink: L. Begg, R. Goodman, J. Binnie & D. McCormick",
+        "St. Dunstans Trophy",
+        "New \"Top Five Singles\" Competition"
+      ]
+    },
+    {
+      "year": "2017",
+      "achievements": [
+        "Scottish District Pairs: D. Dalgleish & D. McCormick",
+        "Scottish District Triples: G. Brown, J. Brown & G. Malcolmson",
+        "Scottish District Mixed Pairs: R. Smith & G. Malcolmson",
+        "Central Junior Singles: G. Brown",
+        "Central Triples: D. McEwan Jnr., J. Brown & G. Malcolmson",
+        "Central Fours: D. Dalgleish, R. Donaldson, J. Wray & D. McCormick",
+        "Murray Cup",
+        "Ogilvie Trophy",
+        "City of Stirling Top Fifteen Champions"
+      ]
+    },
+    {
+      "year": "2016",
+      "achievements": [
+        "Scottish District Junior Singles: G. Malcolmson",
+        "District & Interdistrict Champion of Champions: G. Malcolmson",
+        "County Fours: P. Martin, D. Teven, R. Johnstone & J. Williams",
+        "Central Triples: D. McEwan Jnr., K. Paterson & A. Deans",
+        "Reid Trophy",
+        "Duncan Ogilvie Trophy",
+        "Steins Trophy"
+      ]
+    },
+    {
+      "year": "2015",
+      "achievements": [
+        "Scottish District Junior Singles: G. Malcolmson",
+        "Scottish District Mixed Pairs: R. Smith & A. Hazel",
+        "Scottish District Triples: J. Brown, K. Paterson & D. McCormick",
+        "County Junior Singles: A. Hazel",
+        "County 2 Bowl Pairs: J. Johnstone & G. Malcolmson",
+        "County Fours: A. McNeil, D. Teven, J. Brown & J. Williams",
+        "Central Singles: J. Brown",
+        "Central Pairs: A. Hazel & G. Malcolmson",
+        "District Nine League Champions",
+        "City of Stirling Top Fifteen Champions"
+      ]
+    },
+    {
+      "year": "2014",
+      "achievements": [
+        "Scottish District Junior Singles: A. Hazel",
+        "Scottish District Mixed Pairs: R. Smith & G. Malcolmson",
+        "County Pairs: D. McCormick & A. Hazel",
+        "District Nine League Champions",
+        "Reid Trophy",
+        "Connera Trophy",
+        "Steins Trophy",
+        "City of Stirling Top Fifteen Champions"
+      ]
+    },
+    {
+      "year": "2013",
+      "achievements": [
+        "Scottish Mixed Pairs Champions: R. Smith & G. Malcolmson",
+        "Scottish District Mixed Pairs: R. Smith & G. Malcolmson",
+        "Scottish District Singles: G. Malcolmson",
+        "Area Champion of Champions: G. Malcolmson",
+        "County Singles: G. Malcolmson",
+        "Central Singles: A. Hazel",
+        "Central Triples: A. McNeil, I. Bone & J. Williams",
+        "District Nine League Champions",
+        "City of Stirling Top Fifteen Champions"
+      ]
+    },
+    {
+      "year": "2012",
+      "achievements": [
+        "Scottish District Singles: A. Hazel",
+        "Scottish District Pairs: K. Paterson & A. Deans",
+        "Scottish District Mixed Pairs: R. Smith & A. Hazel",
+        "County Pairs: D. McCormick & A. Hazel",
+        "Central Singles: G. Malcolmson",
+        "Central Junior Singles: D. McEwan Jnr.",
+        "Area & County Top Ten Champions",
+        "Mackintosh Trophy",
+        "City of Stirling Top Fifteen Champions"
+      ]
+    },
+    {
+      "year": "2011",
+      "achievements": [
+        "Scottish District Pairs: J. Brown & D. McCormick",
+        "Central Singles: G. Malcolmson",
+        "Central Senior Fours: J. Walker, J. Johnstone, J. Blevins & J. Binnie",
+        "District Nine League Champions",
+        "Reid Trophy",
+        "City of Stirling Top Fifteen Champions"
+      ]
+    },
+    {
+      "year": "2010",
+      "achievements": [
+        "Scottish District Junior Singles: A. Hazel",
+        "Scottish District Pairs: J. Brown & G. Malcolmson",
+        "Scottish District Senior Fours: J. Walker, P. Johnstone, J. Blevins & J. Binnie",
+        "County Junior Singles: G. Malcolmson",
+        "Central Junior Singles: G. Malcolmson",
+        "Central Pairs: A. Hazel & K. Paterson",
+        "County Top Ten Champions",
+        "District Nine League Champions",
+        "City of Stirling Top Fifteen Champions"
+      ]
+    }
+  ],
+  "presidents": {
+    "heading": "Presidents of Polmaise Bowling Club",
+    "intro": "A tribute to the leadership that has guided our club through the years.",
+    "columns": [
+      [
+        {
+          "year": "1911",
+          "name": "D. Todd"
+        },
+        {
+          "year": "1912",
+          "name": "Dr. J. Porter"
+        },
+        {
+          "year": "1913",
+          "name": "Dr. J. Porter"
+        },
+        {
+          "year": "1914",
+          "name": "W. Laird"
+        },
+        {
+          "year": "1915",
+          "name": "W. Laird"
+        },
+        {
+          "year": "1916",
+          "name": "W. Laird"
+        },
+        {
+          "year": "1917",
+          "name": "W. Laird"
+        },
+        {
+          "year": "1918",
+          "name": "A. Kerr"
+        },
+        {
+          "year": "1919",
+          "name": "A. Kerr"
+        },
+        {
+          "year": "1920",
+          "name": "A. Kerr"
+        },
+        {
+          "year": "1921",
+          "name": "A. Kerr"
+        },
+        {
+          "year": "1922",
+          "name": "A. Kerr"
+        },
+        {
+          "year": "1923",
+          "name": "A. Kerr"
+        },
+        {
+          "year": "1924",
+          "name": "A. Kerr"
+        },
+        {
+          "year": "1925",
+          "name": "A. Kerr"
+        },
+        {
+          "year": "1926",
+          "name": "R. McKenzie"
+        },
+        {
+          "year": "1927",
+          "name": "R. McKenzie"
+        },
+        {
+          "year": "1928",
+          "name": "R. McKenzie"
+        },
+        {
+          "year": "1929",
+          "name": "R. McKenzie"
+        },
+        {
+          "year": "1930",
+          "name": "J. Jack"
+        },
+        {
+          "year": "1931",
+          "name": "J. McDonald"
+        },
+        {
+          "year": "1932",
+          "name": "J. McDonald"
+        },
+        {
+          "year": "1933",
+          "name": "J. McDonald"
+        },
+        {
+          "year": "1934",
+          "name": "J. McDonald"
+        },
+        {
+          "year": "1935",
+          "name": "T. Bunyan"
+        },
+        {
+          "year": "1936",
+          "name": "T. Bunyan"
+        },
+        {
+          "year": "1937",
+          "name": "D. Angels"
+        },
+        {
+          "year": "1938",
+          "name": "G. Walker"
+        },
+        {
+          "year": "1939",
+          "name": "No Club This Year",
+          "emphasis": true
+        }
+      ],
+      [
+        {
+          "year": "1940",
+          "name": "G. Walker"
+        },
+        {
+          "year": "1941",
+          "name": "R. C. Kay"
+        },
+        {
+          "year": "1942",
+          "name": "R. C. Kay"
+        },
+        {
+          "year": "1943",
+          "name": "G. Kerr Jnr"
+        },
+        {
+          "year": "1944",
+          "name": "R. Dick"
+        },
+        {
+          "year": "1945",
+          "name": "R. Dick"
+        },
+        {
+          "year": "1946",
+          "name": "R. Dick"
+        },
+        {
+          "year": "1947",
+          "name": "R. Dick"
+        },
+        {
+          "year": "1948",
+          "name": "R. Dick"
+        },
+        {
+          "year": "1949",
+          "name": "R. Armstrong"
+        },
+        {
+          "year": "1950",
+          "name": "R. Armstrong"
+        },
+        {
+          "year": "1951",
+          "name": "R. Armstrong"
+        },
+        {
+          "year": "1952",
+          "name": "R. Armstrong"
+        },
+        {
+          "year": "1953",
+          "name": "R. Armstrong"
+        },
+        {
+          "year": "1954",
+          "name": "W. Paterson"
+        },
+        {
+          "year": "1955",
+          "name": "W. Paterson"
+        },
+        {
+          "year": "1956",
+          "name": "W. Paterson"
+        },
+        {
+          "year": "1957",
+          "name": "W. Paterson"
+        },
+        {
+          "year": "1958",
+          "name": "W. Paterson"
+        },
+        {
+          "year": "1959",
+          "name": "W. Paterson"
+        },
+        {
+          "year": "1960",
+          "name": "W. Paterson"
+        },
+        {
+          "year": "1961",
+          "name": "W. Paterson"
+        },
+        {
+          "year": "1962",
+          "name": "R. Dick"
+        },
+        {
+          "year": "1963",
+          "name": "A. Buchanan"
+        },
+        {
+          "year": "1964",
+          "name": "W. Irving"
+        },
+        {
+          "year": "1965",
+          "name": "W. Irving"
+        },
+        {
+          "year": "1966",
+          "name": "H. Haughie"
+        },
+        {
+          "year": "1967",
+          "name": "J. Higgins"
+        },
+        {
+          "year": "1968",
+          "name": "J. Higgins"
+        }
+      ],
+      [
+        {
+          "year": "1969",
+          "name": "H. Kirkwood"
+        },
+        {
+          "year": "1970",
+          "name": "G. S. Allan"
+        },
+        {
+          "year": "1971",
+          "name": "F. Ryan"
+        },
+        {
+          "year": "1972",
+          "name": "T. Govan"
+        },
+        {
+          "year": "1973",
+          "name": "D. King"
+        },
+        {
+          "year": "1974",
+          "name": "A. Finlay"
+        },
+        {
+          "year": "1975",
+          "name": "J. Walker"
+        },
+        {
+          "year": "1976",
+          "name": "J. Hislop"
+        },
+        {
+          "year": "1977",
+          "name": "M. Boyle"
+        },
+        {
+          "year": "1978",
+          "name": "J.G.W. Buchanan"
+        },
+        {
+          "year": "1979",
+          "name": "W. Bone"
+        },
+        {
+          "year": "1980",
+          "name": "J. McGuckin"
+        },
+        {
+          "year": "1981",
+          "name": "H. Scott"
+        },
+        {
+          "year": "1982",
+          "name": "H. Scott"
+        },
+        {
+          "year": "1983",
+          "name": "J. Bone"
+        },
+        {
+          "year": "1984",
+          "name": "W. Murray"
+        },
+        {
+          "year": "1985",
+          "name": "R. Goodman"
+        },
+        {
+          "year": "1986",
+          "name": "P.M. Black"
+        },
+        {
+          "year": "1987",
+          "name": "P.M. Black"
+        },
+        {
+          "year": "1988",
+          "name": "H. Scott"
+        },
+        {
+          "year": "1989",
+          "name": "J. Bone Jnr"
+        },
+        {
+          "year": "1990",
+          "name": "W. Kirkwood"
+        },
+        {
+          "year": "1991",
+          "name": "J. Blevins"
+        },
+        {
+          "year": "1992",
+          "name": "J. Blevins"
+        },
+        {
+          "year": "1993",
+          "name": "J. Blevins"
+        },
+        {
+          "year": "1994",
+          "name": "J. Nicol"
+        },
+        {
+          "year": "1995",
+          "name": "A. Deans"
+        },
+        {
+          "year": "1996",
+          "name": "A. Deans"
+        },
+        {
+          "year": "1997",
+          "name": "R. Landsborough"
+        }
+      ],
+      [
+        {
+          "year": "1998",
+          "name": "S. Primrose"
+        },
+        {
+          "year": "1999",
+          "name": "S. Primrose"
+        },
+        {
+          "year": "2000",
+          "name": "R. Goodman"
+        },
+        {
+          "year": "2001",
+          "name": "J. Walker"
+        },
+        {
+          "year": "2002",
+          "name": "W. Stevenson"
+        },
+        {
+          "year": "2003",
+          "name": "R. Beattie"
+        },
+        {
+          "year": "2004",
+          "name": "R. Beattie"
+        },
+        {
+          "year": "2005",
+          "name": "J. Walker"
+        },
+        {
+          "year": "2006",
+          "name": "W. McLeod"
+        },
+        {
+          "year": "2007",
+          "name": "W. McLeod"
+        },
+        {
+          "year": "2008",
+          "name": "P. Smith"
+        },
+        {
+          "year": "2009",
+          "name": "P. Smith"
+        },
+        {
+          "year": "2010",
+          "name": "J. Brown"
+        },
+        {
+          "year": "2011",
+          "name": "J. Walker"
+        },
+        {
+          "year": "2012",
+          "name": "J. Brown"
+        },
+        {
+          "year": "2013",
+          "name": "J. Brown"
+        },
+        {
+          "year": "2014",
+          "name": "P. Smith"
+        },
+        {
+          "year": "2015",
+          "name": "P. Smith"
+        },
+        {
+          "year": "2016",
+          "name": "D. McCormick"
+        },
+        {
+          "year": "2017",
+          "name": "D. McCormick"
+        },
+        {
+          "year": "2018",
+          "name": "R. Johnstone"
+        },
+        {
+          "year": "2019",
+          "name": "D. Teven"
+        },
+        {
+          "year": "2020",
+          "name": "D. Teven"
+        },
+        {
+          "year": "2021",
+          "name": "R. Donaldson"
+        },
+        {
+          "year": "2022",
+          "name": "R. Donaldson"
+        },
+        {
+          "year": "2023",
+          "name": "R. Donaldson"
+        },
+        {
+          "year": "2024",
+          "name": "A. Brown"
+        },
+        {
+          "year": "2025",
+          "name": "A. Brown"
+        },
+        {
+          "year": "2026",
+          "name": "D. Stewart",
+          "current": true
+        }
+      ]
+    ]
+  },
+  "champions": {
+    "heading": "Club Champions of Polmaise Bowling Club",
+    "intro": "Honoring our club champions throughout our proud history.",
+    "columns": [
+      [
+        {
+          "year": "1911",
+          "name": "J. Barr Snr"
+        },
+        {
+          "year": "1912",
+          "name": "J. Barr Jnr"
+        },
+        {
+          "year": "1913",
+          "name": "J. Gwynne Snr"
+        },
+        {
+          "year": "1914",
+          "name": "G. M. McLaughlan"
+        },
+        {
+          "year": "1915",
+          "name": "W. Campbell Jnr"
+        },
+        {
+          "year": "1916",
+          "name": "G. M. McLaughlan"
+        },
+        {
+          "year": "1917",
+          "name": "J. Campbell"
+        },
+        {
+          "year": "1918",
+          "name": "H. Campbell"
+        },
+        {
+          "year": "1919",
+          "name": "H. Campbell"
+        },
+        {
+          "year": "1920",
+          "name": "T. Russell"
+        },
+        {
+          "year": "1921",
+          "name": "J. Gwynne Snr"
+        },
+        {
+          "year": "1922",
+          "name": "J. Gwynne Snr"
+        },
+        {
+          "year": "1923",
+          "name": "J. Gwynne Snr"
+        },
+        {
+          "year": "1924",
+          "name": "J. Gwynne Snr"
+        },
+        {
+          "year": "1925",
+          "name": "T. Bunyan Snr"
+        },
+        {
+          "year": "1926",
+          "name": "J. Stevenson"
+        },
+        {
+          "year": "1927",
+          "name": "D. Nicol Jnr"
+        },
+        {
+          "year": "1928",
+          "name": "J. Jack"
+        },
+        {
+          "year": "1929",
+          "name": "T. Bunyan Snr"
+        },
+        {
+          "year": "1930",
+          "name": "J. Gwynne Snr"
+        },
+        {
+          "year": "1931",
+          "name": "J. McDonald"
+        },
+        {
+          "year": "1932",
+          "name": "A. Jarvie"
+        },
+        {
+          "year": "1933",
+          "name": "A. Jeffery"
+        },
+        {
+          "year": "1934",
+          "name": "J. McDonald"
+        },
+        {
+          "year": "1935",
+          "name": "J. Gwynne Snr"
+        },
+        {
+          "year": "1936",
+          "name": "R. Woods"
+        },
+        {
+          "year": "1937",
+          "name": "T. Bunyan Snr"
+        },
+        {
+          "year": "1938",
+          "name": "J. Brown"
+        },
+        {
+          "year": "1939",
+          "name": "No Club This Year",
+          "emphasis": true
+        }
+      ],
+      [
+        {
+          "year": "1940",
+          "name": "T. Bunyan Snr"
+        },
+        {
+          "year": "1941",
+          "name": "T. Bunyan Snr"
+        },
+        {
+          "year": "1942",
+          "name": "J. Gwynne Snr"
+        },
+        {
+          "year": "1943",
+          "name": "D. Nicol Jnr"
+        },
+        {
+          "year": "1944",
+          "name": "J. Gwynne Jnr"
+        },
+        {
+          "year": "1945",
+          "name": "J. Taylor"
+        },
+        {
+          "year": "1946",
+          "name": "T. Bunyan"
+        },
+        {
+          "year": "1947",
+          "name": "J. Gwynne Jnr"
+        },
+        {
+          "year": "1948",
+          "name": "T. Bunyan Snr"
+        },
+        {
+          "year": "1949",
+          "name": "D. McCairns"
+        },
+        {
+          "year": "1950",
+          "name": "W. Mitchell"
+        },
+        {
+          "year": "1951",
+          "name": "W. Mitchell"
+        },
+        {
+          "year": "1952",
+          "name": "T. Bunyan Snr"
+        },
+        {
+          "year": "1953",
+          "name": "M. O'Connor"
+        },
+        {
+          "year": "1954",
+          "name": "T. Bunyan Jnr"
+        },
+        {
+          "year": "1955",
+          "name": "P. Lyons"
+        },
+        {
+          "year": "1956",
+          "name": "T. Bunyan Jnr"
+        },
+        {
+          "year": "1957",
+          "name": "J. Taylor"
+        },
+        {
+          "year": "1958",
+          "name": "J. Bone"
+        },
+        {
+          "year": "1959",
+          "name": "P. Lyons"
+        },
+        {
+          "year": "1960",
+          "name": "P. Lyons"
+        },
+        {
+          "year": "1961",
+          "name": "J. Higgins"
+        },
+        {
+          "year": "1962",
+          "name": "A. Buchanan"
+        },
+        {
+          "year": "1963",
+          "name": "J. Taylor"
+        },
+        {
+          "year": "1964",
+          "name": "J. Taylor"
+        },
+        {
+          "year": "1965",
+          "name": "C. Rankin"
+        },
+        {
+          "year": "1966",
+          "name": "F. Ryan"
+        },
+        {
+          "year": "1967",
+          "name": "D. Ivatt"
+        },
+        {
+          "year": "1968",
+          "name": "J. Higgins"
+        }
+      ],
+      [
+        {
+          "year": "1969",
+          "name": "A. Buchanan"
+        },
+        {
+          "year": "1970",
+          "name": "A. Buchanan"
+        },
+        {
+          "year": "1971",
+          "name": "H. Kirkwood"
+        },
+        {
+          "year": "1972",
+          "name": "J. Blevins"
+        },
+        {
+          "year": "1973",
+          "name": "J. Gwynne Jnr"
+        },
+        {
+          "year": "1974",
+          "name": "J. Gwynne Jnr"
+        },
+        {
+          "year": "1975",
+          "name": "J. Gwynne Jnr"
+        },
+        {
+          "year": "1976",
+          "name": "J.G.W. Buchanan"
+        },
+        {
+          "year": "1977",
+          "name": "J.G.W. Buchanan"
+        },
+        {
+          "year": "1978",
+          "name": "J.G.W. Buchanan"
+        },
+        {
+          "year": "1979",
+          "name": "G. S. Allan"
+        },
+        {
+          "year": "1980",
+          "name": "J.G.W. Buchanan"
+        },
+        {
+          "year": "1981",
+          "name": "J. Blevins"
+        },
+        {
+          "year": "1982",
+          "name": "J. Blevins"
+        },
+        {
+          "year": "1983",
+          "name": "B. Letford"
+        },
+        {
+          "year": "1984",
+          "name": "J. Brown"
+        },
+        {
+          "year": "1985",
+          "name": "J. Blevins"
+        },
+        {
+          "year": "1986",
+          "name": "J. Blevins"
+        },
+        {
+          "year": "1987",
+          "name": "J. Blevins"
+        },
+        {
+          "year": "1988",
+          "name": "W. Bone"
+        },
+        {
+          "year": "1989",
+          "name": "A. Deans"
+        },
+        {
+          "year": "1990",
+          "name": "R. Fulton"
+        },
+        {
+          "year": "1991",
+          "name": "A. Deans"
+        },
+        {
+          "year": "1992",
+          "name": "A. Deans"
+        },
+        {
+          "year": "1993",
+          "name": "P. M. Black"
+        },
+        {
+          "year": "1994",
+          "name": "P. M. Black"
+        },
+        {
+          "year": "1995",
+          "name": "J. Johnstone Jnr"
+        },
+        {
+          "year": "1996",
+          "name": "A. Deans"
+        },
+        {
+          "year": "1997",
+          "name": "T. Taylor"
+        }
+      ],
+      [
+        {
+          "year": "1998",
+          "name": "D. Logie"
+        },
+        {
+          "year": "1999",
+          "name": "J. Paterson"
+        },
+        {
+          "year": "2000",
+          "name": "J. Williams"
+        },
+        {
+          "year": "2001",
+          "name": "R. Johnstone"
+        },
+        {
+          "year": "2002",
+          "name": "I. Bone"
+        },
+        {
+          "year": "2003",
+          "name": "I. Bone"
+        },
+        {
+          "year": "2004",
+          "name": "J. Johnstone Jnr"
+        },
+        {
+          "year": "2005",
+          "name": "I. Bone"
+        },
+        {
+          "year": "2006",
+          "name": "I. Bone"
+        },
+        {
+          "year": "2007",
+          "name": "I. Bone"
+        },
+        {
+          "year": "2008",
+          "name": "A. Deans"
+        },
+        {
+          "year": "2009",
+          "name": "R. McLeod"
+        },
+        {
+          "year": "2010",
+          "name": "M. Bone"
+        },
+        {
+          "year": "2011",
+          "name": "A. Hazel"
+        },
+        {
+          "year": "2012",
+          "name": "G. Malcolmson"
+        },
+        {
+          "year": "2013",
+          "name": "J. Williams"
+        },
+        {
+          "year": "2014",
+          "name": "A. Hazel"
+        },
+        {
+          "year": "2015",
+          "name": "G. Malcolmson"
+        },
+        {
+          "year": "2016",
+          "name": "A. Deans"
+        },
+        {
+          "year": "2017",
+          "name": "G. Malcolmson"
+        },
+        {
+          "year": "2018",
+          "name": "D. McCormick"
+        },
+        {
+          "year": "2019",
+          "name": "D. McCormick"
+        },
+        {
+          "year": "2020",
+          "name": "No Champion (COVID-19)",
+          "emphasis": true
+        },
+        {
+          "year": "2021",
+          "name": "D. McCormick"
+        },
+        {
+          "year": "2022",
+          "name": "G. Malcolmson"
+        },
+        {
+          "year": "2023",
+          "name": "K. Paterson"
+        },
+        {
+          "year": "2024",
+          "name": "G. Malcolmson"
+        },
+        {
+          "year": "2025",
+          "name": "A. Furzer",
+          "current": true
+        }
+      ]
+    ]
+  },
+  "ladiesChampions": {
+    "heading": "Ladies Club Champions of Polmaise Bowling Club",
+    "intro": "Honoring our ladies champions..",
+    "columns": [
+      [
+        {
+          "year": "2023",
+          "name": "R. Smith"
+        },
+        {
+          "year": "2024",
+          "name": "J. Rough"
+        },
+        {
+          "year": "2025",
+          "name": "R. Liddel",
+          "current": true
+        }
+      ]
+    ]
+  }
+}

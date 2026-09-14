@@ -64,84 +64,8 @@ bodyClass: ""
 
 {% include "scripts.njk" %}
 
-<script>
-        $(document).ready(function() {
-            // Array of all image filenames in the PresentationDance2025 directory
-            const images = [
-                '20251025_200718.jpg',
-                '20251025_200722.jpg',
-                '20251025_200725.jpg',
-                '20251025_200731.jpg',
-                '20251025_200737.jpg',
-                '20251025_200750.jpg',
-                '20251025_200820.jpg',
-                '20251025_200829.jpg',
-                '20251025_200839.jpg',
-                '20251025_200855.jpg',
-                '20251025_200921.jpg',
-                '20251025_200924.jpg',
-                '20251025_200928.jpg',
-                '20251025_200933.jpg',
-                '20251025_200947.jpg',
-                '20251025_201001.jpg',
-                '20251025_201007.jpg',
-                '20251025_201012.jpg',
-                '20251025_201048.jpg',
-                '20251025_201207.jpg',
-                '20251025_201217.jpg',
-                '20251025_210045.jpg',
-                '20251025_221106.jpg',
-                '20251025_221131.jpg',
-                '20251025_221145.jpg',
-                '20251025_221634.jpg',
-                '20251025_221658.jpg',
-                '20251025_221736.jpg',
-                '20251025_222341.jpg',
-                '20251025_222544.jpg',
-                '20251025_222548.jpg',
-                '20251025_222551.jpg',
-                '20251025_222800.jpg',
-                '20251025_222813.jpg',
-                '20251025_222908.jpg',
-                '20251025_222953.jpg',
-                '20251025_223055.jpg',
-                '20251025_223142.jpg',
-                '20251025_223317.jpg',
-                '20251025_223337.jpg',
-                '20251025_223411.jpg',
-                '20251025_223524.jpg',
-                '20251025_223526.jpg',
-                '20251025_223614.jpg',
-                '20251025_223616.jpg',
-                '20251025_223701.jpg',
-                '20251025_225225.jpg',
-                '20251025_225328.jpg',
-                '20251025_225338.jpg',
-                '20251025_230249.jpg',
-                '20251025_230255.jpg',
-                '20251025_230321.jpg'
-            ];
-
-            const gallery = $('#presentation-gallery');
-            
-            // Generate gallery items for all images
-            images.forEach((filename, index) => {
-                const galleryItem = `
-                    <div class="album-item">
-                        <a href="../Images/2025/PresentationDance2025/${filename}" data-lightbox="presentation-2025" data-title="Presentation Dance 2025 - Photo ${index + 1}">
-                            <img src="../Images/2025/PresentationDance2025/${filename}" alt="Presentation Dance 2025 - Photo ${index + 1}" loading="lazy">
-                            <div class="overlay">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-                `;
-                gallery.append(galleryItem);
-            });
-
-            // Configure lightbox
-});
-    </script>
+{% set album = photoAlbums["presentation-dance-2025"] %}
+{% include "photo-album-gallery.njk" %}
 
 </body>
 

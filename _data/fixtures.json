@@ -1,0 +1,354 @@
+{
+  "items": [
+    {
+      "date": "04-Apr",
+      "competition": "Opening of Green",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "11-Apr",
+      "competition": "Menstrie",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "18-Apr",
+      "competition": "Bridge of Allan",
+      "day": "Saturday",
+      "venue": "Bridge of Allan",
+      "status": "Confirmed"
+    },
+    {
+      "date": "25-Apr",
+      "competition": "Borestone",
+      "day": "Saturday",
+      "venue": "Borestone",
+      "status": "Confirmed"
+    },
+    {
+      "date": "26-Apr",
+      "competition": "Stirling County Trials",
+      "day": "Sunday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "02-May",
+      "competition": "Bridgeness B. C.",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "04-May",
+      "competition": "Central Prelims Start",
+      "day": "Monday",
+      "venue": "Various",
+      "status": "Confirmed"
+    },
+    {
+      "date": "09-May",
+      "competition": "Causewayhead",
+      "day": "Saturday",
+      "venue": "Causewayhead",
+      "status": "Confirmed"
+    },
+    {
+      "date": "15-May",
+      "competition": "District Nine League Starts",
+      "day": "Friday",
+      "venue": "Home & Away",
+      "status": "TBC"
+    },
+    {
+      "date": "16-May",
+      "competition": "Sponsors & Charity Day",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "17-May",
+      "competition": "Masonic",
+      "day": "Sunday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "23-May",
+      "competition": "Patons 100 / Hamilton Trophy Game",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "24-May",
+      "competition": "Central Finals",
+      "day": "Monday",
+      "venue": "Borestone",
+      "status": "TBC"
+    },
+    {
+      "date": "30-May",
+      "competition": "Spittalmyre B. C.",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "06-Jun",
+      "competition": "Greg Ryan Pairs",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "12-Jun",
+      "competition": "Last District League Game",
+      "day": "Friday",
+      "venue": "Home & Away",
+      "status": "TBC"
+    },
+    {
+      "date": "13-Jun",
+      "competition": "Alva B. C.",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "20-Jun",
+      "competition": "Murray Cup 3rd Sat. June",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "22-Jun",
+      "competition": "Matt Purdie Sen. Team Trial 12noon",
+      "day": "Monday",
+      "venue": "Stenhousemuir",
+      "status": "Confirmed"
+    },
+    {
+      "date": "26-Jun",
+      "competition": "Semi Finals District League",
+      "day": "Friday",
+      "venue": "—",
+      "status": "TBC"
+    },
+    {
+      "date": "27-Jun",
+      "competition": "Central Pullar Trophy 4th Sat. in June",
+      "day": "Saturday",
+      "venue": "Various",
+      "status": "Confirmed"
+    },
+    {
+      "date": "02-Jul",
+      "competition": "Top 15 Starts",
+      "day": "Thursday",
+      "venue": "—",
+      "status": "Confirmed"
+    },
+    {
+      "date": "03-Jul",
+      "competition": "District 9 League Final",
+      "day": "Friday",
+      "venue": "—",
+      "status": "TBC"
+    },
+    {
+      "date": "04-Jul",
+      "competition": "County Finals",
+      "day": "Saturday",
+      "venue": "TBC",
+      "status": "Confirmed"
+    },
+    {
+      "date": "06-Jul",
+      "competition": "Matt Purdie Match v West Fife 12noon",
+      "day": "Monday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "09-Jul",
+      "competition": "Top 15 v Borestone",
+      "day": "Thursday",
+      "venue": "Borestone",
+      "status": "Confirmed"
+    },
+    {
+      "date": "11-Jul",
+      "competition": "Bridgeness B. C.",
+      "day": "Saturday",
+      "venue": "Bridgeness",
+      "status": "Confirmed"
+    },
+    {
+      "date": "14-Jul",
+      "competition": "Central St. Dunstan 2nd Tues. in July",
+      "day": "Tuesday",
+      "venue": "Various",
+      "status": "Confirmed"
+    },
+    {
+      "date": "21-Jul",
+      "competition": "Duncan Trophy County 7.00p.m.",
+      "day": "Tuesday",
+      "venue": "Various",
+      "status": "Confirmed"
+    },
+    {
+      "date": "18-Jul",
+      "competition": "Free/Pro-Am W/E",
+      "day": "Saturday",
+      "venue": "Doune Castle",
+      "status": "Confirmed"
+    },
+    {
+      "date": "25-Jul",
+      "competition": "Charlie McNeil Memorial",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "28-Jul",
+      "competition": "Central Reid Trophy 4th Tues. in July",
+      "day": "Tuesday",
+      "venue": "Various",
+      "status": "Confirmed"
+    },
+    {
+      "date": "01-Aug",
+      "competition": "Riverside",
+      "day": "Saturday",
+      "venue": "Riverside",
+      "status": "Confirmed"
+    },
+    {
+      "date": "02-Aug",
+      "competition": "Top 10 Area Final",
+      "day": "Sunday",
+      "venue": "Doune",
+      "status": "Confirmed"
+    },
+    {
+      "date": "08-Aug",
+      "competition": "Two Peters' Triples **",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "08-Aug to 15-Aug",
+      "competition": "Scottish Finals",
+      "day": "—",
+      "venue": "Ayr",
+      "status": "Confirmed"
+    },
+    {
+      "date": "09-Aug",
+      "competition": "City of Stirling Top Fifteen Final",
+      "day": "Sunday",
+      "venue": "Borestone",
+      "status": "Confirmed"
+    },
+    {
+      "date": "11-Aug",
+      "competition": "Central Duncan Ogilvie 2nd Tues. in Aug.",
+      "day": "Tuesday",
+      "venue": "Various",
+      "status": "Confirmed"
+    },
+    {
+      "date": "15-Aug",
+      "competition": "Free",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "TBC"
+    },
+    {
+      "date": "16-Aug",
+      "competition": "County Top 10 Final",
+      "day": "Sunday",
+      "venue": "TBC",
+      "status": "Confirmed"
+    },
+    {
+      "date": "18-Aug",
+      "competition": "MacKintosh Trophy",
+      "day": "Tuesday",
+      "venue": "Various",
+      "status": "Confirmed"
+    },
+    {
+      "date": "22-Aug",
+      "competition": "Menstrie",
+      "day": "Saturday",
+      "venue": "Menstrie",
+      "status": "Confirmed"
+    },
+    {
+      "date": "23-Aug",
+      "competition": "County Top 5 Final",
+      "day": "Sunday",
+      "venue": "TBC",
+      "status": "Confirmed"
+    },
+    {
+      "date": "24-Aug",
+      "competition": "Matt Purdie Final",
+      "day": "Monday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "25-Aug",
+      "competition": "Kennard Semi Final",
+      "day": "Tuesday",
+      "venue": "—",
+      "status": "Confirmed"
+    },
+    {
+      "date": "29-Aug",
+      "competition": "Championship Finals",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Proposed"
+    },
+    {
+      "date": "30-Aug",
+      "competition": "Kennard Trophy Final",
+      "day": "Sunday",
+      "venue": "—",
+      "status": "Confirmed"
+    },
+    {
+      "date": "05-Sep",
+      "competition": "John \"Chucks\" Johnstone",
+      "day": "Saturday",
+      "venue": "Polmaise",
+      "status": "Confirmed"
+    },
+    {
+      "date": "12-Sep",
+      "competition": "—",
+      "day": "Saturday",
+      "venue": "—",
+      "status": "—"
+    },
+    {
+      "date": "13-Sep",
+      "competition": "Steins Cup",
+      "day": "Sunday",
+      "venue": "Polmont",
+      "status": "Confirmed"
+    }
+  ]
+}

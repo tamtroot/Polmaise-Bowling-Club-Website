@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 16,
-  "totalBytes": 3301688,
+  "totalBytes": 3301554,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 26415
+      "bytes": 26281
     },
     "image": {
       "count": 13,
@@ -74,7 +74,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/sponsors.html",
-      "bytes": 26415,
+      "bytes": 26281,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -244,7 +244,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/sponsors.html",
-      "bytes": 26415,
+      "bytes": 26281,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"

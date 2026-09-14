@@ -1,0 +1,325 @@
+{
+  "main": [
+    {
+      "name": "Will Sweep",
+      "tagline": "Excellence in Road & Street Cleansing Since 1999",
+      "description": [
+        "Established in 1999 and owned by Steven Williams, managed by Ryan Neil, Will Sweep specializes in road and street cleansing, serving housing, construction, parks, severe weather emergencies, and road services sectors across Scotland. With an extensive fleet and highly trained operatives, services include snow clearing, street cleansing, roadside cleaning, drainage clearing, and area maintenance.",
+        "The company works closely with Edinburgh, Midlothian, East & West Lothian councils, offering contract and hourly-rate services. Will Sweep also operates a repair centre for commercial vehicles, fleet vans, HGVs, and construction machinery, ensuring high-quality maintenance and minimal downtime."
+      ],
+      "contacts": [
+        {
+          "icon": "fas fa-globe",
+          "text": "www.willsweep.com",
+          "href": "http://www.willsweep.com/",
+          "target": "_blank"
+        }
+      ],
+      "banner": {
+        "src": "./Images/willsweep-banner.jpg",
+        "alt": "Will Sweep Fleet and Services"
+      }
+    },
+    {
+      "name": "Fallin Public House Society (\"The Goth\")",
+      "tagline": "Supporting the Community Since 1911",
+      "description": [
+        "Established in 1911, \"The Goth\" has been a longstanding supporter of Polmaise Bowling Club. It features a bar, lounge with TV for sports, darts and domino teams, and a function room for events."
+      ],
+      "contacts": [
+        {
+          "icon": "fas fa-map-marker-alt",
+          "text": "Gothenburg Building, Main Street, Fallin, FK7 7HT"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "01786-811 333"
+        }
+      ]
+    }
+  ],
+  "club": [
+    {
+      "name": "Forward Sector Security",
+      "description": "Provides security services across various sectors.",
+      "contacts": [
+        {
+          "icon": "fas fa-globe",
+          "text": "forwardsector.com",
+          "href": "https://forwardsector.com/",
+          "target": "_blank"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "02039 000 716"
+        },
+        {
+          "icon": "fas fa-envelope",
+          "text": "info@forwardsector.com"
+        }
+      ],
+      "logo": {
+        "src": "./Images/forwardsector.png",
+        "alt": "Forward Sector Security Logo",
+        "extraClass": "forward-sector-logo"
+      }
+    },
+    {
+      "name": "Paton Construction Ltd",
+      "description": "Professional civil engineering and groundworks services across Scotland. Your trusted family-run business for reliable groundworks and site clearance.",
+      "contacts": [
+        {
+          "icon": "fas fa-globe",
+          "text": "patonconstruction.co.uk",
+          "href": "https://patonconstruction.co.uk/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "Aaron Paton – 07795 231734"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "David Stewart – 07476 809599"
+        },
+        {
+          "icon": "fas fa-envelope",
+          "text": "info@patonconstruction.co.uk",
+          "href": "mailto:info@patonconstruction.co.uk"
+        }
+      ],
+      "logo": {
+        "src": "./Images/2026/Paton.png",
+        "alt": "Paton Construction Ltd Logo",
+        "extraClass": "paton-logo"
+      }
+    },
+    {
+      "name": "Highland Broadband",
+      "description": "Highland Broadband has been connecting communities since 2015, delivering gigabit-capable fibre broadband to towns and villages that were previously left behind by other providers. Their ultrafast, reliable service helps families and businesses work, learn, and stay connected without having to compromise on where they live.",
+      "contacts": [
+        {
+          "icon": "fas fa-globe",
+          "text": "highlandbroadband.com",
+          "href": "https://highlandbroadband.com",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "0330 236 9900"
+        },
+        {
+          "icon": "fas fa-envelope",
+          "text": "support@highlandbroadband.com",
+          "href": "mailto:support@highlandbroadband.com"
+        }
+      ],
+      "logo": {
+        "src": "./Images/2026/Highland.svg",
+        "alt": "Highland Broadband Logo"
+      }
+    },
+    {
+      "name": "R.B. Joinery & Building Services",
+      "description": "Provides joinery and building services in the Stirling area.",
+      "contacts": [
+        {
+          "icon": "fas fa-globe",
+          "text": "rb-joineryandbuilding.co.uk",
+          "href": "https://rb-joineryandbuilding.co.uk/",
+          "target": "_blank"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "01786-811 711 / 07505 283 695"
+        },
+        {
+          "icon": "fas fa-envelope",
+          "text": "rbjoineryandbuildingservices1@sky.com"
+        }
+      ],
+      "logo": {
+        "src": "./Images/rbjoinery.png",
+        "alt": "R.B. Joinery & Building Services Logo"
+      }
+    },
+    {
+      "name": "Allson Wholesale Co. UK",
+      "description": "A wholesale company based in the UK.",
+      "contacts": [
+        {
+          "icon": "fas fa-globe",
+          "text": "allsonwholesale.co.uk",
+          "href": "https://www.allsonwholesale.co.uk/",
+          "target": "_blank"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "01592 770864"
+        },
+        {
+          "icon": "fas fa-envelope",
+          "text": "enquires@allson.co.uk"
+        }
+      ],
+      "logo": {
+        "src": "./Images/allson.png",
+        "alt": "Allson Wholesale Co. UK Logo"
+      }
+    },
+    {
+      "name": "Hamilton Waste",
+      "description": "Specializes in waste management and recycling services.",
+      "contacts": [
+        {
+          "icon": "fas fa-globe",
+          "text": "hamiltonwaste.com",
+          "href": "https://hamiltonwaste.com/",
+          "target": "_blank"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "01316 652 173"
+        },
+        {
+          "icon": "fas fa-envelope",
+          "text": "david@hamiltonwaste.com"
+        }
+      ],
+      "logo": {
+        "src": "./Images/hamilton.svg",
+        "alt": "Hamilton Waste Logo",
+        "extraClass": "hamilton-logo"
+      }
+    },
+    {
+      "name": "Eddies Engineering",
+      "description": "Offers a range of engineering services.",
+      "contacts": [
+        {
+          "icon": "fas fa-globe",
+          "text": "eddiesengineering.com",
+          "href": "https://www.eddiesengineering.com/",
+          "target": "_blank"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "01223 969999"
+        },
+        {
+          "icon": "fas fa-envelope",
+          "text": "info@eddiesengineering.com"
+        }
+      ],
+      "logo": {
+        "src": "./Images/eddies.png",
+        "alt": "Eddie Engineering Logo"
+      }
+    },
+    {
+      "name": "Phil Crowton Joinery",
+      "description": "Provides joinery services in the local area.",
+      "contacts": [
+        {
+          "icon": "fas fa-globe",
+          "text": "philcrowtonjoinery.co.uk",
+          "href": "https://www.philcrowtonjoinery.co.uk/",
+          "target": "_blank"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "07795 168 918"
+        },
+        {
+          "icon": "fas fa-envelope",
+          "text": "philipcrowton@yahoo.co.uk"
+        }
+      ],
+      "logo": {
+        "src": "./Images/philc.webp",
+        "alt": "Phil Crowton Joinery Logo"
+      }
+    },
+    {
+      "name": "Lyon Safety",
+      "description": "Health and Safety Training",
+      "contacts": [
+        {
+          "icon": "fas fa-phone",
+          "text": "0797440403"
+        },
+        {
+          "icon": "fas fa-envelope",
+          "text": "lyonsafetylimited@gmail.com"
+        }
+      ],
+      "logo": {
+        "src": "./Images/lyon safety.jpg",
+        "alt": "Lyon Safety Logo",
+        "extraClass": "lyon-safety-logo"
+      }
+    },
+    {
+      "name": "Scotia Plastics Limited",
+      "description": "Supplies plastic building products.",
+      "contacts": [
+        {
+          "icon": "fas fa-globe",
+          "text": "scotiaplastics.co.uk",
+          "href": "https://www.scotiaplastics.co.uk/",
+          "target": "_blank"
+        },
+        {
+          "icon": "fas fa-user",
+          "text": "Contact: Charlie Thompson"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "01786 446556"
+        },
+        {
+          "icon": "fas fa-envelope",
+          "text": "info@scotiaplastics.co.uk"
+        }
+      ],
+      "logo": {
+        "src": "./Images/scotia.jpg",
+        "alt": "Scotia Plastics Logo"
+      }
+    },
+    {
+      "name": "Craig Project Management UK Ltd",
+      "description": "Specializes in project management services within the UK.",
+      "contacts": [
+        {
+          "icon": "fas fa-user",
+          "text": "Contact: Andrew Craig"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "07710 791 177"
+        },
+        {
+          "icon": "fas fa-envelope",
+          "text": "andycivils@hotmail.co.uk"
+        }
+      ]
+    },
+    {
+      "name": "James Mailey Surfacing Ltd",
+      "description": "Plant & Labour Hire",
+      "contacts": [
+        {
+          "icon": "fas fa-phone",
+          "text": "0703 077 720"
+        },
+        {
+          "icon": "fas fa-envelope",
+          "text": "mailleyjames06@gmail.com"
+        }
+      ]
+    }
+  ]
+}

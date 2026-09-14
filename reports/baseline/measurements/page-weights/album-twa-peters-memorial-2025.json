@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 36,
-  "totalBytes": 58143612,
+  "totalBytes": 58143054,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 10362
+      "bytes": 9804
     },
     "image": {
       "count": 33,
@@ -440,7 +440,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/PhotoAlbums/twa-peters-memorial-2025.html",
-      "bytes": 10362,
+      "bytes": 9804,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"

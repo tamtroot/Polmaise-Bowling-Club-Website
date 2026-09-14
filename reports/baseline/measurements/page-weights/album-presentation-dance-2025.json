@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 41,
-  "totalBytes": 36011193,
+  "totalBytes": 36010397,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 8890
+      "bytes": 8094
     },
     "image": {
       "count": 38,
@@ -475,7 +475,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/PhotoAlbums/presentation-dance-2025.html",
-      "bytes": 8890,
+      "bytes": 8094,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"

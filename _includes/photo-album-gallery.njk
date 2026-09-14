@@ -1,0 +1,22 @@
+<script>
+        $(document).ready(function() {
+            // Album images and captions live in _data/photoAlbums.json
+            const album = {{ album | dump | safe }};
+            const gallery = $('#' + album.galleryId);
+
+            // Generate gallery items for all images
+            album.images.forEach((filename, index) => {
+                const galleryItem = `
+                    <div class="album-item">
+                        <a href="${album.directory}${filename}" data-lightbox="${album.group}" data-title="${album.titlePrefix}${index + 1}">
+                            <img src="${album.directory}${filename}" alt="${album.altPrefix}${index + 1}" loading="lazy">
+                            <div class="overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                    </div>
+                `;
+                gallery.append(galleryItem);
+            });
+});
+    </script>

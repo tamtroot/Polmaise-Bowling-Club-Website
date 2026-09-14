@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 42,
-  "totalBytes": 76246303,
+  "totalBytes": 76245134,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 9951
+      "bytes": 8782
     },
     "image": {
       "count": 39,
@@ -482,7 +482,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/PhotoAlbums/charlie-mcneil-memorial-2025.html",
-      "bytes": 9951,
+      "bytes": 8782,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"

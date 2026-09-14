@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 216,
-  "totalBytes": 13943040,
+  "totalBytes": 13941131,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 240985
+      "bytes": 239076
     },
     "image": {
       "count": 213,
@@ -67,7 +67,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/gallery.html",
-      "bytes": 240985,
+      "bytes": 239076,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -209,7 +209,7 @@
   "resources": [
     {
       "url": "http://127.0.0.1:4173/gallery.html",
-      "bytes": 240985,
+      "bytes": 239076,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"

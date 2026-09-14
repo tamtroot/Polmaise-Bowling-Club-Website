@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 122,
-  "totalBytes": 186209081,
+  "totalBytes": 186206654,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 76035
+      "bytes": 73608
     },
     "image": {
       "count": 119,
@@ -209,7 +209,7 @@
   "resources": [
     {
       "url": "http://127.0.0.1:4173/archive.html",
-      "bytes": 76035,
+      "bytes": 73608,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"

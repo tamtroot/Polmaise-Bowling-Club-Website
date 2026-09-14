@@ -111,70 +111,8 @@ bodyClass: ""
 
 {% include "scripts.njk" %}
 
-<script>
-        $(document).ready(function() {
-            // Array of all image filenames in the TwaPeters directory (full-size images only)
-            const images = [
-                '20250809_130017.jpg',
-                '20250809_130031.jpg',
-                '20250809_130040.jpg',
-                '20250809_130047.jpg',
-                '20250809_130054.jpg',
-                '20250809_130102.jpg',
-                '20250809_130117.jpg',
-                '20250809_131353.jpg',
-                '20250809_131358.jpg',
-                '20250809_131432.jpg',
-                '20250809_131438.jpg',
-                '20250809_131445.jpg',
-                '20250809_142836.jpg',
-                '20250809_142839.jpg',
-                '20250809_142844.jpg',
-                '20250809_142847.jpg',
-                '20250809_142849.jpg',
-                '20250809_142851.jpg',
-                '20250809_160320.jpg',
-                '20250809_160323.jpg',
-                '20250809_160325.jpg',
-                '20250809_160327.jpg',
-                '20250809_160330.jpg',
-                '20250809_163829.jpg',
-                '20250809_163833.jpg',
-                '20250809_163837.jpg',
-                '20250809_163844.jpg',
-                '20250809_183856.jpg',
-                '20250809_183903.jpg',
-                '20250809_184007.jpg',
-                '20250809_190836.jpg',
-                '20250809_190909.jpg',
-                '20250809_190944.jpg',
-                '20250809_191037.jpg',
-                'Winners.jpg',
-                'Runnersup.jpg',
-                'DefeatedSemi.jpg',
-                'DefeatedSemi2.jpg'
-            ];
-
-            const gallery = $('#twa-peters-gallery');
-            
-            // Generate gallery items for all images
-            images.forEach((filename, index) => {
-                const galleryItem = `
-                    <div class="album-item">
-                        <a href="../Images/2025/TwaPeters/${filename}" data-lightbox="twa-peters-2025" data-title="The 'Twa Peters' Memorial Tournament 2025 - Photo ${index + 1}">
-                            <img src="../Images/2025/TwaPeters/${filename}" alt="Twa Peters Memorial 2025 - Photo ${index + 1}" loading="lazy">
-                            <div class="overlay">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </a>
-                    </div>
-                `;
-                gallery.append(galleryItem);
-            });
-
-            // Configure lightbox
-});
-    </script>
+{% set album = photoAlbums["twa-peters-memorial-2025"] %}
+{% include "photo-album-gallery.njk" %}
 
 </body>
 
