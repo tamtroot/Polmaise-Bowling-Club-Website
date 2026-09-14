@@ -9,16 +9,16 @@
     "height": 900
   },
   "status": 200,
-  "resourceCount": 6,
-  "totalBytes": 4299075,
+  "resourceCount": 7,
+  "totalBytes": 370258,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 8083
+      "bytes": 8513
     },
     "image": {
-      "count": 3,
-      "bytes": 4258253
+      "count": 4,
+      "bytes": 329062
     },
     "script": {
       "count": 1,
@@ -26,41 +26,34 @@
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27500
+      "bytes": 27444
     }
   },
   "largestResources": [
     {
-      "url": "http://127.0.0.1:4173/Images/club-image.png",
-      "bytes": 2959717,
+      "url": "http://127.0.0.1:4173/Images/Archive/Photo%2025-w1600.webp",
+      "bytes": 169154,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/Archive/Photo%2025.jpg",
-      "bytes": 1207964,
+      "url": "http://127.0.0.1:4173/Images/club-image-w800.webp",
+      "bytes": 152828,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/club-logo.png",
-      "bytes": 90572,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27500,
+      "bytes": 27444,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/index.html",
-      "bytes": 8083,
+      "bytes": 8513,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -71,33 +64,54 @@
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/club-logo-w800.webp",
+      "bytes": 3540,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
+      "bytes": 3540,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
     }
   ],
   "resources": [
     {
-      "url": "http://127.0.0.1:4173/Images/Archive/Photo%2025.jpg",
-      "bytes": 1207964,
+      "url": "http://127.0.0.1:4173/Images/Archive/Photo%2025-w1600.webp",
+      "bytes": 169154,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/club-image.png",
-      "bytes": 2959717,
+      "url": "http://127.0.0.1:4173/Images/club-image-w800.webp",
+      "bytes": 152828,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/club-logo.png",
-      "bytes": 90572,
+      "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
+      "bytes": 3540,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/club-logo-w800.webp",
+      "bytes": 3540,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
     },
     {
       "url": "http://127.0.0.1:4173/index.html",
-      "bytes": 8083,
+      "bytes": 8513,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -111,7 +125,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27500,
+      "bytes": 27444,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

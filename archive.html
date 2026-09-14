@@ -202,7 +202,7 @@ bodyClass: ""
         <div class="container">
             <!-- Introduction -->
             <div class="archive-intro">
-                <img src="./Images/SD Archive/Sandy.jpg" alt="Sandy Deans">
+                {% photoImage "./Images/SD Archive/Sandy.jpg", "Sandy Deans", { role: "grid", sizes: "(max-width: 900px) 92vw, 460px", loading: false } %}
                 <h2>About the Archive</h2>
                 <p>This archive is a comprehensive collection of photographs, news clippings, and memorabilia that documents the rich history of Polmaise Bowling Club from the early 1980s to the present day.</p>
                 <p>Sandy Deans, a long-standing and highly decorated member of our club, has collected and preserved these articles and photographs over many years. This archive represents his commitment to preserving the recent heritage and legacy of Polmaise Bowling Club for future generations.</p>
@@ -232,8 +232,8 @@ bodyClass: ""
 {# Archive thumbnails reuse the full-size image path, as in the original markup #}
 {% for item in archive.items %}
                     <div class="archive-item" data-category="{{ item.category }}">
-                        <a href="{{ item.href }}" data-lightbox="{{ archive.group }}" data-title="{{ item.title }}">
-                            <img src="{{ item.href }}" alt="{{ item.alt }}">
+                        <a href="{{ item.href | imageUrl(1600) }}" data-lightbox="{{ archive.group }}" data-title="{{ item.title }}">
+                            {% photoImage item.href, item.alt, { role: "grid", sizes: "(max-width: 768px) 45vw, 380px", loading: "lazy" } %}
                             <div class="archive-caption">{{ item.caption }}</div>
                         </a>
                     </div>

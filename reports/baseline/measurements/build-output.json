@@ -1,6 +1,11 @@
 {
   "publicPageCount": 18,
-  "copiedImageCount": 1913,
+  "sourceImageCount": 1913,
+  "deployedImageCount": 2924,
+  "deployedDerivativeCount": 2921,
+  "deployedCopiedOriginalCount": 3,
+  "deployedImageBytes": 252041468,
+  "artifactBytes": 254530787,
   "copiedDownloadCount": 5,
   "generatedRoot": "_site",
   "leakedDevelopmentPaths": [],

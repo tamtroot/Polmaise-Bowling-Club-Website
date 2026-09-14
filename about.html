@@ -288,10 +288,10 @@ bodyClass: ""
                     <p>Today, Polmaise Bowling Club remains committed to its heritage while embracing modern approaches to the sport and club management. Whether through competitive success, community engagement, or the friendships forged over decades, Polmaise continues to be a beacon of sporting excellence and camaraderie in Fallin.</p>
                 </div>
                 <div class="history-images">
-                    <img src="./Images/history-1.jpg" alt="Historic photo of Polmaise Bowling Club" class="lightbox-image">
-                    <img src="./Images/history-2.jpg" alt="Early members of Polmaise Bowling Club" class="lightbox-image">
-                    <img src="./Images/history-3.jpg" alt="Polmaise Bowling Club through the decades" class="lightbox-image">
-                    <img src="./Images/history-4.jpg" alt="Historical tournament at Polmaise Bowling Club" class="lightbox-image">
+                    {% photoImage "./Images/history-1.jpg", "Historic photo of Polmaise Bowling Club", { loading: false, sizes: "(max-width: 768px) 90vw, 375px", class: "lightbox-image" } %}
+                    {% photoImage "./Images/history-2.jpg", "Early members of Polmaise Bowling Club", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "lightbox-image" } %}
+                    {% photoImage "./Images/history-3.jpg", "Polmaise Bowling Club through the decades", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "lightbox-image" } %}
+                    {% photoImage "./Images/history-4.jpg", "Historical tournament at Polmaise Bowling Club", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "lightbox-image" } %}
                 </div>
             </div>
             
@@ -302,7 +302,7 @@ bodyClass: ""
                 <div class="committee-grid">
                     <div class="committee-member">
                         <div class="member-image">
-                            <img src="./Images/David Stewart.png" alt="President">
+                            {% photoImage "./Images/David Stewart.png", "President", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                         </div>
                         <div class="member-info">
                             <h3>David Stewart</h3>
@@ -313,7 +313,7 @@ bodyClass: ""
                     
                     <div class="committee-member">
                         <div class="member-image">
-                            <img src="./Images/Robert Donaldson.png" alt="Vice President">
+                            {% photoImage "./Images/Robert Donaldson.png", "Vice President", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                         </div>
                         <div class="member-info">
                             <h3>Robert Donaldson</h3>
@@ -324,7 +324,7 @@ bodyClass: ""
                     
                     <div class="committee-member">
                         <div class="member-image">
-                            <img src="./Images/Peter Black.png" alt="Secretary">
+                            {% photoImage "./Images/Peter Black.png", "Secretary", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px" } %}
                         </div>
                         <div class="member-info">
                             <h3>Peter Black</h3>
@@ -572,8 +572,8 @@ bodyClass: ""
                 title: 'A Gala Day at Fallin - June 3, 1911',
                 subtitle: 'Opening of Bowling Green and Sale of Work',
                 content: `
-                    <img src="./Images/Archive/HistoricalArchive/Opening of Green.jpg" alt="Opening of Bowling Green 1911" class="article-image">
-                    <img src="./Images/Archive/HistoricalArchive/Opening of Green News.jpg" alt="Original newspaper clipping from 1911" class="article-clipping">
+                    {% photoImage "./Images/Archive/HistoricalArchive/Opening of Green.jpg", "Opening of Bowling Green 1911", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-image" } %}
+                    {% photoImage "./Images/Archive/HistoricalArchive/Opening of Green News.jpg", "Original newspaper clipping from 1911", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-clipping" } %}
                     <p><em>Photo by Bennett, St. Ninians.</em></p>
                     <p>The new green which is situated at the side of the road opposite the Gothenburg Public House was opened by Mr. Archibald Russell, Esq. of Sauchie and Blackgrange. The green was laid out by Mr. Jas. Barr, Bowling Green Contractor, Kilmarnock, and is a credit to his workmanship.</p>
                     <p>The opening ceremony was attended by a large gathering of the villagers and friends from the surrounding district. The weather was all that could be desired and the proceedings passed off most successfully.</p>
@@ -583,7 +583,7 @@ bodyClass: ""
                 title: 'Bridge of Allan Gazette - 15th July 1911',
                 subtitle: 'First Match on New Green - Local Club Defeated',
                 content: `
-                    <img src="./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_15_July_1911_0005_Clip.jpg" alt="First Match on Polmaise Green 1911" class="article-image">
+                    {% photoImage "./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_15_July_1911_0005_Clip.jpg", "First Match on Polmaise Green 1911", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-image" } %}
                     <p>On Wednesday evening five rinks from the Spittalmyre Bowling Club visited Polmaise Bowling Club, when a most enjoyable game was contested, which ended in a victory for Spittalmyre with 32 shots up, the scores being :- Spittalmyre,106; Polmaise, 72.</p>
                     <p>At the close of the game the president of the local club, Mr Todd, said that it gave them great pleasure to have their old friends from Spittalmyre at their first match on the Fallin green, and when he saw the visitors with so many veterans in their midst, he was not so surprised at the victory. He hoped, however, that Polmaise would yet be able to alter the figures.</p>
                     <p>In reply, the vice-president of Spittalmyre, Mr George Liddle, said it was unfortunate that their president, Mr W Porter, was unavoidably absent, as he considered this to be a very important match. However, on behalf of the Spittalmyre club and himself he thanked the president, Mr Todd, and the Polmaise club for their kind invitation that evening. They had thoroughly enjoyed the game and the hospitality of the Fallin club, and in his opinion the green was in excellent order, and reflected the greatest credit on the parties responsible for its institution.</p>
@@ -593,7 +593,7 @@ bodyClass: ""
                 title: 'The Polmaise Trophy - 1914',
                 subtitle: 'Fallin Club\'s First Victory',
                 content: `
-                    <img src="./Images/Archive/HistoricalArchive/8th June 1914.jpg" alt="Original newspaper clipping from 1914" class="article-image">
+                    {% photoImage "./Images/Archive/HistoricalArchive/8th June 1914.jpg", "Original newspaper clipping from 1914", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-image" } %}
                     <p>In a thrilling contest that marked a significant milestone in the club's history, Polmaise Bowling Club secured their first major trophy. The final score of 101-61 demonstrated the club's growing prowess on the green.</p>
                     <p>The victory was particularly sweet as it came against a strong field of established clubs, proving that the young club from Fallin could compete at the highest level.</p>
                 `
@@ -602,8 +602,8 @@ bodyClass: ""
                 title: 'Macintosh Trophy Secured',
                 subtitle: 'Polmaise Secure Macintosh Trophy Ownership',
                 content: `
-                    <img src="./Images/Archive/HistoricalArchive/Macintosh 1935.jpg" alt="Macintosh Trophy Win 1935" class="article-image">
-                    <img src="./Images/Archive/HistoricalArchive/20th July 1935.jpg" alt="Original newspaper clipping from July 1935" class="article-clipping">
+                    {% photoImage "./Images/Archive/HistoricalArchive/Macintosh 1935.jpg", "Macintosh Trophy Win 1935", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-image" } %}
+                    {% photoImage "./Images/Archive/HistoricalArchive/20th July 1935.jpg", "Original newspaper clipping from July 1935", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-clipping" } %}
                     <p>After years of fierce competition, Polmaise Bowling Club has earned permanent ownership of the prestigious Macintosh Trophy. The final against Bridge of Allan Bowling Club was a testament to the high standard of bowling that Polmaise has become known for.</p>
                     <p>The trophy will now remain at Polmaise as a symbol of the club's dedication and success in the sport.</p>
                 `
@@ -612,8 +612,8 @@ bodyClass: ""
                 title: 'Father vs Son Championship Final',
                 subtitle: 'Father Defeats Son in Club Championship Final',
                 content: `
-                    <img src="./Images/Archive/HistoricalArchive/Stirling_Observer_11_August_1942_0006_Clip.jpg" alt="J. Gwynne Sr. Championship Win 1942" class="article-image">
-                    <img src="./Images/Archive/HistoricalArchive/J.Gwynne.jpg" alt="Original newspaper clipping from 1942" class="article-clipping">
+                    {% photoImage "./Images/Archive/HistoricalArchive/Stirling_Observer_11_August_1942_0006_Clip.jpg", "J. Gwynne Sr. Championship Win 1942", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-image" } %}
+                    {% photoImage "./Images/Archive/HistoricalArchive/J.Gwynne.jpg", "Original newspaper clipping from 1942", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-clipping" } %}
                     <p>In what will be remembered as one of the most memorable matches in club history, John Gwynne Snr. faced his own son in the club championship final. The match was a display of exceptional bowling from both players, with the elder Gwynne ultimately prevailing to claim his final club championship title.</p>
                     <p>This victory marked John Gwynne Snr.'s ninth club championship, a record that stood as a testament to his dominance in the club's early decades.</p>
                 `
@@ -622,8 +622,8 @@ bodyClass: ""
                 title: 'Polmaise Top Of The Pops!',
                 subtitle: 'Scottish Top Ten Champions',
                 content: `
-                    <img src="./Images/Archive/1988.jpg" alt="Polmaise Bowling Club - Scottish Top Ten Champions 1988" class="article-image">
-                    <img src="./Images/Archive/HistoricalArchive/Stirling_Observer_17_June_1988_0022_Clip.jpg" alt="Original newspaper clipping of Polmaise Top of the Pops" class="article-clipping">
+                    {% photoImage "./Images/Archive/1988.jpg", "Polmaise Bowling Club - Scottish Top Ten Champions 1988", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-image" } %}
+                    {% photoImage "./Images/Archive/HistoricalArchive/Stirling_Observer_17_June_1988_0022_Clip.jpg", "Original newspaper clipping of Polmaise Top of the Pops", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-clipping" } %}
                     <p>In a remarkable display of team bowling, Polmaise Bowling Club has claimed the National Inter-County Top Ten title. The victory marks one of the most significant achievements in the club's history and establishes Polmaise as one of Scotland's premier bowling clubs.</p>
                     <p>The team's performance throughout the competition showcased the depth of talent at the club and the strong bowling tradition that has been built over the years.</p>
                 `
@@ -632,8 +632,8 @@ bodyClass: ""
                 title: 'Super Bowl',
                 subtitle: 'Polmaise trio snatch Scottish title in last gasp thriller',
                 content: `
-                    <img src="./Images/Archive/HistoricalArchive/IMG-20250509-WA0001.jpg" alt="Polmaise Bowling Club - Scottish Triples Champions 2002" class="article-image">
-                    <img src="./Images/Archive/HistoricalArchive/IMG-20250509-WA0002.jpg" alt="Original newspaper clipping of Scottish Triples Championship win" class="article-clipping">
+                    {% photoImage "./Images/Archive/HistoricalArchive/IMG-20250509-WA0001.jpg", "Polmaise Bowling Club - Scottish Triples Champions 2002", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-image" } %}
+                    {% photoImage "./Images/Archive/HistoricalArchive/IMG-20250509-WA0002.jpg", "Original newspaper clipping of Scottish Triples Championship win", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-clipping" } %}
                     <p>The trio of John Johnstone, Derek Logie, and Jason Williams created history by becoming the first Polmaise members to win a national championship. In a thrilling final that went down to the last bowl, the Polmaise team showed exceptional skill and nerve to secure the Scottish Triples title.</p>
                     <p>This victory marked a new era for the club, proving that Polmaise could compete and win at the highest level of the sport.</p>
                 `
@@ -642,8 +642,8 @@ bodyClass: ""
                 title: 'Best of British',
                 subtitle: 'Victory over Auld Enemy gives Polmaise the UK title',
                 content: `
-                    <img src="./Images/Archive/HistoricalArchive/Triples.jpg" alt="Polmaise Bowling Club - British Isles Triples Champions 2003" class="article-image">
-                    <img src="./Images/Archive/HistoricalArchive/IMG-20250509-WA0000.jpg" alt="Original newspaper clipping of British Isles championship win" class="article-clipping">
+                    {% photoImage "./Images/Archive/HistoricalArchive/Triples.jpg", "Polmaise Bowling Club - British Isles Triples Champions 2003", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-image" } %}
+                    {% photoImage "./Images/Archive/HistoricalArchive/IMG-20250509-WA0000.jpg", "Original newspaper clipping of British Isles championship win", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-clipping" } %}
                     <p>Building on their Scottish success, the formidable trio of John Johnstone, Derek Logie, and Jason Williams have added the British Isles Triples title to their collection. The victory over strong opposition from across the British Isles demonstrates the exceptional standard of bowling at Polmaise.</p>
                     <p>This historic achievement marks the first time a Polmaise team has won a British Isles title, setting a new benchmark for future generations.</p>
                 `
@@ -652,8 +652,8 @@ bodyClass: ""
                 title: 'Silverware for Rita and Gary',
                 subtitle: 'Scottish Mixed Pairs Champions',
                 content: `
-                    <img src="./Images/Archive/HistoricalArchive/Gary&Rita1.jpg" alt="Rita Smith and Gary Malcolmson - Scottish Mixed Pairs Champions" class="article-image">
-                    <img src="./Images/Archive/HistoricalArchive/Gary&Rita.jpg" alt="Original newspaper clipping of Rita and Gary's championship win" class="article-clipping">
+                    {% photoImage "./Images/Archive/HistoricalArchive/Gary&Rita1.jpg", "Rita Smith and Gary Malcolmson - Scottish Mixed Pairs Champions", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-image" } %}
+                    {% photoImage "./Images/Archive/HistoricalArchive/Gary&Rita.jpg", "Original newspaper clipping of Rita and Gary's championship win", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 375px", class: "article-clipping" } %}
                     <p>Rita Smith and Gary Malcolmson have brought national glory to Polmaise once again with their victory in the Scottish Mixed Pairs Championship. Their partnership proved unbeatable throughout the competition, displaying both skill and determination.</p>
                     <p>This victory adds another prestigious national title to the club's growing collection and highlights the strength of both the men's and women's sections at Polmaise.</p>
                 `

@@ -257,7 +257,7 @@ body.menu-open {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -362,7 +362,7 @@ body.menu-open {
 
 /* Page Banner */
 .page-banner {
-    background: linear-gradient(rgba(15, 37, 87, 0.8), rgba(15, 37, 87, 0.8)), url('images/banner-bg.jpg');
+    background: linear-gradient(rgba(15, 37, 87, 0.8), rgba(15, 37, 87, 0.8));
     background-size: cover;
     background-position: center;
     padding: 100px 0;

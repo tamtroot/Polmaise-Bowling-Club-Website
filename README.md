@@ -24,6 +24,19 @@ A modern, responsive website for Polmaise Bowling Club based in Fallin, Scotland
 
 ## Technical Details
 
+### Build and images
+
+The site is built with Eleventy (`npm.cmd run build`), which renders the
+templates into `_site/` and then generates optimised image derivatives. The
+original photographs in `Images/` are the club archive: they are never modified
+and are not deployed. See [docs/image-pipeline.md](docs/image-pipeline.md) for
+how the pipeline works, the derivative sizes and quality settings, and how to
+add a new photograph.
+
+Development tooling (audit, image pipeline, scripts, tests and reports) lives in
+`tools/`, `tests/` and `reports/` and is excluded from the deployed site and
+from source control where generated.
+
 ### Color Scheme
 
 - **Primary Colors**:

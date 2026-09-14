@@ -2,7 +2,7 @@
         <div class="container">
             <div class="logo">
                 <div class="logo-image">
-                    <img src="{{ assetPrefix }}Images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                    {% photoImage assetPrefix + "Images/club-logo.png", "Polmaise Bowling Club Logo", { role: "logo", sizes: "56px", loading: false } %}
                 </div>
                 <div class="logo-text">
                     <h1>Polmaise Bowling Club</h1>

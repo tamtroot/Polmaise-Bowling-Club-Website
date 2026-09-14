@@ -1,15 +1,28 @@
+{# Registers the build-time derivatives for every image in this album #}
+{% for filename in album.images %}
+{% set registeredThumb = imageUrl(album.directory + filename, 400) %}
+{% set registeredThumbRetina = imageUrl(album.directory + filename, 800) %}
+{% set registeredLarge = imageUrl(album.directory + filename, 1600) %}
+{% endfor %}
 <script>
         $(document).ready(function() {
-            // Album images and captions live in _data/photoAlbums.json
+            // Album images and captions live in _data/photoAlbums.json; the
+            // optimised derivatives are generated during the build.
             const album = {{ album | dump | safe }};
             const gallery = $('#' + album.galleryId);
+            // Paths may contain spaces, which must be encoded for srcset.
+            const encodePath = (value) => value.split('/').map(encodeURIComponent).join('/');
 
             // Generate gallery items for all images
             album.images.forEach((filename, index) => {
+                const stem = filename.replace(/\.[^.]+$/, "");
+                const thumb = encodePath(`${album.directory}${stem}-w400.webp`);
+                const thumbRetina = encodePath(`${album.directory}${stem}-w800.webp`);
+                const large = encodePath(`${album.directory}${stem}-w1600.webp`);
                 const galleryItem = `
                     <div class="album-item">
-                        <a href="${album.directory}${filename}" data-lightbox="${album.group}" data-title="${album.titlePrefix}${index + 1}">
-                            <img src="${album.directory}${filename}" alt="${album.altPrefix}${index + 1}" loading="lazy">
+                        <a href="${large}" data-lightbox="${album.group}" data-title="${album.titlePrefix}${index + 1}">
+                            <img src="${thumb}" srcset="${thumb} 400w, ${thumbRetina} 800w" sizes="(max-width: 768px) 45vw, 380px" alt="${album.altPrefix}${index + 1}" loading="lazy" decoding="async">
                             <div class="overlay">
                                 <i class="fas fa-search-plus"></i>
                             </div>

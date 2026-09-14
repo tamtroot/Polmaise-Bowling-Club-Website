@@ -10,15 +10,15 @@
   },
   "status": 200,
   "resourceCount": 5,
-  "totalBytes": 2919465,
+  "totalBytes": 246610,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 30693
+      "bytes": 30961
     },
     "image": {
       "count": 2,
-      "bytes": 2856033
+      "bytes": 182966
     },
     "script": {
       "count": 1,
@@ -26,34 +26,27 @@
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27500
+      "bytes": 27444
     }
   },
   "largestResources": [
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Presentation.png",
-      "bytes": 2765461,
+      "url": "http://127.0.0.1:4173/Images/2025/Presentation-w1600.webp",
+      "bytes": 179426,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/png"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/club-logo.png",
-      "bytes": 90572,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
       "url": "http://127.0.0.1:4173/News%20articles/presentation-dance-2025.html",
-      "bytes": 30693,
+      "bytes": 30961,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27500,
+      "bytes": 27444,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -64,26 +57,33 @@
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
+      "bytes": 3540,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
     }
   ],
   "resources": [
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Presentation.png",
-      "bytes": 2765461,
+      "url": "http://127.0.0.1:4173/Images/2025/Presentation-w1600.webp",
+      "bytes": 179426,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/club-logo.png",
-      "bytes": 90572,
+      "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
+      "bytes": 3540,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
       "url": "http://127.0.0.1:4173/News%20articles/presentation-dance-2025.html",
-      "bytes": 30693,
+      "bytes": 30961,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -97,7 +97,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27500,
+      "bytes": 27444,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

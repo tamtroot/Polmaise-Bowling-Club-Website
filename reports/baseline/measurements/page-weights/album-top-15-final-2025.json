@@ -9,16 +9,16 @@
     "height": 900
   },
   "status": 200,
-  "resourceCount": 35,
-  "totalBytes": 64983436,
+  "resourceCount": 34,
+  "totalBytes": 878230,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 9804
+      "bytes": 10909
     },
     "image": {
-      "count": 32,
-      "bytes": 64940893
+      "count": 31,
+      "bytes": 834638
     },
     "script": {
       "count": 1,
@@ -26,414 +26,407 @@
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27500
+      "bytes": 27444
     }
   },
   "largestResources": [
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145813.jpg",
-      "bytes": 7894110,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145700-w400.webp",
+      "bytes": 97254,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_134840.jpg",
-      "bytes": 3365167,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145813-w400.webp",
+      "bytes": 50250,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144424.jpg",
-      "bytes": 3148236,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140145-w400.webp",
+      "bytes": 47606,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144427.jpg",
-      "bytes": 2836939,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140154-w400.webp",
+      "bytes": 44674,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145818.jpg",
-      "bytes": 2750124,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140149-w400.webp",
+      "bytes": 38876,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144444.jpg",
-      "bytes": 2638673,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_134840-w400.webp",
+      "bytes": 28510,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145512.jpg",
-      "bytes": 2521697,
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 27444,
       "status": 200,
-      "resourceType": "image",
-      "contentType": "image/jpeg"
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145500.jpg",
-      "bytes": 2458039,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144206-w400.webp",
+      "bytes": 26050,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144400.jpg",
-      "bytes": 2450914,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144213-w400.webp",
+      "bytes": 25708,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144315.jpg",
-      "bytes": 2443643,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145611-w400.webp",
+      "bytes": 25526,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145611.jpg",
-      "bytes": 2297255,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144400-w400.webp",
+      "bytes": 25400,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145726.jpg",
-      "bytes": 2264826,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145726-w400.webp",
+      "bytes": 24884,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145603.jpg",
-      "bytes": 2232852,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145603-w400.webp",
+      "bytes": 24870,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145607.jpg",
-      "bytes": 2089774,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145512-w400.webp",
+      "bytes": 22856,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144213.jpg",
-      "bytes": 2027315,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144424-w400.webp",
+      "bytes": 22676,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145804.jpg",
-      "bytes": 2019446,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145607-w400.webp",
+      "bytes": 22642,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144418.jpg",
-      "bytes": 1941222,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145500-w400.webp",
+      "bytes": 22440,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144218.jpg",
-      "bytes": 1914621,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144418-w400.webp",
+      "bytes": 22056,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144445.jpg",
-      "bytes": 1828016,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145818-w400.webp",
+      "bytes": 21882,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145711.jpg",
-      "bytes": 1699650,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144218-w400.webp",
+      "bytes": 21618,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145633.jpg",
-      "bytes": 1692644,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145804-w400.webp",
+      "bytes": 21488,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145710.jpg",
-      "bytes": 1644066,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140143-w400.webp",
+      "bytes": 20726,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145700.jpg",
-      "bytes": 1630581,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144445-w400.webp",
+      "bytes": 20706,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145830.jpg",
-      "bytes": 1608022,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144230-w400.webp",
+      "bytes": 20232,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144230.jpg",
-      "bytes": 1596878,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144444-w400.webp",
+      "bytes": 20020,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     }
   ],
   "resources": [
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_134840.jpg",
-      "bytes": 3365167,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_134840-w400.webp",
+      "bytes": 28510,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140143.jpg",
-      "bytes": 381408,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140143-w400.webp",
+      "bytes": 20726,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140145.jpg",
-      "bytes": 642616,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140145-w400.webp",
+      "bytes": 47606,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140149.jpg",
-      "bytes": 536818,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140149-w400.webp",
+      "bytes": 38876,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140154.jpg",
-      "bytes": 847063,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_140154-w400.webp",
+      "bytes": 44674,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144206.jpg",
-      "bytes": 1447697,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144206-w400.webp",
+      "bytes": 26050,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144213.jpg",
-      "bytes": 2027315,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144213-w400.webp",
+      "bytes": 25708,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144218.jpg",
-      "bytes": 1914621,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144218-w400.webp",
+      "bytes": 21618,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144230.jpg",
-      "bytes": 1596878,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144230-w400.webp",
+      "bytes": 20232,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144315.jpg",
-      "bytes": 2443643,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144315-w400.webp",
+      "bytes": 19360,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144400.jpg",
-      "bytes": 2450914,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144400-w400.webp",
+      "bytes": 25400,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144418.jpg",
-      "bytes": 1941222,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144418-w400.webp",
+      "bytes": 22056,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144424.jpg",
-      "bytes": 3148236,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144424-w400.webp",
+      "bytes": 22676,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144427.jpg",
-      "bytes": 2836939,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144427-w400.webp",
+      "bytes": 18666,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144444.jpg",
-      "bytes": 2638673,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144444-w400.webp",
+      "bytes": 20020,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144445.jpg",
-      "bytes": 1828016,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_144445-w400.webp",
+      "bytes": 20706,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145500.jpg",
-      "bytes": 2458039,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145500-w400.webp",
+      "bytes": 22440,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145512.jpg",
-      "bytes": 2521697,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145512-w400.webp",
+      "bytes": 22856,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145603.jpg",
-      "bytes": 2232852,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145603-w400.webp",
+      "bytes": 24870,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145607.jpg",
-      "bytes": 2089774,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145607-w400.webp",
+      "bytes": 22642,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145611.jpg",
-      "bytes": 2297255,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145611-w400.webp",
+      "bytes": 25526,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145633.jpg",
-      "bytes": 1692644,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145633-w400.webp",
+      "bytes": 18542,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145700.jpg",
-      "bytes": 1630581,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145700-w400.webp",
+      "bytes": 97254,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145710.jpg",
-      "bytes": 1644066,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145710-w400.webp",
+      "bytes": 19624,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145711.jpg",
-      "bytes": 1699650,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145711-w400.webp",
+      "bytes": 17426,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145726.jpg",
-      "bytes": 2264826,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145726-w400.webp",
+      "bytes": 24884,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145804.jpg",
-      "bytes": 2019446,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145804-w400.webp",
+      "bytes": 21488,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145813.jpg",
-      "bytes": 7894110,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145813-w400.webp",
+      "bytes": 50250,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145818.jpg",
-      "bytes": 2750124,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145818-w400.webp",
+      "bytes": 21882,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145830.jpg",
-      "bytes": 1608022,
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145830-w400.webp",
+      "bytes": 18530,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/images/banner-bg.jpg",
-      "bytes": 9,
-      "status": 404,
-      "resourceType": "image",
-      "contentType": "text/plain; charset=utf-8"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/club-logo.png",
-      "bytes": 90572,
+      "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
+      "bytes": 3540,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
       "url": "http://127.0.0.1:4173/PhotoAlbums/top-15-final-2025.html",
-      "bytes": 9804,
+      "bytes": 10909,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -447,7 +440,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27500,
+      "bytes": 27444,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

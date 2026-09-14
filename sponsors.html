@@ -193,7 +193,7 @@ bodyClass: ""
                     </div>
 {% if sponsor.banner %}
                     <div class="sponsor-banner">
-                        <img src="{{ sponsor.banner.src }}" alt="{{ sponsor.banner.alt }}">
+                        {% photoImage sponsor.banner.src, sponsor.banner.alt, { sizes: "(max-width: 900px) 92vw, 1168px", loading: "lazy" } %}
                     </div>
 {% endif %}
                 </div>
@@ -220,7 +220,7 @@ bodyClass: ""
                         </div>
 {% if sponsor.logo %}
                         <div class="sponsor-card-logo{% if sponsor.logo.extraClass %} {{ sponsor.logo.extraClass }}{% endif %}">
-                            <img src="{{ sponsor.logo.src }}" alt="{{ sponsor.logo.alt }}">
+                            {% photoGraphic sponsor.logo.src, sponsor.logo.alt, { width: 400 } %}
                         </div>
 {% endif %}
                     </div>

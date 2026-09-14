@@ -27,7 +27,7 @@ bodyClass: ""
 <style>
 /* Add new styles for hero section with background image */
         .hero {
-            background-image: url('./Images/Archive/Photo 25.jpg');
+            background-image: url('{{ "./Images/Archive/Photo 25.jpg" | imageUrl(1600) }}');
             background-size: cover;
             background-position: center;
             position: relative;
@@ -97,14 +97,14 @@ bodyClass: ""
             <div class="welcome-content">
                 <div class="welcome-text">
                     <div class="welcome-logo">
-                        <img src="./Images/club-logo.png" alt="Polmaise Bowling Club Logo">
+                        {% photoImage "./Images/club-logo.png", "Polmaise Bowling Club Logo", { loading: false, sizes: "(max-width: 768px) 90vw, 400px" } %}
                     </div>
                     <p>Established in 1911, Polmaise Bowling Club has been a cornerstone of the Fallin community for generations. With deep roots in the local mining heritage, our club offers a welcoming environment for bowlers of all skill levels.</p>
                     <p>Whether you're an experienced player or new to the sport, we invite you to join our friendly community and discover the joy of bowls in our beautiful facilities.</p>
                     <a href="about.html" class="btn primary-btn">Learn More About Us</a>
                 </div>
                 <div class="welcome-image">
-                    <img src="./Images/club-image.png" alt="Polmaise Bowling Club Green">
+                    {% photoImage "./Images/club-image.png", "Polmaise Bowling Club Green", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 400px" } %}
                 </div>
             </div>
         </div>

@@ -1,16 +1,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% if headVariant == "icon-first" %}
-    <link rel="icon" type="image/x-icon" href="{{ assetPrefix }}Images/polmaise_logo_favicon.png">
+    <link rel="icon" type="image/x-icon" href="{{ (assetPrefix + "Images/polmaise_logo_favicon.png") | imageOriginal }}">
     <title>{{ pageTitle | safe }}</title>
     <link rel="stylesheet" href="{{ prefix }}styles.css">
 {% elif headVariant == "styles-first" %}
     <title>{{ pageTitle | safe }}</title>
     <link rel="stylesheet" href="{{ prefix }}styles.css">
-    <link rel="icon" type="image/x-icon" href="{{ assetPrefix }}Images/polmaise_logo_favicon.png">
+    <link rel="icon" type="image/x-icon" href="{{ (assetPrefix + "Images/polmaise_logo_favicon.png") | imageOriginal }}">
 {% else %}
     <title>{{ pageTitle | safe }}</title>
-    <link rel="icon" type="image/x-icon" href="{{ assetPrefix }}Images/polmaise_logo_favicon.png">
+    <link rel="icon" type="image/x-icon" href="{{ (assetPrefix + "Images/polmaise_logo_favicon.png") | imageOriginal }}">
     <link rel="stylesheet" href="{{ prefix }}styles.css">
 {% endif %}
     <link href="https://fonts.googleapis.com/css2?{{ fontFamilies | safe }}&display=swap" rel="stylesheet">

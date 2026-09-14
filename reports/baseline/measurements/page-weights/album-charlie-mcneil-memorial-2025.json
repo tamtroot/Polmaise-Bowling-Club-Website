@@ -9,16 +9,16 @@
     "height": 900
   },
   "status": 200,
-  "resourceCount": 42,
-  "totalBytes": 76245134,
+  "resourceCount": 41,
+  "totalBytes": 1269860,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 8782
+      "bytes": 10015
     },
     "image": {
-      "count": 39,
-      "bytes": 76203613
+      "count": 38,
+      "bytes": 1227162
     },
     "script": {
       "count": 1,
@@ -26,463 +26,456 @@
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27500
+      "bytes": 27444
     }
   },
   "largestResources": [
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_100733.jpg",
-      "bytes": 3948649,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_140023-w400.webp",
+      "bytes": 92160,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_110956.jpg",
-      "bytes": 3857635,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125914-w400.webp",
+      "bytes": 76876,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111016.jpg",
-      "bytes": 2864071,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142727-w400.webp",
+      "bytes": 57076,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_134042.jpg",
-      "bytes": 2794801,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125738-w400.webp",
+      "bytes": 54258,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142738.jpg",
-      "bytes": 2735027,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125743-w400.webp",
+      "bytes": 54138,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_110953.jpg",
-      "bytes": 2725509,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125503-w400.webp",
+      "bytes": 53662,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142727.jpg",
-      "bytes": 2636220,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125559-w400.webp",
+      "bytes": 52940,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_135923.jpg",
-      "bytes": 2619992,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_130114-w400.webp",
+      "bytes": 51290,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_164614.jpg",
-      "bytes": 2580391,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124011-w400.webp",
+      "bytes": 49420,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125914.jpg",
-      "bytes": 2455823,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124030-w400.webp",
+      "bytes": 45084,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111001.jpg",
-      "bytes": 2131169,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_130318-w400.webp",
+      "bytes": 42110,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111008.jpg",
-      "bytes": 2099376,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125939-w400.webp",
+      "bytes": 41576,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_094516.jpg",
-      "bytes": 2053348,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_113407-w400.webp",
+      "bytes": 39784,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_140023.jpg",
-      "bytes": 1999602,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_123501-w400.webp",
+      "bytes": 38360,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125939.jpg",
-      "bytes": 1920088,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_122731-w400.webp",
+      "bytes": 35878,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125738.jpg",
-      "bytes": 1912367,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142509-w400.webp",
+      "bytes": 29276,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125503.jpg",
-      "bytes": 1907039,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142618-w400.webp",
+      "bytes": 28536,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111103.jpg",
-      "bytes": 1891446,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142616-w400.webp",
+      "bytes": 27946,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_130114.jpg",
-      "bytes": 1868454,
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 27444,
       "status": 200,
-      "resourceType": "image",
-      "contentType": "image/jpeg"
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124011.jpg",
-      "bytes": 1862800,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_094516-w400.webp",
+      "bytes": 26800,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125559.jpg",
-      "bytes": 1830445,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_145613-w400.webp",
+      "bytes": 26594,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125743.jpg",
-      "bytes": 1823868,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142802-w400.webp",
+      "bytes": 21370,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142802.jpg",
-      "bytes": 1814030,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_135923-w400.webp",
+      "bytes": 21254,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124030.jpg",
-      "bytes": 1710600,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_134042-w400.webp",
+      "bytes": 20970,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142751.jpg",
-      "bytes": 1674054,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142738-w400.webp",
+      "bytes": 19400,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     }
   ],
   "resources": [
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_094516.jpg",
-      "bytes": 2053348,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_094516-w400.webp",
+      "bytes": 26800,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_100733.jpg",
-      "bytes": 3948649,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_100733-w400.webp",
+      "bytes": 15876,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_110953.jpg",
-      "bytes": 2725509,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_110953-w400.webp",
+      "bytes": 16846,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_110956.jpg",
-      "bytes": 3857635,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_110956-w400.webp",
+      "bytes": 16712,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111001.jpg",
-      "bytes": 2131169,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111001-w400.webp",
+      "bytes": 16158,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111008.jpg",
-      "bytes": 2099376,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111008-w400.webp",
+      "bytes": 16962,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111016.jpg",
-      "bytes": 2864071,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111016-w400.webp",
+      "bytes": 17678,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111021.jpg",
-      "bytes": 1419242,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111021-w400.webp",
+      "bytes": 18982,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111103.jpg",
-      "bytes": 1891446,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_111103-w400.webp",
+      "bytes": 12560,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_113407.jpg",
-      "bytes": 1606287,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_113407-w400.webp",
+      "bytes": 39784,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_122731.jpg",
-      "bytes": 1662489,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_122731-w400.webp",
+      "bytes": 35878,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_123501.jpg",
-      "bytes": 1631527,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_123501-w400.webp",
+      "bytes": 38360,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124011.jpg",
-      "bytes": 1862800,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124011-w400.webp",
+      "bytes": 49420,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124030.jpg",
-      "bytes": 1710600,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_124030-w400.webp",
+      "bytes": 45084,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125503.jpg",
-      "bytes": 1907039,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125503-w400.webp",
+      "bytes": 53662,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125559.jpg",
-      "bytes": 1830445,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125559-w400.webp",
+      "bytes": 52940,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125738.jpg",
-      "bytes": 1912367,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125738-w400.webp",
+      "bytes": 54258,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125743.jpg",
-      "bytes": 1823868,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125743-w400.webp",
+      "bytes": 54138,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125914.jpg",
-      "bytes": 2455823,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125914-w400.webp",
+      "bytes": 76876,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125939.jpg",
-      "bytes": 1920088,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_125939-w400.webp",
+      "bytes": 41576,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_130114.jpg",
-      "bytes": 1868454,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_130114-w400.webp",
+      "bytes": 51290,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_130318.jpg",
-      "bytes": 1543431,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_130318-w400.webp",
+      "bytes": 42110,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_134042.jpg",
-      "bytes": 2794801,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_134042-w400.webp",
+      "bytes": 20970,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_135923.jpg",
-      "bytes": 2619992,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_135923-w400.webp",
+      "bytes": 21254,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_140023.jpg",
-      "bytes": 1999602,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_140023-w400.webp",
+      "bytes": 92160,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142509.jpg",
-      "bytes": 1420093,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142509-w400.webp",
+      "bytes": 29276,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142616.jpg",
-      "bytes": 1465786,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142616-w400.webp",
+      "bytes": 27946,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142618.jpg",
-      "bytes": 1467281,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142618-w400.webp",
+      "bytes": 28536,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142727.jpg",
-      "bytes": 2636220,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142727-w400.webp",
+      "bytes": 57076,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142738.jpg",
-      "bytes": 2735027,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142738-w400.webp",
+      "bytes": 19400,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142746.jpg",
-      "bytes": 1648707,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142746-w400.webp",
+      "bytes": 17534,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142749.jpg",
-      "bytes": 1666004,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142749-w400.webp",
+      "bytes": 17838,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142751.jpg",
-      "bytes": 1674054,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142751-w400.webp",
+      "bytes": 16670,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142755.jpg",
-      "bytes": 1569100,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142755-w400.webp",
+      "bytes": 15912,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142802.jpg",
-      "bytes": 1814030,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142802-w400.webp",
+      "bytes": 21370,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_145613.jpg",
-      "bytes": 1296281,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_145613-w400.webp",
+      "bytes": 26594,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_164614.jpg",
-      "bytes": 2580391,
+      "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_164614-w400.webp",
+      "bytes": 17136,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/images/banner-bg.jpg",
-      "bytes": 9,
-      "status": 404,
-      "resourceType": "image",
-      "contentType": "text/plain; charset=utf-8"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/club-logo.png",
-      "bytes": 90572,
+      "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
+      "bytes": 3540,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
       "url": "http://127.0.0.1:4173/PhotoAlbums/charlie-mcneil-memorial-2025.html",
-      "bytes": 8782,
+      "bytes": 10015,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -496,7 +489,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27500,
+      "bytes": 27444,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

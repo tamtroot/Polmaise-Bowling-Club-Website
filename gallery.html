@@ -298,7 +298,7 @@ bodyClass: ""
                 <!-- Finals Day 2026 -->
 {% for card in gallery.cards %}
                 <div class="album-card"{% if card.dataAlbum %} data-album="{{ card.dataAlbum }}"{% endif %}{% if card.open %} data-album-open="{{ card.open }}"{% else %} data-album-link="{{ card.link }}"{% endif %}>
-                    <img src="{{ card.thumbnail.src }}" alt="{{ card.thumbnail.alt }}" class="album-thumbnail{% if card.thumbnail.extraClass %} {{ card.thumbnail.extraClass }}{% endif %}" loading="lazy">
+                    {% photoImage card.thumbnail.src, card.thumbnail.alt, { role: "grid", sizes: "(max-width: 768px) 90vw, 380px", class: "album-thumbnail" + (" " + card.thumbnail.extraClass if card.thumbnail.extraClass else "") } %}
                     <div class="album-info">
                         <h3>{{ card.title }}</h3>
                     </div>
@@ -316,8 +316,8 @@ bodyClass: ""
 {% endif %}
 {% for image in section.images %}
                     <div class="gallery-item">
-                        <a href="{{ image.href }}" data-lightbox="{{ album.group }}"{% if image.title %} data-title="{{ image.title }}"{% endif %}>
-                            <img{% if image.extraClass %} class="{{ image.extraClass }}"{% endif %} loading="lazy"{% if image.decoding %} decoding="{{ image.decoding }}"{% endif %} src="{{ image.src }}" alt="{{ image.alt }}"{% if image.width %} width="{{ image.width }}" height="{{ image.height }}"{% endif %}>
+                        <a href="{{ image.href | imageUrl(1600) }}" data-lightbox="{{ album.group }}"{% if image.title %} data-title="{{ image.title }}"{% endif %}>
+                            {% photoImage image.src, image.alt, { role: "grid", sizes: "(max-width: 768px) 45vw, 380px", class: image.extraClass } %}
                         </a>
 {% if image.caption %}
                         <div class="gallery-caption">{{ image.caption }}</div>
@@ -377,10 +377,25 @@ bodyClass: ""
         });
     </script>
 
+    <!-- Register derivatives for the archive album that is generated in JavaScript -->
+{% for archiveIndex in range(2, 192) %}
+{% set archiveThumbSmall = imageUrl("./Images/Archive/Photo " + archiveIndex + "-thumb.jpg", 400) %}
+{% set archiveThumbLarge = imageUrl("./Images/Archive/Photo " + archiveIndex + "-thumb.jpg", 800) %}
+{% set archiveFullSize = imageUrl("./Images/Archive/Photo " + archiveIndex + ".jpg", 1600) %}
+{% endfor %}
+{% set archive1914ThumbSmall = imageUrl("./Images/Archive/1914 - 1-thumb.jpg", 400) %}
+{% set archive1914ThumbLarge = imageUrl("./Images/Archive/1914 - 1-thumb.jpg", 800) %}
+{% set archive1914FullSize = imageUrl("./Images/Archive/1914 - 1.jpg", 1600) %}
+{% set archive1988ThumbSmall = imageUrl("./Images/Archive/1988-thumb.jpg", 400) %}
+{% set archive1988ThumbLarge = imageUrl("./Images/Archive/1988-thumb.jpg", 800) %}
+{% set archive1988FullSize = imageUrl("./Images/Archive/1988.jpg", 1600) %}
+
     <!-- Script to generate archive photos -->
     <script>
         $(document).ready(function() {
             const archiveGallery = $('#album7 .gallery-grid');
+            // Paths contain spaces, which must be encoded for srcset to parse.
+            const encodePath = (value) => value.split('/').map(encodeURIComponent).join('/');
             
             // Clear any placeholder items
             archiveGallery.empty();
@@ -388,8 +403,8 @@ bodyClass: ""
             // Add the 1914 image
             const image1914 = `
                 <div class="gallery-item">
-                    <a href="./Images/Archive/1914 - 1.jpg" data-lightbox="archive" data-title="Polmaise Bowling Team - 1914">
-                        <img src="./Images/Archive/1914 - 1-thumb.jpg" alt="Polmaise Bowling Team - 1914" loading="lazy">
+                    <a href="${encodePath('./Images/Archive/1914 - 1-w1600.webp')}" data-lightbox="archive" data-title="Polmaise Bowling Team - 1914">
+                        <img src="${encodePath('./Images/Archive/1914 - 1-thumb-w400.webp')}" srcset="${encodePath('./Images/Archive/1914 - 1-thumb-w400.webp')} 400w, ${encodePath('./Images/Archive/1914 - 1-thumb-w800.webp')} 800w" sizes="(max-width: 768px) 45vw, 380px" alt="Polmaise Bowling Team - 1914" loading="lazy" decoding="async">
                     </a>
                     <div class="gallery-caption">Polmaise Bowling Team - 1914</div>
                 </div>
@@ -399,8 +414,8 @@ bodyClass: ""
             // Add our featured image first
             const featuredItem = `
                 <div class="gallery-item">
-                    <a href="./Images/Archive/1988.jpg" data-lightbox="archive" data-title="Stirling County President presents Polmaise Bowling Club President H. Scott with the Scottish Counties Top Ten in 1988. The first Stirling County Club to win this and to this date, still the only Stirling County Club. Singles: James Blevins, Pairs: Sandy Deans and Peter M. Black, Triples: Jimmy Walker, William Bone & Ronnie Fulton, Rink: Harry Scott, John Bone, Andrew Buchannan & James Black.">
-                        <img src="./Images/Archive/1988-thumb.jpg" alt="Polmaise Scottish Counties Top Ten 1988" loading="lazy">
+                    <a href="${encodePath('./Images/Archive/1988-w1600.webp')}" data-lightbox="archive" data-title="Stirling County President presents Polmaise Bowling Club President H. Scott with the Scottish Counties Top Ten in 1988. The first Stirling County Club to win this and to this date, still the only Stirling County Club. Singles: James Blevins, Pairs: Sandy Deans and Peter M. Black, Triples: Jimmy Walker, William Bone & Ronnie Fulton, Rink: Harry Scott, John Bone, Andrew Buchannan & James Black.">
+                        <img src="${encodePath('./Images/Archive/1988-thumb-w400.webp')}" srcset="${encodePath('./Images/Archive/1988-thumb-w400.webp')} 400w, ${encodePath('./Images/Archive/1988-thumb-w800.webp')} 800w" sizes="(max-width: 768px) 45vw, 380px" alt="Polmaise Scottish Counties Top Ten 1988" loading="lazy" decoding="async">
                     </a>
                     <div class="gallery-caption">Stirling County President presents Polmaise BC President H. Scott with the Scottish Counties Top Ten in 1988</div>
                 </div>
@@ -411,8 +426,8 @@ bodyClass: ""
             for (let i = 2; i <= 191; i++) {
                 const galleryItem = `
                     <div class="gallery-item">
-                        <a href="./Images/Archive/Photo ${i}.jpg" data-lightbox="archive">
-                            <img src="./Images/Archive/Photo ${i}-thumb.jpg" alt="Archive Photo ${i}">
+                        <a href="${encodePath(`./Images/Archive/Photo ${i}-w1600.webp`)}" data-lightbox="archive">
+                            <img src="${encodePath(`./Images/Archive/Photo ${i}-thumb-w400.webp`)}" srcset="${encodePath(`./Images/Archive/Photo ${i}-thumb-w400.webp`)} 400w, ${encodePath(`./Images/Archive/Photo ${i}-thumb-w800.webp`)} 800w" sizes="(max-width: 768px) 45vw, 380px" alt="Archive Photo ${i}" loading="lazy" decoding="async">
                         </a>
                     </div>
                 `;

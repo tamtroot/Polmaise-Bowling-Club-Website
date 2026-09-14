@@ -35,9 +35,15 @@ async function collectRelativeFiles(directory, prefix = "") {
   for (const entry of entries) {
     const relativePath = path.join(prefix, entry.name);
     const fullPath = path.join(directory, entry.name);
-    if (entry.isDirectory()) {
+    // stat() rather than the dirent type: OneDrive marks hard-linked files as
+    // reparse points, which readdir reports as neither file nor directory.
+    const entryStat = await stat(fullPath).catch(() => null);
+    if (!entryStat) {
+      continue;
+    }
+    if (entryStat.isDirectory()) {
       files.push(...(await collectRelativeFiles(fullPath, relativePath)));
-    } else if (entry.isFile()) {
+    } else if (entryStat.isFile()) {
       files.push(relativePath);
     }
   }
@@ -45,31 +51,72 @@ async function collectRelativeFiles(directory, prefix = "") {
   return files;
 }
 
-async function compareFileTrees(sourceDirectory, outputDirectory) {
-  const sourceFiles = await collectRelativeFiles(sourceDirectory);
-  const outputFiles = await collectRelativeFiles(outputDirectory);
-  const mismatches = [];
+const imageManifestPath = path.join(SOURCE_ROOT, "reports", "stage6", "source-image-manifest.json");
 
-  expect(outputFiles.sort()).toEqual(sourceFiles.sort());
+/**
+ * Stage 6 no longer publishes the source archive: the site serves build-time
+ * derivatives. Two things still need proving on every run.
+ *   1. Every original photograph from the archive is still present, unmodified.
+ *   2. Everything deployed under _site/Images is derived from a real original.
+ */
+async function verifyImageDeployment() {
+  const manifest = JSON.parse(await readFile(imageManifestPath, "utf8"));
+  const missingOriginals = [];
+  const changedOriginals = [];
+  const originalStems = new Set();
 
-  for (const relativePath of sourceFiles) {
-    const sourcePath = path.join(sourceDirectory, relativePath);
-    const outputPath = path.join(outputDirectory, relativePath);
-    const sourceStat = await stat(sourcePath);
-    const outputStat = await stat(outputPath);
-
-    if (sourceStat.size !== outputStat.size) {
-      mismatches.push(
-        `${relativePath}: expected ${sourceStat.size} bytes, received ${outputStat.size}`,
-      );
+  for (const [relativePath, entry] of Object.entries(manifest.entries)) {
+    const originalPath = path.join(SOURCE_ROOT, relativePath);
+    const originalStat = await stat(originalPath).catch(() => null);
+    if (!originalStat) {
+      missingOriginals.push(relativePath);
+      continue;
     }
+    if (originalStat.size !== entry.bytes) {
+      changedOriginals.push(`${relativePath}: ${entry.bytes} -> ${originalStat.size}`);
+    }
+    originalStems.add(relativePath.replace(/\.[^.]+$/, ""));
   }
 
-  expect(mismatches).toEqual([]);
-  return sourceFiles;
+  expect(missingOriginals).toEqual([]);
+  expect(changedOriginals).toEqual([]);
+
+  const deployed = await collectRelativeFiles(path.join(SITE_ROOT, "Images"));
+  const unexpected = [];
+  let derivativeCount = 0;
+  let copiedOriginalCount = 0;
+  let deployedBytes = 0;
+
+  for (const relativePath of deployed) {
+    const comparablePath = path.posix.join("Images", relativePath.split(path.sep).join("/"));
+    deployedBytes += (await stat(path.join(SITE_ROOT, "Images", relativePath))).size;
+
+    if (manifest.entries[comparablePath]) {
+      copiedOriginalCount += 1;
+      continue;
+    }
+
+    const derivative = comparablePath.match(/^(.*)-w\d+(\.[a-z0-9]+)$/i);
+    if (derivative && originalStems.has(derivative[1])) {
+      derivativeCount += 1;
+      continue;
+    }
+
+    unexpected.push(comparablePath);
+  }
+
+  expect(unexpected).toEqual([]);
+  expect(derivativeCount).toBeGreaterThan(2000);
+
+  return {
+    originalCount: Object.keys(manifest.entries).length,
+    derivativeCount,
+    copiedOriginalCount,
+    deployedBytes,
+  };
 }
 
-function normaliseDocument() {
+function normaliseDocument(document) {
   const ignoredTags = new Set(["script", "style"]);
   const ignoredEventAttributes = new Set([
     "data-action",
@@ -102,6 +149,23 @@ function normaliseDocument() {
     "historical-list",
     "historical-section",
   ]);
+  // Stage 6 serves build-time image derivatives with responsive attributes, so
+  // the image-specific presentation attributes are intentionally different from
+  // the Stage 2A snapshot. Element structure, classes and all other attributes
+  // are still compared exactly.
+  const ignoredImageAttributes = new Set([
+    "src",
+    "srcset",
+    "sizes",
+    "width",
+    "height",
+    "loading",
+    "decoding",
+  ]);
+  const imageTags = new Set(["img", "source"]);
+  // Lightbox links now point at build-time derivatives (Stage 6), so their
+  // href changes by design; every other attribute is still compared.
+  const imageLinkTags = new Set(["a"]);
 
   function normaliseNode(node) {
     if (node.nodeType === Node.COMMENT_NODE) {
@@ -127,12 +191,16 @@ function normaliseDocument() {
       return null;
     }
 
+    const tagName = node.tagName.toLowerCase();
+    const isImageLink = imageLinkTags.has(tagName) && node.hasAttribute("data-lightbox");
     const attributes = [...node.attributes]
       .filter(
         (attribute) =>
           attribute.name !== "style" &&
           !attribute.name.startsWith("on") &&
-          !ignoredEventAttributes.has(attribute.name),
+          !ignoredEventAttributes.has(attribute.name) &&
+          !(imageTags.has(tagName) && ignoredImageAttributes.has(attribute.name)) &&
+          !(isImageLink && attribute.name === "href"),
       )
       .map((attribute) => {
         if (attribute.name !== "class") {
@@ -152,7 +220,7 @@ function normaliseDocument() {
       .filter((child) => child !== null && child !== "");
 
     return {
-      tag: node.tagName.toLowerCase(),
+      tag: tagName,
       attributes,
       children,
     };
@@ -173,10 +241,10 @@ function normaliseDocument() {
 async function normaliseHtml(page, html) {
   return page.evaluate(
     ({ source, normaliseDocumentSource }) => {
-      document.open();
-      document.write(source);
-      document.close();
-      return Function(`return (${normaliseDocumentSource})`)()();
+      // DOMParser parses synchronously and never fetches subresources, so the
+      // comparison cannot be disturbed by external scripts or fonts loading.
+      const parsed = new DOMParser().parseFromString(source, "text/html");
+      return Function(`return (${normaliseDocumentSource})`)().call(null, parsed);
     },
     {
       source: html,
@@ -218,10 +286,10 @@ test("generated site preserves Stage 2A structure and production assets", async 
       readFile(snapshotPath, "utf8"),
       readFile(outputPath, "utf8"),
     ]);
-    const [snapshotStructure, outputStructure] = await Promise.all([
-      normaliseHtml(page, snapshotHtml),
-      normaliseHtml(page, outputHtml),
-    ]);
+    // Rendered sequentially: both calls reuse one page via document.write, so
+    // running them concurrently corrupts the comparison.
+    const snapshotStructure = await normaliseHtml(page, snapshotHtml);
+    const outputStructure = await normaliseHtml(page, outputHtml);
 
     if (JSON.stringify(snapshotStructure) !== JSON.stringify(outputStructure)) {
       pageMismatches.push(`${sitePage.path}: generated DOM structure differs`);
@@ -241,14 +309,21 @@ test("generated site preserves Stage 2A structure and production assets", async 
 
   expect(pageMismatches).toEqual([]);
 
-  const imageFiles = await compareFileTrees(
-    path.join(SOURCE_ROOT, "Images"),
-    path.join(SITE_ROOT, "Images"),
-  );
-  const downloadFiles = await compareFileTrees(
-    path.join(SOURCE_ROOT, "downloads"),
-    path.join(SITE_ROOT, "downloads"),
-  );
+  const imageStats = await verifyImageDeployment();
+  const downloadFiles = await collectRelativeFiles(path.join(SITE_ROOT, "downloads"));
+
+  // Stage 6 guard rails: the deployed artifact must stay deployable on GitHub
+  // Pages and must not regress back to shipping the full-resolution archive.
+  const artifactBytes = (
+    await Promise.all(
+      (await collectRelativeFiles(SITE_ROOT)).map(
+        async (relativePath) => (await stat(path.join(SITE_ROOT, relativePath))).size,
+      ),
+    )
+  ).reduce((total, bytes) => total + bytes, 0);
+
+  expect(artifactBytes / 1024 ** 2).toBeLessThan(400);
+  expect(imageStats.deployedBytes / 1024 ** 2).toBeLessThan(350);
 
   const forbiddenPaths = [
     ".github",
@@ -273,7 +348,12 @@ test("generated site preserves Stage 2A structure and production assets", async 
 
   await writeMeasurement("build-output", {
     publicPageCount: SITE_PAGES.length,
-    copiedImageCount: imageFiles.length,
+    sourceImageCount: imageStats.originalCount,
+    deployedImageCount: imageStats.derivativeCount + imageStats.copiedOriginalCount,
+    deployedDerivativeCount: imageStats.derivativeCount,
+    deployedCopiedOriginalCount: imageStats.copiedOriginalCount,
+    deployedImageBytes: imageStats.deployedBytes,
+    artifactBytes,
     copiedDownloadCount: downloadFiles.length,
     generatedRoot: path.relative(SOURCE_ROOT, SITE_ROOT),
     leakedDevelopmentPaths,

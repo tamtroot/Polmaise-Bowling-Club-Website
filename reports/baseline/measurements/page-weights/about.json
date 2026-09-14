@@ -9,16 +9,16 @@
     "height": 900
   },
   "status": 200,
-  "resourceCount": 12,
-  "totalBytes": 6089197,
+  "resourceCount": 11,
+  "totalBytes": 377249,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 49441
+      "bytes": 54688
     },
     "image": {
-      "count": 9,
-      "bytes": 6007017
+      "count": 8,
+      "bytes": 289878
     },
     "script": {
       "count": 1,
@@ -26,81 +26,74 @@
     },
     "stylesheet": {
       "count": 1,
-      "bytes": 27500
+      "bytes": 27444
     }
   },
   "largestResources": [
     {
-      "url": "http://127.0.0.1:4173/Images/history-4.jpg",
-      "bytes": 1503189,
+      "url": "http://127.0.0.1:4173/Images/Peter%20Black-w800.webp",
+      "bytes": 55314,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/Peter%20Black.png",
-      "bytes": 1491080,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/png"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/David%20Stewart.png",
-      "bytes": 1337714,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/png"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/Robert%20Donaldson.png",
-      "bytes": 1217944,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/png"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/history-2.jpg",
-      "bytes": 132970,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/jpeg"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/history-3.jpg",
-      "bytes": 128114,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/jpeg"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/history-1.jpg",
-      "bytes": 105425,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/jpeg"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/club-logo.png",
-      "bytes": 90572,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
       "url": "http://127.0.0.1:4173/about.html",
-      "bytes": 49441,
+      "bytes": 54688,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
+      "url": "http://127.0.0.1:4173/Images/history-2-w800.webp",
+      "bytes": 54572,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/history-1-w800.webp",
+      "bytes": 45776,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/history-4-w800.webp",
+      "bytes": 44134,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/history-3-w800.webp",
+      "bytes": 41548,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27500,
+      "bytes": 27444,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
     },
     {
+      "url": "http://127.0.0.1:4173/Images/David%20Stewart-w800.webp",
+      "bytes": 26738,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Robert%20Donaldson-w800.webp",
+      "bytes": 18256,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
       "url": "http://127.0.0.1:4173/script.js",
       "bytes": 5239,
       "status": 200,
@@ -108,83 +101,76 @@
       "contentType": "text/javascript; charset=utf-8"
     },
     {
-      "url": "http://127.0.0.1:4173/images/banner-bg.jpg",
-      "bytes": 9,
-      "status": 404,
+      "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
+      "bytes": 3540,
+      "status": 200,
       "resourceType": "image",
-      "contentType": "text/plain; charset=utf-8"
+      "contentType": "image/webp"
     }
   ],
   "resources": [
     {
       "url": "http://127.0.0.1:4173/about.html",
-      "bytes": 49441,
+      "bytes": 54688,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
-      "url": "http://127.0.0.1:4173/images/banner-bg.jpg",
-      "bytes": 9,
-      "status": 404,
-      "resourceType": "image",
-      "contentType": "text/plain; charset=utf-8"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/club-logo.png",
-      "bytes": 90572,
+      "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
+      "bytes": 3540,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/David%20Stewart.png",
-      "bytes": 1337714,
+      "url": "http://127.0.0.1:4173/Images/David%20Stewart-w800.webp",
+      "bytes": 26738,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/history-1.jpg",
-      "bytes": 105425,
+      "url": "http://127.0.0.1:4173/Images/history-1-w800.webp",
+      "bytes": 45776,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/history-2.jpg",
-      "bytes": 132970,
+      "url": "http://127.0.0.1:4173/Images/history-2-w800.webp",
+      "bytes": 54572,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/history-3.jpg",
-      "bytes": 128114,
+      "url": "http://127.0.0.1:4173/Images/history-3-w800.webp",
+      "bytes": 41548,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/history-4.jpg",
-      "bytes": 1503189,
+      "url": "http://127.0.0.1:4173/Images/history-4-w800.webp",
+      "bytes": 44134,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/jpeg"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/Peter%20Black.png",
-      "bytes": 1491080,
+      "url": "http://127.0.0.1:4173/Images/Peter%20Black-w800.webp",
+      "bytes": 55314,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/Robert%20Donaldson.png",
-      "bytes": 1217944,
+      "url": "http://127.0.0.1:4173/Images/Robert%20Donaldson-w800.webp",
+      "bytes": 18256,
       "status": 200,
       "resourceType": "image",
-      "contentType": "image/png"
+      "contentType": "image/webp"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
@@ -195,7 +181,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 27500,
+      "bytes": 27444,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
