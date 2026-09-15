@@ -25,6 +25,13 @@ const argument = (name, fallback) =>
   process.argv.find((value) => value.startsWith(`--${name}=`))?.split("=")[1] ?? fallback;
 
 const iterations = Number(argument("iterations", "120"));
+/** The calibrated fallback families defined in styles.css, in stack order. */
+const FALLBACK_FAMILIES = [
+  "Open Sans Fallback Arial",
+  "Open Sans Fallback Segoe",
+  "Open Sans Fallback Tahoma",
+  "Open Sans Fallback Liberation",
+];
 const mode = argument("mode", "rapid");
 const inventoryOnly = process.argv.includes("--inventory");
 const width = Number(argument("width", "1440"));
@@ -865,12 +872,14 @@ try {
       return {
         computedFamily: getComputedStyle(anchor).fontFamily,
         webFontLoaded: document.fonts.check(`${size} "Open Sans"`),
-        fallbackLoaded: document.fonts.check(`${size} "Open Sans Fallback"`),
+        fallbackFamily: FALLBACK_FAMILIES.find((family) => document.fonts.check(`${size} "${family}"`)) ?? null,
         tahomaAvailable: document.fonts.check(`${size} Tahoma`),
         arialAvailable: document.fonts.check(`${size} Arial`),
         widths: {
           webFont: width(`${size} "Open Sans"`),
-          fallbackFamily: width(`${size} "Open Sans Fallback"`),
+          fallbackFamily: width(
+            `${size} "${FALLBACK_FAMILIES.find((family) => document.fonts.check(`${size} "${family}"`)) ?? "Open Sans Fallback Arial"}"`,
+          ),
           tahoma: width(`${size} Tahoma`),
           arial: width(`${size} Arial`),
           segoe: width(`${size} "Segoe UI"`),

@@ -78,6 +78,119 @@ test.describe("desktop navigation hit targets", () => {
    */
   const MATERIAL_MOVEMENT_PX = 3;
 
+  /**
+   * The calibrated fallback families declared in `styles.css`, in stack order.
+   * Every platform must resolve at least one of them, otherwise the navigation
+   * paints with an uncalibrated system font and drifts when the web font
+   * arrives — which is exactly what happened on the Linux CI runner, where the
+   * Windows-only faces resolved to nothing.
+   */
+  const FALLBACK_FAMILIES = [
+    "Open Sans Fallback Arial",
+    "Open Sans Fallback Segoe",
+    "Open Sans Fallback Tahoma",
+    "Open Sans Fallback Liberation",
+  ];
+
+  test("a calibrated fallback face is available on this platform", async ({ page }) => {
+    await page.goto("/fixtures.html", { waitUntil: "domcontentloaded" });
+
+    const library = await page.evaluate(() => {
+      const sheets = [...document.styleSheets].flatMap((sheet) => {
+        try {
+          return [...sheet.cssRules].map((rule) => rule.cssText);
+        } catch (error) {
+          return [];
+        }
+      });
+      return sheets.join("\n");
+    });
+
+    // The faces themselves: one per platform font, each with its own measured
+    // calibration (a shared family name would let the cascade drop them again).
+    for (const family of FALLBACK_FAMILIES) {
+      const declaration = new RegExp(
+        `@font-face\\s*\\{[^}]*font-family:\\s*"${family}"[^}]*\\}`,
+        "i",
+      ).exec(library.replace(/\s+/g, " "));
+      expect(declaration, `${family} is not declared in styles.css`).not.toBeNull();
+      expect(declaration[0], `${family} has no size-adjust`).toMatch(/size-adjust:\s*1[01]\d(?:\.\d+)?%/);
+      expect(declaration[0], `${family} has no ascent-override`).toMatch(/ascent-override:\s*[\d.]+%/);
+      expect(declaration[0], `${family} has no descent-override`).toMatch(/descent-override:\s*[\d.]+%/);
+    }
+
+    // ...and they must be reached before any generic family.
+    const uiStack = await page.evaluate(() =>
+      getComputedStyle(document.documentElement).getPropertyValue("--font-ui"),
+    );
+    const positions = FALLBACK_FAMILIES.map((family) => uiStack.indexOf(family));
+    const generic = ["system-ui", "sans-serif"]
+      .map((family) => uiStack.indexOf(family))
+      .filter((index) => index >= 0);
+    expect(positions.filter((index) => index >= 0).length).toBeGreaterThan(0);
+    expect(Math.max(...positions.filter((index) => index >= 0))).toBeLessThan(Math.min(...generic));
+
+    // At least one calibrated face must actually resolve on this platform.
+    const resolved = await page.evaluate((families) => {
+      const size = getComputedStyle(document.querySelector("header nav ul li a")).fontSize;
+      return families.filter((family) => document.fonts.check(`${size} "${family}"`));
+    }, FALLBACK_FAMILIES);
+    expect(
+      resolved,
+      `no calibrated fallback font is installed (tried: ${FALLBACK_FAMILIES.join(", ")}); ` +
+        "the navigation would paint with an uncalibrated system font",
+    ).not.toEqual([]);
+
+    console.log(`[nav-guard] calibrated fallback in effect: ${resolved.join(", ")}`);
+  });
+
+  test("the wordmark box does not change when the serif fallback swaps", async ({ page }) => {
+    /*
+     * The navigation sits beside the logo and is right-aligned, so a logo that
+     * changes width moves every navigation item by the same amount. On the Linux
+     * runner `Times New Roman` resolves to the narrower Liberation Serif, which
+     * shrank the wordmark box by ~7px and produced the 6px "common" shift in the
+     * CI report; the desktop rule pins the box to the width it already renders
+     * at. This measures the box, not just the final geometry, so the cause is
+     * named directly if it regresses.
+     */
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await delayFonts(page, 1_500);
+    await page.goto("/fixtures.html", { waitUntil: "domcontentloaded" });
+
+    const widthOf = () =>
+      page.evaluate(() => {
+        const logo = document.querySelector("body > header .logo");
+        const wordmark = document.querySelector("body > header .logo-text h1");
+        return {
+          logo: Number(logo.getBoundingClientRect().width.toFixed(2)),
+          wordmark: Number(wordmark.getBoundingClientRect().width.toFixed(2)),
+        };
+      });
+
+    const before = await widthOf();
+    await page.evaluate(() => document.fonts.ready);
+    await page.waitForTimeout(250);
+    const after = await widthOf();
+
+    // A narrow serif fallback is the failure mode: simulate one and re-measure.
+    await page.addStyleTag({
+      content:
+        "@font-face{font-family:'Narrow Serif Probe';src:local('Times New Roman');size-adjust:100%;}" +
+        "body > header .logo-text h1{font-family:'Narrow Serif Probe',serif !important;}",
+    });
+    await page.waitForTimeout(150);
+    const withNarrowSerif = await widthOf();
+
+    console.log(
+      `[nav-guard] wordmark box ${before.wordmark} → ${after.wordmark} (webfont), ` +
+        `${withNarrowSerif.wordmark} with a narrow serif fallback; logo ${before.logo} → ${withNarrowSerif.logo}`,
+    );
+    expect(Math.abs(after.wordmark - before.wordmark)).toBeLessThan(1);
+    expect(Math.abs(withNarrowSerif.wordmark - before.wordmark)).toBeLessThan(1);
+    expect(Math.abs(withNarrowSerif.logo - before.logo)).toBeLessThan(1);
+  });
+
   test("navigation hit targets hold their position across the web font swap", async ({ page }) => {
     // Light theme first (the default), then dark for every width.
     for (const theme of ["light", "dark"]) {

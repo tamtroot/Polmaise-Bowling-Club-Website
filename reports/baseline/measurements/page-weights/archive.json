@@ -10,7 +10,7 @@
   },
   "status": 200,
   "resourceCount": 52,
-  "totalBytes": 1656863,
+  "totalBytes": 1659090,
   "byType": {
     "document": {
       "count": 1,
@@ -30,7 +30,7 @@
     },
     "stylesheet": {
       "count": 4,
-      "bytes": 172409
+      "bytes": 174636
     }
   },
   "largestResources": [
@@ -78,7 +78,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 66563,
+      "bytes": 68790,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -472,7 +472,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 66563,
+      "bytes": 68790,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

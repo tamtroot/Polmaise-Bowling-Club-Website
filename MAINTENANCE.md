@@ -383,18 +383,43 @@ The navigation must also keep still while the web fonts load: it is
 right-aligned with no reserved widths, so a fallback font with different metrics
 used to re-flow every item by up to 33px while the gap between items is only
 4px, which made clicks land in the gap (nothing happened) or on the neighbouring
-page. Two things prevent that:
+page. Four things prevent that:
 
-1. `styles.css` declares a metric-matched `'Open Sans Fallback'` family (one
-   `@font-face` per system font with its own measured `size-adjust`) and lists it
-   straight after `'Open Sans'` in `--font-ui`.
-2. `_includes/head.njk` preloads the Open Sans and Playfair Display files that
+1. `styles.css` declares metric-matched fallback faces, one `@font-face` per
+   system font, each with its own measured `size-adjust` and Open Sans' vertical
+   metrics, and lists them straight after `'Open Sans'` in `--font-ui`. Each face
+   has its **own family name**: several `@font-face` rules sharing one family do
+   not form a chain (the cascade keeps the last one), so a shared name silently
+   disabled the per-platform faces.
+   - `'Open Sans Fallback Arial'` (107%) is what Windows and macOS actually use —
+     measured 0.00px total width error against the pre-swap render, worst nav
+     movement 2.70px.
+   - `'Open Sans Fallback Segoe'` (109.75%) and `'Open Sans Fallback Tahoma'`
+     (110.75%) are calibrated secondaries.
+   - `'Open Sans Fallback Liberation'` (107%) covers Linux. Liberation Sans is
+     metric-compatible with Arial by design, so it takes Arial's measured
+     calibration. It ships with `fonts-liberation`, which
+     `npx playwright install --with-deps` installs on the CI runner, so the Linux
+     fallback is deterministic instead of being whatever wide generic sans the
+     distribution ships (measured on CI: ~112% of Open Sans' advance widths,
+     an 85px drift).
+2. The desktop wordmark box is pinned (`width: 10em` at ≥1280px). The logo sits
+   beside the right-aligned navigation, so a logo that changes width moves every
+   item. On Linux the serif stack resolved `Times New Roman` to the narrower
+   Liberation Serif, shrinking the wordmark by ~7px (the 6px "common" shift in
+   the CI report).
+3. `_includes/head.njk` preloads the Open Sans and Playfair Display files that
    the header needs, so the real metrics are normally there for the first paint.
+4. `tests/navigation-hit-target.spec.js` guards all of it: it fails if any
+   navigation item moves 3px or more across the font swap (light and dark,
+   1440/1280/1024px), clicks nine points across the label the user sees, requires
+   a calibrated fallback family to resolve on the running platform, and asserts
+   that the wordmark box does not change width when a narrow serif stands in for
+   Playfair Display.
 
-`tests/navigation-hit-target.spec.js` guards both: it fails if any navigation
-item moves 3px or more across the font swap (light and dark, 1440/1280/1024px)
-and it clicks nine points across the label the user sees. Re-tune after changing
-a font with `node tools/diagnose-navigation-lock.mjs --tune`.
+Re-tune after changing a font with `node tools/diagnose-navigation-lock.mjs
+--tune` (it reports the worst-case shift per family), or re-measure the resolved
+family with `node tools/diagnose-navigation-lock.mjs --fontshift`.
 
 ## Common troubleshooting
 

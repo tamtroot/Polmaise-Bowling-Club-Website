@@ -26,7 +26,7 @@
 }
 
 /* ==================================================================
-   Stage 11: metric-matched local fallbacks
+   Stage 11 (+ Stage 16 portability): metric-matched local fallbacks
 
    The web font is applied with font-display: swap, so the first paint uses a
    system fallback and the text re-flows when the real font arrives. The header
@@ -38,13 +38,37 @@
    These faces scale a system font to the web font's advance widths, so the
    first paint and the final paint occupy the same space. The vertical metrics
    are Open Sans' own (ascent 106.88%, descent 29.29%, line gap 0) so the
-   header keeps its height too. Every size-adjust value below was measured
-   against the real font files (`node tools/diagnose-navigation-lock.mjs
-   --tune`), not guessed.
+  header keeps its height too. Every size-adjust value below was measured
+  against the real font files (`node tools/diagnose-navigation-lock.mjs
+  --tune`), not guessed.
+
+   Two rules matter for portability:
+
+   1. Each platform font gets its *own* family name. Several @font-face rules
+      sharing one family name do not form a chain — the cascade keeps the last
+      one — so the browser is given an ordered list of single-face families
+      instead. Arial is first because that is the face Windows/macOS actually
+      used before this change (measured: total nav width error 0.00px against
+      the pre-swap render), so no accepted behaviour changes.
+   2. Linux gets `Liberation Sans`, which is metric-compatible with Arial by
+      design, so the Arial calibration applies to it exactly. It is installed by
+      `npx playwright install --with-deps` (the `fonts-liberation` package the
+      GitHub runner uses), which makes the CI fallback deterministic instead of
+      depending on whichever generic sans the distribution ships.
    ================================================================== */
 @font-face {
-    font-family: 'Open Sans Fallback';
-    /* Windows: Segoe UI is the platform UI font and the closest match. */
+    font-family: 'Open Sans Fallback Arial';
+    /* Windows and macOS: the face the navigation has always fallen back to. */
+    src: local('Arial');
+    size-adjust: 107%;           /* measured: worst nav shift 2.70px */
+    ascent-override: 106.88%;
+    descent-override: 29.29%;
+    line-gap-override: 0%;
+}
+
+@font-face {
+    font-family: 'Open Sans Fallback Segoe';
+    /* Secondary: used on Windows builds without Arial. */
     src: local('Segoe UI');
     size-adjust: 109.75%;        /* measured: worst nav shift 1.44px */
     ascent-override: 106.88%;
@@ -53,7 +77,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans Fallback';
+    font-family: 'Open Sans Fallback Tahoma';
     src: local('Tahoma');
     size-adjust: 110.75%;        /* measured: worst nav shift 1.66px */
     ascent-override: 106.88%;
@@ -62,10 +86,11 @@
 }
 
 @font-face {
-    font-family: 'Open Sans Fallback';
-    /* Arial ships on both Windows and macOS, so it covers the Apple case. */
-    src: local('Arial');
-    size-adjust: 107%;           /* measured: worst nav shift 2.70px */
+    font-family: 'Open Sans Fallback Liberation';
+    /* Linux (GitHub Actions): Liberation Sans is metric-compatible with Arial,
+       so it takes Arial's measured calibration rather than a guessed one. */
+    src: local('Liberation Sans');
+    size-adjust: 107%;
     ascent-override: 106.88%;
     descent-override: 29.29%;
     line-gap-override: 0%;
@@ -274,6 +299,19 @@ body > header nav ul li a:hover:after {
 @media (min-width: 1280px) {
     .logo {
         flex-shrink: 0;
+    }
+
+    /*
+     * Stage 16: pin the wordmark's box to the width it already renders at
+     * (10em = 200px at 1.25rem). The navigation is right-aligned beside the
+     * logo, so any change in the logo's width moves *every* navigation item —
+     * which is what the CI serif fallback did: `Times New Roman` resolves to
+     * the narrower Liberation Serif on Linux, shrinking the box by ~7px and
+     * shifting the whole menu. Only applied at the width where the inline
+     * navigation exists, so small screens keep their flexible logo.
+     */
+    .logo-text h1 {
+        width: 10em;
     }
 }
 
@@ -2316,7 +2354,13 @@ input.error, textarea.error {
     /* Typography */
     --font-display: 'Merriweather', Georgia, 'Times New Roman', serif;
     --font-wordmark: 'Playfair Display', 'Merriweather', Georgia, 'Times New Roman', serif;
-    --font-ui: 'Open Sans', 'Open Sans Fallback', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    /* The calibrated fallbacks come before the generic families: on Linux the
+       generic sans is whichever wide font the distribution ships (measured on
+       CI: ~112% of Open Sans' advance widths, an 85px nav drift), while
+       Liberation Sans is measured and installed on the runner. */
+    --font-ui: 'Open Sans', 'Open Sans Fallback Arial', 'Open Sans Fallback Segoe',
+        'Open Sans Fallback Tahoma', 'Open Sans Fallback Liberation', system-ui,
+        -apple-system, 'Segoe UI', Roboto, sans-serif;
     --step-display: clamp(2.25rem, 1.7rem + 2.4vw, 3.25rem);
     --step-h1: clamp(1.85rem, 1.45rem + 1.5vw, 2.5rem);
     --step-h2: clamp(1.5rem, 1.3rem + 0.8vw, 1.95rem);
