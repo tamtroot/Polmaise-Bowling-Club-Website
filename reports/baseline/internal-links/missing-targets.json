@@ -2,7 +2,7 @@
   "name": "internal-links/missing-targets",
   "items": [
     "/signup.html -> <a href=\"login.html\"> -> login.html",
-    "CSS styles.css -> images/banner-bg.jpg -> images\\banner-bg.jpg",
-    "CSS styles.css -> images/hero-bg.jpg -> images\\hero-bg.jpg"
+    "CSS styles.css -> images/banner-bg.jpg -> images/banner-bg.jpg",
+    "CSS styles.css -> images/hero-bg.jpg -> images/hero-bg.jpg"
   ]
 }

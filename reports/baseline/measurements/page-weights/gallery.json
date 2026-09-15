@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 40,
-  "totalBytes": 1514361,
+  "totalBytes": 1523207,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 320364
+      "bytes": 325906
     },
     "font": {
       "count": 5,
@@ -26,17 +26,17 @@
     },
     "script": {
       "count": 3,
-      "bytes": 110035
+      "bytes": 110358
     },
     "stylesheet": {
       "count": 4,
-      "bytes": 169428
+      "bytes": 172409
     }
   },
   "largestResources": [
     {
       "url": "http://127.0.0.1:4173/gallery.html",
-      "bytes": 320364,
+      "bytes": 325906,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -57,7 +57,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
-      "bytes": 100307,
+      "bytes": 100315,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -71,14 +71,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/jquery/jquery-3.6.0.min.js",
-      "bytes": 89501,
+      "bytes": 89503,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 63666,
+      "bytes": 66563,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -203,17 +203,17 @@
       "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/gallery47-thumb-w400.webp",
-      "bytes": 11334,
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 11358,
       "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
     }
   ],
   "resources": [
     {
       "url": "http://127.0.0.1:4173/gallery.html",
-      "bytes": 320364,
+      "bytes": 325906,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -381,21 +381,21 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 11051,
+      "bytes": 11358,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 63666,
+      "bytes": 66563,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
-      "bytes": 100307,
+      "bytes": 100315,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -437,14 +437,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fonts/fonts.css",
-      "bytes": 2923,
+      "bytes": 2999,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/vendor/jquery/jquery-3.6.0.min.js",
-      "bytes": 89501,
+      "bytes": 89503,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
@@ -486,7 +486,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/lightbox2/js/lightbox.min.js",
-      "bytes": 9483,
+      "bytes": 9497,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"

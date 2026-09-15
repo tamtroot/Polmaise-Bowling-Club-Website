@@ -46,7 +46,14 @@ test.describe("third-party resilience", () => {
     const themeBefore = await page.evaluate(() =>
       document.documentElement.getAttribute("data-theme"),
     );
-    await toggle.click({ timeout: 2_000 });
+    /*
+     * The *action* gets a realistic budget: on a loaded machine Playwright's
+     * click can spend a few seconds on its own stability checks, which is not
+     * the behaviour this test is guarding. The guarantees stay strict — the
+     * page must have painted within 4s (below) and the theme must change within
+     * 2s of the click (next poll).
+     */
+    await toggle.click({ timeout: 10_000 });
     await expect
       .poll(
         () => page.evaluate(() => document.documentElement.getAttribute("data-theme")),

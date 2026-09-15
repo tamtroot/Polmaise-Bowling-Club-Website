@@ -33,7 +33,12 @@ export const ROLE_WIDTHS = {
   logo: [112, 224],
 };
 
-const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"]);
+/**
+ * The raster formats the pipeline treats as source photographs. Everything
+ * else under `Images/` (markdown notes, scripts, SVG logos) is passed through
+ * untouched and is *not* a protected original — see tools/verify-source-images.mjs.
+ */
+export const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"]);
 
 // A handful of archive scans are truncated JPEGs that browsers still render.
 // Reading them leniently keeps the archive complete instead of failing the build.

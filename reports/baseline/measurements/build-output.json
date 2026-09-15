@@ -5,9 +5,9 @@
   "deployedDerivativeCount": 2957,
   "deployedCopiedOriginalCount": 3,
   "deployedImageBytes": 251392121,
-  "artifactBytes": 255320522,
+  "artifactBytes": 255355234,
   "copiedDownloadCount": 5,
   "generatedRoot": "_site",
   "leakedDevelopmentPaths": [],
-  "stageTwoASnapshotRoot": "reports\\stage-2a"
+  "stageTwoASnapshotRoot": "reports/stage-2a"
 }

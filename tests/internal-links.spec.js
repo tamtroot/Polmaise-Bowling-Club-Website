@@ -7,6 +7,14 @@ import { SITE_ROOT } from "./helpers/site-root.mjs";
 import { SITE_PAGES } from "./helpers/site-pages.mjs";
 
 const projectRoot = SITE_ROOT;
+
+/**
+ * Baseline fingerprints must read the same on every platform: `path.relative`
+ * returns Windows separators locally and POSIX separators on the Linux CI
+ * runner, which made baselined entries look "new" in CI.
+ */
+const posixRelative = (target) => path.relative(projectRoot, target).split(path.sep).join("/");
+
 const ignoredDirectories = new Set([
   ".git",
   "node_modules",
@@ -90,8 +98,8 @@ async function collectCssLinkFailures() {
         continue;
       }
 
-      const relativeSource = path.relative(projectRoot, sourceFile);
-      const relativeTarget = path.relative(projectRoot, resolved);
+      const relativeSource = posixRelative(sourceFile);
+      const relativeTarget = posixRelative(resolved);
       checked.push(relativeTarget);
 
       if (!existsSync(resolved)) {
@@ -195,7 +203,7 @@ test("all public page and stylesheet references resolve", async (
       checkedReferenceCount += 1;
       if (!existsSync(resolved)) {
         domLinkFailures.push(
-          `${sitePage.path} -> <${reference.tag} ${reference.attribute}="${reference.raw}"> -> ${path.relative(projectRoot, resolved)}`,
+          `${sitePage.path} -> <${reference.tag} ${reference.attribute}="${reference.raw}"> -> ${posixRelative(resolved)}`,
         );
       }
     }

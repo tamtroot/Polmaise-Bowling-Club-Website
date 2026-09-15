@@ -6,6 +6,15 @@ import { compareOrUpdateBaseline, writeMeasurement } from "./helpers/baseline.mj
 import { SITE_ROOT } from "./helpers/site-root.mjs";
 
 const projectRoot = SITE_ROOT;
+
+/**
+ * Baseline fingerprints must read the same on every platform: `path.relative`
+ * returns Windows separators locally and POSIX separators on the Linux CI
+ * runner, which made every baselined finding for a page in a subdirectory look
+ * "new" in CI.
+ */
+const posixRelative = (from, to) => path.relative(from, to).split(path.sep).join("/");
+
 const ignoredDirectories = new Set([
   ".git",
   "node_modules",
@@ -59,7 +68,7 @@ test("HTML validation baseline", async ({}, testInfo) => {
     for (const result of report.results) {
       for (const message of result.messages) {
         findings.push({
-          file: path.relative(projectRoot, filePath),
+          file: posixRelative(projectRoot, filePath),
           ruleId: message.ruleId,
           severity: message.severity === 2 ? "error" : "warning",
           message: message.message,

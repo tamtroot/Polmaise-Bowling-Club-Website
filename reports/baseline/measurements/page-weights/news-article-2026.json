@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 13,
-  "totalBytes": 982918,
+  "totalBytes": 986494,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 16546
+      "bytes": 16834
     },
     "font": {
       "count": 5,
@@ -26,11 +26,11 @@
     },
     "script": {
       "count": 1,
-      "bytes": 11051
+      "bytes": 11358
     },
     "stylesheet": {
       "count": 3,
-      "bytes": 166896
+      "bytes": 169877
     }
   },
   "largestResources": [
@@ -57,7 +57,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
-      "bytes": 100307,
+      "bytes": 100315,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -71,7 +71,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 63666,
+      "bytes": 66563,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -99,14 +99,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/news/2026/chucks-memorial-2026/index.html",
-      "bytes": 16546,
+      "bytes": 16834,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 11051,
+      "bytes": 11358,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
@@ -120,7 +120,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fonts/fonts.css",
-      "bytes": 2923,
+      "bytes": 2999,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -150,28 +150,28 @@
     },
     {
       "url": "http://127.0.0.1:4173/news/2026/chucks-memorial-2026/index.html",
-      "bytes": 16546,
+      "bytes": 16834,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 11051,
+      "bytes": 11358,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 63666,
+      "bytes": 66563,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
-      "bytes": 100307,
+      "bytes": 100315,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -213,7 +213,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fonts/fonts.css",
-      "bytes": 2923,
+      "bytes": 2999,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

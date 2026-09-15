@@ -5,6 +5,11 @@ import { expect, test } from "@playwright/test";
 import { writeMeasurement } from "./helpers/baseline.mjs";
 import { SITE_ROOT, SOURCE_ROOT } from "./helpers/site-root.mjs";
 import { SITE_PAGES } from "./helpers/site-pages.mjs";
+import {
+  classifyDeployedImage,
+  compareSourceImages,
+  readSourceImageManifest,
+} from "../tools/verify-source-images.mjs";
 
 const stageTwoASnapshotRoot = path.join(SOURCE_ROOT, "reports", "stage-2a");
 const expectedActiveNavigation = {
@@ -89,30 +94,22 @@ const imageManifestPath = path.join(SOURCE_ROOT, "reports", "stage6", "source-im
 /**
  * Stage 6 no longer publishes the source archive: the site serves build-time
  * derivatives. Two things still need proving on every run.
- *   1. Every original photograph from the archive is still present, unmodified.
+ *   1. Every original *photograph* from the archive is still present, unmodified.
+ *      Only supported raster formats count: the notes, scripts and SVG logos
+ *      recorded in the same manifest are text, and git's line-ending
+ *      normalisation makes their byte sizes differ between a Windows working
+ *      copy and a Linux CI checkout (tools/verify-source-images.mjs).
  *   2. Everything deployed under _site/Images is derived from a real original.
  */
 async function verifyImageDeployment() {
-  const manifest = JSON.parse(await readFile(imageManifestPath, "utf8"));
-  const missingOriginals = [];
-  const changedOriginals = [];
-  const originalStems = new Set();
-
-  for (const [relativePath, entry] of Object.entries(manifest.entries)) {
-    const originalPath = path.join(SOURCE_ROOT, relativePath);
-    const originalStat = await stat(originalPath).catch(() => null);
-    if (!originalStat) {
-      missingOriginals.push(relativePath);
-      continue;
-    }
-    if (originalStat.size !== entry.bytes) {
-      changedOriginals.push(`${relativePath}: ${entry.bytes} -> ${originalStat.size}`);
-    }
-    originalStems.add(relativePath.replace(/\.[^.]+$/, ""));
-  }
+  const manifest = await readSourceImageManifest(imageManifestPath);
+  const { missingOriginals, changedOriginals, originalStems, protectedCount } =
+    await compareSourceImages({ entries: manifest.entries, projectRoot: SOURCE_ROOT });
 
   expect(missingOriginals).toEqual([]);
   expect(changedOriginals).toEqual([]);
+  // Guard against the protection silently narrowing to almost nothing.
+  expect(protectedCount).toBeGreaterThan(1800);
 
   const deployed = await collectRelativeFiles(path.join(SITE_ROOT, "Images"));
   const unexpected = [];
@@ -124,13 +121,17 @@ async function verifyImageDeployment() {
     const comparablePath = path.posix.join("Images", relativePath.split(path.sep).join("/"));
     deployedBytes += (await stat(path.join(SITE_ROOT, "Images", relativePath))).size;
 
-    if (manifest.entries[comparablePath]) {
+    const classification = classifyDeployedImage(comparablePath, {
+      manifestEntries: manifest.entries,
+      originalStems,
+    });
+
+    if (classification === "original") {
       copiedOriginalCount += 1;
       continue;
     }
 
-    const derivative = comparablePath.match(/^(.*)-w\d+(\.[a-z0-9]+)$/i);
-    if (derivative && originalStems.has(derivative[1])) {
+    if (classification === "derivative") {
       derivativeCount += 1;
       continue;
     }
@@ -143,6 +144,7 @@ async function verifyImageDeployment() {
 
   return {
     originalCount: Object.keys(manifest.entries).length,
+    protectedOriginals: protectedCount,
     derivativeCount,
     copiedOriginalCount,
     deployedBytes,
@@ -585,8 +587,10 @@ test("generated site preserves Stage 2A structure and production assets", async 
     deployedImageBytes: imageStats.deployedBytes,
     artifactBytes,
     copiedDownloadCount: downloadFiles.length,
-    generatedRoot: path.relative(SOURCE_ROOT, SITE_ROOT),
+    // Recorded measurements read the same on every platform (see the note in
+    // tests/html-validation.spec.js about baseline fingerprints).
+    generatedRoot: path.relative(SOURCE_ROOT, SITE_ROOT).split(path.sep).join("/"),
     leakedDevelopmentPaths,
-    stageTwoASnapshotRoot: path.relative(SOURCE_ROOT, stageTwoASnapshotRoot),
+    stageTwoASnapshotRoot: path.relative(SOURCE_ROOT, stageTwoASnapshotRoot).split(path.sep).join("/"),
   });
 });

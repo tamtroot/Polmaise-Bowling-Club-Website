@@ -1,11 +1,10 @@
 {
   "pagesChecked": 68,
-  "errorCount": 12,
+  "errorCount": 2,
   "warningCount": 0,
   "ruleCounts": {
     "element-permitted-content": 1,
-    "element-required-attributes": 1,
-    "no-raw-characters": 10
+    "element-required-attributes": 1
   },
   "findings": [
     {
@@ -18,42 +17,6 @@
       "selector": "#lightboxImage"
     },
     {
-      "file": "history.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 315,
-      "column": 47,
-      "selector": "html > body > main > section:nth-child(4) > div > h3"
-    },
-    {
-      "file": "history.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 330,
-      "column": 35,
-      "selector": "html > body > main > section:nth-child(4) > div > div > div:nth-child(3) > h4"
-    },
-    {
-      "file": "history.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 360,
-      "column": 44,
-      "selector": "html > body > main > section:nth-child(4) > div > div > div:nth-child(6) > h4"
-    },
-    {
-      "file": "honours.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 135,
-      "column": 25,
-      "selector": "html > body > main > section:nth-child(1) > div > h2"
-    },
-    {
       "file": "honours.html",
       "ruleId": "element-permitted-content",
       "severity": "error",
@@ -61,60 +24,6 @@
       "line": 1345,
       "column": 2,
       "selector": "html > body > style"
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 166,
-      "column": 34,
-      "selector": "html > body > main > section:nth-child(2) > div > div > div:nth-child(3) > h3"
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 259,
-      "column": 52,
-      "selector": "html > body > main > section:nth-child(4) > div > div:nth-child(3) > table > tbody > tr:nth-child(1) > td:nth-child(1)"
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 264,
-      "column": 47,
-      "selector": "html > body > main > section:nth-child(4) > div > div:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(1)"
-    },
-    {
-      "file": "News articles\\presentation-dance-2025.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 783,
-      "column": 31,
-      "selector": "html > body > main > section:nth-child(4) > h2"
-    },
-    {
-      "file": "PhotoAlbums\\charlie-mcneil-memorial-2025.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 158,
-      "column": 70,
-      "selector": "html > body > main > section:nth-child(2) > div > div:nth-child(2) > p:nth-child(5)"
-    },
-    {
-      "file": "PhotoAlbums\\charlie-mcneil-memorial-2025.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 159,
-      "column": 68,
-      "selector": "html > body > main > section:nth-child(2) > div > div:nth-child(2) > p:nth-child(6)"
     }
   ]
 }
