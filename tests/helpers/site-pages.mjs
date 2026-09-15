@@ -37,4 +37,42 @@ export const SITE_PAGES = [
     label: "Album: Twa Peters Memorial 2025",
     path: "/PhotoAlbums/twa-peters-memorial-2025.html",
   },
+  // Stage 13 turned the single news page into a generated section: one page per
+  // article, plus year/category/historical indexes. The audits cover one
+  // representative page of each new type rather than all 50-odd pages.
+  {
+    name: "news-article-2026",
+    label: "News article: Chucks Memorial 2026",
+    path: "/news/2026/chucks-memorial-2026/index.html",
+  },
+  {
+    name: "news-article-2025",
+    label: "News article: Charles McNeil Memorial 2025",
+    path: "/news/2025/charlie-mcneil-2025/index.html",
+  },
+  {
+    name: "news-article-history",
+    label: "News article: Opening of the Green 1911",
+    path: "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+  },
+  {
+    name: "news-archive-2026",
+    label: "News archive: 2026",
+    path: "/news/2026/index.html",
+  },
+  {
+    name: "news-archive-2025",
+    label: "News archive: 2025",
+    path: "/news/2025/index.html",
+  },
+  {
+    name: "news-archive-history",
+    label: "News archive: historical",
+    path: "/news/history/index.html",
+  },
+  {
+    name: "news-category-competition",
+    label: "News category: Competition",
+    path: "/news/category/competition/index.html",
+  },
 ];

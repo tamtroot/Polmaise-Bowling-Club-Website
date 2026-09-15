@@ -31,10 +31,16 @@ test.describe("JavaScript interactions", () => {
     await expect(page.locator(".accordion-item").nth(1)).toHaveClass(/active/);
   });
 
-  test("fixtures apply date state after initialisation", async ({ page }) => {
-    await page.goto("/fixtures.html", { waitUntil: "domcontentloaded" });
-    await expect(page.locator(".fixtures-table tbody tr")).not.toHaveCount(0);
-    await expect(page.locator(".fixtures-table tbody tr.past-fixture")).not.toHaveCount(0);
+  test("fixtures arrive with their season state already in the markup", async ({ page }) => {
+    // Stage 14 moved past/next classification to build time, so the state is in
+    // the HTML before any script runs (see tests/fixtures-ux.spec.js for the
+    // season states and the "show earlier fixtures" control).
+    const response = await page.goto("/fixtures.html", { waitUntil: "domcontentloaded" });
+    const html = await response.text();
+
+    expect(html).toContain('class="past-fixture"');
+    await expect(page.locator(".fixtures-table tbody tr[data-fixture]")).not.toHaveCount(0);
+    await expect(page.locator('.fixtures-table tbody tr[data-fixture-state="past"]')).not.toHaveCount(0);
   });
 
   test("gallery albums open and return to the album grid", async ({ page }) => {
@@ -61,13 +67,15 @@ test.describe("JavaScript interactions", () => {
     await expect(page.locator("#imageLightbox")).toBeHidden();
   });
 
-  test("news cards and custom lightbox remain interactive", async ({ page }) => {
+  test("news cards open their article page and the lightbox still zooms", async ({ page }) => {
     await page.goto("/news.html", { waitUntil: "domcontentloaded" });
-    await page.locator(".news-card").first().click();
+    await page.locator(".news-grid .news-card-title a").first().click();
 
-    const activeArticle = page.locator(".news-item.active").first();
-    await expect(activeArticle).toBeVisible();
-    await activeArticle.locator(".zoomable-image").first().click();
+    // Stage 13 gives every story its own page rather than revealing it in place.
+    await expect(page.locator(".article-header h2")).toBeVisible();
+    await expect(page).toHaveURL(/\/news\//);
+
+    await page.locator(".article-hero .zoomable-image").first().click();
     await expect(page.locator("#imageLightbox")).toBeVisible();
 
     await page.locator("#imageLightbox .lightbox-close").click();
@@ -81,18 +89,13 @@ test.describe("JavaScript interactions", () => {
     await page.keyboard.press("Escape");
   });
 
-  test("news history archive and article toggles work", async ({ page }) => {
-    await page.goto("/news.html", { waitUntil: "domcontentloaded" });
+  test("the historical archive opens each story on its own page", async ({ page }) => {
+    await page.goto("/news/history/index.html", { waitUntil: "domcontentloaded" });
+    await expect(page.locator(".archive-item")).not.toHaveCount(0);
 
-    await page.locator("[data-history-archive-toggle]").click();
-    await expect(page.locator("#history-archive-content")).toBeVisible();
-
-    await page.locator("#history-grid [data-history-article]").first().click();
-    await expect(page.locator("#history-grid")).toBeHidden();
-    await expect(page.locator(".history-item.active")).toBeVisible();
-
-    await page.locator(".history-item.active [data-history-close]").click();
-    await expect(page.locator("#history-grid")).toBeVisible();
+    await page.locator(".archive-row-title a").first().click();
+    await expect(page).toHaveURL(/\/news\/history\//);
+    await expect(page.locator(".article-header h2")).toBeVisible();
   });
 
   test("PhotoAlbum images are generated dynamically", async ({ page }) => {

@@ -168,7 +168,10 @@ section {
 }
 
 /* Header Styles */
-header {
+/* Scoped to the site header (a direct child of <body>) so content-level
+   <header> elements — such as an article's title block — can never inherit
+   the sticky behaviour and follow the reader down the page. */
+body > header {
     background-color: var(--color-surface);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -176,7 +179,7 @@ header {
     z-index: 100;
 }
 
-header .container {
+body > header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -206,14 +209,18 @@ header .container {
     margin-bottom: 0;
 }
 
-nav {
+/* Stage 13: these rules describe the site header's navigation bar only. As bare
+   element selectors they also matched the "More articles" <nav> on every news
+   article page, which is why that block collapsed to zero width below the
+   burger breakpoint. */
+body > header nav {
     flex: 1 1 auto;
     display: flex;
     justify-content: flex-end;
     min-width: 0;
 }
 
-nav ul {
+body > header nav ul {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -223,12 +230,12 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+body > header nav ul li {
     margin-left: 0;
     flex-shrink: 0;
 }
 
-nav ul li a {
+body > header nav ul li a {
     color: var(--color-text);
     font-weight: 600;
     font-size: 0.92rem;
@@ -237,12 +244,12 @@ nav ul li a {
     white-space: nowrap;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
+body > header nav ul li a.active,
+body > header nav ul li a:hover {
     color: var(--color-primary);
 }
 
-nav ul li a:after {
+body > header nav ul li a:after {
     content: '';
     position: absolute;
     left: 0.55rem;
@@ -255,8 +262,8 @@ nav ul li a:after {
     transition: transform var(--duration-fast) var(--ease-standard);
 }
 
-nav ul li a.active:after,
-nav ul li a:hover:after {
+body > header nav ul li a.active:after,
+body > header nav ul li a:hover:after {
     transform: scaleX(1);
 }
 
@@ -1078,7 +1085,7 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 1279px) {
-    header .container {
+    body > header .container {
         position: relative;
     }
 
@@ -1092,14 +1099,14 @@ footer {
     }
 
     /* Keep desktop nav panel out of the flex flow; drawer is position:fixed */
-    nav {
+    body > header nav {
         flex: 0 0 0;
         width: 0;
         min-width: 0;
         overflow: visible;
     }
 
-    nav ul {
+    body > header nav ul {
         display: none;
         position: fixed;
         top: 0;
@@ -1119,16 +1126,16 @@ footer {
         overflow-y: auto; /* Make menu scrollable */
     }
 
-    nav ul.show {
+    body > header nav ul.show {
         display: flex;
         left: 0;
     }
 
-    nav ul li {
+    body > header nav ul li {
         margin: 8px 0; /* Reduced margin */
     }
 
-    nav ul li a {
+    body > header nav ul li a {
         font-size: 1.2rem;
         display: block;
         padding: 6px 0; /* Reduced padding */
@@ -1255,6 +1262,662 @@ input.error, textarea.error {
 /* Shared state helper: replaces inline `display: none` toggles. */
 .is-hidden {
     display: none !important;
+}
+
+/* ==================================================================
+   Stage 13 — editorial components (news landing, articles, archives)
+   One shared component set for every generated news page, built from the
+   existing day/night tokens so no page repeats colour or type literals.
+   ================================================================== */
+.news-page {
+    padding-block: var(--section-y);
+}
+
+.news-eyebrow {
+    margin: 0 0 var(--space-3);
+    font-size: var(--step-label);
+    font-weight: 700;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.news-section-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+.news-section-head h2 {
+    margin: 0;
+}
+
+.news-section-head--spaced {
+    margin-top: var(--space-7);
+}
+
+.news-section-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--step-small);
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.news-chip {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-accent-soft);
+    color: var(--color-primary);
+    font-size: var(--step-label);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.news-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-3);
+    margin: 0 0 var(--space-3);
+    font-size: var(--step-label);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+/* Card used by the landing page, year archives and the history index. */
+.news-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-xs);
+    transition: box-shadow var(--duration-base) var(--ease-standard),
+        transform var(--duration-base) var(--ease-standard);
+}
+
+.news-card:hover,
+.news-card:focus-within {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.news-card-media img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    height: auto;
+    object-fit: cover;
+}
+
+.news-card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-5);
+}
+
+.news-card-title {
+    margin: 0;
+    font-size: var(--step-card);
+    line-height: 1.3;
+}
+
+.news-card-title a {
+    color: var(--color-text);
+    font-family: var(--font-display);
+    text-decoration: none;
+}
+
+/* One stretched link per card: no nested links, whole card clickable. */
+.news-card-title a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.news-card-excerpt {
+    margin: 0;
+    font-size: var(--step-small);
+    color: var(--color-text-muted);
+}
+
+.news-card-more {
+    margin-top: auto;
+    padding-top: var(--space-3);
+    font-size: var(--step-small);
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-5);
+}
+
+.news-grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Featured story: large media beside the headline. */
+.news-lead {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: clamp(1.25rem, 3vw, 2.5rem);
+    align-items: center;
+    margin-bottom: var(--space-7);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.news-lead-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.news-lead-body {
+    padding: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.news-lead-body h2 {
+    margin: 0 0 var(--space-3);
+    font-size: var(--step-h2);
+    line-height: 1.2;
+}
+
+.news-lead-body h2 a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.news-lead-excerpt {
+    margin: 0 0 var(--space-4);
+    color: var(--color-text-muted);
+}
+
+/* Category bar + archive links */
+.news-chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: 0 0 var(--space-5);
+    padding: 0;
+    list-style: none;
+}
+
+.news-chip-row a {
+    display: inline-block;
+    padding: 0.35rem 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    font-size: var(--step-small);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.news-chip-row a:hover,
+.news-chip-row a:focus-visible {
+    border-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.news-archive-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.news-archive-links a {
+    display: block;
+    padding: var(--space-5);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+}
+
+.news-archive-links strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: var(--step-card);
+    color: var(--color-text);
+}
+
+.news-archive-links span {
+    display: block;
+    margin-top: var(--space-1);
+    font-size: var(--step-small);
+    color: var(--color-text-muted);
+}
+
+/* Article pages */
+.article {
+    padding-block: var(--section-y);
+}
+
+.article-header {
+    /* Matches the article measure so the headline sits directly above the
+       body column instead of floating at a second, unrelated width. */
+    max-width: 68ch;
+    margin: 0 auto var(--space-6);
+}
+
+.article-header h2 {
+    margin: 0 0 var(--space-3);
+    font-size: var(--step-h2);
+    line-height: 1.15;
+    text-wrap: balance;
+}
+
+/* Compact editorial list used for "More news" on the landing page. */
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 var(--space-6);
+    border-top: 1px solid var(--color-border);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.news-list li {
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.news-list a {
+    font-family: var(--font-display);
+    font-size: var(--step-card);
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.news-list a:hover,
+.news-list a:focus-visible {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.news-list .news-meta-row {
+    margin: var(--space-1) 0 0;
+}
+
+@media (max-width: 720px) {
+    .news-list {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.article-hero {
+    max-width: var(--content-max);
+    margin: 0 auto var(--space-6);
+}
+
+.article-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+}
+
+.article-hero figcaption,
+.article-body figcaption {
+    margin-top: var(--space-2);
+    font-size: var(--step-small);
+    color: var(--color-text-muted);
+}
+
+.article-body {
+    max-width: 68ch;
+    margin: 0 auto;
+    color: var(--color-text);
+}
+
+.article-body p {
+    margin: 0 0 var(--space-4);
+}
+
+.article-body h4 {
+    margin: var(--space-6) 0 var(--space-3);
+    font-size: var(--step-h3);
+}
+
+.article-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+}
+
+.article-body figure {
+    margin: var(--space-6) 0;
+}
+
+.article-body ul,
+.article-body ol {
+    margin: 0 0 var(--space-4) var(--space-5);
+}
+
+.article-body blockquote {
+    margin: var(--space-5) 0;
+    padding-left: var(--space-5);
+    border-left: 3px solid var(--color-accent);
+    color: var(--color-text-muted);
+}
+
+.article-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--space-4);
+    max-width: 68ch;
+    margin: var(--space-7) auto 0;
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+}
+
+.article-nav a {
+    max-width: 45%;
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.article-nav .article-nav-older {
+    text-align: right;
+}
+
+.article-nav span {
+    display: block;
+    font-size: var(--step-label);
+    font-weight: 700;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+.article-back {
+    margin-top: var(--space-6);
+    text-align: center;
+}
+
+/* ==================================================================
+   Stage 15 — historical archive (/news/history/).
+   One continuous rail with the year beside it and the stories in a
+   single wide column: the chronology organises the page instead of
+   being the page. Card imagery is never cropped — newspaper cuttings
+   sit whole on a warm archival panel, photographs in the same frame.
+   ================================================================== */
+.archive-standfirst {
+    margin: 0;
+    color: var(--color-text-muted);
+}
+
+.archive-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3) var(--space-5);
+    margin: 0 0 var(--space-6);
+    padding-bottom: var(--space-5);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.archive-meta p {
+    margin: 0;
+    font-size: var(--step-small);
+    color: var(--color-text-muted);
+}
+
+.archive {
+    /* Year column, then the rail, then the stories. */
+    --archive-year-col: 7rem;
+    --archive-rail-gap: 2.25rem;
+    position: relative;
+    display: grid;
+    gap: var(--space-6);
+    padding-left: var(--archive-year-col);
+}
+
+.archive::before {
+    content: "";
+    position: absolute;
+    top: 0.6rem;
+    bottom: 0.6rem;
+    left: var(--archive-year-col);
+    width: 2px;
+    background-color: var(--color-border);
+}
+
+.archive-year {
+    position: relative;
+}
+
+.archive-year-label {
+    position: absolute;
+    top: 0;
+    left: calc(-1 * var(--archive-year-col));
+    width: calc(var(--archive-year-col) - 1.5rem);
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 1.1rem + 1vw, 1.85rem);
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: right;
+    color: var(--color-primary);
+}
+
+.archive-list {
+    display: grid;
+    gap: var(--space-5);
+    margin: 0;
+    padding: 0 0 0 var(--archive-rail-gap);
+    list-style: none;
+}
+
+.archive-item {
+    position: relative;
+}
+
+.archive-item::before {
+    content: "";
+    position: absolute;
+    top: 1.15rem;
+    left: calc(-1 * var(--archive-rail-gap) - 7px);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-brass);
+    box-shadow: 0 0 0 4px var(--color-bg);
+}
+
+.archive-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+    gap: clamp(1rem, 2.5vw, 1.75rem);
+    align-items: center;
+    padding: var(--space-4);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-xs);
+    transition: box-shadow var(--duration-base) var(--ease-standard),
+        transform var(--duration-base) var(--ease-standard);
+}
+
+.archive-row:hover,
+.archive-row:focus-within {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.archive-row-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 3 / 2;
+    padding: var(--space-2);
+    overflow: hidden;
+    background-color: var(--color-surface-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+}
+
+/* Newspaper cuttings keep their own paper tone so the clipping reads as a
+   document rather than a badly cropped photograph. */
+.archive-row-media.is-clipping {
+    background-color: color-mix(in srgb, var(--color-brass) 12%, var(--color-surface));
+}
+
+.archive-row-media img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: var(--radius-sm);
+}
+
+.archive-row-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-3);
+    margin: 0 0 var(--space-2);
+    font-size: var(--step-label);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+.archive-row-title {
+    margin: 0 0 var(--space-2);
+    font-size: var(--step-card);
+    line-height: 1.25;
+}
+
+.archive-row-title a {
+    color: var(--color-text);
+    font-family: var(--font-display);
+    text-decoration: none;
+}
+
+/* One stretched link: the whole row opens the story without nesting links. */
+.archive-row-title a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.archive-row-excerpt {
+    margin: 0;
+    color: var(--color-text-muted);
+}
+
+.archive-row-more {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+    font-size: var(--step-small);
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+    .archive {
+        --archive-year-col: 5.5rem;
+        --archive-rail-gap: 1.75rem;
+    }
+}
+
+@media (max-width: 820px) {
+    /* Single rail down the left, the year above its stories. */
+    .archive {
+        --archive-year-col: 0rem;
+        --archive-rail-gap: 1.5rem;
+        gap: var(--space-5);
+    }
+
+    .archive::before {
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .archive-year-label {
+        position: static;
+        width: auto;
+        margin: 0 0 var(--space-3) var(--archive-rail-gap);
+        text-align: left;
+    }
+}
+
+@media (max-width: 620px) {
+    .archive-row {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .archive-row-media {
+        aspect-ratio: 16 / 10;
+    }
+}
+
+@media (max-width: 1000px) {
+    .news-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .news-archive-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 820px) {
+    .news-lead {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 620px) {
+    .news-grid,
+    .news-archive-links {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .article-nav {
+        flex-direction: column;
+    }
+
+    .article-nav a {
+        max-width: none;
+    }
 }
 
 /* Ensure accordion functionality works correctly */
@@ -1871,12 +2534,12 @@ h2::after {
 }
 
 /* Header */
-header {
+body > header {
     background-color: var(--color-bg);
     border-bottom: 1px solid var(--color-border);
 }
 
-header .container {
+body > header .container {
     gap: var(--space-5);
     min-height: 84px;
 }
@@ -1932,11 +2595,11 @@ header .container {
     }
 }
 
-nav ul {
+body > header nav ul {
     gap: var(--space-1);
 }
 
-nav ul li a {
+body > header nav ul li a {
     color: var(--color-text);
     font-family: var(--font-ui);
     font-size: var(--step-small);
@@ -1948,11 +2611,11 @@ nav ul li a {
         color var(--duration-fast) var(--ease-standard);
 }
 
-nav ul li a:hover {
+body > header nav ul li a:hover {
     color: var(--color-primary);
 }
 
-nav ul li a.active {
+body > header nav ul li a.active {
     /* Understated: colour plus the accent rule, never a filled block. */
     color: var(--color-primary);
     font-weight: 700;

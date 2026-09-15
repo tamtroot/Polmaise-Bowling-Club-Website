@@ -99,7 +99,9 @@ test.describe("day/night theme", () => {
     await expect(page.locator(".fixtures-table tbody tr").first()).toBeVisible();
     // The mobile card layout is shown at small viewports only.
     await page.setViewportSize({ width: 390, height: 844 });
-    await expect(page.locator(".fixture-card").first()).toBeVisible();
+    // Stage 14 keeps the earliest completed fixtures collapsed, so the first
+    // card in the document is not necessarily the first one on screen.
+    await expect(page.locator(".fixture-card:visible").first()).toBeVisible();
     expect(errors).toEqual([]);
   });
 });

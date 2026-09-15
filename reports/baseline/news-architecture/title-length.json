@@ -1,0 +1,7 @@
+{
+  "name": "news-architecture/title-length",
+  "items": [
+    "news/2025/kyle/index.html: title is too long",
+    "news/2025/twa-peters-2025/index.html: title is too long"
+  ]
+}

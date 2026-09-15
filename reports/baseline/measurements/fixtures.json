@@ -1,0 +1,14 @@
+{
+  "season": 2026,
+  "fixtures": 50,
+  "confirmed": 42,
+  "tbc": 6,
+  "proposed": 1,
+  "visiblePastFixtures": 4,
+  "statesCovered": [
+    "early season",
+    "mid season",
+    "late season",
+    "season complete"
+  ]
+}

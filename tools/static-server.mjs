@@ -38,7 +38,16 @@ export function createStaticServer(rootDirectory = process.cwd()) {
         return;
       }
 
-      const fileStat = await stat(filePath).catch(() => null);
+      // Directory URLs (every Stage 13 news permalink, and the site root) are
+      // served from their index.html, which is how GitHub Pages and `npx serve`
+      // behave. Without this the local preview disagreed with production.
+      let resolvedPath = filePath;
+      let fileStat = await stat(resolvedPath).catch(() => null);
+      if (fileStat?.isDirectory() || requestedPath.endsWith("/")) {
+        resolvedPath = path.join(filePath, "index.html");
+        fileStat = await stat(resolvedPath).catch(() => null);
+      }
+
       if (!fileStat || !fileStat.isFile()) {
         response.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
         response.end("Not Found");
@@ -49,7 +58,7 @@ export function createStaticServer(rootDirectory = process.cwd()) {
         "Cache-Control": "no-store",
         "Content-Length": fileStat.size,
         "Content-Type":
-          MIME_TYPES[path.extname(filePath).toLowerCase()] ??
+          MIME_TYPES[path.extname(resolvedPath).toLowerCase()] ??
           "application/octet-stream",
       });
 
@@ -58,7 +67,7 @@ export function createStaticServer(rootDirectory = process.cwd()) {
         return;
       }
 
-      createReadStream(filePath).pipe(response);
+      createReadStream(resolvedPath).pipe(response);
     } catch (error) {
       response.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" });
       response.end(error instanceof Error ? error.message : "Server error");

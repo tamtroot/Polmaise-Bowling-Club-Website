@@ -26,7 +26,40 @@ const expectedActiveNavigation = {
   "album-charlie-mcneil-memorial-2025": "../gallery.html",
   "album-top-15-final-2025": "../gallery.html",
   "album-twa-peters-memorial-2025": "../gallery.html",
+  // Stage 13 news pages: the site header highlights News & Events.
+  "news-article-2026": "../../../news.html",
+  "news-article-2025": "../../../news.html",
+  "news-article-history": "../../../news.html",
+  "news-archive-2026": "../../news.html",
+  "news-archive-2025": "../../news.html",
+  "news-archive-history": "../../news.html",
+  "news-category-competition": "../../../news.html",
 };
+
+/**
+ * Pages that did not exist when the Stage 2A snapshot was taken, so there is no
+ * historical DOM to compare them against. The homepage was redesigned in Stage
+ * 12 and the news section became a generated set of pages in Stage 13; both are
+ * covered by their own specs (tests/homepage.spec.js, tests/homepage-fixtures
+ * .spec.js, tests/news-architecture.spec.js) and by visual baselines.
+ * Stage 14 rebuilt the fixtures page around the season summary, month groups
+ * and the collapsible completed fixtures (tests/fixtures-ux.spec.js).
+ */
+const pagesWithoutStageTwoASnapshot = new Set([
+  "home",
+  // Stage 13 rebuilt news.html as an editorial front page (featured story,
+  // latest, more news, categories, archives) instead of the single long page
+  // the snapshot describes; tests/news-architecture.spec.js covers it.
+  "news",
+  "fixtures",
+  "news-article-2026",
+  "news-article-2025",
+  "news-article-history",
+  "news-archive-2026",
+  "news-archive-2025",
+  "news-archive-history",
+  "news-category-competition",
+]);
 
 async function collectRelativeFiles(directory, prefix = "") {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -436,38 +469,50 @@ test("generated site preserves Stage 2A structure and production assets", async 
     const snapshotPath = path.join(stageTwoASnapshotRoot, "html", relativePath);
     const outputPath = path.join(SITE_ROOT, relativePath);
 
-    if (!existsSync(snapshotPath)) {
-      pageMismatches.push(`${sitePage.path}: Stage 2A snapshot is missing`);
-      continue;
+    /*
+     * Stage 12 deliberately redesigned the homepage: it now carries the
+     * editorial sections (hero, feature strip, news, schedule, history,
+     * gallery, membership, sponsors) instead of the original hero + welcome +
+     * quick-links blocks, so the Stage 2A snapshot no longer describes it. The
+     * homepage is covered by `tests/homepage.spec.js` (sections, data states,
+     * links, responsive overflow) and by the visual baselines. Every other page
+     * is still compared exactly.
+     */
+    if (!pagesWithoutStageTwoASnapshot.has(sitePage.name)) {
+      if (!existsSync(snapshotPath)) {
+        pageMismatches.push(`${sitePage.path}: Stage 2A snapshot is missing`);
+        continue;
+      }
+
+      if (!existsSync(outputPath)) {
+        pageMismatches.push(`${sitePage.path}: generated file is missing`);
+        continue;
+      }
+
+      const [snapshotHtml, outputHtml] = await Promise.all([
+        readFile(snapshotPath, "utf8"),
+        readFile(outputPath, "utf8"),
+      ]);
+      // Rendered sequentially: both calls reuse one page via document.write, so
+      // running them concurrently corrupts the comparison.
+      const snapshotStructure = await normaliseHtml(page, snapshotHtml);
+      const outputStructure = await normaliseHtml(page, outputHtml);
+
+      if (JSON.stringify(snapshotStructure) !== JSON.stringify(outputStructure)) {
+        const doctypeDifference =
+          JSON.stringify(snapshotStructure.doctype) !== JSON.stringify(outputStructure.doctype)
+            ? `doctype ${JSON.stringify(snapshotStructure.doctype)} vs ${JSON.stringify(outputStructure.doctype)}`
+            : null;
+        pageMismatches.push(
+          `${sitePage.path}: generated DOM structure differs at ${
+            doctypeDifference ??
+            describeFirstDifference(snapshotStructure.documentElement, outputStructure.documentElement)
+          }`,
+        );
+      }
     }
 
-    if (!existsSync(outputPath)) {
-      pageMismatches.push(`${sitePage.path}: generated file is missing`);
-      continue;
-    }
-
-    const [snapshotHtml, outputHtml] = await Promise.all([
-      readFile(snapshotPath, "utf8"),
-      readFile(outputPath, "utf8"),
-    ]);
-    // Rendered sequentially: both calls reuse one page via document.write, so
-    // running them concurrently corrupts the comparison.
-    const snapshotStructure = await normaliseHtml(page, snapshotHtml);
-    const outputStructure = await normaliseHtml(page, outputHtml);
-
-    if (JSON.stringify(snapshotStructure) !== JSON.stringify(outputStructure)) {
-      const doctypeDifference =
-        JSON.stringify(snapshotStructure.doctype) !== JSON.stringify(outputStructure.doctype)
-          ? `doctype ${JSON.stringify(snapshotStructure.doctype)} vs ${JSON.stringify(outputStructure.doctype)}`
-          : null;
-      pageMismatches.push(
-        `${sitePage.path}: generated DOM structure differs at ${
-          doctypeDifference ??
-          describeFirstDifference(snapshotStructure.documentElement, outputStructure.documentElement)
-        }`,
-      );
-    }
-
+    const outputHtml = await readFile(outputPath, "utf8");
     const expectedActive =
       expectedActiveNavigation[sitePage.name] === ""
         ? []
@@ -518,6 +563,18 @@ test("generated site preserves Stage 2A structure and production assets", async 
   );
 
   expect(leakedDevelopmentPaths).toEqual([]);
+
+  /*
+   * Stage 14 guard: a generated root must never be read back as input. When a
+   * sibling output directory (another SITE_ROOT) is treated as source, every
+   * page of it is re-rendered into the artifact and builds get progressively
+   * slower; this fails if any nested site root appears in the output.
+   */
+  const nestedSiteRoots = (await readdir(SITE_ROOT, { withFileTypes: true }))
+    .filter((entry) => entry.isDirectory() && entry.name.startsWith("_site"))
+    .map((entry) => entry.name);
+
+  expect(nestedSiteRoots).toEqual([]);
 
   await writeMeasurement("build-output", {
     publicPageCount: SITE_PAGES.length,

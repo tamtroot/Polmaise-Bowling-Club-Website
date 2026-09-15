@@ -26,51 +26,802 @@ bodyClass: ""
 {% include "head.njk" %}
 
 <style>
-/* Add new styles for hero section with background image */
-        .hero {
-            background-image: url('{{ "./Images/Archive/Photo 25.jpg" | imageUrl(1600) }}');
-            background-size: cover;
-            background-position: center;
-            position: relative;
+/* ==================================================================
+   Stage 12 — homepage only.
+   Everything below is scoped to the homepage (`.home-*` classes) and is
+   built from the shared day/night tokens, so no other page is affected.
+   The two scrim tokens exist only for the photographic hero, which needs a
+   controlled overlay in each theme: light navy in day, deeper in night.
+   ================================================================== */
+        :root {
+            --home-scrim-strong: rgba(11, 24, 56, 0.86);
+            --home-scrim-mid: rgba(11, 24, 56, 0.55);
+            --home-scrim-soft: rgba(11, 24, 56, 0.18);
         }
-        
-        .hero::before {
-            content: '';
+
+        [data-theme="dark"] {
+            --home-scrim-strong: rgba(4, 8, 16, 0.90);
+            --home-scrim-mid: rgba(4, 8, 16, 0.62);
+            --home-scrim-soft: rgba(4, 8, 16, 0.28);
+        }
+
+        /* ---------------------------------------------------------- Hero */
+        .home-hero {
+            position: relative;
+            display: grid;
+            align-items: center;
+            min-height: clamp(30rem, 60vh, 42rem);
+            padding-block: clamp(3rem, 7vw, 5.5rem);
+            overflow: hidden;
+            background-color: var(--color-surface-alt);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .home-hero-media {
             position: absolute;
-            top: 0;
-            left: 0;
+            inset: 0;
+        }
+
+        .home-hero-media img {
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
-        }
-        
-        .hero-content {
-            position: relative; /* To display content above the overlay */
-            z-index: 2;
-        }
-        
-        .welcome-logo {
-            float: left;
-            margin: 0 20px 10px 0;
-            /* The crest source is 110px wide, so it is never upscaled. */
-            width: 110px;
-            height: auto;
-        }
-        
-        .welcome-logo img {
-            width: 100%;
-            height: auto;
+            object-fit: cover;
+            object-position: center 42%;
             display: block;
         }
-        
-        .welcome-text {
-            overflow: hidden; /* Ensures text flows around the floated logo */
+
+        .home-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                100deg,
+                var(--home-scrim-strong) 0%,
+                var(--home-scrim-mid) 46%,
+                var(--home-scrim-soft) 100%
+            );
         }
-        
-        @media (max-width: 768px) {
-            .welcome-logo {
-                width: 88px;
-                margin: 0 15px 10px 0;
+
+        .home-hero-inner {
+            position: relative;
+            z-index: 1;
+            max-width: 46rem;
+            color: var(--color-on-inverse);
+        }
+
+        .home-eyebrow {
+            margin: 0 0 var(--space-3);
+            font-size: var(--step-label);
+            font-weight: 700;
+            letter-spacing: var(--tracking-label);
+            text-transform: uppercase;
+            color: var(--color-accent);
+        }
+
+        .home-hero .home-eyebrow {
+            color: var(--color-on-inverse);
+            opacity: 0.86;
+        }
+
+        .home-hero h2 {
+            margin: 0 0 var(--space-3);
+            font-size: clamp(2rem, 1.35rem + 2.9vw, 3.25rem);
+            line-height: 1.08;
+            letter-spacing: -0.015em;
+            max-width: 20ch;
+            text-wrap: balance;
+            color: var(--color-on-inverse);
+            padding-bottom: 0;
+        }
+
+        .home-hero h2::after {
+            display: none;
+        }
+
+        .home-hero-tagline {
+            margin: 0 0 var(--space-4);
+            font-family: var(--font-display);
+            font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.35rem);
+            color: var(--color-on-inverse);
+        }
+
+        .home-hero-intro {
+            margin: 0 0 var(--space-6);
+            max-width: 46ch;
+            font-size: 1.0625rem;
+            color: var(--color-on-inverse);
+            opacity: 0.92;
+        }
+
+        .home-hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-3);
+        }
+
+        .home-hero .btn.secondary-btn {
+            background-color: var(--color-inverse-button-bg);
+            border-color: transparent;
+            color: var(--color-inverse-button-text);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .home-hero .btn.secondary-btn:hover {
+            background-color: var(--color-on-inverse);
+            color: var(--color-inverse-button-text);
+        }
+
+        .home-hero :focus-visible {
+            outline-color: var(--color-on-inverse);
+        }
+
+        /* ------------------------------------------------- Feature strip */
+        .home-features {
+            padding-block: clamp(1.75rem, 4vw, 3rem);
+            background-color: var(--color-bg);
+        }
+
+        .home-feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: var(--space-4);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .home-feature {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+            min-height: 100%;
+            padding: var(--space-5);
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-xs);
+            transition: box-shadow var(--duration-base) var(--ease-standard),
+                transform var(--duration-base) var(--ease-standard);
+        }
+
+        .home-feature:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .home-feature-label {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            margin: 0;
+            font-size: var(--step-label);
+            font-weight: 700;
+            letter-spacing: var(--tracking-label);
+            text-transform: uppercase;
+            color: var(--color-text-muted);
+        }
+
+        .home-feature-label i {
+            color: var(--color-accent);
+        }
+
+        .home-feature-value {
+            margin: 0;
+            font-family: var(--font-display);
+            /* Shared type scale: the card-title step from the design system. */
+            font-size: var(--step-card);
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--color-text);
+        }
+
+        .home-feature-detail {
+            margin: 0;
+            font-size: var(--step-small);
+            color: var(--color-text-muted);
+        }
+
+        .home-feature-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            margin-top: auto;
+            padding-top: var(--space-2);
+            font-size: var(--step-small);
+            font-weight: 600;
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .home-feature-link i {
+            font-size: var(--step-label);
+            transition: transform var(--duration-fast) var(--ease-standard);
+        }
+
+        .home-feature-link:hover i,
+        .home-feature-link:focus-visible i {
+            transform: translateX(3px);
+        }
+
+        /* --------------------------------------------------------- News */
+        .home-news {
+            padding-block: var(--section-y);
+            background-color: var(--color-surface-alt);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .home-section-head {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: var(--space-4);
+            margin-bottom: var(--space-6);
+        }
+
+        .home-section-head h2 {
+            margin: 0;
+        }
+
+        .home-section-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--step-small);
+            font-weight: 600;
+            color: var(--color-primary);
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .home-section-link i {
+            transition: transform var(--duration-fast) var(--ease-standard);
+        }
+
+        .home-section-link:hover i,
+        .home-section-link:focus-visible i {
+            transform: translateX(3px);
+        }
+
+        .home-news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: var(--space-5);
+        }
+
+        .home-story {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-xs);
+            transition: box-shadow var(--duration-base) var(--ease-standard),
+                transform var(--duration-base) var(--ease-standard);
+        }
+
+        .home-story:hover,
+        .home-story:focus-within {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .home-story-media {
+            overflow: hidden;
+        }
+
+        .home-story-media img {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            transition: transform var(--duration-base) var(--ease-standard);
+        }
+
+        .home-story:hover .home-story-media img,
+        .home-story:focus-within .home-story-media img {
+            transform: scale(1.02);
+        }
+
+        .home-story-body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            gap: var(--space-2);
+            padding: var(--space-5);
+        }
+
+        .home-story-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2) var(--space-3);
+            margin: 0;
+            font-size: var(--step-label);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--color-text-muted);
+        }
+
+        .home-story-title {
+            margin: 0;
+            font-size: 1.0625rem;
+            line-height: 1.3;
+        }
+
+        .home-story-title a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-family: var(--font-display);
+        }
+
+        /* One stretched link makes the whole card clickable without nesting links. */
+        .home-story-title a::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+        }
+
+        .home-story-excerpt {
+            margin: 0;
+            font-size: var(--step-small);
+            color: var(--color-text-muted);
+        }
+
+        .home-story-more {
+            margin-top: auto;
+            padding-top: var(--space-3);
+            font-size: var(--step-small);
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        /* ----------------------------------------------------- Schedule */
+        .home-schedule {
+            padding-block: var(--section-y);
+            background-color: var(--color-bg);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .home-schedule-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+
+        .home-schedule-item {
+            display: grid;
+            grid-template-columns: 8.5rem minmax(0, 1fr) auto;
+            gap: var(--space-4);
+            align-items: center;
+            padding: var(--space-4) var(--space-5);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .home-schedule-item:first-child {
+            border-top: 0;
+        }
+
+        .home-schedule-date {
+            margin: 0;
+            font-family: var(--font-display);
+            font-size: 0.9375rem;
+            font-weight: 700;
+            color: var(--color-text);
+        }
+
+        .home-schedule-date span {
+            display: block;
+            font-family: var(--font-ui);
+            font-size: var(--step-label);
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--color-text-muted);
+        }
+
+        .home-schedule-title {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .home-schedule-meta {
+            margin: 0.15rem 0 0;
+            font-size: var(--step-small);
+            color: var(--color-text-muted);
+        }
+
+        .home-schedule-status {
+            padding: 0.25rem 0.7rem;
+            border-radius: var(--radius-pill);
+            font-size: var(--step-label);
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .home-schedule-status.is-confirmed {
+            background-color: var(--color-positive-surface);
+            color: var(--color-positive-text);
+        }
+
+        .home-schedule-status.is-tbc {
+            background-color: var(--color-neutral-surface);
+            color: var(--color-neutral-text);
+        }
+
+        .home-schedule-status.is-proposed {
+            background-color: var(--color-warning-surface);
+            color: var(--color-warning-text);
+        }
+
+        /* Season-complete empty state (used when the fixture list has no
+           future dates — the real state at the end of the 2026 season). */
+        .home-empty {
+            padding: clamp(1.75rem, 4vw, 3rem);
+            text-align: center;
+            background-color: var(--color-surface);
+            border: 1px dashed var(--color-border);
+            border-radius: var(--radius-md);
+        }
+
+        .home-empty-title {
+            margin: 0 0 var(--space-2);
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-text);
+        }
+
+        .home-empty-copy {
+            max-width: 48ch;
+            margin: 0 auto var(--space-3);
+            color: var(--color-text-muted);
+        }
+
+        .home-empty-note {
+            margin: 0 auto var(--space-5);
+            font-size: var(--step-small);
+            color: var(--color-text-muted);
+        }
+
+        .home-empty-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--space-3);
+        }
+
+        /* ------------------------------------------------------ History */
+        .home-history {
+            padding-block: var(--section-y);
+            background-color: var(--color-surface-alt);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .home-history-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+            gap: clamp(1.5rem, 4vw, 3.5rem);
+            align-items: center;
+        }
+
+        .home-history-media {
+            overflow: hidden;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-sm);
+            background-color: var(--color-surface);
+        }
+
+        .home-history-media img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .home-history h2 {
+            margin: 0 0 var(--space-3);
+        }
+
+        .home-history-copy {
+            margin: 0 0 var(--space-5);
+            max-width: 60ch;
+            color: var(--color-text-muted);
+        }
+
+        .home-history-facts {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: var(--space-4);
+            margin: 0 0 var(--space-5);
+            padding: 0;
+            list-style: none;
+        }
+
+        .home-history-facts li {
+            padding-top: var(--space-3);
+            border-top: 2px solid var(--color-brass);
+        }
+
+        .home-history-fact-value {
+            display: block;
+            font-family: var(--font-display);
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: var(--color-text);
+        }
+
+        .home-history-fact-label {
+            display: block;
+            margin-top: 0.15rem;
+            font-size: var(--step-small);
+            color: var(--color-text-muted);
+        }
+
+        /* ------------------------------------------------------ Gallery */
+        .home-gallery {
+            padding-block: var(--section-y);
+            background-color: var(--color-bg);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .home-gallery-strip {
+            display: grid;
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            gap: var(--space-3);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .home-gallery-strip a {
+            display: block;
+            overflow: hidden;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--color-border);
+            background-color: var(--color-surface-alt);
+            text-decoration: none;
+        }
+
+        .home-gallery-strip img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            height: auto;
+            object-fit: cover;
+            transition: transform var(--duration-base) var(--ease-standard);
+        }
+
+        .home-gallery-strip a:hover img,
+        .home-gallery-strip a:focus-visible img {
+            transform: scale(1.03);
+        }
+
+        /* ------------------------------------------- New to bowls CTA */
+        .home-join {
+            padding-block: var(--section-y);
+            background-color: var(--color-bg);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .home-join-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+            gap: clamp(1.5rem, 4vw, 3.5rem);
+            align-items: center;
+        }
+
+        .home-join h2 {
+            margin: 0 0 var(--space-3);
+        }
+
+        .home-join-copy {
+            margin: 0 0 var(--space-5);
+            max-width: 58ch;
+            color: var(--color-text-muted);
+        }
+
+        .home-join-badges {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: var(--space-3);
+            margin: 0 0 var(--space-5);
+            padding: 0;
+            list-style: none;
+        }
+
+        .home-join-badges li {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            padding: var(--space-3) var(--space-4);
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            font-size: var(--step-small);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .home-join-badges i {
+            color: var(--color-accent);
+        }
+
+        .home-join-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-3);
+        }
+
+        .home-join-media {
+            overflow: hidden;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .home-join-media img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            height: auto;
+            object-fit: cover;
+            object-position: center 30%;
+        }
+
+        /* ----------------------------------------------------- Sponsors */
+        .home-sponsors {
+            padding-block: var(--section-y);
+            /* Sits on the tinted band so the strip reads as its own moment
+               between the membership call to action and the footer. */
+            background-color: var(--color-surface-alt);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .home-sponsors-support {
+            margin: var(--space-2) 0 0;
+            font-size: var(--step-small);
+            color: var(--color-text-muted);
+        }
+
+        .home-sponsor-strip {
+            display: grid;
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            gap: var(--space-3);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .home-sponsor-strip a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Equal card dimensions and an equal internal display area, so a
+               tall logo and a wide logo are given the same presence. */
+            aspect-ratio: 3 / 2;
+            padding: clamp(1rem, 1.6vw, 1.5rem);
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            transition: box-shadow var(--duration-base) var(--ease-standard);
+        }
+
+        .home-sponsor-strip a:hover,
+        .home-sponsor-strip a:focus-visible {
+            box-shadow: var(--shadow-sm);
+        }
+
+        .home-sponsor-strip img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        /* ------------------------------------------------ Responsive */
+        @media (max-width: 1100px) {
+            .home-feature-grid,
+            .home-news-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .home-feature-grid > :last-child {
+                grid-column: 1 / -1;
+            }
+
+            .home-gallery-strip,
+            .home-sponsor-strip {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 900px) {
+            .home-history-grid,
+            .home-join-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .home-join-media {
+                order: -1;
+            }
+
+            .home-join-media img {
+                aspect-ratio: 16 / 9;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .home-hero {
+                min-height: 0;
+                padding-block: clamp(2.5rem, 12vw, 3.5rem);
+            }
+
+            .home-hero-media img {
+                object-position: center 38%;
+            }
+
+            .home-feature-grid,
+            .home-news-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .home-feature-grid > :last-child {
+                grid-column: auto;
+            }
+
+            .home-schedule-item {
+                grid-template-columns: minmax(0, 1fr) auto;
+                grid-template-areas:
+                    'date status'
+                    'body body';
+                gap: var(--space-2) var(--space-3);
+            }
+
+            .home-schedule-date {
+                grid-area: date;
+            }
+
+            .home-schedule-body {
+                grid-area: body;
+            }
+
+            .home-schedule-status {
+                grid-area: status;
+            }
+
+            .home-gallery-strip {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            /* Four gallery tiles on the smallest screens keeps the strip compact. */
+            .home-gallery-strip > :nth-child(n + 5) {
+                display: none;
+            }
+
+            .home-sponsor-strip {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .home-history-facts {
+                grid-template-columns: minmax(0, 1fr);
+                gap: var(--space-3);
+            }
+
+            .home-join-badges {
+                grid-template-columns: minmax(0, 1fr);
             }
         }
     </style>
@@ -83,63 +834,222 @@ bodyClass: ""
 
 <main>
 
-<section class="hero">
-        <div class="hero-content">
-            <h2>Welcome to Polmaise Bowling Club</h2>
-            <p>Tradition, Community, Excellence</p>
-            <div class="cta-buttons">
-                <a href="membership.html" class="btn primary-btn">Join Us</a>
-                <a href="fixtures.html" class="btn secondary-btn">Upcoming Events</a>
-                <a href="contact.html" class="btn secondary-btn">Contact Us</a>
+    {# 1. Hero — photographic, theme-aware scrim, three clear routes in. #}
+    <section class="home-hero" aria-labelledby="home-hero-title">
+        <div class="home-hero-media">
+            {% photoImage homepage.hero.image.src, homepage.hero.image.alt, { role: "content", sizes: "100vw", loading: false, class: "home-hero-image", extraAttributes: ['fetchpriority="high"'] } %}
+        </div>
+        <div class="container home-hero-inner">
+            <p class="home-eyebrow">{{ homepage.hero.kicker }}</p>
+            <h2 id="home-hero-title">{{ homepage.hero.title }}</h2>
+            <p class="home-hero-tagline">{{ homepage.hero.tagline }}</p>
+            <p class="home-hero-intro">{{ homepage.hero.intro }}</p>
+            <div class="home-hero-actions">
+                <a href="membership.html" class="btn primary-btn">Join Polmaise</a>
+                <a href="fixtures.html" class="btn secondary-btn">View Fixtures</a>
+                <a href="news.html" class="btn secondary-btn">Latest News</a>
             </div>
         </div>
     </section>
 
-    <section class="welcome">
+    {# 2. Feature strip — next fixture, latest result, live scores. #}
+    <section class="home-features" aria-label="At a glance">
         <div class="container">
-            <h2>Welcome to Our Club</h2>
-            <div class="welcome-content">
-                <div class="welcome-text">
-                    <div class="welcome-logo">
-                        {% photoImage "./Images/club-logo.png", "Polmaise Bowling Club Logo", { loading: false, sizes: "(max-width: 768px) 90vw, 400px" } %}
+            <ul class="home-feature-grid">
+                <li class="home-feature">
+                    <p class="home-feature-label"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Next fixture</p>
+                    {% if homepage.nextFixture %}
+                    <p class="home-feature-value">{{ homepage.nextFixture.competition }}</p>
+                    <p class="home-feature-detail">{{ homepage.nextFixture.day }}, {{ homepage.nextFixture.date }}{% if homepage.nextFixture.venue and homepage.nextFixture.venue != "—" %} · {{ homepage.nextFixture.venue }}{% endif %}</p>
+                    {% else %}
+                    <p class="home-feature-value">Season complete</p>
+                    <p class="home-feature-detail">No more fixtures scheduled this season{% if homepage.lastPlayed %} — the {{ homepage.season }} season finished on {{ homepage.lastPlayed.date }}{% endif %}.</p>
+                    {% endif %}
+                    <a class="home-feature-link" href="fixtures.html">Fixture list <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+                </li>
+                <li class="home-feature">
+                    <p class="home-feature-label"><i class="fas fa-trophy" aria-hidden="true"></i> {{ homepage.latestResult.eyebrow }}</p>
+                    <p class="home-feature-value">{{ homepage.latestResult.competition }}</p>
+                    <p class="home-feature-detail">{{ homepage.latestResult.detail }}</p>
+                    <a class="home-feature-link" href="{{ homepage.latestResult.href }}">Read the report <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+                </li>
+                <li class="home-feature">
+                    <p class="home-feature-label"><i class="fas fa-bullhorn" aria-hidden="true"></i> Live scores</p>
+                    <p class="home-feature-value">Follow the action</p>
+                    <p class="home-feature-detail">Live scoring from the green, plus results as they come in.</p>
+                    <a class="home-feature-link" href="live-scoring.html">Open live scores <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    {# 3. Latest from Polmaise — the three most recent published stories. #}
+    <section class="home-news" aria-labelledby="home-news-title">
+        <div class="container">
+            <div class="home-section-head">
+                <div>
+                    <p class="home-eyebrow">Latest from Polmaise</p>
+                    <h2 id="home-news-title">News &amp; Events</h2>
+                </div>
+                <a class="home-section-link" href="news.html">View all news <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="home-news-grid">
+                {# Stage 13: the three newest published articles, chosen automatically
+                   from the news collection — no homepage editing required. #}
+                {# `newsArchive.articles` is already sorted newest-first (and keeps
+                   the one undated story last), so the homepage always shows the
+                   three most recent published articles. #}
+                {% for item in newsArchive.articles %}
+                {% if loop.index <= 3 %}
+                <article class="home-story">
+                    <div class="home-story-media">
+                        {% photoImage item.image, item.imageAlt, { role: "grid", sizes: "(max-width: 720px) 92vw, (max-width: 1100px) 46vw, 380px", loading: "lazy" } %}
                     </div>
-                    <p>Established in 1911, Polmaise Bowling Club has been a cornerstone of the Fallin community for generations. With deep roots in the local mining heritage, our club offers a welcoming environment for bowlers of all skill levels.</p>
-                    <p>Whether you're an experienced player or new to the sport, we invite you to join our friendly community and discover the joy of bowls in our beautiful facilities.</p>
-                    <a href="about.html" class="btn primary-btn">Learn More About Us</a>
-                </div>
-                <div class="welcome-image">
-                    {% photoImage "./Images/club-image.png", "Polmaise Bowling Club Green", { loading: "lazy", sizes: "(max-width: 768px) 90vw, 400px" } %}
-                </div>
+                    <div class="home-story-body">
+                        <p class="home-story-meta">
+                            {% if item.displayDate %}<time datetime="{{ item.isoDate }}">{{ item.displayDate }}</time>{% endif %}
+                            <span>{{ item.category }}</span>
+                        </p>
+                        <h3 class="home-story-title"><a href="{{ item.permalink | replace('/', '', 1) }}">{{ item.title }}</a></h3>
+                        <p class="home-story-excerpt">{{ item.excerpt }}</p>
+                        <span class="home-story-more" aria-hidden="true">Read more <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                    </div>
+                </article>
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
     </section>
 
-    <section class="quick-links">
+    {# 4. This week at the club — upcoming fixtures, or a deliberate
+         season-complete state when the fixture list has no future dates. #}
+    <section class="home-schedule" aria-labelledby="home-schedule-title">
         <div class="container">
-            <div class="link-card">
-                <i class="fas fa-calendar-alt"></i>
-                <h3>Upcoming Fixtures</h3>
-                <p>View our match schedule and join us for upcoming games.</p>
-                <a href="fixtures.html" class="btn small-btn">View Calendar</a>
+            <div class="home-section-head">
+                <div>
+                    <p class="home-eyebrow">What&rsquo;s on</p>
+                    <h2 id="home-schedule-title">This Week at the Club</h2>
+                </div>
+                <a class="home-section-link" href="fixtures.html">View all fixtures <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             </div>
-            <div class="link-card">
-                <i class="fas fa-trophy"></i>
-                <h3>Photo Gallery</h3>
-                <p>Explore photos from our latest games and gatherings.</p>
-                <a href="gallery.html" class="btn small-btn">See Photos</a>
+            {% if homepage.upcoming.length %}
+            <ul class="home-schedule-list"{% if homepage.testFixtures %} data-test-fixtures="true"{% endif %}>
+                {% for fixture in homepage.upcoming %}
+                <li class="home-schedule-item">
+                    <p class="home-schedule-date"><span>{{ fixture.day }}</span>{{ fixture.date }}</p>
+                    <div class="home-schedule-body">
+                        <p class="home-schedule-title">{{ fixture.competition }}</p>
+                        <p class="home-schedule-meta">{% if fixture.venue and fixture.venue != "—" %}{{ fixture.venue }}{% else %}Venue to be confirmed{% endif %}</p>
+                    </div>
+                    <span class="home-schedule-status is-{{ fixture.status | lower }}">{{ fixture.status }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <div class="home-empty"{% if homepage.testFixtures %} data-test-fixtures="true"{% endif %}>
+                <p class="home-empty-title">Season complete</p>
+                <p class="home-empty-copy">There are no more scheduled fixtures this season. Check back for the new season schedule, and catch up with the latest results and reports in club news.</p>
+                {% if homepage.lastPlayed %}
+                <p class="home-empty-note">The {{ homepage.season }} season finished on {{ homepage.lastPlayed.date }}{% if homepage.lastPlayed.venue and homepage.lastPlayed.venue != "—" %} at {{ homepage.lastPlayed.venue }}{% endif %}.</p>
+                {% endif %}
+                <div class="home-empty-actions">
+                    <a href="news.html" class="btn primary-btn">Latest news</a>
+                    <a href="fixtures.html" class="btn secondary-btn">Full fixture list</a>
+                </div>
             </div>
-            <div class="link-card">
-                <i class="fas fa-newspaper"></i>
-                <h3>Club News</h3>
-                <p>Stay updated with the latest news and announcements.</p>
-                <a href="news.html" class="btn small-btn">Read News</a>
+            {% endif %}
+        </div>
+    </section>
+
+    {# 5. A club with history — editorial split with an archive photograph. #}
+    <section class="home-history" aria-labelledby="home-history-title">
+        <div class="container home-history-grid">
+            <div class="home-history-media">
+                {% photoImage homepage.history.image.src, homepage.history.image.alt, { role: "content", sizes: "(max-width: 900px) 92vw, 460px", loading: "lazy" } %}
             </div>
-            <div class="link-card">
-                <i class="fas fa-users"></i>
-                <h3>Membership</h3>
-                <p>Learn about the benefits of joining our club and how to apply.</p>
-                <a href="membership.html" class="btn small-btn">Join Us</a>
+            <div>
+                <p class="home-eyebrow">{{ homepage.history.eyebrow }}</p>
+                <h2 id="home-history-title">{{ homepage.history.title }}</h2>
+                <p class="home-history-copy">{{ homepage.history.copy }}</p>
+                <ul class="home-history-facts">
+                    {% for fact in homepage.history.facts %}
+                    <li>
+                        <span class="home-history-fact-value">{{ fact.value }}</span>
+                        <span class="home-history-fact-label">{{ fact.label }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <a href="{{ homepage.history.href }}" class="btn primary-btn">Read the club history</a>
             </div>
+        </div>
+    </section>
+
+    {# 6. Gallery strip — recent album images, all build-time derivatives. #}
+    <section class="home-gallery" aria-labelledby="home-gallery-title">
+        <div class="container">
+            <div class="home-section-head">
+                <div>
+                    <p class="home-eyebrow">From the green</p>
+                    <h2 id="home-gallery-title">Gallery</h2>
+                </div>
+                <a class="home-section-link" href="gallery.html">View gallery <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <ul class="home-gallery-strip">
+                {% for image in homepage.galleryStrip %}
+                <li>
+                    <a href="{{ image.href }}">
+                        {% photoImage image.src, image.alt, { role: "grid", sizes: "(max-width: 720px) 46vw, (max-width: 1100px) 30vw, 180px", loading: "lazy" } %}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+
+    {# 7. New to bowls — welcoming membership call to action. #}
+    <section class="home-join" aria-labelledby="home-join-title">
+        <div class="container home-join-grid">
+            <div>
+                <p class="home-eyebrow">{{ homepage.membership.eyebrow }}</p>
+                <h2 id="home-join-title">{{ homepage.membership.title }}</h2>
+                <p class="home-join-copy">{{ homepage.membership.copy }}</p>
+                <ul class="home-join-badges">
+                    {% for badge in homepage.membership.badges %}
+                    <li><i class="{{ badge.icon }}" aria-hidden="true"></i> {{ badge.label }}</li>
+                    {% endfor %}
+                </ul>
+                <div class="home-join-actions">
+                    <a href="{{ homepage.membership.href }}" class="btn primary-btn">Join Polmaise</a>
+                    <a href="{{ homepage.membership.secondaryHref }}" class="btn secondary-btn">Contact the club</a>
+                </div>
+            </div>
+            <div class="home-join-media">
+                {# Supplied club photograph: a Try Bowls coaching session on the green. #}
+                {% photoImage "./Images/Try Bowls.png", "A coach showing a new bowler how to deliver a bowl during a Try Bowls session on the green at Polmaise Bowling Club", { role: "content", sizes: "(max-width: 900px) 92vw, 460px", loading: "lazy" } %}
+            </div>
+        </div>
+    </section>
+
+    {# 8. Sponsor strip — existing club sponsors with their own logos. #}
+    <section class="home-sponsors" aria-labelledby="home-sponsors-title">
+        <div class="container">
+            <div class="home-section-head">
+                <div>
+                    <p class="home-eyebrow">With thanks</p>
+                    <h2 id="home-sponsors-title">Our Sponsors</h2>
+                    <p class="home-sponsors-support">Proudly supported by local businesses</p>
+                </div>
+                <a class="home-section-link" href="sponsors.html">View all sponsors <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <ul class="home-sponsor-strip">
+                {% for sponsor in homepage.sponsorStrip %}
+                <li>
+                    <a href="sponsors.html">
+                        {% photoGraphic sponsor.logo.src, sponsor.logo.alt, { width: 320, loading: "lazy" } %}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
     </section>
 

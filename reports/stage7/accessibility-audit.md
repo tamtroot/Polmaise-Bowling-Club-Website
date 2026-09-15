@@ -39,18 +39,29 @@
 | /PhotoAlbums/charlie-mcneil-memorial-2025.html | 0 | 0 | 1 | 1 | yes | yes | yes |
 | /PhotoAlbums/top-15-final-2025.html | 0 | 0 | 1 | 1 | yes | yes | yes |
 | /PhotoAlbums/twa-peters-memorial-2025.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /news/2026/chucks-memorial-2026/index.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /news/2025/charlie-mcneil-2025/index.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /news/history/1911-opening-of-bowling-green-and-sale-of/index.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /news/2026/index.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /news/2025/index.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /news/history/index.html | 0 | 0 | 1 | 1 | yes | yes | yes |
+| /news/category/competition/index.html | 0 | 0 | 1 | 1 | yes | yes | yes |
 
 ## Heading outlines
 
 ### /index.html
 
 - h1: Polmaise Bowling Club
-  - h2: Welcome to Polmaise Bowling Club
-  - h2: Welcome to Our Club
-    - h3: Upcoming Fixtures
-    - h3: Photo Gallery
-    - h3: Club News
-    - h3: Membership
+  - h2: Polmaise Bowling Club
+  - h2: News & Events
+    - h3: John “Chucks” Johnstone Memorial Tournament 2026 – A Fantastic Day at Polmaise
+    - h3: Aaron Furzer Crowned East & West Champion of Champions
+    - h3: 10th Anniversary Charles McNeil Memorial Pairs
+  - h2: This Week at the Club
+  - h2: On this green since 1911
+  - h2: Gallery
+  - h2: Start bowling at Polmaise
+  - h2: Our Sponsors
     - h3: Polmaise Bowling Club
     - h3: Quick Links
     - h3: Connect With Us
@@ -111,6 +122,15 @@
 - h1: Polmaise Bowling Club
   - h2: Fixtures
   - h2: 2026 Fixtures
+    - h3: Season summary
+    - h3: Full season
+    - h3: Past fixtures
+      - h4: April 2026
+      - h4: May 2026
+      - h4: June 2026
+      - h4: July 2026
+      - h4: August 2026
+      - h4: September 2026
     - h3: Download Full Fixture List
     - h3: Polmaise Bowling Club
     - h3: Quick Links
@@ -120,28 +140,17 @@
 
 - h1: Polmaise Bowling Club
   - h2: News & Events
-  - h2: Latest News
-    - h3: John “Chucks” Johnstone Memorial Tournament 2026 – A Fantastic Day at Polmaise
+  - h2: John “Chucks” Johnstone Memorial Tournament 2026 – A Fantastic Day at Polmaise
+  - h2: Latest from Polmaise
     - h3: Aaron Furzer Crowned East & West Champion of Champions
     - h3: 10th Anniversary Charles McNeil Memorial Pairs
     - h3: Aaron Furzer Crowned Stirling Area and District Champion of Champions
-    - h3: Polmaise Success at Stirling County Association Finals
-    - h3: Triumph at the Area Finals: Polmaise Bowlers Secure Spots at National Finals in Ayr
-    - h3: Greig Ryan Pairs 2026 – A Successful Day at Polmaise Bowling Club
-    - h3: Fallin Primary Pupils Enjoy Try Bowls Day at Polmaise Bowling Club
-    - h3: Polmaise Renew Friendly with Spittalmyre Bowling Club in Memory of John Binnie
-    - h3: Polmaise Help Mark Patons' 100th Anniversary
-    - h3: Sandy Deans Marks 300th County Cap at Polmaise Bowling Club
-    - h3: Opening of the Green – Saturday 4th April 2026
-    - h3: John “Chucks” Johnstone Memorial Tournament 2026 – A Fantastic Day at Polmaise
-      - h4: Seven Games, Seven Wins
-      - h4: A Great Day for the Club
-      - h4: Thanks and Appreciation
-    - h3: Aaron Furzer Crowned East & West Champion of Champions
-    - h3: 10th Anniversary Charles McNeil Memorial Pairs
-      - h4: President's Thanks and Appreciation
-      - h4: A Special Day of Remembrance
-    - h3: Aaron Furzer Crowned Stirling Area and District Champion of Champions
+  - h2: More from the club
+  - h2: By category
+  - h2: Browse the archives
+    - h3: Polmaise Bowling Club
+    - h3: Quick Links
+    - h3: Connect With Us
 
 ### /gallery.html
 
@@ -375,6 +384,137 @@
         - h5: Winners
         - h5: Runners-Up
         - h5: Beaten Semi-Finalists
+    - h3: Polmaise Bowling Club
+    - h3: Quick Links
+    - h3: Connect With Us
+
+### /news/2026/chucks-memorial-2026/index.html
+
+- h1: Polmaise Bowling Club
+  - h2: John “Chucks” Johnstone Memorial Tournament 2026 – A Fantastic Day at Polmaise
+      - h4: Seven Games, Seven Wins
+      - h4: A Great Day for the Club
+      - h4: Thanks and Appreciation
+    - h3: Polmaise Bowling Club
+    - h3: Quick Links
+    - h3: Connect With Us
+
+### /news/2025/charlie-mcneil-2025/index.html
+
+- h1: Polmaise Bowling Club
+  - h2: Charles McNeil Memorial Pairs Tournament 2025
+      - h4: Results
+        - h5: Beaten Semi-Finalists:
+        - h5: Runners-Up:
+        - h5: Winners:
+      - h4: Thanks and Acknowledgements
+      - h4: A Special Day for Polmaise
+    - h3: Polmaise Bowling Club
+    - h3: Quick Links
+    - h3: Connect With Us
+
+### /news/history/1911-opening-of-bowling-green-and-sale-of/index.html
+
+- h1: Polmaise Bowling Club
+  - h2: Opening of Bowling Green and Sale of Work
+    - h3: A Gala Day at Fallin - June 3, 1911
+      - h4: Opening of Bowling Green and Sale of Work
+      - h4: Match Results
+      - h4: Sale of Work
+      - h4: Stallholders
+    - h3: Polmaise Bowling Club
+    - h3: Quick Links
+    - h3: Connect With Us
+
+### /news/2026/index.html
+
+- h1: Polmaise Bowling Club
+  - h2: 2026 news archive
+    - h3: John “Chucks” Johnstone Memorial Tournament 2026 – A Fantastic Day at Polmaise
+    - h3: Aaron Furzer Crowned East & West Champion of Champions
+    - h3: 10th Anniversary Charles McNeil Memorial Pairs
+    - h3: Aaron Furzer Crowned Stirling Area and District Champion of Champions
+    - h3: Polmaise Success at Stirling County Association Finals
+    - h3: Triumph at the Area Finals: Polmaise Bowlers Secure Spots at National Finals in Ayr
+    - h3: Greig Ryan Pairs 2026 – A Successful Day at Polmaise Bowling Club
+    - h3: Fallin Primary Pupils Enjoy Try Bowls Day at Polmaise Bowling Club
+    - h3: Polmaise Renew Friendly with Spittalmyre Bowling Club in Memory of John Binnie
+    - h3: Polmaise Help Mark Patons' 100th Anniversary
+    - h3: Sandy Deans Marks 300th County Cap at Polmaise Bowling Club
+    - h3: Opening of the Green – Saturday 4th April 2026
+  - h2: Other archives
+    - h3: Polmaise Bowling Club
+    - h3: Quick Links
+    - h3: Connect With Us
+
+### /news/2025/index.html
+
+- h1: Polmaise Bowling Club
+  - h2: 2025 news archive
+    - h3: Presentation Dance 2025 – A Night to Remember at Polmaise Bowling Club
+    - h3: John "Chucks" Johnstone Memorial Tournament
+    - h3: Charles McNeil Memorial Pairs Tournament 2025
+    - h3: Polmaise BC Crowned Champions of the 2025 City of Stirling Top Fifteen!
+    - h3: The 'Twa Peters' Memorial Tournament 2025 – A Fantastic Day on the Green
+    - h3: Furzer and Brown Shine Bright in Scottish National Pairs Semi-Final
+    - h3: Double Medal Success for Kyle Malcolmson – International Silver and National Bronze!
+    - h3: Gary Malcomson Crowned District Champion of Champions for Fourth Time
+    - h3: County Championship Glory for Polmaise Triples Team!
+    - h3: Kyle Malcolmson Selected for Scotland U18 International Squad
+    - h3: Polmaise Celebrate Pairs Victory and Look Ahead to Under 25 Final
+    - h3: Polmaise Bowling Club – County Finals and Scottish Qualifier Success
+    - h3: Greg Ryan Memorial Pairs Tournament 2025 – A Fantastic Day at Polmaise
+    - h3: Fallin Primary Pupils Try Their Hand at Bowls at Polmaise
+    - h3: Rising Star Shines Bright: Polmaise's Kyle Malcomson Selected for National Bowls Champions
+    - h3: Polmaise Bowling Club Receives Signed Shirt from David Gourlay
+    - h3: Fallin's Heartbeat: The Gothenburg and Polmaise Bowling Club Celebrated in The Herald
+    - h3: Polmaise Bowling Club Claims Top 9 Title with Dominant Victory
+    - h3: Polmaise Bowling Club – Opening of the Green 2025
+    - h3: Polmaise Bowling Club Undergoes Major Cleanup and Renovation Efforts
+    - h3: Club Launches Sandy Deans Historical Archive
+  - h2: Other archives
+
+### /news/history/index.html
+
+- h1: Polmaise Bowling Club
+  - h2: From the Green, Through the Years
+    - h3: 1911
+      - h4: Opening of Bowling Green and Sale of Work
+      - h4: First Match on New Green - Local Club Defeated
+    - h3: 1914
+      - h4: The Polmaise Trophy - Fallin Club's First Victory
+    - h3: 1935
+      - h4: Polmaise Secure Macintosh Trophy Ownership
+    - h3: 1942
+      - h4: Father Defeats Son in Club Championship Final
+    - h3: 1961
+      - h4: Polmaise Bowling Club Celebrate Their Jubilee (1961)
+    - h3: 1988
+      - h4: Polmaise Top Of The Pops! - Scottish Top Ten Champions
+    - h3: 2002
+      - h4: Super Bowl - Polmaise trio snatch Scottish title in last gasp thriller
+    - h3: 2003
+      - h4: Best of British - Victory over Auld Enemy gives Polmaise the UK title
+    - h3: 2013
+      - h4: Silverware for Rita and Gary - Scottish Mixed Pairs Champions
+    - h3: Polmaise Bowling Club
+    - h3: Quick Links
+    - h3: Connect With Us
+
+### /news/category/competition/index.html
+
+- h1: Polmaise Bowling Club
+  - h2: Competition
+    - h3: Aaron Furzer Crowned East & West Champion of Champions
+    - h3: Aaron Furzer Crowned Stirling Area and District Champion of Champions
+    - h3: Polmaise Success at Stirling County Association Finals
+    - h3: Triumph at the Area Finals: Polmaise Bowlers Secure Spots at National Finals in Ayr
+    - h3: Furzer and Brown Shine Bright in Scottish National Pairs Semi-Final
+    - h3: Double Medal Success for Kyle Malcolmson – International Silver and National Bronze!
+    - h3: Gary Malcomson Crowned District Champion of Champions for Fourth Time
+    - h3: County Championship Glory for Polmaise Triples Team!
+    - h3: Polmaise Celebrate Pairs Victory and Look Ahead to Under 25 Final
+    - h3: Polmaise Bowling Club – County Finals and Scottish Qualifier Success
     - h3: Polmaise Bowling Club
     - h3: Quick Links
     - h3: Connect With Us

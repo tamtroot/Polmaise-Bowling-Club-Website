@@ -9,51 +9,51 @@
     "height": 900
   },
   "status": 200,
-  "resourceCount": 14,
-  "totalBytes": 948370,
+  "resourceCount": 23,
+  "totalBytes": 1274412,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 12250
+      "bytes": 50465
     },
     "font": {
       "count": 5,
       "bytes": 444100
     },
     "image": {
-      "count": 4,
-      "bytes": 330854
+      "count": 13,
+      "bytes": 601900
     },
     "script": {
       "count": 1,
-      "bytes": 9589
+      "bytes": 11051
     },
     "stylesheet": {
       "count": 3,
-      "bytes": 151577
+      "bytes": 166896
     }
   },
   "largestResources": [
-    {
-      "url": "http://127.0.0.1:4173/Images/Archive/Photo%2025-w1600.webp",
-      "bytes": 169154,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/club-image-w800.webp",
-      "bytes": 152828,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
     {
       "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-solid-900.woff2",
       "bytes": 150020,
       "status": 200,
       "resourceType": "font",
       "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/Photo%2025-w1600.webp",
+      "bytes": 149528,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Golden%20Jubilee-w800.webp",
+      "bytes": 109968,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-brands-400.woff2",
@@ -77,11 +77,25 @@
       "contentType": "application/octet-stream"
     },
     {
+      "url": "http://127.0.0.1:4173/Images/Try%20Bowls-w800.webp",
+      "bytes": 75256,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 48347,
+      "bytes": 63666,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/index.html",
+      "bytes": 50465,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fonts/files/open-sans-400-normal-latin.woff2",
@@ -91,6 +105,13 @@
       "contentType": "application/octet-stream"
     },
     {
+      "url": "http://127.0.0.1:4173/Images/2026/Opening%20of%20Green%202026/Opening%20of%20Green-w400.webp",
+      "bytes": 45698,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
       "url": "http://127.0.0.1:4173/vendor/fonts/files/playfair-display-400-normal-latin.woff2",
       "bytes": 38404,
       "status": 200,
@@ -98,25 +119,67 @@
       "contentType": "application/octet-stream"
     },
     {
-      "url": "http://127.0.0.1:4173/index.html",
-      "bytes": 12250,
-      "status": 200,
-      "resourceType": "document",
-      "contentType": "text/html; charset=utf-8"
-    },
-    {
-      "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 9589,
-      "status": 200,
-      "resourceType": "script",
-      "contentType": "text/javascript; charset=utf-8"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/club-logo-w800.webp",
-      "bytes": 4436,
+      "url": "http://127.0.0.1:4173/Images/JockBone/FB_IMG_1753006294768-thumb-w400.webp",
+      "bytes": 37646,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_134840-thumb-w400.webp",
+      "bytes": 37200,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/MurrayCup/MurrayCupA-thumb-w400.webp",
+      "bytes": 29224,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/PolmaiseLadiesTop5/20250626_190850-thumb-w400.webp",
+      "bytes": 26556,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Chucks%202026/Winners-w400.webp",
+      "bytes": 25064,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Charlie%20McNiel%202026/Champs-w400.webp",
+      "bytes": 23378,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Finals%20Day/Finalists-w400.webp",
+      "bytes": 20328,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Aaron%20Champ%20of%20Champs/Aaron%20%26%20President%20Davie-w400.webp",
+      "bytes": 17618,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 11051,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/club-logo-w112.webp",
@@ -135,15 +198,71 @@
   ],
   "resources": [
     {
-      "url": "http://127.0.0.1:4173/Images/Archive/Photo%2025-w1600.webp",
-      "bytes": 169154,
+      "url": "http://127.0.0.1:4173/Images/2025/MurrayCup/MurrayCupA-thumb-w400.webp",
+      "bytes": 29224,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/club-image-w800.webp",
-      "bytes": 152828,
+      "url": "http://127.0.0.1:4173/Images/2025/PolmaiseLadiesTop5/20250626_190850-thumb-w400.webp",
+      "bytes": 26556,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_134840-thumb-w400.webp",
+      "bytes": 37200,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Aaron%20Champ%20of%20Champs/Aaron%20%26%20President%20Davie-w400.webp",
+      "bytes": 17618,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Charlie%20McNiel%202026/Champs-w400.webp",
+      "bytes": 23378,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Chucks%202026/Winners-w400.webp",
+      "bytes": 25064,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Finals%20Day/Finalists-w400.webp",
+      "bytes": 20328,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Opening%20of%20Green%202026/Opening%20of%20Green-w400.webp",
+      "bytes": 45698,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/HistoricalArchive/Golden%20Jubilee-w800.webp",
+      "bytes": 109968,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Archive/Photo%2025-w1600.webp",
+      "bytes": 149528,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
@@ -156,29 +275,36 @@
       "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/club-logo-w800.webp",
-      "bytes": 4436,
+      "url": "http://127.0.0.1:4173/Images/JockBone/FB_IMG_1753006294768-thumb-w400.webp",
+      "bytes": 37646,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/Try%20Bowls-w800.webp",
+      "bytes": 75256,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
     },
     {
       "url": "http://127.0.0.1:4173/index.html",
-      "bytes": 12250,
+      "bytes": 50465,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 9589,
+      "bytes": 11051,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 48347,
+      "bytes": 63666,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

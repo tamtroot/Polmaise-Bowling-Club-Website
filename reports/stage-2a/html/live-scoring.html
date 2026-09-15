@@ -182,7 +182,7 @@
     <section class="live-scoring-section">
         <div class="container">
             <div class="live-scoring-intro">
-                <p>Live scores from Polmaise Bowling Club appear below when a match day is in progress. If nothing is showing, there are no live games at the moment.</p>
+                <p>Live scores from Polmaise Bowling Club appear below while a match is in progress. If the board does not load, live scoring may be unavailable — please check back later for match updates.</p>
                 <p><a href="./downloads/Polmaise_Live_Scoring_Training_Guide.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> Live scoring training guide (PDF)</a></p>
             </div>
             <div class="live-scoring-toolbar">
@@ -195,10 +195,14 @@
                 <iframe
                     src="https://polmaise-bowls-live.base44.app/embed"
                     title="Polmaise Bowling Club Live Scores"
-                    loading="lazy"
                     allowfullscreen
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
+                <div class="live-scoring-unavailable" id="liveScoringUnavailable" hidden>
+                    <p class="live-scoring-unavailable-title">Live scoring is currently unavailable</p>
+                    <p>Please check back later for match updates, or
+                        <a href="https://polmaise-bowls-live.base44.app/embed" target="_blank" rel="noopener noreferrer">open the scoreboard in a new tab</a>.</p>
+                </div>
             </div>
             <p class="live-scoring-fallback">
                 Having trouble viewing the board?
@@ -243,7 +247,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Polmaise Bowling Club. All Rights Reserved.</p>
+                <p>&copy; 2026 Polmaise Bowling Club. All Rights Reserved.</p>
             </div>
         </div>
     </footer>

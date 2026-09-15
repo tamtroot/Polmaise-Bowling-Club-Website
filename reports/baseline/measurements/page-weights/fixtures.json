@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 11,
-  "totalBytes": 693886,
+  "totalBytes": 736544,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 84184
+      "bytes": 110061
     },
     "font": {
       "count": 5,
@@ -26,11 +26,11 @@
     },
     "script": {
       "count": 1,
-      "bytes": 9589
+      "bytes": 11051
     },
     "stylesheet": {
       "count": 3,
-      "bytes": 151577
+      "bytes": 166896
     }
   },
   "largestResources": [
@@ -40,6 +40,13 @@
       "status": 200,
       "resourceType": "font",
       "contentType": "application/octet-stream"
+    },
+    {
+      "url": "http://127.0.0.1:4173/fixtures.html",
+      "bytes": 110061,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-brands-400.woff2",
@@ -63,15 +70,8 @@
       "contentType": "application/octet-stream"
     },
     {
-      "url": "http://127.0.0.1:4173/fixtures.html",
-      "bytes": 84184,
-      "status": 200,
-      "resourceType": "document",
-      "contentType": "text/html; charset=utf-8"
-    },
-    {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 48347,
+      "bytes": 63666,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -92,7 +92,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 9589,
+      "bytes": 11051,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
@@ -115,7 +115,7 @@
   "resources": [
     {
       "url": "http://127.0.0.1:4173/fixtures.html",
-      "bytes": 84184,
+      "bytes": 110061,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -129,14 +129,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 9589,
+      "bytes": 11051,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 48347,
+      "bytes": 63666,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

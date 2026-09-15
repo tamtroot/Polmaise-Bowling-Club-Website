@@ -1,0 +1,1856 @@
+{
+  "generatedAt": "2026-09-15T08:21:50.684Z",
+  "sourceBytes": 266067,
+  "sourceLines": 3558,
+  "counts": {
+    "sections": 4,
+    "newsCards": 33,
+    "articleBodies": 33,
+    "historyCards": 10,
+    "historyItems": 10,
+    "headings": 151,
+    "images": 0,
+    "photoCalls": 131,
+    "photoImage": 131,
+    "photoGraphic": 0,
+    "ids": 54
+  },
+  "sections": [
+    "page-banner",
+    "news-section",
+    "news-archive",
+    "history-feature news-archive"
+  ],
+  "newsCards": [
+    {
+      "id": "article-chucks-memorial-2026",
+      "title": "John “Chucks” Johnstone Memorial Tournament 2026 – A Fantastic Day at Polmaise"
+    },
+    {
+      "id": "article-east-west-champion-of-champions-2026",
+      "title": "Aaron Furzer Crowned East &amp; West Champion of Champions"
+    },
+    {
+      "id": "article-charlie-mcneil-2026",
+      "title": "10th Anniversary Charles McNeil Memorial Pairs"
+    },
+    {
+      "id": "article-champion-of-champions-2026",
+      "title": "Aaron Furzer Crowned Stirling Area and District Champion of Champions"
+    },
+    {
+      "id": "article-county-finals-2026",
+      "title": "Polmaise Success at Stirling County Association Finals"
+    },
+    {
+      "id": "article-scottish-area-final-2026",
+      "title": "Triumph at the Area Finals: Polmaise Bowlers Secure Spots at National Finals in Ayr"
+    },
+    {
+      "id": "article-greig-ryan-2026",
+      "title": "Greig Ryan Pairs 2026 – A Successful Day at Polmaise Bowling Club"
+    },
+    {
+      "id": "article-fallin-primary-2026",
+      "title": "Fallin Primary Pupils Enjoy Try Bowls Day at Polmaise Bowling Club"
+    },
+    {
+      "id": "article-john-binnie-2026",
+      "title": "Polmaise Renew Friendly with Spittalmyre Bowling Club in Memory of John Binnie"
+    },
+    {
+      "id": "article-patons-100th-2026",
+      "title": "Polmaise Help Mark Patons' 100th Anniversary"
+    },
+    {
+      "id": "article-sandy-300th-cap-2026",
+      "title": "Sandy Deans Marks 300th County Cap at Polmaise Bowling Club"
+    },
+    {
+      "id": "article-opening-green-2026",
+      "title": "Opening of the Green – Saturday 4th April 2026"
+    },
+    {
+      "id": "article-presentation-dance-2025-event",
+      "title": "Presentation Dance 2025 – A Night to Remember at Polmaise"
+    },
+    {
+      "id": "article-chucks-2025",
+      "title": "John “Chucks” Johnstone Memorial Tournament 2025"
+    },
+    {
+      "id": "article-charlie-mcneil-2025",
+      "title": "Charles McNeil Memorial Pairs Tournament 2025"
+    },
+    {
+      "id": "article-top-15-2025",
+      "title": "Polmaise win the City of Stirling Top Fifteen 2025"
+    },
+    {
+      "id": "article-twa-peters-2025",
+      "title": "The 'Twa Peters' Memorial Tournament 2025 – A Fantastic Day on the Green"
+    },
+    {
+      "id": "article-national-pairs",
+      "title": "Furzer and Brown Shine Bright in Scottish National Pairs Semi-Final"
+    },
+    {
+      "id": "article-kyle-double-medal",
+      "title": "Double Medal Success for Kyle Malcolmson – International Silver and National Bronze!"
+    },
+    {
+      "id": "article-gary-fourth-title",
+      "title": "Gary Malcomson Crowned District Champion of Champions for Fourth Time"
+    },
+    {
+      "id": "article-county-triples-win",
+      "title": "County Championship Glory for Polmaise Triples Team!"
+    },
+    {
+      "id": "article-kyle-u18",
+      "title": "Kyle Malcolmson Selected for Scotland U18 International Squad"
+    },
+    {
+      "id": "article-pairs-victory",
+      "title": "Polmaise Celebrate Pairs Victory and Look Ahead to Under 25 Final"
+    },
+    {
+      "id": "article-county-finals",
+      "title": "Polmaise Bowling Club – County Finals and Scottish Qualifier Success"
+    },
+    {
+      "id": "article-greg-ryan-memorial",
+      "title": "Greg Ryan Memorial Pairs Tournament 2025 – A Fantastic Day at Polmaise"
+    },
+    {
+      "id": "article-fallin-primary",
+      "title": "Fallin Primary Pupils Try Their Hand at Bowls at Polmaise"
+    },
+    {
+      "id": "article-kyle",
+      "title": "Rising Star Shines Bright: Kyle Malcomson Selected for National Championships"
+    },
+    {
+      "id": "sandy-deans-archive",
+      "title": "Explore Our New Sandy Deans Historical Archive"
+    },
+    {
+      "id": "article0",
+      "title": "Polmaise Bowling Club Receives Signed Shirt from David Gourlay"
+    },
+    {
+      "id": "article1",
+      "title": "Fallin's Heartbeat: The Gothenburg and Polmaise Bowling Club Celebrated in The Herald"
+    },
+    {
+      "id": "article2",
+      "title": "Polmaise Bowling Club Claims Top 9 Title with Dominant Victory"
+    },
+    {
+      "id": "article3",
+      "title": "Polmaise Bowling Club – Opening of the Green 2025"
+    },
+    {
+      "id": "article4",
+      "title": "Polmaise Bowling Club Undergoes Major Cleanup and Renovation Efforts"
+    }
+  ],
+  "articleBodies": [
+    {
+      "id": "article-chucks-memorial-2026",
+      "classes": "news-item featured",
+      "title": "John “Chucks” Johnstone Memorial Tournament 2026 – A Fantastic Day at Polmaise"
+    },
+    {
+      "id": "article-east-west-champion-of-champions-2026",
+      "classes": "news-item featured",
+      "title": "Aaron Furzer Crowned East &amp; West Champion of Champions"
+    },
+    {
+      "id": "article-charlie-mcneil-2026",
+      "classes": "news-item featured",
+      "title": "10th Anniversary Charles McNeil Memorial Pairs"
+    },
+    {
+      "id": "article-champion-of-champions-2026",
+      "classes": "news-item featured",
+      "title": "Aaron Furzer Crowned Stirling Area and District Champion of Champions"
+    },
+    {
+      "id": "article-county-finals-2026",
+      "classes": "news-item featured",
+      "title": "Polmaise Success at Stirling County Association Finals"
+    },
+    {
+      "id": "article-scottish-area-final-2026",
+      "classes": "news-item featured",
+      "title": "Triumph at the Area Finals: Polmaise Bowlers Secure Spots at National Finals in Ayr"
+    },
+    {
+      "id": "article-greig-ryan-2026",
+      "classes": "news-item featured",
+      "title": "Greig Ryan Pairs 2026 – A Successful Day at Polmaise Bowling Club"
+    },
+    {
+      "id": "article-fallin-primary-2026",
+      "classes": "news-item featured",
+      "title": "Fallin Primary Pupils Enjoy Try Bowls Day at Polmaise Bowling Club"
+    },
+    {
+      "id": "article-john-binnie-2026",
+      "classes": "news-item featured",
+      "title": "Polmaise Renew Friendly with Spittalmyre Bowling Club in Memory of John Binnie"
+    },
+    {
+      "id": "article-patons-100th-2026",
+      "classes": "news-item featured",
+      "title": "Polmaise Help Mark Patons' 100th Anniversary"
+    },
+    {
+      "id": "article-sandy-300th-cap-2026",
+      "classes": "news-item featured",
+      "title": "Sandy Deans Marks 300th County Cap at Polmaise Bowling Club"
+    },
+    {
+      "id": "article-opening-green-2026",
+      "classes": "news-item featured",
+      "title": "Opening of the Green – Saturday 4th April 2026"
+    },
+    {
+      "id": "article-presentation-dance-2025-event",
+      "classes": "news-item featured",
+      "title": "Presentation Dance 2025 – A Night to Remember at Polmaise Bowling Club"
+    },
+    {
+      "id": "article-chucks-2025",
+      "classes": "news-item featured",
+      "title": "John \"Chucks\" Johnstone Memorial Tournament"
+    },
+    {
+      "id": "article-charlie-mcneil-2025",
+      "classes": "news-item featured",
+      "title": "Charles McNeil Memorial Pairs Tournament 2025"
+    },
+    {
+      "id": "article-top-15-2025",
+      "classes": "news-item featured",
+      "title": "Polmaise BC Crowned Champions of the 2025 City of Stirling Top Fifteen!"
+    },
+    {
+      "id": "article-twa-peters-2025",
+      "classes": "news-item featured",
+      "title": "The 'Twa Peters' Memorial Tournament 2025 – A Fantastic Day on the Green"
+    },
+    {
+      "id": "article-national-pairs",
+      "classes": "news-item featured",
+      "title": "Furzer and Brown Shine Bright in Scottish National Pairs Semi-Final"
+    },
+    {
+      "id": "article-kyle-double-medal",
+      "classes": "news-item featured",
+      "title": "Double Medal Success for Kyle Malcolmson – International Silver and National Bronze!"
+    },
+    {
+      "id": "article-gary-fourth-title",
+      "classes": "news-item featured",
+      "title": "Gary Malcomson Crowned District Champion of Champions for Fourth Time"
+    },
+    {
+      "id": "article-county-triples-win",
+      "classes": "news-item featured",
+      "title": "County Championship Glory for Polmaise Triples Team!"
+    },
+    {
+      "id": "article-kyle-u18",
+      "classes": "news-item featured",
+      "title": "Kyle Malcolmson Selected for Scotland U18 International Squad"
+    },
+    {
+      "id": "article-pairs-victory",
+      "classes": "news-item featured",
+      "title": "Polmaise Celebrate Pairs Victory and Look Ahead to Under 25 Final"
+    },
+    {
+      "id": "article-county-finals",
+      "classes": "news-item featured",
+      "title": "Polmaise Bowling Club – County Finals and Scottish Qualifier Success"
+    },
+    {
+      "id": "article-greg-ryan-memorial",
+      "classes": "news-item featured",
+      "title": "Greg Ryan Memorial Pairs Tournament 2025 – A Fantastic Day at Polmaise"
+    },
+    {
+      "id": "article-fallin-primary",
+      "classes": "news-item featured",
+      "title": "Fallin Primary Pupils Try Their Hand at Bowls at Polmaise"
+    },
+    {
+      "id": "article-kyle",
+      "classes": "news-item featured",
+      "title": "Rising Star Shines Bright: Polmaise's Kyle Malcomson Selected for National Bowls Championships"
+    },
+    {
+      "id": "sandy-deans-archive",
+      "classes": "news-item featured",
+      "title": "Club Launches Sandy Deans Historical Archive"
+    },
+    {
+      "id": "article0",
+      "classes": "news-item featured",
+      "title": "Polmaise Bowling Club Receives Signed Shirt from David Gourlay"
+    },
+    {
+      "id": "article1",
+      "classes": "news-item featured",
+      "title": "Fallin's Heartbeat: The Gothenburg and Polmaise Bowling Club Celebrated in The Herald"
+    },
+    {
+      "id": "article2",
+      "classes": "news-item featured",
+      "title": "Polmaise Bowling Club Claims Top 9 Title with Dominant Victory"
+    },
+    {
+      "id": "article3",
+      "classes": "news-item featured",
+      "title": "Polmaise Bowling Club – Opening of the Green 2025"
+    },
+    {
+      "id": "article4",
+      "classes": "news-item featured",
+      "title": "Polmaise Bowling Club Undergoes Major Cleanup and Renovation Efforts"
+    }
+  ],
+  "historyCards": [
+    {
+      "id": "history-2013",
+      "title": "Silverware for Rita and Gary - Scottish Mixed Pairs Champions"
+    },
+    {
+      "id": "history-2003",
+      "title": "Best of British - Victory over Auld Enemy gives Polmaise the UK title"
+    },
+    {
+      "id": "history-2002",
+      "title": "Super Bowl - Polmaise trio snatch Scottish title in last gasp thriller"
+    },
+    {
+      "id": "history-1988",
+      "title": "Polmaise Top Of The Pops! - Scottish Top Ten Champions"
+    },
+    {
+      "id": "history-1961",
+      "title": "Polmaise Bowling Club Celebrate Their Jubilee (1961)"
+    },
+    {
+      "id": "history-1942",
+      "title": "Father Defeats Son in Club Championship Final"
+    },
+    {
+      "id": "history-1935",
+      "title": "Polmaise Secure Macintosh Trophy Ownership"
+    },
+    {
+      "id": "history-1914",
+      "title": "The Polmaise Trophy - Fallin Club's First Victory"
+    },
+    {
+      "id": "history-1911-july",
+      "title": "First Match on New Green - Local Club Defeated"
+    },
+    {
+      "id": "history-1911",
+      "title": "Opening of Bowling Green and Sale of Work"
+    }
+  ],
+  "historyItems": [
+    "history-2013",
+    "history-2003",
+    "history-2002",
+    "history-1988",
+    "history-1961",
+    "history-1942",
+    "history-1935",
+    "history-1914",
+    "history-1911-july",
+    "history-1911"
+  ],
+  "headings": [
+    {
+      "level": 2,
+      "text": "News & Events"
+    },
+    {
+      "level": 2,
+      "text": "Latest News"
+    },
+    {
+      "level": 3,
+      "text": "John “Chucks” Johnstone Memorial Tournament 2026 – A Fantastic Day at Polmaise"
+    },
+    {
+      "level": 3,
+      "text": "Aaron Furzer Crowned East &amp; West Champion of Champions"
+    },
+    {
+      "level": 3,
+      "text": "10th Anniversary Charles McNeil Memorial Pairs"
+    },
+    {
+      "level": 3,
+      "text": "Aaron Furzer Crowned Stirling Area and District Champion of Champions"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Success at Stirling County Association Finals"
+    },
+    {
+      "level": 3,
+      "text": "Triumph at the Area Finals: Polmaise Bowlers Secure Spots at National Finals in Ayr"
+    },
+    {
+      "level": 3,
+      "text": "Greig Ryan Pairs 2026 – A Successful Day at Polmaise Bowling Club"
+    },
+    {
+      "level": 3,
+      "text": "Fallin Primary Pupils Enjoy Try Bowls Day at Polmaise Bowling Club"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Renew Friendly with Spittalmyre Bowling Club in Memory of John Binnie"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Help Mark Patons' 100th Anniversary"
+    },
+    {
+      "level": 3,
+      "text": "Sandy Deans Marks 300th County Cap at Polmaise Bowling Club"
+    },
+    {
+      "level": 3,
+      "text": "Opening of the Green – Saturday 4th April 2026"
+    },
+    {
+      "level": 3,
+      "text": "John “Chucks” Johnstone Memorial Tournament 2026 – A Fantastic Day at Polmaise"
+    },
+    {
+      "level": 4,
+      "text": "Seven Games, Seven Wins"
+    },
+    {
+      "level": 4,
+      "text": "A Great Day for the Club"
+    },
+    {
+      "level": 4,
+      "text": "Thanks and Appreciation"
+    },
+    {
+      "level": 3,
+      "text": "Aaron Furzer Crowned East &amp; West Champion of Champions"
+    },
+    {
+      "level": 3,
+      "text": "10th Anniversary Charles McNeil Memorial Pairs"
+    },
+    {
+      "level": 4,
+      "text": "President's Thanks and Appreciation"
+    },
+    {
+      "level": 4,
+      "text": "A Special Day of Remembrance"
+    },
+    {
+      "level": 3,
+      "text": "Aaron Furzer Crowned Stirling Area and District Champion of Champions"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Success at Stirling County Association Finals"
+    },
+    {
+      "level": 4,
+      "text": "Under 25s Singles"
+    },
+    {
+      "level": 4,
+      "text": "Senior Fours"
+    },
+    {
+      "level": 4,
+      "text": "Fours"
+    },
+    {
+      "level": 3,
+      "text": "Triumph at the Area Finals: Polmaise Bowlers Secure Spots at National Finals in Ayr"
+    },
+    {
+      "level": 4,
+      "text": "Singles Success: Craig and Furzer Claim Gold"
+    },
+    {
+      "level": 4,
+      "text": "Valiant Effort in the Gents Pairs"
+    },
+    {
+      "level": 4,
+      "text": "Next Stop: Northfield, Ayr"
+    },
+    {
+      "level": 3,
+      "text": "Greig Ryan Pairs 2026 – A Successful Day at Polmaise Bowling Club"
+    },
+    {
+      "level": 3,
+      "text": "Fallin Primary Pupils Enjoy Try Bowls Day at Polmaise Bowling Club"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Renew Friendly with Spittalmyre Bowling Club in Memory of John Binnie"
+    },
+    {
+      "level": 4,
+      "text": "Match Results"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Help Mark Patons' 100th Anniversary"
+    },
+    {
+      "level": 3,
+      "text": "Sandy Deans Marks 300th County Cap at Polmaise Bowling Club"
+    },
+    {
+      "level": 3,
+      "text": "Opening of the Green – Saturday 4th April 2026"
+    },
+    {
+      "level": 2,
+      "text": "2025 News"
+    },
+    {
+      "level": 3,
+      "text": "Presentation Dance 2025 – A Night to Remember at Polmaise"
+    },
+    {
+      "level": 3,
+      "text": "John “Chucks” Johnstone Memorial Tournament 2025"
+    },
+    {
+      "level": 3,
+      "text": "Annual Presentation Dance – Tickets Now Available!"
+    },
+    {
+      "level": 3,
+      "text": "Charles McNeil Memorial Pairs Tournament 2025"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise win the City of Stirling Top Fifteen 2025"
+    },
+    {
+      "level": 3,
+      "text": "The 'Twa Peters' Memorial Tournament 2025 – A Fantastic Day on the Green"
+    },
+    {
+      "level": 3,
+      "text": "Furzer and Brown Shine Bright in Scottish National Pairs Semi-Final"
+    },
+    {
+      "level": 3,
+      "text": "Double Medal Success for Kyle Malcolmson – International Silver and National Bronze!"
+    },
+    {
+      "level": 3,
+      "text": "Gary Malcomson Crowned District Champion of Champions for Fourth Time"
+    },
+    {
+      "level": 3,
+      "text": "County Championship Glory for Polmaise Triples Team!"
+    },
+    {
+      "level": 3,
+      "text": "Kyle Malcolmson Selected for Scotland U18 International Squad"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Celebrate Pairs Victory and Look Ahead to Under 25 Final"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Bowling Club – County Finals and Scottish Qualifier Success"
+    },
+    {
+      "level": 3,
+      "text": "Greg Ryan Memorial Pairs Tournament 2025 – A Fantastic Day at Polmaise"
+    },
+    {
+      "level": 3,
+      "text": "Fallin Primary Pupils Try Their Hand at Bowls at Polmaise"
+    },
+    {
+      "level": 3,
+      "text": "Rising Star Shines Bright: Kyle Malcomson Selected for National Championships"
+    },
+    {
+      "level": 3,
+      "text": "Explore Our New Sandy Deans Historical Archive"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Bowling Club Receives Signed Shirt from David Gourlay"
+    },
+    {
+      "level": 3,
+      "text": "Fallin's Heartbeat: The Gothenburg and Polmaise Bowling Club Celebrated in The Herald"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Bowling Club Claims Top 9 Title with Dominant Victory"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Bowling Club – Opening of the Green 2025"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Bowling Club Undergoes Major Cleanup and Renovation Efforts"
+    },
+    {
+      "level": 3,
+      "text": "Presentation Dance 2025 – A Night to Remember at Polmaise Bowling Club"
+    },
+    {
+      "level": 4,
+      "text": "Setting the Scene"
+    },
+    {
+      "level": 4,
+      "text": "Food, Fun, and Entertainment"
+    },
+    {
+      "level": 4,
+      "text": "2025 Club Competition Winners"
+    },
+    {
+      "level": 4,
+      "text": "Appreciation and Looking Ahead"
+    },
+    {
+      "level": 3,
+      "text": "John \"Chucks\" Johnstone Memorial Tournament"
+    },
+    {
+      "level": 4,
+      "text": "Tournament Results"
+    },
+    {
+      "level": 4,
+      "text": "Thanks and Acknowledgements"
+    },
+    {
+      "level": 4,
+      "text": "A Special Day"
+    },
+    {
+      "level": 3,
+      "text": "Charles McNeil Memorial Pairs Tournament 2025"
+    },
+    {
+      "level": 4,
+      "text": "Results"
+    },
+    {
+      "level": 4,
+      "text": "Thanks and Acknowledgements"
+    },
+    {
+      "level": 4,
+      "text": "A Special Day for Polmaise"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise BC Crowned Champions of the 2025 City of Stirling Top Fifteen!"
+    },
+    {
+      "level": 4,
+      "text": "The Winning Journey"
+    },
+    {
+      "level": 4,
+      "text": "A Triumph Worth Celebrating"
+    },
+    {
+      "level": 3,
+      "text": "The 'Twa Peters' Memorial Tournament 2025 – A Fantastic Day on the Green"
+    },
+    {
+      "level": 4,
+      "text": "Thank You"
+    },
+    {
+      "level": 4,
+      "text": "Results"
+    },
+    {
+      "level": 3,
+      "text": "Furzer and Brown Shine Bright in Scottish National Pairs Semi-Final"
+    },
+    {
+      "level": 3,
+      "text": "Double Medal Success for Kyle Malcolmson – International Silver and National Bronze!"
+    },
+    {
+      "level": 4,
+      "text": "Scotland U18 International Squad – Silver Medal"
+    },
+    {
+      "level": 4,
+      "text": "U18 Scottish National Singles – Bronze Medal"
+    },
+    {
+      "level": 4,
+      "text": "A Remarkable Run of Success"
+    },
+    {
+      "level": 4,
+      "text": "What's Next"
+    },
+    {
+      "level": 4,
+      "text": "Congratulations, Kyle!"
+    },
+    {
+      "level": 3,
+      "text": "Gary Malcomson Crowned District Champion of Champions for Fourth Time"
+    },
+    {
+      "level": 3,
+      "text": "County Championship Glory for Polmaise Triples Team!"
+    },
+    {
+      "level": 3,
+      "text": "Kyle Malcolmson Selected for Scotland U18 International Squad"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Celebrate Pairs Victory and Look Ahead to Under 25 Final"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Bowling Club – County Finals and Scottish Qualifier Success"
+    },
+    {
+      "level": 4,
+      "text": "County Finals – Sunday 13th July at Bridge of Allan Bowling Club"
+    },
+    {
+      "level": 4,
+      "text": "Scottish Qualifier Finals – Tuesday 24th June, 6:45 PM at Spittalmyre Bowling Club"
+    },
+    {
+      "level": 4,
+      "text": "Scottish Under 25 Qualifier Finals – Monday 30th June, 6:45 PM at Spittalmyre Bowling Club"
+    },
+    {
+      "level": 3,
+      "text": "Greg Ryan Memorial Pairs Tournament 2025 – A Fantastic Day at Polmaise"
+    },
+    {
+      "level": 3,
+      "text": "Fallin Primary Pupils Try Their Hand at Bowls at Polmaise"
+    },
+    {
+      "level": 3,
+      "text": "Rising Star Shines Bright: Polmaise's Kyle Malcomson Selected for National Bowls Champions"
+    },
+    {
+      "level": 3,
+      "text": "Club Launches Sandy Deans Historical Archive"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Bowling Club Receives Signed Shirt from David Gourlay"
+    },
+    {
+      "level": 3,
+      "text": "Fallin's Heartbeat: The Gothenburg and Polmaise Bowling Club Celebrated in The Herald"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Bowling Club Claims Top 9 Title with Dominant Victory"
+    },
+    {
+      "level": 4,
+      "text": "A Season to Remember"
+    },
+    {
+      "level": 4,
+      "text": "Celebrating Success"
+    },
+    {
+      "level": 4,
+      "text": "Looking Ahead"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Bowling Club – Opening of the Green 2025"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Bowling Club Undergoes Major Cleanup and Renovation Efforts"
+    },
+    {
+      "level": 4,
+      "text": "Community Spirit in Action"
+    },
+    {
+      "level": 4,
+      "text": "Renovation Milestones and Acknowledgments"
+    },
+    {
+      "level": 4,
+      "text": "Final Steps to Completion"
+    },
+    {
+      "level": 2,
+      "text": "From the Green, Through the Years - A Journey into Polmaise Bowling Club's Past"
+    },
+    {
+      "level": 3,
+      "text": "LOOKING BACK - 75th Anniversary"
+    },
+    {
+      "level": 3,
+      "text": "Silverware for Rita and Gary - Scottish Mixed Pairs Champions"
+    },
+    {
+      "level": 3,
+      "text": "Best of British - Victory over Auld Enemy gives Polmaise the UK title"
+    },
+    {
+      "level": 3,
+      "text": "Super Bowl - Polmaise trio snatch Scottish title in last gasp thriller"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Top Of The Pops! - Scottish Top Ten Champions"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Bowling Club Celebrate Their Jubilee (1961)"
+    },
+    {
+      "level": 3,
+      "text": "Father Defeats Son in Club Championship Final"
+    },
+    {
+      "level": 3,
+      "text": "Polmaise Secure Macintosh Trophy Ownership"
+    },
+    {
+      "level": 3,
+      "text": "The Polmaise Trophy - Fallin Club's First Victory"
+    },
+    {
+      "level": 3,
+      "text": "First Match on New Green - Local Club Defeated"
+    },
+    {
+      "level": 3,
+      "text": "Opening of Bowling Green and Sale of Work"
+    },
+    {
+      "level": 3,
+      "text": "Stirling Observer – Wednesday, July 31, 2013"
+    },
+    {
+      "level": 4,
+      "text": "SILVERWARE FOR RITA AND GARY"
+    },
+    {
+      "level": 3,
+      "text": "Wednesday, July 9, 2003"
+    },
+    {
+      "level": 4,
+      "text": "BEST OF BRITISH"
+    },
+    {
+      "level": 4,
+      "text": "Rock-solid"
+    },
+    {
+      "level": 4,
+      "text": "Determined"
+    },
+    {
+      "level": 3,
+      "text": "Wednesday, July 24, 2002"
+    },
+    {
+      "level": 4,
+      "text": "SUPER BOWL"
+    },
+    {
+      "level": 4,
+      "text": "Replay"
+    },
+    {
+      "level": 4,
+      "text": "Challenges"
+    },
+    {
+      "level": 3,
+      "text": "Stirling Observer – Friday, June 17, 1988"
+    },
+    {
+      "level": 4,
+      "text": "POLMAISE TOP OF THE POPS!"
+    },
+    {
+      "level": 3,
+      "text": "Alloa Journal and Advertiser – Thursday, June 8th, 1961"
+    },
+    {
+      "level": 4,
+      "text": "POLMAISE BOWLING CLUB CELEBRATE THEIR JUBILEE"
+    },
+    {
+      "level": 4,
+      "text": "Match Details"
+    },
+    {
+      "level": 3,
+      "text": "Stirling Observer – Wednesday, September 9, 1942"
+    },
+    {
+      "level": 4,
+      "text": "FALLIN BOWLING"
+    },
+    {
+      "level": 3,
+      "text": "Saturday, 20th July 1935"
+    },
+    {
+      "level": 4,
+      "text": "WINNERS OF THE MACINTOSH TROPHY"
+    },
+    {
+      "level": 4,
+      "text": "Match Details"
+    },
+    {
+      "level": 3,
+      "text": "June 8th, 1914"
+    },
+    {
+      "level": 4,
+      "text": "THE POLMAISE TROPHY - FALLIN CLUB'S FIRST VICTORY"
+    },
+    {
+      "level": 3,
+      "text": "Bridge of Allan Gazette - 15th July 1911"
+    },
+    {
+      "level": 4,
+      "text": "FALLIN BOWLING - FIRST MATCH ON NEW GREEN - LOCAL CLUB DEFEATED"
+    },
+    {
+      "level": 3,
+      "text": "A Gala Day at Fallin - June 3, 1911"
+    },
+    {
+      "level": 4,
+      "text": "Opening of Bowling Green and Sale of Work"
+    },
+    {
+      "level": 4,
+      "text": "Match Results"
+    },
+    {
+      "level": 4,
+      "text": "Sale of Work"
+    },
+    {
+      "level": 4,
+      "text": "Stallholders"
+    }
+  ],
+  "images": [],
+  "photoCalls": [
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Chucks 2026/Winners.jpg",
+      "alt": "John “Chucks” Johnstone Memorial Tournament 2026 winners William Maxwell, James "
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Aaron Champ of Champs/Aaron & President Davie.jpg",
+      "alt": "Polmaise President Davie Stewart congratulates Aaron Furzer following his East &"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Charlie McNiel 2026/Champs.jpg",
+      "alt": "Charlie's daughters, Stacy and Charlene, present the Memorial Trophy to winners "
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Champion of Champions 2026/Trophy.jpg",
+      "alt": "Aaron Furzer receives the Stirling Area and District Champion of Champions troph"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/County Finals 2026/Senior Fours.jpg",
+      "alt": "Polmaise Bowling Club's winning Senior Fours team pictured at Burnhead Bowling C"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Scottish Area Final 2026/Aaron and James Winners medals.jpg",
+      "alt": "Aaron Furzer and James Craig proudly displaying their gold medals after their Ar"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Greg Ryan Memorial 2026/Winners.jpg",
+      "alt": "2026 Greig Ryan Pairs champions Aaron Furzer and Sandy Deans"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/FPS Try Bowls Day/FPS1.jpg",
+      "alt": "Fallin Primary School pupils proudly pose outside Polmaise Bowling Club holding "
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/John Binnie Trophy/JB1.jpg",
+      "alt": "John Binnie's sons present the memorial trophy at the Polmaise and Spittalmyre f"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Patons Friendly/FB_IMG_1779707564940.jpg",
+      "alt": "Robert Donaldson presents a commemorative plaque to Patons President H. Spence"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Hamilton Trophy/FB_IMG_1779550801450.jpg",
+      "alt": "Sandy Deans marks his 300th county cap at Polmaise Bowling Club"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Bye.png",
+      "alt": "Opening of the Green 2026"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Chucks 2026/Winners.jpg",
+      "alt": "John “Chucks” Johnstone Memorial Tournament 2026 winners William Maxwell, James "
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Aaron Champ of Champs/Aaron & President Davie.jpg",
+      "alt": "Proud Polmaise President Davie Stewart congratulates Aaron Furzer following his "
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Aaron Champ of Champs/Aaron Furzer with Champion of Champions Trophy.jpg",
+      "alt": "Aaron Furzer with the Champion of Champions trophy after his 21–15 victory in th"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Charlie McNiel 2026/Champs.jpg",
+      "alt": "Charlie's daughters, Stacy and Charlene, accompanied by members of the family, p"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Champion of Champions 2026/Trophy.jpg",
+      "alt": "Aaron Furzer receives the Stirling Area and District Champion of Champions troph"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Champion of Champions 2026/James Wray.jpg",
+      "alt": "James Wray of Cambusbarron Bowling Club delivers a bowl during the closely conte"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Champion of Champions 2026/Aaron Furzer.jpg",
+      "alt": "Polmaise’s Aaron Furzer delivers a bowl during the final on his way to becoming "
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Champion of Champions 2026/Aaron with his grandad.jpg",
+      "alt": "Stirling Area and District Champion of Champions winner Aaron Furzer celebrates "
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/County Finals 2026/Senior Fours.jpg",
+      "alt": "Polmaise Bowling Club's winning Senior Fours team pictured at Burnhead Bowling C"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/County Finals 2026/Kyle M.jpg",
+      "alt": "Kyle Malcomson of Polmaise Bowling Club pictured with the Under 25s Singles trop"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Scottish Area Final 2026/Aaron and James Winners medals.jpg",
+      "alt": "Champions! Aaron Furzer and James Craig proudly displaying their gold medals aft"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Scottish Area Final 2026/James Craig.jpg",
+      "alt": "James Craig in action, delivering a crucial bowl during his victorious Junior Si"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Scottish Area Final 2026/Aaron Furzer.jpg",
+      "alt": "Aaron Furzer preparing to deliver his bowl with focused precision during the Gen"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Scottish Area Final 2026/Basher.jpg",
+      "alt": "A dynamic shot of James \\"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Scottish Area Final 2026/Gary Malcomson.jpg",
+      "alt": "Gary Malcomson stepping up to the mat during the fiercely contested Gents Pairs "
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Scottish Area Final 2026/Menstrie Green.jpg",
+      "alt": "A wide shot of the bustling Menstrie Bowling Club green, capturing the fantastic"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Scottish Area Final 2026/View of the hills.jpg",
+      "alt": "The stunning backdrop of the Ochil Hills overlooking the green, providing a beau"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Greg Ryan Memorial 2026/Winners.jpg",
+      "alt": "President David Stewart and John Ryan, Greg's father, present the Greig Ryan Pai"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Greg Ryan Memorial 2026/SemiFinalist1.jpg",
+      "alt": "Defeated semi-finalists C. Carderry and A. Brown pictured with Polmaise Bowling "
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Greg Ryan Memorial 2026/SemiFinalist2.jpg",
+      "alt": "President David Stewart presents prizes to defeated semi-finalists A. Edmonds an"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Greg Ryan Memorial 2026/Runners Up.jpg",
+      "alt": "Runners-up K. Patterson (\\"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Greg Ryan Memorial 2026/All.jpg",
+      "alt": "Winners, runners-up, and semi-finalists gather with John Ryan, Greg's father, fo"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/FPS Try Bowls Day/FPS1.jpg",
+      "alt": "Fallin Primary School pupils proudly pose outside Polmaise Bowling Club holding "
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/FPS Try Bowls Day/FPS4.jpg",
+      "alt": "Club Secretary Peter Black and President David Stewart hand Fallin Primary Schoo"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/John Binnie Trophy/JB1.jpg",
+      "alt": "John Binnie's sons present the memorial trophy at the Polmaise and Spittalmyre f"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Patons Friendly/FB_IMG_1779707564940.jpg",
+      "alt": "Robert Donaldson presents a commemorative plaque to Patons President H. Spence"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Patons Friendly/FB_IMG_1779707572369.jpg",
+      "alt": "Friendly fixture in progress at Patons & Baldwins Bowling Club"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Patons Friendly/FB_IMG_1779707575207.jpg",
+      "alt": "Polmaise and Patons & Baldwins players on the green during the centenary friendl"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Patons Friendly/FB_IMG_1779707577972.jpg",
+      "alt": "Players applaud on the green at Patons & Baldwins Bowling Club"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Patons Friendly/FB_IMG_1779707599591.jpg",
+      "alt": "Commemorative centenary plaque presented by Polmaise Bowling Club"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Hamilton Trophy/FB_IMG_1779550801450.jpg",
+      "alt": "Sandy Deans marks his 300th county cap at Polmaise Bowling Club"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Hamilton Trophy/FB_IMG_1779550807585.jpg",
+      "alt": "Guard of honour for Sandy Deans on the green at Polmaise Bowling Club"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Hamilton Trophy/FB_IMG_1779550810769.jpg",
+      "alt": "Sandy Deans receives a guard of honour from fellow bowlers at Polmaise Bowling C"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Hamilton Trophy/FB_IMG_1779550804606.jpg",
+      "alt": "Sandy and Linda Deans with club officials and guests celebrating Sandy's 300th c"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2026/Bye.png",
+      "alt": "Opening of the Green 2026"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/PresentationDance2025/20251025_223526.jpg",
+      "alt": "Presentation Dance 2025 – A Night to Remember"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/chucks winners.jpg",
+      "alt": "John “Chucks” Johnstone Memorial Tournament 2025 – Winners"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/Presentation.png",
+      "alt": "Annual Presentation Dance – Tickets Now Available!"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/CharlieMcN/20250816_164614.jpg",
+      "alt": "Charles McNeil Memorial Pairs Tournament 2025"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/Top15Final/20250810_134840.jpg",
+      "alt": "Polmaise BC – City of Stirling Top Fifteen Champions 2025"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/TwaPeters/Winners.jpg",
+      "alt": "Winners - David McKean, James Brown, and Aaron Furzer lift the Twa Peters Memori"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/NationalPairs/Bronze Medal.jpeg",
+      "alt": "Aaron Furzer and James Brown at the Scottish National Pairs Championship"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/Kyle Medal.jpg",
+      "alt": "Kyle Malcolmson with his International Silver and National Bronze medals"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/GaryChamp/FB_IMG_1752916966707.jpg",
+      "alt": "Gary Malcomson - District Champion of Champions 2025"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/CountyTrips.jpg",
+      "alt": "Polmaise County Triples Champions 2025"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/KyleMalcomson.jpeg",
+      "alt": "Kyle Malcolmson - Scotland U18 International Squad"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/ScottishQ/20250624_193833.jpg",
+      "alt": "Aaron Furzer and William Black celebrate their Scottish District Pairs victory"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/CountyFinals.jpg",
+      "alt": "Polmaise players competing in County and Scottish Qualifier Finals"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/GregRyanMemorial/Aaron and Sandy.jpg",
+      "alt": "Winners - Sandy Deans and Aaron Furzer"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/FallinPrimaryCertificate.jpg",
+      "alt": "Fallin Primary School Try Bowls Certificate"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/KyleMalcomson.jpeg",
+      "alt": "Kyle Malcomson - Rising Star of Polmaise Bowling Club"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/Photo 2.jpg",
+      "alt": "Sandy Deans Historical Archive"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/Shirt.png",
+      "alt": "David Gourlay presents signed shirt to Polmaise Bowling Club"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/news goth.jpg",
+      "alt": "The Herald feature on Gothenburg Pub and Polmaise Bowling Club"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Top9.jpg",
+      "alt": "Polmaise Bowling Club Top 9 Victory"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Green Opening.jpg",
+      "alt": "Opening of the Green 2025"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Green Maintenance.jpg",
+      "alt": "Club Renovation Progress"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/PresentationDance2025/20251025_223526.jpg",
+      "alt": "Presentation Dance 2025 – A Night to Remember"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/chucks winners.jpg",
+      "alt": "Winners of the John \\"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/CharlieMcN/20250816_164614.jpg",
+      "alt": "Charles McNeil Memorial Pairs Tournament 2025"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/CharlieMcN/20250816_164239.jpg",
+      "alt": "Charles McNeil Memorial Tournament action"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/Top15Final/20250810_134840.jpg",
+      "alt": "Polmaise BC – City of Stirling Top Fifteen Champions 2025 – Team group photo"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/Top15Final/20250810_163647.jpg",
+      "alt": "Club President Alex Brown accepting the City of Stirling Top Fifteen Trophy – 20"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/TwaPeters/Winners.jpg",
+      "alt": "Winners - David McKean, James Brown, and Aaron Furzer lift the Twa Peters Memori"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/TwaPeters/DefeatedSemi.jpg",
+      "alt": "Defeated Semi-Finalists – Team 1: Josie Kilgannon, Billy Guy, Sandy Deans"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/TwaPeters/DefeatedSemi2.jpg",
+      "alt": "Defeated Semi-Finalists – Team 2: Wullie Nicol, Robert Johnstone, Martyn \\"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/TwaPeters/Runnersup.jpg",
+      "alt": "Runners-Up – James Wray, Derek Lawrence, and Gary Malcolmson"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/NationalPairs/Bronze Medal.jpeg",
+      "alt": "Aaron Furzer and James Brown at the Scottish National Pairs Championship"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/Kyle Medal.jpg",
+      "alt": "Kyle Malcolmson with his International Silver and National Bronze medals"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/GaryChamp/FB_IMG_1752916966707.jpg",
+      "alt": "Gary Malcomson - District Champion of Champions 2025"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/CountyTrips.jpg",
+      "alt": "Polmaise County Triples Champions 2025"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/KyleMalcomson.jpeg",
+      "alt": "Kyle Malcolmson - Scotland U18 International Squad"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/ScottishQ/FB_IMG_1750800227934 (2).jpg",
+      "alt": "Aaron Furzer and William Black celebrate their Scottish District Pairs victory"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/ScottishQ/20250624_193855.jpg",
+      "alt": "Gary Malcolmson in action during the District Singles Final"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/CountyFinals.jpg",
+      "alt": "Polmaise players competing in County and Scottish Qualifier Finals"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/GregRyanMemorial/Aaron and Sandy.jpg",
+      "alt": "Winners - Sandy Deans and Aaron Furzer"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/GregRyanMemorial/James and Andrew.jpg",
+      "alt": "Runners Up - James Craig and Andrew Borg"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/FallinPrimaryCertificate.jpg",
+      "alt": "Fallin Primary School Try Bowls Certificate"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/KyleMalcomson.jpeg",
+      "alt": "Kyle Malcomson - Rising Star of Polmaise Bowling Club"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/Photo 2.jpg",
+      "alt": "Sandy Deans Historical Archive"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/2025/Shirt.png",
+      "alt": "David Gourlay presents signed shirt to Polmaise Bowling Club"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/news goth.jpg",
+      "alt": "The Herald feature on Gothenburg Pub and Polmaise Bowling Club"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Top9.jpg",
+      "alt": "Polmaise Bowling Club Top 9 Victory"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Green Opening.jpg",
+      "alt": "Opening of the Green 2025"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Green Maintenance.jpg",
+      "alt": "Club Renovation Progress"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Frame.jpg",
+      "alt": "Framed historical newspaper clippings"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/75th Presidents Trophy.jpg",
+      "alt": "Silver Goblet from 75th Anniversary"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Gary&Rita1.jpg",
+      "alt": "Rita Smith and Gary Malcolmson - Scottish Mixed Pairs Champions"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Triples.jpg",
+      "alt": "Polmaise Bowling Club - British Isles Triples Champions 2003"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/IMG-20250509-WA0001.jpg",
+      "alt": "Polmaise Bowling Club - Scottish Triples Champions 2002"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/1988.jpg",
+      "alt": "Polmaise Bowling Club - Scottish Top Ten Champions 1988"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Golden Jubilee.jpg",
+      "alt": "Polmaise Bowling Club Golden Jubilee 1961"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Stirling_Observer_11_August_1942_0006_Clip.jpg",
+      "alt": "J. Gwynne Sr. Championship Win 1942"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Macintosh 1935.jpg",
+      "alt": "Macintosh Trophy Win 1935"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/8th June 1914.jpg",
+      "alt": "Polmaise Club's First Trophy Win 1914"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_15_July_1911_0005_Clip.jpg",
+      "alt": "First Match on Polmaise Green 1911"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Opening of Green.jpg",
+      "alt": "Opening of Bowling Green 1911"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Gary&Rita1.jpg",
+      "alt": "Rita Smith and Gary Malcolmson - Scottish Mixed Pairs Champions"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Gary&Rita.jpg",
+      "alt": "Original newspaper clipping of Rita and Gary's championship win"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Triples.jpg",
+      "alt": "Polmaise Bowling Club - British Isles Triples Champions 2003"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/IMG-20250509-WA0000.jpg",
+      "alt": "Original newspaper clipping of British Isles championship win"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/IMG-20250509-WA0001.jpg",
+      "alt": "Polmaise Bowling Club - Scottish Triples Champions 2002"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/IMG-20250509-WA0002.jpg",
+      "alt": "Original newspaper clipping of Scottish Triples Championship win"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/1988.jpg",
+      "alt": "Polmaise Bowling Club - Scottish Top Ten Champions 1988"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Stirling_Observer_17_June_1988_0022_Clip.jpg",
+      "alt": "Original newspaper clipping of Polmaise Top of the Pops"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Golden Jubilee.jpg",
+      "alt": "Polmaise Bowling Club Golden Jubilee 1961"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/8th June 1961.jpg",
+      "alt": "Original newspaper clipping from 1961"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Stirling_Observer_11_August_1942_0006_Clip.jpg",
+      "alt": "J. Gwynne Sr. Championship Win 1942"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/J.Gwynne.jpg",
+      "alt": "Original newspaper clipping from 1942"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Macintosh 1935.jpg",
+      "alt": "Macintosh Trophy Win 1935"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/20th July 1935.jpg",
+      "alt": "Original newspaper clipping from July 1935"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_27_July_1935_0012_Clip.jpg",
+      "alt": "Bridge of Allan Gazette clipping about Macintosh Trophy"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/1914 - 1.jpg",
+      "alt": "Polmaise Club's First Trophy Win 1914"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/8th June 1914.jpg",
+      "alt": "Original newspaper clipping from 1914"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/10th June 1914.jpg",
+      "alt": "Additional newspaper clipping from 1914"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_15_July_1911_0005_Clip.jpg",
+      "alt": "First Match on Polmaise Green 1911"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Bridge_of_Allan_Gazette_15_July_1911_0005_Clip.jpg",
+      "alt": "Original newspaper clipping from July 1911"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Opening of Green.jpg",
+      "alt": "Opening of Bowling Green 1911"
+    },
+    {
+      "kind": "photoImage",
+      "src": "./Images/Archive/HistoricalArchive/Opening of Green News.jpg",
+      "alt": "Original newspaper clipping from 1911"
+    }
+  ],
+  "anchors": [
+    "latest-news",
+    "article-chucks-memorial-2026",
+    "article-east-west-champion-of-champions-2026",
+    "article-charlie-mcneil-2026",
+    "article-champion-of-champions-2026",
+    "article-county-finals-2026",
+    "article-scottish-area-final-2026",
+    "article-greig-ryan-2026",
+    "article-fallin-primary-2026",
+    "article-john-binnie-2026",
+    "article-patons-100th-2026",
+    "article-sandy-300th-cap-2026",
+    "article-opening-green-2026",
+    "news-archive-2025",
+    "archive-toggle-icon",
+    "news-archive-content",
+    "article-presentation-dance-2025-event",
+    "article-chucks-2025",
+    "article-charlie-mcneil-2025",
+    "article-top-15-2025",
+    "article-twa-peters-2025",
+    "article-national-pairs",
+    "article-kyle-double-medal",
+    "article-gary-fourth-title",
+    "article-county-triples-win",
+    "article-kyle-u18",
+    "article-pairs-victory",
+    "article-county-finals",
+    "article-greg-ryan-memorial",
+    "article-fallin-primary",
+    "article-kyle",
+    "sandy-deans-archive",
+    "article0",
+    "article1",
+    "article2",
+    "article3",
+    "article4",
+    "history",
+    "history-toggle-icon",
+    "history-archive-content",
+    "history-grid",
+    "history-2013",
+    "history-2003",
+    "history-2002",
+    "history-1988",
+    "history-1961",
+    "history-1942",
+    "history-1935",
+    "history-1914",
+    "history-1911-july",
+    "history-1911",
+    "imageLightbox",
+    "lightbox-img",
+    "lightbox-caption"
+  ],
+  "dateLabels": [
+    "September 5, 2026",
+    "September 4, 2026",
+    "July 25, 2026",
+    "July 17, 2026",
+    "July 4, 2026",
+    "June 23, 2026",
+    "June 6, 2026",
+    "May 31, 2026",
+    "May 30, 2026",
+    "May 23, 2026",
+    "May 23, 2026",
+    "February 6, 2026",
+    "October 25, 2025",
+    "September 6, 2025",
+    "August 21, 2025",
+    "August 17, 2025",
+    "August 10, 2025",
+    "August 10, 2025",
+    "August 2, 2025",
+    "29th July 2025",
+    "19th July 2025",
+    "13th July 2025",
+    "10th July 2025",
+    "June 24, 2025",
+    "June 22, 2025",
+    "June 8, 2025",
+    "June 5, 2025",
+    "May 30, 2025",
+    "New Archive Added",
+    "May 1, 2025",
+    "April 3, 2025",
+    "March 27, 2025",
+    "March 13, 2025",
+    "March 10, 2025",
+    "July 31, 2013",
+    "July 9, 2003",
+    "July 24, 2002",
+    "June 17, 1988",
+    "June 8, 1961",
+    "September 9, 1942",
+    "July 20, 1935",
+    "June 8, 1914",
+    "July 15, 1911",
+    "June 3, 1911"
+  ],
+  "articleDates": [
+    "5th September 2026",
+    "September 4, 2026",
+    "July 25, 2026",
+    "July 17, 2026",
+    "July 4, 2026",
+    "June 23, 2026",
+    "June 6, 2026",
+    "May 31, 2026",
+    "May 30, 2026",
+    "May 23, 2026",
+    "May 23, 2026",
+    "February 6, 2026",
+    "October 25, 2025",
+    "6th September 2025",
+    "August 17, 2025",
+    "August 10, 2025",
+    "August 10, 2025",
+    "August 2, 2025",
+    "29th July 2025",
+    "19th July 2025",
+    "13th July 2025",
+    "10th July 2025",
+    "June 24, 2025",
+    "June 22, 2025",
+    "June 8, 2025",
+    "June 5, 2025",
+    "May 30, 2025",
+    "May 1, 2025",
+    "April 3, 2025",
+    "March 27, 2025",
+    "March 13, 2025",
+    "March 10, 2025"
+  ],
+  "categories": [
+    "Tournament",
+    "Competition News",
+    "Tournament",
+    "Competition News",
+    "Competition News",
+    "Competition News",
+    "Tournament",
+    "Community Engagement",
+    "Friendly Fixture",
+    "Friendly Fixture",
+    "Club Event",
+    "Club Event",
+    "Club Event",
+    "Tournament",
+    "Tournament",
+    "Tournament",
+    "Tournament",
+    "Competition News",
+    "Competition News",
+    "Competition News",
+    "Competition News",
+    "Club News",
+    "Competition News",
+    "Competition News",
+    "Tournament",
+    "Community Engagement",
+    "Club Achievement",
+    "New Archive Added",
+    "Special Event",
+    "Media Coverage",
+    "Club Achievement",
+    "Club Event",
+    "Club News"
+  ],
+  "categoryTally": [
+    [
+      "Competition News",
+      10
+    ],
+    [
+      "Tournament",
+      8
+    ],
+    [
+      "Club Event",
+      4
+    ],
+    [
+      "Community Engagement",
+      2
+    ],
+    [
+      "Friendly Fixture",
+      2
+    ],
+    [
+      "Club News",
+      2
+    ],
+    [
+      "Club Achievement",
+      2
+    ],
+    [
+      "New Archive Added",
+      1
+    ],
+    [
+      "Special Event",
+      1
+    ],
+    [
+      "Media Coverage",
+      1
+    ]
+  ]
+}

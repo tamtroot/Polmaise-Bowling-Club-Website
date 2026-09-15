@@ -1,6 +1,8 @@
 node_modules/
-_site/
-_site-alt/
+# Every generated site root: `_site` by default, `_site-alt` for the documented
+# preview workflow, and the variant roots the regression tests build (homepage
+# fixtures, fixtures-page season states).
+_site*/
 .cache/
 .cache-alt/
 playwright-report/

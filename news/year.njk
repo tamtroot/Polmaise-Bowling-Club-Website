@@ -1,0 +1,94 @@
+---
+pagination:
+  data: newsArchive.years
+  size: 1
+  alias: yearGroup
+  # Paginated templates are excluded from collections by default, which would
+  # keep the year archives out of the sitemap; Stage 13 wants them listed.
+  addAllPagesToCollections: true
+permalink: "/news/{{ yearGroup.year }}/index.html"
+---
+{% set pageTitle = "Polmaise Bowling Club news " + yearGroup.year + " - Polmaise Bowling Club" %}
+{% set metaDescription = "Every Polmaise Bowling Club story published in " + yearGroup.year + ": tournament reports, competition news and club events." %}
+{% set bodyClass = "news-archive-page" %}
+{% set prefix = "../../" %}
+{% set assetPrefix = "../../" %}
+{% set navActive = "news" %}
+{# Shared page defaults — see _includes/news-article.njk. #}
+{% set headVariant = "standard" %}
+{% set mobileMenuIcon = "fas fa-bars" %}
+{% set mobileNavDropdown = false %}
+{% set scriptJs = true %}
+{% set jquery = false %}
+{% set lightboxCss = false %}
+{% set lightboxScript = false %}
+{% set facebookLink = true %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include "head.njk" %}
+</head>
+<body>
+{% include "header.njk" %}
+<main class="news-page">
+    <div class="container">
+        <p class="news-eyebrow"><a href="{{ prefix }}news.html">News &amp; Events</a> · Archive</p>
+        <div class="news-section-head">
+            <div>
+                <h2>{{ yearGroup.year }} news archive</h2>
+            </div>
+            <a class="news-section-link" href="{{ prefix }}news.html">All news <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        {% if yearGroup.articles.length %}
+        <div class="news-grid">
+            {% for article in yearGroup.articles %}
+            <article class="news-card">
+                {% if article.image %}
+                <div class="news-card-media">
+                    {% set cardImage = prefix ~ (article.image | replace("./", "")) %}
+                    {% photoImage cardImage, article.imageAlt, { role: "grid", sizes: "(max-width: 620px) 92vw, (max-width: 1000px) 46vw, 380px", loading: "lazy" } %}
+                </div>
+                {% endif %}
+                <div class="news-card-body">
+                    <p class="news-meta-row">
+                        {% if article.displayDate %}<time datetime="{{ article.isoDate }}">{{ article.displayDate }}</time>{% endif %}
+                        <span>{{ article.category }}</span>
+                    </p>
+                    <h3 class="news-card-title"><a href="{{ prefix }}{{ article.permalink | replace('/', '', 1) }}">{{ article.title }}</a></h3>
+                    <p class="news-card-excerpt">{{ article.excerpt }}</p>
+                    <span class="news-card-more" aria-hidden="true">Read more <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="news-card-excerpt">No stories are published for {{ yearGroup.year }} yet.</p>
+        {% endif %}
+
+        <div class="news-section-head news-section-head--spaced">
+            <h2>Other archives</h2>
+        </div>
+        <ul class="news-archive-links">
+            {% for group in newsArchive.years %}
+                {% if group.year != yearGroup.year %}
+                <li>
+                    <a href="{{ prefix }}news/{{ group.year }}/index.html">
+                        <strong>{{ group.year }}</strong>
+                        <span>{{ group.articles.length }} stories</span>
+                    </a>
+                </li>
+                {% endif %}
+            {% endfor %}
+            <li>
+                <a href="{{ prefix }}news/history/index.html">
+                    <strong>Historical archive</strong>
+                    <span>{{ newsArchive.history.length }} items · 1911 onwards</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</main>
+{% include "footer.njk" %}
+{% include "scripts.njk" %}
+</body>
+</html>

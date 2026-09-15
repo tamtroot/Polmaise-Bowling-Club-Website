@@ -207,6 +207,10 @@
       "id": "finals-day-2026",
       "title": "Finals Day 2026",
       "group": "finals-day-2026",
+      "coverImage": {
+        "src": "./Images/2026/Finals Day/Finalists.jpg",
+        "alt": "Finals Day 2026 finalists line up on the green at Polmaise Bowling Club"
+      },
       "sections": [
         {
           "images": [
@@ -256,6 +260,10 @@
       "id": "opening-of-green-2026",
       "title": "Opening of Green 2026",
       "group": "opening-of-green-2026",
+      "coverImage": {
+        "src": "./Images/2026/Opening of Green 2026/Opening of Green.jpg",
+        "alt": "Mrs Stewart throwing the first bowl of the 2026 season at Polmaise Bowling Club"
+      },
       "sections": [
         {
           "images": [
@@ -291,6 +299,10 @@
       "id": "top-15-final-2025-08-10",
       "title": "Top 15 Final 10/08/2025",
       "group": "top-15-final-2025-08-10",
+      "coverImage": {
+        "src": "./Images/2025/Top15Final/20250810_134840-thumb.jpg",
+        "alt": "The Polmaise Bowling Club team at the Top 15 Final on 10 August 2025"
+      },
       "sections": [
         {
           "images": [
@@ -735,6 +747,10 @@
       "id": "john-iain-bone-family",
       "title": "John, Mark & Iain Bone – A Family of Bowlers",
       "group": "john-iain-bone-family",
+      "coverImage": {
+        "src": "./Images/JockBone/FB_IMG_1753006294768-thumb.jpg",
+        "alt": "The Bone family of bowlers pictured at Polmaise Bowling Club"
+      },
       "sections": [
         {
           "images": [
@@ -849,6 +865,10 @@
       "id": "polmaise-ladies-top-5-2025",
       "title": "Polmaise Ladies Top 5 - 26/06/2025",
       "group": "polmaise-ladies-top-5-2025",
+      "coverImage": {
+        "src": "./Images/2025/PolmaiseLadiesTop5/20250626_190850-thumb.jpg",
+        "alt": "A Polmaise bowler playing in the Ladies Top 5 on 26 June 2025"
+      },
       "sections": [
         {
           "images": [
@@ -953,6 +973,10 @@
       "id": "murray-cup-2025",
       "title": "Murray Cup 21st June 2025",
       "group": "murray-cup-2025",
+      "coverImage": {
+        "src": "./Images/2025/MurrayCup/MurrayCupA-thumb.jpeg",
+        "alt": "A Polmaise bowler in action during the Murray Cup on 21 June 2025"
+      },
       "sections": [
         {
           "images": [

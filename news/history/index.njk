@@ -1,0 +1,79 @@
+---
+permalink: "/news/history/index.html"
+---
+{% set pageTitle = "From the Green, Through the Years - Polmaise Bowling Club" %}
+{% set metaDescription = "Polmaise Bowling Club's historical news archive: newspaper reports and club stories from 1911 onwards." %}
+{% set bodyClass = "news-history-page" %}
+{% set prefix = "../../" %}
+{% set assetPrefix = "../../" %}
+{% set navActive = "news" %}
+{# Shared page defaults — see _includes/news-article.njk. #}
+{% set headVariant = "standard" %}
+{% set mobileMenuIcon = "fas fa-bars" %}
+{% set mobileNavDropdown = false %}
+{% set scriptJs = true %}
+{% set jquery = false %}
+{% set lightboxCss = false %}
+{% set lightboxScript = false %}
+{% set facebookLink = true %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include "head.njk" %}
+</head>
+<body>
+{% include "header.njk" %}
+<main class="news-page archive-page">
+    <div class="container">
+        <p class="news-eyebrow"><a href="{{ prefix }}news.html">News &amp; Events</a> · Historical archive</p>
+        <div class="news-section-head">
+            <div>
+                <h2>From the Green, Through the Years</h2>
+                <p class="archive-standfirst">Reports and club stories from Polmaise Bowling Club's history, kept as they were written.</p>
+            </div>
+            <a class="news-section-link" href="{{ prefix }}news.html">All news <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+
+        {# Stage 15 — one chronological rail, one story column. The year is a
+           chapter marker, never a layout of its own. #}
+        <div class="archive-meta">
+            <p>{{ newsArchive.history.length }} stories from {{ newsArchive.historyYears[0].year }} to {{ newsArchive.historyYears[newsArchive.historyYears.length - 1].year }}, exactly as they were published.</p>
+            <a class="news-section-link" href="{{ prefix }}history.html">Read the club history <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="archive">
+            {%- for group in newsArchive.historyYears %}
+            <section class="archive-year" aria-labelledby="archive-year-{{ group.year }}">
+                <h3 class="archive-year-label" id="archive-year-{{ group.year }}">{{ group.year or "Undated" }}</h3>
+                <ol class="archive-list">
+                    {%- for item in group.items %}
+                    <li class="archive-item">
+                        <article class="archive-row">
+                            {% if item.image %}
+                            <div class="archive-row-media{% if item.imageType == "clipping" %} is-clipping{% endif %}">
+                                {%- set cardImage = prefix ~ (item.image | replace("./", "")) %}
+                                {% photoImage cardImage, item.imageAlt, { role: "grid", sizes: "(max-width: 700px) 92vw, (max-width: 1100px) 45vw, 340px", loading: "lazy" } %}
+                            </div>
+                            {% endif %}
+                            <div class="archive-row-body">
+                                <p class="archive-row-meta">
+                                    {%- if item.displayDate %}<time datetime="{{ item.isoDate }}">{{ item.displayDate }}</time>{% endif %}
+                                    <span class="news-chip">Historical</span>
+                                </p>
+                                <h4 class="archive-row-title"><a href="{{ prefix }}{{ item.permalink | replace('/', '', 1) }}">{{ item.title }}</a></h4>
+                                <p class="archive-row-excerpt">{{ item.cardExcerpt }}</p>
+                                <span class="archive-row-more" aria-hidden="true">Read the story <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                            </div>
+                        </article>
+                    </li>
+                    {%- endfor %}
+                </ol>
+            </section>
+            {%- endfor %}
+        </div>
+    </div>
+</main>
+{% include "footer.njk" %}
+{% include "scripts.njk" %}
+</body>
+</html>

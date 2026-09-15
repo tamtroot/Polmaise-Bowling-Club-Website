@@ -189,11 +189,11 @@
         });
     }
 
-    function initialiseCustomLightbox() {
+function initialiseCustomLightbox() {
         const lightbox = document.querySelector('.lightbox');
         if (!lightbox) {
             return;
-        }
+}
 
         const lightboxImage = lightbox.querySelector('.lightbox-content');
         const lightboxCaption = lightbox.querySelector('.lightbox-caption');
@@ -257,6 +257,43 @@
         });
     }
 
+    /**
+     * Stage 14 — "Show earlier fixtures" on the fixtures page.
+     *
+     * The completed fixtures are all in the document; this only toggles whether
+     * the earlier ones are displayed. Without JavaScript nothing is collapsed
+     * and the control is hidden by CSS, so the season stays readable either way.
+     * Both layout copies of the control (table and mobile card list) stay in
+     * sync through one class on the root element.
+     */
+    function initialiseFixtureCollapse() {
+        const toggles = Array.from(document.querySelectorAll('[data-fixtures-toggle]'));
+        if (toggles.length === 0) {
+            return;
+        }
+
+        const root = document.documentElement;
+
+        function setExpanded(expanded) {
+            root.classList.toggle('fixtures-expanded', expanded);
+            toggles.forEach(function (toggle) {
+                toggle.setAttribute('aria-expanded', String(expanded));
+                const label = toggle.querySelector('[data-fixtures-toggle-label]');
+                if (label) {
+                    label.textContent = expanded ? 'Hide earlier fixtures' : 'Show earlier fixtures';
+                }
+            });
+        }
+
+        setExpanded(false);
+
+        toggles.forEach(function (toggle) {
+            toggle.addEventListener('click', function () {
+                setExpanded(!root.classList.contains('fixtures-expanded'));
+            });
+        });
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
         initialiseMobileNavigation();
         initialiseThemeToggle();
@@ -264,6 +301,7 @@
         initialiseKeyboardActivation();
         initialiseAccordions();
         initialiseCustomLightbox();
+        initialiseFixtureCollapse();
         initialiseLightboxLibrary();
     });
 })();

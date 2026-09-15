@@ -1,301 +1,28 @@
 {
-  "pagesChecked": 18,
-  "errorCount": 120,
+  "pagesChecked": 68,
+  "errorCount": 12,
   "warningCount": 0,
   "ruleCounts": {
-    "element-permitted-content": 2,
-    "element-permitted-parent": 1,
-    "element-required-attributes": 2,
-    "no-inline-style": 2,
-    "no-raw-characters": 46,
-    "no-trailing-whitespace": 67
+    "element-permitted-content": 1,
+    "element-required-attributes": 1,
+    "no-raw-characters": 10
   },
   "findings": [
-    {
-      "file": "about.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 342,
-      "column": 50,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "about.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 376,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "about.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 378,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "about.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 380,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "about.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 382,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "about.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 384,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "about.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 394,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "about.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 398,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "about.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 410,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "about.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 421,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "about.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 432,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "about.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 435,
-      "column": 1,
-      "selector": null
-    },
     {
       "file": "about.html",
       "ruleId": "element-required-attributes",
       "severity": "error",
       "message": "<img> is missing required \"src\" attribute",
-      "line": 690,
+      "line": 697,
       "column": 10,
       "selector": "#lightboxImage"
     },
     {
-      "file": "archive.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 270,
-      "column": 50,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 233,
-      "column": 50,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 267,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 277,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 287,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 297,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 306,
-      "column": 27,
-      "selector": null
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 316,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 321,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 345,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 358,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 366,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 387,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 395,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "contact.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 402,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "fixtures.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 105,
-      "column": 50,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "gallery.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 367,
-      "column": 50,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
       "file": "history.html",
       "ruleId": "no-raw-characters",
       "severity": "error",
       "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 105,
-      "column": 50,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "history.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 305,
+      "line": 315,
       "column": 47,
       "selector": "html > body > main > section:nth-child(4) > div > h3"
     },
@@ -304,7 +31,7 @@
       "ruleId": "no-raw-characters",
       "severity": "error",
       "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 320,
+      "line": 330,
       "column": 35,
       "selector": "html > body > main > section:nth-child(4) > div > div > div:nth-child(3) > h4"
     },
@@ -313,7 +40,7 @@
       "ruleId": "no-raw-characters",
       "severity": "error",
       "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 350,
+      "line": 360,
       "column": 44,
       "selector": "html > body > main > section:nth-child(4) > div > div > div:nth-child(6) > h4"
     },
@@ -322,25 +49,7 @@
       "ruleId": "no-raw-characters",
       "severity": "error",
       "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 26,
-      "column": 20,
-      "selector": "html > head > title"
-    },
-    {
-      "file": "honours.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 105,
-      "column": 50,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "honours.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 128,
+      "line": 135,
       "column": 25,
       "selector": "html > body > main > section:nth-child(1) > div > h2"
     },
@@ -349,160 +58,25 @@
       "ruleId": "element-permitted-content",
       "severity": "error",
       "message": "<style> element is not permitted as content under <body>",
-      "line": 1338,
+      "line": 1345,
       "column": 2,
       "selector": "html > body > style"
     },
     {
-      "file": "index.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 155,
-      "column": 50,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "live-scoring.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 239,
-      "column": 50,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
       "file": "membership.html",
       "ruleId": "no-raw-characters",
       "severity": "error",
       "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 105,
-      "column": 50,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 137,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 146,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 154,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 159,
+      "line": 166,
       "column": 34,
       "selector": "html > body > main > section:nth-child(2) > div > div > div:nth-child(3) > h3"
     },
     {
       "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 162,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 170,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 186,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 195,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 203,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 211,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 219,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 228,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 240,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
       "ruleId": "no-raw-characters",
       "severity": "error",
       "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 252,
+      "line": 259,
       "column": 52,
       "selector": "html > body > main > section:nth-child(4) > div > div:nth-child(3) > table > tbody > tr:nth-child(1) > td:nth-child(1)"
     },
@@ -511,304 +85,25 @@
       "ruleId": "no-raw-characters",
       "severity": "error",
       "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 257,
+      "line": 264,
       "column": 47,
       "selector": "html > body > main > section:nth-child(4) > div > div:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(1)"
     },
     {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 279,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 314,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 322,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 329,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 336,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "membership.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 343,
-      "column": 1,
-      "selector": null
-    },
-    {
       "file": "News articles\\presentation-dance-2025.html",
       "ruleId": "no-raw-characters",
       "severity": "error",
       "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 686,
-      "column": 53,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "News articles\\presentation-dance-2025.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 706,
-      "column": 45,
-      "selector": "#mobileNavDropdown > a:nth-child(5)"
-    },
-    {
-      "file": "News articles\\presentation-dance-2025.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 776,
+      "line": 783,
       "column": 31,
       "selector": "html > body > main > section:nth-child(4) > h2"
     },
     {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 26,
-      "column": 17,
-      "selector": "html > head > title"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 869,
-      "column": 65,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 892,
-      "column": 22,
-      "selector": "html > body > main > section:nth-child(1) > div > h2"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-inline-style",
-      "severity": "error",
-      "message": "Inline style is not allowed",
-      "line": 960,
-      "column": 524,
-      "selector": "#latest-news > div > div:nth-child(6) > div:nth-child(1) > img"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1315,
-      "column": 95,
-      "selector": "#article-greig-ryan-2026 > div:nth-child(3) > p:nth-child(6)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1315,
-      "column": 124,
-      "selector": "#article-greig-ryan-2026 > div:nth-child(3) > p:nth-child(6)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1424,
-      "column": 89,
-      "selector": "#article-patons-100th-2026 > div:nth-child(3) > p:nth-child(2)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1426,
-      "column": 83,
-      "selector": "#article-patons-100th-2026 > div:nth-child(3) > p:nth-child(3)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1428,
-      "column": 79,
-      "selector": "#article-patons-100th-2026 > div:nth-child(3) > p:nth-child(4)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1443,
-      "column": 145,
-      "selector": "#article-patons-100th-2026 > div:nth-child(3) > p:nth-child(9)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-inline-style",
-      "severity": "error",
-      "message": "Inline style is not allowed",
-      "line": 1564,
-      "column": 321,
-      "selector": "#news-archive-content > div > div:nth-child(2) > div:nth-child(1) > img"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1814,
-      "column": 84,
-      "selector": "#article-presentation-dance-2025-event > div:nth-child(3) > ul > li:nth-child(1)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1815,
-      "column": 83,
-      "selector": "#article-presentation-dance-2025-event > div:nth-child(3) > ul > li:nth-child(2)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1816,
-      "column": 82,
-      "selector": "#article-presentation-dance-2025-event > div:nth-child(3) > ul > li:nth-child(3)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1817,
-      "column": 83,
-      "selector": "#article-presentation-dance-2025-event > div:nth-child(3) > ul > li:nth-child(4)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1917,
-      "column": 49,
-      "selector": "#article-charlie-mcneil-2025 > div:nth-child(3) > ul:nth-child(7) > li:nth-child(1)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1918,
-      "column": 49,
-      "selector": "#article-charlie-mcneil-2025 > div:nth-child(3) > ul:nth-child(7) > li:nth-child(2)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1922,
-      "column": 46,
-      "selector": "#article-charlie-mcneil-2025 > div:nth-child(3) > p:nth-child(9)"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 1926,
-      "column": 53,
-      "selector": "#article-charlie-mcneil-2025 > div:nth-child(3) > p:nth-child(13) > strong"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "element-permitted-content",
-      "severity": "error",
-      "message": "<li> element is not permitted as content under <div>",
-      "line": 2036,
-      "column": 30,
-      "selector": "#article-twa-peters-2025 > div:nth-child(5) > li"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "element-permitted-parent",
-      "severity": "error",
-      "message": "<li> element requires a <ul>, <ol>, <menu> or <template> element as parent",
-      "line": 2036,
-      "column": 30,
-      "selector": "#article-twa-peters-2025 > div:nth-child(5) > li"
-    },
-    {
-      "file": "news.html",
-      "ruleId": "element-required-attributes",
-      "severity": "error",
-      "message": "<img> is missing required \"src\" attribute",
-      "line": 3463,
-      "column": 10,
-      "selector": "#lightbox-img"
-    },
-    {
       "file": "PhotoAlbums\\charlie-mcneil-memorial-2025.html",
       "ruleId": "no-raw-characters",
       "severity": "error",
       "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 109,
-      "column": 53,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "PhotoAlbums\\charlie-mcneil-memorial-2025.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 151,
+      "line": 158,
       "column": 70,
       "selector": "html > body > main > section:nth-child(2) > div > div:nth-child(2) > p:nth-child(5)"
     },
@@ -817,279 +112,9 @@
       "ruleId": "no-raw-characters",
       "severity": "error",
       "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 152,
+      "line": 159,
       "column": 68,
       "selector": "html > body > main > section:nth-child(2) > div > div:nth-child(2) > p:nth-child(6)"
-    },
-    {
-      "file": "PhotoAlbums\\presentation-dance-2025.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 109,
-      "column": 53,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "PhotoAlbums\\top-15-final-2025.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 135,
-      "column": 53,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "PhotoAlbums\\twa-peters-memorial-2025.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 135,
-      "column": 53,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 105,
-      "column": 50,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 176,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 181,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 186,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 191,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 197,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 202,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 207,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 212,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 215,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 218,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 223,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 227,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 239,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 246,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "signup.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 252,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "sponsors.html",
-      "ruleId": "no-raw-characters",
-      "severity": "error",
-      "message": "Raw \"&\" must be encoded as \"&amp;\"",
-      "line": 234,
-      "column": 50,
-      "selector": "#primary-menu > li:nth-child(5) > a"
-    },
-    {
-      "file": "sponsors.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 272,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "sponsors.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 321,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "sponsors.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 599,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "sponsors.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 605,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "sponsors.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 616,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "sponsors.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 626,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "sponsors.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 636,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "sponsors.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 646,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "sponsors.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 656,
-      "column": 1,
-      "selector": null
-    },
-    {
-      "file": "sponsors.html",
-      "ruleId": "no-trailing-whitespace",
-      "severity": "error",
-      "message": "Trailing whitespace",
-      "line": 668,
-      "column": 1,
-      "selector": null
     }
   ]
 }

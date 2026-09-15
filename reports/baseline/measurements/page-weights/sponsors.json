@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 22,
-  "totalBytes": 901725,
+  "totalBytes": 918659,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 30776
+      "bytes": 30929
     },
     "font": {
       "count": 5,
@@ -26,11 +26,11 @@
     },
     "script": {
       "count": 1,
-      "bytes": 9589
+      "bytes": 11051
     },
     "stylesheet": {
       "count": 3,
-      "bytes": 151577
+      "bytes": 166896
     }
   },
   "largestResources": [
@@ -78,7 +78,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 48347,
+      "bytes": 63666,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -106,7 +106,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/sponsors.html",
-      "bytes": 30776,
+      "bytes": 30929,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
@@ -133,18 +133,18 @@
       "contentType": "image/png"
     },
     {
+      "url": "http://127.0.0.1:4173/script.js",
+      "bytes": 11051,
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
       "url": "http://127.0.0.1:4173/Images/2026/Highland.svg",
       "bytes": 10004,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/svg+xml"
-    },
-    {
-      "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 9589,
-      "status": 200,
-      "resourceType": "script",
-      "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/Images/hamilton.svg",
@@ -276,21 +276,21 @@
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 9589,
+      "bytes": 11051,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/sponsors.html",
-      "bytes": 30776,
+      "bytes": 30929,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 48347,
+      "bytes": 63666,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

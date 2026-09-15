@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 52,
-  "totalBytes": 1896117,
+  "totalBytes": 1913223,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 13687
+      "bytes": 14012
     },
     "font": {
       "count": 5,
@@ -26,11 +26,11 @@
     },
     "script": {
       "count": 3,
-      "bytes": 108573
+      "bytes": 110035
     },
     "stylesheet": {
       "count": 4,
-      "bytes": 154109
+      "bytes": 169428
     }
   },
   "largestResources": [
@@ -84,6 +84,13 @@
       "contentType": "image/webp"
     },
     {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 63666,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
       "url": "http://127.0.0.1:4173/Images/2025/CharlieMcN/20250816_142727-w400.webp",
       "bytes": 57076,
       "status": 200,
@@ -131,13 +138,6 @@
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 48347,
-      "status": 200,
-      "resourceType": "stylesheet",
-      "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fonts/files/open-sans-400-normal-latin.woff2",
@@ -458,21 +458,21 @@
     },
     {
       "url": "http://127.0.0.1:4173/PhotoAlbums/charlie-mcneil-memorial-2025.html",
-      "bytes": 13687,
+      "bytes": 14012,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 9589,
+      "bytes": 11051,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 48347,
+      "bytes": 63666,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

@@ -1,0 +1,3366 @@
+{
+  "generatedAt": "2026-09-15T11:43:44.402Z",
+  "siteRoot": "C:\\Users\\thoma\\OneDrive\\Documents\\GitHub\\Polmaise-Bowling-Club-Website\\_site-verify",
+  "outputDirectory": "C:\\Users\\thoma\\AppData\\Local\\Temp\\polmaise-stage13-visuals",
+  "captures": [
+    {
+      "page": "news-landing",
+      "path": "/news.html",
+      "viewport": "wide",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-landing-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-landing",
+      "path": "/news.html",
+      "viewport": "wide",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-landing-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-landing",
+      "path": "/news.html",
+      "viewport": "laptop",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-landing-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-landing",
+      "path": "/news.html",
+      "viewport": "laptop",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-landing-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-landing",
+      "path": "/news.html",
+      "viewport": "tablet",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-landing-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-landing",
+      "path": "/news.html",
+      "viewport": "tablet",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-landing-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-landing",
+      "path": "/news.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-landing-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-landing",
+      "path": "/news.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-landing-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2026",
+      "path": "/news/2026/chucks-memorial-2026/index.html",
+      "viewport": "wide",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-article-2026-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 179,
+        "topAfter": -1621,
+        "documentTopAfter": 179,
+        "viewportTopAfter": -1621,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 2796,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 193,
+          "top": 145,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 120,
+          "top": 179,
+          "position": "relative",
+          "fontSize": "31.2px",
+          "lineHeight": "35.88px"
+        },
+        "hero": {
+          "width": 1088,
+          "height": 817,
+          "top": 370,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 622,
+          "height": 1529,
+          "top": 1219,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Older Aaron Furzer Crowned East & West Champion ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 1152
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2026",
+      "path": "/news/2026/chucks-memorial-2026/index.html",
+      "viewport": "wide",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-article-2026-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 179,
+        "topAfter": -1621,
+        "documentTopAfter": 179,
+        "viewportTopAfter": -1621,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 2796,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 193,
+          "top": 145,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 120,
+          "top": 179,
+          "position": "relative",
+          "fontSize": "31.2px",
+          "lineHeight": "35.88px"
+        },
+        "hero": {
+          "width": 1088,
+          "height": 817,
+          "top": 370,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 622,
+          "height": 1529,
+          "top": 1219,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Older Aaron Furzer Crowned East & West Champion ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 1152
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2026",
+      "path": "/news/2026/chucks-memorial-2026/index.html",
+      "viewport": "laptop",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-article-2026-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 170,
+        "topAfter": -1366,
+        "documentTopAfter": 170,
+        "viewportTopAfter": -1366,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 2615,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 185,
+          "top": 136,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 112,
+          "top": 170,
+          "position": "relative",
+          "fontSize": "28.992px",
+          "lineHeight": "33.3408px"
+        },
+        "hero": {
+          "width": 870,
+          "height": 653,
+          "top": 354,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 622,
+          "height": 1529,
+          "top": 1038,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Older Aaron Furzer Crowned East & West Champion ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 922
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2026",
+      "path": "/news/2026/chucks-memorial-2026/index.html",
+      "viewport": "laptop",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-article-2026-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 170,
+        "topAfter": -1366,
+        "documentTopAfter": 170,
+        "viewportTopAfter": -1366,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 2615,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 185,
+          "top": 136,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 112,
+          "top": 170,
+          "position": "relative",
+          "fontSize": "28.992px",
+          "lineHeight": "33.3408px"
+        },
+        "hero": {
+          "width": 870,
+          "height": 653,
+          "top": 354,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 622,
+          "height": 1529,
+          "top": 1038,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Older Aaron Furzer Crowned East & West Champion ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 922
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2026",
+      "path": "/news/2026/chucks-memorial-2026/index.html",
+      "viewport": "tablet",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-article-2026-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 164,
+        "topAfter": -1884,
+        "documentTopAfter": 164,
+        "viewportTopAfter": -1884,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 2431,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 178,
+          "top": 131,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 105,
+          "top": 164,
+          "position": "relative",
+          "fontSize": "26.944px",
+          "lineHeight": "30.9856px"
+        },
+        "hero": {
+          "width": 647,
+          "height": 486,
+          "top": 341,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 622,
+          "height": 1524,
+          "top": 859,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Older Aaron Furzer Crowned East & West Champion ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 691
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2026",
+      "path": "/news/2026/chucks-memorial-2026/index.html",
+      "viewport": "tablet",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-article-2026-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 164,
+        "topAfter": -1884,
+        "documentTopAfter": 164,
+        "viewportTopAfter": -1884,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 2431,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 178,
+          "top": 131,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 105,
+          "top": 164,
+          "position": "relative",
+          "fontSize": "26.944px",
+          "lineHeight": "30.9856px"
+        },
+        "hero": {
+          "width": 647,
+          "height": 486,
+          "top": 341,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 622,
+          "height": 1524,
+          "top": 859,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Older Aaron Furzer Crowned East & West Champion ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 691
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2026",
+      "path": "/news/2026/chucks-memorial-2026/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-article-2026-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 158,
+        "topAfter": -1466,
+        "documentTopAfter": 158,
+        "viewportTopAfter": -1466,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 306,
+          "height": 115,
+          "top": 3156,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 306,
+          "height": 196,
+          "top": 125,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 306,
+          "height": 122,
+          "top": 158,
+          "position": "relative",
+          "fontSize": "24px",
+          "lineHeight": "27.6px"
+        },
+        "hero": {
+          "width": 306,
+          "height": 230,
+          "top": 353,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 306,
+          "height": 2493,
+          "top": 614,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "column",
+        "navWidth": 306,
+        "navOffsetWidth": 306,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Older Aaron Furzer Crowned East & West Champion ",
+            "width": 306,
+            "maxWidth": "none",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 338
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2026",
+      "path": "/news/2026/chucks-memorial-2026/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-article-2026-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 158,
+        "topAfter": -1466,
+        "documentTopAfter": 158,
+        "viewportTopAfter": -1466,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 306,
+          "height": 115,
+          "top": 3156,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 306,
+          "height": 196,
+          "top": 125,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 306,
+          "height": 122,
+          "top": 158,
+          "position": "relative",
+          "fontSize": "24px",
+          "lineHeight": "27.6px"
+        },
+        "hero": {
+          "width": 306,
+          "height": 230,
+          "top": 353,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 306,
+          "height": 2493,
+          "top": 614,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "column",
+        "navWidth": 306,
+        "navOffsetWidth": 306,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Older Aaron Furzer Crowned East & West Champion ",
+            "width": 306,
+            "maxWidth": "none",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 338
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2025",
+      "path": "/news/2025/charlie-mcneil-2025/index.html",
+      "viewport": "wide",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-article-2025-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 179,
+        "topAfter": -1621,
+        "documentTopAfter": 179,
+        "viewportTopAfter": -1621,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 2832,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 157,
+          "top": 145,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 84,
+          "top": 179,
+          "position": "relative",
+          "fontSize": "31.2px",
+          "lineHeight": "35.88px"
+        },
+        "hero": {
+          "width": 1088,
+          "height": 509,
+          "top": 334,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 622,
+          "height": 1909,
+          "top": 875,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer John \"Chucks\" Johnstone Memorial Tournamen",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          },
+          {
+            "text": "Older Polmaise BC Crowned Champions of the 2025 ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 1152
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2025",
+      "path": "/news/2025/charlie-mcneil-2025/index.html",
+      "viewport": "wide",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-article-2025-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 179,
+        "topAfter": -1621,
+        "documentTopAfter": 179,
+        "viewportTopAfter": -1621,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 2832,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 157,
+          "top": 145,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 84,
+          "top": 179,
+          "position": "relative",
+          "fontSize": "31.2px",
+          "lineHeight": "35.88px"
+        },
+        "hero": {
+          "width": 1088,
+          "height": 509,
+          "top": 334,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 622,
+          "height": 1909,
+          "top": 875,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer John \"Chucks\" Johnstone Memorial Tournamen",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          },
+          {
+            "text": "Older Polmaise BC Crowned Champions of the 2025 ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 1152
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2025",
+      "path": "/news/2025/charlie-mcneil-2025/index.html",
+      "viewport": "laptop",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-article-2025-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 170,
+        "topAfter": -1366,
+        "documentTopAfter": 170,
+        "viewportTopAfter": -1366,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 2716,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 152,
+          "top": 136,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 79,
+          "top": 170,
+          "position": "relative",
+          "fontSize": "28.992px",
+          "lineHeight": "33.3408px"
+        },
+        "hero": {
+          "width": 870,
+          "height": 407,
+          "top": 320,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 622,
+          "height": 1909,
+          "top": 759,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer John \"Chucks\" Johnstone Memorial Tournamen",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          },
+          {
+            "text": "Older Polmaise BC Crowned Champions of the 2025 ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 922
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2025",
+      "path": "/news/2025/charlie-mcneil-2025/index.html",
+      "viewport": "laptop",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-article-2025-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 170,
+        "topAfter": -1366,
+        "documentTopAfter": 170,
+        "viewportTopAfter": -1366,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 2716,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 152,
+          "top": 136,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 79,
+          "top": 170,
+          "position": "relative",
+          "fontSize": "28.992px",
+          "lineHeight": "33.3408px"
+        },
+        "hero": {
+          "width": 870,
+          "height": 407,
+          "top": 320,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 622,
+          "height": 1909,
+          "top": 759,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer John \"Chucks\" Johnstone Memorial Tournamen",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          },
+          {
+            "text": "Older Polmaise BC Crowned Champions of the 2025 ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 922
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2025",
+      "path": "/news/2025/charlie-mcneil-2025/index.html",
+      "viewport": "tablet",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-article-2025-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 164,
+        "topAfter": -1884,
+        "documentTopAfter": 164,
+        "viewportTopAfter": -1884,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 2598,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 147,
+          "top": 131,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 74,
+          "top": 164,
+          "position": "relative",
+          "fontSize": "26.944px",
+          "lineHeight": "30.9856px"
+        },
+        "hero": {
+          "width": 647,
+          "height": 304,
+          "top": 310,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 622,
+          "height": 1904,
+          "top": 646,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer John \"Chucks\" Johnstone Memorial Tournamen",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          },
+          {
+            "text": "Older Polmaise BC Crowned Champions of the 2025 ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 691
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2025",
+      "path": "/news/2025/charlie-mcneil-2025/index.html",
+      "viewport": "tablet",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-article-2025-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 164,
+        "topAfter": -1884,
+        "documentTopAfter": 164,
+        "viewportTopAfter": -1884,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 2598,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 147,
+          "top": 131,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 74,
+          "top": 164,
+          "position": "relative",
+          "fontSize": "26.944px",
+          "lineHeight": "30.9856px"
+        },
+        "hero": {
+          "width": 647,
+          "height": 304,
+          "top": 310,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 622,
+          "height": 1904,
+          "top": 646,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer John \"Chucks\" Johnstone Memorial Tournamen",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          },
+          {
+            "text": "Older Polmaise BC Crowned Champions of the 2025 ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 691
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2025",
+      "path": "/news/2025/charlie-mcneil-2025/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-article-2025-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 158,
+        "topAfter": -1466,
+        "documentTopAfter": 158,
+        "viewportTopAfter": -1466,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 306,
+          "height": 189,
+          "top": 3036,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 306,
+          "height": 140,
+          "top": 125,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 306,
+          "height": 67,
+          "top": 158,
+          "position": "relative",
+          "fontSize": "24px",
+          "lineHeight": "27.6px"
+        },
+        "hero": {
+          "width": 306,
+          "height": 144,
+          "top": 297,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 306,
+          "height": 2514,
+          "top": 473,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "column",
+        "navWidth": 306,
+        "navOffsetWidth": 306,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer John \"Chucks\" Johnstone Memorial Tournamen",
+            "width": 306,
+            "maxWidth": "none",
+            "display": "block"
+          },
+          {
+            "text": "Older Polmaise BC Crowned Champions of the 2025 ",
+            "width": 306,
+            "maxWidth": "none",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 338
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-2025",
+      "path": "/news/2025/charlie-mcneil-2025/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-article-2025-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 158,
+        "topAfter": -1466,
+        "documentTopAfter": 158,
+        "viewportTopAfter": -1466,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 306,
+          "height": 189,
+          "top": 3036,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 306,
+          "height": 140,
+          "top": 125,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 306,
+          "height": 67,
+          "top": 158,
+          "position": "relative",
+          "fontSize": "24px",
+          "lineHeight": "27.6px"
+        },
+        "hero": {
+          "width": 306,
+          "height": 144,
+          "top": 297,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "body": {
+          "width": 306,
+          "height": 2514,
+          "top": 473,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "column",
+        "navWidth": 306,
+        "navOffsetWidth": 306,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer John \"Chucks\" Johnstone Memorial Tournamen",
+            "width": 306,
+            "maxWidth": "none",
+            "display": "block"
+          },
+          {
+            "text": "Older Polmaise BC Crowned Champions of the 2025 ",
+            "width": 306,
+            "maxWidth": "none",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 338
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": 0
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-history",
+      "path": "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+      "viewport": "wide",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-article-history-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 179,
+        "topAfter": -1621,
+        "documentTopAfter": 179,
+        "viewportTopAfter": -1621,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 6620,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 157,
+          "top": 145,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 84,
+          "top": 179,
+          "position": "relative",
+          "fontSize": "31.2px",
+          "lineHeight": "35.88px"
+        },
+        "hero": null,
+        "body": {
+          "width": 622,
+          "height": 6237,
+          "top": 334,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer The Polmaise Trophy - Fallin Club's First ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          },
+          {
+            "text": "Older First Match on New Green - Local Club Defe",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 1152
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-history",
+      "path": "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+      "viewport": "wide",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-article-history-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 179,
+        "topAfter": -1621,
+        "documentTopAfter": 179,
+        "viewportTopAfter": -1621,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 6620,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 157,
+          "top": 145,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 84,
+          "top": 179,
+          "position": "relative",
+          "fontSize": "31.2px",
+          "lineHeight": "35.88px"
+        },
+        "hero": null,
+        "body": {
+          "width": 622,
+          "height": 6237,
+          "top": 334,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer The Polmaise Trophy - Fallin Club's First ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          },
+          {
+            "text": "Older First Match on New Green - Local Club Defe",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 1152
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-history",
+      "path": "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+      "viewport": "laptop",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-article-history-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 170,
+        "topAfter": -1366,
+        "documentTopAfter": 170,
+        "viewportTopAfter": -1366,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 6572,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 119,
+          "top": 136,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 45,
+          "top": 170,
+          "position": "relative",
+          "fontSize": "28.992px",
+          "lineHeight": "33.3408px"
+        },
+        "hero": null,
+        "body": {
+          "width": 622,
+          "height": 6237,
+          "top": 287,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer The Polmaise Trophy - Fallin Club's First ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          },
+          {
+            "text": "Older First Match on New Green - Local Club Defe",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 922
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-history",
+      "path": "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+      "viewport": "laptop",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-article-history-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 170,
+        "topAfter": -1366,
+        "documentTopAfter": 170,
+        "viewportTopAfter": -1366,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 6572,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 119,
+          "top": 136,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 45,
+          "top": 170,
+          "position": "relative",
+          "fontSize": "28.992px",
+          "lineHeight": "33.3408px"
+        },
+        "hero": null,
+        "body": {
+          "width": 622,
+          "height": 6237,
+          "top": 287,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer The Polmaise Trophy - Fallin Club's First ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          },
+          {
+            "text": "Older First Match on New Green - Local Club Defe",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 922
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-history",
+      "path": "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+      "viewport": "tablet",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-article-history-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 164,
+        "topAfter": -1884,
+        "documentTopAfter": 164,
+        "viewportTopAfter": -1884,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 6557,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 116,
+          "top": 131,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 43,
+          "top": 164,
+          "position": "relative",
+          "fontSize": "26.944px",
+          "lineHeight": "30.9856px"
+        },
+        "hero": null,
+        "body": {
+          "width": 622,
+          "height": 6230,
+          "top": 279,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer The Polmaise Trophy - Fallin Club's First ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          },
+          {
+            "text": "Older First Match on New Green - Local Club Defe",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 691
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-history",
+      "path": "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+      "viewport": "tablet",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-article-history-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 164,
+        "topAfter": -1884,
+        "documentTopAfter": 164,
+        "viewportTopAfter": -1884,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 622,
+          "height": 99,
+          "top": 6557,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 622,
+          "height": 116,
+          "top": 131,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 622,
+          "height": 43,
+          "top": 164,
+          "position": "relative",
+          "fontSize": "26.944px",
+          "lineHeight": "30.9856px"
+        },
+        "hero": null,
+        "body": {
+          "width": 622,
+          "height": 6230,
+          "top": 279,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "row",
+        "navWidth": 622,
+        "navOffsetWidth": 622,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer The Polmaise Trophy - Fallin Club's First ",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          },
+          {
+            "text": "Older First Match on New Green - Local Club Defe",
+            "width": 280,
+            "maxWidth": "45%",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 691
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-history",
+      "path": "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-article-history-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 180,
+        "topAfter": -1444,
+        "documentTopAfter": 180,
+        "viewportTopAfter": -1444,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 306,
+          "height": 189,
+          "top": 10088,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 306,
+          "height": 162,
+          "top": 125,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 306,
+          "height": 67,
+          "top": 180,
+          "position": "relative",
+          "fontSize": "24px",
+          "lineHeight": "27.6px"
+        },
+        "hero": null,
+        "body": {
+          "width": 306,
+          "height": 9721,
+          "top": 319,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "column",
+        "navWidth": 306,
+        "navOffsetWidth": 306,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer The Polmaise Trophy - Fallin Club's First ",
+            "width": 306,
+            "maxWidth": "none",
+            "display": "block"
+          },
+          {
+            "text": "Older First Match on New Green - Local Club Defe",
+            "width": 306,
+            "maxWidth": "none",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 338
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-article-history",
+      "path": "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-article-history-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": {
+        "position": "static",
+        "topBefore": 180,
+        "topAfter": -1444,
+        "documentTopAfter": 180,
+        "viewportTopAfter": -1444,
+        "movedWithDocument": true
+      },
+      "articleLayout": {
+        "nav": {
+          "width": 306,
+          "height": 189,
+          "top": 10088,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "header": {
+          "width": 306,
+          "height": 162,
+          "top": 125,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "heading": {
+          "width": 306,
+          "height": 67,
+          "top": 180,
+          "position": "relative",
+          "fontSize": "24px",
+          "lineHeight": "27.6px"
+        },
+        "hero": null,
+        "body": {
+          "width": 306,
+          "height": 9721,
+          "top": 319,
+          "position": "static",
+          "fontSize": "16px",
+          "lineHeight": "26.4px"
+        },
+        "navDirection": "column",
+        "navWidth": 306,
+        "navOffsetWidth": 306,
+        "navMaxWidth": "622.094px",
+        "navLinks": [
+          {
+            "text": "Newer The Polmaise Trophy - Fallin Club's First ",
+            "width": 306,
+            "maxWidth": "none",
+            "display": "block"
+          },
+          {
+            "text": "Older First Match on New Green - Local Club Defe",
+            "width": 306,
+            "maxWidth": "none",
+            "display": "block"
+          }
+        ],
+        "navParent": {
+          "className": "container",
+          "display": "block",
+          "width": 338
+        },
+        "navPath": [
+          "div.container",
+          "article.article",
+          "main"
+        ],
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2026",
+      "path": "/news/2026/index.html",
+      "viewport": "wide",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-archive-2026-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2026",
+      "path": "/news/2026/index.html",
+      "viewport": "wide",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-archive-2026-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2026",
+      "path": "/news/2026/index.html",
+      "viewport": "laptop",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-archive-2026-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2026",
+      "path": "/news/2026/index.html",
+      "viewport": "laptop",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-archive-2026-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2026",
+      "path": "/news/2026/index.html",
+      "viewport": "tablet",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-archive-2026-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2026",
+      "path": "/news/2026/index.html",
+      "viewport": "tablet",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-archive-2026-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2026",
+      "path": "/news/2026/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-archive-2026-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2026",
+      "path": "/news/2026/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-archive-2026-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2025",
+      "path": "/news/2025/index.html",
+      "viewport": "wide",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-archive-2025-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2025",
+      "path": "/news/2025/index.html",
+      "viewport": "wide",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-archive-2025-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2025",
+      "path": "/news/2025/index.html",
+      "viewport": "laptop",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-archive-2025-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2025",
+      "path": "/news/2025/index.html",
+      "viewport": "laptop",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-archive-2025-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2025",
+      "path": "/news/2025/index.html",
+      "viewport": "tablet",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-archive-2025-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2025",
+      "path": "/news/2025/index.html",
+      "viewport": "tablet",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-archive-2025-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2025",
+      "path": "/news/2025/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-archive-2025-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-2025",
+      "path": "/news/2025/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-archive-2025-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-history",
+      "path": "/news/history/index.html",
+      "viewport": "wide",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-archive-history-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-history",
+      "path": "/news/history/index.html",
+      "viewport": "wide",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-archive-history-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-history",
+      "path": "/news/history/index.html",
+      "viewport": "laptop",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-archive-history-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-history",
+      "path": "/news/history/index.html",
+      "viewport": "laptop",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-archive-history-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-history",
+      "path": "/news/history/index.html",
+      "viewport": "tablet",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-archive-history-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-history",
+      "path": "/news/history/index.html",
+      "viewport": "tablet",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-archive-history-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-history",
+      "path": "/news/history/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-archive-history-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-archive-history",
+      "path": "/news/history/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-archive-history-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-category-competition",
+      "path": "/news/category/competition/index.html",
+      "viewport": "wide",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-category-competition-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-category-competition",
+      "path": "/news/category/competition/index.html",
+      "viewport": "wide",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-category-competition-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-category-competition",
+      "path": "/news/category/competition/index.html",
+      "viewport": "laptop",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-category-competition-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-category-competition",
+      "path": "/news/category/competition/index.html",
+      "viewport": "laptop",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-category-competition-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-category-competition",
+      "path": "/news/category/competition/index.html",
+      "viewport": "tablet",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-category-competition-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-category-competition",
+      "path": "/news/category/competition/index.html",
+      "viewport": "tablet",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-category-competition-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-category-competition",
+      "path": "/news/category/competition/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/news-category-competition-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "news-category-competition",
+      "path": "/news/category/competition/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/news-category-competition-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "home",
+      "path": "/index.html",
+      "viewport": "wide",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/home-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "home",
+      "path": "/index.html",
+      "viewport": "wide",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/home-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "home",
+      "path": "/index.html",
+      "viewport": "laptop",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/home-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "home",
+      "path": "/index.html",
+      "viewport": "laptop",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/home-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "home",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/home-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "home",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/home-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "home",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/day/home-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "page": "home",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage13-visuals/night/home-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "titleBehaviour": null,
+      "articleLayout": {
+        "nav": null,
+        "header": null,
+        "heading": null,
+        "hero": null,
+        "body": null,
+        "navDirection": null,
+        "navWidth": null,
+        "navOffsetWidth": null,
+        "navMaxWidth": null,
+        "navLinks": [],
+        "navParent": null,
+        "navPath": null,
+        "headerHeroOverlap": null
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    }
+  ],
+  "findings": {
+    "horizontalOverflow": [],
+    "brokenImages": [],
+    "consoleErrors": [],
+    "pageErrors": [],
+    "stickyTitles": []
+  }
+}

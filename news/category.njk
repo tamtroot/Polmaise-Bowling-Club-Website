@@ -1,0 +1,67 @@
+---
+pagination:
+  data: newsArchive.categories
+  size: 1
+  alias: categoryGroup
+  # See news/year.njk: paginated pages must be listed in the sitemap.
+  addAllPagesToCollections: true
+permalink: "/news/category/{{ categoryGroup.slug }}/index.html"
+---
+{% set pageTitle = "Polmaise Bowling Club news: " + categoryGroup.name + " - Polmaise Bowling Club" %}
+{% set metaDescription = categoryGroup.name + " news from Polmaise Bowling Club: " + categoryGroup.articles.length + " published stories." %}
+{% set bodyClass = "news-category-page" %}
+{% set prefix = "../../../" %}
+{% set assetPrefix = "../../../" %}
+{% set navActive = "news" %}
+{# Shared page defaults — see _includes/news-article.njk. #}
+{% set headVariant = "standard" %}
+{% set mobileMenuIcon = "fas fa-bars" %}
+{% set mobileNavDropdown = false %}
+{% set scriptJs = true %}
+{% set jquery = false %}
+{% set lightboxCss = false %}
+{% set lightboxScript = false %}
+{% set facebookLink = true %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include "head.njk" %}
+</head>
+<body>
+{% include "header.njk" %}
+<main class="news-page">
+    <div class="container">
+        <p class="news-eyebrow"><a href="{{ prefix }}news.html">News &amp; Events</a> · Category</p>
+        <div class="news-section-head">
+            <div>
+                <h2>{{ categoryGroup.name }}</h2>
+            </div>
+            <a class="news-section-link" href="{{ prefix }}news.html">All news <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="news-grid">
+            {% for article in categoryGroup.articles %}
+            <article class="news-card">
+                {% if article.image %}
+                <div class="news-card-media">
+                    {% set cardImage = prefix ~ (article.image | replace("./", "")) %}
+                    {% photoImage cardImage, article.imageAlt, { role: "grid", sizes: "(max-width: 620px) 92vw, (max-width: 1000px) 46vw, 380px", loading: "lazy" } %}
+                </div>
+                {% endif %}
+                <div class="news-card-body">
+                    <p class="news-meta-row">
+                        {% if article.displayDate %}<time datetime="{{ article.isoDate }}">{{ article.displayDate }}</time>{% endif %}
+                        <span class="news-chip">{{ article.category }}</span>
+                    </p>
+                    <h3 class="news-card-title"><a href="{{ prefix }}{{ article.permalink | replace('/', '', 1) }}">{{ article.title }}</a></h3>
+                    <p class="news-card-excerpt">{{ article.excerpt }}</p>
+                    <span class="news-card-more" aria-hidden="true">Read more <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+{% include "footer.njk" %}
+{% include "scripts.njk" %}
+</body>
+</html>

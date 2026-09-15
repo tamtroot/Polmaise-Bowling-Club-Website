@@ -1,16 +1,50 @@
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { expect, test } from "@playwright/test";
 import { compareOrUpdateBaseline, writeMeasurement } from "./helpers/baseline.mjs";
 import { freezeBaselineClock } from "./helpers/baseline-clock.mjs";
 import { SITE_PAGES } from "./helpers/site-pages.mjs";
-import { SOURCE_ROOT } from "./helpers/site-root.mjs";
+import { SITE_ROOT, SOURCE_ROOT } from "./helpers/site-root.mjs";
+
+/**
+ * Stage 13 generates a page per news article plus year/category/historical
+ * indexes. Only a representative sample is audited page-by-page, so the sitemap
+ * check builds its expected list from the generated files themselves: every
+ * published page must be listed, and nothing else may be.
+ */
+async function generatedNewsPageUrls() {
+  const urls = [];
+  const walk = async (directory) => {
+    for (const entry of await readdir(directory, { withFileTypes: true })) {
+      const fullPath = path.join(directory, entry.name);
+      if (entry.isDirectory()) {
+        await walk(fullPath);
+      } else if (entry.name === "index.html") {
+        const relative = path.relative(SITE_ROOT, path.dirname(fullPath)).split(path.sep).join("/");
+        urls.push(`/${relative}/`);
+      }
+    }
+  };
+  await walk(path.join(SITE_ROOT, "news"));
+  return urls;
+}
 
 const site = JSON.parse(await readFile(path.join(SOURCE_ROOT, "_data", "site.json"), "utf8"));
-// SITE_PAGES paths are already URL-encoded, and Eleventy serves index.html at
-// the site root, which is the form the canonical/sitemap URLs use.
-const canonicalFor = (sitePage) =>
-  sitePage.path === "/index.html" ? `${site.url}/` : `${site.url}${sitePage.path}`;
+/**
+ * Canonical URLs drop the "index.html" a page is written to. The site root
+ * becomes "/", and a Stage 13 news page written to
+ * /news/2026/<slug>/index.html publishes /news/2026/<slug>/ — the address it is
+ * linked with everywhere else on the site.
+ *
+ * SITE_PAGES paths are already URL-encoded.
+ */
+const canonicalFor = (sitePage) => {
+  if (sitePage.path === "/index.html") return `${site.url}/`;
+  if (sitePage.path.endsWith("/index.html")) {
+    return `${site.url}${sitePage.path.slice(0, -"index.html".length)}`;
+  }
+  return `${site.url}${sitePage.path}`;
+};
 
 test("every public page carries complete, unique SEO metadata", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== "desktop", "SEO checks run once on desktop");
@@ -137,7 +171,12 @@ test("sitemap and robots files list exactly the public pages", async ({ request 
   expect(sitemapResponse.status()).toBe(200);
   const sitemap = await sitemapResponse.text();
   const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
-  const expected = SITE_PAGES.map(canonicalFor).sort();
+  const expected = [
+    ...SITE_PAGES.map(canonicalFor),
+    ...(await generatedNewsPageUrls()).map((url) => `${site.url}${url}`),
+  ]
+    .filter((url, index, urls) => urls.indexOf(url) === index)
+    .sort();
 
   const missing = expected.filter((url) => !locs.includes(url));
   const unexpected = locs.filter((url) => !expected.includes(url));

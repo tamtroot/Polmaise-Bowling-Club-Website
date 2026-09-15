@@ -232,6 +232,26 @@ try {
         await page.goto(`http://127.0.0.1:${port}${sitePage.path}`, { waitUntil: "domcontentloaded" });
         await page.waitForLoadState("load", { timeout: 15_000 }).catch(() => {});
         await page.evaluate(() => document.fonts.ready);
+        // Full-page captures happen before below-the-fold lazy images finish,
+        // which made strips at the end of a page look empty in reviews.
+        await page.evaluate(async () => {
+          // Walk the page so lazy images enter the viewport, then force the
+          // remainder and wait for every decode.
+          const step = Math.round(window.innerHeight * 0.8);
+          for (let y = 0; y < document.body.scrollHeight; y += step) {
+            window.scrollTo(0, y);
+            await new Promise((resolve) => requestAnimationFrame(() => resolve()));
+          }
+          window.scrollTo(0, 0);
+          const images = [...document.images];
+          for (const image of images) image.loading = "eager";
+          await Promise.all(
+            images
+              .filter((image) => !image.complete)
+              .map((image) => image.decode().catch(() => {})),
+          );
+          await new Promise((resolve) => requestAnimationFrame(() => resolve()));
+        });
         await page.waitForTimeout(400);
 
         const directory = path.join(outputDirectory, theme);

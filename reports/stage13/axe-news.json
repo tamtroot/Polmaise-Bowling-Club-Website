@@ -1,0 +1,205 @@
+{
+  "generatedAt": "2026-09-15T11:43:34.523Z",
+  "siteRoot": "C:\\Users\\thoma\\OneDrive\\Documents\\GitHub\\Polmaise-Bowling-Club-Website\\_site-verify",
+  "checks": 28,
+  "pagesWithViolations": 0,
+  "violations": [],
+  "results": [
+    {
+      "page": "news landing",
+      "path": "/news.html",
+      "viewport": "desktop",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "news landing",
+      "path": "/news.html",
+      "viewport": "desktop",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "news landing",
+      "path": "/news.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "news landing",
+      "path": "/news.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "2026 article",
+      "path": "/news/2026/chucks-memorial-2026/index.html",
+      "viewport": "desktop",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "2026 article",
+      "path": "/news/2026/chucks-memorial-2026/index.html",
+      "viewport": "desktop",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "2026 article",
+      "path": "/news/2026/chucks-memorial-2026/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "2026 article",
+      "path": "/news/2026/chucks-memorial-2026/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "2025 article",
+      "path": "/news/2025/charlie-mcneil-2025/index.html",
+      "viewport": "desktop",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "2025 article",
+      "path": "/news/2025/charlie-mcneil-2025/index.html",
+      "viewport": "desktop",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "2025 article",
+      "path": "/news/2025/charlie-mcneil-2025/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "2025 article",
+      "path": "/news/2025/charlie-mcneil-2025/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "historical article",
+      "path": "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+      "viewport": "desktop",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "historical article",
+      "path": "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+      "viewport": "desktop",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "historical article",
+      "path": "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "historical article",
+      "path": "/news/history/1911-opening-of-bowling-green-and-sale-of/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "2026 archive",
+      "path": "/news/2026/index.html",
+      "viewport": "desktop",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "2026 archive",
+      "path": "/news/2026/index.html",
+      "viewport": "desktop",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "2026 archive",
+      "path": "/news/2026/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "2026 archive",
+      "path": "/news/2026/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "historical archive",
+      "path": "/news/history/index.html",
+      "viewport": "desktop",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "historical archive",
+      "path": "/news/history/index.html",
+      "viewport": "desktop",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "historical archive",
+      "path": "/news/history/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "historical archive",
+      "path": "/news/history/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "category page",
+      "path": "/news/category/competition/index.html",
+      "viewport": "desktop",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "category page",
+      "path": "/news/category/competition/index.html",
+      "viewport": "desktop",
+      "theme": "night",
+      "violations": []
+    },
+    {
+      "page": "category page",
+      "path": "/news/category/competition/index.html",
+      "viewport": "mobile",
+      "theme": "day",
+      "violations": []
+    },
+    {
+      "page": "category page",
+      "path": "/news/category/competition/index.html",
+      "viewport": "mobile",
+      "theme": "night",
+      "violations": []
+    }
+  ]
+}

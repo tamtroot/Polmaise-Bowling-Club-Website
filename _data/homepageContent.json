@@ -1,0 +1,49 @@
+{
+  "_note": "Editorial content for the homepage. Everything here is already published elsewhere in this repository: the hero and history copy use the club's existing 1911 / Fallin mining-heritage wording, and the membership badges use the benefits listed on membership.html. Homepage *news* is no longer curated here — Stage 13 moved every story into news/<year>/<slug>.md and index.html renders the three newest published articles from that collection automatically.",
+  "_latestResult": "The result panel is editorial: it names the most recent published result story. Update it when a newer result is published.",
+  "hero": {
+    "kicker": "Fallin · Stirling · Established 1911",
+    "title": "Polmaise Bowling Club",
+    "tagline": "Tradition, Community, Excellence",
+    "intro": "At the heart of Fallin since 1911. A friendly local club with a proud history, competitive bowls and a strong community spirit.",
+    "image": {
+      "src": "./Images/Archive/Photo 25.jpg",
+      "alt": "The bowling green and clubhouse at Polmaise Bowling Club"
+    }
+  },
+  "latestResult": {
+    "eyebrow": "Latest result",
+    "date": "5 September 2026",
+    "competition": "John “Chucks” Johnstone Memorial Tournament",
+    "detail": "Winners: William “Maxi” Maxwell, James Craig and Club President David Stewart — seven games, seven wins.",
+    "href": "news.html"
+  },
+  "history": {
+    "eyebrow": "A club with history",
+    "title": "On this green since 1911",
+    "copy": "Established in 1911, Polmaise Bowling Club has been a cornerstone of the Fallin community for generations. With deep roots in the local mining heritage, the club has welcomed bowlers of every generation to the green beside the village.",
+    "facts": [
+      { "value": "1911", "label": "Club established" },
+      { "value": "115", "label": "Years on the green" },
+      { "value": "Fallin", "label": "At the heart of the village" }
+    ],
+    "image": {
+      "src": "./Images/Archive/HistoricalArchive/Golden Jubilee.jpg",
+      "alt": "Polmaise Bowling Club members pictured at the club's Golden Jubilee"
+    },
+    "href": "history.html"
+  },
+  "membership": {
+    "eyebrow": "New to bowls?",
+    "title": "Start bowling at Polmaise",
+    "copy": "You do not need any experience to join us. Becoming a member is simple and straightforward: get in touch or call in at the club, try a free introductory session and meet the members.",
+    "badges": [
+      { "icon": "fas fa-handshake", "label": "Friendly atmosphere" },
+      { "icon": "fas fa-users", "label": "All ages and skill levels" },
+      { "icon": "fas fa-chalkboard-teacher", "label": "Coaching and development" },
+      { "icon": "fas fa-star", "label": "Social events" }
+    ],
+    "href": "membership.html",
+    "secondaryHref": "contact.html"
+  }
+}

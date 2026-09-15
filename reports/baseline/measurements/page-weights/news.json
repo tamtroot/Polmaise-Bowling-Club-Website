@@ -9,52 +9,31 @@
     "height": 900
   },
   "status": 200,
-  "resourceCount": 23,
-  "totalBytes": 1996814,
+  "resourceCount": 15,
+  "totalBytes": 807103,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 294984
+      "bytes": 29136
     },
     "font": {
       "count": 5,
       "bytes": 444100
     },
     "image": {
-      "count": 13,
-      "bytes": 1096564
+      "count": 5,
+      "bytes": 155920
     },
     "script": {
       "count": 1,
-      "bytes": 9589
+      "bytes": 11051
     },
     "stylesheet": {
       "count": 3,
-      "bytes": 151577
+      "bytes": 166896
     }
   },
   "largestResources": [
-    {
-      "url": "http://127.0.0.1:4173/news.html",
-      "bytes": 294984,
-      "status": 200,
-      "resourceType": "document",
-      "contentType": "text/html; charset=utf-8"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/Patons%20Friendly/FB_IMG_1779707564940-w800.webp",
-      "bytes": 213154,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/Aaron%20and%20James%20Winners%20medals-w800.webp",
-      "bytes": 170130,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
     {
       "url": "http://127.0.0.1:4173/vendor/fontawesome/webfonts/fa-solid-900.woff2",
       "bytes": 150020,
@@ -91,71 +70,8 @@
       "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2026/Hamilton%20Trophy/FB_IMG_1779550801450-w800.webp",
-      "bytes": 84410,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/County%20Finals%202026/Senior%20Fours-w800.webp",
-      "bytes": 84320,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/Charlie%20McNiel%202026/Champs-w800.webp",
-      "bytes": 81636,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/FPS%20Try%20Bowls%20Day/FPS1-w800.webp",
-      "bytes": 69322,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/Champion%20of%20Champions%202026/Trophy-w800.webp",
-      "bytes": 66824,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/Bye-w800.webp",
-      "bytes": 66226,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/Greg%20Ryan%20Memorial%202026/Winners-w800.webp",
-      "bytes": 58570,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/Aaron%20Champ%20of%20Champs/Aaron%20%26%20President%20Davie-w800.webp",
-      "bytes": 54118,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/John%20Binnie%20Trophy/JB1-w800.webp",
-      "bytes": 51334,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 48347,
+      "bytes": 63666,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -175,8 +91,36 @@
       "contentType": "application/octet-stream"
     },
     {
+      "url": "http://127.0.0.1:4173/news.html",
+      "bytes": 29136,
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Charlie%20McNiel%202026/Champs-w400.webp",
+      "bytes": 23378,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Champion%20of%20Champions%202026/Trophy-w400.webp",
+      "bytes": 18404,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:4173/Images/2026/Aaron%20Champ%20of%20Champs/Aaron%20%26%20President%20Davie-w400.webp",
+      "bytes": 17618,
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 9589,
+      "bytes": 11051,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
@@ -198,29 +142,22 @@
   ],
   "resources": [
     {
-      "url": "http://127.0.0.1:4173/Images/2026/Aaron%20Champ%20of%20Champs/Aaron%20%26%20President%20Davie-w800.webp",
-      "bytes": 54118,
+      "url": "http://127.0.0.1:4173/Images/2026/Aaron%20Champ%20of%20Champs/Aaron%20%26%20President%20Davie-w400.webp",
+      "bytes": 17618,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2026/Bye-w800.webp",
-      "bytes": 66226,
+      "url": "http://127.0.0.1:4173/Images/2026/Champion%20of%20Champions%202026/Trophy-w400.webp",
+      "bytes": 18404,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
     },
     {
-      "url": "http://127.0.0.1:4173/Images/2026/Champion%20of%20Champions%202026/Trophy-w800.webp",
-      "bytes": 66824,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/Charlie%20McNiel%202026/Champs-w800.webp",
-      "bytes": 81636,
+      "url": "http://127.0.0.1:4173/Images/2026/Charlie%20McNiel%202026/Champs-w400.webp",
+      "bytes": 23378,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
@@ -228,55 +165,6 @@
     {
       "url": "http://127.0.0.1:4173/Images/2026/Chucks%202026/Winners-w800.webp",
       "bytes": 92084,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/County%20Finals%202026/Senior%20Fours-w800.webp",
-      "bytes": 84320,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/FPS%20Try%20Bowls%20Day/FPS1-w800.webp",
-      "bytes": 69322,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/Greg%20Ryan%20Memorial%202026/Winners-w800.webp",
-      "bytes": 58570,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/Hamilton%20Trophy/FB_IMG_1779550801450-w800.webp",
-      "bytes": 84410,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/John%20Binnie%20Trophy/JB1-w800.webp",
-      "bytes": 51334,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/Patons%20Friendly/FB_IMG_1779707564940-w800.webp",
-      "bytes": 213154,
-      "status": 200,
-      "resourceType": "image",
-      "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/Images/2026/Scottish%20Area%20Final%202026/Aaron%20and%20James%20Winners%20medals-w800.webp",
-      "bytes": 170130,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
@@ -290,21 +178,21 @@
     },
     {
       "url": "http://127.0.0.1:4173/news.html",
-      "bytes": 294984,
+      "bytes": 29136,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 9589,
+      "bytes": 11051,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 48347,
+      "bytes": 63666,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

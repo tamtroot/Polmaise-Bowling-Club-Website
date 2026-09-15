@@ -1,6 +1,6 @@
 {
-  "recordedAt": "2026-09-14T14:42:30.042Z",
-  "count": 1913,
+  "recordedAt": "2026-09-15T08:55:27.252Z",
+  "count": 1914,
   "entries": {
     "Images/2025/BOATea/BOATeaGame10-thumb.jpg": {
       "bytes": 49419,
@@ -5019,12 +5019,12 @@
       "sha256": "551e063e9f28e1003d50a7c13f80e1d5747d4c97a3b77a8cc75d9f6e0ed4d624"
     },
     "Images/Archive/Photo 25-thumb.jpg": {
-      "bytes": 18625,
-      "sha256": "77594081d2797cbc003da19451db11dc55487e750efbe00b9fdda4f9657e2cd7"
+      "bytes": 16525,
+      "sha256": "96a4bf36b20028a8cdc71a1789ab7daa2eac7a5c9ac20782410bbfe70b662863"
     },
     "Images/Archive/Photo 25.jpg": {
-      "bytes": 1207964,
-      "sha256": "c2efac8c4283acf83e4cfeac8c941a1ed06ef2912c6d5ae6eaaf5af1089d390b"
+      "bytes": 364508,
+      "sha256": "c48a8b00e66a04819a262f43a93cde7da33064986693266b1611c8ef815dc810"
     },
     "Images/Archive/Photo 26-thumb.jpg": {
       "bytes": 20400,
@@ -6937,6 +6937,10 @@
     "Images/Trophy.png": {
       "bytes": 5027566,
       "sha256": "3c1e5eec5b21d9fb7741db332f9faea1ac3b525b4105fe13d09064f739886d1a"
+    },
+    "Images/Try Bowls.png": {
+      "bytes": 2128161,
+      "sha256": "06ae27e970ad81a59b224df721e16ce738c79cb7a4df3575322a93435e5a5a25"
     },
     "Images/Volunteers-thumb.png": {
       "bytes": 152816,

@@ -1,4 +1,4 @@
-import { readdir, rm, stat } from "node:fs/promises";
+import { mkdir, readdir, rm, stat } from "node:fs/promises";
 import path from "node:path";
 import Eleventy from "@11ty/eleventy";
 import { generateSiteImages, loadSourceIndex } from "./image-pipeline.mjs";
@@ -13,6 +13,15 @@ const isExplicitOutput =
   Boolean(process.env.SITE_ROOT) &&
   outputDirectory !== projectRoot &&
   path.dirname(path.dirname(outputDirectory)) !== outputDirectory;
+
+/**
+ * Test-only escape hatch. `tests/homepage-fixtures.spec.js` builds a second,
+ * throwaway copy of the site to exercise the fixture layouts; deploying ~2,900
+ * image derivatives into that fresh directory is the slowest part of a build on
+ * a cloud-synced working copy, and the layout assertions never look at an
+ * image. Production and preview builds never set this.
+ */
+const skipImagePipeline = process.env.SKIP_IMAGE_PIPELINE === "true";
 
 if (!isDefaultOutput && !isExplicitOutput) {
   throw new Error(`Refusing to clean unexpected output directory: ${outputDirectory}`);
@@ -81,10 +90,40 @@ async function cleanOutputDirectory(directory) {
       await new Promise((resolve) => setTimeout(resolve, 1000 * attempt));
     }
   }
-  throw new Error(
-    `Could not clean ${directory} after 6 attempts (${lastError.code}: ${lastError.message}). ` +
-      "A syncing tool is holding the generated files open.",
-  );
+
+  /**
+   * The directory *entry* can be held open while its contents are not — a
+   * static server whose root it is, or a cloud sync client mid-scan. Windows
+   * then refuses to delete or rename the directory even when it is empty, which
+   * used to fail the whole build. Emptying it in place leaves the same result
+   * for the build and for anyone serving the folder.
+   */
+  try {
+    await mkdir(directory, { recursive: true });
+    for (const entry of await readdir(directory, { withFileTypes: true })) {
+      const entryPath = path.join(directory, entry.name);
+      for (let attempt = 1; attempt <= 6; attempt += 1) {
+        try {
+          await rm(entryPath, { recursive: true, force: true });
+          break;
+        } catch (error) {
+          if (attempt === 6) throw error;
+          await new Promise((resolve) => setTimeout(resolve, 250 * attempt));
+        }
+      }
+    }
+    console.log(
+      `Emptied ${path.basename(directory)} in place (${lastError.code}): ` +
+        "the directory itself is held open by another process.",
+    );
+    return;
+  } catch (error) {
+    throw new Error(
+      `Could not clean ${directory} (${lastError.code}: ${lastError.message}; ` +
+        `emptying it failed with ${error.code}: ${error.message}). ` +
+        "A syncing tool or server is holding the generated files open.",
+    );
+  }
 }
 
 await cleanOutputDirectory(outputDirectory);
@@ -99,7 +138,16 @@ const eleventy = new Eleventy(".", outputDirectory, {
 
 await eleventy.write();
 
-const imageStats = await generateSiteImages();
+const imageStats = skipImagePipeline
+  ? {
+      derivativeCount: 0,
+      graphicCount: 0,
+      derivativeCacheHits: 0,
+      originalCount: 0,
+      referenceCount: 0,
+      deployedBytes: 0,
+    }
+  : await generateSiteImages();
 
 const artifact = await collectArtifactStats(outputDirectory);
 const sizeInMiB = (artifact.totalBytes / 1024 ** 2).toFixed(2);

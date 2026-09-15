@@ -1,0 +1,511 @@
+{
+  "generatedAt": "2026-09-15T13:05:28.495Z",
+  "label": "season-complete",
+  "siteRoot": "C:\\Users\\thoma\\OneDrive\\Documents\\GitHub\\Polmaise-Bowling-Club-Website\\_site-alt",
+  "outputDirectory": "C:\\Users\\thoma\\AppData\\Local\\Temp\\polmaise-stage14-visuals\\season-complete",
+  "captures": [
+    {
+      "viewport": "wide",
+      "theme": "day",
+      "state": "collapsed",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/day/fixtures-collapsed-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 10,
+      "cards": 50,
+      "visibleCards": 0,
+      "toggleState": [
+        {
+          "visible": true,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        },
+        {
+          "visible": false,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 2723,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "wide",
+      "theme": "day",
+      "state": "expanded",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/day/fixtures-expanded-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 59,
+      "cards": 50,
+      "visibleCards": 0,
+      "toggleState": [
+        {
+          "visible": true,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        },
+        {
+          "visible": false,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 5050,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "wide",
+      "theme": "night",
+      "state": "collapsed",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/night/fixtures-collapsed-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 10,
+      "cards": 50,
+      "visibleCards": 0,
+      "toggleState": [
+        {
+          "visible": true,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        },
+        {
+          "visible": false,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 2723,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "wide",
+      "theme": "night",
+      "state": "expanded",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/night/fixtures-expanded-wide.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 59,
+      "cards": 50,
+      "visibleCards": 0,
+      "toggleState": [
+        {
+          "visible": true,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        },
+        {
+          "visible": false,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 5050,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "laptop",
+      "theme": "day",
+      "state": "collapsed",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/day/fixtures-collapsed-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 10,
+      "cards": 50,
+      "visibleCards": 0,
+      "toggleState": [
+        {
+          "visible": true,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        },
+        {
+          "visible": false,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 2710,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "laptop",
+      "theme": "day",
+      "state": "expanded",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/day/fixtures-expanded-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 59,
+      "cards": 50,
+      "visibleCards": 0,
+      "toggleState": [
+        {
+          "visible": true,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        },
+        {
+          "visible": false,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 5195,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "laptop",
+      "theme": "night",
+      "state": "collapsed",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/night/fixtures-collapsed-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 10,
+      "cards": 50,
+      "visibleCards": 0,
+      "toggleState": [
+        {
+          "visible": true,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        },
+        {
+          "visible": false,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 2710,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "laptop",
+      "theme": "night",
+      "state": "expanded",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/night/fixtures-expanded-laptop.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 59,
+      "cards": 50,
+      "visibleCards": 0,
+      "toggleState": [
+        {
+          "visible": true,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        },
+        {
+          "visible": false,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 5195,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "tablet",
+      "theme": "day",
+      "state": "collapsed",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/day/fixtures-collapsed-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 0,
+      "cards": 50,
+      "visibleCards": 5,
+      "toggleState": [
+        {
+          "visible": false,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        },
+        {
+          "visible": true,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 3434,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "tablet",
+      "theme": "day",
+      "state": "expanded",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/day/fixtures-expanded-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 0,
+      "cards": 50,
+      "visibleCards": 50,
+      "toggleState": [
+        {
+          "visible": false,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        },
+        {
+          "visible": true,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 11972,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "tablet",
+      "theme": "night",
+      "state": "collapsed",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/night/fixtures-collapsed-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 0,
+      "cards": 50,
+      "visibleCards": 5,
+      "toggleState": [
+        {
+          "visible": false,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        },
+        {
+          "visible": true,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 3434,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "tablet",
+      "theme": "night",
+      "state": "expanded",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/night/fixtures-expanded-tablet.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 0,
+      "cards": 50,
+      "visibleCards": 50,
+      "toggleState": [
+        {
+          "visible": false,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        },
+        {
+          "visible": true,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 11972,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "mobile",
+      "theme": "day",
+      "state": "collapsed",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/day/fixtures-collapsed-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 0,
+      "cards": 50,
+      "visibleCards": 5,
+      "toggleState": [
+        {
+          "visible": false,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        },
+        {
+          "visible": true,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 4131,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "mobile",
+      "theme": "day",
+      "state": "expanded",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/day/fixtures-expanded-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 0,
+      "cards": 50,
+      "visibleCards": 50,
+      "toggleState": [
+        {
+          "visible": false,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        },
+        {
+          "visible": true,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 12854,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "mobile",
+      "theme": "night",
+      "state": "collapsed",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/night/fixtures-collapsed-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 0,
+      "cards": 50,
+      "visibleCards": 5,
+      "toggleState": [
+        {
+          "visible": false,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        },
+        {
+          "visible": true,
+          "expanded": "false",
+          "label": "Show earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 4131,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "viewport": "mobile",
+      "theme": "night",
+      "state": "expanded",
+      "file": "../../../../AppData/Local/Temp/polmaise-stage14-visuals/season-complete/night/fixtures-expanded-mobile.png",
+      "horizontalOverflow": 0,
+      "brokenImages": [],
+      "tableRows": 59,
+      "visibleTableRows": 0,
+      "cards": 50,
+      "visibleCards": 50,
+      "toggleState": [
+        {
+          "visible": false,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        },
+        {
+          "visible": true,
+          "expanded": "true",
+          "label": "Hide earlier fixtures (45)"
+        }
+      ],
+      "nextFixtureMarked": 0,
+      "nextFixtureVisibleInTable": null,
+      "nextFixtureVisibleInCards": null,
+      "scrollHeight": 12854,
+      "axeViolations": [],
+      "consoleErrors": [],
+      "pageErrors": []
+    }
+  ],
+  "findings": {
+    "horizontalOverflow": [],
+    "brokenImages": [],
+    "axeViolations": [],
+    "consoleErrors": [],
+    "pageErrors": []
+  }
+}

@@ -1,13 +1,13 @@
 {
-  "publicPageCount": 18,
-  "sourceImageCount": 1913,
-  "deployedImageCount": 2924,
-  "deployedDerivativeCount": 2921,
+  "publicPageCount": 25,
+  "sourceImageCount": 1914,
+  "deployedImageCount": 2960,
+  "deployedDerivativeCount": 2957,
   "deployedCopiedOriginalCount": 3,
-  "deployedImageBytes": 252045052,
-  "artifactBytes": 255279640,
+  "deployedImageBytes": 251392121,
+  "artifactBytes": 255320522,
   "copiedDownloadCount": 5,
-  "generatedRoot": "_site-alt",
+  "generatedRoot": "_site",
   "leakedDevelopmentPaths": [],
   "stageTwoASnapshotRoot": "reports\\stage-2a"
 }

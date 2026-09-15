@@ -10,11 +10,11 @@
   },
   "status": 200,
   "resourceCount": 48,
-  "totalBytes": 1568385,
+  "totalBytes": 1585491,
   "byType": {
     "document": {
       "count": 1,
-      "bytes": 14603
+      "bytes": 14928
     },
     "font": {
       "count": 5,
@@ -26,11 +26,11 @@
     },
     "script": {
       "count": 3,
-      "bytes": 108573
+      "bytes": 110035
     },
     "stylesheet": {
       "count": 4,
-      "bytes": 154109
+      "bytes": 169428
     }
   },
   "largestResources": [
@@ -77,18 +77,18 @@
       "contentType": "text/javascript; charset=utf-8"
     },
     {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "bytes": 63666,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
       "url": "http://127.0.0.1:4173/Images/2025/Top15Final/20250810_145813-w400.webp",
       "bytes": 50250,
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 48347,
-      "status": 200,
-      "resourceType": "stylesheet",
-      "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fonts/files/open-sans-400-normal-latin.woff2",
@@ -430,21 +430,21 @@
     },
     {
       "url": "http://127.0.0.1:4173/PhotoAlbums/top-15-final-2025.html",
-      "bytes": 14603,
+      "bytes": 14928,
       "status": 200,
       "resourceType": "document",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/script.js",
-      "bytes": 9589,
+      "bytes": 11051,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 48347,
+      "bytes": 63666,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"

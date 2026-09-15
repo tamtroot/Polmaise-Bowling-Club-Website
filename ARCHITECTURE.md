@@ -31,6 +31,9 @@ index, runs Eleventy, then runs the image pipeline and its reference check.
 | `_includes/photo-album-gallery.njk` | The shared PhotoAlbum gallery script (used by four pages). |
 | `sitemap.njk`, `robots.njk` | Generated `sitemap.xml` and `robots.txt` (excluded from collections). |
 | `_data/site.json` | Production URL, club name, contact details, default social image. |
+| `news/**/*.md` | The news collection: one file per article (2026, 2025 and `history/`). Bodies are HTML, rendered with `templateEngineOverride: "njk"`. |
+| `_includes/news-article.njk` | The article layout (header, hero, body, previous/next, back link, lightbox) used by every article. |
+| `news/year.njk`, `news/category.njk`, `news/history/index.njk` | The generated year archives, category pages and the historical archive index. |
 
 `eleventy.config.js` registers the passthrough copies (`styles.css`,
 `script.js`, `downloads/`), the ignore list, the image filters/shortcodes, the
@@ -48,9 +51,30 @@ honours `SITE_ROOT` for the output directory.
 | `_data/photoAlbums.json` | 4 albums (directory, group, caption prefixes, filenames) | `PhotoAlbums/*.html` via the shared include |
 | `_data/sponsors.json` | 2 main sponsors, 12 club sponsors, contact lines | `sponsors.html` |
 | `_data/site.json` | Site-wide metadata and `SportsOrganization` facts | every page (head) |
+| `_data/newsArchive.js` | Reads `news/**/*.md` into `articles`, `history`, `historyYears`, `years`, `categories`, the landing-page composition and the legacy anchor redirects | `news.html`, the archives, the homepage |
+| `_data/fixtureSchedule.js` | Classifies every fixture at build time (past/today/future/unknown) and derives the season summary, month groups and collapsed completed fixtures | `fixtures.html`, homepage |
+| `_data/homepage.js` | Assembles the homepage: next fixture, latest result, gallery strip, sponsor strip | `index.html` |
+| `_data/homepageContent.json` | Curated homepage copy (hero, history, membership) | `index.html` |
 
-Long-form editorial copy (news articles, history, About Us) deliberately stays in
-the page templates.
+Long-form editorial copy (club history, About Us, membership) stays in the page
+templates; news articles live in `news/**` as described above.
+
+Date and excerpt helpers are shared rather than re-implemented per page:
+`tools/fixture-schedule.mjs` (parsing, build day, venue side),
+`tools/news-dates.mjs` (one date style) and `tools/news-excerpts.mjs`
+(sentence-level card excerpts).
+
+## Generated content rules
+
+- **Never read generated output back in.** `eleventy.config.js` ignores
+  `_site*/**` and `.cache*/**`, and `tests/build-output.spec.js` fails if a
+  nested `_site*` directory appears inside the artifact.
+- **One source per fact.** Fixture state, news dates and card excerpts are
+  computed once at build time; templates never do date arithmetic.
+- **Test-only switches** (`FIXTURES_TEST_TODAY`, `FIXTURES_TEST_DATA`,
+  `STAGE12_TEST_FIXTURES`, `SKIP_IMAGE_PIPELINE`) are read only when set, are
+  never set by the deployment workflow, and mark their output with
+  `data-test-fixtures` so a leak is detectable.
 
 ## JavaScript architecture
 
@@ -58,14 +82,19 @@ the page templates.
 `DOMContentLoaded` handler calling feature-detected initialisers:
 `initialiseMobileNavigation`, `initialiseSmoothScrolling`,
 `initialiseKeyboardActivation`, `initialiseAccordions`, `initialiseCustomLightbox`
-and `initialiseLightboxLibrary`. Each returns early unless its markup exists, so
-the file is safe on every page.
+`initialiseThemeToggle`, `initialiseFixtureCollapse` and
+`initialiseLightboxLibrary`. Each returns early unless its markup exists, so the
+file is safe on every page.
 
 Page-specific behaviour lives in the page template's inline `<script>`:
-fixtures date state, gallery album navigation (including the generated archive
-album), news/history toggles and lightbox, PhotoAlbum generation (shared include),
-signup validation, live-scoring controls and the cookie/privacy handling on
+gallery album navigation (including the generated archive album), PhotoAlbum
+generation (shared include), signup validation, live-scoring controls (expand,
+exit and the unavailable fallback) and the cookie/privacy handling on
 `contact.html`. Lightbox2 + jQuery remain in use for gallery and album pages.
+
+The fixtures page has no date script: past/next state is baked into the markup
+and `initialiseFixtureCollapse` only toggles what is already there. The
+historical archive rail is pure CSS.
 
 ## Image pipeline
 
@@ -85,7 +114,12 @@ encoder settings, caching and the "add a photo" workflow live in
 | Interactions | `tests/javascript-interactions.spec.js` | nav, accordions, fixtures, galleries, lightboxes, forms, live scoring |
 | Keyboard | `tests/keyboard-accessibility.spec.js` | keyboard operation, ARIA state, focus ring, reduced motion |
 | Accessibility/SEO | `tests/page-audit.spec.js`, `tests/seo-metadata.spec.js` | console/page errors, failed requests, axe, page weights, titles/descriptions/canonical/OG/JSON-LD, sitemap and robots |
-| Visual | `tests/visual-regression.spec.js` | 54 screenshot comparisons at desktop/tablet/mobile |
+| News architecture | `tests/news-architecture.spec.js` | collection counts, landing composition, archives, homepage automation, date and title formatting |
+| Fixtures UX | `tests/fixtures-ux.spec.js` | the four season states (built with a pinned date), the collapse control, the no-JavaScript fallback, mobile layout |
+| Historical archive | `tests/historical-archive.spec.js` | chronology, year chapters, excerpts, uncropped imagery, cross-links |
+| Live scores | `tests/live-scoring.spec.js` | the embed, the honest copy and the unavailable fallback |
+| Navigation reliability | `tests/navigation-hit-target.spec.js`, `tests/rapid-navigation.spec.js`, `tests/external-dependency-resilience.spec.js` | hit targets across the font swap, rapid navigation, stalled third-party origins |
+| Visual | `tests/visual-regression.spec.js` | screenshot comparisons for every audited page at desktop/tablet/mobile plus night desktop |
 
 All comparisons run against accepted baselines under `reports/baseline/` and
 `tests/__screenshots__/`; nothing updates them automatically (only
@@ -95,9 +129,10 @@ All comparisons run against accepted baselines under `reports/baseline/` and
 ## Deployment flow
 
 `.github/workflows/static.yml`: checkout → `configure-pages` → Node 22 with npm
-cache → `npm ci` → `npm run build` → `npm test` (release gate) → upload `_site`
-as the Pages artifact → deploy. The archive (`Images/`), `_data/`, `_includes/`,
-`tools/`, `tests/` and `reports/` are never uploaded; only `_site` is.
+cache → `npm ci` → Playwright Chromium → `npm test` (build + the full suite, the
+release gate) → upload `_site` as the Pages artifact → deploy. The archive
+(`Images/`), `_data/`, `_includes/`, `tools/`, `tests/` and `reports/` are never
+uploaded; only `_site` is.
 
 ## Cloud-synced working copies
 

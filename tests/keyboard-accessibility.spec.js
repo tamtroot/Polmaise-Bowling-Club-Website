@@ -64,16 +64,18 @@ test.describe("keyboard accessibility", () => {
     await expect(link).toHaveCount(1);
   });
 
-  test("news cards toggle with the keyboard", async ({ page }) => {
+  test("news cards open their article page with the keyboard", async ({ page }) => {
     await freezeBaselineClock(page);
     await page.goto("/news.html", { waitUntil: "domcontentloaded" });
 
-    const card = page.locator('[data-news-article="article-chucks-memorial-2026"]');
-    await expect(card).toHaveAttribute("role", "button");
+    // Stage 13 cards are real links, so Enter follows them like any other link.
+    const card = page.locator(".news-grid .news-card-title a").first();
+    await expect(card).toHaveAttribute("href", /.+/);
 
     await card.focus();
     await page.keyboard.press("Enter");
-    await expect(page.locator("#article-chucks-memorial-2026")).toBeVisible();
+    await expect(page).toHaveURL(/\/news\//);
+    await expect(page.locator(".article-header h2")).toBeVisible();
   });
 
   test("timeline entries on the about page open with the keyboard", async ({ page }) => {

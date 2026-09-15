@@ -93,6 +93,12 @@ bodyClass: "live-scoring-page"
             background: var(--color-surface);
         }
 
+        /* `hidden` must win over the frame styling above when the board cannot
+           load and the fallback panel takes its place. */
+        .live-scoring-frame-wrap iframe[hidden] {
+            display: none;
+        }
+
         .live-scoring-fallback {
             text-align: center;
             margin-top: 20px;
@@ -100,6 +106,35 @@ bodyClass: "live-scoring-page"
         }
 
         .live-scoring-fallback a {
+            font-weight: 600;
+        }
+
+        /* Stage 16: shown only if the board cannot load at all. */
+        .live-scoring-unavailable {
+            padding: clamp(2rem, 5vw, 3rem) 1.5rem;
+            text-align: center;
+            background-color: var(--color-surface);
+        }
+
+        .live-scoring-unavailable[hidden] {
+            display: none;
+        }
+
+        .live-scoring-unavailable-title {
+            margin: 0 0 0.5rem;
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--color-text);
+        }
+
+        .live-scoring-unavailable p {
+            margin: 0 auto 0.5rem;
+            max-width: 52ch;
+            color: var(--color-text-muted);
+        }
+
+        .live-scoring-unavailable a {
             font-weight: 600;
         }
 
@@ -177,7 +212,7 @@ bodyClass: "live-scoring-page"
     <section class="live-scoring-section">
         <div class="container">
             <div class="live-scoring-intro">
-                <p>Live scores from Polmaise Bowling Club appear below when a match day is in progress. If nothing is showing, there are no live games at the moment.</p>
+                <p>Live scores from Polmaise Bowling Club appear below while a match is in progress. If the board does not load, live scoring may be unavailable — please check back later for match updates.</p>
                 <p><a href="./downloads/Polmaise_Live_Scoring_Training_Guide.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> Live scoring training guide (PDF)</a></p>
             </div>
             <div class="live-scoring-toolbar">
@@ -190,10 +225,18 @@ bodyClass: "live-scoring-page"
                 <iframe
                     src="https://polmaise-bowls-live.base44.app/embed"
                     title="Polmaise Bowling Club Live Scores"
-                    loading="lazy"
                     allowfullscreen
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
+                {# Shown only if the board never loads (service or network down). A
+                   cross-origin 401 renders inside the frame and fires `load`, so
+                   it cannot be detected from here — the copy above covers that
+                   case honestly rather than claiming the board is fine. #}
+                <div class="live-scoring-unavailable" id="liveScoringUnavailable" hidden>
+                    <p class="live-scoring-unavailable-title">Live scoring is currently unavailable</p>
+                    <p>Please check back later for match updates, or
+                        <a href="https://polmaise-bowls-live.base44.app/embed" target="_blank" rel="noopener noreferrer">open the scoreboard in a new tab</a>.</p>
+                </div>
             </div>
             <p class="live-scoring-fallback">
                 Having trouble viewing the board?
@@ -217,6 +260,33 @@ bodyClass: "live-scoring-page"
         (function () {
             var expandBtn = document.getElementById('expandScoreboardBtn');
             var exitBtn = document.getElementById('exitScoreboardBtn');
+
+            /*
+             * Stage 16: the scoreboard is a cross-origin embed, so a 401 or an
+             * error page inside it cannot be inspected from here (the frame
+             * still fires `load`). What we can detect is the board never
+             * arriving at all — the service being unreachable or blocked — so
+             * after a single wait the honest "currently unavailable" panel
+             * replaces it. One timer, no retries, no polling.
+             */
+            var frame = document.querySelector('#liveScoreboard iframe');
+            var unavailable = document.getElementById('liveScoringUnavailable');
+            var FRAME_WAIT_MS = 10000;
+
+            if (frame && unavailable) {
+                var settled = false;
+                var timer = window.setTimeout(function () {
+                    if (settled) return;
+                    settled = true;
+                    unavailable.hidden = false;
+                    frame.hidden = true;
+                }, FRAME_WAIT_MS);
+
+                frame.addEventListener('load', function () {
+                    settled = true;
+                    window.clearTimeout(timer);
+                });
+            }
 
             function setExpanded(isExpanded) {
                 document.body.classList.toggle('scoreboard-expanded', isExpanded);
