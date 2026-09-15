@@ -78,6 +78,13 @@ The suite is 300+ checks and includes the generated sections:
 Tests that need a second build write it to `_site-fixtures-<state>` (ignored,
 and removed when the spec finishes); the production build never reads it.
 
+Visual baselines are per platform (`…-<viewport>-<platform>.png`): Chromium
+rasterises text differently on Windows and Linux, and the deployment gate runs on
+Linux, so the Linux set is the authority there. [MAINTENANCE.md](MAINTENANCE.md)
+→ *Visual baselines (platform-specific)* explains how to regenerate and review
+either set (`npm run baseline:update` on your own machine, or the manual
+*Generate Linux visual baselines* workflow on the runner).
+
 Audit helpers:
 
 ```powershell

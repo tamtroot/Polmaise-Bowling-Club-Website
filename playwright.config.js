@@ -27,8 +27,24 @@ export default defineConfig({
     ["json", { outputFile: "reports/latest/playwright-results.json" }],
     ["html", { open: "never", outputFolder: "playwright-report" }],
   ],
+  /*
+   * Screenshots are platform-specific. The DOM lays out identically, but
+   * Chromium rasterises text with the platform's own stack — DirectWrite and
+   * ClearType on Windows, FreeType and fontconfig on Linux — so the same page
+   * produces slightly different pixels on each. Comparing Windows pixels on
+   * Linux (which is what the deployment gate does, since it runs on
+   * ubuntu-latest) fails on rasterisation alone, and enlarging the tolerance
+   * would hide real regressions.
+   *
+   * `{platform}` is `process.platform`, so each platform resolves its own
+   * accepted set — `…-desktop-linux.png` in CI, `…-desktop-win32.png` for a
+   * Windows working copy — with no skips, no per-platform branches in the tests
+   * and no tolerance change. The Linux set is the authority for the deployment
+   * gate; regenerate it with `.github/workflows/visual-baselines.yml` and review
+   * the PNGs before committing (see MAINTENANCE.md).
+   */
   snapshotPathTemplate:
-    "{testDir}/__screenshots__/{testFilePath}/{arg}-{projectName}{ext}",
+    "{testDir}/__screenshots__/{testFilePath}/{arg}-{projectName}-{platform}{ext}",
   use: {
     baseURL,
     headless: true,

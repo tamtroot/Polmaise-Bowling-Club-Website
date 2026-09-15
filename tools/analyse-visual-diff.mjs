@@ -2,9 +2,21 @@ import { readdir } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 
-// Compares each failed visual-regression "actual" screenshot with its accepted
-// baseline and reports how large the difference is and where it sits.
+/*
+ * Compares each failed visual-regression "actual" screenshot with its accepted
+ * baseline and reports how large the difference is and where it sits.
+ *
+ * Baselines are per platform (`…-desktop-<platform>.png`, see
+ * `playwright.config.js`), so the accepted set is resolved with
+ * `process.platform` unless `--platform=<name>` says otherwise.
+ */
+const argument = (name, fallback) => {
+  const match = process.argv.find((value) => value.startsWith(`--${name}=`));
+  return match ? match.slice(name.length + 3) : fallback;
+};
+
 const root = process.cwd();
+const platform = argument("platform", process.platform);
 const testResultsRoot = path.join(root, "test-results");
 const baselineRoot = path.join(root, "tests", "__screenshots__", "visual-regression.spec.js");
 
@@ -36,7 +48,7 @@ for (const actualPath of actualScreenshots) {
   }
   const name = match[1];
   const project = path.basename(path.dirname(actualPath)).match(/-([a-z]+)$/)?.[1];
-  const baselinePath = path.join(baselineRoot, `${name}-${project}.png`);
+  const baselinePath = path.join(baselineRoot, `${name}-${project}-${platform}.png`);
 
   const [expected, actual] = await Promise.all([
     pixelsOf(baselinePath).catch(() => null),

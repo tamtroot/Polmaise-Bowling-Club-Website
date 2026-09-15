@@ -97,6 +97,12 @@ checkout → configure Pages → Node 22 → `npm ci` → install Chromium → `
 broken is published. The run takes roughly 10–15 minutes, most of it the cold
 image build.
 
+Screenshot baselines are per platform, so the gate compares against the Linux
+set (`tests/__screenshots__/**-linux.png`). If the run reports missing or
+mismatched screenshots, generate and review that set with the manual *Generate
+Linux visual baselines* workflow before re-running the deployment
+(MAINTENANCE.md → *Visual baselines (platform-specific)*).
+
 ## 7. Rollback
 
 ```powershell

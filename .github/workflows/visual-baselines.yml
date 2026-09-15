@@ -1,0 +1,83 @@
+# Manual, non-deploying workflow: generate the Linux visual-regression baselines.
+#
+# Visual screenshots are platform-specific. The DOM lays out identically, but
+# Chromium rasterises text with the platform's own stack (DirectWrite/ClearType
+# on Windows, FreeType/fontconfig on Linux), so the same page produces slightly
+# different pixels and a baseline captured on Windows can never be matched on
+# the ubuntu-latest gate. `playwright.config.js` therefore resolves snapshots per
+# platform (`…-desktop-<platform>.png`), and this workflow produces the Linux set
+# in the same environment the gate runs in.
+#
+# It never deploys and never commits: it writes the baselines into the runner's
+# checkout, compares them with the Windows set, and uploads both as an artifact
+# for review. Committing them is a separate, reviewed step (see MAINTENANCE.md).
+#
+# Run it from Actions → "Generate Linux visual baselines" → Run workflow, picking
+# the branch to generate from.
+
+name: Generate Linux visual baselines
+
+on:
+  workflow_dispatch:
+
+# Read-only: the workflow produces an artifact, so it needs no write access to
+# the repository at all.
+permissions:
+  contents: read
+
+jobs:
+  baselines:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      # Same environment as .github/workflows/static.yml, on purpose: the runner
+      # image, the Node version, the Playwright browser install and the build
+      # command all have to match the gate that will compare against these
+      # baselines.
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+      - name: Build the site
+        run: npm run build
+
+      # Only the visual suite, and only in update mode: this is what writes
+      # tests/__screenshots__/**-linux.png. It touches no other baseline.
+      - name: Generate the Linux baselines
+        run: npx playwright test tests/visual-regression.spec.js --update-snapshots
+
+      # Review aid: how do the new Linux PNGs differ from the committed Windows
+      # ones, and is any difference more than rasterisation? The report is JSON
+      # (and printed in full above) so it can be read without downloading
+      # anything.
+      - name: Compare the new baselines with the Windows set
+        run: >-
+          node tools/compare-visual-baselines.mjs
+          --platform=linux --against=win32
+          --report=reports/latest/visual-baseline-review.json
+
+      # `always()` so the PNGs are still there to inspect if a later step fails.
+      - name: Upload the Linux baselines and the review report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-visual-baselines
+          path: |
+            tests/__screenshots__/**/*-linux.png
+            reports/latest/visual-baseline-review.json
+          # Generating no baselines at all means this workflow did not do its
+          # job; an empty artifact would hide that.
+          if-no-files-found: error
+
+      # The set is only useful if the gate passes against it: run the visual
+      # suite once more, this time comparing against the baselines just written
+      # (no update flag, exactly like `npm test`).
+      - name: Confirm the generated set passes the normal gate
+        run: npx playwright test tests/visual-regression.spec.js

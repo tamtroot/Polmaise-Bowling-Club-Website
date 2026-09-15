@@ -126,13 +126,25 @@ All comparisons run against accepted baselines under `reports/baseline/` and
 `npm run baseline:update` does). The browser clock is frozen in tests
 (`tests/helpers/baseline-clock.mjs`) so date-dependent pages are deterministic.
 
+Screenshot baselines are **per platform** — `…-<viewport>-<platform>.png`, via
+the `{platform}` token in `playwright.config.js` — because Chromium rasterises
+text with the platform's own font stack (DirectWrite/ClearType on Windows,
+FreeType/fontconfig on Linux). The deployment gate runs on `ubuntu-latest`, so
+the Linux set is the authority for it; the Windows set keeps local Windows runs
+meaningful. The Linux set is produced by the manual, non-deploying
+`.github/workflows/visual-baselines.yml` and reviewed before it is committed
+(MAINTENANCE.md → *Visual baselines (platform-specific)*).
+
 ## Deployment flow
 
 `.github/workflows/static.yml`: checkout → `configure-pages` → Node 22 with npm
 cache → `npm ci` → Playwright Chromium → `npm test` (build + the full suite, the
-release gate) → upload `_site` as the Pages artifact → deploy. The archive
-(`Images/`), `_data/`, `_includes/`, `tools/`, `tests/` and `reports/` are never
-uploaded; only `_site` is.
+release gate, which compares the visual baselines of the platform it runs on —
+Linux) → upload `_site` as the Pages artifact → deploy. The archive (`Images/`),
+`_data/`, `_includes/`, `tools/`, `tests/` and `reports/` are never uploaded;
+only `_site` is. A second, manual workflow
+(`.github/workflows/visual-baselines.yml`) only *generates* Linux baselines as an
+artifact for review; it has no deploy or write permission.
 
 ## Cloud-synced working copies
 

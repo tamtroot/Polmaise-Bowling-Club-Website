@@ -333,8 +333,9 @@ toggle and is remembered in `localStorage` (`polmaise-theme`).
 5. Coverage: `tests/theme.spec.js` (toggle behaviour), `tools/audit-accessibility.mjs`
    (axe in both themes at desktop and mobile), `tools/audit-header-layout.mjs`
    (header collisions across breakpoints) and the visual baselines
-   (`<page>-<viewport>.png` for day, `<page>-night-desktop.png` for desktop
-   night).
+   (`<page>-<viewport>-<platform>.png` for day,
+   `<page>-night-desktop-<platform>.png` for desktop night — see
+   *Visual baselines (platform-specific)* below).
 
 ## Third-party assets (vendor/)
 
@@ -436,6 +437,73 @@ Re-tune after changing a font with `node tools/diagnose-navigation-lock.mjs
 --tune` (it reports the worst-case shift per family), or re-measure the resolved
 family with `node tools/diagnose-navigation-lock.mjs --fontshift`.
 
+## Visual baselines (platform-specific)
+
+`tests/visual-regression.spec.js` screenshots every audited page at
+desktop/tablet/mobile plus desktop night. Screenshots are platform-specific:
+the DOM lays out identically, but Chromium rasterises text with the platform's
+own stack (DirectWrite/ClearType on Windows, FreeType/fontconfig on Linux), so
+the same page produces slightly different pixels on each. Comparing one
+platform's pixels against another's therefore fails on rasterisation alone, and
+raising the `toHaveScreenshot` tolerance to hide that would hide real
+regressions with it.
+
+`playwright.config.js` resolves the accepted set per platform with the
+`{platform}` token (Playwright's `process.platform`):
+
+```
+tests/__screenshots__/visual-regression.spec.js/<page>-<viewport>-<platform>.png
+```
+
+| Platform | Set | Role |
+| --- | --- | --- |
+| Linux (`-linux`) | generated on the runner | **Authoritative**: `.github/workflows/static.yml` runs the gate on `ubuntu-latest`, so these are the pixels the deployment compares against |
+| Windows (`-win32`) | captured on a Windows working copy | Retained so local Windows development still runs the same suite meaningfully |
+| anything else | none until created | a missing baseline fails the test; it can never pass silently, and `npm run baseline:update` creates that platform's set |
+
+No test skips on Linux, no tolerance changed, and the deployment workflow only
+compares: a mismatch stops the deployment.
+
+### Regenerating a platform's set
+
+Your own platform, while developing — review the diff before committing it:
+
+```powershell
+npm run test:visual      # what moved, and by how much
+npm run baseline:update  # rewrite *your platform's* PNGs, once approved
+```
+
+Linux (the set the deployment gate uses), generated on the runner that will
+compare against it:
+
+1. Actions → **Generate Linux visual baselines** → *Run workflow*, picking the
+   branch. `.github/workflows/visual-baselines.yml` uses the same runner image,
+   Node version, browser install and build command as the deployment workflow.
+   It writes `tests/__screenshots__/**-linux.png` in its own checkout and never
+   deploys, commits or pushes.
+2. Download the `linux-visual-baselines` artifact: the PNGs plus
+   `visual-baseline-review.json`, which compares each new baseline with its
+   Windows counterpart — how many pixels differ, where, and whether a small
+   whole-image offset explains the difference (a layout difference) or nothing
+   does (rasterisation).
+3. Review the PNGs. Rasterisation-only differences are expected; `shift`,
+   `size`, `review` and `missing` entries need a human look first.
+4. Unzip the artifact over the working copy (it keeps the
+   `tests/__screenshots__/visual-regression.spec.js/` paths), then commit
+   `tests/__screenshots__/visual-regression.spec.js/*-linux.png` and push; the
+   next deployment run compares against them.
+
+The same comparison can be run by hand:
+
+```powershell
+node tools/compare-visual-baselines.mjs --platform=linux --against=win32
+```
+
+Snapshot updates are a reviewed step, never a build step: `--update-snapshots`
+only runs when a person asks for it (`npm run baseline:update` locally, the
+manual workflow in CI). A baseline committed without review makes the gate blind
+to exactly the change it exists to catch.
+
 ## Common troubleshooting
 
 | Symptom | Cause / fix |
@@ -445,6 +513,7 @@ family with `node tools/diagnose-navigation-lock.mjs --fontshift`.
 | Images appear as broken icons on one page | usually a stale server serving an old `_site`; stop it and rebuild |
 | `EBUSY`/`EPERM`/`Access is denied` while cleaning `_site` | a cloud-sync client is holding generated files; exit/pause syncing, delete `_site`, rebuild, or use `SITE_ROOT`/`IMAGE_CACHE_ROOT` |
 | Visual test fails after an image change | run `npm run test:visual` and inspect the diff artefacts in `test-results/`; only update baselines with `npm run baseline:update` once the change is approved |
+| Visual test fails with a large diff and no related code change | baselines are per platform (`…-<viewport>-<platform>.png`): this machine has none, or has another OS's. Generate your platform's set (`npm run baseline:update`) — or, for the Linux set the deployment uses, the *Generate Linux visual baselines* workflow — and review the PNGs before committing; see *Visual baselines (platform-specific)* |
 | Fixtures page looks wrong on a specific day | fixture styling is date-driven; tests freeze the clock, the live site does not |
 | Live Scores shows a service error | the embedded third-party score service is unavailable; the rest of the site is unaffected |
 | A page seems frozen after clicking through several pages quickly | run `npx playwright test tests/rapid-navigation.spec.js tests/external-dependency-resilience.spec.js`; a page must paint and stay interactive even when outside origins stall |
@@ -459,6 +528,11 @@ family with `node tools/diagnose-navigation-lock.mjs --fontshift`.
   directory URLs, matching GitHub Pages). `npx serve _site` also works.
 - **Release check**: `npm ci && npm test` — the same commands the Pages workflow
   runs; a failure stops the deployment.
+- **Visual baselines**: the deployment gate compares against the Linux set
+  (`tests/__screenshots__/**-linux.png`). If it reports missing or mismatched
+  screenshots, generate and review that set with the *Generate Linux visual
+  baselines* workflow before re-running the deployment — see *Visual baselines
+  (platform-specific)*.
 - **Clean build**: delete `_site` and `.cache`, then `npm run build` (~4 minutes
   cold, because all 2,945 image derivatives are regenerated).
 - **Deployment, rollback, smoke-test checklist and the release notes**:
