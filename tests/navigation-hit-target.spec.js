@@ -43,6 +43,45 @@ const navGeometry = (page) =>
 
 const linkNamed = (geometry, name) => geometry.find((entry) => entry.text === name);
 
+/**
+ * The boxes that can move the right-aligned navigation: every one of them must
+ * keep its width across the web font swap, otherwise the whole row shifts and
+ * the per-label measurements below would blame the labels for it.
+ */
+const headerBoxes = (page) =>
+  page.evaluate(() => {
+    const box = (selector) => {
+      const element = document.querySelector(selector);
+      if (!element) return null;
+      const rect = element.getBoundingClientRect();
+      return [Number(rect.left.toFixed(2)), Number(rect.width.toFixed(2))];
+    };
+    return {
+      container: box("body > header .container"),
+      logo: box("body > header .logo"),
+      wordmark: box("body > header .logo-text h1"),
+      nav: box("body > header nav"),
+      list: box("body > header nav ul"),
+      toggle: box("[data-theme-toggle]"),
+    };
+  });
+
+/**
+ * `unicode-range` coverage, enough for the grammar the font pipeline emits
+ * (`U+20`, `U+45-48`). Used to prove the inlined navigation subset carries
+ * every character the header labels can paint.
+ */
+const unicodeRangeCovers = (range, codePoint) => {
+  for (const part of range.split(",")) {
+    const match = /^\s*U\+([0-9a-f]{1,6})(?:-([0-9a-f]{1,6}))?\s*$/i.exec(part);
+    if (!match) continue;
+    const start = Number.parseInt(match[1], 16);
+    const end = match[2] ? Number.parseInt(match[2], 16) : start;
+    if (codePoint >= start && codePoint <= end) return true;
+  }
+  return false;
+};
+
 /** Waits until an element's box stops changing (e.g. after a drawer slides in). */
 const waitForStableBox = async (page, selector, timeout = 3_000) => {
   const deadline = Date.now() + timeout;
@@ -144,6 +183,93 @@ test.describe("desktop navigation hit targets", () => {
     console.log(`[nav-guard] calibrated fallback in effect: ${resolved.join(", ")}`);
   });
 
+  test("the navigation paints with the inlined Open Sans subset", async ({ page }) => {
+    /*
+     * The per-platform calibrations above can only ever approximate Open Sans:
+     * the CI movements for the Linux runner imply corrections between -1.7%
+     * and +4.1% for individual labels, so no single `size-adjust` holds the row
+     * still there. The navigation therefore paints with a subset of the very
+     * Open Sans instance it settles in, inlined as a data URI so it is available
+     * before the first layout on every platform (a separate file would race the
+     * web font it stands in for).
+     *
+     * These assertions fail on *every* platform if that face is removed,
+     * mis-declared, or stops covering a label, so the portability of the
+     * navigation no longer depends on which fonts a runner happens to have.
+     */
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto("/fixtures.html", { waitUntil: "domcontentloaded" });
+
+    const declarations = await page.evaluate(() =>
+      [...document.styleSheets].flatMap((sheet) => {
+        try {
+          return [...sheet.cssRules].map((rule) => rule.cssText);
+        } catch (error) {
+          return [];
+        }
+      }),
+    );
+    const declaration = declarations.find((text) => /font-family:\s*"Open Sans Nav"/.test(text));
+    expect(declaration, "'Open Sans Nav' is not declared in the stylesheets").toBeTruthy();
+    expect(declaration, "the navigation subset is not inlined").toMatch(
+      /src:\s*url\("?data:font\/woff2;base64,[A-Za-z0-9+/=]+"?\)/,
+    );
+    const unicodeRange = /unicode-range:\s*([^;]+);/.exec(declaration)?.[1] ?? "";
+    expect(unicodeRange, "the navigation subset declares no unicode-range").not.toBe("");
+
+    // It must be reached before the platform-specific faces.
+    const stack = await page.evaluate(
+      () => getComputedStyle(document.querySelector("header nav ul li a")).fontFamily,
+    );
+    expect(stack).toContain("Open Sans Nav");
+    expect(stack.indexOf("Open Sans Nav")).toBeLessThan(
+      stack.indexOf("Open Sans Fallback"),
+    );
+
+    // ...and it must carry every character the labels can paint.
+    const labelCharacters = await page.evaluate(() =>
+      [
+        ...new Set(
+          [...document.querySelectorAll("header nav ul li a")].flatMap((anchor) => [
+            ...anchor.textContent,
+          ]),
+        ),
+      ].sort(),
+    );
+    const uncovered = labelCharacters.filter(
+      (character) => !unicodeRangeCovers(unicodeRange, character.codePointAt(0)),
+    );
+    expect(
+      uncovered,
+      `the inlined navigation subset does not cover: ${uncovered.join(" ")}`,
+    ).toEqual([]);
+
+    // The point of the subset: the first paint *is* the settled metrics.
+    await page.unroute(FONT_FILES).catch(() => {});
+    await delayFonts(page, 1_500);
+    await page.goto("/fixtures.html", { waitUntil: "domcontentloaded" });
+    const firstPaint = await navGeometry(page);
+    await page.evaluate(() => document.fonts.ready);
+    await page.waitForTimeout(250);
+    const settled = await navGeometry(page);
+
+    const widest = settled.reduce((result, entry) => {
+      const painted = linkNamed(firstPaint, entry.text);
+      return Math.max(result, painted ? Math.abs(painted.width - entry.width) : Infinity);
+    }, 0);
+    console.log(
+      `[nav-guard] inlined subset covers ${labelCharacters.length} label characters ` +
+        `(${unicodeRange}); first paint vs settled worst width ${widest.toFixed(2)}px`,
+    );
+    // Held to the guard's own contract rather than a tighter number: the subset
+    // is the same face, so anything measurable here would mean the subset and the
+    // web font are not the same instance.
+    expect(
+      widest,
+      `the navigation's first paint differs from the metrics it settles in by ${widest}px`,
+    ).toBeLessThan(MATERIAL_MOVEMENT_PX);
+  });
+
   test("the wordmark box does not change when the serif fallback swaps", async ({ page }) => {
     /*
      * The navigation sits beside the logo and is right-aligned, so a logo that
@@ -223,6 +349,7 @@ test.describe("desktop navigation hit targets", () => {
           );
 
           const before = await navGeometry(page);
+          const boxesBefore = await headerBoxes(page);
           expect(
             before.length,
             `no navigation links found at ${width}px`,
@@ -236,11 +363,18 @@ test.describe("desktop navigation hit targets", () => {
           await page.evaluate(() => document.fonts.ready);
           await page.waitForTimeout(250);
           const after = await navGeometry(page);
+          const boxesAfter = await headerBoxes(page);
 
           const movements = after.map((entry) => {
             const previous = linkNamed(before, entry.text);
             return {
               text: entry.text,
+              fallbackWidth: previous ? Math.round(previous.width * 100) / 100 : null,
+              webFontWidth: Math.round(entry.width * 100) / 100,
+              ratio:
+                previous && previous.width > 0
+                  ? Math.round((previous.width / entry.width) * 10000) / 100
+                  : null,
               shift: previous ? Math.round((entry.left - previous.left) * 100) / 100 : null,
             };
           });
@@ -255,6 +389,46 @@ test.describe("desktop navigation hit targets", () => {
               ` (fallback→webfont), settled Fixtures/News left edges ` +
               `${fixtures ? fixtures.left.toFixed(2) : "n/a"}/${news ? news.left.toFixed(2) : "n/a"}`,
           );
+          /*
+           * Retained diagnostics: on a failing run these name the fallback, its
+           * per-label widths against Open Sans, and the ratio each label
+           * achieves, which is what a platform-specific calibration has to be
+           * derived from. The thresholds below are unchanged.
+           */
+          console.log(
+            `[nav-guard] ${theme} @ ${width}px per label ` +
+              `(fallback width → webfont width, ratio):`,
+          );
+          for (const movement of movements) {
+            console.log(
+              `[nav-guard]   ${movement.text.padEnd(14)} ${String(movement.fallbackWidth).padStart(6)} → ` +
+                `${String(movement.webFontWidth).padStart(6)}  ${String(movement.ratio).padStart(6)}%  shift ${String(movement.shift).padStart(6)}px`,
+            );
+          }
+          if (worst >= MATERIAL_MOVEMENT_PX) {
+            const resolved = await page.evaluate((families) => {
+              const size = getComputedStyle(document.querySelector("header nav ul li a")).fontSize;
+              return families.filter((family) => document.fonts.check(`${size} "${family}"`));
+            }, FALLBACK_FAMILIES);
+            console.log(
+              `[nav-guard] ${theme} @ ${width}px calibrated fallback resolved: ${resolved.join(", ") || "(none)"}; ` +
+                `text-rendering: ${await page.evaluate(() => getComputedStyle(document.querySelector("header nav ul li a")).textRendering)}`,
+            );
+            /*
+             * A shift that every label shares is not a label problem: it comes
+             * from a box beside the navigation changing width (the wordmark,
+             * the logo, the theme toggle, the container). These deltas name it.
+             */
+            const boxes = Object.keys(boxesAfter)
+              .map((key) => {
+                const start = boxesBefore[key];
+                const end = boxesAfter[key];
+                if (!start || !end) return `${key} n/a`;
+                return `${key} Δleft ${(end[0] - start[0]).toFixed(2)} Δwidth ${(end[1] - start[1]).toFixed(2)}`;
+              })
+              .join("; ");
+            console.log(`[nav-guard] ${theme} @ ${width}px header boxes: ${boxes}`);
+          }
 
           expect(
             worst,

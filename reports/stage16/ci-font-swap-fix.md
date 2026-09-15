@@ -134,11 +134,133 @@ Calibration re-checked with `node tools/diagnose-navigation-lock.mjs --tune`
 | axe (day/night × desktop/mobile, inside the suite) | 0 violations |
 | Thresholds | `MATERIAL_MOVEMENT_PX` still 3, font-swap test unchanged, `font-display: swap` retained, no CDN, no font files added to the repository |
 
+## Round 2: the runner's local-face rendering is not metric-stable
+
+The CI run for `0217dad` (`Deploy static content to Pages`, run 35002726485)
+still failed the guard, at light / 1440px:
+
+```
+Home -14, About Us -13, Membership -11, Fixtures -7, News -5,
+Gallery -7, Contact Us -6, Sponsors -5, Honours -4   (budget: < 3px)
+```
+
+### What those numbers say
+
+The row is right-aligned and every box that could move it has a
+font-independent size (`body > header .container`, `.logo` — pinned to
+`width: 10em` at this width — the 44px theme toggle and the container padding).
+Measured locally across the whole swap, every one of those boxes stayed at
+Δleft 0.00 / Δwidth 0.00 while the `ul` only changed width, so consecutive
+movements give the individual label width differences — which is what a
+`size-adjust` has to be derived from:
+
+| Label | CI movement | Δ width | runner fallback ÷ Open Sans |
+| --- | --- | --- | --- |
+| Home | -14 | -1.0 | 98.23% |
+| About Us | -13 | -2.0 | 97.43% |
+| Membership | -11 | -4.0 | 96.06% |
+| Fixtures | -7 | -2.0 | 97.16% |
+| News & Events | -5 | +2.0 | 101.73% |
+| Gallery | -7 | -1.0 | 98.43% |
+| Contact Us | -6 | -1.0 | 98.88% |
+| Sponsors | -5 | -1.0 | 98.72% |
+| Honours | -4 | (anchor) | — |
+
+### The derived Linux calibration
+
+Against the locally measured 107% face, those ratios are a least-squares scale
+of **0.9832** — the runner renders the local face about 1.7% narrower than this
+machine does — so the size-adjust that would neutralise it is
+`107 / 0.9832` = **108.8%** (per-label RMSE 1.36px, worst residual 2.31px; a
+free constant instead gives 0.9880 with a -2.5px common shift, RMSE 0.64px).
+`'Open Sans Fallback Liberation'` now ships **108.8%**, derived from the runner's
+own numbers rather than copied from Arial. (`tools/diagnose-navigation-lock.mjs
+--tune --font-file=… --font-name="Liberation Sans"` still measures 107% as the
+optimum here, which is exactly the discrepancy: the *font* is metric-compatible
+with Arial, the runner's *rendering* is not.)
+
+### Why a calibration alone was never going to be enough
+
+The individual corrections implied above range from **-1.7% (News & Events) to
++4.1% (Membership)**, and the residual spread is ±2.3px per label. A single
+global `size-adjust` cannot satisfy them all, and whatever it leaves behind
+accumulates across a right-aligned row. The same is true of any other system
+font: the platform's rasterisation of a *local* face (hinting, grid fitting,
+synthetic bold) is not a portable, measurable quantity from here.
+
+### The fix: the navigation paints with the face it settles in
+
+`'Open Sans Nav'` is a subset of the **same** Open Sans instance the navigation
+ends up in — generated from the labels in `_includes/header.njk` by
+`tools/fetch-vendor-assets.mjs` (Google's `text=` subsetting, the same pipeline
+that already self-hosts the site's fonts) and inlined into
+`vendor/fonts/fonts.css` as a `data:` URI. Being inline there is no fetch to
+race, so it is in effect at first layout (measured: identical widths at
+`DOMContentLoaded`) and the row cannot move on any platform, whatever local
+fonts the machine has. `body > header nav ul li a` now uses
+`'Open Sans', 'Open Sans Nav', var(--font-ui)`.
+
+Kept as they were: self-hosted Open Sans, `font-display: swap`, both preloads,
+the four calibrated local faces (now the second tier for the rest of
+`--font-ui`), the accepted navigation design, and the 3px threshold. Nothing is
+disabled and no CDN is involved.
+
+Cost: `vendor/fonts/fonts.css` grows from 2,923 to 11,683 bytes (a 6,124-byte
+subset, 8,165 base64 characters) and the explanatory comments in `styles.css`
+add ~1.2KB. The refreshed page-weight measurement for the home page is
+1,291,171 bytes, +9.9KB. That is the price of removing the platform-font
+dependency; nothing in the suite asserts a weight budget.
+
+### Measurements after the fix (this machine)
+
+| Viewport | Theme | Worst movement before | Worst movement after |
+| --- | --- | --- | --- |
+| 1440px | light | 2.70px | **0.00px** |
+| 1440px | dark | 2.70px | **0.00px** |
+| 1280px | light | 2.70px | **0.00px** |
+| 1280px | dark | 2.70px | **0.00px** |
+| 1024px | light (drawer) | 0.00px | **0.00px** |
+| 1024px | dark (drawer) | 0.00px | **0.00px** |
+
+Per label at 1440px light: every one of the nine labels measured a 100.00%
+fallback→webfont width ratio (Home 56.5 → 56.5, About Us 77.8 → 77.8,
+Membership 101.48 → 101.48, Fixtures 70.44 → 70.44, News & Events 115.5 → 115.5,
+Gallery 63.69 → 63.69, Contact Us 89.31 → 89.31, Sponsors 78.08 → 78.08,
+Honours 74.27 → 74.27) — including `Fixtures`, which is the `font-weight: 700`
+active label on that page. The header boxes stayed at Δleft 0.00 / Δwidth 0.00.
+
+`tests/navigation-hit-target.spec.js` now also asserts the mechanism, so it
+fails on *every* platform (not only Linux) if the subset is dropped, un-inlined,
+reordered behind the platform faces, or stops covering a character of a label;
+the movement test prints the header-box deltas when it fails, so any future
+common shift is attributed instead of being blamed on the labels.
+
+## Verification (round 2)
+
+| Check | Result |
+| --- | --- |
+| Navigation guard (`tests/navigation-hit-target.spec.js`, desktop) | **6 passed** (`MATERIAL_MOVEMENT_PX` still 3) |
+| Full Playwright suite | **326 passed, 211 skipped, 0 failed** (5.6 min) |
+| Visual regression | every baseline matched (the settled paint is unchanged) |
+| Header collision probe (`tools/audit-header-layout.mjs`) | 550 checks, 0 problems |
+| axe, internal links, image references | inside the suite: 0 violations, 0 broken links, 0 broken references |
+| `--font-file` tuning of the real Liberation Sans | optimum 107.00% / 2.70px (unchanged), which is why the Linux face's 108.8% is documented as runner-derived |
+
+## What could not be measured from here
+
+This machine has no Linux runtime (no WSL, no Docker daemon), so the runner's
+own rendering cannot be reproduced locally and the CI logs need an authenticated
+session. That is why the fix does not depend on reproducing it: the navigation
+no longer uses a platform font at all. The guard still prints, on every run,
+which calibrated family resolved (`[nav-guard] calibrated fallback in effect:
+·`) together with the per-label widths and ratios — useful for the rest of
+`--font-ui`, and the first thing to read if a future run fails for another
+reason.
+
 ## Should CI pass now?
 
-Yes: the Linux navigation now paints with a calibrated `Liberation Sans` face
-that the workflow's own dependency install guarantees, and the logo can no
-longer move the menu when the serif fallback differs. The one thing that cannot
-be proven from Windows is which system font the runner would have used — the new
-guard prints the calibrated family it resolved, so the first CI run will confirm
-it in the log.
+Yes, and for a stronger reason than round 1: the guarded surface no longer
+depends on which fonts Ubuntu ships or how it rasterises them. The remaining
+Linux-specific quantity (the local face's 108.8% calibration) only affects live
+text outside the navigation, where a few pixels of re-flow is not a usability
+bug.

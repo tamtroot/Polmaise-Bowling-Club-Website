@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { createServer } from "node:http";
-import { createReadStream, statSync } from "node:fs";
+import { createReadStream, readFileSync, statSync } from "node:fs";
 import { chromium } from "playwright";
 import { createStaticServer } from "./static-server.mjs";
 
@@ -41,6 +41,18 @@ const serverProfile = argument("server", "nostore");
 const externalBase = argument("base", null);
 const port = Number(argument("port", "4190"));
 const reportPath = path.join(root, "reports", "stage11", "navigation-lock-diagnosis.json");
+
+/**
+ * `--tune` can measure a font *file* as well as an installed family, which is
+ * how the Linux fallback (Liberation Sans) is calibrated from a machine that
+ * does not have it installed:
+ *
+ *   node tools/diagnose-navigation-lock.mjs --tune \
+ *     --font-file=/tmp/LiberationSans-Regular.ttf --font-name="Liberation Sans"
+ */
+const tuneFontFile = argument("font-file", null);
+const tuneFontName = argument("font-name", tuneFontFile ? path.basename(tuneFontFile) : null);
+const tuneFontUrl = tuneFontFile ? `https://fonts.test/${path.basename(tuneFontFile)}` : null;
 
 let server = null;
 const base = externalBase ?? `http://127.0.0.1:${port}`;
@@ -763,6 +775,17 @@ try {
      * match the real webfont, so the navigation cannot move when the font
      * arrives. Reports the largest per-item displacement across the nav.
      */
+    if (tuneFontFile) {
+      const bytes = readFileSync(path.resolve(tuneFontFile));
+      await page.route("https://fonts.test/**", (route) =>
+        route.fulfill({
+          status: 200,
+          headers: { "Content-Type": "font/ttf", "Access-Control-Allow-Origin": "*" },
+          body: bytes,
+        }),
+      );
+    }
+
     await page.goto(`${base}/fixtures.html`, { waitUntil: "domcontentloaded" });
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(200);
@@ -771,7 +794,8 @@ try {
      * glyph advances are rounded during layout and the active item is bold, so
      * only measured rectangles can predict where a click would land.
      */
-    const tuning = await page.evaluate(() => {
+    const tuning = await page.evaluate(
+      async ({ fontName, fontUrl }) => {
       const links = [...document.querySelectorAll("header nav ul li a")];
       const read = () => links.map((anchor) => anchor.getBoundingClientRect().left);
       const readWidths = () =>
@@ -782,21 +806,23 @@ try {
       const scenarios = links.map((_, index) => index);
       const results = [];
 
-      for (const family of [
-        "Tahoma",
-        "Arial",
-        "Segoe UI",
-        "Trebuchet MS",
-        "Verdana",
-        "system-ui",
-      ]) {
+      const sources = fontUrl
+        ? [{ family: fontName, src: `url(${fontUrl}) format('truetype')` }]
+        : ["Tahoma", "Arial", "Segoe UI", "Trebuchet MS", "Verdana", "system-ui"].map(
+            (family) => ({ family, src: `local('${family}')` }),
+          );
+      for (const source of sources) {
         for (let adjust = 92; adjust <= 112; adjust += 0.25) {
           const style = document.createElement("style");
           style.textContent =
-            `@font-face{font-family:'TuneFallback';src:local('${family}');` +
+            `@font-face{font-family:'TuneFallback';src:${source.src};` +
             `size-adjust:${adjust}%;ascent-override:106.88%;descent-override:29.29%;line-gap-override:0%;}` +
             `header nav ul li a{font-family:'TuneFallback',sans-serif !important;}`;
           document.head.append(style);
+          // A file-based face loads asynchronously (an installed family does
+          // not); wait for it so the measurement is of the font, not of the
+          // fallback the browser is still using.
+          await document.fonts.load("16px 'TuneFallback'").catch(() => {});
 
           let worst = 0;
           for (const active of scenarios) {
@@ -818,7 +844,7 @@ try {
           }
           style.remove();
           results.push({
-            family,
+            family: source.family,
             adjust,
             worstShiftPx: Math.round(worst * 100) / 100,
           });
@@ -835,7 +861,9 @@ try {
         if (best) bestPerFamily.push(best);
       }
       return { reference, referenceWidths, top: results.slice(0, 10), bestPerFamily };
-    });
+      },
+      { fontName: tuneFontName, fontUrl: tuneFontUrl },
+    );
 
     report.tuning = tuning;
     console.log("worst-case nav shift, all active pages (real layout):");

@@ -10,7 +10,7 @@
   },
   "status": 200,
   "resourceCount": 48,
-  "totalBytes": 1591493,
+  "totalBytes": 1601368,
   "byType": {
     "document": {
       "count": 1,
@@ -26,11 +26,11 @@
     },
     "script": {
       "count": 3,
-      "bytes": 110358
+      "bytes": 110342
     },
     "stylesheet": {
       "count": 4,
-      "bytes": 174636
+      "bytes": 184527
     }
   },
   "largestResources": [
@@ -50,7 +50,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
-      "bytes": 100315,
+      "bytes": 100307,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -71,14 +71,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/jquery/jquery-3.6.0.min.js",
-      "bytes": 89503,
+      "bytes": 89501,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 68790,
+      "bytes": 70005,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -444,14 +444,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 68790,
+      "bytes": 70005,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
-      "bytes": 100315,
+      "bytes": 100307,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -493,14 +493,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fonts/fonts.css",
-      "bytes": 2999,
+      "bytes": 11683,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/vendor/jquery/jquery-3.6.0.min.js",
-      "bytes": 89503,
+      "bytes": 89501,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"
@@ -542,7 +542,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/lightbox2/js/lightbox.min.js",
-      "bytes": 9497,
+      "bytes": 9483,
       "status": 200,
       "resourceType": "script",
       "contentType": "text/javascript; charset=utf-8"

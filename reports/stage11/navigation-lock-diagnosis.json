@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-09-15T17:28:20.855Z",
+  "startedAt": "2026-09-15T18:02:34.067Z",
   "base": "http://127.0.0.1:4190",
   "mode": "rapid",
   "iterations": 120,
@@ -13,12 +13,12 @@
   "documentRequests": [
     {
       "url": "http://127.0.0.1:4190/fixtures.html",
-      "at": 1789493300860,
+      "at": 1789495354076,
       "frame": "about:blank"
     },
     {
       "url": "http://127.0.0.1:4190/fixtures.html",
-      "at": 1789493300870,
+      "at": 1789495354090,
       "event": "framenavigated"
     }
   ],
@@ -47,88 +47,63 @@
     ],
     "top": [
       {
-        "family": "Segoe UI",
-        "adjust": 109.75,
-        "worstShiftPx": 1.44
-      },
-      {
-        "family": "system-ui",
-        "adjust": 109.75,
-        "worstShiftPx": 1.44
-      },
-      {
-        "family": "Tahoma",
-        "adjust": 110.75,
-        "worstShiftPx": 1.66
-      },
-      {
-        "family": "Segoe UI",
-        "adjust": 109.5,
-        "worstShiftPx": 1.94
-      },
-      {
-        "family": "system-ui",
-        "adjust": 109.5,
-        "worstShiftPx": 1.94
-      },
-      {
-        "family": "Verdana",
-        "adjust": 97,
-        "worstShiftPx": 2.31
-      },
-      {
-        "family": "Segoe UI",
-        "adjust": 110,
-        "worstShiftPx": 2.5
-      },
-      {
-        "family": "system-ui",
-        "adjust": 110,
-        "worstShiftPx": 2.5
-      },
-      {
-        "family": "Tahoma",
-        "adjust": 111,
-        "worstShiftPx": 2.56
-      },
-      {
-        "family": "Arial",
+        "family": "Liberation Sans",
         "adjust": 107,
         "worstShiftPx": 2.7
+      },
+      {
+        "family": "Liberation Sans",
+        "adjust": 107.25,
+        "worstShiftPx": 2.91
+      },
+      {
+        "family": "Liberation Sans",
+        "adjust": 107.5,
+        "worstShiftPx": 3.81
+      },
+      {
+        "family": "Liberation Sans",
+        "adjust": 106.75,
+        "worstShiftPx": 4.25
+      },
+      {
+        "family": "Liberation Sans",
+        "adjust": 107.75,
+        "worstShiftPx": 4.48
+      },
+      {
+        "family": "Liberation Sans",
+        "adjust": 106.5,
+        "worstShiftPx": 5.42
+      },
+      {
+        "family": "Liberation Sans",
+        "adjust": 108,
+        "worstShiftPx": 5.44
+      },
+      {
+        "family": "Liberation Sans",
+        "adjust": 108.25,
+        "worstShiftPx": 6.11
+      },
+      {
+        "family": "Liberation Sans",
+        "adjust": 106.25,
+        "worstShiftPx": 6.95
+      },
+      {
+        "family": "Liberation Sans",
+        "adjust": 108.5,
+        "worstShiftPx": 7.02
       }
     ],
     "bestPerFamily": [
       {
-        "family": "Segoe UI",
-        "adjust": 109.75,
-        "worstShiftPx": 1.44
-      },
-      {
-        "family": "system-ui",
-        "adjust": 109.75,
-        "worstShiftPx": 1.44
-      },
-      {
-        "family": "Tahoma",
-        "adjust": 110.75,
-        "worstShiftPx": 1.66
-      },
-      {
-        "family": "Verdana",
-        "adjust": 97,
-        "worstShiftPx": 2.31
-      },
-      {
-        "family": "Arial",
+        "family": "Liberation Sans",
         "adjust": 107,
         "worstShiftPx": 2.7
-      },
-      {
-        "family": "Trebuchet MS",
-        "adjust": 111,
-        "worstShiftPx": 4.25
       }
     ]
   },
-  "finishedAt": "2026-09-15T17:28:25.679Z"
+  "finishedAt": "2026-09-15T18:02:35.582Z"
 }

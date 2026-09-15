@@ -10,7 +10,7 @@
   },
   "status": 200,
   "resourceCount": 14,
-  "totalBytes": 933713,
+  "totalBytes": 943604,
   "byType": {
     "document": {
       "count": 1,
@@ -30,7 +30,7 @@
     },
     "stylesheet": {
       "count": 3,
-      "bytes": 172104
+      "bytes": 181995
     }
   },
   "largestResources": [
@@ -64,7 +64,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
-      "bytes": 100315,
+      "bytes": 100307,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -78,7 +78,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 68790,
+      "bytes": 70005,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -112,6 +112,13 @@
       "contentType": "image/png"
     },
     {
+      "url": "http://127.0.0.1:4173/vendor/fonts/fonts.css",
+      "bytes": 11683,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
       "url": "http://127.0.0.1:4173/script.js",
       "bytes": 11358,
       "status": 200,
@@ -124,13 +131,6 @@
       "status": 200,
       "resourceType": "image",
       "contentType": "image/webp"
-    },
-    {
-      "url": "http://127.0.0.1:4173/vendor/fonts/fonts.css",
-      "bytes": 2999,
-      "status": 200,
-      "resourceType": "stylesheet",
-      "contentType": "text/css; charset=utf-8"
     }
   ],
   "resources": [
@@ -178,14 +178,14 @@
     },
     {
       "url": "http://127.0.0.1:4173/styles.css",
-      "bytes": 68790,
+      "bytes": 70005,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fontawesome/css/all.min.css",
-      "bytes": 100315,
+      "bytes": 100307,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
@@ -227,7 +227,7 @@
     },
     {
       "url": "http://127.0.0.1:4173/vendor/fonts/fonts.css",
-      "bytes": 2999,
+      "bytes": 11683,
       "status": 200,
       "resourceType": "stylesheet",
       "contentType": "text/css; charset=utf-8"
