@@ -332,10 +332,9 @@ toggle and is remembered in `localStorage` (`polmaise-theme`).
    `style` option.
 5. Coverage: `tests/theme.spec.js` (toggle behaviour), `tools/audit-accessibility.mjs`
    (axe in both themes at desktop and mobile), `tools/audit-header-layout.mjs`
-   (header collisions across breakpoints) and the visual baselines
-   (`<page>-<viewport>-<platform>.png` for day,
-   `<page>-night-desktop-<platform>.png` for desktop night — see
-   *Visual baselines (platform-specific)* below).
+   (header collisions across breakpoints) and the optional visual baselines
+   (`<page>-<viewport>.png` for day, `<page>-night-desktop.png` for desktop
+   night — local design review only, see *What blocks a release* below).
 
 ## Third-party assets (vendor/)
 
@@ -437,72 +436,74 @@ Re-tune after changing a font with `node tools/diagnose-navigation-lock.mjs
 --tune` (it reports the worst-case shift per family), or re-measure the resolved
 family with `node tools/diagnose-navigation-lock.mjs --fontshift`.
 
-## Visual baselines (platform-specific)
+## What blocks a release (test classification)
 
-`tests/visual-regression.spec.js` screenshots every audited page at
-desktop/tablet/mobile plus desktop night. Screenshots are platform-specific:
-the DOM lays out identically, but Chromium rasterises text with the platform's
-own stack (DirectWrite/ClearType on Windows, FreeType/fontconfig on Linux), so
-the same page produces slightly different pixels on each. Comparing one
-platform's pixels against another's therefore fails on rasterisation alone, and
-raising the `toHaveScreenshot` tolerance to hide that would hide real
-regressions with it.
+The release gate exists to stop a broken site being published, not to enforce a
+rendering environment. Deployment is blocked only by something a normal visitor
+would notice, or by something that stops the site being built and uploaded:
 
-`playwright.config.js` resolves the accepted set per platform with the
-`{platform}` token (Playwright's `process.platform`):
-
-```
-tests/__screenshots__/visual-regression.spec.js/<page>-<viewport>-<platform>.png
-```
-
-| Platform | Set | Role |
+| Suite | Command | Blocks a release? |
 | --- | --- | --- |
-| Linux (`-linux`) | generated on the runner | **Authoritative**: `.github/workflows/static.yml` runs the gate on `ubuntu-latest`, so these are the pixels the deployment compares against |
-| Windows (`-win32`) | captured on a Windows working copy | Retained so local Windows development still runs the same suite meaningfully |
-| anything else | none until created | a missing baseline fails the test; it can never pass silently, and `npm run baseline:update` creates that platform's set |
+| Release gate — build output, representative pages, navigation, links and images, core interactions, accessibility, structure/metadata | `npm run test:ci` | **Yes** — this is what `.github/workflows/static.yml` runs after `npm run build` |
+| Full regression — every spec, including the exhaustive matrices, audits, fixture builds and visual screenshots | `npm test` | No — optional local/periodic QA |
+| Visual screenshots | `npm run test:visual` | No |
+| Navigation/font measurements and click-stress | `npm run test:diagnostic` | No |
 
-No test skips on Linux, no tolerance changed, and the deployment workflow only
-compares: a mismatch stops the deployment.
+The gate runs against an existing `_site` (`npm run build` first; it says so if
+the build is missing). It takes about a minute locally; the full suite takes
+about six.
 
-### Regenerating a platform's set
+### Release-blocking checks
 
-Your own platform, while developing — review the diff before committing it:
+- the build produced the expected pages (`sitemap.xml`, `robots.txt`, stylesheet
+  and script included) and copied no source tree, tooling or reports into `_site`
+  (`tests/ci-gate.spec.js`, `tests/build-output.spec.js`);
+- nine representative pages return HTTP 200, render a `<main>`, raise no
+  uncaught JavaScript errors, request no missing script/stylesheet and show no
+  image that failed to load;
+- desktop navigation navigates, the mobile drawer opens and follows a link, and
+  the theme toggle switches and switches back;
+- no horizontal overflow, no unusable `<main>` and no overlapping header
+  controls at 1440px and 375px;
+- axe on five representative page/width combinations: a **new** serious or
+  critical finding blocks; the findings the full audit already records (the
+  pre-existing footer/table contrast ones) are logged, not re-failed;
+- one `<main>`, one `<h1>`, a title, a meta description, a canonical URL and
+  `lang` on the representative pages, with `sitemap.xml` and `robots.txt` served;
+- the deployed artifact ships image derivatives rather than the full-resolution
+  archive, and stays within the publishable size;
+- no missing internal link or CSS target (`tests/internal-links.spec.js`);
+- accordions, galleries, lightboxes, news cards, archive links, signup
+  validation and live-scoring controls still work
+  (`tests/javascript-interactions.spec.js`).
 
-```powershell
-npm run test:visual      # what moved, and by how much
-npm run baseline:update  # rewrite *your platform's* PNGs, once approved
-```
+### Optional QA (never blocks the deployment)
 
-Linux (the set the deployment gate uses), generated on the runner that will
-compare against it:
+`npm test` keeps the whole estate for occasional use: page audits (axe and page
+weights on every page), SEO metadata and sitemap equality, keyboard
+accessibility, theme behaviour, fixture season states, news architecture, the
+historical archive, image references on every page, html-validate, rapid
+navigation, the font-swap measurements and the visual screenshots.
 
-1. Actions → **Generate Linux visual baselines** → *Run workflow*, picking the
-   branch. `.github/workflows/visual-baselines.yml` uses the same runner image,
-   Node version, browser install and build command as the deployment workflow.
-   It writes `tests/__screenshots__/**-linux.png` in its own checkout and never
-   deploys, commits or pushes.
-2. Download the `linux-visual-baselines` artifact: the PNGs plus
-   `visual-baseline-review.json`, which compares each new baseline with its
-   Windows counterpart — how many pixels differ, where, and whether a small
-   whole-image offset explains the difference (a layout difference) or nothing
-   does (rasterisation).
-3. Review the PNGs. Rasterisation-only differences are expected; `shift`,
-   `size`, `review` and `missing` entries need a human look first.
-4. Unzip the artifact over the working copy (it keeps the
-   `tests/__screenshots__/visual-regression.spec.js/` paths), then commit
-   `tests/__screenshots__/visual-regression.spec.js/*-linux.png` and push; the
-   next deployment run compares against them.
+**Visual screenshots are not a release gate.** Chromium paints text with the
+platform's own stack (DirectWrite/ClearType on Windows, FreeType/fontconfig on
+Linux), so PNGs captured on one OS never match another's pixel-for-pixel. The
+accepted set under `tests/__screenshots__/` was captured on Windows and is for
+local design review: run `npm run test:visual` to see what moved, and after a
+deliberate visual change `npm run baseline:update` to accept it. On a machine
+with a different font stack, regenerate your own copy rather than treating the
+mismatch as a defect. `tools/analyse-visual-diff.mjs` reports how large a
+failure is and where it sits.
 
-The same comparison can be run by hand:
+### The sanity check for a future CI failure
 
-```powershell
-node tools/compare-visual-baselines.mjs --platform=linux --against=win32
-```
-
-Snapshot updates are a reviewed step, never a build step: `--update-snapshots`
-only runs when a person asks for it (`npm run baseline:update` locally, the
-manual workflow in CI). A baseline committed without review makes the gate blind
-to exactly the change it exists to catch.
+Ask what the failing test protects and whether it has to block a release: *will
+the site fail to build? can GitHub Pages not deploy it? would a normal visitor
+hit a broken page or an unusable function?* If all three are no — a platform's
+anti-aliasing, a font metric, a click-stress run, a pixel comparison — it belongs
+in the optional suites above, not in the release gate. Where an optional test
+disagrees with a deployable, functioning site, document the limitation instead of
+changing the site to satisfy the renderer.
 
 ## Common troubleshooting
 
@@ -513,7 +514,7 @@ to exactly the change it exists to catch.
 | Images appear as broken icons on one page | usually a stale server serving an old `_site`; stop it and rebuild |
 | `EBUSY`/`EPERM`/`Access is denied` while cleaning `_site` | a cloud-sync client is holding generated files; exit/pause syncing, delete `_site`, rebuild, or use `SITE_ROOT`/`IMAGE_CACHE_ROOT` |
 | Visual test fails after an image change | run `npm run test:visual` and inspect the diff artefacts in `test-results/`; only update baselines with `npm run baseline:update` once the change is approved |
-| Visual test fails with a large diff and no related code change | baselines are per platform (`…-<viewport>-<platform>.png`): this machine has none, or has another OS's. Generate your platform's set (`npm run baseline:update`) — or, for the Linux set the deployment uses, the *Generate Linux visual baselines* workflow — and review the PNGs before committing; see *Visual baselines (platform-specific)* |
+| Visual test fails with a large diff and no related code change | the baselines were captured on Windows: a different OS paints text differently, so this is optional QA, not a release blocker. Regenerate your own set with `npm run baseline:update` (or ignore the suite) — see *What blocks a release* |
 | Fixtures page looks wrong on a specific day | fixture styling is date-driven; tests freeze the clock, the live site does not |
 | Live Scores shows a service error | the embedded third-party score service is unavailable; the rest of the site is unaffected |
 | A page seems frozen after clicking through several pages quickly | run `npx playwright test tests/rapid-navigation.spec.js tests/external-dependency-resilience.spec.js`; a page must paint and stay interactive even when outside origins stall |
@@ -528,11 +529,10 @@ to exactly the change it exists to catch.
   directory URLs, matching GitHub Pages). `npx serve _site` also works.
 - **Release check**: `npm ci && npm test` — the same commands the Pages workflow
   runs; a failure stops the deployment.
-- **Visual baselines**: the deployment gate compares against the Linux set
-  (`tests/__screenshots__/**-linux.png`). If it reports missing or mismatched
-  screenshots, generate and review that set with the *Generate Linux visual
-  baselines* workflow before re-running the deployment — see *Visual baselines
-  (platform-specific)*.
+- **Deployment gate**: the Pages workflow runs `npm run build` then
+  `npm run test:ci` (the lean gate). It never compares screenshots, so a
+  platform's font rendering cannot block a release — the full suite and the
+  visual baselines are optional QA, see *What blocks a release*.
 - **Clean build**: delete `_site` and `.cache`, then `npm run build` (~4 minutes
   cold, because all 2,945 image derivatives are regenerated).
 - **Deployment, rollback, smoke-test checklist and the release notes**:

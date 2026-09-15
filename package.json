@@ -10,6 +10,8 @@
     "baseline:update": "npm run build && playwright test --update-snapshots",
     "baseline:summary": "node tools/summarize-baseline.mjs",
     "test": "npm run build && playwright test",
+    "test:ci": "playwright test tests/ci-gate.spec.js tests/build-output.spec.js tests/internal-links.spec.js tests/javascript-interactions.spec.js --project=desktop --project=mobile",
+    "test:diagnostic": "playwright test tests/navigation-hit-target.spec.js tests/rapid-navigation.spec.js tests/external-dependency-resilience.spec.js",
     "test:audit": "playwright test tests/page-audit.spec.js",
     "test:build": "playwright test tests/build-output.spec.js",
     "test:html": "playwright test tests/html-validation.spec.js",

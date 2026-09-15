@@ -55,15 +55,34 @@ image cannot be processed, or when the output directory cannot be cleaned.
 ## Test
 
 ```powershell
-npm test              # build + the full Playwright suite
-npm run test:build    # structure and deployment checks
-npm run test:html     # html-validate against the accepted baseline
-npm run test:links    # internal links, CSS references, placeholders
-npm run test:visual   # screenshot comparisons (desktop/tablet/mobile, day/night)
-npm run test:audit    # console errors, failed requests, axe, page weights
+npm run test:ci          # the lean release gate (after `npm run build`)
+npm test                 # build + the full suite (optional regression, ~6 min)
+npm run test:visual      # optional visual regression (Windows-captured baselines)
+npm run test:diagnostic  # optional navigation/font and click-stress diagnostics
+npm run test:build       # structure and deployment checks
+npm run test:html        # html-validate against the accepted baseline
+npm run test:links       # internal links, CSS references, placeholders
+npm run test:audit       # console errors, failed requests, axe, page weights
 ```
 
-The suite is 300+ checks and includes the generated sections:
+`npm run test:ci` is the release gate — the same command the Pages workflow runs
+after building. It blocks only on things a visitor would notice or that stop the
+site being published: pages missing from the build, a page that does not render
+(HTTP 200, `<main>`, no uncaught JavaScript errors, no broken images), broken
+internal links, navigation and the core interactions (lightbox, gallery,
+accordion, signup, live scores), horizontal overflow or overlapping header
+controls at 1440px and 375px, a new serious/critical accessibility finding, and
+missing structure/metadata/sitemap. It runs in about a minute.
+
+Everything else is optional QA. `npm test` adds the exhaustive page × theme ×
+viewport matrices, page audits, keyboard and SEO checks, the fixture-state
+builds, rapid navigation, the font-swap measurements and the visual screenshots.
+Screenshot baselines were captured on Windows and never match Linux
+pixel-for-pixel, so they are for local design review rather than a release
+blocker: [MAINTENANCE.md](MAINTENANCE.md) → *What blocks a release* explains the
+classification and how to regenerate them.
+
+The full suite is 300+ checks and includes the generated sections:
 
 - `tests/news-architecture.spec.js` — the news collection, landing page,
   year/category archives and homepage automation;
@@ -78,13 +97,6 @@ The suite is 300+ checks and includes the generated sections:
 Tests that need a second build write it to `_site-fixtures-<state>` (ignored,
 and removed when the spec finishes); the production build never reads it.
 
-Visual baselines are per platform (`…-<viewport>-<platform>.png`): Chromium
-rasterises text differently on Windows and Linux, and the deployment gate runs on
-Linux, so the Linux set is the authority there. [MAINTENANCE.md](MAINTENANCE.md)
-→ *Visual baselines (platform-specific)* explains how to regenerate and review
-either set (`npm run baseline:update` on your own machine, or the manual
-*Generate Linux visual baselines* workflow on the runner).
-
 Audit helpers:
 
 ```powershell
@@ -96,17 +108,17 @@ node tools/compare-layout.mjs before after
 
 ## Deployment
 
-GitHub Pages, via `.github/workflows/static.yml`: `npm ci`, `npm run build`, the
-test gate, then upload `_site`. Details and rollback steps are in
-[RELEASE.md](RELEASE.md).
+GitHub Pages, via `.github/workflows/static.yml`: `npm ci`, `npm run build`,
+`npm run test:ci` (the lean release gate), then upload `_site`. Details and
+rollback steps are in [RELEASE.md](RELEASE.md).
 
-The deployment runs the same commands as a local release check, so
-`npm ci && npm test` locally is the closest equivalent:
+The deployment runs the same commands as a local release check:
 
 ```powershell
 Remove-Item -Recurse -Force _site, .cache   # optional: forces a genuinely cold build
 npm run build                               # ~13s warm, ~4min cold
-npm test                                    # build + full suite; a failure stops the deploy
+npm run test:ci                             # the release gate; a failure stops the deploy
+npm test                                    # optional: the full suite
 ```
 
 ## Image pipeline

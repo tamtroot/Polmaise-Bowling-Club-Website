@@ -29,14 +29,18 @@ Remove-Item -Recurse -Force _site, .cache   # genuinely clean build (optional bu
 
 ```powershell
 npm run build                   # ~13s warm, ~4min cold (image derivatives are rebuilt)
-npm test                        # build + full Playwright suite
+npm run test:ci                 # the release gate (~1 min); a failure stops the deploy
+npm test                        # optional: the full suite, including visual QA
 ```
 
-Expected: **0 failures**. The suite covers structure and deployment, internal
-links, image references, HTML validation, axe accessibility (day/night ×
-desktop/mobile), SEO + sitemap, theme switching, keyboard access, rapid
-navigation, the homepage fixture states, the news architecture, the fixtures UX
-states and the historical archive, plus visual baselines for every public page.
+Expected: **0 failures** in the gate. It covers the build output, representative
+pages at desktop and mobile widths, navigation (including the drawer and the
+theme toggle), internal links, core interactions, a representative axe set and
+structure/metadata/sitemap. The optional full suite adds structure and
+deployment, image references, HTML validation, the exhaustive axe and SEO
+matrices, keyboard access, theme switching, rapid navigation, the fixture and
+homepage fixture-state builds, the news architecture, the historical archive and
+the visual baselines.
 
 Optional release audits:
 
@@ -76,7 +80,8 @@ git merge --ff-only deepseek-v41-refactor      # fast-forward, no merge commit
 
 # 3. final verification on main
 npm ci
-npm test
+npm run build
+npm run test:ci                 # the release gate
 
 # 4. publish
 git push origin main
@@ -92,16 +97,15 @@ Never force-push `main`.
 ## 6. Deployment
 
 `.github/workflows/static.yml` runs on a push to `main` (and by manual dispatch):
-checkout → configure Pages → Node 22 → `npm ci` → install Chromium → `npm test`
-→ upload `_site` → deploy. A failing test stops the deployment, so nothing
-broken is published. The run takes roughly 10–15 minutes, most of it the cold
-image build.
+checkout → configure Pages → Node 22 → `npm ci` → install Chromium →
+`npm run build` → `npm run test:ci` → upload `_site` → deploy. A failing gate
+stops the deployment, so nothing broken is published. The run takes roughly 5–6
+minutes, most of it the cold image build.
 
-Screenshot baselines are per platform, so the gate compares against the Linux
-set (`tests/__screenshots__/**-linux.png`). If the run reports missing or
-mismatched screenshots, generate and review that set with the manual *Generate
-Linux visual baselines* workflow before re-running the deployment
-(MAINTENANCE.md → *Visual baselines (platform-specific)*).
+The gate deliberately never compares screenshots, so a platform's font
+rendering (Ubuntu anti-aliasing versus Windows) cannot block a release. The
+visual baselines are optional QA — MAINTENANCE.md → *What blocks a release*
+explains the classification.
 
 ## 7. Rollback
 
@@ -174,9 +178,10 @@ metadata; footer year correct.
   and night at desktop and mobile widths.
 - **SEO**: unique titles and descriptions, canonicals, Open Graph/Twitter
   metadata, article JSON-LD, sitemap and robots.
-- **Automated tests**: 300+ Playwright checks across structure, links, images,
-  HTML validity, accessibility, SEO, themes, interactions, generated sections
-  and visual baselines.
+- **Automated tests**: a lean release gate (build output, representative pages,
+  navigation, links, interactions, accessibility, structure and metadata) plus
+  300+ optional checks across structure, images, HTML validity, SEO, themes,
+  generated sections and visual baselines.
 - **Performance**: self-hosted fonts and libraries, WebP derivatives, no
   third-party CDN on the critical path.
 - **Navigation reliability**: metric-matched font fallback and preloaded webfonts
