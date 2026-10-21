@@ -20,8 +20,32 @@
           "winner": "A. Furzer"
         },
         {
-          "name": "Presidents Cup",
+          "name": "Presidents Trophy",
           "winner": "A. Furzer"
+        },
+        {
+          "name": "J. Black Trophy",
+          "winner": "A. Furzer"
+        },
+        {
+          "name": "The Prim Trophy",
+          "winner": "J. Craig"
+        },
+        {
+          "name": "Victory Trophy",
+          "winner": "K. Malcolmson"
+        },
+        {
+          "name": "Senior Singles Gentlemens Championship",
+          "winner": "D. McCormick"
+        },
+        {
+          "name": "4 Bowl Pairs",
+          "winner": "A. Furzer & W. Black"
+        },
+        {
+          "name": "2 Bowl Pairs",
+          "winner": "A. McNeil & S. Deans"
         },
         {
           "name": "Ladies Championship",
@@ -32,40 +56,16 @@
           "winner": "E. McMeechan"
         },
         {
-          "name": "The Stuart Primrose Cup",
-          "winner": "James Craig"
+          "name": "Ladies 4 Bowl Pairs",
+          "winner": "I. Wylie & S. Donaldson"
         },
         {
           "name": "Mixed Pairs",
-          "winner": "R. Liddle & D. Dalgliesh"
-        },
-        {
-          "name": "2 Bowl Pairs",
-          "winner": "A. Deans & A. McNeil"
-        },
-        {
-          "name": "4 Bowl Pairs",
-          "winner": "T.B.D"
-        },
-        {
-          "name": "Ladies Pairs",
-          "winner": "S. Donaldson & I. Wylie"
-        },
-        {
-          "name": "Victory",
-          "winner": "T.B.D"
+          "winner": "R. Liddell & D. Dalgleish"
         },
         {
           "name": "Junior Singles",
           "winner": "K. Malcolmson"
-        },
-        {
-          "name": "Senior Singles Gentlemens Championship",
-          "winner": "D. McCormick"
-        },
-        {
-          "name": "James Black",
-          "winner": "T.B.D"
         }
       ]
     },
@@ -1264,6 +1264,10 @@
         },
         {
           "year": "2025",
+          "name": "A. Furzer"
+        },
+        {
+          "year": "2026",
           "name": "A. Furzer",
           "current": true
         }
@@ -1285,7 +1289,11 @@
         },
         {
           "year": "2025",
-          "name": "R. Liddel",
+          "name": "R. Liddel"
+        },
+        {
+          "year": "2026",
+          "name": "A. Irving",
           "current": true
         }
       ]
