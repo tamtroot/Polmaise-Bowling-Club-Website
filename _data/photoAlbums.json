@@ -242,5 +242,44 @@
       "DefeatedSemi.jpg",
       "DefeatedSemi2.jpg"
     ]
+  },
+  "presentation-dance-2026": {
+    "galleryId": "presentation-2026-gallery",
+    "directory": "../Images/2026/PresentationDance2026/",
+    "group": "presentation-2026",
+    "titlePrefix": "Presentation Dance 2026 - Photo ",
+    "altPrefix": "Presentation Dance 2026 - Photo ",
+    "images": [
+      "19808.jpg",
+      "19806.jpg",
+      "19803.jpg",
+      "19802.jpg",
+      "19801.jpg",
+      "19800.jpg",
+      "19798.jpg",
+      "19797.jpg",
+      "19796.jpg",
+      "19795.jpg",
+      "19794.jpg",
+      "19792.jpg",
+      "19791.jpg",
+      "19789.jpg",
+      "19788.jpg",
+      "19787.jpg",
+      "19786.jpg",
+      "19784.jpg",
+      "19782.jpg",
+      "19781.jpg",
+      "19778.jpg",
+      "19777.jpg",
+      "19776.jpg",
+      "19775.jpg",
+      "19774.jpg",
+      "19773.jpg",
+      "19772.jpg",
+      "19771.jpg",
+      "19770.jpg",
+      "19768.jpg"
+    ]
   }
 }

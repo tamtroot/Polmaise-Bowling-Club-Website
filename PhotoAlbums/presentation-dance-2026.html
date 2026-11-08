@@ -1,0 +1,50 @@
+---
+pageTitle: "Presentation Dance 2026 - Polmaise Bowling Club"
+metaDescription: "Photographic highlights from Polmaise Bowling Club's 2026 Presentation Dance, celebrating the prizewinners and a great evening with members and guests."
+permalink: "/PhotoAlbums/presentation-dance-2026.html"
+navActive: "gallery"
+prefix: "../"
+assetPrefix: "../"
+headVariant: "styles-first"
+mobileMenuIcon: "fas fa-bars"
+mobileNavDropdown: false
+fontFamilies: "family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600"
+scriptJs: true
+jquery: true
+lightboxCss: true
+lightboxScript: "end"
+facebookLink: false
+bodyClass: ""
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>{% include "head.njk" %}</head>
+<body>
+{% include "header.njk" %}
+<main>
+  <section class="page-banner">
+    <div class="banner-content">
+      <h2>Presentation Dance 2026</h2>
+      <p>Celebrating our 2026 season and the people who made it special</p>
+    </div>
+  </section>
+  <section class="album-container">
+    <div class="container">
+      <a href="../gallery.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to Gallery</a>
+      <div class="album-intro">
+        {% photoImage "../Images/2026/PresentationDance2026/19808.jpg", "Presentation Dance 2026 group photograph", { role: "grid", sizes: "(max-width: 768px) 90vw, 300px", loading: false } %}
+        <h2>Presentation Dance 2026</h2>
+        <p>Members, friends and guests came together to celebrate the 2026 bowling season, recognise the club's achievements and enjoy an evening of good company.</p>
+        <p>Enjoy a selection of trophy presentations and photographs from throughout the evening. Select a photo to see it in full size.</p>
+      </div>
+      <div class="album-grid" id="presentation-2026-gallery"></div>
+    </div>
+  </section>
+</main>
+{% include "footer.njk" %}
+{% include "scripts.njk" %}
+{% set album = photoAlbums["presentation-dance-2026"] %}
+{% include "photo-album-gallery.njk" %}
+</body>
+</html>

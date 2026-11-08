@@ -1,6 +1,14 @@
 {
   "cards": [
     {
+      "link": "PhotoAlbums/presentation-dance-2026.html",
+      "thumbnail": {
+        "src": "./Images/2026/PresentationDance2026/19808.jpg",
+        "alt": "Presentation Dance 2026 group photograph"
+      },
+      "title": "Presentation Dance 2026"
+    },
+    {
       "open": "finals-day-2026",
       "dataAlbum": "finals-day-2026",
       "thumbnail": {
